@@ -11,18 +11,6 @@ const BOB_FREQ = 2.0
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
-
-
-#slide
-var fall_distance = 0
-var slide_speed = 0 
-var can_slide = false
-var sliding = false
-var falling = false
-var get_gravity = -9.8
-
-@onready var slide: RayCast3D = $Slide
-
 #Fov Variables
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
@@ -40,29 +28,13 @@ func _unhandled_input(event: InputEvent) -> void:
 			camera.rotate_x(-event.relative.y * 0.01)
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
-	if falling and is_on_floor() and sliding:
-		slide_speed += fall_distance / 10
-	fall_distance = -get_gravity().y
-		
-	direction = Vector3.ZERO
-	snap_vector = Vector3.DOWN
-	speed = default_speed 
 	 
-	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-	
-	if not is_on_floor():
-		get_gravity().x += Vector3.DOWN * gravity
-		falling = true
-	else:
-		get_gravity() = Vector3.ZERO
-		falling = false
-		
 		
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Handle Sprint.

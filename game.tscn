@@ -2,20 +2,18 @@
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_ny446"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ipk5v"]
-sky_top_color = Color(0.45917, 0.441678, 0.462081, 1)
-sky_horizon_color = Color(0.657304, 0.654211, 0.661051, 1)
-ground_bottom_color = Color(0.170046, 0.175167, 0.182123, 1)
-ground_horizon_color = Color(0.657304, 0.654211, 0.661051, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
+sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
+sky_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
+ground_bottom_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+ground_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
 
-[sub_resource type="Sky" id="Sky_hp8cq"]
-sky_material = SubResource("ProceduralSkyMaterial_ipk5v")
+[sub_resource type="Sky" id="Sky_vlvqu"]
+sky_material = SubResource("ProceduralSkyMaterial_o6ovr")
 
-[sub_resource type="Environment" id="Environment_lqyxn"]
+[sub_resource type="Environment" id="Environment_3qk04"]
 background_mode = 2
-background_energy_multiplier = 0.0
-sky = SubResource("Sky_hp8cq")
-ambient_light_energy = 0.0
+sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 glow_enabled = true
 
@@ -62,11 +60,10 @@ size = Vector2(24, 24)
 [node name="Game" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_lqyxn")
+environment = SubResource("Environment_3qk04")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866024, -0.298583, -0.401063, 0, -0.802121, 0.597161, -0.500003, 0.517156, 0.694656, -7.50991, 8.67159, 13.0074)
-light_energy = 0.762
 shadow_enabled = true
 
 [node name="Box" type="RigidBody3D" parent="."]
@@ -95,10 +92,6 @@ mesh = SubResource("CapsuleMesh_l7wrj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
-
-[node name="Slide" type="RayCast3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.453896, 0)
-target_position = Vector3(-1, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
