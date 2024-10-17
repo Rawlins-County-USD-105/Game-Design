@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://c53p3a43frhi0"]
+
+[ext_resource type="ArrayMesh" path="res://Sprites/Watergun/model.obj" id="1_6lmwo"]
+
+[sub_resource type="Animation" id="Animation_6plrg"]
+resource_name = "Shoot"
+length = 0.1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Model:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.05), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1qx2b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Model:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.142232, 0, 0.201727)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ws0be"]
+_data = {
+"RESET": SubResource("Animation_1qx2b"),
+"Shoot": SubResource("Animation_6plrg")
+}
+
+[node name="Gun" type="Node3D"]
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.142232, 0, 0.201727)
+cast_shadow = 0
+ignore_occlusion_culling = true
+mesh = ExtResource("1_6lmwo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ws0be")
+}
