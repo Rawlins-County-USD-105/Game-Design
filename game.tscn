@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
+[ext_resource type="Script" path="res://game.gd" id="1_x5k3m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -49,6 +50,7 @@ size = Vector2(24, 24)
 [sub_resource type="Skin" id="Skin_uxm6s"]
 
 [node name="Game" type="Node3D"]
+script = ExtResource("1_x5k3m")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3qk04")
@@ -80,3 +82,26 @@ skin = SubResource("Skin_uxm6s")
 
 [node name="player" parent="." instance=ExtResource("1_siqao")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Host" type="Button" parent="CanvasLayer"]
+offset_left = 11.0
+offset_top = 9.0
+offset_right = 216.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 60
+text = "Host"
+
+[node name="Join" type="Button" parent="CanvasLayer"]
+offset_left = 12.0
+offset_top = 104.0
+offset_right = 217.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 60
+text = "Join"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+
+[connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
