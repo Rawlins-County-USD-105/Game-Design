@@ -1,4 +1,8 @@
-Control
+Button
 VBoxContainer
+HBoxContainer
+Node
+Label
+Control
 MarginContainer
 TextureRect
