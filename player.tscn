@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 
@@ -10,6 +10,14 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
 material = SubResource("StandardMaterial3D_14v3e")
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_epysk"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="player" type="Node3D"]
 
@@ -29,3 +37,6 @@ mesh = SubResource("CapsuleMesh_dgk81")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_epysk")

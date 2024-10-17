@@ -51,6 +51,7 @@ size = Vector2(24, 24)
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_x5k3m")
+playe_scene = ExtResource("1_siqao")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3qk04")
@@ -102,6 +103,8 @@ theme_override_font_sizes/font_size = 60
 text = "Join"
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("..")
 
 [connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
