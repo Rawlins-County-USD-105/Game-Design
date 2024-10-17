@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729092728
-character_body_3d.gd::GDScript::-1::1729006747::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1729006747::0::1::::<><>::res://character_body_3d.gd
+::res://::1729176912
+character_body_3d.gd::GDScript::-1::1729093341::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1729176912::0::1::::<><>::res://character_body_3d.gd
 icon.svg::CompressedTexture2D::244492666970879408::1729090883::1729091041::1::::<><>::
 README.md::TextFile::-1::1729091499::0::1::::<><>::
 ::res://brackeys_platformer_assets/::1729090883
