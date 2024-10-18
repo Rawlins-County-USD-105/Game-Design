@@ -24,29 +24,30 @@ func _ready() -> void:
 	camera.current = is_multiplayer_authority()
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	elif event.is_action_pressed("ui_cancel"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		if event is  InputEventMouseMotion:
-			neck.rotate_y(-event.relative.x * 0.01)
-			camera.rotate_x(-event.relative.y * 0.01)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+	if is_multiplayer_authority():
+		if event is InputEventMouseButton:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		elif event.is_action_pressed("ui_cancel"):
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			if event is  InputEventMouseMotion:
+				neck.rotate_y(-event.relative.x * 0.01)
+				camera.rotate_x(-event.relative.y * 0.01)
+				camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
 	if is_multiplayer_authority():
 		# Add the gravity.
 		if not is_on_floor():
 			velocity += get_gravity() * delta
-			
+		
 		# Handle jump.
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = JUMP_VELOCITY
-		
+			
 		if Input.is_action_just_pressed("ui_end"):
 			$"../".exit_game(name.to_int())
 
-		# Handle Sprint.
+			# Handle Sprint.
 		if Input.is_action_pressed("sprint"):
 			speed = SPRINT_SPEED
 		else:
@@ -67,15 +68,16 @@ func _physics_process(delta: float) -> void:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 			velocity.z = lerp(velocity.z, direction.x * speed, delta * 3.0)
 			
-	#Heahead bob
+		#Heahead bob
 		t_bob += delta * velocity.length() * float(is_on_floor())
 		camera.transform.origin = _headbob(t_bob)
 		move_and_slide()
-		
+			
 		#FOV
 		var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 		var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 		camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
+	
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP

@@ -19,7 +19,7 @@ func _on_join_pressed() -> void:
 func add_player(id = 1):
 	var player = playe_scene.instantiate()
 	player.name = str(id)
-	call_deferred("add_child")
+	call_deferred("add_child", player)
 	
 
 func del_player(id):
