@@ -30,6 +30,7 @@ mesh = SubResource("CapsuleMesh_dgk81")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0340012, -0.0567517, 0)
 
 [node name="Gun" parent="CharacterBody3D/neck/Camera" instance=ExtResource("2_nyafs")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.284807, -0.472571)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.350574, -0.152448, -0.477391)
