@@ -1,24 +1,29 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
-#character
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
+@onready var standing_collison_shape = $CollisionShape3D
+@onready var crouching_collision_shape = $crouching_collision_shape
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 2
 @export var jump_sprint = 15
 
+var current_speed = 5.0
+var SPEED = 5.0
 const BOB_FREQ = 2
 const BOB_AMP = 0.1
 var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
-
+var JUMP_VELOCITY = 5.0
+var crouching_speed = .5
+var crouching_depth = -0.5
+var lerp_speed = 30
+var WALK_SPEED = 10
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -42,20 +47,43 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	
-		
+
+
 	if direction:
-		if Input.is_action_pressed("sprint") and is_on_floor():
+		
+		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
 			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
+
 			if Input.is_action_just_pressed("jump") and is_on_floor():
 				velocity.y = JUMP_VELOCITY
 		else:
-			velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
-			velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
+			if Input.is_action_pressed("crouch"):
+				current_speed = SPEED * crouching_speed
+			if not Input.is_action_pressed("crouch"):
+				velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
+				velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
+
+			else:
+				velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
+				velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
+
+
+
 	else:
+		if Input.is_action_pressed("crouch"):
+			current_speed = crouching_speed
+			neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
+			standing_collison_shape.set_deferred("disable",true)
+			crouching_collision_shape.set_deferred("disable",false)
+		else:
+			standing_collison_shape.set_deferred("disable", false)
+			crouching_collision_shape.set_deferred("disable", true)
+			neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
 		velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
+
+		
 
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera_3d.transform.origin = _headbob(t_bob)
@@ -68,6 +96,6 @@ func _physics_process(delta: float) -> void:
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
-	print(pos.y)
+	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
