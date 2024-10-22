@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=7 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 
@@ -14,6 +14,14 @@ material = SubResource("StandardMaterial3D_14v3e")
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.575592
 height = 1.24402
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_27ems"]
+properties/0/path = NodePath("standing_collison_shape:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("standing_collison_shape:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [node name="player" type="Node3D"]
 
@@ -41,3 +49,6 @@ disabled = true
 
 [node name="RayCast3D" type="RayCast3D" parent="standing_collison_shape"]
 target_position = Vector3(0, 2, 0)
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_27ems")
