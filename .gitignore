@@ -15,3 +15,5 @@ mono_crash.*.json
 
 .DS_Store
 /.godot
+/.godot/editor
+*.cfg
