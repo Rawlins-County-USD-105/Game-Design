@@ -10,8 +10,8 @@ const JUMP_VELOCITY = 4.5
 @onready var gun_anim = $neck/Camera/Gun/Model/AnimationPlayer
 @onready var gun_barrel = $neck/Camera/Gun/RayCast3D
 
-=======
-@onready var body: CharacterBody3D = $neck
+
+
 @onready var camera_3d: Camera3D = $neck/Camera
 
 @export_category("Movement and shiz")
@@ -26,7 +26,7 @@ const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
 
->>>>>>> main
+
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -70,6 +70,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	#FOV
+
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
