@@ -9,7 +9,7 @@ const JUMP_VELOCITY = 4.5
 @onready var camera: Camera3D = $neck/Camera
 @onready var gun_anim = $neck/Camera/Gun/Model/AnimationPlayer
 @onready var gun_barrel = $neck/Camera/Gun/RayCast3D
-
+@onready var Animation_Player = $Model/AnimationPlayer
 
 
 @onready var camera_3d: Camera3D = $neck/Camera
@@ -82,6 +82,5 @@ func _headbob(time) -> Vector3:
 	return pos
 
 	#Shooting
-	if Input.is_action_pressed("Shoot"):
-		if !gun_anim.is_playing():
-			gun_anim.play("Shoot")
+	if Input.is_action_pressed("shoot"):
+		Animation_Player.play("Shoot")
