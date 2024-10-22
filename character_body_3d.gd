@@ -5,9 +5,9 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 #character
 @onready var neck: Node3D = $neck
-<<<<<<< HEAD
 @onready var camera: Camera3D = $neck/Camera
-@onready var gun_anim: Node3D = $neck/Camera/Gun
+@onready var gun_anim: Node3D = $neck/Camera/Gun/Model/AnimationPlayer
+@onready var gun_barrel = $neck/Camera/Gun/RayCast3D
 =======
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
