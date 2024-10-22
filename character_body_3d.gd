@@ -18,7 +18,7 @@ const FOV_CHANGE = 1.5
 @onready var camera: Camera3D = $neck/Camera
 
 func _enter_tree() -> void:
-	set_multiplayer_authority(name.to_int())
+	$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
 	camera.current = is_multiplayer_authority()
@@ -34,6 +34,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				neck.rotate_y(-event.relative.x * 0.01)
 				camera.rotate_x(-event.relative.y * 0.01)
 				camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+
 func _physics_process(delta: float) -> void:
 	if is_multiplayer_authority():
 		# Add the gravity.
@@ -68,15 +69,16 @@ func _physics_process(delta: float) -> void:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 			velocity.z = lerp(velocity.z, direction.x * speed, delta * 3.0)
 			
-		#Heahead bob
+			#Heahead bob
 		t_bob += delta * velocity.length() * float(is_on_floor())
 		camera.transform.origin = _headbob(t_bob)
-		move_and_slide()
+		
 			
-		#FOV
+			#FOV
 		var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 		var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 		camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
+		move_and_slide()
 	
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO

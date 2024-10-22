@@ -2,7 +2,7 @@ extends Node3D
 
 var peer = ENetMultiplayerPeer.new()
 
-@export var playe_scene : PackedScene
+@export var player_scene : PackedScene
 
 func _on_host_pressed() -> void:
 	peer.create_server(1027)
@@ -12,13 +12,14 @@ func _on_host_pressed() -> void:
 	$CanvasLayer.hide()
 	
 func _on_join_pressed() -> void:
-	peer.create_client("127.0.0.1", 1027)
+	peer.create_client("localhost", 1027)
 	multiplayer.multiplayer_peer = peer
 	$CanvasLayer.hide()
 
 func add_player(id = 1):
-	var player = playe_scene.instantiate()
+	var player = player_scene.instantiate()
 	player.name = str(id)
+	print(player.name)
 	call_deferred("add_child", player)
 	
 

@@ -51,7 +51,7 @@ size = Vector2(24, 24)
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_x5k3m")
-playe_scene = ExtResource("1_siqao")
+player_scene = ExtResource("1_siqao")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3qk04")
@@ -80,9 +80,6 @@ shape = SubResource("BoxShape3D_djti3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00670171)
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
-
-[node name="player" parent="." instance=ExtResource("1_siqao")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
