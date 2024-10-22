@@ -4,12 +4,14 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 #character
+
 @onready var neck: Node3D = $neck
 @onready var camera: Camera3D = $neck/Camera
-@onready var gun_anim: Node3D = $neck/Camera/Gun/Model/AnimationPlayer
+@onready var gun_anim = $neck/Camera/Gun/Model/AnimationPlayer
 @onready var gun_barrel = $neck/Camera/Gun/RayCast3D
+
 =======
-@onready var body: CharacterBody3D = $"."
+@onready var body: CharacterBody3D = $neck
 @onready var camera_3d: Camera3D = $neck/Camera
 
 @export_category("Movement and shiz")
@@ -22,6 +24,7 @@ const BOB_AMP = 0.1
 var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
+
 
 >>>>>>> main
 
@@ -79,7 +82,5 @@ func _headbob(time) -> Vector3:
 
 	#Shooting
 	if Input.is_action_pressed("Shoot"):
-		print("happened")
 		if !gun_anim.is_playing():
-			print("really happened")
 			gun_anim.play("Shoot")

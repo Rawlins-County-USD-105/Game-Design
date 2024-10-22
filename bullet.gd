@@ -4,7 +4,7 @@ extends Node3D
 const SPEED = 40.0
 
 @onready var mesh = $MeshInstance3D
-@onready var ray = $RayCast3D
+@onready var ray = $MeshInstance3D/RayCast3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
