@@ -1,4 +1,2 @@
-MultiplayerSynchronizer
-MultiplayerSpawner
-Button
-CanvasLayer
+RayCast3D
+CollisionShape3D
