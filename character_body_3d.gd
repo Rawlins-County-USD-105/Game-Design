@@ -82,5 +82,6 @@ func _headbob(time) -> Vector3:
 	return pos
 
 	#Shooting
-	if Input.is_action_pressed("shoot"):
-		Animation_Player.play("Shoot")
+	if Input.is_action_pressed("Shoot"):
+		if !gun_anim.is_pressed():
+			gun_anim.play("Shoot")
