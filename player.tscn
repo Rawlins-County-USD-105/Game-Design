@@ -12,13 +12,13 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_14v3e")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
-radius = 0.504671
-height = 1.23542
+radius = 0.575592
+height = 1.24402
 
 [node name="player" type="Node3D"]
 
 [node name="standing_collison_shape" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99195, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.680793, -0.235988)
 script = ExtResource("1_1qajl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="standing_collison_shape"]
@@ -35,7 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 [node name="Camera" type="Camera3D" parent="standing_collison_shape/neck"]
 
 [node name="crouching_collision_shape" type="CollisionShape3D" parent="standing_collison_shape"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0459751, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.0459751, 0)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
