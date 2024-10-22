@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
+[ext_resource type="Texture2D" uid="uid://b0tpiakblr1l0" path="res://Main Menu/Untitled design (6).png" id="2_th47n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
 height = 1.88505
@@ -29,3 +30,21 @@ mesh = SubResource("CapsuleMesh_dgk81")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
+
+[node name="Crosshair IMG" type="TextureRect" parent="CharacterBody3D/neck/Camera"]
+light_mask = 0
+visibility_layer = 512
+anchors_preset = -1
+anchor_left = 0.391
+anchor_top = 0.307
+anchor_right = 0.609
+anchor_bottom = 0.693
+offset_left = 0.567963
+offset_top = 0.0639954
+offset_right = -0.568054
+offset_bottom = -0.0640259
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_th47n")
