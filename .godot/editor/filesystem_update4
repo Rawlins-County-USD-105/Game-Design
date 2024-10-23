@@ -1,3 +1,6 @@
 res://game.tscn
 res://player.tscn
-res://character_body_3d.gd
+res://Game Interactions/interact_ray.tscn
+res://Game Interactions/Scripts/interact_ray.gd
+res://Game Interactions/Scenes/interact_ray.tscn
+res://Game Interactions/Scripts/Interactable.gd

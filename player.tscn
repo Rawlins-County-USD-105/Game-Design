@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=7 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="Texture2D" uid="uid://b0tpiakblr1l0" path="res://Main Menu/Untitled design (6).png" id="2_th47n"]
+[ext_resource type="PackedScene" uid="uid://bpnjitwut2j4v" path="res://Game Interactions/Scenes/interact_ray.tscn" id="3_esf62"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
 height = 1.88505
@@ -44,3 +45,5 @@ offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
+
+[node name="InteractRay" parent="CharacterBody3D/neck/Camera" instance=ExtResource("3_esf62")]
