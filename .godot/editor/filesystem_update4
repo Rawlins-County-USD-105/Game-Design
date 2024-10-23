@@ -1,6 +1,4 @@
 res://game.tscn
-res://player.tscn
-res://Game Interactions/interact_ray.tscn
 res://Game Interactions/Scripts/interact_ray.gd
+res://player.tscn
 res://Game Interactions/Scenes/interact_ray.tscn
-res://Game Interactions/Scripts/Interactable.gd

@@ -13,5 +13,5 @@ func _physics_process(_delta):
 	if is_colliding():
 		var collider = get_collider()
 		
-		if collider is Interactable:
-			prompt.text = collider.prompt_message
+		
+		prompt.text = "Detecting "+ collider.name

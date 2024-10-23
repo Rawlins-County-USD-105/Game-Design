@@ -1,42 +1,41 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729697337
-character_body_3d.gd::GDScript::-1::1729695548::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1729697337::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
-icon.svg::CompressedTexture2D::244492666970879408::1729090938::1729612726::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1729697337::0::1::::<><>::res://character_body_3d.gd<>uid://b0tpiakblr1l0::::res://Main Menu/Untitled design (6).png<>uid://bpnjitwut2j4v::::res://Game Interactions/Scenes/interact_ray.tscn
-README.md::TextFile::-1::1729091404::0::1::::<><>::
-Interactable.gd::GDScript::-1::1729697469::0::1::::<>Node<>::
-::res://brackeys_platformer_assets/::1729090938
-LICENSE & CREDITS.txt::TextFile::-1::1729090938::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1729612726
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729090938::1729612726::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1729090938::1729612726::1::::<><>::
-::res://brackeys_platformer_assets/music/::1729612726
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729090938::1729612726::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1729612726
-coin.wav::AudioStreamWAV::8431615200529489740::1729090938::1729612726::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1729090938::1729612726::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1729090938::1729612726::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1729090938::1729612726::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1729090938::1729612726::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1729090938::1729612726::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1729612726
-coin.png::CompressedTexture2D::6052392971937403295::1729090938::1729612726::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1729090938::1729612726::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1729090938::1729612726::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1729090938::1729612726::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1729090938::1729612726::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1729090938::1729612726::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1729090938::1729612726::1::::<><>::
-::res://Game Interactions/::1729696123
-::res://Game Interactions/Scenes/::1729697337
-interact_ray.tscn::PackedScene::3466652021217022619::1729697337::0::1::::<><>::res://Game Interactions/Scripts/interact_ray.gd
-::res://Game Interactions/Scripts/::1729697337
-interact_ray.gd::GDScript::-1::1729697337::0::1::::<>RayCast3D<>::
-::res://Main Menu/::1729692450
-Untitled design (5).png::CompressedTexture2D::641227296590557974::1729692434::1729692450::1::::<><>::
-Untitled design (6).png::CompressedTexture2D::4181290008722660431::1729692434::1729692450::1::::<><>::
-::res://Main Menu/Assets/::1729613971
-::res://Main Menu/Assets/Button Textures/::1729692450
-Untitled design (5).png::CompressedTexture2D::6177547754315135572::1729613971::1729692450::1::::<><>::
-::res://Main Menu/Scripts/::1729179103
+::res://::1729698418
+character_body_3d.gd::GDScript::-1::1729698299::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1729698341::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
+icon.svg::CompressedTexture2D::244492666970879408::1729180219::1729698422::1::::<><>::
+player.tscn::PackedScene::7503851795771256410::1729698341::0::1::::<><>::res://character_body_3d.gd<>uid://b0tpiakblr1l0::::res://Main Menu/Untitled design (6).png<>uid://bpnjitwut2j4v::::res://Game Interactions/Scenes/interact_ray.tscn
+README.md::TextFile::-1::1729180219::0::1::::<><>::
+::res://brackeys_platformer_assets/::1729180219
+LICENSE & CREDITS.txt::TextFile::-1::1729180219::0::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1729698334
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729180219::1729698422::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1729180219::1729698422::1::::<><>::
+::res://brackeys_platformer_assets/music/::1729698334
+time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729180219::1729698422::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1729698334
+coin.wav::AudioStreamWAV::8431615200529489740::1729180219::1729698422::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1729180219::1729698422::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1729180219::1729698422::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1729180219::1729698422::1::::<><>::
+power_up.wav::AudioStreamWAV::4558974050310742267::1729180219::1729698422::1::::<><>::
+tap.wav::AudioStreamWAV::8814320848351340103::1729180219::1729698422::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1729698334
+coin.png::CompressedTexture2D::6052392971937403295::1729180219::1729698422::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1729180219::1729698422::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1729180219::1729698422::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1729180219::1729698422::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1729180219::1729698422::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1729180219::1729698422::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1729180219::1729698422::1::::<><>::
+::res://Game Interactions/::1729698299
+::res://Game Interactions/Scenes/::1729698341
+interact_ray.tscn::PackedScene::3466652021217022619::1729698341::0::1::::<><>::res://Game Interactions/Scripts/interact_ray.gd
+::res://Game Interactions/Scripts/::1729698299
+Interactable.gd::GDScript::-1::1729698299::0::1::::Interactable<>CollisionObject3D<>::
+interact_ray.gd::GDScript::-1::1729698299::0::1::::<>RayCast3D<>::
+::res://Main Menu/::1729698334
+Untitled design (5).png::CompressedTexture2D::641227296590557974::1729642279::1729698422::1::::<><>::
+Untitled design (6).png::CompressedTexture2D::4181290008722660431::1729642279::1729698422::1::::<><>::
+::res://Main Menu/Assets/::1729642279
+::res://Main Menu/Assets/Button Textures/::1729698334
+Untitled design (5).png::CompressedTexture2D::6177547754315135572::1729642279::1729698422::1::::<><>::
