@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cavwwon3114kj"]
+[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
-[ext_resource type="PackedScene" uid="uid://c53p3a43frhi0" path="res://gun.tscn" id="2_nyafs"]
+[ext_resource type="PackedScene" uid="uid://dmgibg6akfybg" path="res://gun.tscn" id="2_nyafs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
 height = 1.88505

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwp1mbvvri8wi"]
+[gd_scene load_steps=6 format=3 uid="uid://dq2p1fwhc3q86"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_km87n"]
 
@@ -10,6 +10,17 @@ albedo_color = Color(5.58317e-06, 0, 0.981519, 1)
 emission_enabled = true
 emission = Color(0.313726, 0.282353, 1, 1)
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j02bm"]
+particle_flag_rotate_y = true
+angle_min = 1.07288e-05
+angle_max = 720.0
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = -2.23517e-05
+color = Color(0.243137, 0.564706, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8mny6"]
+size = Vector3(0.04, 0.04, 0.04)
+
 [node name="Bullet" type="Node3D"]
 script = ExtResource("1_km87n")
 
@@ -20,3 +31,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_66ckx")
 [node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, 0, 0.00929376, 0.487523)
 target_position = Vector3(0, 0, -0.5)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, 0, 0.00929376, 0.487523)
+process_material = SubResource("ParticleProcessMaterial_j02bm")
+draw_pass_1 = SubResource("BoxMesh_8mny6")

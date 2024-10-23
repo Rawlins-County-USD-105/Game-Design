@@ -1,5 +1,5 @@
-res://gun.tscn
 res://game.tscn
 res://player.tscn
+res://gun.tscn
 res://bullet.tscn
-res://character_body_3d.gd
+res://bullet.gd
