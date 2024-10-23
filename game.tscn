@@ -1,21 +1,20 @@
-[gd_scene load_steps=17 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
 
-[ext_resource type="Script" path="res://character_body_3d.gd" id="1_ny446"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
+[ext_resource type="Script" path="res://game.gd" id="1_x5k3m"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ipk5v"]
-sky_top_color = Color(0.45917, 0.441678, 0.462081, 1)
-sky_horizon_color = Color(0.657304, 0.654211, 0.661051, 1)
-ground_bottom_color = Color(0.170046, 0.175167, 0.182123, 1)
-ground_horizon_color = Color(0.657304, 0.654211, 0.661051, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
+sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
+sky_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
+ground_bottom_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+ground_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
 
-[sub_resource type="Sky" id="Sky_hp8cq"]
-sky_material = SubResource("ProceduralSkyMaterial_ipk5v")
+[sub_resource type="Sky" id="Sky_vlvqu"]
+sky_material = SubResource("ProceduralSkyMaterial_o6ovr")
 
-[sub_resource type="Environment" id="Environment_lqyxn"]
+[sub_resource type="Environment" id="Environment_3qk04"]
 background_mode = 2
-background_energy_multiplier = 0.0
-sky = SubResource("Sky_hp8cq")
-ambient_light_energy = 0.0
+sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 glow_enabled = true
 
@@ -27,15 +26,6 @@ albedo_color = Color(0.971516, 1.82897e-06, 0.553504, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_oposf"]
 material = SubResource("StandardMaterial3D_d2ejw")
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6vpst"]
-height = 1.88505
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14v3e"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_l7wrj"]
-material = SubResource("StandardMaterial3D_14v3e")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_djti3"]
 size = Vector3(23.7296, 0.824722, 23.6478)
@@ -60,13 +50,14 @@ size = Vector2(24, 24)
 [sub_resource type="Skin" id="Skin_uxm6s"]
 
 [node name="Game" type="Node3D"]
+script = ExtResource("1_x5k3m")
+player_scene = ExtResource("1_siqao")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_lqyxn")
+environment = SubResource("Environment_3qk04")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866024, -0.298583, -0.401063, 0, -0.802121, 0.597161, -0.500003, 0.517156, 0.694656, -7.50991, 8.67159, 13.0074)
-light_energy = 0.762
 shadow_enabled = true
 
 [node name="Box" type="RigidBody3D" parent="."]
@@ -79,27 +70,6 @@ shape = SubResource("BoxShape3D_ettfv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 1.32163, -1.79001)
 mesh = SubResource("BoxMesh_oposf")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99195, 0)
-script = ExtResource("1_ny446")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370119, 0)
-shape = SubResource("CapsuleShape3D_6vpst")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/CollisionShape3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07531, 0)
-mesh = SubResource("CapsuleMesh_l7wrj")
-
-[node name="neck" type="Node3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
-
-[node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
-
-[node name="Slide" type="RayCast3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.453896, 0)
-target_position = Vector3(-1, 0, 0)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
@@ -110,3 +80,28 @@ shape = SubResource("BoxShape3D_djti3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00670171)
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Host" type="Button" parent="CanvasLayer"]
+offset_left = 11.0
+offset_top = 9.0
+offset_right = 216.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 60
+text = "Host"
+
+[node name="Join" type="Button" parent="CanvasLayer"]
+offset_left = 12.0
+offset_top = 104.0
+offset_right = 217.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 60
+text = "Join"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("..")
+
+[connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]

@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://cfoa2lxmyh7rk"]
+
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_yi237"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rr7x2"]
+sky_top_color = Color(0.244948, 0.603773, 1, 1)
+sky_horizon_color = Color(0.561237, 0.772664, 0.975532, 1)
+ground_bottom_color = Color(0, 0.486882, 0.902129, 1)
+ground_horizon_color = Color(0.561237, 0.772664, 0.975532, 1)
+
+[sub_resource type="Sky" id="Sky_1qb1f"]
+sky_material = SubResource("ProceduralSkyMaterial_rr7x2")
+
+[sub_resource type="Environment" id="Environment_637i1"]
+background_mode = 2
+sky = SubResource("Sky_1qb1f")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_jmaqq"]
+frequency = 0.0314
+cellular_distance_function = 1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_capff"]
+noise = SubResource("FastNoiseLite_jmaqq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_167at"]
+albedo_color = Color(0, 0.403922, 0, 1)
+albedo_texture = SubResource("NoiseTexture2D_capff")
+uv1_triplanar = true
+uv1_triplanar_sharpness = 0.999999
+
+[sub_resource type="BoxMesh" id="BoxMesh_48g0s"]
+material = SubResource("StandardMaterial3D_167at")
+size = Vector3(200, 0.5, 200)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_m30cc"]
+data = PackedVector3Array(-100, 0.25, 100, 100, 0.25, 100, -100, -0.25, 100, 100, 0.25, 100, 100, -0.25, 100, -100, -0.25, 100, 100, 0.25, -100, -100, 0.25, -100, 100, -0.25, -100, -100, 0.25, -100, -100, -0.25, -100, 100, -0.25, -100, 100, 0.25, 100, 100, 0.25, -100, 100, -0.25, 100, 100, 0.25, -100, 100, -0.25, -100, 100, -0.25, 100, -100, 0.25, -100, -100, 0.25, 100, -100, -0.25, -100, -100, 0.25, 100, -100, -0.25, 100, -100, -0.25, -100, 100, 0.25, 100, -100, 0.25, 100, 100, 0.25, -100, -100, 0.25, 100, -100, 0.25, -100, 100, 0.25, -100, -100, -0.25, 100, 100, -0.25, 100, -100, -0.25, -100, 100, -0.25, 100, 100, -0.25, -100, -100, -0.25, -100)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_637i1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="player" parent="." instance=ExtResource("1_yi237")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2647, 6.65749, -40.4372)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_48g0s")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_m30cc")
