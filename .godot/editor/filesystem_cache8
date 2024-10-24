@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729786414
+::res://::1729799522
 character_body_3d.gd::GDScript::-1::1729786246::0::1::::<>CharacterBody3D<>::
 game.tscn::PackedScene::1162564723952069952::1729786414::0::1::::<><>::
 icon.svg::CompressedTexture2D::244492666970879408::1729090938::1729786315::1::::<><>::
@@ -27,8 +27,7 @@ platforms.png::CompressedTexture2D::6528024464598794627::1729090938::1729786315:
 slime_green.png::CompressedTexture2D::6107321564901303992::1729090938::1729786315::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1729090938::1729786315::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1729090938::1729786315::1::::<><>::
-::res://Main Menu/::1729786595
-main_menu.tscn::PackedScene::6149924103355590478::1729786414::0::1::::<><>::uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Main Menu/::1729786599
 ::res://Main Menu/Assets/::1729786246
 ::res://Main Menu/Assets/Backdrops/::1729786316
 ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1729786246::1729786315::1::::<><>::
@@ -40,6 +39,10 @@ Untitled design.png::CompressedTexture2D::3132993260369731465::1729786246::17297
 ::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1729786315
 LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1729786246::1729786315::1::::<><>::
 OFL.txt::TextFile::-1::1729786246::0::1::::<><>::
-::res://Main Menu/Input Map Page/::1729786574
-::res://Main Menu/Main tscn/::1729786595
+::res://Main Menu/Input Map Page/::1729787427
+Input_Settings.tscn::PackedScene::6133283631795022544::1729787427::0::1::::<><>::uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn
+::res://Main Menu/Input Map Page/Scenes/::1729787422
+input_button.tscn::PackedScene::7283866548932056814::1729787422::0::1::::<><>::
+::res://Main Menu/Main tscn/::1729787426
+main_menu.tscn::PackedScene::6149924103355590478::1729787426::0::1::::<><>::uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
 ::res://Main Menu/Scripts/::1729179103

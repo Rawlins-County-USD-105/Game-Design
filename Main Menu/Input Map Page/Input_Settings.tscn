@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctnajx3xbjb5y"]
+[gd_scene load_steps=3 format=3 uid="uid://ctnajx3xbjb5y"]
 
+[ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
 
 [node name="InputSettings" type="Control"]
@@ -9,18 +10,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_a5yhr")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -340.0
-offset_top = -253.0
-offset_right = 340.0
-offset_bottom = 253.0
+anchors_preset = -1
+anchor_left = 0.205
+anchor_top = 0.09
+anchor_right = 0.784
+anchor_bottom = 0.89
+offset_left = -180.16
+offset_top = -0.320004
+offset_right = 199.832
+offset_bottom = 0.279968
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -42,5 +44,36 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Spacer" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="Spacer2" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="Spacer3" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="Spacer4" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="Spacer5" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
 [node name="Input_button" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List" instance=ExtResource("1_yb50g")]
+layout_mode = 2
+
+[node name="Input_button2" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List" instance=ExtResource("1_yb50g")]
+layout_mode = 2
+
+[node name="Input_button3" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List" instance=ExtResource("1_yb50g")]
 layout_mode = 2
