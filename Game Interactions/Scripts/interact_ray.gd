@@ -11,8 +11,8 @@ func _physics_process(_delta):
 		var collider = get_collider()
 		
 		if collider is Interactable:
-			prompt.text = collider.get_prompt()
+			prompt.text = collider.prompt_message
 			
-			if Input.is_action_just_pressed(collider.prompt_input):
+			if Input.is_action_just_pressed("Interact"):
 				collider.Interact(owner)
 				animation_player.play("Click")
