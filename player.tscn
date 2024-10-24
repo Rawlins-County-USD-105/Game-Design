@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=7 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="Texture2D" uid="uid://b0tpiakblr1l0" path="res://Main Menu/Untitled design (6).png" id="2_th47n"]
@@ -11,6 +11,10 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
 material = SubResource("StandardMaterial3D_14v3e")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
+radius = 0.575592
+height = 1.24402
 
 [node name="player" type="Node3D"]
 
@@ -44,3 +48,11 @@ offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
+
+[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.0459751, 0)
+shape = SubResource("CapsuleShape3D_0l4ar")
+disabled = true
+
+[node name="standing_collison_shape#RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 2, 0)
