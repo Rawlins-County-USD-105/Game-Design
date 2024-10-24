@@ -1,9 +1,9 @@
+VBoxContainer
 HBoxContainer
 Control
 Label
 MarginContainer
 Button
-VBoxContainer
 ScrollContainer
 PanelContainer
 Node
