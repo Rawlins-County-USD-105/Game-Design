@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmgibg6akfybg"]
+[gd_scene load_steps=6 format=3 uid="uid://dmgibg6akfybg"]
 
 [ext_resource type="ArrayMesh" uid="uid://q1jbfkwrln44" path="res://Watergun/model.obj" id="1_85ehf"]
+[ext_resource type="PackedScene" uid="uid://dq2p1fwhc3q86" path="res://bullet.tscn" id="2_opi3n"]
 
 [sub_resource type="Animation" id="Animation_8dyja"]
 length = 0.001
@@ -56,3 +57,5 @@ autoplay = "Shoot"
 [node name="RayCast3D" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.272414)
 target_position = Vector3(0, 0, -1)
+
+[node name="Bullet" parent="." instance=ExtResource("2_opi3n")]
