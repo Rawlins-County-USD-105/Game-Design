@@ -8,6 +8,7 @@ const JUMP_VELOCITY = 4.5
 var bullet = load("res://Scenes/bullet.tscn")
 var instance
 
+
 @onready var neck: Node3D = $neck
 @onready var camera: Camera3D = $neck/Camera
 @onready var gun_anim = $neck/Camera/Gun/Model/AnimationPlayer
@@ -86,7 +87,7 @@ func _headbob(time) -> Vector3:
 
 	#Shooting
 	if Input.is_action_pressed("Shoot"):
-		if !gun_anim.is_pressed():
+		if gun_anim.is_pressed():
 			gun_anim.play("Shoot")
 			instance = bullet.instantiate
 			instance.position = gun_barrel.global_position
