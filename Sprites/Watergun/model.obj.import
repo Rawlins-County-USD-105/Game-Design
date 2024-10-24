@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvx6o4o0ds5wg"
+path="res://.godot/imported/model.obj-0f28d6286c6c6bea577b1e890f218ef8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/model.obj-0f28d6286c6c6bea577b1e890f218ef8.mesh"]
+
+source_file="res://Sprites/Watergun/model.obj"
+dest_files=["res://.godot/imported/model.obj-0f28d6286c6c6bea577b1e890f218ef8.mesh", "res://.godot/imported/model.obj-0f28d6286c6c6bea577b1e890f218ef8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
