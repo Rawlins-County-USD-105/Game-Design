@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctnajx3xbjb5y"]
+[gd_scene load_steps=4 format=3 uid="uid://ctnajx3xbjb5y"]
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
+[ext_resource type="Texture2D" uid="uid://dngw8amaxgeih" path="res://Main Menu/Assets/Backdrops/Untitled design (3).png" id="3_bp83h"]
 
 [node name="InputSettings" type="Control"]
 layout_mode = 3
@@ -77,3 +78,18 @@ layout_mode = 2
 
 [node name="Input_button3" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List" instance=ExtResource("1_yb50g")]
 layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+light_mask = 512
+visibility_layer = 512
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_bp83h")
+
+[node name="Add background picture to texturerect" type="Node" parent="TextureRect"]

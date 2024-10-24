@@ -26,6 +26,7 @@ func _create_action_list():
 		var action_label = button.find_child("LabelAction")
 		var input_label = button.find_child("LabelInput")
 		
+		
 		action_label.text = action
 		
 		var events = InputMap.action_get_events(action)
