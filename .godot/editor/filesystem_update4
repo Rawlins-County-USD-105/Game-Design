@@ -1,6 +1,5 @@
+res://Main Menu/main_menu.tscn
 res://game.tscn
-res://Game Interactions/Scenes/Colliding Ray.tscn
-res://Game Interactions/Scenes/Interactable.tscn
-res://Game Interactions/Scenes/interact_ray.tscn
-res://Game Interactions/Scripts/Interactable.gd
-res://Game Interactions/Scripts/interact_ray.gd
+res://Main Menu/Input Map Page/Scenes/input_button.tscn
+res://Main Menu/Main tscn/main_menu.tscn
+res://Main Menu/Input Map Page/Input_Settings.tscn

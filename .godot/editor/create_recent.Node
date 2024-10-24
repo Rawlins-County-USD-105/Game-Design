@@ -1,8 +1,10 @@
+Control
+Label
+HBoxContainer
+MarginContainer
 Button
 VBoxContainer
-HBoxContainer
+ScrollContainer
+PanelContainer
 Node
-Label
-Control
-MarginContainer
 TextureRect
