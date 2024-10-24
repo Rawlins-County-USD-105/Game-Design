@@ -51,7 +51,6 @@ size = Vector2(24, 24)
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_x5k3m")
-player_scene = ExtResource("1_siqao")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3qk04")
@@ -81,27 +80,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00670171)
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Host" type="Button" parent="CanvasLayer"]
-offset_left = 11.0
-offset_top = 9.0
-offset_right = 216.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 60
-text = "Host"
-
-[node name="Join" type="Button" parent="CanvasLayer"]
-offset_left = 12.0
-offset_top = 104.0
-offset_right = 217.0
-offset_bottom = 178.0
-theme_override_font_sizes/font_size = 60
-text = "Join"
-
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://player.tscn")
-spawn_path = NodePath("..")
-
-[connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
-[connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
+[node name="player" parent="." instance=ExtResource("1_siqao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 0.030655, 1.95585)

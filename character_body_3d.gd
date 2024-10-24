@@ -26,14 +26,14 @@ var lerp_speed = 30
 var WALK_SPEED = 10
 
 
-func _enter_tree() -> void:
-	$".".set_multiplayer_authority($"..".name.to_int())
+#func _enter_tree() -> void:
+	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-func _ready() -> void:
-	camera_3d.current = is_multiplayer_authority()	
+#func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()	
 
 func _unhandled_input(event: InputEvent) -> void:
-	if is_multiplayer_authority():
+	#if is_multiplayer_authority():
 		if event is InputEventMouseButton:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		elif event.is_action_pressed("ui_cancel"):
@@ -44,7 +44,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
-	if is_multiplayer_authority():
+	#if is_multiplayer_authority():
 		if not is_on_floor():
 			velocity += get_gravity() * delta
 		# Handle jump.
