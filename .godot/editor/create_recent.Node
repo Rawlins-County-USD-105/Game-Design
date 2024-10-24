@@ -1,6 +1,7 @@
-MeshInstance3D
-StaticBody3D
+AnimationPlayer
 Label
 RayCast3D
+MeshInstance3D
+StaticBody3D
 TextureRect
 Container

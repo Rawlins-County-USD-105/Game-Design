@@ -8,5 +8,4 @@ func _physics_process(_delta):
 	prompt.text = ""
 	if is_colliding():
 		var collider = get_collider()
-		
-		print("Detecting Item...")
+		prompt.text = "detecting"

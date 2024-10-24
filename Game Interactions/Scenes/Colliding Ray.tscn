@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://vbyy0ru3k1kj"]
+
+[ext_resource type="Script" path="res://Game Interactions/interact_ray.gd" id="1_7fg1i"]
+
+[node name="InteractRay2" type="RayCast3D"]
+target_position = Vector3(0, 0, -2)
+script = ExtResource("1_7fg1i")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.817
+anchor_right = 1.0
+anchor_bottom = 0.105
+offset_left = 8.81598
+offset_top = 9.0
+offset_right = -7.0
+offset_bottom = -14.04
+grow_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Interacting..."
+horizontal_alignment = 1
+vertical_alignment = 1
