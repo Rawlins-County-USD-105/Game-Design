@@ -6,11 +6,11 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
 height = 1.88505
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14v3e"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jknei"]
 albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
-material = SubResource("StandardMaterial3D_14v3e")
+material = SubResource("StandardMaterial3D_jknei")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.575592
@@ -56,14 +56,16 @@ offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
+metadata/_edit_use_anchors_ = true
 
-[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.0459751, 0)
+[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, -0.945975, 0)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
-[node name="standing_collison_shape#RayCast3D" type="RayCast3D" parent="."]
+[node name="standing_collison_shape#RayCast3D" type="RayCast3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99195, 0)
 target_position = Vector3(0, 2, 0)
 
-[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="CharacterBody3D"]
 replication_config = SubResource("SceneReplicationConfig_27ems")

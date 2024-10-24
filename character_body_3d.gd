@@ -27,10 +27,10 @@ var WALK_SPEED = 10
 
 
 func _enter_tree() -> void:
-	$".".set_multiplayer_authority($"..".name.to_int())
+	$"..".set_multiplayer_authority(str($"..".name).to_int())
 	
 func _ready() -> void:
-	camera_3d.current = is_multiplayer_authority()	
+	camera_3d.current = is_multiplayer_authority()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if is_multiplayer_authority():
