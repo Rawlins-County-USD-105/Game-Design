@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
+[ext_resource type="PackedScene" uid="uid://cv3vaqfr7pos7" path="res://Game Interactions/Scenes/Interactable.tscn" id="2_sai44"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -80,3 +81,15 @@ skin = SubResource("Skin_uxm6s")
 
 [node name="player" parent="." instance=ExtResource("1_siqao")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927)
+
+[node name="Button1" parent="." instance=ExtResource("2_sai44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56151, 0.0306549, 3.97534)
+prompt_message = "Press [E]"
+
+[node name="Button2" parent="." instance=ExtResource("2_sai44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.945834, 0.0306549, 4.2491)
+prompt_message = "Press [E]"
+
+[node name="Button3" parent="." instance=ExtResource("2_sai44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.87033, 0.0306549, 4.2962)
+prompt_message = "Press [E]"
