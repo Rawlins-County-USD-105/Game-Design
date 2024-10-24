@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0tpiakblr1l0" path="res://Main Menu/Untitled design (6).png" id="2_th47n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
+radius = 0.499462
 height = 1.88505
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14v3e"]
@@ -13,8 +14,8 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_14v3e")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
-radius = 0.575592
-height = 1.24402
+radius = 0.507185
+height = 1.22315
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_27ems"]
 properties/0/path = NodePath("standing_collison_shape:position")
@@ -30,11 +31,11 @@ properties/1/replication_mode = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99195, 0)
 script = ExtResource("1_1qajl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370119, 0)
+[node name="STANDING" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.308433, 0)
 shape = SubResource("CapsuleShape3D_x68qc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/CollisionShape3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/STANDING"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07531, 0)
 mesh = SubResource("CapsuleMesh_dgk81")
 
@@ -57,12 +58,13 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
 
-[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.0459751, 0)
+[node name="CROUCHING" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(0.999556, 0.00678642, 0.0290033, -0.00678928, 0.999977, -5.68463e-13, -0.0290026, -0.000196911, 0.999579, 0.0349153, -0.0406575, 0.00227356)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
 [node name="standing_collison_shape#RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.996976, -0.0777109, 0, 0.0777109, 0.996976, -0.0847116, 0.985278, 0)
 target_position = Vector3(0, 2, 0)
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
