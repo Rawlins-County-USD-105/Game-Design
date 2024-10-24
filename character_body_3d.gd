@@ -4,14 +4,12 @@ extends CharacterBody3D
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
-
-@onready var standing: CollisionShape3D = $STANDING
-@onready var crouching: CollisionShape3D = $CROUCHING
-
+@onready var standing_collison_shape = $CollisionShape3D
+@onready var crouching_collision_shape = $CollisionShape3D/MeshInstance3D
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
-@export var sprint = 2
+@export var sprint = 4
 @export var jump_sprint = 15
 
 var current_speed = 5.0
@@ -28,14 +26,14 @@ var lerp_speed = 30
 var WALK_SPEED = 10
 
 
-func _enter_tree() -> void:
-	$".".set_multiplayer_authority($"..".name.to_int())
+#func _enter_tree() -> void:
+	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-func _ready() -> void:
-	camera_3d.current = is_multiplayer_authority()	
+#func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()	
 
 func _unhandled_input(event: InputEvent) -> void:
-	if is_multiplayer_authority():
+	#if is_multiplayer_authority():
 		if event is InputEventMouseButton:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		elif event.is_action_pressed("ui_cancel"):
@@ -46,7 +44,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
-	if is_multiplayer_authority():
+	#if is_multiplayer_authority():
 		if not is_on_floor():
 			velocity += get_gravity() * delta
 		# Handle jump.
@@ -79,16 +77,17 @@ func _physics_process(delta: float) -> void:
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
 
 
+		
+		if Input.is_action_pressed("crouch"):
+			current_speed = crouching_speed
+			neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
+			standing_collison_shape.set_deferred("disable",true)
+			crouching_collision_shape.set_deferred("disable",false)
 		else:
-			if Input.is_action_pressed("crouch"):
-				current_speed = crouching_speed
-				neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
-				standing.set_deferred("disable",true)
-				crouching.set_deferred("disable",false)
-			else:
-				standing.set_deferred("disable", false)
-				crouching.set_deferred("disable",true)
-				neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
+			standing_collison_shape.set_deferred("disable", false)
+			crouching_collision_shape.set_deferred("disable",true)
+			neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
+				
 		velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
 
