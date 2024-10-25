@@ -1,25 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729809418
-character_body_3d.gd::GDScript::-1::1729809364::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1729809364::0::1::::<><>::
+::res://::1729812349
+character_body_3d.gd::GDScript::-1::1729810257::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1729810257::0::1::::<><>::
 icon.svg::CompressedTexture2D::244492666970879408::1729180219::1729809420::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1729809364::0::1::::<><>::res://character_body_3d.gd
+player.tscn::PackedScene::7503851795771256410::1729810257::0::1::::<><>::res://character_body_3d.gd
 README.md::TextFile::-1::1729180219::0::1::::<><>::
 ::res://brackeys_platformer_assets/::1729180219
 LICENSE & CREDITS.txt::TextFile::-1::1729180219::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1729698422
+::res://brackeys_platformer_assets/fonts/::1729809420
 PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729180219::1729809420::1::::<><>::
 PixelOperator8.ttf::FontFile::2445196971112042332::1729180219::1729809420::1::::<><>::
-::res://brackeys_platformer_assets/music/::1729698422
+::res://brackeys_platformer_assets/music/::1729809420
 time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729180219::1729809420::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1729698422
+::res://brackeys_platformer_assets/sounds/::1729809423
 coin.wav::AudioStreamWAV::8431615200529489740::1729180219::1729809423::1::::<><>::
 explosion.wav::AudioStreamWAV::6405718111110113325::1729180219::1729809423::1::::<><>::
 hurt.wav::AudioStreamWAV::2424972067559149547::1729180219::1729809423::1::::<><>::
 jump.wav::AudioStreamWAV::5318526597446387881::1729180219::1729809423::1::::<><>::
 power_up.wav::AudioStreamWAV::4558974050310742267::1729180219::1729809423::1::::<><>::
 tap.wav::AudioStreamWAV::8814320848351340103::1729180219::1729809423::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1729698422
+::res://brackeys_platformer_assets/sprites/::1729809421
 coin.png::CompressedTexture2D::6052392971937403295::1729180219::1729809421::1::::<><>::
 fruit.png::CompressedTexture2D::7340303301470814367::1729180219::1729809421::1::::<><>::
 knight.png::CompressedTexture2D::5477910706170960278::1729180219::1729809421::1::::<><>::
@@ -27,23 +27,23 @@ platforms.png::CompressedTexture2D::6528024464598794627::1729180219::1729809420:
 slime_green.png::CompressedTexture2D::6107321564901303992::1729180219::1729809420::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1729180219::1729809420::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1729180219::1729809420::1::::<><>::
-::res://Main Menu/::1729809364
-::res://Main Menu/Assets/::1729809364
-::res://Main Menu/Assets/Backdrops/::1729809364
-ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1729809364::1729809420::1::::<><>::
-Untitled design (1).png::CompressedTexture2D::510534257622831008::1729809364::1729809421::1::::<><>::
-Untitled design (2).png::CompressedTexture2D::1003301072353283701::1729809364::1729809420::1::::<><>::
-Untitled design (3).png::CompressedTexture2D::8085498008506436039::1729809364::1729809420::1::::<><>::
-Untitled design.png::CompressedTexture2D::3132993260369731465::1729809364::1729809423::1::::<><>::
-::res://Main Menu/Assets/Fonts/::1729809364
-::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1729809364
-LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1729809364::1729809420::1::::<><>::
-OFL.txt::TextFile::-1::1729809364::0::1::::<><>::
-::res://Main Menu/Input Map Page/::1729809364
-input_settings.gd::GDScript::-1::1729809364::0::1::::<>Control<>::
-Input_Settings.tscn::PackedScene::6133283631795022544::1729809364::0::1::::<><>::res://Main Menu/Input Map Page/input_settings.gd<>uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
-::res://Main Menu/Input Map Page/Scenes/::1729809364
-input_button.tscn::PackedScene::7283866548932056814::1729809364::0::1::::<><>::
-::res://Main Menu/Main tscn/::1729809364
-main_menu.gd::GDScript::-1::1729809364::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::6149924103355590478::1729809364::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Main Menu/::1729810257
+::res://Main Menu/Assets/::1729810257
+::res://Main Menu/Assets/Backdrops/::1729812316
+ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1729810257::1729812313::1::::<><>::
+Untitled design (1).png::CompressedTexture2D::510534257622831008::1729810257::1729812314::1::::<><>::
+Untitled design (2).png::CompressedTexture2D::1003301072353283701::1729810257::1729812313::1::::<><>::
+Untitled design (3).png::CompressedTexture2D::8085498008506436039::1729810257::1729812313::1::::<><>::
+Untitled design.png::CompressedTexture2D::3132993260369731465::1729810257::1729812316::1::::<><>::
+::res://Main Menu/Assets/Fonts/::1729810257
+::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1729812313
+LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1729810257::1729812313::1::::<><>::
+OFL.txt::TextFile::-1::1729810257::0::1::::<><>::
+::res://Main Menu/Input Map Page/::1729810257
+input_settings.gd::GDScript::-1::1729810257::0::1::::<>Control<>::
+Input_Settings.tscn::PackedScene::6133283631795022544::1729810257::0::1::::<><>::res://Main Menu/Input Map Page/input_settings.gd<>uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Main Menu/Input Map Page/Scenes/::1729810257
+input_button.tscn::PackedScene::7283866548932056814::1729810257::0::1::::<><>::
+::res://Main Menu/Main tscn/::1729810257
+main_menu.gd::GDScript::-1::1729810257::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::6149924103355590478::1729810257::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
