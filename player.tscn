@@ -49,8 +49,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
 
-[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.0459751, 0)
+[node name="standing_collison_shape#crouching_collision_shape" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, -0.945975, 0)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 

@@ -9,7 +9,7 @@ extends CharacterBody3D
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
-@export var sprint = 2
+@export var sprint = 4
 @export var jump_sprint = 15
 
 var current_speed = 5.0
@@ -77,16 +77,17 @@ func _physics_process(delta: float) -> void:
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
 
 
+		
+		if Input.is_action_pressed("crouch"):
+			current_speed = crouching_speed
+			neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
+			standing_collison_shape.set_deferred("disable",true)
+			crouching_collision_shape.set_deferred("disable",false)
 		else:
-			if Input.is_action_pressed("crouch"):
-				current_speed = crouching_speed
-				neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
-				standing_collison_shape.set_deferred("disable",true)
-				crouching_collision_shape.set_deferred("disable",false)
-			else:
-				standing_collison_shape.set_deferred("disable", false)
-				crouching_collision_shape.set_deferred("disable",true)
-				neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
+			standing_collison_shape.set_deferred("disable", false)
+			crouching_collision_shape.set_deferred("disable",true)
+			neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
+				
 		velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
 
