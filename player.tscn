@@ -17,10 +17,10 @@ radius = 0.575592
 height = 1.24402
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_27ems"]
-properties/0/path = NodePath("standing_collison_shape:position")
+properties/0/path = NodePath("CharacterBody3D:position")
 properties/0/spawn = true
 properties/0/replication_mode = 1
-properties/1/path = NodePath("standing_collison_shape:rotation")
+properties/1/path = NodePath("CharacterBody3D:rotation")
 properties/1/spawn = true
 properties/1/replication_mode = 1
 
@@ -67,5 +67,5 @@ disabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99195, 0)
 target_position = Vector3(0, 2, 0)
 
-[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="CharacterBody3D"]
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_27ems")
