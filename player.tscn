@@ -47,6 +47,16 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_th47n")
 
+[node name="Button" type="Button" parent="CharacterBody3D/neck/Camera/TextureRect"]
+layout_mode = 0
+offset_left = -417.0
+offset_top = -174.0
+offset_right = -301.0
+offset_bottom = -140.0
+text = "Menu"
+
 [node name="InteractRay" parent="CharacterBody3D/neck/Camera" instance=ExtResource("3_esf62")]
 
 [node name="InteractRay2" parent="CharacterBody3D/neck/Camera" instance=ExtResource("4_001us")]
+
+[connection signal="pressed" from="CharacterBody3D/neck/Camera/TextureRect/Button" to="CharacterBody3D" method="_on_button_pressed"]

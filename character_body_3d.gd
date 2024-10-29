@@ -99,3 +99,7 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")

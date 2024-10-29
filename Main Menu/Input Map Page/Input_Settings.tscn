@@ -92,3 +92,13 @@ texture = ExtResource("3_bp83h")
 metadata/_edit_use_anchors_ = true
 
 [node name="Add background picture to texturerect" type="Node" parent="TextureRect"]
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 836.0
+offset_top = 61.0
+offset_right = 866.0
+offset_bottom = 92.0
+text = "x"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
