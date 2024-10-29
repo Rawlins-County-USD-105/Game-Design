@@ -85,9 +85,9 @@ func _headbob(time) -> Vector3:
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
 
-	#Shooting
+#Shooting
 	if Input.is_action_pressed("Shoot"):
-		if gun_anim.is_pressed():
+		if !gun_anim.is_pressed():
 			gun_anim.play("Shoot")
 			instance = bullet.instantiate
 			instance.position = gun_barrel.global_position

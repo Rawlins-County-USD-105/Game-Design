@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf4biwai2l8wl"]
+
+[ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="1_ln7vb"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Model" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ln7vb")
