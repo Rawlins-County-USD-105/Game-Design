@@ -7,7 +7,7 @@ extends CharacterBody3D
 @onready var standing_collison_shape = $CollisionShape3D
 @onready var crouching_collision_shape = $CollisionShape3D/MeshInstance3D
 
-@export_category("Movement and shiz")
+@export_category("Movement")
 @export var mousesense = 1
 @export var sprint = 2
 @export var jump_sprint = 15
@@ -81,8 +81,8 @@ func _physics_process(delta: float) -> void:
 			if Input.is_action_pressed("crouch"):
 				current_speed = crouching_speed
 				neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
-				#standing_collison_shape.set_deferred("disable",true)
-				#crouching_collision_shape.set_deferred("disable",false)
+				standing_collison_shape.set_deferred("disable",true)
+				crouching_collision_shape.set_deferred("disable",false)
 			else:
 				standing_collison_shape.set_deferred("disable", false)
 				crouching_collision_shape.set_deferred("disable",true)
