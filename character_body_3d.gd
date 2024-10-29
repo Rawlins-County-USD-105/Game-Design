@@ -4,8 +4,8 @@ extends CharacterBody3D
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
-#@onready var standing_collison_shape = $CollisionShape3D
-#@onready var crouching_collision_shape = $CollisionShape3D/MeshInstance3D
+@onready var standing_collison_shape = $CollisionShape3D
+@onready var crouching_collision_shape = $CollisionShape3D/MeshInstance3D
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -84,8 +84,8 @@ func _physics_process(delta: float) -> void:
 				#standing_collison_shape.set_deferred("disable",true)
 				#crouching_collision_shape.set_deferred("disable",false)
 			else:
-				#standing_collison_shape.set_deferred("disable", false)
-				#crouching_collision_shape.set_deferred("disable",true)
+				standing_collison_shape.set_deferred("disable", false)
+				crouching_collision_shape.set_deferred("disable",true)
 				neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
 		velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
