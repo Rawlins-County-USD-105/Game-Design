@@ -15,7 +15,8 @@ var input_actions = {
 	"back": "Move Backward",
 	"sprint": "Sprint",
 	"jump": "Jump",
-	"crouch": "crouch"
+	"crouch": "crouch",
+
 }
 
 func _ready():

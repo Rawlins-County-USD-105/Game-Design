@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://dngw8amaxgeih" path="res://Main Menu/Assets/Backdrops/Untitled design (3).png" id="3_bp83h"]
+[ext_resource type="Texture2D" uid="uid://brv6nkecdjexc" path="res://Main Menu/Assets/Backdrops/Untitled design (8).png" id="3_ay5r4"]
 
 [node name="InputSettings" type="Control"]
 layout_mode = 3
@@ -88,10 +88,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("3_bp83h")
 metadata/_edit_use_anchors_ = true
 
 [node name="Add background picture to texturerect" type="Node" parent="TextureRect"]
+
+[node name="UntitledDesign(8)" type="Sprite2D" parent="TextureRect"]
+position = Vector2(575, 332)
+scale = Vector2(0.205333, 0.215111)
+texture = ExtResource("3_ay5r4")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0

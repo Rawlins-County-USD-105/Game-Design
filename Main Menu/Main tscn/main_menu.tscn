@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://dngw8amaxgeih" path="res://Main Menu/Assets/Backdrops/Untitled design (3).png" id="1_tiif6"]
+[ext_resource type="Texture2D" uid="uid://brv6nkecdjexc" path="res://Main Menu/Assets/Backdrops/Untitled design (8).png" id="2_a55sf"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
@@ -25,9 +25,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_tiif6")
 
 [node name="Add background picture to texturerect" type="Node" parent="TextureRect"]
+
+[node name="UntitledDesign(8)" type="Sprite2D" parent="TextureRect"]
+position = Vector2(575, 332)
+scale = Vector2(0.205333, 0.215111)
+texture = ExtResource("2_a55sf")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
