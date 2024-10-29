@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730213982
-bullet.gd::GDScript::-1::1730128853::0::1::::<>Node3D<>::
-bullet.tscn::PackedScene::8338979231104748193::1730213845::0::1::::<><>::res://bullet.gd
-character_body_3d.gd::GDScript::-1::1730129698::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1730213868::0::1::::<><>::
-gun.tscn::PackedScene::-1::1730129621::0::1::::<><>::
-icon.svg::CompressedTexture2D::244492666970879408::1730128456::1730128886::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1730213877::0::1::::<><>::res://character_body_3d.gd
+::res://::1730214455
+bullet.gd::GDScript::-1::1730214448::0::1::::<>Node3D<>::
+bullet.tscn::PackedScene::8338979231104748193::1730214448::0::1::::<><>::res://bullet.gd
+character_body_3d.gd::GDScript::-1::1730214448::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1730214448::0::1::::<><>::
+icon.svg::CompressedTexture2D::244492666970879408::1730128456::1730214456::1::::<><>::
+player.tscn::PackedScene::7503851795771256410::1730214448::0::1::::<><>::res://character_body_3d.gd<>uid://bf4biwai2l8wl::::res://WaterGun.tscn
 README.md::TextFile::-1::1730128456::0::1::::<><>::
+WaterGun.tscn::PackedScene::2797308016008740995::1730214448::0::1::::<><>::uid://b8kpqhm7uvwue::::res://Watergun/model.obj
 ::res://brackeys_platformer_assets/::1730128456
 LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
 ::res://brackeys_platformer_assets/fonts/::1730128886
@@ -30,9 +30,9 @@ platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1730128886:
 slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1730128886::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1730128886::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1730128886::1::::<><>::
-::res://enemy/::1730129621
-::res://Sprites/::1730129621
-::res://Sprites/Watergun/::1730129626
-model.obj::Mesh::6296196545963739466::1730129621::1730129626::1::::<><>::
-::res://Watergun/::1730213691
-model.obj::Mesh::4724236016565358572::1730213691::1730213691::1::::<><>::
+::res://enemy/::1730214448
+::res://Sprites/::1730214448
+::res://Sprites/Watergun/::1730214448
+model.obj::Mesh::6296196545963739466::1730214448::1730214456::1::::<><>::
+::res://Watergun/::1730214448
+model.obj::Mesh::4724236016565358572::1730214448::1730214456::1::::<><>::
