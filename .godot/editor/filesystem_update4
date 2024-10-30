@@ -1,1 +1,4 @@
-res://enemies.tscn
+res://enemy/node_3d.tscn
+res://enemy/node.tscn
+res://enemy/zombie.tscn
+res://game.tscn

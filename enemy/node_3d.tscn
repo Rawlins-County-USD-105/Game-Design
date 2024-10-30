@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0d5mtis64nsy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k1jxd"]
+
+[node name="Zombie" type="Node3D"]
+
+[node name="Armament" type="Node3D" parent="."]
+
+[node name="Skeleton3D" type="Skeleton3D" parent="Armament"]
+modifier_callback_mode_process = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Armament/Skeleton3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Armament/Skeleton3D/MeshInstance3D"]
+
+[node name="PhysicalBoneSimulator3D" type="PhysicalBoneSimulator3D" parent="Armament/Skeleton3D"]
+
+[node name="PhysicalBone3D" type="PhysicalBone3D" parent="Armament/Skeleton3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Armament/Skeleton3D/PhysicalBone3D"]
+shape = SubResource("CapsuleShape3D_k1jxd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
