@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730216751
-bullet.gd::GDScript::-1::1730214448::0::1::::<>Node3D<>::
-bullet.tscn::PackedScene::8338979231104748193::1730216276::0::1::::<><>::res://bullet.gd
-character_body_3d.gd::GDScript::-1::1730216221::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1730216276::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>uid://dq2p1fwhc3q86::::res://bullet.tscn
-icon.svg::CompressedTexture2D::244492666970879408::1730128456::1730214456::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1730216276::0::1::::<><>::res://character_body_3d.gd<>uid://bf4biwai2l8wl::::res://WaterGun.tscn
+::res://::1730299960
+bullet.gd::GDScript::-1::1730299951::0::1::::<>Node3D<>::
+bullet.tscn::PackedScene::8338979231104748193::1730299951::0::1::::<><>::res://bullet.gd
+character_body_3d.gd::GDScript::-1::1730299951::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1730299951::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
+icon.svg::CompressedTexture2D::244492666970879408::1730128456::1730299961::1::::<><>::
+player.tscn::PackedScene::7503851795771256410::1730299951::0::1::::<><>::res://character_body_3d.gd<>uid://bf4biwai2l8wl::::res://WaterGun.tscn
 README.md::TextFile::-1::1730128456::0::1::::<><>::
-WaterGun.tscn::PackedScene::2797308016008740995::1730216276::0::1::::<><>::uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+WaterGun.tscn::PackedScene::2797308016008740995::1730299951::0::1::::<><>::uid://b8kpqhm7uvwue::::res://Watergun/model.obj<>uid://dq2p1fwhc3q86::::res://bullet.tscn
 ::res://brackeys_platformer_assets/::1730128456
 LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
 ::res://brackeys_platformer_assets/fonts/::1730128886
@@ -30,9 +30,9 @@ platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1730128886:
 slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1730128886::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1730128886::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1730128886::1::::<><>::
-::res://enemy/::1730214448
-::res://Sprites/::1730214448
-::res://Sprites/Watergun/::1730214456
-model.obj::Mesh::6296196545963739466::1730214448::1730214456::1::::<><>::
-::res://Watergun/::1730214456
-model.obj::Mesh::4724236016565358572::1730214448::1730214456::1::::<><>::
+::res://enemy/::1730299951
+::res://Sprites/::1730299951
+::res://Sprites/Watergun/::1730299951
+model.obj::Mesh::6296196545963739466::1730299951::1730299961::1::::<><>::
+::res://Watergun/::1730299951
+model.obj::Mesh::4724236016565358572::1730299951::1730299961::1::::<><>::

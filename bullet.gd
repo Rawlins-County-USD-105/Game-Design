@@ -7,13 +7,14 @@ const SPEED = 5.0
 @onready var ray = $MeshInstance3D/RayCast3D
 @onready var particles = $GPUParticles3D
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(delta):
 	position += transform.basis * Vector3(0, 0, -SPEED) * delta
 	if ray.is_colliding():
 		mesh.visible = false
