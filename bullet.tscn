@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq2p1fwhc3q86"]
+[gd_scene load_steps=7 format=3 uid="uid://dq2p1fwhc3q86"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_km87n"]
 
@@ -25,7 +25,11 @@ collision_mode = 1
 collision_friction = 0.0
 collision_bounce = 1.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8naif"]
+albedo_color = Color(0, 0.505882, 1, 1)
+
 [sub_resource type="SphereMesh" id="SphereMesh_ue4hx"]
+material = SubResource("StandardMaterial3D_8naif")
 radius = 0.02
 height = 0.021
 
