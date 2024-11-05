@@ -1,56 +1,39 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730736055
-bullet.gd::GDScript::-1::1730735965::0::1::::<>Node3D<>::
-bullet.tscn::PackedScene::8338979231104748193::1730735969::0::1::::<><>::res://bullet.gd
-character_body_3d.gd::GDScript::-1::1730735965::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::1162564723952069952::1730735965::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
-icon.svg::CompressedTexture2D::244492666970879408::1729090938::1730735982::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1730735965::0::1::::<><>::res://character_body_3d.gd<>uid://bf4biwai2l8wl::::res://WaterGun.tscn
-README.md::TextFile::-1::1729091404::0::1::::<><>::
-Untitled design (6).png::CompressedTexture2D::6328303147770172488::1730736055::1730736055::1::::<><>::
-WaterGun.tscn::PackedScene::2797308016008740995::1730735965::0::1::::<><>::uid://b8kpqhm7uvwue::::res://Watergun/model.obj<>uid://dq2p1fwhc3q86::::res://bullet.tscn
-::res://brackeys_platformer_assets/::1729090938
-LICENSE & CREDITS.txt::TextFile::-1::1729090938::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1730735982
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729090938::1730735982::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1729090938::1730735982::1::::<><>::
-::res://brackeys_platformer_assets/music/::1730735982
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729090938::1730735982::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1730735982
-coin.wav::AudioStreamWAV::8431615200529489740::1729090938::1730735982::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1729090938::1730735982::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1729090938::1730735982::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1729090938::1730735982::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1729090938::1730735982::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1729090938::1730735982::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1730735982
-coin.png::CompressedTexture2D::6052392971937403295::1729090938::1730735982::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1729090938::1730735982::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1729090938::1730735982::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1729090938::1730735982::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1729090938::1730735982::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1729090938::1730735982::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1729090938::1730735982::1::::<><>::
-::res://enemy/::1730735965
-::res://Main Menu/::1730735964
-::res://Main Menu/Assets/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/::1730300908
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/Icons/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_01/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_02/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_03/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_04/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_05/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_06/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_07/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_08/::1730735964
-::res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/ProgressBar_09/::1730735964
-::res://Main Menu/Assets/Backdrops/::1730735964
-::res://Main Menu/Scripts/::1729179103
-::res://Sprites/::1730735965
-::res://Sprites/Watergun/::1730735982
-model.obj::Mesh::6296196545963739466::1730735965::1730735982::1::::<><>::
-::res://Watergun/::1730735982
-model.obj::Mesh::4724236016565358572::1730735965::1730735982::1::::<><>::
+::res://::1730736413
+bullet.gd::GDScript::-1::1730736122::0::1::::<>Node3D<>::
+bullet.tscn::PackedScene::8338979231104748193::1730736306::0::1::::<><>::res://bullet.gd
+character_body_3d.gd::GDScript::-1::1730736122::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::1162564723952069952::1730736306::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
+icon.svg::CompressedTexture2D::244492666970879408::1730128456::1730736414::1::::<><>::
+player.tscn::PackedScene::7503851795771256410::1730736385::0::1::::<><>::res://character_body_3d.gd<>uid://bf4biwai2l8wl::::res://WaterGun.tscn<>uid://cwfqh042tdm6s::::res://Untitled design (6).png
+README.md::TextFile::-1::1730128456::0::1::::<><>::
+Untitled design (6).png::CompressedTexture2D::6788390717384243140::1730736128::1730736414::1::::<><>::
+WaterGun.tscn::PackedScene::2797308016008740995::1730736306::0::1::::<><>::uid://b8kpqhm7uvwue::::res://Watergun/model.obj<>uid://dq2p1fwhc3q86::::res://bullet.tscn
+::res://brackeys_platformer_assets/::1730128456
+LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1730736139
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1730128456::1730736414::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1730128456::1730736414::1::::<><>::
+::res://brackeys_platformer_assets/music/::1730736139
+time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1730128456::1730736414::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1730736139
+coin.wav::AudioStreamWAV::8431615200529489740::1730128456::1730736414::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1730128456::1730736414::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1730128456::1730736414::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1730128456::1730736414::1::::<><>::
+power_up.wav::AudioStreamWAV::4558974050310742267::1730128456::1730736414::1::::<><>::
+tap.wav::AudioStreamWAV::8814320848351340103::1730128456::1730736414::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1730736139
+coin.png::CompressedTexture2D::6052392971937403295::1730128456::1730736414::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1730128456::1730736414::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1730128456::1730736414::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1730736414::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1730736414::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1730736414::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1730736414::1::::<><>::
+::res://enemy/::1730736122
+::res://Sprites/::1730736122
+::res://Sprites/Watergun/::1730736139
+model.obj::Mesh::6296196545963739466::1730736122::1730736414::1::::<><>::
+::res://Watergun/::1730736139
+model.obj::Mesh::4724236016565358572::1730736122::1730736414::1::::<><>::
