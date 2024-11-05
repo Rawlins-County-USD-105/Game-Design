@@ -16,11 +16,14 @@ var input_actions = {
 	"sprint": "Sprint",
 	"jump": "Jump",
 	"crouch": "crouch",
+	"Menu": "Menu",
 
 }
 
 func _ready():
 	_create_action_list()
+	
+
 	
 	
 	

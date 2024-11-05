@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctvcl7kcff3xy"]
+[gd_scene load_steps=5 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
 [ext_resource type="Texture2D" uid="uid://brv6nkecdjexc" path="res://Main Menu/Assets/Backdrops/Untitled design (8).png" id="2_a55sf"]
@@ -8,116 +8,6 @@ font_names = PackedStringArray("Impact")
 
 [sub_resource type="SystemFont" id="SystemFont_gaf13"]
 font_names = PackedStringArray("Impact")
-
-[sub_resource type="Animation" id="Animation_7duyg"]
-resource_name = "Join animation"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0666667),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button2:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.2),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button3:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.3),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Settings:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.4),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_obok1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button2:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Button3:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("MarginContainer/HBoxContainer/VBoxContainer/Settings:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_jou5t"]
-_data = {
-"Join animation": SubResource("Animation_7duyg"),
-"RESET": SubResource("Animation_obok1")
-}
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -199,7 +89,6 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-visible = false
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
@@ -216,7 +105,6 @@ text = "HOST"
 flat = true
 
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-visible = false
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
@@ -227,7 +115,6 @@ text = "JOIN"
 flat = true
 
 [node name="Button3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-visible = false
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
@@ -238,7 +125,6 @@ text = "SINGLE"
 flat = true
 
 [node name="Settings" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-visible = false
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
@@ -248,12 +134,6 @@ theme_override_font_sizes/font_size = 50
 text = "Settings
 "
 flat = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_jou5t")
-}
-autoplay = "Join animation"
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
