@@ -79,18 +79,19 @@ func _physics_process(delta: float) -> void:
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 	
-	#Shooting
 	
+			
+func _headbob(time) -> Vector3:
+	var pos = Vector3.ZERO
+	pos.y = sin(time * BOB_FREQ) * BOB_AMP
+	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
+	return pos
+
+func _on_timer_timeout() -> void:
+	print("gfhuighrfkjdewgrfugeswftriuetudrwsarftdyeukwfqrtdewfqdtryteswutfruygki")
 	if Input.is_action_pressed("Pew"):
 			gun_anim.play("Pew")
 			instance = bullet.instantiate()
 			instance.position = gun_barrel.global_position
 			instance.transform.basis = gun_barrel.global_transform.basis
 			get_parent().add_child(instance)
-			
-func _headbob(time) -> Vector3:
-	var pos = Vector3.ZERO
-	pos.y = sin(time * BOB_FREQ) * BOB_AMP
-	print(pos.y)
-	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
-	return pos
