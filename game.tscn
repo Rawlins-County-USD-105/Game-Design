@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=18 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
-[ext_resource type="PackedScene" uid="uid://cv3vaqfr7pos7" path="res://Game Interactions/Scenes/Interactable.tscn" id="2_sai44"]
+[ext_resource type="Script" path="res://Game Interactions/Scripts/Interactable.gd" id="2_338c7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -49,6 +49,12 @@ size = Vector2(24, 24)
 
 [sub_resource type="Skin" id="Skin_uxm6s"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i1waf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_th3vy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cvblr"]
+
 [node name="Game" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -82,14 +88,106 @@ skin = SubResource("Skin_uxm6s")
 [node name="player" parent="." instance=ExtResource("1_siqao")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927)
 
-[node name="Button1" parent="." instance=ExtResource("2_sai44")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56151, 0.0306549, 3.97534)
-prompt_message = "Press [E]"
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 1.00973, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
 
-[node name="Button2" parent="." instance=ExtResource("2_sai44")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.945834, 0.0306549, 4.2491)
-prompt_message = "Press [E]"
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
 
-[node name="Button3" parent="." instance=ExtResource("2_sai44")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.87033, 0.0306549, 4.2962)
-prompt_message = "Press [E]"
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D3" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 2.05957, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D3"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D4" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 3.10023, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D4"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D5" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 4.15007, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D5"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D6" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 5.19911, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D6"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D7" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 6.24895, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D7"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D8" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 7.28961, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D8"]
+mesh = SubResource("BoxMesh_cvblr")
+
+[node name="RigidBody3D9" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0738668, 8.33945, 3.97534)
+physics_material_override = SubResource("PhysicsMaterial_i1waf")
+gravity_scale = 2.0
+script = ExtResource("2_338c7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962114, 0, 0)
+shape = SubResource("BoxShape3D_th3vy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D9"]
+mesh = SubResource("BoxMesh_cvblr")

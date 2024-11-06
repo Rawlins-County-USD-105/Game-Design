@@ -8,7 +8,7 @@ class_name Interactable
 
 
 func get_prompt():
-	var key_name = ""
+	var key_name = "Menu"
 func Interact(body):
 	print(body.name, " interacted with ", name)
 	queue_free()
