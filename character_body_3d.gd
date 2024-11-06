@@ -13,6 +13,7 @@ var instance
 @onready var camera: Camera3D = $neck/Camera
 @onready var gun_anim = $neck/Camera/Node3D/AnimationPlayer
 @onready var gun_barrel = $neck/Camera/Node3D/RayCast3D
+@onready var Timercooldown = $"../Timer"
 
 
 
@@ -33,7 +34,7 @@ const FOV_CHANGE = 1.5
 
 
 
-func _unhandled_input(event: InputEvent) -> void:
+func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseButton:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	elif event.is_action_pressed("ui_cancel"):
@@ -73,6 +74,18 @@ func _physics_process(delta: float) -> void:
 	camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
 	
+	#Shooting
+
+	if Input.is_action_pressed("Pew") and Timercooldown.is_stopped():
+		gun_anim.play("Pew")
+		instance = bullet.instantiate()
+		instance.position = gun_barrel.global_position
+		instance.transform.basis = gun_barrel.global_transform.basis
+		get_parent().add_child(instance)
+		Timercooldown.start()
+
+	
+	
 	#FOV
 
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
@@ -86,12 +99,3 @@ func _headbob(time) -> Vector3:
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
-
-func _on_timer_timeout() -> void:
-	print("gfhuighrfkjdewgrfugeswftriuetudrwsarftdyeukwfqrtdewfqdtryteswutfruygki")
-	if Input.is_action_pressed("Pew"):
-			gun_anim.play("Pew")
-			instance = bullet.instantiate()
-			instance.position = gun_barrel.global_position
-			instance.transform.basis = gun_barrel.global_transform.basis
-			get_parent().add_child(instance)

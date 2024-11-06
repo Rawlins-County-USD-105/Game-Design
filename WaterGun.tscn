@@ -1,11 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://bf4biwai2l8wl"]
 
-[ext_resource type="Script" path="res://water_gun.gd" id="1_b8fmo"]
 [ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="1_ln7vb"]
 [ext_resource type="PackedScene" uid="uid://dq2p1fwhc3q86" path="res://bullet.tscn" id="2_s8130"]
 
+[sub_resource type="GDScript" id="GDScript_5okqj"]
+
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
+length = 0.25
 step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -14,7 +16,7 @@ tracks/0/path = NodePath("Model:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = false
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.01, 0.1, 1),
+"times": PackedFloat32Array(0, 0.01, 0.1, 0.25),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0.05, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0)]
@@ -42,7 +44,7 @@ _data = {
 }
 
 [node name="Node3D" type="Node3D"]
-script = ExtResource("1_b8fmo")
+script = SubResource("GDScript_5okqj")
 
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = ExtResource("1_ln7vb")

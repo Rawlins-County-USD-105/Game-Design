@@ -34,7 +34,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0340012, -0.0567517, 0)
 
 [node name="Node3D" parent="CharacterBody3D/neck/Camera" instance=ExtResource("2_cam2e")]
-transform = Transform3D(-0.0390201, -7.13021e-05, 0.999238, 0.0564095, 0.998405, 0.00227403, -0.997645, 0.0564553, -0.0389539, 0.355106, -0.355065, -0.491134)
+transform = Transform3D(-0.0568168, 0.000770896, 0.998384, 0.0471787, 0.998884, 0.0019136, -0.997269, 0.0472113, -0.0567898, 0.355106, -0.355065, -0.491134)
 
 [node name="TextureRect" type="TextureRect" parent="CharacterBody3D"]
 anchors_preset = 8
@@ -51,3 +51,9 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("3_v2hhm")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.25
+one_shot = true
+autostart = true
