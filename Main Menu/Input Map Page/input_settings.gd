@@ -17,6 +17,7 @@ var input_actions = {
 	"jump": "Jump",
 	"crouch": "crouch",
 	"Menu": "Menu",
+	"Close Map": "Exit Game",
 
 }
 
@@ -89,3 +90,8 @@ func _update_action_list(button, event):
 
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
+	
+	
+func _process(delta: float) -> void:
+	if Input.is_action_pressed("Close Map"):
+		get_tree().quit()

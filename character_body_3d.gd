@@ -110,3 +110,8 @@ func _on_button_pressed() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("Menu"):
 		get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
+	if Input.is_action_pressed("Close Map"):
+		print("Game Closed...")
+		print("That is mean you loser reopen the game")
+		get_tree().quit()
+	
