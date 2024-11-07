@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_tumfl"]
+[ext_resource type="PackedScene" uid="uid://bov25dcq1iev3" path="res://Temp Enemy.tscn" id="2_4wap3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -79,3 +80,6 @@ mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
 
 [node name="player" parent="." instance=ExtResource("1_tumfl")]
+
+[node name="Node3D" parent="." instance=ExtResource("2_4wap3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.961605, 3.35586)

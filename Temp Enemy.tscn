@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bov25dcq1iev3"]
+
+[ext_resource type="Script" path="res://collision_shape_3d.gd" id="1_klvq2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5blo3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3v4hl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wu4wo"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_5blo3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = SubResource("BoxMesh_3v4hl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" groups=["Enemy"]]
+shape = SubResource("BoxShape3D_wu4wo")
+script = ExtResource("1_klvq2")
