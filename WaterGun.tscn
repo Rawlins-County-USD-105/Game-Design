@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bf4biwai2l8wl"]
+[gd_scene load_steps=7 format=3 uid="uid://dr22q64jitmlb"]
 
 [ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="1_ln7vb"]
-[ext_resource type="PackedScene" uid="uid://dq2p1fwhc3q86" path="res://bullet.tscn" id="2_s8130"]
+[ext_resource type="PackedScene" uid="uid://ym5174tj0rxa" path="res://bullet.tscn" id="2_s8130"]
 
 [sub_resource type="GDScript" id="GDScript_5okqj"]
 
@@ -44,7 +44,6 @@ _data = {
 }
 
 [node name="Node3D" type="Node3D"]
-visible = false
 script = SubResource("GDScript_5okqj")
 
 [node name="Model" type="MeshInstance3D" parent="."]

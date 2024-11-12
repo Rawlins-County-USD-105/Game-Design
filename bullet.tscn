@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dq2p1fwhc3q86"]
+[gd_scene load_steps=7 format=3 uid="uid://ym5174tj0rxa"]
 
 [ext_resource type="Script" path="res://bullet.gd" id="1_km87n"]
 
@@ -35,7 +35,6 @@ height = 0.021
 
 [node name="Bullet" type="Node3D"]
 rotation_order = 0
-visible = false
 script = ExtResource("1_km87n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -44,7 +43,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_66ckx")
 
 [node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, -2.44055e-10, 0.00929376, 0.486929)
-visible = false
 target_position = Vector3(0, 0, -0.5)
 collide_with_areas = true
 
