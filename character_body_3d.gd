@@ -5,15 +5,9 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 #character
 
-var bullet = load("res://bullet.tscn")
-var instance
-
-
 @onready var neck: Node3D = $neck
 @onready var camera: Camera3D = $neck/Camera
-@onready var gun_anim = $neck/Camera/Node3D/AnimationPlayer
-@onready var gun_barrel = $neck/Camera/Node3D/RayCast3D
-@onready var Timercooldown = $"../Timer"
+
 
 
 
@@ -73,18 +67,6 @@ func _physics_process(delta: float) -> void:
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
-	
-	#Shooting
-
-	if Input.is_action_pressed("Pew") and Timercooldown.is_stopped():
-		gun_anim.play("Pew")
-		instance = bullet.instantiate()
-		instance.position = gun_barrel.global_position
-		instance.transform.basis = gun_barrel.global_transform.basis
-		get_parent().add_child(instance)
-		Timercooldown.start()
-
-	
 	
 	#FOV
 
