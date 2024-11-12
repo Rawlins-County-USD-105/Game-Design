@@ -1,0 +1,119 @@
+[gd_scene load_steps=16 format=3 uid="uid://qtfjhpkne8ns"]
+
+[ext_resource type="Texture2D" uid="uid://bu2hiausofn7w" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Models/player.tscn" id="2_e0hom"]
+[ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
+[ext_resource type="PackedScene" uid="uid://md8vx8enqw" path="res://Models/Windmill.tscn" id="5_8ol4v"]
+[ext_resource type="PackedScene" uid="uid://cs1h17xm2kqqm" path="res://Models/Fence.tscn" id="5_si08p"]
+[ext_resource type="PackedScene" uid="uid://b853mi7rkdknk" path="res://Models/gate.tscn" id="6_j6v4e"]
+[ext_resource type="PackedScene" uid="uid://52idgbuskbwf" path="res://Models/shorter_fence.tscn" id="7_84rob"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
+sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
+sky_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
+ground_bottom_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+ground_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
+
+[sub_resource type="Sky" id="Sky_vlvqu"]
+sky_material = SubResource("ProceduralSkyMaterial_p33qv")
+
+[sub_resource type="Environment" id="Environment_7wjwl"]
+background_mode = 2
+sky = SubResource("Sky_vlvqu")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xcs8o"]
+size = Vector3(1.01348, 1.00947, 1.03549)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2ejw"]
+albedo_color = Color(0.971516, 1.82897e-06, 0.553504, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1qcie"]
+material = SubResource("StandardMaterial3D_d2ejw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6l1du"]
+size = Vector3(200.563, 1.30634, 199.873)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngduv"]
+albedo_texture = ExtResource("1_2qhk6")
+uv1_triplanar = true
+
+[node name="Game" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7wjwl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.298583, -0.401063, 0, -0.802121, 0.597161, -0.500003, 0.517156, 0.694656, -7.50991, 8.67159, 13.0074)
+shadow_enabled = true
+
+[node name="Box" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box"]
+transform = Transform3D(0.00127148, 0.999913, -0.0130867, -0.999905, 0.00109149, -0.0137517, -0.0137363, 0.013103, 0.99982, 0.00801839, 2.19808, -1.80238)
+shape = SubResource("BoxShape3D_xcs8o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 2.20317, -1.79001)
+mesh = SubResource("BoxMesh_1qcie")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.229771, -0.140897, -0.0816269)
+shape = SubResource("BoxShape3D_6l1du")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Ground"]
+size = Vector3(200, 1, 200)
+material = SubResource("StandardMaterial3D_ngduv")
+
+[node name="player" parent="." instance=ExtResource("2_e0hom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927)
+
+[node name="Barns" type="Node3D" parent="."]
+
+[node name="Big barn" parent="Barns" instance=ExtResource("4_18yuq")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -28.3153, 0.512273, -2.16964)
+
+[node name="Windmill" parent="Barns" instance=ExtResource("5_8ol4v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -22.8888, 0.571589, 11.8457)
+
+[node name="Horse pen" parent="." instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21.2535, 0.512273, -21.6831)
+
+[node name="Fence2" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7622, 0, -0.0213413)
+
+[node name="Fence3" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.62345, -4.76837e-07, -2.87306)
+
+[node name="Fence4" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.63292, 4.76837e-07, -8.59945)
+
+[node name="Fence5" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.63953, 0, -14.3515)
+
+[node name="Fence6" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.76818, 0, -17.2074)
+
+[node name="Fence7" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0293312, 0, -17.2368)
+
+[node name="Fence8" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.72273, 0, -17.2486)
+
+[node name="Fence9" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.59344, 4.76837e-07, -14.3489)
+
+[node name="Fence10" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.6063, -2.38419e-07, -8.60503)
+
+[node name="Fence11" parent="Horse pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.60345, 0, -2.80756)
+
+[node name="Shorter fence" parent="Horse pen" instance=ExtResource("7_84rob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.16275, 0.0208297, 0.0339947)
+
+[node name="Gate" parent="Horse pen" instance=ExtResource("6_j6v4e")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.96523, 0, 0.0464039)
