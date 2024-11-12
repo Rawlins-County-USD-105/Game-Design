@@ -44,6 +44,7 @@ _data = {
 }
 
 [node name="Node3D" type="Node3D"]
+visible = false
 script = SubResource("GDScript_5okqj")
 
 [node name="Model" type="MeshInstance3D" parent="."]

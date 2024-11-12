@@ -35,6 +35,7 @@ height = 0.021
 
 [node name="Bullet" type="Node3D"]
 rotation_order = 0
+visible = false
 script = ExtResource("1_km87n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
