@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
 
@@ -16,6 +16,11 @@ background_mode = 2
 sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_nnvpm"]
+vertices = PackedVector3Array(-1.24891, 0.495832, -2.7413, 0.00109196, 0.495832, -2.9913, 0.00109196, 0.495832, -11.4913, -11.4989, 0.495832, -11.4913, -11.4989, 0.495832, -1.7413, -1.24891, 0.495832, -1.7413, 1.00109, 0.495832, -2.7413, 11.5011, 0.495832, -1.7413, 11.5011, 0.495832, -11.4913, 1.00109, 0.495832, -1.7413, -0.998908, 0.495832, -0.741299, -11.4989, 0.495832, 11.5087, 0.00109196, 0.495832, 11.5087, 0.00109196, 0.495832, -0.741299, 0.751092, 0.495832, -0.741299, 11.5011, 0.495832, 11.5087)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(3, 0, 4), PackedInt32Array(0, 5, 4), PackedInt32Array(1, 2, 6), PackedInt32Array(6, 2, 8), PackedInt32Array(6, 8, 7), PackedInt32Array(7, 9, 6), PackedInt32Array(5, 10, 4), PackedInt32Array(4, 10, 11), PackedInt32Array(11, 10, 12), PackedInt32Array(10, 13, 12), PackedInt32Array(9, 7, 14), PackedInt32Array(14, 7, 15), PackedInt32Array(14, 15, 12), PackedInt32Array(12, 13, 14)]
+agent_max_slope = 90.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ettfv"]
 size = Vector3(0.996043, 0.94447, 0.985051)
@@ -57,26 +62,29 @@ environment = SubResource("Environment_3qk04")
 transform = Transform3D(-0.866024, -0.298583, -0.401063, 0, -0.802121, 0.597161, -0.500003, 0.517156, 0.694656, -7.50991, 8.67159, 13.0074)
 shadow_enabled = true
 
-[node name="Box" type="RigidBody3D" parent="."]
+[node name="player" parent="." instance=ExtResource("1_siqao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 0.030655, 1.95585)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Box"]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_nnvpm")
+
+[node name="Box" type="RigidBody3D" parent="NavigationRegion3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Box"]
 transform = Transform3D(0.00127148, 0.999913, -0.0130867, -0.999905, 0.00109149, -0.0137517, -0.0137363, 0.013103, 0.99982, -0.0236893, 1.31867, -1.78966)
 shape = SubResource("BoxShape3D_ettfv")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Box"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 1.32163, -1.79001)
 mesh = SubResource("BoxMesh_oposf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00688839, -0.381706, -0.0746336)
 shape = SubResource("BoxShape3D_djti3")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00109196, -0.00416815, 0.00870085)
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
-
-[node name="player" parent="." instance=ExtResource("1_siqao")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 0.030655, 1.95585)

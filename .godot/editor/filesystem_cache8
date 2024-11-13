@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730908757
+::res://::1731428605
 character_body_3d.gd::GDScript::-1::1730129987::0::1::::<>CharacterBody3D<>::
 enemies.tscn::PackedScene::-1::1730129987::0::1::::<><>::
 game.tscn::PackedScene::1162564723952069952::1730246650::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
@@ -31,7 +31,7 @@ world_tileset.png::CompressedTexture2D::189340558103377848::1729091957::17297831
 ::res://Chicken/::1730130014
 Chicken.glb::PackedScene::4361726100413339260::1730129987::1730130014::1::::<><>::
 Chicken_01.obj::Mesh::2393822796665083515::1730129987::1730130014::1::::<><>::
-::res://enemy/::1730824745
+::res://enemy/::1730911062
 node.tscn::PackedScene::3181711390987585558::1730246650::0::1::::<><>::uid://1ixgyci0rn3d::::res://enemy/untitled.glb
 node_3d.tscn::PackedScene::4149178858378450248::1730246650::0::1::::<><>::
-zombie.tscn::PackedScene::1203872706370041511::1730824745::0::1::::<><>::uid://1ixgyci0rn3d::::res://enemy/untitled.glb
+zombie.tscn::PackedScene::1203872706370041511::1730911062::0::1::::<><>::uid://1ixgyci0rn3d::::res://enemy/untitled.glb
