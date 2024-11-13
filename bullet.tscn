@@ -33,9 +33,12 @@ material = SubResource("StandardMaterial3D_8naif")
 radius = 0.02
 height = 0.021
 
-[node name="Bullet" type="Node3D"]
+[node name="Bullet" type="Node3D" node_paths=PackedStringArray("mesh", "ray", "particles")]
 rotation_order = 0
 script = ExtResource("1_km87n")
+mesh = NodePath("MeshInstance3D")
+ray = NodePath("MeshInstance3D/RayCast3D")
+particles = NodePath("GPUParticles3D")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_kj4co")

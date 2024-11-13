@@ -1,11 +1,12 @@
 extends Node3D
 
+class_name bullet
 
 const SPEED = 20.0
 
-@onready var mesh = $MeshInstance3D
-@onready var ray = $MeshInstance3D/RayCast3D
-@onready var particles = $GPUParticles3D
+@export var mesh: MeshInstance3D
+@export var ray: RayCast3D
+@export var particles: GPUParticles3D
 
 
 # Called when the node enters the scene tree for the first time.
