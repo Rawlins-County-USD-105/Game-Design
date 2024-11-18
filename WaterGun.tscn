@@ -43,7 +43,7 @@ _data = {
 "RESET": SubResource("Animation_ge6u7")
 }
 
-[node name="Weapon" type="Node3D"]
+[node name="Weapon2" type="Node3D"]
 script = SubResource("GDScript_5okqj")
 
 [node name="Model" type="MeshInstance3D" parent="."]

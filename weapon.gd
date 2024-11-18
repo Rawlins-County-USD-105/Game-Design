@@ -22,10 +22,10 @@ func _ready() -> void:
 
 #Shooting
 
-	if Input.is_action_pressed("Shoot") and Timer.is_stopped:
+	if Input.is_action_pressed("Shoot") and firerate.is_stopped():
 			weapon_anim.play("Pew")
 			instance = bullet2.instantiate()
 			instance.position = model.global_position
 			instance.transform.basis = model.global_transform.basis
 			get_parent().add_child(instance)
-			Timer.start
+			firerate.start()

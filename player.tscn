@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=7 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://dr22q64jitmlb" path="res://WaterGun.tscn" id="2_cam2e"]
-[ext_resource type="PackedScene" uid="uid://cv44yiq3rokxt" path="res://Shovel.tscn" id="3_m3ehl"]
 [ext_resource type="Texture2D" uid="uid://be5b8iy3u5320" path="res://Melee Weapons/Untitled design (6).png" id="3_v2hhm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
@@ -36,9 +35,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0340012, -0.0567517, 0)
 
 [node name="Node3D" parent="CharacterBody3D/neck/Camera" instance=ExtResource("2_cam2e")]
 transform = Transform3D(-0.0568168, 0.000770896, 0.998384, 0.0471787, 0.998884, 0.0019136, -0.997269, 0.0472113, -0.0567898, 0.355106, -0.355065, -0.491134)
-
-[node name="Root Scene" parent="CharacterBody3D/neck/Camera" instance=ExtResource("3_m3ehl")]
-transform = Transform3D(2.18557e-08, 1.91069e-15, -0.5, 4.37114e-08, -0.5, 0, -0.5, -4.37114e-08, -2.18557e-08, 0.245065, -0.303021, -0.626515)
 
 [node name="TextureRect" type="TextureRect" parent="CharacterBody3D"]
 anchors_preset = 8
