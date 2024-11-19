@@ -15,7 +15,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	if Input.is_action_pressed("Pew") and not weapon_anim.is_playing():
-		print("works")
 		weapon_anim.play("Pew")
 		instance = gun_bullet.instantiate()
 		instance.position = barrel.global_position
