@@ -46,10 +46,10 @@ _data = {
 script = ExtResource("1_rb3ql")
 damage = 2
 speed = 20
-gun_bullet = ExtResource("2_fkdob")
 weapon_anim = NodePath("AnimationPlayer")
 model = NodePath("Model")
 barrel = NodePath("RayCast3D")
+gun_bullet = ExtResource("2_fkdob")
 
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = ExtResource("3_8gyao")

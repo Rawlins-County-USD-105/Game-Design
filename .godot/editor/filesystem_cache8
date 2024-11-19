@@ -1,16 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732033469
+::res://::1732034773
 bullet.gd::GDScript::-1::1731514227::0::1::::bullet<>Node3D<>::
-bullet.tscn::PackedScene::1711174447208851530::1732033358::0::1::::<><>::res://bullet.gd
-character_body_3d.gd::GDScript::-1::1731514224::0::1::::<>CharacterBody3D<>::
+bullet.tscn::PackedScene::1711174447208851530::1732034226::0::1::::<><>::res://bullet.gd
+character_body_3d.gd::GDScript::-1::1732033814::0::1::::<>CharacterBody3D<>::
 collision_shape_3d.gd::GDScript::-1::1731429459::0::1::::<>CollisionShape3D<>::
-game.tscn::PackedScene::1162564723952069952::1732033357::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
+game.tscn::PackedScene::1162564723952069952::1732034226::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
 icon.svg::CompressedTexture2D::244492666970879408::1729090610::1731599819::1::::<><>::
 Melee.tscn::PackedScene::2427664505356814009::1731429459::0::1::::<><>::uid://cgtrt8m67jbww::::res://Melee Weapons/Shovel.glb
-player.tscn::PackedScene::7503851795771256410::1732033357::0::1::::<><>::res://character_body_3d.gd<>uid://dr22q64jitmlb::::res://WaterGun.tscn<>uid://6ujmxbh2whfk::::res://weapon.tscn<>uid://bcgu1v880ue5r::::res://Melee Weapons/Untitled design (6).png
+melee_weapon.gd::GDScript::-1::1732033740::0::1::::melee<>Node3D<>::
+player.tscn::PackedScene::7503851795771256410::1732034226::0::1::::<><>::res://character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://watergun.tscn<>uid://bcgu1v880ue5r::::res://Melee Weapons/Untitled design (6).png
 README.md::TextFile::-1::1729091033::0::1::::<><>::
-weapon.tscn::PackedScene::1498123070741559941::1732033487::0::1::::<><>::res://weapon.gd<>uid://ym5174tj0rxa::::res://bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
-weapon.gd::GDScript::-1::1732033434::0::1::::Weapon<>Node3D<>::
+Shovel.tscn::PackedScene::6308478136695704649::1732033814::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
+WaterGun.tscn::PackedScene::1498123070741559941::1732034227::0::1::::<><>::res://weapon.gd<>uid://ym5174tj0rxa::::res://bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+weapon.gd::GDScript::-1::1732034424::0::1::::Weapon<>Node3D<>::
+weapon.tscn::PackedScene::2217710800258816080::1732033814::0::1::::<><>::res://weapon.gd
 ::res://brackeys_platformer_assets/::1729090610
 LICENSE & CREDITS.txt::TextFile::-1::1729090610::0::1::::<><>::
 ::res://brackeys_platformer_assets/fonts/::1731599819
