@@ -3,7 +3,6 @@ extends Node3D
 class_name Weapon
 
 @export var damage: int
-@export var speed: int
 @export var weapon_anim: AnimationPlayer
 @export var model: MeshInstance3D
 @export var barrel: RayCast3D

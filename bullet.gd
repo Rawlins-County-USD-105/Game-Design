@@ -2,8 +2,8 @@ extends Node3D
 
 class_name bullet
 
-const SPEED = 20.0
 
+@export var speed: int
 @export var mesh: MeshInstance3D
 @export var ray: RayCast3D
 @export var particles: GPUParticles3D
@@ -16,7 +16,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position += transform.basis * Vector3(0, 0, -SPEED) * delta
+	position += transform.basis * Vector3(0, 0, -speed) * delta
 	if ray.is_colliding():
 		mesh.visible = false
 		particles.emitting = true
