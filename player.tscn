@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
-radius = 0.575592
+radius = 0.499585
 height = 1.24402
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x68qc"]
@@ -16,26 +16,24 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_14v3e")
 
 [node name="player" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99195, 0)
 script = ExtResource("1_1qajl")
 
 [node name="crouching_collision_shape" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0349153, 0.06164, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.377854, 0)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.370119, 0)
 shape = SubResource("CapsuleShape3D_x68qc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D/standing_collision_shape"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07531, 0)
 mesh = SubResource("CapsuleMesh_dgk81")
 
 [node name="neck" type="Node3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00563, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Camera" type="Camera3D" parent="CharacterBody3D/neck"]
 
@@ -52,6 +50,8 @@ offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="crouch_check" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.893923, 0)
-target_position = Vector3(0, 2, 0)
+[node name="head_clearance" type="RayCast3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
+target_position = Vector3(0, 0.75, 0)
+collide_with_areas = true
+debug_shape_custom_color = Color(0.988235, 0, 0, 1)

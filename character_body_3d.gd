@@ -6,6 +6,8 @@ extends CharacterBody3D
 @onready var camera_3d: Camera3D = $neck/Camera
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
+@onready var head_clearance: RayCast3D = $head_clearance
+
 
 
 @export_category("Movement and shiz")
@@ -78,17 +80,18 @@ func _physics_process(delta: float) -> void:
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
 
 
-		
+		print(head_clearance.is_colliding())
+		print(head_clearance.get_collider())
 		if Input.is_action_pressed("crouch"):
 			current_speed = crouching_speed
-			neck.position.y = lerp(neck.position.y, 1.006 + crouching_depth, delta * lerp_speed)
+			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 			standing_collision_shape.disabled = true
 			crouching_collision_shape.disabled = false
-		else:
+		elif !head_clearance.is_colliding():
 			standing_collision_shape.disabled = false
 			crouching_collision_shape.disabled = true
-			neck.position.y = lerp(neck.position.y, 1.006, delta * lerp_speed)
-				
+			neck.position.y = lerp(neck.position.y, 0.5, delta * lerp_speed)
+
 		velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
 
