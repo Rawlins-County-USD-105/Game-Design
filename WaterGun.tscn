@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dr22q64jitmlb"]
+[gd_scene load_steps=7 format=3 uid="uid://vlx4rrwy2kaf"]
 
-[ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="1_ln7vb"]
-[ext_resource type="PackedScene" uid="uid://ym5174tj0rxa" path="res://bullet.tscn" id="2_s8130"]
-
-[sub_resource type="GDScript" id="GDScript_5okqj"]
+[ext_resource type="Script" path="res://weapon.gd" id="1_rb3ql"]
+[ext_resource type="PackedScene" uid="uid://ym5174tj0rxa" path="res://bullet.tscn" id="2_fkdob"]
+[ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="3_8gyao"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
@@ -43,11 +42,17 @@ _data = {
 "RESET": SubResource("Animation_ge6u7")
 }
 
-[node name="Node3D" type="Node3D"]
-script = SubResource("GDScript_5okqj")
+[node name="Watergun" type="Node3D" node_paths=PackedStringArray("weapon_anim", "model", "barrel")]
+script = ExtResource("1_rb3ql")
+damage = 2
+speed = 20
+weapon_anim = NodePath("AnimationPlayer")
+model = NodePath("Model")
+barrel = NodePath("RayCast3D")
+gun_bullet = ExtResource("2_fkdob")
 
 [node name="Model" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_ln7vb")
+mesh = ExtResource("3_8gyao")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -56,13 +61,4 @@ libraries = {
 autoplay = "Pew"
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.281876, 0, 0)
-
-[node name="Bullet" parent="." instance=ExtResource("2_s8130")]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0.30867, 0, 0)
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.25
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+transform = Transform3D(-9.41354e-05, -1, 5.85729e-05, 1, -9.41354e-05, -5.14025e-05, 5.14025e-05, 5.85729e-05, 1, 0.281876, 0, 0)
