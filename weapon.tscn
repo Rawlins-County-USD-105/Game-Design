@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://vlx4rrwy2kaf"]
+[gd_scene load_steps=6 format=3 uid="uid://6ujmxbh2whfk"]
 
 [ext_resource type="Script" path="res://weapon.gd" id="1_rb3ql"]
-[ext_resource type="PackedScene" uid="uid://ym5174tj0rxa" path="res://bullet.tscn" id="2_fkdob"]
-[ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="3_8gyao"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kjg08"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
@@ -42,22 +42,17 @@ _data = {
 "RESET": SubResource("Animation_ge6u7")
 }
 
-<<<<<<< HEAD
-[node name="Watergun" type="Node3D" node_paths=PackedStringArray("weapon_anim", "model", "barrel")]
+[node name="Weapon" type="Node3D" node_paths=PackedStringArray("firerate", "weapon_anim", "model", "raycast")]
 script = ExtResource("1_rb3ql")
-damage = 2
-speed = 20
+damage = 1
+speed = 10
+firerate = NodePath("Timer")
 weapon_anim = NodePath("AnimationPlayer")
 model = NodePath("Model")
-barrel = NodePath("RayCast3D")
-gun_bullet = ExtResource("2_fkdob")
-=======
-[node name="Weapon2" type="Node3D"]
-script = SubResource("GDScript_5okqj")
->>>>>>> e5cf59d6fd470df0d2065d191492bff5148713d4
+raycast = NodePath("RayCast3D")
 
 [node name="Model" type="MeshInstance3D" parent="."]
-mesh = ExtResource("3_8gyao")
+mesh = SubResource("CylinderMesh_kjg08")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -66,4 +61,8 @@ libraries = {
 autoplay = "Pew"
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(-9.41354e-05, -1, 5.85729e-05, 1, -9.41354e-05, -5.14025e-05, 5.14025e-05, 5.85729e-05, 1, 0.281876, 0, 0)
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.281876, 0, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv44yiq3rokxt"]
+
+[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_s27xd"]
+
+[node name="Root Scene" instance=ExtResource("1_s27xd")]
+transform = Transform3D(2.18557e-08, 1.91069e-15, -0.5, 4.37114e-08, -0.5, 0, -0.5, -4.37114e-08, -2.18557e-08, 0, 0, 0)
