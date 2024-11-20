@@ -1,6 +1,1 @@
-res://game.tscn
-res://enemy/node_3d.tscn
-res://enemy/node.tscn
 res://enemy/zombie.tscn
-res://enemy/bean.gd
-res://enemy/zombie.gd
