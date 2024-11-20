@@ -1,47 +1,47 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732118130
-bullet.gd::GDScript::-1::1732035584::0::1::::bullet<>Node3D<>::
-bullet.tscn::PackedScene::1711174447208851530::1732037392::0::1::::<><>::res://bullet.gd
-character_body_3d.gd::GDScript::-1::1732033814::0::1::::<>CharacterBody3D<>::
-collision_shape_3d.gd::GDScript::-1::1731429459::0::1::::<>CollisionShape3D<>::
-game.tscn::PackedScene::1162564723952069952::1732037392::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
-icon.svg::CompressedTexture2D::244492666970879408::1729090610::1731599819::1::::<><>::
-Melee.tscn::PackedScene::2427664505356814009::1731429459::0::1::::<><>::uid://cgtrt8m67jbww::::res://Melee Weapons/Shovel.glb
-melee_weapon.gd::GDScript::-1::1732033740::0::1::::melee<>Node3D<>::
-player.tscn::PackedScene::7503851795771256410::1732037392::0::1::::<><>::res://character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://WaterGun.tscn<>uid://bcgu1v880ue5r::::res://Melee Weapons/Untitled design (6).png
-README.md::TextFile::-1::1729091033::0::1::::<><>::
-Shovel.tscn::PackedScene::6308478136695704649::1732033814::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
-WaterGun.tscn::PackedScene::1498123070741559941::1732037393::0::1::::<><>::res://weapon.gd<>uid://ym5174tj0rxa::::res://bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
-weapon.gd::GDScript::-1::1732037392::0::1::::Weapon<>Node3D<>::
-weapon.tscn::PackedScene::2217710800258816080::1732033814::0::1::::<><>::res://weapon.gd
-::res://brackeys_platformer_assets/::1729090610
-LICENSE & CREDITS.txt::TextFile::-1::1729090610::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1731599819
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729090610::1731599819::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1729090610::1731599819::1::::<><>::
-::res://brackeys_platformer_assets/music/::1731599819
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729090610::1731599819::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1731599819
-coin.wav::AudioStreamWAV::8431615200529489740::1729090610::1731599819::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1729090610::1731599819::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1729090610::1731599819::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1729090610::1731599819::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1729090610::1731599819::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1729090610::1731599819::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1731599819
-coin.png::CompressedTexture2D::6052392971937403295::1729090610::1731599819::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1729090610::1731599819::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1729090610::1731599819::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1729090610::1731599819::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1729090610::1731599819::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1729090610::1731599819::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1729090610::1731599819::1::::<><>::
-::res://enemy/::1731429459
-::res://Melee Weapons/::1731599819
-Shovel.glb::PackedScene::703083337035328524::1731429459::1731599819::1::::<><>::
-Untitled design (6).png::CompressedTexture2D::2540446563492848941::1731429459::1731599819::1::::<><>::
-::res://Sprites/::1731429459
-::res://Sprites/Watergun/::1731599819
-model.obj::Mesh::6296196545963739466::1731429459::1731599819::1::::<><>::
-::res://Watergun/::1731599819
-model.obj::Mesh::4724236016565358572::1731429459::1731599819::1::::<><>::
+::res://::1732119790
+bullet.gd::GDScript::-1::1732119790::0::1::::bullet<>Node3D<>::
+bullet.tscn::PackedScene::1711174447208851530::1732119790::0::1::::<><>::res://bullet.gd
+character_body_3d.gd::GDScript::-1::1732119790::0::1::::<>CharacterBody3D<>::
+collision_shape_3d.gd::GDScript::-1::1732119790::0::1::::<>CollisionShape3D<>::
+game.tscn::PackedScene::1162564723952069952::1732119666::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn
+icon.svg::CompressedTexture2D::244492666970879408::1730128456::1732119797::1::::<><>::
+Melee.tscn::PackedScene::2427664505356814009::1732034264::0::1::::<><>::uid://cgtrt8m67jbww::::res://Melee Weapons/Shovel.glb
+melee_weapon.gd::GDScript::-1::1732119790::0::1::::melee<>Node3D<>::
+player.tscn::PackedScene::7503851795771256410::1732119790::0::1::::<><>::res://character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://WaterGun.tscn<>uid://be5b8iy3u5320::::res://Melee Weapons/Untitled design (6).png
+README.md::TextFile::-1::1730128456::0::1::::<><>::
+Shovel.tscn::PackedScene::6308478136695704649::1732034264::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
+WaterGun.tscn::PackedScene::1498123070741559941::1732119742::0::1::::<><>::res://weapon.gd<>uid://ym5174tj0rxa::::res://bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+weapon.gd::GDScript::-1::1732119790::0::1::::Weapon<>Node3D<>::
+weapon.tscn::PackedScene::2217710800258816080::1732034264::0::1::::<><>::res://weapon.gd
+::res://brackeys_platformer_assets/::1730128456
+LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1732118221
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1730128456::1732118221::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1730128456::1732118221::1::::<><>::
+::res://brackeys_platformer_assets/music/::1732118221
+time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1730128456::1732118221::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1732118221
+coin.wav::AudioStreamWAV::8431615200529489740::1730128456::1732118221::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1730128456::1732118221::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1730128456::1732118221::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1730128456::1732118221::1::::<><>::
+power_up.wav::AudioStreamWAV::4558974050310742267::1730128456::1732118221::1::::<><>::
+tap.wav::AudioStreamWAV::8814320848351340103::1730128456::1732118221::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1732118221
+coin.png::CompressedTexture2D::6052392971937403295::1730128456::1732118221::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1730128456::1732118221::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1730128456::1732118221::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1732118221::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1732118221::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1732118221::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1732118221::1::::<><>::
+::res://enemy/::1732119790
+::res://Melee Weapons/::1732119790
+Shovel.glb::PackedScene::1100331826515408306::1732119790::1732118221::1::::<><>::
+Untitled design (6).png::CompressedTexture2D::2729227497620890063::1732119790::1732118221::1::::<><>::
+::res://Sprites/::1732119790
+::res://Sprites/Watergun/::1732119790
+model.obj::Mesh::6296196545963739466::1732119790::1732119797::1::::<><>::
+::res://Watergun/::1732119790
+model.obj::Mesh::4724236016565358572::1732119790::1732119797::1::::<><>::

@@ -60,4 +60,4 @@ libraries = {
 autoplay = "Pew"
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(-9.41354e-05, -1, 5.85729e-05, 1, -9.41354e-05, -5.14025e-05, 5.14025e-05, 5.85729e-05, 1, 0.281876, 0, 0)
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.213255, 0, 0)

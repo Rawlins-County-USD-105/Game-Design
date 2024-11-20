@@ -36,6 +36,7 @@ height = 0.021
 [node name="Bullet" type="Node3D" node_paths=PackedStringArray("mesh", "ray", "particles")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 rotation_order = 0
+top_level = true
 script = ExtResource("1_km87n")
 speed = 20
 mesh = NodePath("MeshInstance3D")
@@ -47,7 +48,7 @@ mesh = SubResource("BoxMesh_kj4co")
 surface_material_override/0 = SubResource("StandardMaterial3D_66ckx")
 
 [node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, -2.44055e-10, 0.00929376, 1.01061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, -2.44054e-10, 0.00929376, 1.01061)
 target_position = Vector3(0, 0, -0.5)
 collide_with_areas = true
 

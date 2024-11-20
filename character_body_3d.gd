@@ -6,8 +6,7 @@ const JUMP_VELOCITY = 4.5
 #character
 
 @onready var neck: Node3D = $neck
-@onready var gun_anim = $neck/Camera/Node3D/AnimationPlayer
-@onready var gun_barrel = $neck/Camera/Node3D/RayCast3D
+
 @onready var camera_3d: Camera3D = $neck/Camera
 
 @export_category("Movement and shiz")
