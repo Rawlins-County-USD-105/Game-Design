@@ -80,8 +80,7 @@ func _physics_process(delta: float) -> void:
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
 
 
-		print(head_clearance.is_colliding())
-		print(head_clearance.get_collider())
+
 		if Input.is_action_pressed("crouch"):
 			current_speed = crouching_speed
 			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
