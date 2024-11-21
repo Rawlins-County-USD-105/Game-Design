@@ -1,6 +1,86 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv44yiq3rokxt"]
+[gd_scene load_steps=6 format=3 uid="uid://cv44yiq3rokxt"]
 
-[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_s27xd"]
+[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_7rpfx"]
+[ext_resource type="Script" path="res://melee_weapon.gd" id="2_3eac8"]
 
-[node name="Root Scene" instance=ExtResource("1_s27xd")]
-transform = Transform3D(2.18557e-08, 1.91069e-15, -0.5, 4.37114e-08, -0.5, 0, -0.5, -4.37114e-08, -2.18557e-08, 0, 0, 0)
+[sub_resource type="Animation" id="Animation_fwb4s"]
+resource_name = "Melee"
+length = 0.75
+step = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RootNode/Shovel:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-1.5708, 0, 0), Vector3(0, -1.5708, 0), Vector3(-1.5708, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RootNode/Shovel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 2), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jhdgn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RootNode/Shovel:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.5708, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RootNode/Shovel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oi73d"]
+_data = {
+"Melee": SubResource("Animation_fwb4s"),
+"RESET": SubResource("Animation_jhdgn")
+}
+
+[node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model", "barrel") instance=ExtResource("1_7rpfx")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
+script = ExtResource("2_3eac8")
+damage = 1
+weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
+model = NodePath("RootNode/Shovel")
+barrel = NodePath("RayCast3D")
+
+[node name="Shovel" parent="RootNode" index="0"]
+transform = Transform3D(198.943, 0, 0, 0, -8.69608e-06, 198.943, 0, -198.943, -8.69608e-06, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RootNode/Shovel" index="0"]
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_oi73d")
+}
+
+[node name="RayCast3D" type="RayCast3D" parent="." index="1"]
+transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)

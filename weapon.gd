@@ -12,7 +12,7 @@ var instance
 func _ready() -> void:
 	pass
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	
 	if Input.is_action_pressed("Pew") and not weapon_anim.is_playing():
 		weapon_anim.play("Pew")

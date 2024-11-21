@@ -15,9 +15,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	
 	if Input.is_action_pressed("Pew") and not weapon_anim.is_playing():
-		print("works")
-		weapon_anim.play("Pew")
-		get_parent().add_child(instance)
+		weapon_anim.play("Melee")
