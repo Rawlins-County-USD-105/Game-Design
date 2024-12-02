@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=16 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
 [ext_resource type="PackedScene" uid="uid://ds34cclxx8da3" path="res://Main Menu/Input Map Page/Scenes/INTERACTS CUBE.tscn" id="2_ks5mh"]
+[ext_resource type="PackedScene" uid="uid://xijui7lekiny" path="res://Door2.glb" id="3_de0ml"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -84,3 +85,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732491, 0.0306551, 0.124927
 
 [node name="RigidBody3D" parent="." instance=ExtResource("2_ks5mh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.0915592, 1)
+
+[node name="Door2" parent="." instance=ExtResource("3_de0ml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.43281, 0.0306549, -2.49793)
