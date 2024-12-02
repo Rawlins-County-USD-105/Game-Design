@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 
 
-@export_category("Movement and shiz")
+@export_category("Movement")
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
@@ -28,12 +28,11 @@ var crouching_depth = -0.5
 var lerp_speed = 30
 var WALK_SPEED = 10
 
-
-#func _enter_tree() -> void:
-	#$".".set_multiplayer_authority($"..".name.to_int())
+func _enter_tree() -> void:
+	$"..".set_multiplayer_authority(str($"..".name).to_int())
 	
-#func _ready() -> void:
-	#camera_3d.current = is_multiplayer_authority()	
+func _ready() -> void:
+	camera_3d.current = is_multiplayer_authority()
 
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
