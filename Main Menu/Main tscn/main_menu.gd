@@ -1,12 +1,6 @@
 extends Control
 @onready var settings: Button = $MarginContainer/HBoxContainer/VBoxContainer/Settings
 
-
-
-
-
-
-
 ## buttons link to different scenes.
 
 ## 1 is the setting menu for keybind changing
@@ -28,4 +22,3 @@ func _on_settings_pressed() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("Close Map"):
 		get_tree().quit()
-	
