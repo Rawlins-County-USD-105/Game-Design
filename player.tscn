@@ -16,14 +16,6 @@ material = SubResource("StandardMaterial3D_jknei")
 radius = 0.575592
 height = 1.24402
 
-[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_27ems"]
-properties/0/path = NodePath("CharacterBody3D:position")
-properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath("CharacterBody3D:rotation")
-properties/1/spawn = true
-properties/1/replication_mode = 1
-
 [node name="player" type="Node3D"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]

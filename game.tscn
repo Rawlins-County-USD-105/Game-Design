@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=18 format=3 uid="uid://qtfjhpkne8ns"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
 [ext_resource type="Script" path="res://game.gd" id="1_x5k3m"]
-
+[ext_resource type="Script" path="res://character_body_3d.gd" id="3_rlaby"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -19,17 +19,45 @@ sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ettfv"]
-size = Vector3(0.996043, 0.94447, 0.985051)
+[sub_resource type="BoxShape3D" id="BoxShape3D_djti3"]
+size = Vector3(23.7296, 0.824722, 23.6478)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2ejw"]
-albedo_color = Color(0.971516, 1.82897e-06, 0.553504, 1)
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_h3hu4"]
+noise_type = 0
+frequency = 0.0737
 
-[sub_resource type="BoxMesh" id="BoxMesh_oposf"]
-material = SubResource("StandardMaterial3D_d2ejw")
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_brd16"]
+width = 600
+height = 600
+noise = SubResource("FastNoiseLite_h3hu4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6jh14"]
+albedo_color = Color(0.253197, 1.65449e-06, 0.166654, 1)
+albedo_texture = SubResource("NoiseTexture2D_brd16")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rylpy"]
+material = SubResource("StandardMaterial3D_6jh14")
+size = Vector2(24, 24)
+
+[sub_resource type="Skin" id="Skin_uxm6s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2mk3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kh0m1"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jgblb"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7u3ly"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_iny5a"]
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_x5k3m")
+
+[node name="player" parent="." instance=ExtResource("1_siqao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 1.62586, 1.95585)
+script = ExtResource("3_rlaby")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3qk04")
@@ -38,21 +66,10 @@ environment = SubResource("Environment_3qk04")
 transform = Transform3D(-0.866024, -0.298583, -0.401063, 0, -0.802121, 0.597161, -0.500003, 0.517156, 0.694656, -7.50991, 8.67159, 13.0074)
 shadow_enabled = true
 
-[node name="Box" type="RigidBody3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Box"]
-transform = Transform3D(0.00127148, 0.999913, -0.0130867, -0.999905, 0.00109149, -0.0137517, -0.0137363, 0.013103, 0.99982, -0.0236893, 1.31867, -1.78966)
-shape = SubResource("BoxShape3D_ettfv")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 1.32163, -1.79001)
-mesh = SubResource("BoxMesh_oposf")
-
-
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00688839, -0.381706, -0.0746336)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00688839, -0.27845, -0.0746336)
 shape = SubResource("BoxShape3D_djti3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
@@ -60,46 +77,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00109196, -0.00416815, 0.00
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
 
-[node name="player" parent="." instance=ExtResource("1_siqao")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 0.030655, 1.95585)
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.65364, 4.41785, -0.373033)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("BoxShape3D_x2mk3")
 
-[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -237.0
-offset_top = -110.5
-offset_right = 237.0
-offset_bottom = 110.5
-grow_horizontal = 2
-grow_vertical = 2
-vertical = true
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D3"]
+mesh = SubResource("BoxMesh_kh0m1")
 
-[node name="Host" type="Button" parent="CanvasLayer/BoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 60
-text = "Host"
+[node name="bocs" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.04106, 5.24653, 0)
+physics_material_override = SubResource("PhysicsMaterial_jgblb")
 
-[node name="Join" type="Button" parent="CanvasLayer/BoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 60
-text = "Join"
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bocs"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+shape = SubResource("SphereShape3D_7u3ly")
 
-[node name="LineEdit" type="LineEdit" parent="CanvasLayer/BoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-placeholder_text = "Enter Address Here"
-alignment = 1
-
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://player.tscn")
-spawn_path = NodePath("..")
-
-[connection signal="pressed" from="CanvasLayer/BoxContainer/Host" to="." method="_on_host_pressed"]
-[connection signal="pressed" from="CanvasLayer/BoxContainer/Join" to="." method="_on_join_pressed"]
-[connection signal="text_submitted" from="CanvasLayer/BoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]
-
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bocs"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("SphereMesh_iny5a")
