@@ -28,11 +28,11 @@ var crouching_depth = -0.5
 var lerp_speed = 30
 var WALK_SPEED = 10
 
-func _enter_tree() -> void:
-	$"..".set_multiplayer_authority(str($"..".name).to_int())
-	
-func _ready() -> void:
-	camera_3d.current = is_multiplayer_authority()
+#func _enter_tree() -> void:
+	#$"..".set_multiplayer_authority(str($"..".name).to_int())
+	#
+#func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()
 
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
