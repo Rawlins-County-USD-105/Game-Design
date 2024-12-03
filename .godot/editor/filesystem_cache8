@@ -1,54 +1,54 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733242108
-bullet.gd::GDScript::-1::1733241646::0::1::::bullet<>Node3D<>::
-character_body_3d.gd::GDScript::-1::1733242047::0::1::::<>CharacterBody3D<>::
-collision_shape_3d.gd::GDScript::-1::1733241646::0::1::::<>CollisionShape3D<>::
+::res://::1733242427
+bullet.gd::GDScript::-1::1733242427::0::1::::bullet<>Node3D<>::
+character_body_3d.gd::GDScript::-1::1733242427::0::1::::<>CharacterBody3D<>::
+collision_shape_3d.gd::GDScript::-1::1733242427::0::1::::<>CollisionShape3D<>::
 game.gd::GDScript::-1::1733241749::0::1::::<>Node3D<>::
-game.tscn::PackedScene::1162564723952069952::1733156191::0::1::::<><>::
-icon.svg::CompressedTexture2D::244492666970879408::1730128456::1733242113::1::::<><>::
-Melee.tscn::PackedScene::2427664505356814009::1733156191::0::1::::<><>::uid://cgtrt8m67jbww::::res://Melee Weapons/Shovel.glb
-melee_weapon.gd::GDScript::-1::1733241646::0::1::::melee<>Node3D<>::
+game.tscn::PackedScene::1162564723952069952::1733242366::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd
+icon.svg::CompressedTexture2D::244492666970879408::1730128456::1733242430::1::::<><>::
+Melee.tscn::PackedScene::-1::1733242427::0::1::::<><>::
+melee_weapon.gd::GDScript::-1::1733242427::0::1::::melee<>Node3D<>::
 player.tscn::PackedScene::7503851795771256410::1733156191::0::1::::<><>::res://character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://WaterGun.tscn
 README.md::TextFile::-1::1730128456::0::1::::<><>::
-Shovel.tscn::PackedScene::6308478136695704649::1733156191::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://melee_weapon.gd
-WaterGun.tscn::PackedScene::1498123070741559941::1733156191::0::1::::<><>::res://weapon.gd<>uid://ym5174tj0rxa::::res://WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
-weapon.gd::GDScript::-1::1733241646::0::1::::Weapon<>Node3D<>::
-weapon.tscn::PackedScene::2217710800258816080::1733156191::0::1::::<><>::res://weapon.gd
-WG_bullet.tscn::PackedScene::1711174447208851530::1733241646::0::1::::<><>::res://bullet.gd
+Shovel.tscn::PackedScene::887346573587043811::1733242366::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://melee_weapon.gd
+WaterGun.tscn::PackedScene::-1::1733242427::0::1::::<><>::
+weapon.gd::GDScript::-1::1733242427::0::1::::Weapon<>Node3D<>::
+weapon.tscn::PackedScene::-1::1733242427::0::1::::<><>::
+WG_bullet.tscn::PackedScene::7782395070520712716::1733242427::0::1::::<><>::res://bullet.gd
 ::res://brackeys_platformer_assets/::1730128456
 LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1733241577
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1730128456::1733241577::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1730128456::1733241577::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1733242335
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1730128456::1733242335::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1730128456::1733242335::1::::<><>::
 ::res://brackeys_platformer_assets/music/::1733241577
 time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1730128456::1733241577::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1733241577
-coin.wav::AudioStreamWAV::8431615200529489740::1730128456::1733241577::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1730128456::1733241577::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1730128456::1733241577::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1730128456::1733241577::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1733242337
+coin.wav::AudioStreamWAV::8431615200529489740::1730128456::1733242337::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1730128456::1733242337::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1730128456::1733242337::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1730128456::1733242337::1::::<><>::
 power_up.wav::AudioStreamWAV::4558974050310742267::1730128456::1733241577::1::::<><>::
 tap.wav::AudioStreamWAV::8814320848351340103::1730128456::1733241577::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1733241577
-coin.png::CompressedTexture2D::6052392971937403295::1730128456::1733241577::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1730128456::1733241577::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1730128456::1733241577::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1733241577::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1733241577::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1733241577::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1733241577::1::::<><>::
-::res://enemy/::1733241646
-::res://Main Menu/::1733241649
-::res://Main Menu/Assets/::1733241649
-::res://Main Menu/Assets/Backdrops/::1733241649
-ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1733241649::1733242113::1::::<><>::
-Untitled design (1).png::CompressedTexture2D::510534257622831008::1733241649::1733242113::1::::<><>::
-Untitled design (2).png::CompressedTexture2D::1003301072353283701::1733241649::1733242113::1::::<><>::
-Untitled design (3).png::CompressedTexture2D::8085498008506436039::1733241649::1733242113::1::::<><>::
-Untitled design.png::CompressedTexture2D::3132993260369731465::1733241649::1733242114::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1733242336
+coin.png::CompressedTexture2D::6052392971937403295::1730128456::1733242336::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1730128456::1733242336::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1730128456::1733242336::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1730128456::1733242336::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1730128456::1733242336::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1730128456::1733242336::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1730128456::1733242336::1::::<><>::
+::res://enemy/::1733242427
+::res://Main Menu/::1733242426
+::res://Main Menu/Assets/::1733242426
+::res://Main Menu/Assets/Backdrops/::1733242114
+ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1733241649::1733242430::1::::<><>::
+Untitled design (1).png::CompressedTexture2D::510534257622831008::1733241649::1733242431::1::::<><>::
+Untitled design (2).png::CompressedTexture2D::1003301072353283701::1733241649::1733242430::1::::<><>::
+Untitled design (3).png::CompressedTexture2D::8085498008506436039::1733241649::1733242430::1::::<><>::
+Untitled design.png::CompressedTexture2D::3132993260369731465::1733241649::1733242432::1::::<><>::
 ::res://Main Menu/Assets/Fonts/::1733241649
-::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1733241649
-LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1733241649::1733242113::1::::<><>::
+::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1733242113
+LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1733241649::1733242430::1::::<><>::
 OFL.txt::TextFile::-1::1733241649::0::1::::<><>::
 ::res://Main Menu/Input Map Page/::1733241649
 input_settings.gd::GDScript::-1::1733241649::0::1::::<>Control<>::
@@ -58,11 +58,11 @@ input_button.tscn::PackedScene::7283866548932056814::1733241649::0::1::::<><>::
 ::res://Main Menu/Main tscn/::1733241649
 main_menu.gd::GDScript::-1::1733241649::0::1::::<>Control<>::
 main_menu.tscn::PackedScene::6149924103355590478::1733241649::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
-::res://Melee Weapons/::1733241646
-Shovel.glb::PackedScene::1100331826515408306::1733241646::1733241577::1::::<><>::
-Untitled design (6).png::CompressedTexture2D::2729227497620890063::1733241646::1733241577::1::::<><>::
-::res://Sprites/::1733241646
-::res://Sprites/Watergun/::1733241646
-model.obj::Mesh::6296196545963739466::1733241646::1733242115::1::::<><>::
-::res://Watergun/::1733241646
-model.obj::Mesh::4724236016565358572::1733241646::1733242115::1::::<><>::
+::res://Melee Weapons/::1733242427
+Shovel.glb::PackedScene::1100331826515408306::1733242427::1733242432::1::::<><>::
+Untitled design (6).png::CompressedTexture2D::2729227497620890063::1733242427::1733242430::1::::<><>::
+::res://Sprites/::1733242427
+::res://Sprites/Watergun/::1733242427
+model.obj::Mesh::6296196545963739466::1733242427::1733242432::1::::<><>::
+::res://Watergun/::1733242427
+model.obj::Mesh::4724236016565358572::1733242427::1733242432::1::::<><>::

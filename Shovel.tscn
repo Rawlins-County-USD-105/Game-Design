@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cv44yiq3rokxt"]
+[gd_scene load_steps=6 format=3 uid="uid://mv3p6q65bldj"]
 
 [ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_7rpfx"]
 [ext_resource type="Script" path="res://melee_weapon.gd" id="2_3eac8"]
@@ -74,7 +74,7 @@ model = NodePath("RootNode/Shovel")
 barrel = NodePath("RayCast3D")
 
 [node name="Shovel" parent="RootNode" index="0"]
-transform = Transform3D(198.943, 0, 0, 0, -8.69608e-06, 198.943, 0, -198.943, -8.69608e-06, 0, 0, 0)
+transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="RootNode/Shovel" index="0"]
 root_node = NodePath("../../..")

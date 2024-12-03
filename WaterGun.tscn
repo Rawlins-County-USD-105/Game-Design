@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://vlx4rrwy2kaf"]
 
 [ext_resource type="Script" path="res://weapon.gd" id="1_rb3ql"]
-[ext_resource type="PackedScene" uid="uid://ym5174tj0rxa" path="res://WG_bullet.tscn" id="2_jhtbm"]
+[ext_resource type="PackedScene" uid="uid://di4356ymh2g6o" path="res://WG_bullet.tscn" id="2_jhtbm"]
 [ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="3_8gyao"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
