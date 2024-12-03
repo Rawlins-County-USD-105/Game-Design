@@ -36,10 +36,10 @@ var JUMP_VELOCITY = 5.0
 var crouching_depth = -0.5
 
 #SLiding
-var slide_timer = 1
-var slide_timer_max = 1
+var slide_timer = 2.0
+var slide_timer_max = 2.0
 var slide_vector = Vector2.ZERO
-var slide_speed = 6.0
+var slide_speed = 4.0
 var sliding = false
 
 
@@ -84,6 +84,7 @@ func _physics_process(delta: float) -> void:
 		if direction:
 		
 			if sliding:
+				print(slide_timer)
 				velocity.x = direction.x * slide_timer * slide_speed
 				velocity.z = direction.z * slide_timer * slide_speed
 				print(str(velocity.x)+str(velocity.z))
@@ -108,21 +109,18 @@ func _physics_process(delta: float) -> void:
 				else:
 					velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
-
-
-		
-		if Input.is_action_just_pressed("crouch"):
-			current_speed = crouching_speed
-			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
-			
-			#slide begin
+		if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint"):
 			if sprint && input_dir != Vector2.ZERO:
 				sliding = true
 				slide_timer - slide_timer_max
 				slide_vector = direction
 				print(slide_vector.y)
 				print("Begin")
-			
+		
+		if Input.is_action_pressed("crouch"):
+			current_speed = crouching_speed
+			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
+			#slide begin
 			standing_collision_shape.disabled = true
 			crouching_collision_shape.disabled = false
 		elif !head_clearance.is_colliding():
