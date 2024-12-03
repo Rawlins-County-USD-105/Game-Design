@@ -2,11 +2,7 @@ extends CharacterBody3D
 
 var player = null
 
-<<<<<<< Updated upstream
-const SPEED = 4.0
-=======
 const SPEED = 3.0
->>>>>>> Stashed changes
 
 @export var player_path : NodePath
 
@@ -27,10 +23,6 @@ func _process(_delta):
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * SPEED
 	
-<<<<<<< Updated upstream
-	look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z))
-=======
 	look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
->>>>>>> Stashed changes
 	
 	move_and_slide()
