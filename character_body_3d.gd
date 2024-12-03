@@ -9,7 +9,7 @@ const JUMP_VELOCITY = 4.5
 
 @onready var camera_3d: Camera3D = $neck/Camera
 
-@export_category("Movement and shiz")
+@export_category("Movement")
 @export var mousesense = 1
 @export var sprint = 2
 @export var jump_sprint = 15
@@ -20,9 +20,11 @@ var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
-
-
-
+#func _enter_tree() -> void:
+	#$"..".set_multiplayer_authority(str($"..".name).to_int())
+	#
+#func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseButton:

@@ -11,13 +11,20 @@ config_version=5
 [application]
 
 config/name="RCHS Game Design"
-run/main_scene="res://game.tscn"
+
+
+run/main_scene="res://Main Menu/Main tscn/main_menu.tscn"
+
+
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
 window/stretch/mode="canvas_items"
+
+window/stretch/mode="viewport"
+
 
 [input]
 
