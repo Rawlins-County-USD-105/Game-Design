@@ -36,10 +36,10 @@ var JUMP_VELOCITY = 5.0
 var crouching_depth = -0.5
 
 #SLiding
-var slide_timer = 1.0
-var slide_timer_max = 4.0
-var slide_vector = Vector3.ZERO
-var slide_speed = 10.0
+var slide_timer = 1
+var slide_timer_max = 1
+var slide_vector = Vector2.ZERO
+var slide_speed = 6.0
 var sliding = false
 
 
@@ -62,6 +62,8 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
+		var input_dir := Input.get_vector("left", "right", "forward", "back")
+		
 	#if is_multiplayer_authority():
 		if not is_on_floor():
 			velocity += get_gravity() * delta
@@ -71,18 +73,20 @@ func _physics_process(delta: float) -> void:
 
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
-		var input_dir := Input.get_vector("left", "right", "forward", "back")
+		
 		
 		var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 		if sliding:
-			direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.y)).normalized()
+			#print(slide_vector)
+			direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
 
 		if direction:
 		
 			if sliding:
 				velocity.x = direction.x * slide_timer * slide_speed
 				velocity.z = direction.z * slide_timer * slide_speed
+				print(str(velocity.x)+str(velocity.z))
 				
 				
 			if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
@@ -107,7 +111,7 @@ func _physics_process(delta: float) -> void:
 
 
 		
-		if Input.is_action_pressed("crouch"):
+		if Input.is_action_just_pressed("crouch"):
 			current_speed = crouching_speed
 			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 			
@@ -115,7 +119,8 @@ func _physics_process(delta: float) -> void:
 			if sprint && input_dir != Vector2.ZERO:
 				sliding = true
 				slide_timer - slide_timer_max
-				slide_vector = input_dir
+				slide_vector = direction
+				print(slide_vector.y)
 				print("Begin")
 			
 			standing_collision_shape.disabled = true
@@ -137,6 +142,7 @@ func _physics_process(delta: float) -> void:
 			slide_timer -= delta
 			if slide_timer <= 0:
 				sliding = false
+				slide_timer = 2.0
 				print("End")
 		t_bob += delta * velocity.length() * float(is_on_floor())
 		camera_3d.transform.origin = _headbob(t_bob)
