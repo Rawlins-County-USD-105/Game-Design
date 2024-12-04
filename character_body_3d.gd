@@ -36,11 +36,12 @@ var JUMP_VELOCITY = 5.0
 var crouching_depth = -0.5
 
 #SLiding
-var slide_timer = 2.0
-var slide_timer_max = 2.0
+var slide_timer = 1.0
+var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
-var slide_speed = 4.0
+var slide_speed = 10.0
 var sliding = false
+
 
 
 
@@ -63,7 +64,6 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
 		var input_dir := Input.get_vector("left", "right", "forward", "back")
-		
 	#if is_multiplayer_authority():
 		if not is_on_floor():
 			velocity += get_gravity() * delta
@@ -78,16 +78,15 @@ func _physics_process(delta: float) -> void:
 		var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 		if sliding:
-			#print(slide_vector)
 			direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
-
+			
 		if direction:
 		
 			if sliding:
-				print(slide_timer)
+
 				velocity.x = direction.x * slide_timer * slide_speed
 				velocity.z = direction.z * slide_timer * slide_speed
-				print(str(velocity.x)+str(velocity.z))
+
 				
 				
 			if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
@@ -114,11 +113,15 @@ func _physics_process(delta: float) -> void:
 				sliding = true
 				slide_timer - slide_timer_max
 				slide_vector = direction
-				print(slide_vector.y)
-				print("Begin")
+
 		
 		if Input.is_action_pressed("crouch"):
 			current_speed = crouching_speed
+			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
+			#slide begin
+			standing_collision_shape.disabled = true
+			crouching_collision_shape.disabled = false
+		elif sliding == true:
 			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 			#slide begin
 			standing_collision_shape.disabled = true
@@ -140,8 +143,8 @@ func _physics_process(delta: float) -> void:
 			slide_timer -= delta
 			if slide_timer <= 0:
 				sliding = false
-				slide_timer = 2.0
-				print("End")
+				slide_timer = 1.0
+
 		t_bob += delta * velocity.length() * float(is_on_floor())
 		camera_3d.transform.origin = _headbob(t_bob)
 		move_and_slide()
