@@ -16,23 +16,6 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_14v3e")
 
 [node name="player" type="CharacterBody3D"]
-<<<<<<< HEAD
-script = ExtResource("1_1qajl")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36207, 0)
-shape = SubResource("CapsuleShape3D_x68qc")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07531, 0)
-mesh = SubResource("CapsuleMesh_dgk81")
-
-[node name="neck" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.99758, 0)
-
-[node name="Camera" type="Camera3D" parent="neck"]
-current = true
-=======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
 script = ExtResource("1_1qajl")
 
@@ -72,4 +55,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
 target_position = Vector3(0, 0.75, 0)
 collide_with_areas = true
 debug_shape_custom_color = Color(0.988235, 0, 0, 1)
->>>>>>> main
