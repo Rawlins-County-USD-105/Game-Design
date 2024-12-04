@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://boy7thg4ekqg1"]
-
-[ext_resource type="PackedScene" uid="uid://1ixgyci0rn3d" path="res://enemy/untitled.glb" id="1_stxst"]
-
-[node name="Node3D" type="CharacterBody3D"]
-
-[node name="Zombie" parent="." instance=ExtResource("1_stxst")]
