@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://qtfjhpkne8ns"]
 
-[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
-[ext_resource type="Script" path="res://game.gd" id="1_x5k3m"]
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_sfmp4"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_nuxto"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -52,9 +52,9 @@ size = Vector3(5, 5, 5)
 [sub_resource type="SphereMesh" id="SphereMesh_iny5a"]
 
 [node name="Game" type="Node3D"]
-script = ExtResource("1_x5k3m")
+script = ExtResource("1_sfmp4")
 
-[node name="player" parent="." instance=ExtResource("1_siqao")]
+[node name="player" parent="." instance=ExtResource("2_nuxto")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 1.62586, 1.95585)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

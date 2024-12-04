@@ -1,20 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733243572
-bullet.gd::GDScript::-1::1733243539::0::1::::bullet<>Node3D<>::
-character_body_3d.gd::GDScript::-1::1733243539::0::1::::<>CharacterBody3D<>::
-collision_shape_3d.gd::GDScript::-1::1733243539::0::1::::<>CollisionShape3D<>::
-game.gd::GDScript::-1::1733241749::0::1::::<>Node3D<>::
-game.tscn::PackedScene::1162564723952069952::1733243541::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd
+::res://::1733328004
 icon.svg::CompressedTexture2D::244492666970879408::1730128456::1733243534::1::::<><>::
-Melee.tscn::PackedScene::-1::1733243524::0::1::::<><>::
-melee_weapon.gd::GDScript::-1::1733243539::0::1::::melee<>Node3D<>::
-player.tscn::PackedScene::7503851795771256410::1733243541::0::1::::<><>::res://character_body_3d.gd<>res://WaterGun.tscn
 README.md::TextFile::-1::1730128456::0::1::::<><>::
-Shovel.tscn::PackedScene::1153707452445480991::1733243541::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://melee_weapon.gd
-WaterGun.tscn::PackedScene::-1::1733243541::0::1::::<><>::
 weapon.gd::GDScript::-1::1733243539::0::1::::Weapon<>Node3D<>::
-weapon.tscn::PackedScene::-1::1733243524::0::1::::<><>::
-WG_bullet.tscn::PackedScene::7751874874146678591::1733243541::0::1::::<><>::res://bullet.gd
 ::res://brackeys_platformer_assets/::1730128456
 LICENSE & CREDITS.txt::TextFile::-1::1730128456::0::1::::<><>::
 ::res://brackeys_platformer_assets/fonts/::1733243483
@@ -62,6 +50,20 @@ main_menu.tscn::PackedScene::6149924103355590478::1733243013::0::1::::<><>::res:
 ::res://Melee Weapons/::1733243536
 Shovel.glb::PackedScene::1100331826515408306::1733243524::1733243536::1::::<><>::
 Untitled design (6).png::CompressedTexture2D::2729227497620890063::1733243524::1733243534::1::::<><>::
+::res://Scenes/::1733328004
+game.tscn::PackedScene::1162564723952069952::1733328000::0::1::::<><>::res://game.gd<>uid://de56lwhpalp6i::::res://Scenes/player.tscn
+Melee.tscn::PackedScene::2427664505356814009::1733243524::0::1::::<><>::uid://cgtrt8m67jbww::::res://Melee Weapons/Shovel.glb
+player.tscn::PackedScene::7503851795771256410::1733327997::0::1::::<><>::res://character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://Scenes/WaterGun.tscn<>uid://bcbwlhplil6j0::::res://Main Menu/Untitled design (5).png
+Shovel.tscn::PackedScene::1153707452445480991::1733328004::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
+WaterGun.tscn::PackedScene::1498123070741559941::1733327971::0::1::::<><>::res://weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+weapon.tscn::PackedScene::2217710800258816080::1733243524::0::1::::<><>::res://weapon.gd
+WG_bullet.tscn::PackedScene::7751874874146678591::1733327995::0::1::::<><>::res://Scripts/bullet.gd
+::res://Scripts/::1733328004
+bullet.gd::GDScript::-1::1733327770::0::1::::bullet<>Node3D<>::
+character_body_3d.gd::GDScript::-1::1733243539::0::1::::<>CharacterBody3D<>::
+collision_shape_3d.gd::GDScript::-1::1733243539::0::1::::<>CollisionShape3D<>::
+game.gd::GDScript::-1::1733241749::0::1::::<>Node3D<>::
+melee_weapon.gd::GDScript::-1::1733243539::0::1::::melee<>Node3D<>::
 ::res://Sprites/::1733243524
 ::res://Sprites/Watergun/::1733243536
 model.obj::Mesh::6296196545963739466::1733243524::1733243536::1::::<><>::
