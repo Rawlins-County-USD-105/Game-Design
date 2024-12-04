@@ -2,22 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://b8j07s6wx5qpy"
-=======
-uid="uid://dwfpuvemh0ojs"
->>>>>>> main
+uid="uid://nbq81ordkt4h"
 path.s3tc="res://.godot/imported/untitled_mremireh_body_normal.png-b145af26f6ed71da7524968970a97f6f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-<<<<<<< HEAD
-generator_parameters={
-"md5": "fb4da1cdb659969ecfdb1bb3b60767f7"
-}
-=======
->>>>>>> main
 
 [deps]
 

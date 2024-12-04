@@ -2,21 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://4bggmicydocp"
-=======
-uid="uid://dhyuxl3eryyp8"
->>>>>>> main
+uid="uid://bs8getfpphke4"
 path="res://.godot/imported/Zombie_mremireh_shoe_specular.png-ca64225262c9c54590441b1780dc9a83.ctex"
 metadata={
 "vram_texture": false
 }
-<<<<<<< HEAD
-generator_parameters={
-"md5": "6040a7353405772ab9833bcc3e5d5a70"
-}
-=======
->>>>>>> main
 
 [deps]
 
@@ -31,11 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-<<<<<<< HEAD
-mipmaps/generate=true
-=======
 mipmaps/generate=false
->>>>>>> main
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

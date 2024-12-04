@@ -2,22 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://blulde8t8rrqp"
-=======
-uid="uid://ewqwifo7rfrk"
->>>>>>> main
+uid="uid://bhstvdwgtlwep"
 path.s3tc="res://.godot/imported/Zombie_mremireh_shoe_diffuse.png-2e7e4288c183aba1a256be9eae8d7c20.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-<<<<<<< HEAD
-generator_parameters={
-"md5": "ffe42dd8af13e5b9f31471d5f4354e85"
-}
-=======
->>>>>>> main
 
 [deps]
 
