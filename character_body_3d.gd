@@ -108,7 +108,7 @@ func _physics_process(delta: float) -> void:
 				else:
 					velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
 					velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
-		if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint"):
+		if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 			if sprint && input_dir != Vector2.ZERO:
 				sliding = true
 				slide_timer - slide_timer_max
