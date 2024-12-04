@@ -2,15 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b732lpvqpsnok"
+=======
+uid="uid://1ov6u8jbpabr"
+>>>>>>> main
 path.s3tc="res://.godot/imported/Zombie_mremireh_body__diffuse.png-8f143d3328b3c40dd32acf04c672b490.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+<<<<<<< HEAD
 generator_parameters={
 "md5": "6cbf9d2088f8099044ae3a7a862463b2"
 }
+=======
+>>>>>>> main
 
 [deps]
 

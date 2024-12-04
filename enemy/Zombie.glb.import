@@ -3,7 +3,11 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
 uid="uid://bo5msdxp5bnqh"
+=======
+uid="uid://cuc70ryyo7kuk"
+>>>>>>> main
 path="res://.godot/imported/Zombie.glb-118d49337ef9d1ac981a218744475c19.scn"
 
 [deps]
@@ -31,6 +35,7 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
+<<<<<<< HEAD
 _subresources={
 "animations": {
 "Armature_001|mixamo_com|Layer0": {
@@ -5460,5 +5465,8 @@ _subresources={
 }
 }
 }
+=======
+_subresources={}
+>>>>>>> main
 gltf/naming_version=1
 gltf/embedded_image_handling=1

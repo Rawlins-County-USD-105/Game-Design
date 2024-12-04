@@ -2,15 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cdbi6vgp6awnn"
+=======
+uid="uid://b5y776uig6tq8"
+>>>>>>> main
 path.s3tc="res://.godot/imported/Zombie_mremireh_body_normal.png-61bf3b74a7dfe2a962bc86ece8c5b06a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+<<<<<<< HEAD
 generator_parameters={
 "md5": "fb4da1cdb659969ecfdb1bb3b60767f7"
 }
+=======
+>>>>>>> main
 
 [deps]
 
@@ -28,7 +35,11 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
+<<<<<<< HEAD
 roughness/src_normal="res://Zombie_mremireh_body_normal.png"
+=======
+roughness/src_normal="res://enemy/Zombie_mremireh_body_normal.png"
+>>>>>>> main
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

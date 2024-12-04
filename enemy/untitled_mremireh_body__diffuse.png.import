@@ -2,15 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dvracqwidut6p"
+=======
+uid="uid://dpsuxku8j0vfg"
+>>>>>>> main
 path.s3tc="res://.godot/imported/untitled_mremireh_body__diffuse.png-eeeba1fb3c09994977f6b1f4b156f1b0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+<<<<<<< HEAD
 generator_parameters={
 "md5": "6cbf9d2088f8099044ae3a7a862463b2"
 }
+=======
+>>>>>>> main
 
 [deps]
 
