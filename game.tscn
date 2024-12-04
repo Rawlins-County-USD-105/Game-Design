@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://bxuayw10wrj0f"]
+[gd_scene load_steps=19 format=3 uid="uid://bxuayw10wrj0f"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_idhtt"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_sqjdd"]
+[ext_resource type="PackedScene" uid="uid://de0w2s1sw2fm0" path="res://enemy/enemy.tscn" id="3_qfw5a"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -99,3 +100,5 @@ shape = SubResource("SphereShape3D_7u3ly")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="bocs"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("SphereMesh_iny5a")
+
+[node name="Enemy" parent="." instance=ExtResource("3_qfw5a")]
