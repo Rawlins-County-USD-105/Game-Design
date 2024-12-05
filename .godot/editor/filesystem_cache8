@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733330528
+::res://::1733414140
 character_body_3d.gd::GDScript::-1::1733329733::0::1::::<>CharacterBody3D<>::
 enemies.tscn::PackedScene::-1::1733330528::0::1::::<><>::
 enemy.tscn::PackedScene::-1::1733329733::0::1::::<><>::
 game.gd::GDScript::-1::1733329733::0::1::::<>Node3D<>::
-game.tscn::PackedScene::1162564723952069952::1733330459::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd
+game.tscn::PackedScene::1162564723952069952::1733330626::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd
 icon.svg::CompressedTexture2D::244492666970879408::1726062090::1733330439::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1733329733::0::1::::<><>::res://character_body_3d.gd
+player.tscn::PackedScene::7503851795771256410::1733330626::0::1::::<><>::res://character_body_3d.gd
 README.md::TextFile::-1::1729092339::0::1::::<><>::
 ::res://brackeys_platformer_assets/::1729091957
 LICENSE & CREDITS.txt::TextFile::-1::1729091957::0::1::::<><>::
@@ -30,26 +30,9 @@ platforms.png::CompressedTexture2D::6528024464598794627::1729091957::1733330439:
 slime_green.png::CompressedTexture2D::6107321564901303992::1729091957::1733330439::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1729091957::1733330439::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1729091957::1733330439::1::::<><>::
-::res://enemy/::1733330528
+::res://enemy/::1733330661
 bean.gd::GDScript::-1::1733330528::0::1::::<>CharacterBody3D<>::
-node.tscn::PackedScene::-1::1733329733::0::1::::<><>::
-node_3d.tscn::PackedScene::8716313641016880973::1733242792::0::1::::<><>::
-Bean.tscn::PackedScene::7289056893925735906::1733330459::0::1::::<><>::res://enemy/bean.gd
-untitled.glb::PackedScene::1828745906464034586::1733329733::1733330541::1::::<><>::uid://draxd3txdmn82::::res://enemy/untitled_mremireh_body__diffuse.png<>uid://nbq81ordkt4h::::res://enemy/untitled_mremireh_body_normal.png<>uid://d4k3o3cn3pqui::::res://enemy/untitled_mremireh_shoe_diffuse.png<>uid://cn5ytnjlhosw0::::res://enemy/untitled_mremireh_shoe_normal.png
-untitled_mremireh_body_normal.png::CompressedTexture2D::915551136142798541::1733329733::1733330539::1::::<><>::
-untitled_mremireh_body_specular.png::CompressedTexture2D::4689844144219234108::1733329733::1733330540::1::::<><>::
-untitled_mremireh_body__diffuse.png::CompressedTexture2D::8353875742195796577::1733329733::1733330539::1::::<><>::
-untitled_mremireh_shoe_diffuse.png::CompressedTexture2D::9217108845407069128::1733329733::1733330538::1::::<><>::
-untitled_mremireh_shoe_normal.png::CompressedTexture2D::5748719502429512013::1733329733::1733330538::1::::<><>::
-untitled_mremireh_shoe_specular.png::CompressedTexture2D::4374174684401765615::1733329733::1733330538::1::::<><>::
-Zombie.glb::PackedScene::690009007527670999::1733329733::1733330540::1::::<><>::uid://cg81s2uqfm8ol::::res://enemy/Zombie_mremireh_body__diffuse.png<>uid://cy7cifhghvn2f::::res://enemy/Zombie_mremireh_body_normal.png<>uid://bhstvdwgtlwep::::res://enemy/Zombie_mremireh_shoe_diffuse.png<>uid://by87ab8p0mkx2::::res://enemy/Zombie_mremireh_shoe_normal.png
-zombie.tscn::PackedScene::-1::1733329733::0::1::::<><>::
-Zombie_mremireh_body_normal.png::CompressedTexture2D::6523569696878854119::1733329733::1733330538::1::::<><>::
-Zombie_mremireh_body_specular.png::CompressedTexture2D::4447826923029988071::1733329733::1733330540::1::::<><>::
-Zombie_mremireh_body__diffuse.png::CompressedTexture2D::5263711130961286171::1733329733::1733330538::1::::<><>::
-Zombie_mremireh_shoe_diffuse.png::CompressedTexture2D::2916092705121177783::1733329733::1733330538::1::::<><>::
-Zombie_mremireh_shoe_normal.png::CompressedTexture2D::4141020444875697377::1733329733::1733330538::1::::<><>::
-Zombie_mremireh_shoe_specular.png::CompressedTexture2D::3718316786563413013::1733329733::1733330539::1::::<><>::
+Bean.tscn::PackedScene::7289056893925735906::1733330626::0::1::::<><>::res://enemy/bean.gd
 ::res://Main Menu/::1733330149
 Untitled design (5).png::CompressedTexture2D::641227296590557974::1733329733::1733330149::1::::<><>::
 Untitled design (6).png::CompressedTexture2D::4181290008722660431::1733329733::1733330149::1::::<><>::

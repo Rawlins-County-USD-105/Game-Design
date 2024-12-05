@@ -1,6 +1,6 @@
+NavigationRegion3D
 CharacterBody3D
 NavigationAgent3D
-NavigationRegion3D
 CollisionShape3D
 MeshInstance3D
 Skeleton3D
