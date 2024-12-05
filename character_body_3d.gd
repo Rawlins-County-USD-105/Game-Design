@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 
 
-@export_category("Movement")
+@export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
@@ -44,11 +44,12 @@ var sliding = false
 
 
 
+
 #func _enter_tree() -> void:
-	#$"..".set_multiplayer_authority(str($"..".name).to_int())
-	#
+	#$".".set_multiplayer_authority($"..".name.to_int())
+	
 #func _ready() -> void:
-	#camera_3d.current = is_multiplayer_authority()
+	#camera_3d.current = is_multiplayer_authority()	
 
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
@@ -67,7 +68,7 @@ func _physics_process(delta: float) -> void:
 		if not is_on_floor():
 			velocity += get_gravity() * delta
 		# Handle jump.
-		if Input.is_action_just_pressed("jump") and is_on_floor():
+		if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
 			velocity.y = JUMP_VELOCITY
 
 		# Get the input direction and handle the movement/deceleration.
@@ -94,8 +95,8 @@ func _physics_process(delta: float) -> void:
 		
 				velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 				velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
-
-				if Input.is_action_just_pressed("jump") and is_on_floor():
+ 
+				if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
 					velocity.y = JUMP_VELOCITY
 			else:
 				if Input.is_action_pressed("crouch") || sliding:
@@ -113,7 +114,7 @@ func _physics_process(delta: float) -> void:
 				slide_timer - slide_timer_max
 				slide_vector = direction
 
-
+		
 		if Input.is_action_pressed("crouch"):
 			current_speed = crouching_speed
 			neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
