@@ -1,38 +1,38 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733414140
+::res://::1733518789
 character_body_3d.gd::GDScript::-1::1733329733::0::1::::<>CharacterBody3D<>::
-enemies.tscn::PackedScene::-1::1733330528::0::1::::<><>::
+enemies.tscn::PackedScene::570732858572928973::1733415842::0::1::::<><>::uid://b3e38yksmln8o::::res://Chicken/Chicken.glb
 enemy.tscn::PackedScene::-1::1733329733::0::1::::<><>::
 game.gd::GDScript::-1::1733329733::0::1::::<>Node3D<>::
-game.tscn::PackedScene::1162564723952069952::1733330626::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd
+game.tscn::PackedScene::1162564723952069952::1733415842::0::1::::<><>::uid://de56lwhpalp6i::::res://player.tscn<>res://game.gd<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn
 icon.svg::CompressedTexture2D::244492666970879408::1726062090::1733330439::1::::<><>::
-player.tscn::PackedScene::7503851795771256410::1733330626::0::1::::<><>::res://character_body_3d.gd
+player.tscn::PackedScene::7503851795771256410::1733415402::0::1::::<><>::res://character_body_3d.gd
 README.md::TextFile::-1::1729092339::0::1::::<><>::
-::res://brackeys_platformer_assets/::1729091957
-LICENSE & CREDITS.txt::TextFile::-1::1729091957::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1733330438
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1729091957::1733330438::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1729091957::1733330438::1::::<><>::
-::res://brackeys_platformer_assets/music/::1733243411
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1729091957::1733243411::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1733330440
-coin.wav::AudioStreamWAV::8431615200529489740::1729091957::1733330440::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1729091957::1733330440::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1729091957::1733330440::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1729091957::1733330440::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1729091957::1733243411::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1729091957::1733243411::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1733330439
-coin.png::CompressedTexture2D::6052392971937403295::1729091957::1733330439::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1729091957::1733330439::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1729091957::1733330439::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1729091957::1733330439::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1729091957::1733330439::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1729091957::1733330439::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1729091957::1733330439::1::::<><>::
-::res://enemy/::1733330661
-bean.gd::GDScript::-1::1733330528::0::1::::<>CharacterBody3D<>::
-Bean.tscn::PackedScene::7289056893925735906::1733330626::0::1::::<><>::res://enemy/bean.gd
+::res://brackeys_platformer_assets/::1733415842
+LICENSE & CREDITS.txt::TextFile::-1::1733415842::0::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1733415842
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1733415842::1733518789::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1733415842::1733518789::1::::<><>::
+::res://brackeys_platformer_assets/music/::1733415842
+time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1733415842::1733518789::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1733415842
+coin.wav::AudioStreamWAV::8431615200529489740::1733415842::1733518789::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1733415842::1733518789::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1733415842::1733518789::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1733415842::1733518789::1::::<><>::
+power_up.wav::AudioStreamWAV::4558974050310742267::1733415842::1733518789::1::::<><>::
+tap.wav::AudioStreamWAV::8814320848351340103::1733415842::1733518789::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1733415842
+coin.png::CompressedTexture2D::6052392971937403295::1733415842::1733518789::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1733415842::1733518789::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1733415842::1733518789::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1733415842::1733518789::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1733415842::1733518789::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1733415842::1733518789::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1733415842::1733518789::1::::<><>::
+::res://enemy/::1733415842
+bean.gd::GDScript::-1::1733415842::0::1::::<>CharacterBody3D<>::
+Bean.tscn::PackedScene::7289056893925735906::1733415842::0::1::::<><>::res://enemy/bean.gd
 ::res://Main Menu/::1733330149
 Untitled design (5).png::CompressedTexture2D::641227296590557974::1733329733::1733330149::1::::<><>::
 Untitled design (6).png::CompressedTexture2D::4181290008722660431::1733329733::1733330149::1::::<><>::
