@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bat8jrl85wnav"]
 
-[ext_resource type="PackedScene" uid="uid://cgtrt8m67jbww" path="res://Melee Weapons/Shovel.glb" id="1_pxt21"]
+[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_pxt21"]
 
 [node name="Node3D" type="Node3D"]
 

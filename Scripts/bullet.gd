@@ -17,8 +17,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	position += transform.basis * Vector3(0, 0, -speed) * delta
-	if ray.is_colliding():
-		mesh.visible = true
+	if ray.get_collider():
+		mesh.visible = false
 		particles.emitting = true
 		if ray.get_collider().is_in_group("Enemy"):
 			ray.get_collider().hit()

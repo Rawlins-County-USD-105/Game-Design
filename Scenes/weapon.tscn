@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://6ujmxbh2whfk"]
+[gd_scene load_steps=7 format=3 uid="uid://6ujmxbh2whfk"]
 
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="1_rb3ql"]
+[ext_resource type="PackedScene" uid="uid://dipcinc6kk288" path="res://Scenes/WG_bullet.tscn" id="2_rfk66"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kjg08"]
 
@@ -42,14 +43,13 @@ _data = {
 "RESET": SubResource("Animation_ge6u7")
 }
 
-[node name="Weapon" type="Node3D" node_paths=PackedStringArray("firerate", "weapon_anim", "model", "raycast")]
+[node name="Weapon" type="Node3D" node_paths=PackedStringArray("weapon_anim", "model", "barrel")]
 script = ExtResource("1_rb3ql")
 damage = 1
-speed = 10
-firerate = NodePath("Timer")
 weapon_anim = NodePath("AnimationPlayer")
 model = NodePath("Model")
-raycast = NodePath("RayCast3D")
+barrel = NodePath("RayCast3D")
+gun_bullet = ExtResource("2_rfk66")
 
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = SubResource("CylinderMesh_kjg08")
