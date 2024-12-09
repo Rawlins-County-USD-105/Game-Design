@@ -1,8 +1,0 @@
-extends Node3D
-class_name Interactable
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
-
-@export var prompt_message = "Interact"
-@export var prompt_input = "interact" 
-@onready var collision_shape_3d: CollisionShape3D = $Door_1_grp/Door_1/CollisionShape3D
-@onready var timer: Timer = $Timer

@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=9 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="Texture2D" uid="uid://b0tpiakblr1l0" path="res://Main Menu/Assets/Untitled design (6).png" id="2_th47n"]
+[ext_resource type="Texture2D" uid="uid://d4iaugbfh30vj" path="res://Untitled design (12).png" id="3_2sgbo"]
 [ext_resource type="PackedScene" uid="uid://bpnjitwut2j4v" path="res://Game Interactions/Scenes/interact_ray.tscn" id="3_esf62"]
 [ext_resource type="PackedScene" uid="uid://vbyy0ru3k1kj" path="res://Game Interactions/Scenes/Colliding Ray.tscn" id="4_001us"]
 
@@ -54,6 +55,23 @@ offset_top = -174.0
 offset_right = -301.0
 offset_bottom = -140.0
 text = "Menu"
+
+[node name="Button" type="Button" parent="CharacterBody3D/neck/Camera/TextureRect/Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -102.0
+offset_right = 1420.0
+offset_bottom = 716.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_2sgbo")
+flat = true
+icon_alignment = 1
 
 [node name="InteractRay" parent="CharacterBody3D/neck/Camera" instance=ExtResource("3_esf62")]
 
