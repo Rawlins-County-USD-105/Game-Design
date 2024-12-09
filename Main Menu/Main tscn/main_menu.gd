@@ -15,4 +15,4 @@ func _on_settings_pressed() -> void:
 	get_tree().change_scene_to_file("res://Main Menu/Input Map Page/Input_Settings.tscn")
 
 func _on_button_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://game.tscn")
+	get_tree().change_scene_to_file("res://Scenes/game.tscn")
