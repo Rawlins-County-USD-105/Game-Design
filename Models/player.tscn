@@ -19,6 +19,7 @@ height = 1.24402
 
 [node name="standing_collison_shape" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.680793, -0.235988)
+floor_max_angle = 1.39626
 script = ExtResource("1_1qajl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="standing_collison_shape"]

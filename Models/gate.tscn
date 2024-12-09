@@ -1,9 +1,8 @@
 [gd_scene load_steps=9 format=4 uid="uid://b853mi7rkdknk"]
 
-[ext_resource type="Texture2D" uid="uid://bjugtpgunljl2" path="res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png" id="1_w6cx1"]
+[ext_resource type="Texture2D" uid="uid://cubkjqbadkay2" path="res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png" id="1_w6cx1"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ncnm6"]
-albedo_color = Color(0.995885, 0.896696, 0.819559, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opm2n"]
 albedo_texture = ExtResource("1_w6cx1")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7g32q"]
@@ -84,7 +83,7 @@ bones/2/rotation = Quaternion(2.56462e-14, 0, 0, 1)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="gate_1" type="MeshInstance3D" parent="gate_1_1/Skeleton3D"]
-material_override = SubResource("StandardMaterial3D_ncnm6")
+material_override = SubResource("StandardMaterial3D_opm2n")
 mesh = SubResource("ArrayMesh_s2ad7")
 skin = SubResource("Skin_cfpwf")
 
