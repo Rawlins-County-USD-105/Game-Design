@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=8 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
+[ext_resource type="PackedScene" uid="uid://vlx4rrwy2kaf" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
+[ext_resource type="Texture2D" uid="uid://c31jtatld2hd8" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -48,7 +50,14 @@ offset_right = 125.0
 offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
+
+[node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
+position = Vector2(125, 129)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_35suu")
+
+[node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
