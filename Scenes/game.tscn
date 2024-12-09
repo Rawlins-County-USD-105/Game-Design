@@ -1,7 +1,13 @@
-[gd_scene load_steps=17 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=18 format=3 uid="uid://bxuayw10wrj0f"]
 
-[ext_resource type="Script" path="res://Scripts/game.gd" id="1_sfmp4"]
-[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_nuxto"]
+<<<<<<<< HEAD:game.tscn
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_idhtt"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_sqjdd"]
+[ext_resource type="PackedScene" uid="uid://de0w2s1sw2fm0" path="res://enemy/enemy.tscn" id="3_qfw5a"]
+========
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_fg335"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_qycec"]
+>>>>>>>> main:Scenes/game.tscn
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -52,9 +58,15 @@ size = Vector3(5, 5, 5)
 [sub_resource type="SphereMesh" id="SphereMesh_iny5a"]
 
 [node name="Game" type="Node3D"]
-script = ExtResource("1_sfmp4")
+<<<<<<<< HEAD:game.tscn
+script = ExtResource("1_idhtt")
 
-[node name="player" parent="." instance=ExtResource("2_nuxto")]
+[node name="player" parent="." instance=ExtResource("2_sqjdd")]
+========
+script = ExtResource("1_fg335")
+
+[node name="player" parent="." instance=ExtResource("2_qycec")]
+>>>>>>>> main:Scenes/game.tscn
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237217, 1.62586, 1.95585)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -96,3 +108,5 @@ shape = SubResource("SphereShape3D_7u3ly")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="bocs"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("SphereMesh_iny5a")
+
+[node name="Enemy" parent="." instance=ExtResource("3_qfw5a")]
