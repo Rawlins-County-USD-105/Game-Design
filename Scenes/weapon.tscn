@@ -45,7 +45,6 @@ _data = {
 
 [node name="Weapon" type="Node3D" node_paths=PackedStringArray("weapon_anim", "model", "barrel")]
 script = ExtResource("1_rb3ql")
-damage = 1
 weapon_anim = NodePath("AnimationPlayer")
 model = NodePath("Model")
 barrel = NodePath("RayCast3D")

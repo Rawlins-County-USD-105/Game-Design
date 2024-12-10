@@ -9,7 +9,6 @@
 
 [node name="Enemy" type="Node3D"]
 script = ExtResource("1_pdusd")
-Health = 10
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." groups=["Enemy"]]
 script = ExtResource("2_f7ein")

@@ -1,13 +1,13 @@
 extends RigidBody3D
 
 
-var Damage
-signal Body_hit(Damage)
+var damage
+signal Body_hit(damage)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 
 func hit():
-	emit_signal("Body_hit" , Damage)
+	emit_signal("Body_hit" , damage)
 	
