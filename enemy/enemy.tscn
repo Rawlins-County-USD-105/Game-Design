@@ -21,4 +21,3 @@ mesh = SubResource("CapsuleMesh_4k1kj")
 skeleton = NodePath("../../..")
 
 [connection signal="Body_hit" from="RigidBody3D" to="." method="_on_rigid_body_3d_body_hit"]
-[connection signal="Body_hit" from="RigidBody3D" to="RigidBody3D" method="_on_body_hit"]
