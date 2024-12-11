@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://by4sxqvymlhrc" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png" id="10_h8r2r"]
 [ext_resource type="Material" uid="uid://c8e1dkq4vy1v1" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material" id="11_0m8ss"]
 [ext_resource type="Texture2D" uid="uid://jhehs2u4w4qi" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png" id="12_y11tr"]
-[ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_8de17"]
-[ext_resource type="PackedScene" uid="uid://dmb7wi2brnmrq" path="res://Models/Post.tscn" id="14_u5ik4"]
+[ext_resource type="PackedScene" path="res://Models/Fence2.tscn" id="13_8de17"]
+[ext_resource type="PackedScene" path="res://Models/Post.tscn" id="14_u5ik4"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_estb6"]
 _surfaces = [{
