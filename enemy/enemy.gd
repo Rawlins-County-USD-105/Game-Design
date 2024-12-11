@@ -11,7 +11,7 @@ var player= null
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
 @export var speed : int
-var Health = 20
+var Health = 20.0
 
 
 # Called when the node enters the scene tree for the first time.

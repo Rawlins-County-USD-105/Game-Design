@@ -25,4 +25,4 @@ shape = SubResource("CapsuleShape3D_4dkwc")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
 
-[connection signal="Body_hit" from="MeshInstance3D" to="." method="_on_mesh_instance_3d_body_hit"]
+[connection signal="Body_hit" from="." to="MeshInstance3D" method="_on_character_body_3d_body_hit"]
