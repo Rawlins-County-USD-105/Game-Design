@@ -9,15 +9,15 @@ var action_to_remap = null
 var remapping_button = null
 
 var input_actions = {
-	"left": "Move Left",
-	"right": "Move Right",
-	"forward": "Move Forward",
-	"back": "Move Backward",
-	"sprint": "Sprint",
-	"jump": "Jump",
-	"crouch": "crouch",
-	"Menu": "Menu",
-	"Close Map": "Exit Game",
+	"left": "MOVE LEFT",
+	"right": "MOVE RIGHT",
+	"forward": "MOVE FORWARD",
+	"back": "MOVE BACKWARD",
+	"sprint": "SPRINT",
+	"jump": "JUMP",
+	"crouch": "CROUCH",
+	"Menu": "MENU",
+	"Close Map": "EXIT GAME",
 
 }
 

@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://qtfjhpkne8ns"]
+[gd_scene load_steps=16 format=3 uid="uid://qtfjhpkne8ns"]
 
+[ext_resource type="Texture2D" uid="uid://dqo013ipiclc" path="res://icon.svg" id="1_n5krk"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://player.tscn" id="1_siqao"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
@@ -28,6 +29,9 @@ material = SubResource("StandardMaterial3D_d2ejw")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_djti3"]
 size = Vector3(23.7296, 0.824722, 23.6478)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88l0u"]
+albedo_texture = ExtResource("1_n5krk")
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3hu4"]
 noise_type = 0
@@ -64,7 +68,7 @@ transform = Transform3D(0.00127148, 0.999913, -0.0130867, -0.999905, 0.00109149,
 shape = SubResource("BoxShape3D_ettfv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 1.32163, -1.79001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000837564, 1.32163, 7.26114)
 mesh = SubResource("BoxMesh_oposf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -75,6 +79,7 @@ shape = SubResource("BoxShape3D_djti3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00670171)
+material_override = SubResource("StandardMaterial3D_88l0u")
 mesh = SubResource("PlaneMesh_rylpy")
 skin = SubResource("Skin_uxm6s")
 

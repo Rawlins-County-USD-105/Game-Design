@@ -130,7 +130,7 @@ theme_override_constants/outline_size = 100
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
 theme_override_font_sizes/font_size = 68
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6e5n6")
-text = "Settings
+text = "SETTINGS
 "
 flat = true
 
