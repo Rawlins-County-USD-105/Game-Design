@@ -8,6 +8,7 @@
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent")]
 script = ExtResource("1_wp8om")
+player_path = NodePath(".")
 mesh = NodePath("MeshInstance3D")
 hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
