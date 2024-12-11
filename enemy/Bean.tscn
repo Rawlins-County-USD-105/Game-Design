@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://db34x4vjni4pa"]
+[gd_scene load_steps=5 format=3 uid="uid://db34x4vjni4pa"]
 
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_wp8om"]
+[ext_resource type="Script" path="res://enemy/mesh_instance_3d.gd" id="2_6gg2w"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xx47l"]
 
@@ -16,9 +17,12 @@ speed = 6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_xx47l")
+script = ExtResource("2_6gg2w")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_4dkwc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
+
+[connection signal="Body_hit" from="MeshInstance3D" to="." method="_on_mesh_instance_3d_body_hit"]

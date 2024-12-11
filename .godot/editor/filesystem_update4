@@ -8,3 +8,6 @@ res://Scenes/weapon.tscn
 res://Scenes/WG_bullet.tscn
 res://game.tscn
 res://enemy/enemy.gd
+res://enemy/Enemy Body.gd
+res://enemy/MainEnemy.gd
+res://enemy/mesh_instance_3d.gd
