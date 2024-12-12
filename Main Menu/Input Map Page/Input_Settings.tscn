@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://br2ha0254k068" path="res://Untitled design (15).png" id="3_3ifya"]
+[ext_resource type="Texture2D" uid="uid://flcye4l0dfo1" path="res://Untitled design (15).png" id="3_3ifya"]
 [ext_resource type="Texture2D" uid="uid://b0weu5umgdl00" path="res://Main Menu/Assets/Asset UI Pack/Wenrexa Interface UI KIT #4/PNG/Icons/Close.png" id="4_rx7gt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nsgt2"]
