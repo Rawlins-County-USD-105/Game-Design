@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734021411
-character_body_3d.gd::GDScript::-1::1733761581::0::1::::<>CharacterBody3D<>::
-game.tscn::PackedScene::6717283191893817480::1734021159::0::1::::<><>::
+::res://::1734105466
+character_body_3d.gd::GDScript::-1::1734105431::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::6717283191893817480::1734105431::0::1::::<><>::
 README.md::TextFile::-1::1730128456::0::1::::<><>::
-watergun.tscn::PackedScene::1375750712323697857::1734021407::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+watergun.tscn::PackedScene::1375750712323697857::1734105431::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
 ::res://addons/::1734021159
-::res://addons/simplegrasstextured/::1734021159
+::res://addons/simplegrasstextured/::1734021426
 about.gd::GDScript::-1::1734021159::0::1::::<>AcceptDialog<>::
 about.tscn::PackedScene::4911781892099929477::1734021159::0::1::::<><>::res://addons/simplegrasstextured/about.gd<>uid://cl74usvfymgvs::::res://addons/simplegrasstextured/materials/icon.material<>uid://cubr1a55brlfp::::res://addons/simplegrasstextured/sgt_icon_48.svg
 clear_all_confirmation_dialog.gd::GDScript::-1::1734021159::0::1::::<>ConfirmationDialog<>::
@@ -27,7 +27,7 @@ toolbar_menu.gd::GDScript::-1::1734021159::0::1::::<>MenuButton<>::
 toolbar_menu.tscn::PackedScene::7476773302474954695::1734021159::0::1::::<><>::res://addons/simplegrasstextured/toolbar_menu.gd
 toolbar_up.gd::GDScript::-1::1734021159::0::1::::<>Control<>::
 toolbar_up.tscn::PackedScene::2788704064382556614::1734021159::0::1::::<><>::res://addons/simplegrasstextured/toolbar_up.gd<>uid://bsmcpupaj02v8::::res://addons/simplegrasstextured/sgt_icon.svg<>uid://der2mmxtog2mt::::res://addons/simplegrasstextured/toolbar_menu.tscn
-::res://addons/simplegrasstextured/images/::1734021159
+::res://addons/simplegrasstextured/images/::1734021437
 motion.png::CompressedTexture2D::1043842571892076644::1734021159::1734021437::1::::<><>::
 motion_frame.png::CompressedTexture2D::8291936515979441685::1734021159::1734021426::1::::<><>::
 normal.png::CompressedTexture2D::7755753403738683885::1734021159::1734021437::1::::<><>::
@@ -52,42 +52,42 @@ motion1.gdshader::Shader::-1::1734021159::0::1::::<><>::
 motion2.gdshader::Shader::-1::1734021159::0::1::::<><>::
 normal.gdshader::Shader::-1::1734021159::0::1::::<><>::
 position.gdshader::Shader::-1::1734021159::0::1::::<><>::
-::res://addons/simplegrasstextured/textures/::1734021159
+::res://addons/simplegrasstextured/textures/::1734021426
 grassbushcc008.png::CompressedTexture2D::6245934542479516539::1734021159::1734021426::1::::<><>::
-::res://brackeys_platformer_assets/::1733761559
-LICENSE & CREDITS.txt::TextFile::-1::1733761559::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1733932739
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1733761559::1733932739::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1733761559::1733932739::1::::<><>::
-::res://brackeys_platformer_assets/music/::1733932739
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1733761559::1733932739::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1733932740
-coin.wav::AudioStreamWAV::8431615200529489740::1733761559::1733932740::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1733761559::1733932740::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1733761559::1733932740::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1733761559::1733932740::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1733761559::1733932740::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1733761559::1733932740::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1733932739
-coin.png::CompressedTexture2D::6052392971937403295::1733761559::1734021426::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1733761559::1734021426::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1733761559::1734021426::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1733761559::1734021426::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1733761559::1734021426::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1733761559::1734021426::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1733761559::1734021426::1::::<><>::
-::res://enemy/::1734021407
-area_3d.gd::GDScript::-1::1734021125::0::1::::<>Area3D<>::
-Bean.tscn::PackedScene::7289056893925735906::1734021407::0::1::::<><>::res://enemy/enemy.gd<>res://enemy/area_3d.gd
-Enemy Body.gd::GDScript::-1::1733934523::0::1::::<>RigidBody3D<>::
-enemy.gd::GDScript::-1::1734021125::0::1::::Enemy<>CharacterBody3D<>::
-MainEnemy.gd::GDScript::-1::1733934523::0::1::::<>Node3D<>::
-mesh_instance_3d.gd::GDScript::-1::1734020711::0::1::::<>MeshInstance3D<>::
+::res://brackeys_platformer_assets/::1734105431
+LICENSE & CREDITS.txt::TextFile::-1::1734105431::0::1::::<><>::
+::res://brackeys_platformer_assets/fonts/::1734105431
+PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1734105431::1734105466::1::::<><>::
+PixelOperator8.ttf::FontFile::2445196971112042332::1734105431::1734105466::1::::<><>::
+::res://brackeys_platformer_assets/music/::1734105431
+time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1734105431::1734105466::1::::<><>::
+::res://brackeys_platformer_assets/sounds/::1734105431
+coin.wav::AudioStreamWAV::8431615200529489740::1734105431::1734105466::1::::<><>::
+explosion.wav::AudioStreamWAV::6405718111110113325::1734105431::1734105466::1::::<><>::
+hurt.wav::AudioStreamWAV::2424972067559149547::1734105431::1734105466::1::::<><>::
+jump.wav::AudioStreamWAV::5318526597446387881::1734105431::1734105466::1::::<><>::
+power_up.wav::AudioStreamWAV::4558974050310742267::1734105431::1734105466::1::::<><>::
+tap.wav::AudioStreamWAV::8814320848351340103::1734105431::1734105466::1::::<><>::
+::res://brackeys_platformer_assets/sprites/::1734105431
+coin.png::CompressedTexture2D::6052392971937403295::1734105431::1734105466::1::::<><>::
+fruit.png::CompressedTexture2D::7340303301470814367::1734105431::1734105466::1::::<><>::
+knight.png::CompressedTexture2D::5477910706170960278::1734105431::1734105466::1::::<><>::
+platforms.png::CompressedTexture2D::6528024464598794627::1734105431::1734105466::1::::<><>::
+slime_green.png::CompressedTexture2D::6107321564901303992::1734105431::1734105466::1::::<><>::
+slime_purple.png::CompressedTexture2D::5499142865324758640::1734105431::1734105466::1::::<><>::
+world_tileset.png::CompressedTexture2D::189340558103377848::1734105431::1734105466::1::::<><>::
+::res://enemy/::1734105431
+area_3d.gd::GDScript::-1::1734105431::0::1::::<>Area3D<>::
+Bean.tscn::PackedScene::7289056893925735906::1734105431::0::1::::<><>::res://enemy/enemy.gd<>res://enemy/area_3d.gd
+Enemy Body.gd::GDScript::-1::1734105431::0::1::::<>RigidBody3D<>::
+enemy.gd::GDScript::-1::1734105431::0::1::::Enemy<>CharacterBody3D<>::
+MainEnemy.gd::GDScript::-1::1734105431::0::1::::<>Node3D<>::
+mesh_instance_3d.gd::GDScript::-1::1734105431::0::1::::<>MeshInstance3D<>::
 ::res://HousesAndProps_blend_Gltf_Textures/::1734021158
 README.txt::TextFile::-1::1734021157::0::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/gltf/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/gltf/::1734021431
 HouseAndPropsAssetPack.gltf::PackedScene::7331923766323016287::1734021158::1734021431::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/::1734021429
 AO_RietRoof.png::CompressedTexture2D::7339394333066774647::1734021157::1734021429::1::::<><>::
 Base Color_RietRoof.png::CompressedTexture2D::5745187826430338375::1734021157::1734021429::1::::<><>::
 BASE COLOR_TrimProps.png::CompressedTexture2D::5869089014683217612::1734021157::1734021429::1::::<><>::
@@ -137,125 +137,125 @@ WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::6177187324188232370::17340211
 WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::1261427761448926171::1734021158::1734021418::1::::<><>::
 WoodPlankFloor_Diffuse.png::CompressedTexture2D::7418235949911115636::1734021158::1734021418::1::::<><>::
 WoodTrim_Diffuse.png::CompressedTexture2D::7365801241261015309::1734021158::1734021417::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickStoneTrim/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickStoneTrim/::1734021427
 BrickStoneTrim_Ambient Occlusion.png::CompressedTexture2D::5586667171996466979::1734021157::1734021426::1::::<><>::
 BrickStoneTrim_Diffuse.png::CompressedTexture2D::1148301109588599631::1734021157::1734021426::1::::<><>::
 BrickStoneTrim_MRAo.tga::CompressedTexture2D::6344510864830964664::1734021157::1734021427::1::::<><>::
 BrickStoneTrim_Normal.png::CompressedTexture2D::4006868026381222188::1734021157::1734021427::1::::<><>::
 BrickStoneTrim_Roughness.png::CompressedTexture2D::982914985791070879::1734021157::1734021427::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickWall/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickWall/::1734021427
 BrickWall_Ambient Occlusion.png::CompressedTexture2D::2669546293370228150::1734021157::1734021427::1::::<><>::
 BrickWall_Diffuse.png::CompressedTexture2D::575407737483253546::1734021157::1734021427::1::::<><>::
 BrickWall_MRAo.tga::CompressedTexture2D::2126464829155989907::1734021157::1734021427::1::::<><>::
 BrickWall_Normal.png::CompressedTexture2D::9088166654420701525::1734021157::1734021427::1::::<><>::
 BrickWall_Roughness.png::CompressedTexture2D::1672365271881238118::1734021157::1734021427::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/Doors/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Doors/::1734021427
 Doors_Ambient Occlusion.png::CompressedTexture2D::1999361953370211897::1734021157::1734021427::1::::<><>::
 Doors_Diffuse.png::CompressedTexture2D::20114484944879093::1734021157::1734021427::1::::<><>::
 Doors_Metalness.png::CompressedTexture2D::1206510333403767755::1734021157::1734021426::1::::<><>::
 Doors_MRAo.tga::CompressedTexture2D::404304010681677406::1734021157::1734021427::1::::<><>::
 Doors_Normal.png::CompressedTexture2D::4730711345685573661::1734021157::1734021427::1::::<><>::
 Doors_Roughness.png::CompressedTexture2D::3929919086563259510::1734021157::1734021426::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/Glass/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Glass/::1734021426
 BASE COLOR_Glass.png::CompressedTexture2D::7767852825612375955::1734021157::1734021426::1::::<><>::
 MRAO_Glass.png::CompressedTexture2D::915399832244430820::1734021157::1734021426::1::::<><>::
 ROUGHNESS_Glass.png::CompressedTexture2D::4693737458889333047::1734021157::1734021426::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/Grass/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Grass/::1734021427
 Grass_Ambient Occlusion.png::CompressedTexture2D::2464715281098377269::1734021157::1734021426::1::::<><>::
 Grass_Diffuse.png::CompressedTexture2D::3683427893203038323::1734021157::1734021426::1::::<><>::
 Grass_MRAo.tga::CompressedTexture2D::3066287894537286236::1734021157::1734021426::1::::<><>::
 Grass_Normal.png::CompressedTexture2D::536703390015836943::1734021157::1734021427::1::::<><>::
 Grass_Roughness.png::CompressedTexture2D::2176031213350869888::1734021157::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/Ground/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Ground/::1734021425
 Ground_Ambient Occlusion.png::CompressedTexture2D::966074755540261887::1734021157::1734021425::1::::<><>::
 Ground_Diffuse.png::CompressedTexture2D::9083734907531460910::1734021157::1734021425::1::::<><>::
 Ground_MRAo.tga::CompressedTexture2D::1955356782885721207::1734021157::1734021425::1::::<><>::
 Ground_Normal.png::CompressedTexture2D::1800778942761556257::1734021157::1734021425::1::::<><>::
 Ground_Roughness.png::CompressedTexture2D::8974016060573691490::1734021157::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/LimeWall/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/LimeWall/::1734021425
 LimeWall_Ambient Occlusion.png::CompressedTexture2D::2693700501242129024::1734021157::1734021425::1::::<><>::
 LimeWall_Diffuse.png::CompressedTexture2D::7913593767537955862::1734021157::1734021425::1::::<><>::
 LimeWall_MRAo.tga::CompressedTexture2D::5225596938313712382::1734021157::1734021425::1::::<><>::
 LimeWall_Normal.png::CompressedTexture2D::8458503796686135820::1734021157::1734021425::1::::<><>::
 LimeWall_Roughness.png::CompressedTexture2D::4476190919153134403::1734021157::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/LogWall/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/LogWall/::1734021425
 LogWall_Ambient Occlusion.png::CompressedTexture2D::4986441870763407222::1734021157::1734021425::1::::<><>::
 LogWall_Diffuse.png::CompressedTexture2D::4414215004354471581::1734021157::1734021425::1::::<><>::
 LogWall_MRAo.tga::CompressedTexture2D::776273470631604392::1734021157::1734021425::1::::<><>::
 LogWall_Normal.png::CompressedTexture2D::1504167029132720271::1734021157::1734021425::1::::<><>::
 LogWall_Roughness.png::CompressedTexture2D::7932955783681585759::1734021157::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/RietRoof/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/RietRoof/::1734021426
 AO_RietRoof.png::CompressedTexture2D::2500546649089102845::1734021157::1734021424::1::::<><>::
 Base Color_RietRoof.png::CompressedTexture2D::8277744767786150956::1734021157::1734021424::1::::<><>::
 MRAO_RietRoof.exr::CompressedTexture2D::1132131737752774693::1734021157::1734021424::1::::<><>::
 NORMAL_RietRoof.png::CompressedTexture2D::8476036128967871563::1734021157::1734021425::1::::<><>::
 ROUGHNESS_RietRoof.png::CompressedTexture2D::6244890898767169311::1734021157::1734021426::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/Roof/::1734021157
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Roof/::1734021426
 Roof_Ambient Occlusion.png::CompressedTexture2D::940600353426010709::1734021157::1734021426::1::::<><>::
 Roof_Diffuse.png::CompressedTexture2D::5980417341477303289::1734021157::1734021426::1::::<><>::
 Roof_MRAo.tga::CompressedTexture2D::2150232057734272744::1734021157::1734021426::1::::<><>::
 Roof_Normal.png::CompressedTexture2D::833922041603561974::1734021157::1734021426::1::::<><>::
 Roof_Roughness.png::CompressedTexture2D::1838861530237601445::1734021157::1734021426::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor/::1734021426
 StoneFloor_Ambient Occlusion.png::CompressedTexture2D::9151016269374918782::1734021157::1734021426::1::::<><>::
 StoneFloor_Diffuse.png::CompressedTexture2D::2947122437018805569::1734021157::1734021426::1::::<><>::
 StoneFloor_MRAo.tga::CompressedTexture2D::2058386813169355180::1734021157::1734021426::1::::<><>::
 StoneFloor_Normal.png::CompressedTexture2D::7630012915731572146::1734021158::1734021426::1::::<><>::
 StoneFloor_Roughness.png::CompressedTexture2D::9131606395381753870::1734021158::1734021426::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_2/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_2/::1734021426
 StoneFloor_2_Ambient Occlusion.png::CompressedTexture2D::2243571576642307626::1734021158::1734021425::1::::<><>::
 StoneFloor_2_Diffuse.png::CompressedTexture2D::7952144806473180031::1734021158::1734021426::1::::<><>::
 StoneFloor_2_MRAo.tga::CompressedTexture2D::6877423134640351717::1734021158::1734021426::1::::<><>::
 StoneFloor_2_Normal.png::CompressedTexture2D::60048307525104096::1734021158::1734021425::1::::<><>::
 StoneFloor_2_Roughness.png::CompressedTexture2D::4297122075857407748::1734021158::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_3/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_3/::1734021425
 StoneFloor_3_Ambient Occlusion.png::CompressedTexture2D::1556961308321906366::1734021158::1734021425::1::::<><>::
 StoneFloor_3_Diffuse.png::CompressedTexture2D::2857006291549515865::1734021158::1734021425::1::::<><>::
 StoneFloor_3_MRAo.tga::CompressedTexture2D::5524232950417830035::1734021158::1734021425::1::::<><>::
 StoneFloor_3_Normal.png::CompressedTexture2D::575791876402381482::1734021158::1734021425::1::::<><>::
 StoneFloor_3_Roughness.png::CompressedTexture2D::729776204279570288::1734021158::1734021425::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/TrimProps/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/TrimProps/::1734021427
 BASE COLOR_TrimProps.png::CompressedTexture2D::9101035270580991493::1734021158::1734021427::1::::<><>::
 METALLIC_TrimProps.png::CompressedTexture2D::7203955542806863479::1734021158::1734021427::1::::<><>::
 MR_TrimProps.exr::CompressedTexture2D::5147831207533297752::1734021158::1734021427::1::::<><>::
 NORMAL_TrimProps.png::CompressedTexture2D::6856420580901648079::1734021158::1734021427::1::::<><>::
 ROUGHNESS_TrimProps.png::CompressedTexture2D::1670835579805322351::1734021158::1734021427::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodDeck/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodDeck/::1734021428
 WoodDeck_AO.png::CompressedTexture2D::6396385293796816917::1734021158::1734021427::1::::<><>::
 WoodDeck_Diffuse.png::CompressedTexture2D::5818901777235984097::1734021158::1734021427::1::::<><>::
 WoodDeck_Emission.png::CompressedTexture2D::194639060421143094::1734021158::1734021427::1::::<><>::
 WoodDeck_MRAO.tga::CompressedTexture2D::8731640591153906929::1734021158::1734021428::1::::<><>::
 WoodDeck_Normal.png::CompressedTexture2D::351826003639669572::1734021158::1734021428::1::::<><>::
 WoodDeck_Roughness.png::CompressedTexture2D::4963243992729174098::1734021158::1734021428::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor/::1734021428
 WoodPlankFloor_Ambient Occlusion.png::CompressedTexture2D::2406148175255106300::1734021158::1734021427::1::::<><>::
 WoodPlankFloor_Diffuse.png::CompressedTexture2D::5400210913810409274::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_Metalness.png::CompressedTexture2D::4325988154923958018::1734021158::1734021427::1::::<><>::
 WoodPlankFloor_MRAo.tga::CompressedTexture2D::2512263605042176321::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_Normal.png::CompressedTexture2D::782542672207935679::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_Roughness.png::CompressedTexture2D::1860285659557724377::1734021158::1734021428::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_2/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_2/::1734021428
 WoodPlankFloor_2_Ambient Occlusion.png::CompressedTexture2D::8046779856172257807::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::8109278427444723398::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::7268346155813222796::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_2_Normal.png::CompressedTexture2D::9003866147585687974::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_2_Roughness.png::CompressedTexture2D::4155659974588554983::1734021158::1734021428::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_3/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_3/::1734021428
 WoodPlankFloor_3_Ambient Occlusion.png::CompressedTexture2D::7021352620025269307::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::563577737282116155::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::8082830969653687839::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_3_Normal.png::CompressedTexture2D::3977698954470366130::1734021158::1734021428::1::::<><>::
 WoodPlankFloor_3_Roughness.png::CompressedTexture2D::340771721266253169::1734021158::1734021427::1::::<><>::
-::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodTrims/::1734021158
+::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodTrims/::1734021429
 WoodTrim_Ambient Occlusion.png::CompressedTexture2D::6557227699957537721::1734021158::1734021429::1::::<><>::
 WoodTrim_Diffuse.png::CompressedTexture2D::2691975258028243313::1734021158::1734021429::1::::<><>::
 WoodTrim_Metalness.png::CompressedTexture2D::4742078135653562760::1734021158::1734021429::1::::<><>::
 WoodTrim_MRAo.tga::CompressedTexture2D::256576557126543000::1734021158::1734021429::1::::<><>::
 WoodTrim_Normal.png::CompressedTexture2D::1722827483009112323::1734021158::1734021429::1::::<><>::
 WoodTrim_Roughness.png::CompressedTexture2D::508419480783430841::1734021158::1734021429::1::::<><>::
-::res://Main Menu/::1733932739
-Untitled design (5).png::CompressedTexture2D::668236971228655289::1733243555::1733932739::1::::<><>::
-::res://Main Menu/Assets/::1733761559
+::res://Main Menu/::1734105431
+Untitled design (5).png::CompressedTexture2D::3037320053121602082::1733243555::1734105466::1::::<><>::
+::res://Main Menu/Assets/::1734105431
 ::res://Main Menu/Assets/Backdrops/::1733932740
 ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1733241649::1733932739::1::::<><>::
 Untitled design (1).png::CompressedTexture2D::510534257622831008::1733241649::1733932739::1::::<><>::
@@ -271,15 +271,15 @@ input_settings.gd::GDScript::-1::1733241649::0::1::::<>Control<>::
 Input_Settings.tscn::PackedScene::6133283631795022544::1733241649::0::1::::<><>::res://Main Menu/Input Map Page/input_settings.gd<>uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
 ::res://Main Menu/Input Map Page/Scenes/::1733241649
 input_button.tscn::PackedScene::7283866548932056814::1733241649::0::1::::<><>::
-::res://Main Menu/Main tscn/::1734021158
-main_menu.gd::GDScript::-1::1734021158::0::1::::<>Control<>::
+::res://Main Menu/Main tscn/::1734105431
+main_menu.gd::GDScript::-1::1734105431::0::1::::<>Control<>::
 main_menu.tscn::PackedScene::6149924103355590478::1733848476::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
-::res://Materials/::1734021158
+::res://Materials/::1734021419
 696.jpg::CompressedTexture2D::5366653456799354598::1734021158::1734021419::1::::<><>::
-::res://Materials/Farm Buildings by Quaternius/::1734021158
+::res://Materials/Farm Buildings by Quaternius/::1734021418
 Preview.png::CompressedTexture2D::2819821852651949595::1734021158::1734021418::1::::<><>::
 ::res://Materials/Farm Buildings by Quaternius/Blend/::1734021158
-::res://Materials/Farm Buildings by Quaternius/FBX/::1734021158
+::res://Materials/Farm Buildings by Quaternius/FBX/::1734021433
 Barn.fbx::PackedScene::1018770494305589779::1734021158::1734021433::1::::<><>::
 BigBarn.fbx::PackedScene::8125878299334333051::1734021158::1734021432::1::::<><>::
 ChickenCoop.fbx::PackedScene::4518967624349696696::1734021158::1734021432::1::::<><>::
@@ -293,7 +293,7 @@ TowerWindmill.fbx::PackedScene::8928710160058020656::1734021158::1734021432::1::
 WaterTower.fbx::PackedScene::5849711219995399234::1734021158::1734021432::1::::<><>::
 Well.fbx::PackedScene::363187651890670471::1734021158::1734021432::1::::<><>::
 Windmill.fbx::PackedScene::4147645123783502399::1734021158::1734021432::1::::<><>::
-::res://Materials/Farm Buildings by Quaternius/OBJ/::1734021158
+::res://Materials/Farm Buildings by Quaternius/OBJ/::1734021430
 Barn.obj::Mesh::3462455628915080318::1734021158::1734021429::1::::<><>::
 BigBarn.obj::Mesh::4567871073318732064::1734021158::1734021429::1::::<><>::
 ChickenCoop.obj::Mesh::5718287092062326408::1734021158::1734021429::1::::<><>::
@@ -310,7 +310,7 @@ Windmill.obj::Mesh::7421280140903761634::1734021158::1734021430::1::::<><>::
 ::res://Materials/free-environment-props-3d-low-poly-models/::1734021159
 License.txt::TextFile::-1::1734021159::0::1::::<><>::
 readme.txt::TextFile::-1::1734021159::0::1::::<><>::
-::res://Materials/free-environment-props-3d-low-poly-models/FBX/::1734021158
+::res://Materials/free-environment-props-3d-low-poly-models/FBX/::1734021433
 Bag_1.fbx::PackedScene::582211062379990830::1734021158::1734021433::1::::<><>::
 bag_2.fbx::PackedScene::8431937265016668331::1734021158::1734021433::1::::<><>::
 bench.fbx::PackedScene::6480195043052688323::1734021158::1734021433::1::::<><>::
@@ -339,7 +339,7 @@ Road_wood_1.fbx::PackedScene::6611308946635908324::1734021158::1734021433::1::::
 Road_wood_2.fbx::PackedScene::5302648059402782079::1734021158::1734021433::1::::<><>::
 Road_wood_3.fbx::PackedScene::2102733290242902147::1734021158::1734021433::1::::<><>::
 road_wood_4.fbx::PackedScene::5658416591431273124::1734021158::1734021433::1::::<><>::
-::res://Materials/free-environment-props-3d-low-poly-models/FBX/textures/::1734021159
+::res://Materials/free-environment-props-3d-low-poly-models/FBX/textures/::1734021418
 DoorColor.png::CompressedTexture2D::8389798076233695218::1734021158::1734021418::1::::<><>::
 DoorNormals.png::CompressedTexture2D::1105270171761357345::1734021158::1734021417::1::::<><>::
 DoorRoughness.png::CompressedTexture2D::1873071866997354935::1734021158::1734021418::1::::<><>::
@@ -364,7 +364,7 @@ WallsRoughness.png::CompressedTexture2D::5775027602767365881::1734021159::173402
 WindowColor.png::CompressedTexture2D::5453858109403687043::1734021159::1734021413::1::::<><>::
 WindowNormal.png::CompressedTexture2D::5186017289213505250::1734021159::1734021416::1::::<><>::
 WindowRoughness.png::CompressedTexture2D::8128430850988067726::1734021159::1734021416::1::::<><>::
-::res://Materials/free-environment-props-3d-low-poly-models/Texture/::1734021159
+::res://Materials/free-environment-props-3d-low-poly-models/Texture/::1734021415
 Texture.png::CompressedTexture2D::955582681346171109::1734021159::1734021415::1::::<><>::
 ::res://Materials/LoafbrrAssets/::1734021158
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/::1734021158
@@ -520,86 +520,86 @@ road_stairs_wide_narrow.tscn::PackedScene::9007639572147593071::1734021158::0::1
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Script/::1734021158
 DoorOpen.gd::GDScript::-1::1734021158::0::1::::<>Node3D<>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/::1734021158
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/::1734021416
 BrickStoneTrim_Diffuse.png::CompressedTexture2D::1342258347881824607::1734021158::1734021416::1::::<><>::
 BrickStoneTrim_MRAo.tga::CompressedTexture2D::1811106369587778633::1734021158::1734021416::1::::<><>::
 BrickStoneTrim_Normal.png::CompressedTexture2D::4742362515395648028::1734021158::1734021416::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/::1734021416
 BrickWall_Diffuse.png::CompressedTexture2D::1604888349148510900::1734021158::1734021416::1::::<><>::
 BrickWall_MRAo.tga::CompressedTexture2D::8101252375419012036::1734021158::1734021415::1::::<><>::
 BrickWall_Normal.png::CompressedTexture2D::2978840386552765086::1734021158::1734021415::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/::1734021415
 Doors_Diffuse.png::CompressedTexture2D::7608036041878674842::1734021158::1734021415::1::::<><>::
 Doors_MRAo.tga::CompressedTexture2D::6968687363683929442::1734021158::1734021415::1::::<><>::
 Doors_Normal.png::CompressedTexture2D::4319848161347977285::1734021158::1734021415::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/::1734021415
 BASE COLOR_Glass.png::CompressedTexture2D::222197287455224394::1734021158::1734021415::1::::<><>::
 MRAO_Glass.png::CompressedTexture2D::184896885653544517::1734021158::1734021415::1::::<><>::
 ROUGHNESS_Glass.png::CompressedTexture2D::552386620163392475::1734021158::1734021415::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/::1734021423
 Grass_Diffuse.png::CompressedTexture2D::3012462789333228555::1734021158::1734021415::1::::<><>::
 Grass_MRAo.tga::CompressedTexture2D::5922962922419544941::1734021158::1734021415::1::::<><>::
 Grass_Normal.png::CompressedTexture2D::8284109798023298488::1734021158::1734021423::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/::1734021423
 Ground_Diffuse.png::CompressedTexture2D::6052988375759274881::1734021158::1734021423::1::::<><>::
 Ground_MRAo.tga::CompressedTexture2D::6067058412672034404::1734021158::1734021423::1::::<><>::
 Ground_Normal.png::CompressedTexture2D::2674812554734230033::1734021158::1734021423::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/::1734021423
 LimeWall_Diffuse.png::CompressedTexture2D::4285833818152221747::1734021158::1734021423::1::::<><>::
 LimeWall_MRAo.tga::CompressedTexture2D::3390770507328193586::1734021158::1734021423::1::::<><>::
 LimeWall_Normal.png::CompressedTexture2D::1668395329715567351::1734021158::1734021423::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/::1734021423
 LogWall_Diffuse.png::CompressedTexture2D::6019350099961281643::1734021158::1734021423::1::::<><>::
 LogWall_MRAo.tga::CompressedTexture2D::213512925304856676::1734021158::1734021423::1::::<><>::
 LogWall_Normal.png::CompressedTexture2D::2057862716139172677::1734021158::1734021423::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/::1734021423
 Base Color_RietRoof.png::CompressedTexture2D::2341445563068814780::1734021158::1734021423::1::::<><>::
 MRAO_RietRoof.exr::CompressedTexture2D::7813662097305171046::1734021158::1734021422::1::::<><>::
 NORMAL_RietRoof.png::CompressedTexture2D::2840538648131022060::1734021158::1734021423::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/::1734021423
 Roof_Diffuse.png::CompressedTexture2D::8456547540718057513::1734021158::1734021423::1::::<><>::
 Roof_MRAo.tga::CompressedTexture2D::3583830247250144210::1734021158::1734021423::1::::<><>::
 Roof_Normal.png::CompressedTexture2D::6933408970718601996::1734021158::1734021422::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/::1734021425
 StoneFloor_Diffuse.png::CompressedTexture2D::975931030915890215::1734021158::1734021422::1::::<><>::
 StoneFloor_MRAo.tga::CompressedTexture2D::8741761650229117380::1734021158::1734021425::1::::<><>::
 StoneFloor_Normal.png::CompressedTexture2D::2443630873201826120::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/::1734021425
 StoneFloor_2_Diffuse.png::CompressedTexture2D::4274972854765508207::1734021158::1734021424::1::::<><>::
 StoneFloor_2_MRAo.tga::CompressedTexture2D::3403754067263425049::1734021158::1734021425::1::::<><>::
 StoneFloor_2_Normal.png::CompressedTexture2D::3771607918949581042::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/::1734021424
 StoneFloor_3_Diffuse.png::CompressedTexture2D::4950370859516654437::1734021158::1734021424::1::::<><>::
 StoneFloor_3_MRAo.tga::CompressedTexture2D::2847040283802864728::1734021158::1734021424::1::::<><>::
 StoneFloor_3_Normal.png::CompressedTexture2D::9035561492619755828::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/::1734021424
 BASE COLOR_TrimProps.png::CompressedTexture2D::5142760012743602351::1734021158::1734021424::1::::<><>::
 MR_TrimProps.exr::CompressedTexture2D::1524461847713526087::1734021158::1734021424::1::::<><>::
 NORMAL_TrimProps.png::CompressedTexture2D::8260550196457689640::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/::1734021424
 WoodDeck_Diffuse.png::CompressedTexture2D::2113906203768414461::1734021158::1734021424::1::::<><>::
 WoodDeck_MRAO.tga::CompressedTexture2D::7719641178551769360::1734021158::1734021424::1::::<><>::
 WoodDeck_Normal.png::CompressedTexture2D::1428516416002688203::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/::1734021424
 WoodPlankFloor_Diffuse.png::CompressedTexture2D::3903072748509154638::1734021158::1734021424::1::::<><>::
 WoodPlankFloor_MRAo.tga::CompressedTexture2D::8939081699379992802::1734021158::1734021424::1::::<><>::
 WoodPlankFloor_Normal.png::CompressedTexture2D::849315213884871257::1734021158::1734021424::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/::1734021423
 WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::270870483662853799::1734021158::1734021423::1::::<><>::
 WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::8901726377766859861::1734021158::1734021420::1::::<><>::
 WoodPlankFloor_2_Normal.png::CompressedTexture2D::2523675661023772804::1734021158::1734021420::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/::1734021420
 WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::2176030882656801565::1734021158::1734021420::1::::<><>::
 WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::5299830965902089645::1734021158::1734021420::1::::<><>::
 WoodPlankFloor_3_Normal.png::CompressedTexture2D::7805996322969954065::1734021158::1734021419::1::::<><>::
-::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/::1734021158
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/::1734021419
 WoodTrim_Diffuse.png::CompressedTexture2D::6180154145468544144::1734021158::1734021419::1::::<><>::
 WoodTrim_MRAo.tga::CompressedTexture2D::4120162018149651690::1734021158::1734021419::1::::<><>::
 WoodTrim_Normal.png::CompressedTexture2D::7120549546838354457::1734021158::1734021419::1::::<><>::
-::res://Melee Weapons/::1733932740
-Shovel.glb::PackedScene::1100331826515408306::1733761559::1733932740::1::::<><>::
-Untitled design (6).png::CompressedTexture2D::2729227497620890063::1733761559::1733932739::1::::<><>::
-::res://Models/::1734021159
+::res://Melee Weapons/::1734105431
+Shovel.glb::PackedScene::1100331826515408306::1734105431::1734105467::1::::<><>::
+Untitled design (6).png::CompressedTexture2D::2729227497620890063::1734105431::1734105466::1::::<><>::
+::res://Models/::1734021419
 Barn.tscn::PackedScene::1422010014140270242::1734021159::0::1::::<><>::
 BIGAHHH BARN.tscn::PackedScene::984199683650519575::1734021159::0::1::::<><>::
 character_body_3d.gd::GDScript::-1::1734021159::0::1::::<>CharacterBody3D<>::
@@ -620,23 +620,23 @@ spaceshipbodies.tscn::PackedScene::636743921924932312::1734021159::0::1::::<><>:
 spac_eship.tscn::PackedScene::6047104186656738600::1734021159::0::1::::<><>::
 Windmill22.tscn::PackedScene::2091820191818491101::1734021159::0::1::::<><>::
 Windmill.tscn::PackedScene::735728095646394::1734021159::0::1::::<><>::
-::res://Scenes/::1734021407
-Melee.tscn::PackedScene::2427664505356814009::1734021407::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
-player.tscn::PackedScene::7503851795771256410::1734021407::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://Scenes/WaterGun.tscn<>uid://jrx1aw1s3qm8::::res://Main Menu/Untitled design (5).png
-Shovel.tscn::PackedScene::1153707452445480991::1734021407::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
-WaterGun.tscn::PackedScene::1498123070741559941::1733848569::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
-weapon.tscn::PackedScene::2217710800258816080::1734021407::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn
-WG_bullet.tscn::PackedScene::7751874874146678591::1734021407::0::1::::<><>::res://Scripts/bullet.gd
-::res://Scripts/::1734019186
-bullet.gd::GDScript::-1::1734019186::0::1::::bullet<>Node3D<>::
-character_body_3d.gd::GDScript::-1::1733761581::0::1::::<>CharacterBody3D<>::
-game.gd::GDScript::-1::1733761660::0::1::::<>Node3D<>::
-melee_weapon.gd::GDScript::-1::1733761559::0::1::::melee<>Node3D<>::
-weapon.gd::GDScript::-1::1733848281::0::1::::Weapon<>Node3D<>::
-::res://Sprites/::1733761559
-::res://Sprites/Watergun/::1733932740
-model.obj::Mesh::6296196545963739466::1733761559::1733932740::1::::<><>::
-::res://textures/::1734021159
+::res://Scenes/::1734105431
+Melee.tscn::PackedScene::2427664505356814009::1734105431::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
+player.tscn::PackedScene::7503851795771256410::1734105431::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://Scenes/WaterGun.tscn<>uid://jrx1aw1s3qm8::::res://Main Menu/Untitled design (5).png
+Shovel.tscn::PackedScene::1153707452445480991::1734105431::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
+WaterGun.tscn::PackedScene::1498123070741559941::1734105431::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
+weapon.tscn::PackedScene::2217710800258816080::1734105431::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn
+WG_bullet.tscn::PackedScene::7751874874146678591::1734105431::0::1::::<><>::res://Scripts/bullet.gd
+::res://Scripts/::1734105431
+bullet.gd::GDScript::-1::1734105431::0::1::::bullet<>Node3D<>::
+character_body_3d.gd::GDScript::-1::1734105431::0::1::::<>CharacterBody3D<>::
+game.gd::GDScript::-1::1734105431::0::1::::<>Node3D<>::
+melee_weapon.gd::GDScript::-1::1734105431::0::1::::melee<>Node3D<>::
+weapon.gd::GDScript::-1::1734105431::0::1::::Weapon<>Node3D<>::
+::res://Sprites/::1734105431
+::res://Sprites/Watergun/::1734105431
+model.obj::Mesh::6296196545963739466::1734105431::1734105466::1::::<><>::
+::res://textures/::1734021423
 DoorColor.png::CompressedTexture2D::6662356161657493493::1734021159::1734021420::1::::<><>::
 DoorNormals.png::CompressedTexture2D::2768173598765069048::1734021159::1734021419::1::::<><>::
 DoorRoughness.png::CompressedTexture2D::4586935520895045798::1734021159::1734021419::1::::<><>::
@@ -661,5 +661,5 @@ WallsRoughness.png::CompressedTexture2D::7177032211618549380::1734021159::173402
 WindowColor.png::CompressedTexture2D::5728227441752452042::1734021159::1734021421::1::::<><>::
 WindowNormal.png::CompressedTexture2D::3567763005919448267::1734021159::1734021420::1::::<><>::
 WindowRoughness.png::CompressedTexture2D::7808319038526088380::1734021159::1734021420::1::::<><>::
-::res://Watergun/::1733932740
-model.obj::Mesh::4724236016565358572::1733761559::1733932740::1::::<><>::
+::res://Watergun/::1734105431
+model.obj::Mesh::4724236016565358572::1734105431::1734105467::1::::<><>::
