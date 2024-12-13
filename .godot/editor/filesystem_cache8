@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734105466
+::res://::1734105516
 character_body_3d.gd::GDScript::-1::1734105431::0::1::::<>CharacterBody3D<>::
 game.tscn::PackedScene::6717283191893817480::1734105431::0::1::::<><>::
 README.md::TextFile::-1::1730128456::0::1::::<><>::
@@ -56,19 +56,19 @@ position.gdshader::Shader::-1::1734021159::0::1::::<><>::
 grassbushcc008.png::CompressedTexture2D::6245934542479516539::1734021159::1734021426::1::::<><>::
 ::res://brackeys_platformer_assets/::1734105431
 LICENSE & CREDITS.txt::TextFile::-1::1734105431::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1734105431
+::res://brackeys_platformer_assets/fonts/::1734105466
 PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1734105431::1734105466::1::::<><>::
 PixelOperator8.ttf::FontFile::2445196971112042332::1734105431::1734105466::1::::<><>::
-::res://brackeys_platformer_assets/music/::1734105431
+::res://brackeys_platformer_assets/music/::1734105466
 time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1734105431::1734105466::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1734105431
+::res://brackeys_platformer_assets/sounds/::1734105466
 coin.wav::AudioStreamWAV::8431615200529489740::1734105431::1734105466::1::::<><>::
 explosion.wav::AudioStreamWAV::6405718111110113325::1734105431::1734105466::1::::<><>::
 hurt.wav::AudioStreamWAV::2424972067559149547::1734105431::1734105466::1::::<><>::
 jump.wav::AudioStreamWAV::5318526597446387881::1734105431::1734105466::1::::<><>::
 power_up.wav::AudioStreamWAV::4558974050310742267::1734105431::1734105466::1::::<><>::
 tap.wav::AudioStreamWAV::8814320848351340103::1734105431::1734105466::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1734105431
+::res://brackeys_platformer_assets/sprites/::1734105466
 coin.png::CompressedTexture2D::6052392971937403295::1734105431::1734105466::1::::<><>::
 fruit.png::CompressedTexture2D::7340303301470814367::1734105431::1734105466::1::::<><>::
 knight.png::CompressedTexture2D::5477910706170960278::1734105431::1734105466::1::::<><>::
@@ -253,7 +253,7 @@ WoodTrim_Metalness.png::CompressedTexture2D::4742078135653562760::1734021158::17
 WoodTrim_MRAo.tga::CompressedTexture2D::256576557126543000::1734021158::1734021429::1::::<><>::
 WoodTrim_Normal.png::CompressedTexture2D::1722827483009112323::1734021158::1734021429::1::::<><>::
 WoodTrim_Roughness.png::CompressedTexture2D::508419480783430841::1734021158::1734021429::1::::<><>::
-::res://Main Menu/::1734105431
+::res://Main Menu/::1734105466
 Untitled design (5).png::CompressedTexture2D::3037320053121602082::1733243555::1734105466::1::::<><>::
 ::res://Main Menu/Assets/::1734105431
 ::res://Main Menu/Assets/Backdrops/::1733932740
@@ -596,7 +596,7 @@ WoodPlankFloor_3_Normal.png::CompressedTexture2D::7805996322969954065::173402115
 WoodTrim_Diffuse.png::CompressedTexture2D::6180154145468544144::1734021158::1734021419::1::::<><>::
 WoodTrim_MRAo.tga::CompressedTexture2D::4120162018149651690::1734021158::1734021419::1::::<><>::
 WoodTrim_Normal.png::CompressedTexture2D::7120549546838354457::1734021158::1734021419::1::::<><>::
-::res://Melee Weapons/::1734105431
+::res://Melee Weapons/::1734105467
 Shovel.glb::PackedScene::1100331826515408306::1734105431::1734105467::1::::<><>::
 Untitled design (6).png::CompressedTexture2D::2729227497620890063::1734105431::1734105466::1::::<><>::
 ::res://Models/::1734021419
@@ -634,7 +634,7 @@ game.gd::GDScript::-1::1734105431::0::1::::<>Node3D<>::
 melee_weapon.gd::GDScript::-1::1734105431::0::1::::melee<>Node3D<>::
 weapon.gd::GDScript::-1::1734105431::0::1::::Weapon<>Node3D<>::
 ::res://Sprites/::1734105431
-::res://Sprites/Watergun/::1734105431
+::res://Sprites/Watergun/::1734105466
 model.obj::Mesh::6296196545963739466::1734105431::1734105466::1::::<><>::
 ::res://textures/::1734021423
 DoorColor.png::CompressedTexture2D::6662356161657493493::1734021159::1734021420::1::::<><>::
@@ -661,5 +661,5 @@ WallsRoughness.png::CompressedTexture2D::7177032211618549380::1734021159::173402
 WindowColor.png::CompressedTexture2D::5728227441752452042::1734021159::1734021421::1::::<><>::
 WindowNormal.png::CompressedTexture2D::3567763005919448267::1734021159::1734021420::1::::<><>::
 WindowRoughness.png::CompressedTexture2D::7808319038526088380::1734021159::1734021420::1::::<><>::
-::res://Watergun/::1734105431
+::res://Watergun/::1734105467
 model.obj::Mesh::4724236016565358572::1734105431::1734105467::1::::<><>::
