@@ -1,6 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://bxlrq6xp0lvy6"]
+[gd_scene load_steps=18 format=3 uid="uid://b33tq0i086gvb"]
 
-[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://scenes/player.tscn" id="2_2gu8v"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_2gu8v"]
 [ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="3_ka5vb"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_irtj3"]
