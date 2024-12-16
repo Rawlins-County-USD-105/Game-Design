@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://6ujmxbh2whfk"]
+[gd_scene load_steps=7 format=3 uid="uid://bh8rkba84t7a2"]
 
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="1_rb3ql"]
-[ext_resource type="PackedScene" uid="uid://dipcinc6kk288" path="res://Scenes/WG_bullet.tscn" id="2_rfk66"]
+[ext_resource type="PackedScene" path="res://Scenes/WG_bullet.tscn" id="2_rfk66"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kjg08"]
 

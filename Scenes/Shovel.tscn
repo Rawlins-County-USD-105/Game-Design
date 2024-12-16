@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://qo4nmrwuyhs6"]
+[gd_scene load_steps=6 format=3 uid="uid://w1wambbwlgkr"]
 
 [ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
