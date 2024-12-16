@@ -5,21 +5,21 @@ class_name Enemy
 
 var player= null
 
-
 @export var player_path : NodePath
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
 @export var speed : int
-var Health = 20
+var Health = 20.0
 
 
+# Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node(player_path)
 
 
-
+# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	velocity = Vector3.ZERO
 	 
@@ -32,11 +32,8 @@ func _process(_delta):
 	move_and_slide()
 
 
-
-
-
-func _on_area_3d_area_3d_hit(Dam: Variant) -> void:
-	print("hit")
-	Health -= Dam
+func _on_mesh_instance_3d_body_hit(Damage: Variant) -> void:
+	print(Damage)
+	Health -= Damage
 	if Health <= 0:
 		queue_free()

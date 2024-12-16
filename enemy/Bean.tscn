@@ -1,36 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://db34x4vjni4pa"]
+[gd_scene load_steps=5 format=3 uid="uid://db34x4vjni4pa"]
 
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_wp8om"]
-[ext_resource type="Script" path="res://enemy/area_3d.gd" id="2_6gimk"]
+[ext_resource type="Script" path="res://enemy/mesh_instance_3d.gd" id="2_6gg2w"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_706ps"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xx47l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4dkwc"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yskaw"]
-
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent") groups=["enemy"]]
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent")]
 script = ExtResource("1_wp8om")
 player_path = NodePath(".")
 mesh = NodePath("MeshInstance3D")
-hitbox = NodePath("MeshInstance3D/Area3D/CollisionShape3D")
+hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
 speed = 6
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_706ps")
-skeleton = NodePath("Area3D/CollisionShape3D")
+mesh = SubResource("CapsuleMesh_xx47l")
+script = ExtResource("2_6gg2w")
 
-[node name="Area3D" type="Area3D" parent="MeshInstance3D"]
-script = ExtResource("2_6gimk")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_4dkwc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("CapsuleShape3D_yskaw")
-
-[connection signal="Area3D_hit" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_area_3d_hit"]
+[connection signal="Body_hit" from="." to="MeshInstance3D" method="_on_character_body_3d_body_hit"]
