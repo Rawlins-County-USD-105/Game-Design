@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dn0i0ffa1to3s"]
 
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="1_jmuru"]
-[ext_resource type="PackedScene" path="res://Scenes/WG_bullet.tscn" id="2_cb8vc"]
-[ext_resource type="ArrayMesh" path="res://Watergun/model.obj" id="3_8gyao"]
+[ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_cb8vc"]
+[ext_resource type="ArrayMesh" uid="uid://b8kpqhm7uvwue" path="res://Watergun/model.obj" id="3_8gyao"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
