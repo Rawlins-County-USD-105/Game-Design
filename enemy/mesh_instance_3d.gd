@@ -8,3 +8,4 @@ signal Body_hit(Damage)
 
 func hit():
 	emit_signal("Body_hit" , Damage)
+	print(Damage)

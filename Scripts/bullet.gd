@@ -12,14 +12,20 @@ class_name bullet
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
+var Damage = 3.0
+
+signal Body_hit(Damage)
+func hit():
+	emit_signal("Body_hit" , Damage)
+	print(Damage)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	position += transform.basis * Vector3(0, 0, -speed) * delta
 	if ray.get_collider():
-		$MeshInstance3D.visible = false
-		$GPUParticles3D.emitting = true
+		mesh.visible = false
+		particles.emitting = true
 		if ray.get_collider().is_in_group("Enemy"):
 			ray.get_collider().hit()
 		await get_tree().create_timer(1.0).timeout

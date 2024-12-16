@@ -7,7 +7,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4dkwc"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent")]
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent") groups=["Enemy"]]
 script = ExtResource("1_wp8om")
 player_path = NodePath(".")
 mesh = NodePath("MeshInstance3D")
@@ -15,7 +15,7 @@ hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
 speed = 6
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." groups=["Enemy"]]
 mesh = SubResource("CapsuleMesh_xx47l")
 script = ExtResource("2_6gg2w")
 

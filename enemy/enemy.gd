@@ -33,7 +33,6 @@ func _process(_delta):
 
 
 func _on_mesh_instance_3d_body_hit(Damage: Variant) -> void:
-	print(Damage)
 	Health -= Damage
 	if Health <= 0:
 		queue_free()
