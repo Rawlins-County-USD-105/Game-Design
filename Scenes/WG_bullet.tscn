@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://4ilk67hnc6h5"]
+
+[ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_y7566"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kj4co"]
+size = Vector3(0.05, 0.05, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66ckx"]
+albedo_color = Color(5.58317e-06, 0, 0.981519, 1)
+emission_enabled = true
+emission = Color(0.313726, 0.282353, 1, 1)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j02bm"]
+particle_flag_rotate_y = true
+angle_min = 1.07288e-05
+angle_max = 720.0
+direction = Vector3(0, 0, -1)
+initial_velocity_max = 6.0
+radial_velocity_min = -2.23517e-05
+radial_velocity_max = -2.23517e-05
+color = Color(0.243137, 0.564706, 1, 1)
+turbulence_noise_strength = 20.0
+turbulence_noise_speed_random = 4.0
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8naif"]
+albedo_color = Color(0, 0.505882, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ue4hx"]
+material = SubResource("StandardMaterial3D_8naif")
+radius = 0.02
+height = 0.021
+
+[node name="Bullet" type="Node3D" node_paths=PackedStringArray("mesh", "ray", "particles")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+rotation_order = 0
+top_level = true
+script = ExtResource("1_y7566")
+speed = 20
+mesh = NodePath("MeshInstance3D")
+ray = NodePath("MeshInstance3D/RayCast3D")
+particles = NodePath("GPUParticles3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_kj4co")
+surface_material_override/0 = SubResource("StandardMaterial3D_66ckx")
+
+[node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, 4.16618e-08, 0.00929376, 0.0519155)
+target_position = Vector3(0, 0, -0.5)
+collide_with_areas = true
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, -1.8216e-08, 0.00929376, -0.0802235)
+collision_base_size = 3.0
+process_material = SubResource("ParticleProcessMaterial_j02bm")
+draw_pass_1 = SubResource("SphereMesh_ue4hx")
