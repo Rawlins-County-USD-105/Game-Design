@@ -5,8 +5,11 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xx47l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4dkwc"]
+radius = 0.470534
+height = 1.79816
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent")]
+floor_max_angle = 1.5708
 script = ExtResource("1_wp8om")
 mesh = NodePath("MeshInstance3D")
 hitbox = NodePath("CollisionShape3D")
