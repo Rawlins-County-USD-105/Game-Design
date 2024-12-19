@@ -44,6 +44,10 @@ _data = {
 
 [node name="Watergun" type="Node3D" node_paths=PackedStringArray("weapon_anim", "model", "barrel")]
 script = ExtResource("1_jmuru")
+<<<<<<< HEAD
+=======
+damage = 2
+>>>>>>> parent of eac68ea (weapon/damage/enemy)
 weapon_anim = NodePath("AnimationPlayer")
 model = NodePath("Model")
 barrel = NodePath("RayCast")

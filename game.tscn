@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=18 format=3 uid="uid://b33tq0i086gvb"]
 
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_2gu8v"]
@@ -9,6 +10,12 @@ polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Arr
 agent_height = 2.0
 agent_radius = 1.0
 edge_max_error = 1.81
+=======
+[gd_scene load_steps=18 format=3 uid="uid://bxuayw10wrj0f"]
+
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_idhtt"]
+[ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_sqjdd"]
+>>>>>>> parent of eac68ea (weapon/damage/enemy)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o6ovr"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -102,6 +109,7 @@ shape = SubResource("SphereShape3D_7u3ly")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/bocs"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("SphereMesh_iny5a")
+<<<<<<< HEAD
 
 [node name="CharacterBody3D" parent="NavigationRegion3D" instance=ExtResource("3_ka5vb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0722688, 1.034, 9.77396)
@@ -109,3 +117,5 @@ player_path = NodePath("../player")
 
 [node name="player" parent="NavigationRegion3D" instance=ExtResource("2_2gu8v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0186522, 1.18011, -10.9893)
+=======
+>>>>>>> parent of eac68ea (weapon/damage/enemy)
