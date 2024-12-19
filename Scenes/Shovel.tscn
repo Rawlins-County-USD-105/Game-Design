@@ -65,13 +65,12 @@ _data = {
 "RESET": SubResource("Animation_jhdgn")
 }
 
-[node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model", "barrel") instance=ExtResource("1_2mepy")]
+[node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model") instance=ExtResource("1_2mepy")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 script = ExtResource("2_6edns")
-damage = 1
+speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
-barrel = NodePath("RayCast3D")
 
 [node name="Shovel" parent="RootNode" index="0"]
 transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
