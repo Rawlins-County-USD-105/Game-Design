@@ -1,6 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=26 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://bx18e36vi21ad" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="5_e0it4"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
+[ext_resource type="PackedScene" uid="uid://csbb1o113itnv" path="res://Models/button.tscn" id="16_7r4qn"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 [ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="18_q0c4j"]
 [ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
@@ -52,6 +53,10 @@ size = Vector3(200.563, 1.30634, 199.873)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngduv"]
 albedo_texture = ExtResource("1_2qhk6")
 uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_up4th"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rtvha"]
 
 [node name="Game" type="Node3D"]
 
@@ -235,3 +240,20 @@ speed = 4
 
 [node name="player" parent="NavigationRegion3D" instance=ExtResource("18_eupc6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
+
+[node name="buttons" type="Node" parent="NavigationRegion3D"]
+
+[node name="Button" parent="NavigationRegion3D/buttons" instance=ExtResource("16_7r4qn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.75, 6)
+prompt = "Get Oil"
+prompt_input = "interact"
+
+[node name="ButtonBase" type="StaticBody3D" parent="NavigationRegion3D/buttons"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1, 6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/buttons/ButtonBase"]
+shape = SubResource("BoxShape3D_up4th")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/buttons/ButtonBase"]
+mesh = SubResource("BoxMesh_rtvha")
+skeleton = NodePath("../../..")
