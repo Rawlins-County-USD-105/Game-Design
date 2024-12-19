@@ -2,23 +2,11 @@ extends Node3D
 
 class_name bullet
 
-
+@export var Damage = 1.0
 @export var speed: int
 @export var mesh: MeshInstance3D
 @export var ray: RayCast3D
 @export var particles: GPUParticles3D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-var Damage = 3.0
-
-signal Body_hit(Damage)
-func hit():
-	emit_signal("Body_hit" , Damage)
-	print(Damage)
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -26,5 +14,8 @@ func _process(delta):
 	if ray.get_collider():
 		mesh.visible = false
 		particles.emitting = true
-		await get_tree().create_timer(1.0).timeout
+		ray.enabled = false
+		if ray.get_collider().is_in_group("Enemy"):
+			ray.get_collider().Hit()
+		await get_tree().create_timer(0).timeout
 		queue_free()

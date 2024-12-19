@@ -4,7 +4,7 @@ class_name Enemy
 
 
 var player= null
-
+@export var Damage = 1.0
 @export var player_path : NodePath
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
@@ -12,8 +12,7 @@ var player= null
 @export var animation : AnimationPlayer
 @export var speed : int
 var Health = 20.0
-
-
+signal hit(Damage)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node(player_path)
@@ -30,9 +29,11 @@ func _process(_delta):
 	look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
 	
 	move_and_slide()
-
-
-func _on_mesh_instance_3d_body_hit(Damage: Variant) -> void:
+	
+func Hit():
 	Health -= Damage
 	if Health <= 0:
 		queue_free()
+
+func _on_character_body_3d_hit(Damage: Variant) -> void:
+	emit_signal("hit")
