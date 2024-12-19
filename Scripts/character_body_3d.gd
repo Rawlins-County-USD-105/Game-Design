@@ -32,7 +32,7 @@ var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
-var JUMP_VELOCITY = 15
+var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
 #SLiding
