@@ -31,7 +31,7 @@ var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
-var JUMP_VELOCITY = 5
+@export var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
 #SLiding
@@ -41,7 +41,8 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
-
+#fall damage
+var old_vel = 0.0
 
 
 #func _enter_tree() -> void:
@@ -147,6 +148,13 @@ func _physics_process(delta: float) -> void:
 		t_bob += delta * velocity.length() * float(is_on_floor())
 		camera_3d.transform.origin = _headbob(t_bob)
 		move_and_slide()
+		
+		#fall damage
+		var diff = velocity.y - old_vel
+
+		if diff < -10:
+			print("ouch")
+			old_vel = velocity.y
 	
 		#FOV
 		var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
