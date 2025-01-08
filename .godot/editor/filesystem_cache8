@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734633343
+::res://::1736352550
 character_body_3d.gd::GDScript::-1::1734625875::0::1::::<>CharacterBody3D<>::
 game.tscn::PackedScene::-1::1734625875::0::1::::<><>::
 README.md::TextFile::-1::1730128456::0::1::::<><>::
@@ -76,8 +76,8 @@ platforms.png::CompressedTexture2D::6528024464598794627::1734364506::1734367087:
 slime_green.png::CompressedTexture2D::6107321564901303992::1734364506::1734367087::1::::<><>::
 slime_purple.png::CompressedTexture2D::5499142865324758640::1734364506::1734367087::1::::<><>::
 world_tileset.png::CompressedTexture2D::189340558103377848::1734364506::1734367087::1::::<><>::
-::res://enemy/::1734628472
-Bean.tscn::PackedScene::7289056893925735906::1734628472::0::1::::<><>::res://enemy/enemy.gd
+::res://enemy/::1736266038
+Bean.tscn::PackedScene::7289056893925735906::1736266038::0::1::::<><>::res://enemy/enemy.gd
 Enemy Body.gd::GDScript::-1::1734625481::0::1::::<>RigidBody3D<>::
 enemy.gd::GDScript::-1::1734628343::0::1::::Enemy<>CharacterBody3D<>::
 enemy.tscn::PackedScene::722947425110201284::1734628472::0::1::::<><>::
@@ -612,14 +612,14 @@ WoodTrim_Normal.png::CompressedTexture2D::7120549546838354457::1734625481::17343
 ::res://Melee Weapons/::1734367102
 Shovel.glb::PackedScene::1100331826515408306::1734364506::1734367102::1::::<><>::
 Untitled design (6).png::CompressedTexture2D::2729227497620890063::1734364506::1734367087::1::::<><>::
-::res://Models/::1734628472
+::res://Models/::1736266038
 Barn.tscn::PackedScene::1422010014140270242::1734625481::0::1::::<><>::
 BIGAHHH BARN.tscn::PackedScene::984199683650519575::1734625481::0::1::::<><>::
 character_body_3d.gd::GDScript::-1::1734625481::0::1::::<>CharacterBody3D<>::
 Doubledoor.tscn::PackedScene::4059142023453802758::1734625481::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Doors/door_double_tall_6.gd
 Fence2.tscn::PackedScene::3975403881453079365::1734625481::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material
 Fence.tscn::PackedScene::6090387540926656172::1734625481::0::1::::<><>::
-game.tscn::PackedScene::7782051981257741488::1734628472::0::1::::<><>::uid://cipv87dmsdvik::::res://Materials/696.jpg<>uid://42j8cypn7jeb::::res://Models/Windmill22.tscn<>uid://oa0viq4egsux::::res://Models/BIGAHHH BARN.tscn<>uid://ba0esmdah7m3d::::res://Models/silo.tscn<>uid://cs1h17xm2kqqm::::res://Models/Fence.tscn<>uid://b853mi7rkdknk::::res://Models/gate.tscn<>uid://52idgbuskbwf::::res://Models/shorter_fence.tscn<>uid://c0kyo6tx0rqia::::res://Models/road.tscn<>uid://bh4y61debteju::::res://Models/roadbreak.tscn<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://bbr035lp5dbcr::::res://Models/HOUSE.tscn<>uid://nxv8ebx1omcq::::res://Models/Shelf.tscn<>uid://de56lwhpalp6i::::res://Scenes/player.tscn<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn<>uid://jcpcx0l3vp5y::::res://Models/spaceshipbodies.tscn
+game.tscn::PackedScene::7782051981257741488::1736266038::0::1::::<><>::uid://cipv87dmsdvik::::res://Materials/696.jpg<>uid://42j8cypn7jeb::::res://Models/Windmill22.tscn<>uid://oa0viq4egsux::::res://Models/BIGAHHH BARN.tscn<>uid://ba0esmdah7m3d::::res://Models/silo.tscn<>uid://cs1h17xm2kqqm::::res://Models/Fence.tscn<>uid://b853mi7rkdknk::::res://Models/gate.tscn<>uid://52idgbuskbwf::::res://Models/shorter_fence.tscn<>uid://c0kyo6tx0rqia::::res://Models/road.tscn<>uid://bh4y61debteju::::res://Models/roadbreak.tscn<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://bbr035lp5dbcr::::res://Models/HOUSE.tscn<>uid://nxv8ebx1omcq::::res://Models/Shelf.tscn<>uid://de56lwhpalp6i::::res://Scenes/player.tscn<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn<>uid://jcpcx0l3vp5y::::res://Models/spaceshipbodies.tscn
 gate.tscn::PackedScene::4766305832100720708::1734625481::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
 HOUSE.tscn::PackedScene::2493273469613741809::1734625481::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://b276x6gpqscoc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://nxgkmsw7kkb6::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material<>uid://bs0b8fjhriwe2::::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodDeck/WoodDeck_Diffuse.png<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material<>uid://jhehs2u4w4qi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://dmb7wi2brnmrq::::res://Models/Post.tscn
 icon.svg::CompressedTexture2D::506106867354993186::1734625481::1734021419::1::::<><>::
@@ -634,18 +634,18 @@ spaceshipbodies.tscn::PackedScene::636743921924932312::1734625481::0::1::::<><>:
 spac_eship.tscn::PackedScene::6047104186656738600::1734625481::0::1::::<><>::
 Windmill22.tscn::PackedScene::2091820191818491101::1734625481::0::1::::<><>::
 Windmill.tscn::PackedScene::735728095646394::1734625481::0::1::::<><>::
-::res://Scenes/::1734628472
-Melee.tscn::PackedScene::4525886345725356429::1734628472::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
-player.tscn::PackedScene::7503851795771256410::1734628472::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://Scenes/WaterGun.tscn<>uid://dscl3dfkre32x::::res://Main Menu/Untitled design (5).png
-Shovel.tscn::PackedScene::1599164787383409429::1734628472::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
+::res://Scenes/::1736266038
+Melee.tscn::PackedScene::4525886345725356429::1736266038::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
+player.tscn::PackedScene::7503851795771256410::1736266038::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://vlx4rrwy2kaf::::res://Scenes/WaterGun.tscn<>uid://dscl3dfkre32x::::res://Main Menu/Untitled design (5).png<>uid://w1wambbwlgkr::::res://Scenes/Shovel.tscn
+Shovel.tscn::PackedScene::1599164787383409429::1736266038::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
 WaterGun.tscn::PackedScene::1498123070741559941::1734625481::0::1::::<><>::res://Scripts/weapon.gd<>uid://dipcinc6kk288::::res://Scenes/WG_bullet.tscn<>uid://b8kpqhm7uvwue::::res://Watergun/model.obj
-weapon.tscn::PackedScene::2946917155921635875::1734628472::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn
-WG_bullet.tscn::PackedScene::2052678910388028232::1734628472::0::1::::<><>::res://Scripts/bullet.gd
-::res://Scripts/::1734628472
+weapon.tscn::PackedScene::2946917155921635875::1736266038::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn
+WG_bullet.tscn::PackedScene::2052678910388028232::1736266038::0::1::::<><>::res://Scripts/bullet.gd
+::res://Scripts/::1734633769
 bullet.gd::GDScript::-1::1734628472::0::1::::bullet<>Node3D<>::
 character_body_3d.gd::GDScript::-1::1734625481::0::1::::<>CharacterBody3D<>::
 game.gd::GDScript::-1::1734364506::0::1::::<>Node3D<>::
-melee_weapon.gd::GDScript::-1::1734364506::0::1::::melee<>Node3D<>::
+melee_weapon.gd::GDScript::-1::1734633769::0::1::::melee<>Node3D<>::
 weapon.gd::GDScript::-1::1734627870::0::1::::Weapon<>Node3D<>::
 ::res://Sprites/::1734364506
 ::res://Sprites/Watergun/::1734367100
