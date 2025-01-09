@@ -950,7 +950,7 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_53p65")
 
 [node name="House5_Fence_In" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.87865, 7, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8397, 7, 3)
 mesh = SubResource("ArrayMesh_qjtsb")
 skeleton = NodePath("")
 
@@ -1098,7 +1098,7 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="House5_Stairs_in"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House5_Stairs_in/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0132856, 0.323091, -0.0397565)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0132856, 0.207715, -0.0397565)
 shape = SubResource("ConvexPolygonShape3D_1888y")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="House5_Stairs_in/StaticBody3D"]
