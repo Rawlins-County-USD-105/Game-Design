@@ -239,7 +239,7 @@ player_path = NodePath("../player")
 speed = 4
 
 [node name="player" parent="NavigationRegion3D" instance=ExtResource("18_eupc6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 7.91072, -54.1706)
 
 [node name="buttons" type="Node" parent="NavigationRegion3D"]
 

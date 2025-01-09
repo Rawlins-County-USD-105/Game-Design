@@ -43,7 +43,7 @@ var sliding = false
 
 #fall damage
 var old_vel = 0.0
-
+var fall_hurtie = 10
 
 #func _enter_tree() -> void:
 	#$".".set_multiplayer_authority($"..".name.to_int())
@@ -151,10 +151,12 @@ func _physics_process(delta: float) -> void:
 		
 		#fall damage
 		var diff = velocity.y - old_vel
-
-		if diff < -10:
+		
+		if diff > fall_hurtie:
 			print("ouch")
-			old_vel = velocity.y
+
+		old_vel = velocity.y
+			
 	
 		#FOV
 		var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
