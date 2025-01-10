@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
 [ext_resource type="Texture2D" uid="uid://cipv87dmsdvik" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
+[ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 [ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="18_q0c4j"]
 [ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
@@ -235,3 +236,18 @@ speed = 4
 
 [node name="player" parent="NavigationRegion3D" instance=ExtResource("18_eupc6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
+
+[node name="Iteam Slot" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
+position = Vector2(19, 20)
+
+[node name="Iteam Slot2" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
+position = Vector2(191, 20)
+
+[node name="Iteam Slot3" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
+position = Vector2(148, 20)
+
+[node name="Iteam Slot4" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
+position = Vector2(105, 20)
+
+[node name="Iteam Slot5" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
+position = Vector2(62, 20)
