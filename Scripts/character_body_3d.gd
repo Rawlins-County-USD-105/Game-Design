@@ -58,7 +58,6 @@ func Weapon_Select():
 		Watergun.visible = true
 	else:
 		Watergun.visible = false
-		bullet.visible = false
 	if current_weapopn == 2:
 		Shovel.visible = true
 	else:
