@@ -267,3 +267,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.9919, 0, -88.9002)
 
 [node name="Spawner10" type="Node3D" parent="SpawnHolder"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.0232, 0, -47.96)
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
