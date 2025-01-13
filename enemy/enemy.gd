@@ -37,3 +37,7 @@ func Hit():
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:
 	emit_signal("hit")
+
+
+func _on_bullet_visibility_changed() -> void:
+	pass # Replace with function body.

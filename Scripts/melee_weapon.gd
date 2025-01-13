@@ -2,7 +2,7 @@ extends Node3D
 
 class_name melee
 
-@export var Damage = 1.0
+@export var Damage = 10000000000.0
 @export var speed: int
 @export var weapon_anim: AnimationPlayer
 @export var model: MeshInstance3D
