@@ -9,7 +9,6 @@ extends CharacterBody3D
 @onready var head_clearance: RayCast3D = $head_clearance
 
 
-
 @export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 4
@@ -178,7 +177,6 @@ func _physics_process(delta: float) -> void:
 		var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 		var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 		camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
-
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
