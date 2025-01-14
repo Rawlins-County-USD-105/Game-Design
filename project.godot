@@ -13,7 +13,6 @@ config_version=5
 config/name="RCHS Game Design"
 run/main_scene="res://Main Menu/Main tscn/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://Models/icon.svg"
 
 [autoload]
 
