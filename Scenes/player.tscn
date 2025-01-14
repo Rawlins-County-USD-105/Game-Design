@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://fyfncf7u1jsp" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://eqmg4s2j4egc" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://bxtucpk3lc0nb" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]

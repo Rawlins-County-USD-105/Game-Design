@@ -23,7 +23,7 @@ func _process(delta):
 		particles.emitting = true
 		ray.enabled = false
 		if ray.get_collider().is_in_group("Enemy"):
-			ray.get_collider().Hit()
+			ray.get_collider().Hit(Damage)
 		await get_tree().create_timer(0).timeout
 		queue_free()
 	else:
