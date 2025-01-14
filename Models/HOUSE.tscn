@@ -1,11 +1,10 @@
-[gd_scene load_steps=76 format=4 uid="uid://bbr035lp5dbcr"]
+[gd_scene load_steps=74 format=4 uid="uid://bbr035lp5dbcr"]
 
 [ext_resource type="Material" uid="uid://bb4nfxcjhenmq" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material" id="1_h4lmo"]
 [ext_resource type="Material" uid="uid://cuyj4a7whw2jo" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material" id="2_oblsy"]
 [ext_resource type="Material" uid="uid://b276x6gpqscoc" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material" id="3_ohnk6"]
 [ext_resource type="Material" uid="uid://clxn8f8ovhspv" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material" id="4_kftsu"]
 [ext_resource type="Material" uid="uid://nxgkmsw7kkb6" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material" id="5_j001r"]
-[ext_resource type="Texture2D" uid="uid://bs0b8fjhriwe2" path="res://HousesAndProps_blend_Gltf_Textures/Textures/WoodDeck/WoodDeck_Diffuse.png" id="6_v413g"]
 [ext_resource type="Material" uid="uid://dp1epe3n1m23" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material" id="7_yu3ym"]
 [ext_resource type="Texture2D" uid="uid://ue84ksdubxws" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png" id="8_pytjq"]
 [ext_resource type="Material" uid="uid://dhf2ipcm6ggqf" path="res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material" id="9_u2gss"]
@@ -176,9 +175,6 @@ shadow_mesh = SubResource("ArrayMesh_ty664")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_05yot"]
 data = PackedVector3Array(-14, -0.2, 2, 2, -0.2, -6, -14, -0.2, -6, -14, -0.2, 2, 2, -0.2, 2, 2, -0.2, -6, -16, 0, 2, 0, 0, 4, -16, 0, 4, -16, 0, 2, 0, 0, 2, 0, 0, 4, -16, -0.2, 4, 0, -0.2, 2, -16, -0.2, 2, -16, -0.2, 4, 0, -0.2, 4, 0, -0.2, 2, -18, 0, -6, -14, 0, -4, -18, 0, -4, -18, 0, -6, -14, 0, -6, -14, 0, -4, -18, -0.2, -4, -14, -0.2, -6, -18, -0.2, -6, -18, -0.2, -4, -14, -0.2, -4, -14, -0.2, -6, -14, 0, -6, 2, 0, 2, -14, 0, 2, -14, 0, -6, 2, 0, -6, 2, 0, 2, -14, -0.4444, -4, -18, 0, -4, -18, -0.4444, -4, -14, -0.4444, -4, -14, 0, -4, -18, 0, -4, -14, 0, -4, -18, 0, -3.825, -18, 0, -4, -14, 0, -4, -14, 0, -3.825, -18, 0, -3.825, -14, 0, -3.825, -18, -0.4444, -3.825, -18, 0, -3.825, -14, 0, -3.825, -14, -0.4444, -3.825, -18, -0.4444, -3.825, -14, -0.4444, -4, -18, -0.4444, -3.825, -14, -0.4444, -3.825, -14, -0.4444, -4, -18, -0.4444, -4, -18, -0.4444, -3.825, -14, -0.4444, 2, -14, 0, -4, -14, -0.4444, -4, -14, -0.4444, 2, -14, 0, 2, -14, 0, -4, -14, 0, 2, -14.175, 0, -4, -14, 0, -4, -14, 0, 2, -14.175, 0, 2, -14.175, 0, -4, -14.175, 0, 2, -14.175, -0.4444, -4, -14.175, 0, -4, -14.175, 0, 2, -14.175, -0.4444, 2, -14.175, -0.4444, -4, -14, -0.4444, 2, -14.175, -0.4444, -4, -14.175, -0.4444, 2, -14, -0.4444, 2, -14, -0.4444, -4, -14.175, -0.4444, -4, -16, -0.4444, 2, -14, 0, 2, -14, -0.4444, 2, -16, -0.4444, 2, -16, 0, 2, -14, 0, 2, -16, 0, 2, -14, 0, 1.825, -14, 0, 2, -16, 0, 2, -16, 0, 1.825, -14, 0, 1.825, -16, 0, 1.825, -14, -0.4444, 1.825, -14, 0, 1.825, -16, 0, 1.825, -16, -0.4444, 1.825, -14, -0.4444, 1.825, -16, -0.4444, 2, -14, -0.4444, 1.825, -16, -0.4444, 1.825, -16, -0.4444, 2, -14, -0.4444, 2, -14, -0.4444, 1.825)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkcc1"]
-albedo_texture = ExtResource("6_v413g")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xeo66"]
 _surfaces = [{
@@ -905,7 +901,7 @@ shape = SubResource("ConcavePolygonShape3D_05yot")
 
 [node name="House5_Floor_Out" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, 1)
-material_override = SubResource("StandardMaterial3D_mkcc1")
+material_override = ExtResource("7_yu3ym")
 mesh = SubResource("ArrayMesh_xf01g")
 skeleton = NodePath("")
 
