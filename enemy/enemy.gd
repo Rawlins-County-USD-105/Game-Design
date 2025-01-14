@@ -30,7 +30,7 @@ func _process(_delta):
 	
 	move_and_slide()
 	
-func Hit():
+func Hit(Damage):
 	Health -= Damage
 	if Health <= 0:
 		queue_free()
