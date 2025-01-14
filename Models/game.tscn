@@ -31,7 +31,6 @@ sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 glow_enabled = true
 fog_light_color = Color(0.988338, 0.730336, 0.12838, 1)
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.07
 volumetric_fog_albedo = Color(0.324067, 0.160781, 0.166408, 1)
 volumetric_fog_emission = Color(0.837187, 0.34278, 0.385048, 1)
