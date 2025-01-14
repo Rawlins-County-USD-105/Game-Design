@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://uhaqi64gbgde" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
@@ -65,13 +65,12 @@ _data = {
 "RESET": SubResource("Animation_jhdgn")
 }
 
-[node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model", "barrel") instance=ExtResource("1_2mepy")]
+[node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model") instance=ExtResource("1_2mepy")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 script = ExtResource("2_6edns")
-damage = 1
+speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
-barrel = NodePath("RayCast3D")
 
 [node name="Shovel" parent="RootNode" index="0"]
 transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
@@ -84,3 +83,4 @@ libraries = {
 
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
 transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
+hit_from_inside = true

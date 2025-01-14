@@ -14,6 +14,10 @@ extends CharacterBody3D
 @export var sprint = 4
 @export var jump_sprint = 15
 
+#Weapons
+@onready var Watergun = $neck/Camera/Watergun
+@onready var Shovel = $"neck/Camera/Root Scene" 
+var current_weapopn = 1
 
 #speed
 var current_speed = 5.0
@@ -42,6 +46,26 @@ var slide_speed = 10.0
 var sliding = false
 
 
+func Weapon_Select():
+	if Input.is_action_just_pressed("Watergun"):
+		current_weapopn = 1
+	elif Input.is_action_just_pressed("Shovel"):
+		current_weapopn = 2
+	elif Input.is_action_just_pressed("Weapon3"):
+		current_weapopn = 3
+	if current_weapopn == 1:
+		Watergun.visible = true
+	else:
+		Watergun.visible = false
+	if current_weapopn == 2:
+		Shovel.visible = true
+	else:
+		Shovel.visible = false
+	#if current_weapopn == 3:
+#		Weapon3.visible = true
+	#else:
+	#	Weapon3.visible = false
+
 
 
 #func _enter_tree() -> void:
@@ -69,6 +93,7 @@ func _physics_process(delta: float) -> void:
 		# Handle jump.
 		if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
 			velocity.y = JUMP_VELOCITY
+		Weapon_Select()
 
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
