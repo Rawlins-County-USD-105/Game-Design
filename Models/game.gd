@@ -16,6 +16,7 @@ extends Node3D
 #A random number genrerator to spawn from alternating spawn points.
 @onready var rand=RandomNumberGenerator.new()
 @onready var dead_enemies=0
+@onready var player: CharacterBody3D = $NavigationRegion3D/player
 
 func _ready():
 	add_to_group("level")
@@ -32,6 +33,7 @@ func enemy_death():
 func spawn_enemies():
 	for i in range(monster_dict[current_level]):
 		var m = monster.instantiate()
+		m.player = player
 		print("spawning enemy")
 		#we check the amount of children on our spawn holder 
 		var spawn_length = $SpawnHolder.get_child_count()-1
