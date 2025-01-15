@@ -1,0 +1,439 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1736885085
+character_body_3d.gd::GDScript::-1::1736871730::0::1::::<>CharacterBody3D<>::
+game.tscn::PackedScene::-1::1736871730::0::1::::<><>::
+inventory.gd::GDScript::-1::1736871730::0::1::::<>Node2D<>::
+item_slot.gd::GDScript::-1::1736871730::0::1::::<>Node2D<>::
+README.md::TextFile::-1::1729613349::0::1::::<><>::
+::res://enemy/::1736884870
+Bean.tscn::PackedScene::7289056893925735906::1736884870::0::1::::<><>::res://enemy/enemy.gd
+Enemy Body.gd::GDScript::-1::1736871730::0::1::::<>RigidBody3D<>::
+enemy.gd::GDScript::-1::1736871730::0::1::::Enemy<>CharacterBody3D<>::
+enemy.tscn::PackedScene::722947425110201284::1736871730::0::1::::<><>::
+MainEnemy.gd::GDScript::-1::1736871730::0::1::::<>Node3D<>::
+mesh_instance_3d.gd::GDScript::-1::1736871730::0::1::::<>MeshInstance3D<>::
+::res://HousesAndProps_blend_Gltf_Textures/::1736885085
+README.txt::TextFile::-1::1736885085::0::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/::1736885086
+AO_RietRoof.png::CompressedTexture2D::7765627608682200753::1736885085::1736885088::1::::<><>::
+Base Color_RietRoof.png::CompressedTexture2D::2561241999222476654::1736885085::1736885088::1::::<><>::
+BASE COLOR_TrimProps.png::CompressedTexture2D::1051526987581665718::1736885085::1736885089::1::::<><>::
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::2240552167228969420::1736885085::1736885088::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::5850839399155229395::1736885085::1736885088::1::::<><>::
+BrickStoneTrim_Roughness.png::CompressedTexture2D::2006159868591446395::1736885085::1736885088::1::::<><>::
+BrickWall_Diffuse.png::CompressedTexture2D::595282820133059613::1736885085::1736885088::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::1867468915371910811::1736885085::1736885088::1::::<><>::
+BrickWall_Roughness.png::CompressedTexture2D::3332820120669541162::1736885085::1736885087::1::::<><>::
+Doors_Ambient Occlusion.png::CompressedTexture2D::7079229855090076201::1736885085::1736885088::1::::<><>::
+Doors_Diffuse.png::CompressedTexture2D::4931235203872986263::1736885085::1736885088::1::::<><>::
+Doors_Metalness.png::CompressedTexture2D::2066458138737716952::1736885085::1736885087::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::4455995464476255912::1736885085::1736885090::1::::<><>::
+Doors_Roughness.png::CompressedTexture2D::4439370974950487329::1736885085::1736885090::1::::<><>::
+Grass_Diffuse.png::CompressedTexture2D::8744617927990198637::1736885085::1736885090::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::6469808456482877572::1736885085::1736885090::1::::<><>::
+Grass_Roughness.png::CompressedTexture2D::5000630176268774647::1736885085::1736885090::1::::<><>::
+Ground_Diffuse.png::CompressedTexture2D::7214227049532940278::1736885085::1736885090::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::8242243030452969604::1736885085::1736885090::1::::<><>::
+Ground_Roughness.png::CompressedTexture2D::2639608416480656801::1736885085::1736885090::1::::<><>::
+LimeWall_Diffuse.png::CompressedTexture2D::4933494251985076692::1736885085::1736885090::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::8660607164247917660::1736885085::1736885090::1::::<><>::
+LimeWall_Roughness.png::CompressedTexture2D::3515199478565608945::1736885085::1736885090::1::::<><>::
+LogWall_Diffuse.png::CompressedTexture2D::4727885824837398237::1736885085::1736885090::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::2775957957111986123::1736885085::1736885090::1::::<><>::
+LogWall_Roughness.png::CompressedTexture2D::3480797601566079461::1736885085::1736885089::1::::<><>::
+METALLIC_TrimProps.png::CompressedTexture2D::7935913016385988959::1736885085::1736885089::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::9055129198059915858::1736885086::1736885089::1::::<><>::
+NORMAL_TrimProps.png::CompressedTexture2D::5746268161294535670::1736885086::1736885089::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::3076308043972686510::1736885086::1736885089::1::::<><>::
+ROUGHNESS_RietRoof.png::CompressedTexture2D::5903657590998038663::1736885086::1736885089::1::::<><>::
+ROUGHNESS_TrimProps.png::CompressedTexture2D::5367769232748541878::1736885086::1736885089::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickStoneTrim/::1736885085
+BrickStoneTrim_Ambient Occlusion.png::CompressedTexture2D::7888058648006941417::1736885085::1736885091::1::::<><>::
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::8621017853574755714::1736885085::1736885091::1::::<><>::
+BrickStoneTrim_MRAo.tga::CompressedTexture2D::8626805455042117126::1736885085::1736885091::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::2155786907647507859::1736885085::1736885091::1::::<><>::
+BrickStoneTrim_Roughness.png::CompressedTexture2D::5063034125888762163::1736885085::1736885091::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickWall/::1736885085
+BrickWall_Ambient Occlusion.png::CompressedTexture2D::7228509015506955760::1736885085::1736885091::1::::<><>::
+BrickWall_Diffuse.png::CompressedTexture2D::8218729727587049625::1736885085::1736885091::1::::<><>::
+BrickWall_MRAo.tga::CompressedTexture2D::7096259222382003034::1736885085::1736885091::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::8606482432099784458::1736885085::1736885091::1::::<><>::
+BrickWall_Roughness.png::CompressedTexture2D::393315595700480250::1736885085::1736885090::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Doors/::1736885085
+Doors_Ambient Occlusion.png::CompressedTexture2D::8359970317901716525::1736885085::1736885090::1::::<><>::
+Doors_Diffuse.png::CompressedTexture2D::1986094890086698319::1736885085::1736885091::1::::<><>::
+Doors_Metalness.png::CompressedTexture2D::2855586061053067769::1736885085::1736885090::1::::<><>::
+Doors_MRAo.tga::CompressedTexture2D::2184085136774422548::1736885085::1736885091::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::3051758552718823122::1736885085::1736885091::1::::<><>::
+Doors_Roughness.png::CompressedTexture2D::2603220217823242512::1736885085::1736885090::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Glass/::1736885085
+BASE COLOR_Glass.png::CompressedTexture2D::4915314097272261991::1736885085::1736885090::1::::<><>::
+MRAO_Glass.png::CompressedTexture2D::6661369504969278639::1736885085::1736885090::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::4610266456037153637::1736885085::1736885090::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Grass/::1736885085
+Grass_Ambient Occlusion.png::CompressedTexture2D::825911356194167630::1736885085::1736885090::1::::<><>::
+Grass_Diffuse.png::CompressedTexture2D::6482239159200944833::1736885085::1736885092::1::::<><>::
+Grass_MRAo.tga::CompressedTexture2D::8467470236598761437::1736885085::1736885092::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::5523984208017672468::1736885085::1736885092::1::::<><>::
+Grass_Roughness.png::CompressedTexture2D::1317959325474326906::1736885085::1736885091::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Ground/::1736885085
+Ground_Ambient Occlusion.png::CompressedTexture2D::1006863045917052837::1736885085::1736885091::1::::<><>::
+Ground_Diffuse.png::CompressedTexture2D::6301060786681654553::1736885085::1736885092::1::::<><>::
+Ground_MRAo.tga::CompressedTexture2D::498078098004753993::1736885085::1736885092::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::3308324721701000950::1736885085::1736885091::1::::<><>::
+Ground_Roughness.png::CompressedTexture2D::4259670448886227980::1736885085::1736885091::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/LimeWall/::1736885085
+LimeWall_Ambient Occlusion.png::CompressedTexture2D::8024863970390447629::1736885085::1736885091::1::::<><>::
+LimeWall_Diffuse.png::CompressedTexture2D::5786472815146489901::1736885085::1736885091::1::::<><>::
+LimeWall_MRAo.tga::CompressedTexture2D::1984146442895634827::1736885085::1736885091::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::6538224040208235300::1736885085::1736885091::1::::<><>::
+LimeWall_Roughness.png::CompressedTexture2D::1329467630850282042::1736885085::1736885091::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/LogWall/::1736885085
+LogWall_Ambient Occlusion.png::CompressedTexture2D::1116529690676568493::1736885085::1736885091::1::::<><>::
+LogWall_Diffuse.png::CompressedTexture2D::3529673438190216810::1736885085::1736885091::1::::<><>::
+LogWall_MRAo.tga::CompressedTexture2D::1515239443120352068::1736885085::1736885091::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::4994057023017109221::1736885085::1736885091::1::::<><>::
+LogWall_Roughness.png::CompressedTexture2D::2948276355691863308::1736885085::1736885091::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/RietRoof/::1736885086
+AO_RietRoof.png::CompressedTexture2D::4438677679885070103::1736885086::1736885091::1::::<><>::
+Base Color_RietRoof.png::CompressedTexture2D::2505371337867303589::1736885086::1736885091::1::::<><>::
+MRAO_RietRoof.exr::CompressedTexture2D::4024479964290928966::1736885086::1736885089::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::4111579986994103300::1736885086::1736885089::1::::<><>::
+ROUGHNESS_RietRoof.png::CompressedTexture2D::316636951099360192::1736885086::1736885089::1::::<><>::
+::res://HousesAndProps_blend_Gltf_Textures/Textures/Roof/::1736885086
+Roof_Ambient Occlusion.png::CompressedTexture2D::4684809738659468397::1736885086::1736885089::1::::<><>::
+Roof_Diffuse.png::CompressedTexture2D::8031758131142758514::1736885086::1736885089::1::::<><>::
+Roof_MRAo.tga::CompressedTexture2D::2239725908020092526::1736885086::1736885089::1::::<><>::
+Roof_Normal.png::CompressedTexture2D::2361929630989297841::1736885086::1736885089::1::::<><>::
+Roof_Roughness.png::CompressedTexture2D::2357494610450641326::1736885086::1736885088::1::::<><>::
+::res://Iteam/::1736871730
+Item.gd::GDScript::-1::1736871730::0::1::::Item<>Resource<>::
+::res://Item Art/::1736883985
+Untitled design (6).png::CompressedTexture2D::4684463807836531121::1736871730::1736883985::1::::<><>::
+::res://Item Scene/::1736871730
+Weapon Art.tscn::PackedScene::2094354189405909348::1736871730::0::1::::<><>::
+::res://Main Menu/::1736883985
+Untitled design (5).png::CompressedTexture2D::6273519161323302671::1733932821::1736883985::1::::<><>::
+::res://Main Menu/Assets/::1736871730
+::res://Main Menu/Assets/Backdrops/::1736883988
+ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1733932821::1736883985::1::::<><>::
+Untitled design (1).png::CompressedTexture2D::510534257622831008::1733932821::1736883986::1::::<><>::
+Untitled design (2).png::CompressedTexture2D::1003301072353283701::1733932821::1736883985::1::::<><>::
+Untitled design (3).png::CompressedTexture2D::8085498008506436039::1733932821::1736883985::1::::<><>::
+Untitled design.png::CompressedTexture2D::3132993260369731465::1733932821::1736883988::1::::<><>::
+::res://Main Menu/Assets/Fonts/::1733932821
+::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1736883984
+LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1733932821::1736883984::1::::<><>::
+OFL.txt::TextFile::-1::1733932821::0::1::::<><>::
+::res://Main Menu/Input Map Page/::1733932821
+input_settings.gd::GDScript::-1::1733932821::0::1::::<>Control<>::
+Input_Settings.tscn::PackedScene::6133283631795022544::1733932821::0::1::::<><>::res://Main Menu/Input Map Page/input_settings.gd<>uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Main Menu/Input Map Page/Scenes/::1733932821
+input_button.tscn::PackedScene::7283866548932056814::1733932821::0::1::::<><>::
+::res://Main Menu/Main tscn/::1736884870
+main_menu.gd::GDScript::-1::1733934051::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::6149924103355590478::1736884870::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Materials/::1736884919
+696.jpg::CompressedTexture2D::4056450232418979747::1733934051::1736883986::1::::<><>::
+::res://Materials/free-environment-props-3d-low-poly-models/::1736884919
+::res://Materials/free-environment-props-3d-low-poly-models/Texture/::1736883985
+Texture.png::CompressedTexture2D::6179306701896527883::1733934051::1736883985::1::::<><>::
+::res://Materials/LoafbrrAssets/::1732118862
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/::1733934051
+README.txt::TextFile::-1::1733934051::0::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/gltf/::1733761274
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/::1734365450
+Doors.material::StandardMaterial3D::6025703891065029077::1733934051::0::1::::<><>::uid://dddga7i3ntabg::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/Doors_Diffuse.png<>uid://cibro1rh0swvu::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/Doors_MRAo.tga<>uid://e35vi3fu8wgn::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/Doors_Normal.png
+Floor_Stone_1.material::StandardMaterial3D::5276032082209750966::1733934051::0::1::::<><>::uid://chdcsnl6q8ks6::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/StoneFloor_Diffuse.png<>uid://dpq2dvn3sp888::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/StoneFloor_MRAo.tga<>uid://dqbv5hseigps::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/StoneFloor_Normal.png
+Floor_Stone_2.material::StandardMaterial3D::556298131213089501::1733934051::0::1::::<><>::uid://dtxea251xgepo::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/StoneFloor_2_Diffuse.png<>uid://domjn656rfwej::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/StoneFloor_2_MRAo.tga<>uid://c7jcykj1oi81i::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/StoneFloor_2_Normal.png
+Floor_Stone_3.material::StandardMaterial3D::4349504488281765206::1734365450::0::1::::<><>::uid://dlok4l56ax5to::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/StoneFloor_3_Diffuse.png<>uid://bdmnv554fnhw0::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/StoneFloor_3_MRAo.tga<>uid://c3yxu4ounkes2::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/StoneFloor_3_Normal.png
+Floor_Wood_1.material::StandardMaterial3D::5593247902112510691::1734365450::0::1::::<><>::uid://hnjkunm0ula2::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/WoodPlankFloor_Diffuse.png<>uid://buk8v02phwoda::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/WoodPlankFloor_MRAo.tga<>uid://c45soaliq8j5c::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/WoodPlankFloor_Normal.png
+Floor_Wood_2.material::StandardMaterial3D::6185233822136283098::1733934051::0::1::::<><>::uid://bj6wcmsa0tjti::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/WoodPlankFloor_2_Diffuse.png<>uid://bedy5o7msvc6m::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/WoodPlankFloor_2_MRAo.tga<>uid://cf6rmvlp26q1e::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/WoodPlankFloor_2_Normal.png
+Floor_Wood_3.material::StandardMaterial3D::960318474662871545::1734365450::0::1::::<><>::uid://byi8xi6758axm::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/WoodPlankFloor_3_Diffuse.png<>uid://djyljjde2pc4e::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/WoodPlankFloor_3_Normal.png
+Glass.material::StandardMaterial3D::7098915268948189180::1734365450::0::1::::<><>::uid://ceqb2vl437kqi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/BASE COLOR_Glass.png<>uid://dxci34dqogguk::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/ROUGHNESS_Glass.png
+Grass.material::StandardMaterial3D::7386200783365710312::1733934051::0::1::::<><>::uid://7p8bt6wbeshb::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/Grass_Diffuse.png<>uid://bkm2yo26bdo34::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/Grass_MRAo.tga<>uid://bybo31v87h5ji::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/Grass_Normal.png
+Ground.material::StandardMaterial3D::680495838304222617::1733934051::0::1::::<><>::uid://dn5dk34dr87eq::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/Ground_Diffuse.png<>uid://pr3q1ppawp45::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/Ground_MRAo.tga<>uid://kmd3dbcey3sq::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/Ground_Normal.png
+Roof_Riet.material::StandardMaterial3D::7248094797031560979::1733934051::0::1::::<><>::uid://cam7m0kilfae6::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/Base Color_RietRoof.png<>uid://by5qmob23qpd1::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/MRAO_RietRoof.exr<>uid://b2af1q2fuedup::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/NORMAL_RietRoof.png
+Roof_Tiles.material::StandardMaterial3D::7662560281998518237::1734365450::0::1::::<><>::uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://duu3np380k54t::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_MRAo.tga<>uid://u8mnoi6va1mj::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Normal.png
+Trim_Bricks.material::StandardMaterial3D::3732559375763020314::1733934051::0::1::::<><>::uid://b2c1nckq6va8w::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/BrickStoneTrim_Diffuse.png<>uid://cskesv1v28hp1::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/BrickStoneTrim_MRAo.tga<>uid://cdiceaf7ps07g::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/BrickStoneTrim_Normal.png
+Trim_Props.material::StandardMaterial3D::1033720300151685818::1734365450::0::1::::<><>::uid://dc6p0k0eabew3::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/BASE COLOR_TrimProps.png<>uid://dfurfqyc74b1k::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/MR_TrimProps.exr<>uid://udxgps5uy1i7::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/NORMAL_TrimProps.png
+Trim_Wood.material::StandardMaterial3D::2517275943619463436::1734365450::0::1::::<><>::uid://bhgh7etiptjw0::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/WoodTrim_Diffuse.png<>uid://db0er1vwlsy4b::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/WoodTrim_MRAo.tga<>uid://8iaap42qp5u8::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/WoodTrim_Normal.png
+Wall_Bricks.material::StandardMaterial3D::8503730028444403624::1733934051::0::1::::<><>::uid://jhehs2u4w4qi::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png<>uid://6ahs8cvshsdd::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_MRAo.tga<>uid://den710h1q87nm::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Normal.png
+Wall_Lime.material::StandardMaterial3D::6154741798039296746::1733934051::0::1::::<><>::uid://cpx4iw0yuy0x4::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/LimeWall_Diffuse.png<>uid://blqumdtg2swdt::::res://Assets/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/LimeWall_Normal.png
+Wall_Log.material::StandardMaterial3D::243118777532612226::1734365450::0::1::::<><>::uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://wgs6ky70rv42::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Normal.png
+Wood_Deck.material::StandardMaterial3D::6226761597645995788::1734365450::0::1::::<><>::uid://bsew0yh46nyvw::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/WoodDeck_Diffuse.png<>uid://4714mbgbb4ng::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/WoodDeck_MRAO.tga<>uid://cleeaaq6et310::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/WoodDeck_Normal.png
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/::1733934051
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Doors/::1733934051
+door_arche_1.tscn::PackedScene::8439894933525565956::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_arche_2.tscn::PackedScene::6547838940759790348::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_arche_3.tscn::PackedScene::7320106629285820247::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_arche_4.tscn::PackedScene::2110878567541090520::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_deck_holder_1.tscn::PackedScene::5605395473415568678::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_deck_holder_2.tscn::PackedScene::6322414769921786266::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_double_normal_1.tscn::PackedScene::3568322350815931888::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_double_normal_3.tscn::PackedScene::4915898301864512037::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_double_tall_1.tscn::PackedScene::173077766109257544::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_double_tall_3.tscn::PackedScene::4798661074536308574::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_double_tall_5.tscn::PackedScene::3630215423697092823::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Doors/door_double_tall_6.gd
+door_double_tall_6.gd::GDScript::-1::1733934051::0::1::::<>Node3D<>::
+door_normal_1.tscn::PackedScene::6350608414996544314::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+door_normal_2.tscn::PackedScene::960556227626693357::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_normal_3.tscn::PackedScene::4266353969808187793::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_normal_4.tscn::PackedScene::434275017188817466::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_tall_1.tscn::PackedScene::4211400599238805421::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_tall_2.tscn::PackedScene::8360221099205284716::1733934051::0::1::::<><>::res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd<>uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material
+door_tall_3.tscn::PackedScene::3792478429610675967::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Assets/LoafbrrAssets/HouseAndPropsPack/Script/DoorOpen.gd
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Houses/::1733934051
+house_1.tscn::PackedScene::7182403523926792669::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_2.tscn::PackedScene::4620240445552801744::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_3.tscn::PackedScene::8993483958070024756::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material
+house_4.tscn::PackedScene::8335792940482422715::1733934051::0::1::::<><>::uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_5.tscn::PackedScene::5861261587777649808::1733934051::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://b276x6gpqscoc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://nxgkmsw7kkb6::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material<>uid://dc6p0k0eabew3::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/BASE COLOR_TrimProps.png<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material<>uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://jhehs2u4w4qi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png
+house_6.tscn::PackedScene::5682003177790855376::1733934051::0::1::::<><>::uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_7.tscn::PackedScene::6031316525603349066::1733934051::0::1::::<><>::uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_8.tscn::PackedScene::6718219467561634128::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_9.tscn::PackedScene::2003910772833944950::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_10.tscn::PackedScene::6922926605436453034::1733934051::0::1::::<><>::uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_11.tscn::PackedScene::7685446215292186419::1733934051::0::1::::<><>::uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://dbjbcecq212x0::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Riet.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+house_12.tscn::PackedScene::6505675830630469468::1733934051::0::1::::<><>::uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Props/::1733934051
+props_barrel.tscn::PackedScene::1252397465621794433::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_bed_1.tscn::PackedScene::8750805534192479745::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_bed_2.tscn::PackedScene::7052528531567775193::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_bench_1.tscn::PackedScene::8464217091766013205::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_bench_2.tscn::PackedScene::3353979201279840618::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_bench_3.tscn::PackedScene::2132515886953963123::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_box_1.tscn::PackedScene::3869284954229203601::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_box_2.tscn::PackedScene::5882323177860114508::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_box_3.tscn::PackedScene::1743857333665975260::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_box_4.tscn::PackedScene::4290975151047968098::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_chair_1.tscn::PackedScene::4205638816297621132::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_chair_2.tscn::PackedScene::48577970064648212::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_chair_3.tscn::PackedScene::6715504643062825190::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_crate_1.tscn::PackedScene::8790345144617576805::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_crate_2.tscn::PackedScene::693594674912978097::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_drawer.tscn::PackedScene::4603101717405021096::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_posts_1.tscn::PackedScene::4252086054133517963::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_posts_2.tscn::PackedScene::6920338858334339883::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_posts_3.tscn::PackedScene::6554722315989504389::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_posts_4.tscn::PackedScene::8362509895999727957::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_post_metal_cube.tscn::PackedScene::605023309198556578::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_1.tscn::PackedScene::7013019175127913395::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_2.tscn::PackedScene::5606219318248378455::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_3.tscn::PackedScene::3025273575801514714::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_4.tscn::PackedScene::4754662468173276195::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_5.tscn::PackedScene::8626967652371729649::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_6.tscn::PackedScene::3078019752113598482::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_7.tscn::PackedScene::5077117497177583670::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_8.tscn::PackedScene::6033515867003419008::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_9.tscn::PackedScene::8757167714591321237::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_shelf_10.tscn::PackedScene::3426599964498842861::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_stall_1.tscn::PackedScene::2661981541859402071::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_stall_2.tscn::PackedScene::4045711709905588071::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_stool_1.tscn::PackedScene::2467297469711770189::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_stool_2.tscn::PackedScene::4573983047629674894::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_1.tscn::PackedScene::9041749069213073848::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_2.tscn::PackedScene::5558926058009021864::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_circle_1.tscn::PackedScene::4345875132148657214::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_circle_2.tscn::PackedScene::6999281418543713305::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_circle_3.tscn::PackedScene::2965088048333251692::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_circle_4.tscn::PackedScene::5839002768285198685::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_1.tscn::PackedScene::7343492241711914134::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_2.tscn::PackedScene::6977041346392386286::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_3.tscn::PackedScene::3448184441077532728::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_4.tscn::PackedScene::5960262422087525550::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_5.tscn::PackedScene::3550002947705190329::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_6.tscn::PackedScene::1129819498533765312::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_7.tscn::PackedScene::5651220214754789012::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_8.tscn::PackedScene::6223104213232001747::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+props_table_square_9.tscn::PackedScene::5009799629628359976::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Road/::1733934051
+road_corner_bevel_a.tscn::PackedScene::3121553686731290278::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_bevel_b.tscn::PackedScene::8171115414674916880::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_bevel_tri_a.tscn::PackedScene::4135718252659633273::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_bevel_tri_b.tscn::PackedScene::7196353625301056599::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_round_a.tscn::PackedScene::7225570709674164304::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_round_b.tscn::PackedScene::150454783129416576::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_round_tri_a.tscn::PackedScene::500118461865975783::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_round_tri_b.tscn::PackedScene::6493615656993845302::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_tri_a.tscn::PackedScene::607788742197473738::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_corner_tri_b.tscn::PackedScene::7932417184648064080::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_edge.tscn::PackedScene::5175395723797543196::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_edge_half.tscn::PackedScene::7984454546645308362::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_half_1.tscn::PackedScene::6084846482088201972::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_half_2.tscn::PackedScene::1204020273050377507::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_quarter.tscn::PackedScene::3746841941469791627::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_road_1.tscn::PackedScene::4593397354355129700::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_road_ramp.tscn::PackedScene::1839514707785220677::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_road_ramp_stairs.tscn::PackedScene::7955097442232496185::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_road_ramp_stairs_half.tscn::PackedScene::3088307016927664641::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_separator.tscn::PackedScene::2605833285940340480::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_bevel_a.tscn::PackedScene::8238981293793777759::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_bevel_b.tscn::PackedScene::3772897355165320936::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_block.tscn::PackedScene::1120553161840975388::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_block_wide.tscn::PackedScene::3070636066758846792::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_ramp.tscn::PackedScene::3995142995495478503::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_round_a.tscn::PackedScene::1354441035039216197::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_round_b.tscn::PackedScene::4082032914424034505::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_stair.tscn::PackedScene::2405254798752139160::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_stair_half.tscn::PackedScene::9047581286502926354::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_separator_tri.tscn::PackedScene::2131473394501170558::1733934051::0::1::::<><>::uid://btgcyb76nswac::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Bricks.material
+road_stairs_corner_a.tscn::PackedScene::7491647542077309361::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_corner_b.tscn::PackedScene::2478867937105317202::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_corner_half_a.tscn::PackedScene::6044480267650176995::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_corner_half_b.tscn::PackedScene::3527445632405766842::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_narrow.tscn::PackedScene::9195488609719636167::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wall_a.tscn::PackedScene::8422169554260931772::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wall_b.tscn::PackedScene::779870816856607051::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wall_half_a.tscn::PackedScene::1923250048322965851::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wall_half_b.tscn::PackedScene::8565777405972251665::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wide.tscn::PackedScene::7128530659659782105::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wide_half.tscn::PackedScene::5463813509362109853::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+road_stairs_wide_narrow.tscn::PackedScene::9007639572147593071::1733934051::0::1::::<><>::uid://chf0qib4mc6ak::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_1.material
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Script/::1733934051
+DoorOpen.gd::GDScript::-1::1733934051::0::1::::<>Node3D<>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/::1732118863
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/::1736883985
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::4287250195824750864::1733934051::1736883985::1::::<><>::
+BrickStoneTrim_MRAo.tga::CompressedTexture2D::6057160486819535244::1733934051::1736883985::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::5000051506692668138::1733934051::1736883985::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/::1736883985
+BrickWall_Diffuse.png::CompressedTexture2D::646406593627492828::1733934051::1736883985::1::::<><>::
+BrickWall_MRAo.tga::CompressedTexture2D::2176313053357314857::1733934051::1736883984::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::7468845035945685326::1733934051::1736883984::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/::1736883984
+Doors_Diffuse.png::CompressedTexture2D::7376387711608129424::1733934051::1736883984::1::::<><>::
+Doors_MRAo.tga::CompressedTexture2D::5337475076457188214::1733934051::1736883984::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::340417426817351321::1733934051::1736883984::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/::1736883990
+BASE COLOR_Glass.png::CompressedTexture2D::5086736840771002864::1733934051::1736883984::1::::<><>::
+MRAO_Glass.png::CompressedTexture2D::1913786487198000064::1733934051::1736883984::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::8778271476991122714::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/::1736883990
+Grass_Diffuse.png::CompressedTexture2D::2279015156116814695::1733934051::1736883990::1::::<><>::
+Grass_MRAo.tga::CompressedTexture2D::3114764649427145045::1733934051::1736883990::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::4073918748478443978::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/::1736883990
+Ground_Diffuse.png::CompressedTexture2D::8133849875526356048::1733934051::1736883990::1::::<><>::
+Ground_MRAo.tga::CompressedTexture2D::1089657114351025668::1733934051::1736883990::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::726893281848724964::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/::1736883990
+LimeWall_Diffuse.png::CompressedTexture2D::5874930984693492815::1733934051::1736883990::1::::<><>::
+LimeWall_MRAo.tga::CompressedTexture2D::4554363251821910693::1733934051::1736883990::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::3192763964389362705::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/::1736883990
+LogWall_Diffuse.png::CompressedTexture2D::4131954738924643000::1733934051::1736883990::1::::<><>::
+LogWall_MRAo.tga::CompressedTexture2D::133758381058444428::1733934051::1736883990::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::1557689655838762081::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/::1736884013
+Base Color_RietRoof.png::CompressedTexture2D::4799579602640482559::1733934051::1736883990::1::::<><>::
+MRAO_RietRoof.exr::CompressedTexture2D::4133877903175320348::1733934051::1736884013::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::4281870359862721795::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/::1736883991
+Roof_Diffuse.png::CompressedTexture2D::1414090385764502658::1733934051::1736883990::1::::<><>::
+Roof_MRAo.tga::CompressedTexture2D::8606050602677352933::1733934051::1736883989::1::::<><>::
+Roof_Normal.png::CompressedTexture2D::1472653907000510521::1733934051::1736883991::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/::1736883991
+StoneFloor_Diffuse.png::CompressedTexture2D::5270510685618018387::1733934051::1736883991::1::::<><>::
+StoneFloor_MRAo.tga::CompressedTexture2D::8246770590270839775::1733934051::1736883991::1::::<><>::
+StoneFloor_Normal.png::CompressedTexture2D::243696380981462952::1733934051::1736883991::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/::1736883991
+StoneFloor_2_Diffuse.png::CompressedTexture2D::8540575102203243260::1733934051::1736883990::1::::<><>::
+StoneFloor_2_MRAo.tga::CompressedTexture2D::8167249739315560577::1733934051::1736883990::1::::<><>::
+StoneFloor_2_Normal.png::CompressedTexture2D::7037628596966151200::1733934051::1736883991::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/::1736883990
+StoneFloor_3_Diffuse.png::CompressedTexture2D::7960900203115824420::1733934051::1736883990::1::::<><>::
+StoneFloor_3_MRAo.tga::CompressedTexture2D::2622588193603347961::1733934051::1736883990::1::::<><>::
+StoneFloor_3_Normal.png::CompressedTexture2D::6789107807791165231::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/::1736884024
+BASE COLOR_TrimProps.png::CompressedTexture2D::7364591412505738592::1733934051::1736883990::1::::<><>::
+MR_TrimProps.exr::CompressedTexture2D::7552535819780898730::1733934051::1736884024::1::::<><>::
+NORMAL_TrimProps.png::CompressedTexture2D::1411378028667379800::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/::1736883990
+WoodDeck_Diffuse.png::CompressedTexture2D::3659459071616035192::1733934051::1736883990::1::::<><>::
+WoodDeck_MRAO.tga::CompressedTexture2D::2103167615567050316::1733934051::1736883990::1::::<><>::
+WoodDeck_Normal.png::CompressedTexture2D::5553419052523357493::1733934051::1736883990::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/::1736883990
+WoodPlankFloor_Diffuse.png::CompressedTexture2D::518724198271843511::1733934051::1736883990::1::::<><>::
+WoodPlankFloor_MRAo.tga::CompressedTexture2D::3812883851912882142::1733934051::1736883990::1::::<><>::
+WoodPlankFloor_Normal.png::CompressedTexture2D::6871367089874421226::1733934051::1736883987::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/::1736883987
+WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::3083455990360765018::1733934051::1736883987::1::::<><>::
+WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::2674880758481703162::1733934051::1736883987::1::::<><>::
+WoodPlankFloor_2_Normal.png::CompressedTexture2D::5188836035058157568::1733934051::1736883987::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/::1736883987
+WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::4089513156630521922::1733934051::1736883987::1::::<><>::
+WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::6843235561688579458::1733934051::1736883987::1::::<><>::
+WoodPlankFloor_3_Normal.png::CompressedTexture2D::7841191146547584590::1733934051::1736883987::1::::<><>::
+::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/::1736883987
+WoodTrim_Diffuse.png::CompressedTexture2D::2890611259866979185::1733934051::1736883987::1::::<><>::
+WoodTrim_MRAo.tga::CompressedTexture2D::7281334964099290747::1733934051::1736883987::1::::<><>::
+WoodTrim_Normal.png::CompressedTexture2D::2332747695985889881::1733934051::1736883986::1::::<><>::
+::res://Melee Weapons/::1736884027
+Shovel.glb::PackedScene::4240942652973104563::1736871730::1736884027::1::::<><>::
+::res://Models/::1736884919
+Barn.tscn::PackedScene::1422010014140270242::1733934051::0::1::::<><>::
+BIGAHHH BARN.tscn::PackedScene::984199683650519575::1736884870::0::1::::<><>::
+button.tscn::PackedScene::6038412854970030683::1734628577::0::1::::<><>::res://Scripts/interacable.gd
+character_body_3d.gd::GDScript::-1::1733934051::0::1::::<>CharacterBody3D<>::
+Doubledoor.tscn::PackedScene::4059142023453802758::1733934051::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Doors/door_double_tall_6.gd
+Fence2.tscn::PackedScene::3975403881453079365::1736884870::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material
+Fence.tscn::PackedScene::6090387540926656172::1733934051::0::1::::<><>::
+game.tscn::PackedScene::7782051981257741488::1736884869::0::1::::<><>::uid://bx18e36vi21ad::::res://Materials/696.jpg<>uid://42j8cypn7jeb::::res://Models/Windmill22.tscn<>uid://oa0viq4egsux::::res://Models/BIGAHHH BARN.tscn<>uid://ba0esmdah7m3d::::res://Models/silo.tscn<>uid://cs1h17xm2kqqm::::res://Models/Fence.tscn<>uid://52idgbuskbwf::::res://Models/shorter_fence.tscn<>uid://c0kyo6tx0rqia::::res://Models/road.tscn<>uid://bh4y61debteju::::res://Models/roadbreak.tscn<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://bbr035lp5dbcr::::res://Models/HOUSE.tscn<>uid://nxv8ebx1omcq::::res://Models/Shelf.tscn<>uid://bvqsvljjt7gxj::::res://Scenes/item_slot.tscn<>uid://de56lwhpalp6i::::res://Scenes/player.tscn<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn
+gate.tscn::PackedScene::4766305832100720708::1733934051::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
+HOUSE.tscn::PackedScene::2493273469613741809::1736884919::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://b276x6gpqscoc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://nxgkmsw7kkb6::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material<>uid://tfio1hjtiyr0::::res://textures/WoodPlankFloor_Diffuse.png<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material<>uid://jhehs2u4w4qi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://dmb7wi2brnmrq::::res://Models/Post.tscn
+Post.tscn::PackedScene::8005575245689385050::1736526740::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material<>uid://bsew0yh46nyvw::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/WoodDeck_Diffuse.png
+road.tscn::PackedScene::6549690103472921608::1733934051::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
+roadbreak.tscn::PackedScene::2939123481889854910::1733934051::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
+Shelf.tscn::PackedScene::961269856403281844::1733934051::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
+shorter_fence.tscn::PackedScene::2161894919442494629::1733934051::0::1::::<><>::
+silo.tscn::PackedScene::2438305774731191323::1733934051::0::1::::<><>::
+Windmill22.tscn::PackedScene::2091820191818491101::1736884870::0::1::::<><>::
+::res://Scenes/::1736884919
+arm.tscn::PackedScene::2592781040395658155::1734628577::0::1::::<><>::res://Scripts/arm.gd
+Inventory.tscn::PackedScene::1312698352631884636::1736871730::0::1::::<><>::res://inventory.gd
+item_slot.tscn::PackedScene::3894547443794202687::1736871730::0::1::::<><>::res://item_slot.gd
+Melee.tscn::PackedScene::4525886345725356429::1734365109::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
+player.tscn::PackedScene::7503851795771256410::1736884919::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://fyfncf7u1jsp::::res://Scenes/WaterGun.tscn<>uid://cvm67djsnmmmx::::res://Main Menu/Untitled design (5).png<>uid://w1wambbwlgkr::::res://Scenes/Shovel.tscn
+Shovel.tscn::PackedScene::1599164787383409429::1736871730::0::1::::<><>::uid://uhaqi64gbgde::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
+WaterGun.tscn::PackedScene::400816198824608103::1736871730::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn<>uid://deep6sgddtioc::::res://Watergun/model.obj
+weapon.tscn::PackedScene::2946917155921635875::1736871730::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn
+WG_bullet.tscn::PackedScene::2052678910388028232::1734365109::0::1::::<><>::res://Scripts/bullet.gd
+::res://Scripts/::1736871730
+arm.gd::GDScript::-1::1734628577::0::1::::<>RayCast3D<>::
+bullet.gd::GDScript::-1::1736871730::0::1::::bullet<>Node3D<>::
+character_body_3d.gd::GDScript::-1::1736871730::0::1::::<>CharacterBody3D<>::
+game.gd::GDScript::-1::1736871730::0::1::::<>Node3D<>::
+interacable.gd::GDScript::-1::1734628577::0::1::::Interactable<>CollisionObject3D<>::
+melee_weapon.gd::GDScript::-1::1736871730::0::1::::melee<>Node3D<>::
+weapon.gd::GDScript::-1::1736871730::0::1::::Weapon<>Node3D<>::
+::res://Sprites/::1736871730
+::res://Sprites/Watergun/::1736884024
+model.obj::Mesh::6296196545963739466::1736871730::1736884024::1::::<><>::
+::res://textures/::1736885085
+DoorColor.png::CompressedTexture2D::1980260925528541400::1733934051::1736885144::1::::<><>::
+DoorNormals.png::CompressedTexture2D::4168063816546060979::1733934051::1736883987::1::::<><>::
+DoorRoughness.png::CompressedTexture2D::6320588565129074800::1733934051::1736883987::1::::<><>::
+GroundColor.png::CompressedTexture2D::4368381669281835325::1733934051::1736883987::1::::<><>::
+GroundNormal.png::CompressedTexture2D::7600715479721755321::1733934051::1736883986::1::::<><>::
+GroundRoughness.png::CompressedTexture2D::6161959612964527396::1733934051::1736883986::1::::<><>::
+InternalWallsColor.png::CompressedTexture2D::7112418720047000905::1733934051::1736885155::1::::<><>::
+InternalWallsNormals.png::CompressedTexture2D::8663940226773691001::1733934052::1736883990::1::::<><>::
+InternalWallsRoughness.png::CompressedTexture2D::8207059770455227915::1733934052::1736883990::1::::<><>::
+PostsandRoofColor.png::CompressedTexture2D::5540233382098409268::1733934052::1736885157::1::::<><>::
+PostsandRoofNormal.png::CompressedTexture2D::7327815627043069344::1733934052::1736883990::1::::<><>::
+PostsandRoofRoughness.png::CompressedTexture2D::7696403775446449817::1733934052::1736883989::1::::<><>::
+RailsColor.png::CompressedTexture2D::4499864522920102655::1733934052::1736883989::1::::<><>::
+RailsNormal.png::CompressedTexture2D::475943227415541312::1733934052::1736883989::1::::<><>::
+RailsRoughness.png::CompressedTexture2D::8802107964383589636::1733934052::1736883989::1::::<><>::
+StairsandFloorColor.png::CompressedTexture2D::8500466631468753444::1733934052::1736883989::1::::<><>::
+StairsandFloorNormal.png::CompressedTexture2D::2787993780857664327::1733934052::1736883988::1::::<><>::
+StairsandFloorRoughness.png::CompressedTexture2D::6813175714546247498::1733934052::1736883988::1::::<><>::
+WallsColor.png::CompressedTexture2D::8026392290520553376::1733934052::1736883988::1::::<><>::
+WallsNormal.png::CompressedTexture2D::5587488212966342279::1733934052::1736883988::1::::<><>::
+WallsRoughness.png::CompressedTexture2D::8701431343034052569::1733934052::1736883988::1::::<><>::
+WindowColor.png::CompressedTexture2D::4230133353975453005::1733934052::1736883988::1::::<><>::
+WindowNormal.png::CompressedTexture2D::9016076519215906493::1733934052::1736883988::1::::<><>::
+WindowRoughness.png::CompressedTexture2D::6331738978009912173::1733934052::1736883987::1::::<><>::
+::res://Watergun/::1736884024
+model.obj::Mesh::3194459491532740719::1736871730::1736884024::1::::<><>::

@@ -9,12 +9,15 @@ extends CharacterBody3D
 @onready var head_clearance: RayCast3D = $head_clearance
 
 
-
 @export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
 
+#Weapons
+@onready var Watergun = $neck/Camera/Watergun
+@onready var Shovel = $"neck/Camera/Root Scene" 
+var current_weapopn = 1
 
 #speed
 var current_speed = 5.0
@@ -32,7 +35,7 @@ var t_bob = 0
 const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
-var JUMP_VELOCITY = 15
+var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
 #SLiding
@@ -42,6 +45,26 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
+
+func Weapon_Select():
+	if Input.is_action_just_pressed("Watergun"):
+		current_weapopn = 1
+	elif Input.is_action_just_pressed("Shovel"):
+		current_weapopn = 2
+	elif Input.is_action_just_pressed("Weapon3"):
+		current_weapopn = 3
+	if current_weapopn == 1:
+		Watergun.visible = true
+	else:
+		Watergun.visible = false
+	if current_weapopn == 2:
+		Shovel.visible = true
+	else:
+		Shovel.visible = false
+	#if current_weapopn == 3:
+#		Weapon3.visible = true
+	#else:
+	#	Weapon3.visible = false
 
 
 
@@ -70,6 +93,7 @@ func _physics_process(delta: float) -> void:
 		# Handle jump.
 		if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
 			velocity.y = JUMP_VELOCITY
+		Weapon_Select()
 
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
@@ -153,7 +177,6 @@ func _physics_process(delta: float) -> void:
 		var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 		var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 		camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
-
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
