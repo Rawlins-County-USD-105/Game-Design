@@ -23,3 +23,4 @@ mono_crash.*.json
 .godot/editor/filesystem_update4
 .godot/editor/player.tscn-editstate-36a25e342948d0ceacc500772b5412b3.cfg
 .godot/editor/script_editor_cache.cfg
+/.godot

@@ -3,12 +3,16 @@ extends CharacterBody3D
 class_name Enemy
 
 var player= null
+
 @export var Damage = 1.0
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
 @export var speed : int
+@onready var damage_ray: RayCast3D = $RayCast3D
+@onready var timer: Timer = $Timer
+
 var Health = 20.0
 signal hit(Damage)
 # Called when the node enters the scene tree for the first time.
@@ -18,7 +22,11 @@ signal hit(Damage)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	velocity = Vector3.ZERO
-	 
+	if damage_ray.is_colliding() and timer.is_stopped():
+		damage_ray.get_collider().took_damage(Damage)
+		timer.start()
+		
+	
 	# Navigation
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
