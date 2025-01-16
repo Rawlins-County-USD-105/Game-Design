@@ -75,5 +75,8 @@ debug_shape_custom_color = Color(0.988235, 0, 0, 1)
 [node name="Took_damage" type="Timer" parent="."]
 
 [node name="Regen" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 5.0
+one_shot = true
+
+[node name="regen interval" type="Timer" parent="."]
 one_shot = true

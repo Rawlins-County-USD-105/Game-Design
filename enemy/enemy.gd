@@ -4,7 +4,7 @@ class_name Enemy
 
 
 var player= null
-@export var Damage = 100.0
+@export var Damage = 10.0
 @export var player_path : NodePath
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D

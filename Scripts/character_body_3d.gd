@@ -1,13 +1,16 @@
 extends CharacterBody3D
 var max_health = 100
 var health = max_health
+
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
 @onready var head_clearance: RayCast3D = $head_clearance
+
 @onready var regen: Timer = $Regen
+@onready var regen_interval: Timer = $"regen interval"
 
 
 @export_category("Movement and shiz")
@@ -78,7 +81,10 @@ func Weapon_Select():
 #func _ready() -> void:
 	#camera_3d.current = is_multiplayer_authority()	
 func took_damage(Damage):
-	health -= Damage
+	if health >= Damage:
+		health -= Damage
+	elif health < Damage:
+		health = 0
 	if health <= 0:
 		print("You Died")
 	regen.start()
@@ -97,6 +103,11 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
+	if regen.is_stopped() and health < max_health and regen_interval.is_stopped():
+		health += 5
+		regen_interval.start()
+		if health > max_health:
+			health = max_health
 
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -187,7 +198,7 @@ func _physics_process(delta: float) -> void:
 	var diff = velocity.y - old_vel
 		
 	if diff > fall_hurtie:
-		took_damage(diff*100000)
+		took_damage(round(diff))
 
 	old_vel = velocity.y
 	#FOV
