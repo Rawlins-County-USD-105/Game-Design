@@ -1,9 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
-
-[ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
-
+[ext_resource type="Texture2D" uid="uid://cbsjia6je1nvn" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="5_e0it4"]
@@ -17,10 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
-
 [ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="18_q0c4j"]
 [ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
-
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -62,14 +57,8 @@ albedo_texture = ExtResource("1_2qhk6")
 uv1_triplanar = true
 
 [node name="Game" type="Node3D"]
-script = ExtResource("1_qvolv")
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.358558, 0)
-navigation_mesh = SubResource("NavigationMesh_3psi0")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="NavigationRegion3D"]
-
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_7wjwl")
 
 [node name="Sun" type="CSGSphere3D" parent="WorldEnvironment"]
@@ -86,7 +75,6 @@ shadow_enabled = true
 navigation_mesh = SubResource("NavigationMesh_n5v08")
 
 [node name="Ground" type="StaticBody3D" parent="NavigationRegion3D"]
-
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000580788, -0.00134349, -0.000667572)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Ground"]
@@ -241,48 +229,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.965
 [node name="spaceshipbodies" parent="NavigationRegion3D" instance=ExtResource("18_xqpn6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.013, 3.93665, -37.8957)
 
-
-[node name="player" parent="NavigationRegion3D" instance=ExtResource("18_eupc6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794067, 1.78999, -3.36297)
-
-[node name="WaveTimer" type="Timer" parent="."]
-one_shot = true
-autostart = true
-
-[node name="SpawnHolder" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858261, 0)
-
-[node name="Spawner1" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.2072, 0.019269, 18.3724)
-
-[node name="Spawner2" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 89.7856)
-
-[node name="Spawner3" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.3842, 0, 0)
-
-[node name="Spawner4" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -91.1578)
-
-[node name="Spawner5" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.2592, 0, -79.7591)
-
-[node name="Spawner6" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.218, 0, 70.7232)
-
-[node name="Spawner7" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.2019, 0, 71.9139)
-
-[node name="Spawner8" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.9919, 0, -88.9002)
-
-[node name="Spawner9" type="Node3D" parent="SpawnHolder"]
-
-[node name="Spawner10" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.0232, 0, -47.96)
-
-[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
-
 [node name="Enemy" parent="NavigationRegion3D" instance=ExtResource("18_q0c4j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.8419, 1.49837, -14.6477)
 floor_stop_on_slope = false
@@ -307,4 +253,3 @@ position = Vector2(105, 20)
 
 [node name="Iteam Slot5" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
 position = Vector2(62, 20)
-
