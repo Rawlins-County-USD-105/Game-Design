@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://fyfncf7u1jsp" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://bxtucpk3lc0nb" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://d1xhfj3r8ioe6" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
@@ -24,12 +24,12 @@ slide_on_ceiling = false
 floor_max_angle = 1.0472
 script = ExtResource("1_1qajl")
 
-[node name="crouching_collision_shape" type="CollisionShape3D" parent="."]
+[node name="crouching_collision_shape" type="CollisionShape3D" parent="." groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.377854, 0)
 shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
-[node name="standing_collision_shape" type="CollisionShape3D" parent="."]
+[node name="standing_collision_shape" type="CollisionShape3D" parent="." groups=["Player"]]
 shape = SubResource("CapsuleShape3D_x68qc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="standing_collision_shape"]
@@ -71,3 +71,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
 target_position = Vector3(0, 0.75, 0)
 collide_with_areas = true
 debug_shape_custom_color = Color(0.988235, 0, 0, 1)
+
+[node name="Took_damage" type="Timer" parent="."]
+
+[node name="Regen" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
