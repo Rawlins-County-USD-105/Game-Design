@@ -8,7 +8,7 @@
 radius = 0.470534
 height = 1.79816
 
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent")]
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent") groups=["Enemy"]]
 floor_max_angle = 1.5708
 script = ExtResource("1_wp8om")
 mesh = NodePath("MeshInstance3D")
@@ -16,7 +16,7 @@ hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
 speed = 6
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." groups=["Enemy"]]
 mesh = SubResource("CapsuleMesh_xx47l")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -24,3 +24,9 @@ shape = SubResource("CapsuleShape3D_4dkwc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.1, 0.2)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
