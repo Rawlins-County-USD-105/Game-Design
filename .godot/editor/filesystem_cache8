@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737049793
+::res://::1737058462
 character_body_3d.gd::GDScript::-1::1737049793::0::1::::<>CharacterBody3D<>::
 game.tscn::PackedScene::-1::1737049793::0::1::::<><>::
 inventory.gd::GDScript::-1::1737049793::0::1::::<>Node2D<>::
@@ -17,8 +17,8 @@ global_parameters.gd::GDScript::-1::1737049364::0::1::::<>AcceptDialog<>::
 global_parameters.tscn::PackedScene::2458798723417736340::1737049364::0::1::::<><>::res://addons/simplegrasstextured/global_parameters.gd
 grass.gd::GDScript::-1::1737049364::0::1::::<>MultiMeshInstance3D<>::
 plugin.gd::GDScript::-1::1737049364::0::1::::<>EditorPlugin<>::
-sgt_icon.svg::CompressedTexture2D::2118203900911311639::1737049364::1737049508::1::::<><>::
-sgt_icon_48.svg::CompressedTexture2D::8923397144278867615::1737049364::1737049508::1::::<><>::
+sgt_icon.svg::CompressedTexture2D::2118203900911311639::1737049364::1737058484::1::::<><>::
+sgt_icon_48.svg::CompressedTexture2D::8923397144278867615::1737049364::1737058484::1::::<><>::
 sgt_inspector.gd::GDScript::-1::1737049364::0::1::::<>EditorInspectorPlugin<>::
 singleton.gd::GDScript::-1::1737049364::0::1::::<>Node3D<>::
 singleton.tscn::PackedScene::2771945727575370787::1737049364::0::1::::<><>::res://addons/simplegrasstextured/singleton.gd<>res://addons/simplegrasstextured/shaders/distance.gdshader<>res://addons/simplegrasstextured/shaders/motion1.gdshader<>res://addons/simplegrasstextured/shaders/motion2.gdshader<>res://addons/simplegrasstextured/shaders/normal.gdshader<>uid://cho4etu1eahnx::::res://addons/simplegrasstextured/images/normal.png<>uid://m77dlrqfdeef::::res://addons/simplegrasstextured/images/normal_frame.png<>res://addons/simplegrasstextured/shaders/blur1.gdshader<>res://addons/simplegrasstextured/shaders/blur2.gdshader<>uid://bovwvrkiruiat::::res://addons/simplegrasstextured/images/motion_frame.png<>uid://dk6rqq2wmb45o::::res://addons/simplegrasstextured/images/motion.png
@@ -29,15 +29,15 @@ toolbar_menu.tscn::PackedScene::7476773302474954695::1737049364::0::1::::<><>::r
 toolbar_up.gd::GDScript::-1::1737049364::0::1::::<>Control<>::
 toolbar_up.tscn::PackedScene::2788704064382556614::1737049364::0::1::::<><>::res://addons/simplegrasstextured/toolbar_up.gd<>uid://bsmcpupaj02v8::::res://addons/simplegrasstextured/sgt_icon.svg<>uid://der2mmxtog2mt::::res://addons/simplegrasstextured/toolbar_menu.tscn
 ::res://addons/simplegrasstextured/images/::1737049521
-motion.png::CompressedTexture2D::4340364442765077502::1737049364::1737049521::1::::<><>::
-motion_frame.png::CompressedTexture2D::313189471336745937::1737049364::1737049508::1::::<><>::
-normal.png::CompressedTexture2D::2349192061946770831::1737049364::1737049521::1::::<><>::
-normal_frame.png::CompressedTexture2D::3841174944977281618::1737049364::1737049508::1::::<><>::
-pointer.png::CompressedTexture2D::809979517076568937::1737049364::1737049508::1::::<><>::
-sgt_icon_density.svg::CompressedTexture2D::6589637840932346422::1737049364::1737049508::1::::<><>::
-sgt_icon_distance.svg::CompressedTexture2D::8060571069276836764::1737049364::1737049508::1::::<><>::
-sgt_icon_radius.svg::CompressedTexture2D::3414774384926636164::1737049364::1737049508::1::::<><>::
-wind_pattern.png::CompressedTexture2D::238337952292456650::1737049364::1737049521::1::::<><>::
+motion.png::CompressedTexture2D::4340364442765077502::1737049364::1737058485::1::::<><>::
+motion_frame.png::CompressedTexture2D::313189471336745937::1737049364::1737058485::1::::<><>::
+normal.png::CompressedTexture2D::2349192061946770831::1737049364::1737058485::1::::<><>::
+normal_frame.png::CompressedTexture2D::3841174944977281618::1737049364::1737058485::1::::<><>::
+pointer.png::CompressedTexture2D::809979517076568937::1737049364::1737058485::1::::<><>::
+sgt_icon_density.svg::CompressedTexture2D::6589637840932346422::1737049364::1737058485::1::::<><>::
+sgt_icon_distance.svg::CompressedTexture2D::8060571069276836764::1737049364::1737058485::1::::<><>::
+sgt_icon_radius.svg::CompressedTexture2D::3414774384926636164::1737049364::1737058485::1::::<><>::
+wind_pattern.png::CompressedTexture2D::238337952292456650::1737049364::1737058485::1::::<><>::
 ::res://addons/simplegrasstextured/materials/::1737049364
 grass.material::ShaderMaterial::8222375467503170076::1737049364::0::1::::<><>::res://addons/simplegrasstextured/shaders/grass.gdshader
 grass_unshaded.material::ShaderMaterial::3094928426551161515::1737049364::0::1::::<><>::res://addons/simplegrasstextured/shaders/grass_unshaded.gdshader
@@ -54,338 +54,311 @@ motion2.gdshader::Shader::-1::1737049364::0::1::::<><>::
 normal.gdshader::Shader::-1::1737049364::0::1::::<><>::
 position.gdshader::Shader::-1::1737049364::0::1::::<><>::
 ::res://addons/simplegrasstextured/textures/::1737049508
-grassbushcc008.png::CompressedTexture2D::4446403967567463775::1737049364::1737049508::1::::<><>::
-::res://brackeys_platformer_assets/::1737049793
-LICENSE & CREDITS.txt::TextFile::-1::1737049793::0::1::::<><>::
-::res://brackeys_platformer_assets/fonts/::1737049793
-PixelOperator8-Bold.ttf::FontFile::4711819401562680123::1737049793::1737049795::1::::<><>::
-PixelOperator8.ttf::FontFile::2445196971112042332::1737049793::1737049795::1::::<><>::
-::res://brackeys_platformer_assets/music/::1737049793
-time_for_adventure.mp3::AudioStreamMP3::7078083228557340688::1737049793::1737049795::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1737049793
-coin.wav::AudioStreamWAV::8431615200529489740::1737049793::1737049795::1::::<><>::
-explosion.wav::AudioStreamWAV::6405718111110113325::1737049793::1737049795::1::::<><>::
-hurt.wav::AudioStreamWAV::2424972067559149547::1737049793::1737049795::1::::<><>::
-jump.wav::AudioStreamWAV::5318526597446387881::1737049793::1737049795::1::::<><>::
-power_up.wav::AudioStreamWAV::4558974050310742267::1737049793::1737049795::1::::<><>::
-tap.wav::AudioStreamWAV::8814320848351340103::1737049793::1737049795::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1737049793
-coin.png::CompressedTexture2D::6052392971937403295::1737049793::1737049795::1::::<><>::
-fruit.png::CompressedTexture2D::7340303301470814367::1737049793::1737049795::1::::<><>::
-knight.png::CompressedTexture2D::5477910706170960278::1737049793::1737049795::1::::<><>::
-platforms.png::CompressedTexture2D::6528024464598794627::1737049793::1737049795::1::::<><>::
-slime_green.png::CompressedTexture2D::6107321564901303992::1737049793::1737049795::1::::<><>::
-slime_purple.png::CompressedTexture2D::5499142865324758640::1737049793::1737049795::1::::<><>::
-world_tileset.png::CompressedTexture2D::189340558103377848::1737049793::1737049795::1::::<><>::
-::res://enemy/::1737049793
-Bean.tscn::PackedScene::7289056893925735906::1737049556::0::1::::<><>::res://enemy/enemy.gd
-Enemy Body.gd::GDScript::-1::1737049793::0::1::::<>RigidBody3D<>::
-enemy.gd::GDScript::-1::1737049793::0::1::::Enemy<>CharacterBody3D<>::
-enemy.tscn::PackedScene::-1::1737049793::0::1::::<><>::
-MainEnemy.gd::GDScript::-1::1737049793::0::1::::<>Node3D<>::
-mesh_instance_3d.gd::GDScript::-1::1737049793::0::1::::<>MeshInstance3D<>::
+grassbushcc008.png::CompressedTexture2D::4446403967567463775::1737049364::1737058484::1::::<><>::
+::res://enemy/::1737051501
+Bean.tscn::PackedScene::7289056893925735906::1737051501::0::1::::<><>::res://Scripts/enemy.gd
 ::res://HousesAndProps_blend_Gltf_Textures/::1737049363
 README.txt::TextFile::-1::1737049362::0::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/gltf/::1737049516
-HouseAndPropsAssetPack.gltf::PackedScene::8142755603566571581::1737049363::1737049516::1::::<><>::
+HouseAndPropsAssetPack.gltf::PackedScene::8142755603566571581::1737049363::1737058508::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/::1737049508
-AO_RietRoof.png::CompressedTexture2D::3007030763867260863::1737049362::1737049506::1::::<><>::
-Base Color_RietRoof.png::CompressedTexture2D::5224328014307264217::1737049362::1737049506::1::::<><>::
-BASE COLOR_TrimProps.png::CompressedTexture2D::8410283672323368139::1737049362::1737049506::1::::<><>::
-BrickStoneTrim_Diffuse.png::CompressedTexture2D::4257980813354104599::1737049362::1737049506::1::::<><>::
-BrickStoneTrim_Normal.png::CompressedTexture2D::2470410179381981294::1737049362::1737049508::1::::<><>::
-BrickStoneTrim_Roughness.png::CompressedTexture2D::495955964189290884::1737049362::1737049508::1::::<><>::
-BrickWall_Diffuse.png::CompressedTexture2D::4446810993106894575::1737049362::1737049508::1::::<><>::
-BrickWall_Normal.png::CompressedTexture2D::6594013035464111531::1737049362::1737049508::1::::<><>::
-BrickWall_Roughness.png::CompressedTexture2D::1544951828405676703::1737049362::1737049507::1::::<><>::
-Doors_Ambient Occlusion.png::CompressedTexture2D::6469360303645424447::1737049362::1737049507::1::::<><>::
-Doors_Diffuse.png::CompressedTexture2D::4192648975829677893::1737049362::1737049508::1::::<><>::
-Doors_Metalness.png::CompressedTexture2D::1605527811220678671::1737049362::1737049507::1::::<><>::
-Doors_Normal.png::CompressedTexture2D::4714472452891362616::1737049363::1737049508::1::::<><>::
-Doors_Roughness.png::CompressedTexture2D::9057741259854029355::1737049363::1737049507::1::::<><>::
-Grass_Diffuse.png::CompressedTexture2D::5830837447371572528::1737049363::1737049507::1::::<><>::
-Grass_Normal.png::CompressedTexture2D::7547142770843637442::1737049363::1737049508::1::::<><>::
-Grass_Roughness.png::CompressedTexture2D::1851001532433162674::1737049363::1737049507::1::::<><>::
-Ground_Diffuse.png::CompressedTexture2D::5321569537079528293::1737049363::1737049507::1::::<><>::
-Ground_Normal.png::CompressedTexture2D::7972354158091995393::1737049363::1737049507::1::::<><>::
-Ground_Roughness.png::CompressedTexture2D::7414637093364769679::1737049363::1737049507::1::::<><>::
-LimeWall_Diffuse.png::CompressedTexture2D::5343601954276418581::1737049363::1737049507::1::::<><>::
-LimeWall_Normal.png::CompressedTexture2D::628057768494568908::1737049363::1737049507::1::::<><>::
-LimeWall_Roughness.png::CompressedTexture2D::3057714549275882297::1737049363::1737049496::1::::<><>::
-LogWall_Diffuse.png::CompressedTexture2D::3898845582481667554::1737049363::1737049496::1::::<><>::
-LogWall_Normal.png::CompressedTexture2D::1903323924229609715::1737049363::1737049496::1::::<><>::
-LogWall_Roughness.png::CompressedTexture2D::8638853907860994536::1737049363::1737049495::1::::<><>::
-METALLIC_TrimProps.png::CompressedTexture2D::1092155591128955096::1737049363::1737049495::1::::<><>::
-NORMAL_RietRoof.png::CompressedTexture2D::8778807046975681315::1737049363::1737049496::1::::<><>::
-NORMAL_TrimProps.png::CompressedTexture2D::2398378719513777883::1737049363::1737049496::1::::<><>::
-Roof_Diffuse.png::CompressedTexture2D::3015010202980686359::1737049363::1737049495::1::::<><>::
-Roof_Normal.png::CompressedTexture2D::287874834827296891::1737049363::1737049495::1::::<><>::
-Roof_Roughness.png::CompressedTexture2D::4237057637480739759::1737049363::1737049495::1::::<><>::
-ROUGHNESS_Glass.png::CompressedTexture2D::4374219294614903995::1737049363::1737049495::1::::<><>::
-ROUGHNESS_RietRoof.png::CompressedTexture2D::4587278308410813846::1737049363::1737049495::1::::<><>::
-ROUGHNESS_TrimProps.png::CompressedTexture2D::1444888158695418798::1737049363::1737049495::1::::<><>::
-StoneFloor_2_Diffuse.png::CompressedTexture2D::558512860244493806::1737049363::1737049495::1::::<><>::
-StoneFloor_2_Normal.png::CompressedTexture2D::5359037222401740778::1737049363::1737049495::1::::<><>::
-StoneFloor_2_Roughness.png::CompressedTexture2D::5394033722529841155::1737049363::1737049495::1::::<><>::
-StoneFloor_3_Diffuse.png::CompressedTexture2D::8661064095627947645::1737049363::1737049495::1::::<><>::
-StoneFloor_3_Normal.png::CompressedTexture2D::2051760441931074819::1737049363::1737049494::1::::<><>::
-StoneFloor_3_Roughness.png::CompressedTexture2D::4755685077660099566::1737049363::1737049497::1::::<><>::
-StoneFloor_Diffuse.png::CompressedTexture2D::25544568003476061::1737049363::1737049497::1::::<><>::
-StoneFloor_Normal.png::CompressedTexture2D::2467898606777039205::1737049363::1737049497::1::::<><>::
-StoneFloor_Roughness.png::CompressedTexture2D::8408848644733506467::1737049363::1737049497::1::::<><>::
-WoodDeck_Diffuse.png::CompressedTexture2D::8929167870661525603::1737049363::1737049497::1::::<><>::
-WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::4328957536887444472::1737049363::1737049497::1::::<><>::
-WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::2900930640756319844::1737049363::1737049496::1::::<><>::
-WoodPlankFloor_Diffuse.png::CompressedTexture2D::4069385158880405077::1737049363::1737049496::1::::<><>::
-WoodTrim_Diffuse.png::CompressedTexture2D::6171244687255226185::1737049363::1737049496::1::::<><>::
+AO_RietRoof.png::CompressedTexture2D::3007030763867260863::1737049362::1737058486::1::::<><>::
+Base Color_RietRoof.png::CompressedTexture2D::5224328014307264217::1737049362::1737058486::1::::<><>::
+BASE COLOR_TrimProps.png::CompressedTexture2D::8410283672323368139::1737049362::1737058486::1::::<><>::
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::4257980813354104599::1737049362::1737058486::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::2470410179381981294::1737049362::1737058486::1::::<><>::
+BrickStoneTrim_Roughness.png::CompressedTexture2D::495955964189290884::1737049362::1737058486::1::::<><>::
+BrickWall_Diffuse.png::CompressedTexture2D::4446810993106894575::1737049362::1737058486::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::6594013035464111531::1737049362::1737058486::1::::<><>::
+BrickWall_Roughness.png::CompressedTexture2D::1544951828405676703::1737049362::1737058486::1::::<><>::
+Doors_Ambient Occlusion.png::CompressedTexture2D::6469360303645424447::1737049362::1737058486::1::::<><>::
+Doors_Diffuse.png::CompressedTexture2D::4192648975829677893::1737049362::1737058486::1::::<><>::
+Doors_Metalness.png::CompressedTexture2D::1605527811220678671::1737049362::1737058487::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::4714472452891362616::1737049363::1737058488::1::::<><>::
+Doors_Roughness.png::CompressedTexture2D::9057741259854029355::1737049363::1737058487::1::::<><>::
+Grass_Diffuse.png::CompressedTexture2D::5830837447371572528::1737049363::1737058487::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::7547142770843637442::1737049363::1737058487::1::::<><>::
+Grass_Roughness.png::CompressedTexture2D::1851001532433162674::1737049363::1737058487::1::::<><>::
+Ground_Diffuse.png::CompressedTexture2D::5321569537079528293::1737049363::1737058487::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::7972354158091995393::1737049363::1737058487::1::::<><>::
+Ground_Roughness.png::CompressedTexture2D::7414637093364769679::1737049363::1737058487::1::::<><>::
+LimeWall_Diffuse.png::CompressedTexture2D::5343601954276418581::1737049363::1737058487::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::628057768494568908::1737049363::1737058487::1::::<><>::
+LimeWall_Roughness.png::CompressedTexture2D::3057714549275882297::1737049363::1737058487::1::::<><>::
+LogWall_Diffuse.png::CompressedTexture2D::3898845582481667554::1737049363::1737058487::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::1903323924229609715::1737049363::1737058487::1::::<><>::
+LogWall_Roughness.png::CompressedTexture2D::8638853907860994536::1737049363::1737058487::1::::<><>::
+METALLIC_TrimProps.png::CompressedTexture2D::1092155591128955096::1737049363::1737058486::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::8778807046975681315::1737049363::1737058487::1::::<><>::
+NORMAL_TrimProps.png::CompressedTexture2D::2398378719513777883::1737049363::1737058475::1::::<><>::
+Roof_Diffuse.png::CompressedTexture2D::3015010202980686359::1737049363::1737058474::1::::<><>::
+Roof_Normal.png::CompressedTexture2D::287874834827296891::1737049363::1737058474::1::::<><>::
+Roof_Roughness.png::CompressedTexture2D::4237057637480739759::1737049363::1737058474::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::4374219294614903995::1737049363::1737058474::1::::<><>::
+ROUGHNESS_RietRoof.png::CompressedTexture2D::4587278308410813846::1737049363::1737058474::1::::<><>::
+ROUGHNESS_TrimProps.png::CompressedTexture2D::1444888158695418798::1737049363::1737058474::1::::<><>::
+StoneFloor_2_Diffuse.png::CompressedTexture2D::558512860244493806::1737049363::1737058474::1::::<><>::
+StoneFloor_2_Normal.png::CompressedTexture2D::5359037222401740778::1737049363::1737058474::1::::<><>::
+StoneFloor_2_Roughness.png::CompressedTexture2D::5394033722529841155::1737049363::1737058474::1::::<><>::
+StoneFloor_3_Diffuse.png::CompressedTexture2D::8661064095627947645::1737049363::1737058474::1::::<><>::
+StoneFloor_3_Normal.png::CompressedTexture2D::2051760441931074819::1737049363::1737058474::1::::<><>::
+StoneFloor_3_Roughness.png::CompressedTexture2D::4755685077660099566::1737049363::1737058474::1::::<><>::
+StoneFloor_Diffuse.png::CompressedTexture2D::25544568003476061::1737049363::1737058474::1::::<><>::
+StoneFloor_Normal.png::CompressedTexture2D::2467898606777039205::1737049363::1737058474::1::::<><>::
+StoneFloor_Roughness.png::CompressedTexture2D::8408848644733506467::1737049363::1737058473::1::::<><>::
+WoodDeck_Diffuse.png::CompressedTexture2D::8929167870661525603::1737049363::1737058473::1::::<><>::
+WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::4328957536887444472::1737049363::1737058476::1::::<><>::
+WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::2900930640756319844::1737049363::1737058476::1::::<><>::
+WoodPlankFloor_Diffuse.png::CompressedTexture2D::4069385158880405077::1737049363::1737058476::1::::<><>::
+WoodTrim_Diffuse.png::CompressedTexture2D::6171244687255226185::1737049363::1737058476::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickStoneTrim/::1737049508
-BrickStoneTrim_Ambient Occlusion.png::CompressedTexture2D::5246371465242303714::1737049362::1737049508::1::::<><>::
-BrickStoneTrim_Diffuse.png::CompressedTexture2D::1680571355140773006::1737049362::1737049508::1::::<><>::
-BrickStoneTrim_MRAo.tga::CompressedTexture2D::3266530441917365115::1737049362::1737049508::1::::<><>::
-BrickStoneTrim_Normal.png::CompressedTexture2D::6683672842568226272::1737049362::1737049508::1::::<><>::
-BrickStoneTrim_Roughness.png::CompressedTexture2D::4806657359540326787::1737049362::1737049508::1::::<><>::
+BrickStoneTrim_Ambient Occlusion.png::CompressedTexture2D::5246371465242303714::1737049362::1737058485::1::::<><>::
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::1680571355140773006::1737049362::1737058485::1::::<><>::
+BrickStoneTrim_MRAo.tga::CompressedTexture2D::3266530441917365115::1737049362::1737058485::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::6683672842568226272::1737049362::1737058485::1::::<><>::
+BrickStoneTrim_Roughness.png::CompressedTexture2D::4806657359540326787::1737049362::1737058484::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/BrickWall/::1737049508
-BrickWall_Ambient Occlusion.png::CompressedTexture2D::5236129664745333444::1737049362::1737049508::1::::<><>::
-BrickWall_Diffuse.png::CompressedTexture2D::3869174602970336073::1737049362::1737049508::1::::<><>::
-BrickWall_MRAo.tga::CompressedTexture2D::133604367167665408::1737049362::1737049508::1::::<><>::
-BrickWall_Normal.png::CompressedTexture2D::5063658932129796048::1737049362::1737049508::1::::<><>::
-BrickWall_Roughness.png::CompressedTexture2D::1184638475764352110::1737049362::1737049508::1::::<><>::
+BrickWall_Ambient Occlusion.png::CompressedTexture2D::5236129664745333444::1737049362::1737058485::1::::<><>::
+BrickWall_Diffuse.png::CompressedTexture2D::3869174602970336073::1737049362::1737058486::1::::<><>::
+BrickWall_MRAo.tga::CompressedTexture2D::133604367167665408::1737049362::1737058485::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::5063658932129796048::1737049362::1737058485::1::::<><>::
+BrickWall_Roughness.png::CompressedTexture2D::1184638475764352110::1737049362::1737058485::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/Doors/::1737049504
-Doors_Ambient Occlusion.png::CompressedTexture2D::2163017566512156822::1737049362::1737049504::1::::<><>::
-Doors_Diffuse.png::CompressedTexture2D::3986558863260754003::1737049362::1737049504::1::::<><>::
-Doors_Metalness.png::CompressedTexture2D::2978393430183388955::1737049362::1737049503::1::::<><>::
-Doors_MRAo.tga::CompressedTexture2D::6709668905123937790::1737049362::1737049504::1::::<><>::
-Doors_Normal.png::CompressedTexture2D::1899390291186672017::1737049362::1737049504::1::::<><>::
-Doors_Roughness.png::CompressedTexture2D::3870247882801052645::1737049362::1737049504::1::::<><>::
+Doors_Ambient Occlusion.png::CompressedTexture2D::2163017566512156822::1737049362::1737058485::1::::<><>::
+Doors_Diffuse.png::CompressedTexture2D::3986558863260754003::1737049362::1737058485::1::::<><>::
+Doors_Metalness.png::CompressedTexture2D::2978393430183388955::1737049362::1737058485::1::::<><>::
+Doors_MRAo.tga::CompressedTexture2D::6709668905123937790::1737049362::1737058485::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::1899390291186672017::1737049362::1737058485::1::::<><>::
+Doors_Roughness.png::CompressedTexture2D::3870247882801052645::1737049362::1737058485::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/Glass/::1737049504
-BASE COLOR_Glass.png::CompressedTexture2D::510687543421987320::1737049363::1737049504::1::::<><>::
-MRAO_Glass.png::CompressedTexture2D::3167722797312610878::1737049363::1737049504::1::::<><>::
-ROUGHNESS_Glass.png::CompressedTexture2D::6958988667148589284::1737049363::1737049504::1::::<><>::
+BASE COLOR_Glass.png::CompressedTexture2D::510687543421987320::1737049363::1737058485::1::::<><>::
+MRAO_Glass.png::CompressedTexture2D::3167722797312610878::1737049363::1737058485::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::6958988667148589284::1737049363::1737058485::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/Grass/::1737049506
-Grass_Ambient Occlusion.png::CompressedTexture2D::5117904241498925695::1737049363::1737049504::1::::<><>::
-Grass_Diffuse.png::CompressedTexture2D::3689429156327300764::1737049363::1737049504::1::::<><>::
-Grass_MRAo.tga::CompressedTexture2D::6889441039160453692::1737049363::1737049506::1::::<><>::
-Grass_Normal.png::CompressedTexture2D::2177801397472747006::1737049363::1737049506::1::::<><>::
-Grass_Roughness.png::CompressedTexture2D::4960989517335198213::1737049363::1737049506::1::::<><>::
+Grass_Ambient Occlusion.png::CompressedTexture2D::5117904241498925695::1737049363::1737058485::1::::<><>::
+Grass_Diffuse.png::CompressedTexture2D::3689429156327300764::1737049363::1737058485::1::::<><>::
+Grass_MRAo.tga::CompressedTexture2D::6889441039160453692::1737049363::1737058485::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::2177801397472747006::1737049363::1737058485::1::::<><>::
+Grass_Roughness.png::CompressedTexture2D::4960989517335198213::1737049363::1737058483::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/Ground/::1737049506
-Ground_Ambient Occlusion.png::CompressedTexture2D::7944285327193639190::1737049363::1737049506::1::::<><>::
-Ground_Diffuse.png::CompressedTexture2D::4764192927566515395::1737049363::1737049506::1::::<><>::
-Ground_MRAo.tga::CompressedTexture2D::7417104630577561159::1737049363::1737049506::1::::<><>::
-Ground_Normal.png::CompressedTexture2D::8257310564860670465::1737049363::1737049506::1::::<><>::
-Ground_Roughness.png::CompressedTexture2D::5411813306715659998::1737049363::1737049506::1::::<><>::
+Ground_Ambient Occlusion.png::CompressedTexture2D::7944285327193639190::1737049363::1737058483::1::::<><>::
+Ground_Diffuse.png::CompressedTexture2D::4764192927566515395::1737049363::1737058483::1::::<><>::
+Ground_MRAo.tga::CompressedTexture2D::7417104630577561159::1737049363::1737058483::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::8257310564860670465::1737049363::1737058483::1::::<><>::
+Ground_Roughness.png::CompressedTexture2D::5411813306715659998::1737049363::1737058483::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/LimeWall/::1737049506
-LimeWall_Ambient Occlusion.png::CompressedTexture2D::4697240555946035187::1737049363::1737049506::1::::<><>::
-LimeWall_Diffuse.png::CompressedTexture2D::4084002240121480781::1737049363::1737049506::1::::<><>::
-LimeWall_MRAo.tga::CompressedTexture2D::711996698017749512::1737049363::1737049506::1::::<><>::
-LimeWall_Normal.png::CompressedTexture2D::3499218030973188017::1737049363::1737049506::1::::<><>::
-LimeWall_Roughness.png::CompressedTexture2D::6948012509587621032::1737049363::1737049506::1::::<><>::
+LimeWall_Ambient Occlusion.png::CompressedTexture2D::4697240555946035187::1737049363::1737058483::1::::<><>::
+LimeWall_Diffuse.png::CompressedTexture2D::4084002240121480781::1737049363::1737058483::1::::<><>::
+LimeWall_MRAo.tga::CompressedTexture2D::711996698017749512::1737049363::1737058483::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::3499218030973188017::1737049363::1737058483::1::::<><>::
+LimeWall_Roughness.png::CompressedTexture2D::6948012509587621032::1737049363::1737058483::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/LogWall/::1737049506
-LogWall_Ambient Occlusion.png::CompressedTexture2D::1449938342275413778::1737049363::1737049506::1::::<><>::
-LogWall_Diffuse.png::CompressedTexture2D::4381181786200011267::1737049363::1737049506::1::::<><>::
-LogWall_MRAo.tga::CompressedTexture2D::5961282458763155806::1737049363::1737049506::1::::<><>::
-LogWall_Normal.png::CompressedTexture2D::3823908760550321004::1737049363::1737049506::1::::<><>::
-LogWall_Roughness.png::CompressedTexture2D::4564179384827371047::1737049363::1737049506::1::::<><>::
+LogWall_Ambient Occlusion.png::CompressedTexture2D::1449938342275413778::1737049363::1737058483::1::::<><>::
+LogWall_Diffuse.png::CompressedTexture2D::4381181786200011267::1737049363::1737058483::1::::<><>::
+LogWall_MRAo.tga::CompressedTexture2D::5961282458763155806::1737049363::1737058483::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::3823908760550321004::1737049363::1737058483::1::::<><>::
+LogWall_Roughness.png::CompressedTexture2D::4564179384827371047::1737049363::1737058482::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/RietRoof/::1737049506
-AO_RietRoof.png::CompressedTexture2D::8917552639069342697::1737049363::1737049506::1::::<><>::
-Base Color_RietRoof.png::CompressedTexture2D::4419413855031698825::1737049363::1737049506::1::::<><>::
-MRAO_RietRoof.exr::CompressedTexture2D::6794148690170247209::1737049363::1737049505::1::::<><>::
-NORMAL_RietRoof.png::CompressedTexture2D::7536660708805272934::1737049363::1737049506::1::::<><>::
-ROUGHNESS_RietRoof.png::CompressedTexture2D::4104407319902144594::1737049363::1737049505::1::::<><>::
+AO_RietRoof.png::CompressedTexture2D::8917552639069342697::1737049363::1737058482::1::::<><>::
+Base Color_RietRoof.png::CompressedTexture2D::4419413855031698825::1737049363::1737058484::1::::<><>::
+MRAO_RietRoof.exr::CompressedTexture2D::6794148690170247209::1737049363::1737058484::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::7536660708805272934::1737049363::1737058484::1::::<><>::
+ROUGHNESS_RietRoof.png::CompressedTexture2D::4104407319902144594::1737049363::1737058484::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/Roof/::1737049506
-Roof_Ambient Occlusion.png::CompressedTexture2D::5200032843889303224::1737049363::1737049505::1::::<><>::
-Roof_Diffuse.png::CompressedTexture2D::1419754232906247873::1737049363::1737049506::1::::<><>::
-Roof_MRAo.tga::CompressedTexture2D::1443802059202776781::1737049363::1737049506::1::::<><>::
-Roof_Normal.png::CompressedTexture2D::7091754091430794890::1737049363::1737049505::1::::<><>::
-Roof_Roughness.png::CompressedTexture2D::5054398119601174761::1737049363::1737049505::1::::<><>::
+Roof_Ambient Occlusion.png::CompressedTexture2D::5200032843889303224::1737049363::1737058484::1::::<><>::
+Roof_Diffuse.png::CompressedTexture2D::1419754232906247873::1737049363::1737058484::1::::<><>::
+Roof_MRAo.tga::CompressedTexture2D::1443802059202776781::1737049363::1737058484::1::::<><>::
+Roof_Normal.png::CompressedTexture2D::7091754091430794890::1737049363::1737058484::1::::<><>::
+Roof_Roughness.png::CompressedTexture2D::5054398119601174761::1737049363::1737058484::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor/::1737049505
-StoneFloor_Ambient Occlusion.png::CompressedTexture2D::5769345545006703211::1737049363::1737049505::1::::<><>::
-StoneFloor_Diffuse.png::CompressedTexture2D::8545338232909772785::1737049363::1737049505::1::::<><>::
-StoneFloor_MRAo.tga::CompressedTexture2D::4048969516416212835::1737049363::1737049505::1::::<><>::
-StoneFloor_Normal.png::CompressedTexture2D::6029259155623133898::1737049363::1737049505::1::::<><>::
-StoneFloor_Roughness.png::CompressedTexture2D::900065357678392900::1737049363::1737049505::1::::<><>::
+StoneFloor_Ambient Occlusion.png::CompressedTexture2D::5769345545006703211::1737049363::1737058483::1::::<><>::
+StoneFloor_Diffuse.png::CompressedTexture2D::8545338232909772785::1737049363::1737058484::1::::<><>::
+StoneFloor_MRAo.tga::CompressedTexture2D::4048969516416212835::1737049363::1737058484::1::::<><>::
+StoneFloor_Normal.png::CompressedTexture2D::6029259155623133898::1737049363::1737058483::1::::<><>::
+StoneFloor_Roughness.png::CompressedTexture2D::900065357678392900::1737049363::1737058483::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_2/::1737049505
-StoneFloor_2_Ambient Occlusion.png::CompressedTexture2D::5134574399424520873::1737049363::1737049505::1::::<><>::
-StoneFloor_2_Diffuse.png::CompressedTexture2D::3278109233831528442::1737049363::1737049505::1::::<><>::
-StoneFloor_2_MRAo.tga::CompressedTexture2D::5206767531907113675::1737049363::1737049505::1::::<><>::
-StoneFloor_2_Normal.png::CompressedTexture2D::2761066630919532173::1737049363::1737049505::1::::<><>::
-StoneFloor_2_Roughness.png::CompressedTexture2D::3519229918718460773::1737049363::1737049504::1::::<><>::
+StoneFloor_2_Ambient Occlusion.png::CompressedTexture2D::5134574399424520873::1737049363::1737058483::1::::<><>::
+StoneFloor_2_Diffuse.png::CompressedTexture2D::3278109233831528442::1737049363::1737058483::1::::<><>::
+StoneFloor_2_MRAo.tga::CompressedTexture2D::5206767531907113675::1737049363::1737058484::1::::<><>::
+StoneFloor_2_Normal.png::CompressedTexture2D::2761066630919532173::1737049363::1737058488::1::::<><>::
+StoneFloor_2_Roughness.png::CompressedTexture2D::3519229918718460773::1737049363::1737058488::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/StoneFloor_3/::1737049504
-StoneFloor_3_Ambient Occlusion.png::CompressedTexture2D::2140698410045829893::1737049363::1737049503::1::::<><>::
-StoneFloor_3_Diffuse.png::CompressedTexture2D::6463350377323431660::1737049363::1737049504::1::::<><>::
-StoneFloor_3_MRAo.tga::CompressedTexture2D::5078430496439673958::1737049363::1737049504::1::::<><>::
-StoneFloor_3_Normal.png::CompressedTexture2D::5164613468123332888::1737049363::1737049503::1::::<><>::
-StoneFloor_3_Roughness.png::CompressedTexture2D::6424097264734003595::1737049363::1737049503::1::::<><>::
+StoneFloor_3_Ambient Occlusion.png::CompressedTexture2D::2140698410045829893::1737049363::1737058488::1::::<><>::
+StoneFloor_3_Diffuse.png::CompressedTexture2D::6463350377323431660::1737049363::1737058488::1::::<><>::
+StoneFloor_3_MRAo.tga::CompressedTexture2D::5078430496439673958::1737049363::1737058488::1::::<><>::
+StoneFloor_3_Normal.png::CompressedTexture2D::5164613468123332888::1737049363::1737058488::1::::<><>::
+StoneFloor_3_Roughness.png::CompressedTexture2D::6424097264734003595::1737049363::1737058488::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/TrimProps/::1737049505
-BASE COLOR_TrimProps.png::CompressedTexture2D::3930634841960110773::1737049363::1737049504::1::::<><>::
-METALLIC_TrimProps.png::CompressedTexture2D::243031101867285480::1737049363::1737049503::1::::<><>::
-MR_TrimProps.exr::CompressedTexture2D::6724232321569264519::1737049363::1737049503::1::::<><>::
-NORMAL_TrimProps.png::CompressedTexture2D::6469904493499871459::1737049363::1737049505::1::::<><>::
-ROUGHNESS_TrimProps.png::CompressedTexture2D::6282137718129411659::1737049363::1737049505::1::::<><>::
+BASE COLOR_TrimProps.png::CompressedTexture2D::3930634841960110773::1737049363::1737058488::1::::<><>::
+METALLIC_TrimProps.png::CompressedTexture2D::243031101867285480::1737049363::1737058488::1::::<><>::
+MR_TrimProps.exr::CompressedTexture2D::6724232321569264519::1737049363::1737058488::1::::<><>::
+NORMAL_TrimProps.png::CompressedTexture2D::6469904493499871459::1737049363::1737058488::1::::<><>::
+ROUGHNESS_TrimProps.png::CompressedTexture2D::6282137718129411659::1737049363::1737058488::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodDeck/::1737049771
-WoodDeck_AO.png::CompressedTexture2D::3155366008344470362::1737049363::1737049505::1::::<><>::
-WoodDeck_Diffuse.png::CompressedTexture2D::6031151111111090170::1737049363::1737049771::1::::<><>::
-WoodDeck_Emission.png::CompressedTexture2D::6620628367204338822::1737049363::1737049504::1::::<><>::
-WoodDeck_MRAO.tga::CompressedTexture2D::8810460578683314070::1737049363::1737049505::1::::<><>::
-WoodDeck_Normal.png::CompressedTexture2D::4618753601510980159::1737049363::1737049504::1::::<><>::
-WoodDeck_Roughness.png::CompressedTexture2D::9134717775385500351::1737049363::1737049504::1::::<><>::
+WoodDeck_AO.png::CompressedTexture2D::3155366008344470362::1737049363::1737058488::1::::<><>::
+WoodDeck_Diffuse.png::CompressedTexture2D::6031151111111090170::1737049363::1737058487::1::::<><>::
+WoodDeck_Emission.png::CompressedTexture2D::6620628367204338822::1737049363::1737058487::1::::<><>::
+WoodDeck_MRAO.tga::CompressedTexture2D::8810460578683314070::1737049363::1737058488::1::::<><>::
+WoodDeck_Normal.png::CompressedTexture2D::4618753601510980159::1737049363::1737058488::1::::<><>::
+WoodDeck_Roughness.png::CompressedTexture2D::9134717775385500351::1737049363::1737058489::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor/::1737049504
-WoodPlankFloor_Ambient Occlusion.png::CompressedTexture2D::650360627552446748::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_Diffuse.png::CompressedTexture2D::5494885982354480979::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_Metalness.png::CompressedTexture2D::3071082525276060515::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_MRAo.tga::CompressedTexture2D::3793753396709682718::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_Normal.png::CompressedTexture2D::858434401995785740::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_Roughness.png::CompressedTexture2D::5096918275524543722::1737049363::1737049504::1::::<><>::
+WoodPlankFloor_Ambient Occlusion.png::CompressedTexture2D::650360627552446748::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_Diffuse.png::CompressedTexture2D::5494885982354480979::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_Metalness.png::CompressedTexture2D::3071082525276060515::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_MRAo.tga::CompressedTexture2D::3793753396709682718::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_Normal.png::CompressedTexture2D::858434401995785740::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_Roughness.png::CompressedTexture2D::5096918275524543722::1737049363::1737058489::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_2/::1737049507
-WoodPlankFloor_2_Ambient Occlusion.png::CompressedTexture2D::3048375570071049777::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::6219344374923997266::1737049363::1737049504::1::::<><>::
-WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::8059379376856949628::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_2_Normal.png::CompressedTexture2D::723262347430218961::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_2_Roughness.png::CompressedTexture2D::7083353549806597804::1737049363::1737049507::1::::<><>::
+WoodPlankFloor_2_Ambient Occlusion.png::CompressedTexture2D::3048375570071049777::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::6219344374923997266::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::8059379376856949628::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_2_Normal.png::CompressedTexture2D::723262347430218961::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_2_Roughness.png::CompressedTexture2D::7083353549806597804::1737049363::1737058488::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodPlankFloor_3/::1737049507
-WoodPlankFloor_3_Ambient Occlusion.png::CompressedTexture2D::9015385759278702676::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::3545228783718855791::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::3964646504129744276::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_3_Normal.png::CompressedTexture2D::6623809082991758558::1737049363::1737049507::1::::<><>::
-WoodPlankFloor_3_Roughness.png::CompressedTexture2D::318640260738105172::1737049363::1737049507::1::::<><>::
+WoodPlankFloor_3_Ambient Occlusion.png::CompressedTexture2D::9015385759278702676::1737049363::1737058488::1::::<><>::
+WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::3545228783718855791::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::3964646504129744276::1737049363::1737058489::1::::<><>::
+WoodPlankFloor_3_Normal.png::CompressedTexture2D::6623809082991758558::1737049363::1737058488::1::::<><>::
+WoodPlankFloor_3_Roughness.png::CompressedTexture2D::318640260738105172::1737049363::1737058488::1::::<><>::
 ::res://HousesAndProps_blend_Gltf_Textures/Textures/WoodTrims/::1737049507
-WoodTrim_Ambient Occlusion.png::CompressedTexture2D::8229432988962885615::1737049363::1737049507::1::::<><>::
-WoodTrim_Diffuse.png::CompressedTexture2D::2836933762102271300::1737049363::1737049507::1::::<><>::
-WoodTrim_Metalness.png::CompressedTexture2D::8684579593614489555::1737049363::1737049506::1::::<><>::
-WoodTrim_MRAo.tga::CompressedTexture2D::5512049287685183189::1737049363::1737049507::1::::<><>::
-WoodTrim_Normal.png::CompressedTexture2D::6646278313156158164::1737049363::1737049507::1::::<><>::
-WoodTrim_Roughness.png::CompressedTexture2D::4056483113155709758::1737049363::1737049507::1::::<><>::
+WoodTrim_Ambient Occlusion.png::CompressedTexture2D::8229432988962885615::1737049363::1737058486::1::::<><>::
+WoodTrim_Diffuse.png::CompressedTexture2D::2836933762102271300::1737049363::1737058487::1::::<><>::
+WoodTrim_Metalness.png::CompressedTexture2D::8684579593614489555::1737049363::1737058486::1::::<><>::
+WoodTrim_MRAo.tga::CompressedTexture2D::5512049287685183189::1737049363::1737058486::1::::<><>::
+WoodTrim_Normal.png::CompressedTexture2D::6646278313156158164::1737049363::1737058486::1::::<><>::
+WoodTrim_Roughness.png::CompressedTexture2D::4056483113155709758::1737049363::1737058486::1::::<><>::
 ::res://Iteam/::1737049793
 Item.gd::GDScript::-1::1737049793::0::1::::Item<>Resource<>::
-::res://Item Art/::1737049793
-Untitled design (6).png::CompressedTexture2D::8094974164779633921::1737049793::1737049795::1::::<><>::
+::res://Item Art/::1737049795
+Untitled design (6).png::CompressedTexture2D::8094974164779633921::1737049793::1737058476::1::::<><>::
 ::res://Item Scene/::1737049793
 Weapon Art.tscn::PackedScene::2094354189405909348::1737049793::0::1::::<><>::
-::res://Main Menu/::1737049793
-Untitled design (5).png::CompressedTexture2D::8828119347867802606::1737049363::1737049795::1::::<><>::
+::res://Main Menu/::1737049795
+Untitled design (5).png::CompressedTexture2D::8828119347867802606::1737049363::1737058475::1::::<><>::
 ::res://Main Menu/Assets/::1737049793
 ::res://Main Menu/Assets/Backdrops/::1737049498
-ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1737049363::1737049496::1::::<><>::
-Untitled design (1).png::CompressedTexture2D::510534257622831008::1737049363::1737049496::1::::<><>::
-Untitled design (2).png::CompressedTexture2D::1003301072353283701::1737049363::1737049496::1::::<><>::
-Untitled design (3).png::CompressedTexture2D::8085498008506436039::1737049363::1737049496::1::::<><>::
-Untitled design.png::CompressedTexture2D::3132993260369731465::1737049363::1737049498::1::::<><>::
+ui backdrop.jpeg::CompressedTexture2D::7623146883160304121::1737049363::1737058476::1::::<><>::
+Untitled design (1).png::CompressedTexture2D::510534257622831008::1737049363::1737058476::1::::<><>::
+Untitled design (2).png::CompressedTexture2D::1003301072353283701::1737049363::1737058476::1::::<><>::
+Untitled design (3).png::CompressedTexture2D::8085498008506436039::1737049363::1737058475::1::::<><>::
+Untitled design.png::CompressedTexture2D::3132993260369731465::1737049363::1737058478::1::::<><>::
 ::res://Main Menu/Assets/Fonts/::1737049363
 ::res://Main Menu/Assets/Fonts/Londrina_Sketch/::1737049766
-LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1737049363::1737049766::1::::<><>::
+LondrinaSketch-Regular.ttf::FontFile::2535715879732783539::1737049363::1737058469::1::::<><>::
 OFL.txt::TextFile::-1::1737049363::0::1::::<><>::
 ::res://Main Menu/Input Map Page/::1737049363
 input_settings.gd::GDScript::-1::1737049363::0::1::::<>Control<>::
 Input_Settings.tscn::PackedScene::6133283631795022544::1737049363::0::1::::<><>::res://Main Menu/Input Map Page/input_settings.gd<>uid://db1mhn4l16cfe::::res://Main Menu/Input Map Page/Scenes/input_button.tscn<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
 ::res://Main Menu/Input Map Page/Scenes/::1737049363
 input_button.tscn::PackedScene::7283866548932056814::1737049363::0::1::::<><>::
-::res://Main Menu/Main tscn/::1737049555
-main_menu.gd::GDScript::-1::1737049370::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::6149924103355590478::1737049555::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
+::res://Main Menu/Main tscn/::1737051501
+main_menu.gd::GDScript::-1::1737051354::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::6149924103355590478::1737051501::0::1::::<><>::res://Main Menu/Main tscn/main_menu.gd<>uid://dngw8amaxgeih::::res://Main Menu/Assets/Backdrops/Untitled design (3).png
 ::res://Materials/::1737049522
-696.jpg::CompressedTexture2D::1188464494001190070::1737049363::1737049522::1::::<><>::
+696.jpg::CompressedTexture2D::1188464494001190070::1737049363::1737058473::1::::<><>::
 ::res://Materials/Farm Buildings by Quaternius/::1737049496
-Preview.png::CompressedTexture2D::7470928855375404597::1737049363::1737049496::1::::<><>::
+Preview.png::CompressedTexture2D::7470928855375404597::1737049363::1737058473::1::::<><>::
 ::res://Materials/Farm Buildings by Quaternius/Blend/::1737049513
-Barn.blend::PackedScene::874698259522798982::1737049363::1737049512::1::::<><>::
-BigBarn.blend::PackedScene::7696829617057906267::1737049363::1737049512::1::::<><>::
-ChickenCoop.blend::PackedScene::1926545552442789043::1737049363::1737049512::1::::<><>::
-Fence2.blend::PackedScene::5474132254617538812::1737049363::1737049512::1::::<><>::
-Fence.blend::PackedScene::7221813505031121464::1737049363::1737049512::1::::<><>::
-OpenBarn.blend::PackedScene::4370112634898098100::1737049363::1737049512::1::::<><>::
-Silo.blend::PackedScene::7973076350446114749::1737049363::1737049512::1::::<><>::
-Silo_House.blend::PackedScene::5642177004835764773::1737049363::1737049512::1::::<><>::
-SmallBarn.blend::PackedScene::5628494361533658311::1737049363::1737049512::1::::<><>::
-TowerWindmill.blend::PackedScene::4434680511078240861::1737049363::1737049512::1::::<><>::
-WaterTower.blend::PackedScene::9201199493354794178::1737049363::1737049512::1::::<><>::
-Well.blend::PackedScene::5495011230009554131::1737049363::1737049513::1::::<><>::
-Windmill.blend::PackedScene::1614265182255708103::1737049363::1737049513::1::::<><>::
+Barn.blend::PackedScene::874698259522798982::1737049363::1737058508::1::::<><>::
+BigBarn.blend::PackedScene::7696829617057906267::1737049363::1737058508::1::::<><>::
+ChickenCoop.blend::PackedScene::1926545552442789043::1737049363::1737058508::1::::<><>::
+Fence2.blend::PackedScene::5474132254617538812::1737049363::1737058508::1::::<><>::
+Fence.blend::PackedScene::7221813505031121464::1737049363::1737058508::1::::<><>::
+OpenBarn.blend::PackedScene::4370112634898098100::1737049363::1737058509::1::::<><>::
+Silo.blend::PackedScene::7973076350446114749::1737049363::1737058509::1::::<><>::
+Silo_House.blend::PackedScene::5642177004835764773::1737049363::1737058509::1::::<><>::
+SmallBarn.blend::PackedScene::5628494361533658311::1737049363::1737058509::1::::<><>::
+TowerWindmill.blend::PackedScene::4434680511078240861::1737049363::1737058509::1::::<><>::
+WaterTower.blend::PackedScene::9201199493354794178::1737049363::1737058509::1::::<><>::
+Well.blend::PackedScene::5495011230009554131::1737049363::1737058509::1::::<><>::
+Windmill.blend::PackedScene::1614265182255708103::1737049363::1737058509::1::::<><>::
 ::res://Materials/Farm Buildings by Quaternius/FBX/::1737049513
-Barn.fbx::PackedScene::4382446475102943137::1737049363::1737049513::1::::<><>::
-BigBarn.fbx::PackedScene::1772734701632670258::1737049363::1737049513::1::::<><>::
-ChickenCoop.fbx::PackedScene::6042430995268621539::1737049363::1737049513::1::::<><>::
-Fence2.fbx::PackedScene::3063213098625315443::1737049363::1737049513::1::::<><>::
-Fence.fbx::PackedScene::6304975911503367465::1737049363::1737049513::1::::<><>::
-OpenBarn.fbx::PackedScene::8308124097452041767::1737049363::1737049513::1::::<><>::
-Silo.fbx::PackedScene::8984181305980616605::1737049363::1737049513::1::::<><>::
-Silo_House.fbx::PackedScene::4079357907668665761::1737049363::1737049513::1::::<><>::
-SmallBarn.fbx::PackedScene::6988114397228351882::1737049363::1737049509::1::::<><>::
-TowerWindmill.fbx::PackedScene::4258891432284004339::1737049363::1737049509::1::::<><>::
-WaterTower.fbx::PackedScene::7356683437559260373::1737049363::1737049509::1::::<><>::
-Well.fbx::PackedScene::4381648431357838072::1737049363::1737049509::1::::<><>::
-Windmill.fbx::PackedScene::2094525312171794490::1737049363::1737049509::1::::<><>::
+Barn.fbx::PackedScene::4382446475102943137::1737049363::1737058509::1::::<><>::
+BigBarn.fbx::PackedScene::1772734701632670258::1737049363::1737058509::1::::<><>::
+ChickenCoop.fbx::PackedScene::6042430995268621539::1737049363::1737058509::1::::<><>::
+Fence2.fbx::PackedScene::3063213098625315443::1737049363::1737058509::1::::<><>::
+Fence.fbx::PackedScene::6304975911503367465::1737049363::1737058510::1::::<><>::
+OpenBarn.fbx::PackedScene::8308124097452041767::1737049363::1737058510::1::::<><>::
+Silo.fbx::PackedScene::8984181305980616605::1737049363::1737058510::1::::<><>::
+Silo_House.fbx::PackedScene::4079357907668665761::1737049363::1737058507::1::::<><>::
+SmallBarn.fbx::PackedScene::6988114397228351882::1737049363::1737058507::1::::<><>::
+TowerWindmill.fbx::PackedScene::4258891432284004339::1737049363::1737058507::1::::<><>::
+WaterTower.fbx::PackedScene::7356683437559260373::1737049363::1737058507::1::::<><>::
+Well.fbx::PackedScene::4381648431357838072::1737049363::1737058507::1::::<><>::
+Windmill.fbx::PackedScene::2094525312171794490::1737049363::1737058504::1::::<><>::
 ::res://Materials/Farm Buildings by Quaternius/OBJ/::1737049509
-Barn.obj::Mesh::1519261337848987689::1737049363::1737049509::1::::<><>::
-BigBarn.obj::Mesh::1296155991108409475::1737049363::1737049508::1::::<><>::
-ChickenCoop.obj::Mesh::368440705020936194::1737049363::1737049508::1::::<><>::
-Fence2.obj::Mesh::6693472093862592862::1737049363::1737049508::1::::<><>::
-Fence.obj::Mesh::1805817833042568865::1737049363::1737049509::1::::<><>::
-OpenBarn.obj::Mesh::759307067498462130::1737049363::1737049509::1::::<><>::
-Silo.obj::Mesh::3522812392191048818::1737049363::1737049509::1::::<><>::
-Silo_House.obj::Mesh::5973692330635770983::1737049363::1737049509::1::::<><>::
-SmallBarn.obj::Mesh::1799534896158792622::1737049363::1737049509::1::::<><>::
-TowerWindmill.obj::Mesh::1277990614703607025::1737049363::1737049509::1::::<><>::
-WaterTower.obj::Mesh::1078577513251677085::1737049363::1737049509::1::::<><>::
-Well.obj::Mesh::2366866484368240869::1737049363::1737049509::1::::<><>::
-Windmill.obj::Mesh::9101799884143877663::1737049363::1737049509::1::::<><>::
+Barn.obj::Mesh::1519261337848987689::1737049363::1737058504::1::::<><>::
+BigBarn.obj::Mesh::1296155991108409475::1737049363::1737058504::1::::<><>::
+ChickenCoop.obj::Mesh::368440705020936194::1737049363::1737058504::1::::<><>::
+Fence2.obj::Mesh::6693472093862592862::1737049363::1737058504::1::::<><>::
+Fence.obj::Mesh::1805817833042568865::1737049363::1737058504::1::::<><>::
+OpenBarn.obj::Mesh::759307067498462130::1737049363::1737058504::1::::<><>::
+Silo.obj::Mesh::3522812392191048818::1737049363::1737058504::1::::<><>::
+Silo_House.obj::Mesh::5973692330635770983::1737049363::1737058504::1::::<><>::
+SmallBarn.obj::Mesh::1799534896158792622::1737049363::1737058504::1::::<><>::
+TowerWindmill.obj::Mesh::1277990614703607025::1737049363::1737058504::1::::<><>::
+WaterTower.obj::Mesh::1078577513251677085::1737049363::1737058504::1::::<><>::
+Well.obj::Mesh::2366866484368240869::1737049363::1737058504::1::::<><>::
+Windmill.obj::Mesh::9101799884143877663::1737049363::1737058504::1::::<><>::
 ::res://Materials/free-environment-props-3d-low-poly-models/::1737049364
 License.txt::TextFile::-1::1737049364::0::1::::<><>::
 readme.txt::TextFile::-1::1737049364::0::1::::<><>::
 ::res://Materials/free-environment-props-3d-low-poly-models/FBX/::1737049515
-Bag_1.fbx::PackedScene::6513391443359731873::1737049363::1737049515::1::::<><>::
-bag_2.fbx::PackedScene::4144028454056707409::1737049363::1737049515::1::::<><>::
-bench.fbx::PackedScene::75947400606058885::1737049363::1737049515::1::::<><>::
-Fense_1.fbx::PackedScene::8598837513087264100::1737049363::1737049515::1::::<><>::
-Fense_2.fbx::PackedScene::3700088008772222450::1737049363::1737049515::1::::<><>::
-Fense_3.fbx::PackedScene::2297671346764456740::1737049363::1737049515::1::::<><>::
-Fense_4.fbx::PackedScene::4884162044560877664::1737049363::1737049515::1::::<><>::
-Fense_5.fbx::PackedScene::4918559283296578884::1737049363::1737049515::1::::<><>::
-Fense_6.fbx::PackedScene::7760352567864052390::1737049363::1737049514::1::::<><>::
-gate_1.fbx::PackedScene::3858874018534079733::1737049363::1737049514::1::::<><>::
-gate_2.fbx::PackedScene::779216571101256168::1737049363::1737049514::1::::<><>::
-gate_3.fbx::PackedScene::2460324695969910075::1737049363::1737049514::1::::<><>::
-Lamp_1.fbx::PackedScene::1004653967368740270::1737049363::1737049514::1::::<><>::
-Lamp_2.fbx::PackedScene::523992574302733974::1737049363::1737049514::1::::<><>::
-Lamp_3.fbx::PackedScene::2248456650269590755::1737049363::1737049514::1::::<><>::
-Lamp_4.fbx::PackedScene::8883858602651050725::1737049363::1737049514::1::::<><>::
-Road_breek_1.fbx::PackedScene::1826454768768996026::1737049363::1737049514::1::::<><>::
-Road_breek_2.fbx::PackedScene::8338758016949792058::1737049363::1737049514::1::::<><>::
-Road_breek_3.fbx::PackedScene::7009981698061435426::1737049363::1737049514::1::::<><>::
-Road_breek_4.fbx::PackedScene::3798461722939900146::1737049363::1737049514::1::::<><>::
-Road_stone_1.fbx::PackedScene::7758465550605529198::1737049363::1737049514::1::::<><>::
-Road_stone_2.fbx::PackedScene::4561022825762753694::1737049363::1737049514::1::::<><>::
-Road_stone_3.fbx::PackedScene::4196931138529504707::1737049363::1737049514::1::::<><>::
-Road_stone_4.fbx::PackedScene::4663466734853549750::1737049363::1737049513::1::::<><>::
-Road_wood_1.fbx::PackedScene::294702752353548921::1737049363::1737049513::1::::<><>::
-Road_wood_2.fbx::PackedScene::8743128373231955818::1737049363::1737049513::1::::<><>::
-Road_wood_3.fbx::PackedScene::6286583513168888775::1737049363::1737049513::1::::<><>::
-road_wood_4.fbx::PackedScene::6440753744051990460::1737049363::1737049513::1::::<><>::
+Bag_1.fbx::PackedScene::6513391443359731873::1737049363::1737058512::1::::<><>::
+bag_2.fbx::PackedScene::4144028454056707409::1737049363::1737058511::1::::<><>::
+bench.fbx::PackedScene::75947400606058885::1737049363::1737058511::1::::<><>::
+Fense_1.fbx::PackedScene::8598837513087264100::1737049363::1737058511::1::::<><>::
+Fense_2.fbx::PackedScene::3700088008772222450::1737049363::1737058511::1::::<><>::
+Fense_3.fbx::PackedScene::2297671346764456740::1737049363::1737058511::1::::<><>::
+Fense_4.fbx::PackedScene::4884162044560877664::1737049363::1737058511::1::::<><>::
+Fense_5.fbx::PackedScene::4918559283296578884::1737049363::1737058511::1::::<><>::
+Fense_6.fbx::PackedScene::7760352567864052390::1737049363::1737058511::1::::<><>::
+gate_1.fbx::PackedScene::3858874018534079733::1737049363::1737058511::1::::<><>::
+gate_2.fbx::PackedScene::779216571101256168::1737049363::1737058511::1::::<><>::
+gate_3.fbx::PackedScene::2460324695969910075::1737049363::1737058511::1::::<><>::
+Lamp_1.fbx::PackedScene::1004653967368740270::1737049363::1737058511::1::::<><>::
+Lamp_2.fbx::PackedScene::523992574302733974::1737049363::1737058511::1::::<><>::
+Lamp_3.fbx::PackedScene::2248456650269590755::1737049363::1737058511::1::::<><>::
+Lamp_4.fbx::PackedScene::8883858602651050725::1737049363::1737058511::1::::<><>::
+Road_breek_1.fbx::PackedScene::1826454768768996026::1737049363::1737058510::1::::<><>::
+Road_breek_2.fbx::PackedScene::8338758016949792058::1737049363::1737058510::1::::<><>::
+Road_breek_3.fbx::PackedScene::7009981698061435426::1737049363::1737058510::1::::<><>::
+Road_breek_4.fbx::PackedScene::3798461722939900146::1737049363::1737058510::1::::<><>::
+Road_stone_1.fbx::PackedScene::7758465550605529198::1737049363::1737058510::1::::<><>::
+Road_stone_2.fbx::PackedScene::4561022825762753694::1737049363::1737058510::1::::<><>::
+Road_stone_3.fbx::PackedScene::4196931138529504707::1737049363::1737058510::1::::<><>::
+Road_stone_4.fbx::PackedScene::4663466734853549750::1737049363::1737058510::1::::<><>::
+Road_wood_1.fbx::PackedScene::294702752353548921::1737049363::1737058510::1::::<><>::
+Road_wood_2.fbx::PackedScene::8743128373231955818::1737049363::1737058510::1::::<><>::
+Road_wood_3.fbx::PackedScene::6286583513168888775::1737049363::1737058510::1::::<><>::
+road_wood_4.fbx::PackedScene::6440753744051990460::1737049363::1737058510::1::::<><>::
 ::res://Materials/free-environment-props-3d-low-poly-models/FBX/textures/::1737049497
-DoorColor.png::CompressedTexture2D::3746476129032684716::1737049363::1737049497::1::::<><>::
-DoorNormals.png::CompressedTexture2D::2270417348275709476::1737049363::1737049493::1::::<><>::
-DoorRoughness.png::CompressedTexture2D::8461973730801699181::1737049363::1737049493::1::::<><>::
-GroundColor.png::CompressedTexture2D::4470325328318336337::1737049363::1737049494::1::::<><>::
-GroundNormal.png::CompressedTexture2D::4822496645169500711::1737049363::1737049493::1::::<><>::
-GroundRoughness.png::CompressedTexture2D::1176231209058705726::1737049363::1737049493::1::::<><>::
-InternalWallsColor.png::CompressedTexture2D::598106486600897351::1737049363::1737049492::1::::<><>::
-InternalWallsNormals.png::CompressedTexture2D::3127844021585510895::1737049363::1737049492::1::::<><>::
-InternalWallsRoughness.png::CompressedTexture2D::648032313735340974::1737049363::1737049492::1::::<><>::
-PostsandRoofColor.png::CompressedTexture2D::6200500741017401010::1737049363::1737049493::1::::<><>::
-PostsandRoofNormal.png::CompressedTexture2D::5940434681541913561::1737049363::1737049493::1::::<><>::
-PostsandRoofRoughness.png::CompressedTexture2D::8716003898104247819::1737049364::1737049492::1::::<><>::
-RailsColor.png::CompressedTexture2D::4824774652012653834::1737049364::1737049492::1::::<><>::
-RailsNormal.png::CompressedTexture2D::730579496057525291::1737049364::1737049491::1::::<><>::
-RailsRoughness.png::CompressedTexture2D::2394832795394613618::1737049364::1737049492::1::::<><>::
-StairsandFloorColor.png::CompressedTexture2D::1508363818372789120::1737049364::1737049492::1::::<><>::
-StairsandFloorNormal.png::CompressedTexture2D::1358045330622714115::1737049364::1737049491::1::::<><>::
-StairsandFloorRoughness.png::CompressedTexture2D::144259557924342946::1737049364::1737049492::1::::<><>::
-WallsColor.png::CompressedTexture2D::2821466199089882315::1737049364::1737049495::1::::<><>::
-WallsNormal.png::CompressedTexture2D::497331506693715369::1737049364::1737049495::1::::<><>::
-WallsRoughness.png::CompressedTexture2D::8009769287023929532::1737049364::1737049495::1::::<><>::
-WindowColor.png::CompressedTexture2D::5868758793821134966::1737049364::1737049495::1::::<><>::
-WindowNormal.png::CompressedTexture2D::5453741896235304761::1737049364::1737049494::1::::<><>::
-WindowRoughness.png::CompressedTexture2D::2534984313538068058::1737049364::1737049494::1::::<><>::
+DoorColor.png::CompressedTexture2D::3746476129032684716::1737049363::1737058473::1::::<><>::
+DoorNormals.png::CompressedTexture2D::2270417348275709476::1737049363::1737058481::1::::<><>::
+DoorRoughness.png::CompressedTexture2D::8461973730801699181::1737049363::1737058481::1::::<><>::
+GroundColor.png::CompressedTexture2D::4470325328318336337::1737049363::1737058481::1::::<><>::
+GroundNormal.png::CompressedTexture2D::4822496645169500711::1737049363::1737058480::1::::<><>::
+GroundRoughness.png::CompressedTexture2D::1176231209058705726::1737049363::1737058481::1::::<><>::
+InternalWallsColor.png::CompressedTexture2D::598106486600897351::1737049363::1737058480::1::::<><>::
+InternalWallsNormals.png::CompressedTexture2D::3127844021585510895::1737049363::1737058480::1::::<><>::
+InternalWallsRoughness.png::CompressedTexture2D::648032313735340974::1737049363::1737058480::1::::<><>::
+PostsandRoofColor.png::CompressedTexture2D::6200500741017401010::1737049363::1737058480::1::::<><>::
+PostsandRoofNormal.png::CompressedTexture2D::5940434681541913561::1737049363::1737058481::1::::<><>::
+PostsandRoofRoughness.png::CompressedTexture2D::8716003898104247819::1737049364::1737058480::1::::<><>::
+RailsColor.png::CompressedTexture2D::4824774652012653834::1737049364::1737058480::1::::<><>::
+RailsNormal.png::CompressedTexture2D::730579496057525291::1737049364::1737058479::1::::<><>::
+RailsRoughness.png::CompressedTexture2D::2394832795394613618::1737049364::1737058479::1::::<><>::
+StairsandFloorColor.png::CompressedTexture2D::1508363818372789120::1737049364::1737058480::1::::<><>::
+StairsandFloorNormal.png::CompressedTexture2D::1358045330622714115::1737049364::1737058479::1::::<><>::
+StairsandFloorRoughness.png::CompressedTexture2D::144259557924342946::1737049364::1737058479::1::::<><>::
+WallsColor.png::CompressedTexture2D::2821466199089882315::1737049364::1737058483::1::::<><>::
+WallsNormal.png::CompressedTexture2D::497331506693715369::1737049364::1737058482::1::::<><>::
+WallsRoughness.png::CompressedTexture2D::8009769287023929532::1737049364::1737058482::1::::<><>::
+WindowColor.png::CompressedTexture2D::5868758793821134966::1737049364::1737058483::1::::<><>::
+WindowNormal.png::CompressedTexture2D::5453741896235304761::1737049364::1737058482::1::::<><>::
+WindowRoughness.png::CompressedTexture2D::2534984313538068058::1737049364::1737058482::1::::<><>::
 ::res://Materials/free-environment-props-3d-low-poly-models/Texture/::1737049521
-Texture.png::CompressedTexture2D::5875448313552874468::1737049364::1737049521::1::::<><>::
+Texture.png::CompressedTexture2D::5875448313552874468::1737049364::1737058476::1::::<><>::
 ::res://Materials/LoafbrrAssets/::1737049363
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/::1737049363
 README.txt::TextFile::-1::1737049363::0::1::::<><>::
@@ -541,84 +514,84 @@ road_stairs_wide_narrow.tscn::PackedScene::9007639572147593071::1737049363::0::1
 DoorOpen.gd::GDScript::-1::1737049363::0::1::::<>Node3D<>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/::1737049363
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickStoneTrim/::1737049494
-BrickStoneTrim_Diffuse.png::CompressedTexture2D::3831712726400714625::1737049363::1737049494::1::::<><>::
-BrickStoneTrim_MRAo.tga::CompressedTexture2D::1064171925651989975::1737049363::1737049494::1::::<><>::
-BrickStoneTrim_Normal.png::CompressedTexture2D::3295557680852557213::1737049363::1737049494::1::::<><>::
+BrickStoneTrim_Diffuse.png::CompressedTexture2D::3831712726400714625::1737049363::1737058478::1::::<><>::
+BrickStoneTrim_MRAo.tga::CompressedTexture2D::1064171925651989975::1737049363::1737058478::1::::<><>::
+BrickStoneTrim_Normal.png::CompressedTexture2D::3295557680852557213::1737049363::1737058478::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/::1737049521
-BrickWall_Diffuse.png::CompressedTexture2D::3719106304456591575::1737049363::1737049521::1::::<><>::
-BrickWall_MRAo.tga::CompressedTexture2D::6628645134882608196::1737049363::1737049494::1::::<><>::
-BrickWall_Normal.png::CompressedTexture2D::8929551169386618021::1737049363::1737049494::1::::<><>::
+BrickWall_Diffuse.png::CompressedTexture2D::3719106304456591575::1737049363::1737058478::1::::<><>::
+BrickWall_MRAo.tga::CompressedTexture2D::6628645134882608196::1737049363::1737058478::1::::<><>::
+BrickWall_Normal.png::CompressedTexture2D::8929551169386618021::1737049363::1737058478::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Doors/::1737049494
-Doors_Diffuse.png::CompressedTexture2D::3256439819339886338::1737049363::1737049493::1::::<><>::
-Doors_MRAo.tga::CompressedTexture2D::7158765349197607223::1737049363::1737049494::1::::<><>::
-Doors_Normal.png::CompressedTexture2D::5475267351541663752::1737049363::1737049494::1::::<><>::
+Doors_Diffuse.png::CompressedTexture2D::3256439819339886338::1737049363::1737058478::1::::<><>::
+Doors_MRAo.tga::CompressedTexture2D::7158765349197607223::1737049363::1737058478::1::::<><>::
+Doors_Normal.png::CompressedTexture2D::5475267351541663752::1737049363::1737058478::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Glass/::1737049521
-BASE COLOR_Glass.png::CompressedTexture2D::37450785882140298::1737049363::1737049521::1::::<><>::
-MRAO_Glass.png::CompressedTexture2D::8577041952557876892::1737049363::1737049493::1::::<><>::
-ROUGHNESS_Glass.png::CompressedTexture2D::2303905041448338763::1737049363::1737049521::1::::<><>::
+BASE COLOR_Glass.png::CompressedTexture2D::37450785882140298::1737049363::1737058477::1::::<><>::
+MRAO_Glass.png::CompressedTexture2D::8577041952557876892::1737049363::1737058477::1::::<><>::
+ROUGHNESS_Glass.png::CompressedTexture2D::2303905041448338763::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Grass/::1737049502
-Grass_Diffuse.png::CompressedTexture2D::8262465281015144355::1737049363::1737049502::1::::<><>::
-Grass_MRAo.tga::CompressedTexture2D::6852039028275864347::1737049363::1737049502::1::::<><>::
-Grass_Normal.png::CompressedTexture2D::269377040257243214::1737049363::1737049502::1::::<><>::
+Grass_Diffuse.png::CompressedTexture2D::8262465281015144355::1737049363::1737058478::1::::<><>::
+Grass_MRAo.tga::CompressedTexture2D::6852039028275864347::1737049363::1737058477::1::::<><>::
+Grass_Normal.png::CompressedTexture2D::269377040257243214::1737049363::1737058478::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Ground/::1737049502
-Ground_Diffuse.png::CompressedTexture2D::113957667851015854::1737049363::1737049502::1::::<><>::
-Ground_MRAo.tga::CompressedTexture2D::2953946220180465305::1737049363::1737049502::1::::<><>::
-Ground_Normal.png::CompressedTexture2D::1578196282565268124::1737049363::1737049502::1::::<><>::
+Ground_Diffuse.png::CompressedTexture2D::113957667851015854::1737049363::1737058477::1::::<><>::
+Ground_MRAo.tga::CompressedTexture2D::2953946220180465305::1737049363::1737058477::1::::<><>::
+Ground_Normal.png::CompressedTexture2D::1578196282565268124::1737049363::1737058476::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LimeWall/::1737049502
-LimeWall_Diffuse.png::CompressedTexture2D::6528513936839939671::1737049363::1737049502::1::::<><>::
-LimeWall_MRAo.tga::CompressedTexture2D::510463350715148303::1737049363::1737049502::1::::<><>::
-LimeWall_Normal.png::CompressedTexture2D::8924697780758472187::1737049363::1737049502::1::::<><>::
+LimeWall_Diffuse.png::CompressedTexture2D::6528513936839939671::1737049363::1737058476::1::::<><>::
+LimeWall_MRAo.tga::CompressedTexture2D::510463350715148303::1737049363::1737058477::1::::<><>::
+LimeWall_Normal.png::CompressedTexture2D::8924697780758472187::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/::1737049521
-LogWall_Diffuse.png::CompressedTexture2D::8424860728091615407::1737049363::1737049521::1::::<><>::
-LogWall_MRAo.tga::CompressedTexture2D::7965913525131452430::1737049363::1737049502::1::::<><>::
-LogWall_Normal.png::CompressedTexture2D::6957792822969992869::1737049363::1737049521::1::::<><>::
+LogWall_Diffuse.png::CompressedTexture2D::8424860728091615407::1737049363::1737058476::1::::<><>::
+LogWall_MRAo.tga::CompressedTexture2D::7965913525131452430::1737049363::1737058477::1::::<><>::
+LogWall_Normal.png::CompressedTexture2D::6957792822969992869::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/RietRoof/::1737049502
-Base Color_RietRoof.png::CompressedTexture2D::266525433855198147::1737049363::1737049502::1::::<><>::
-MRAO_RietRoof.exr::CompressedTexture2D::3965527900773037774::1737049363::1737049501::1::::<><>::
-NORMAL_RietRoof.png::CompressedTexture2D::6911100084597046533::1737049363::1737049502::1::::<><>::
+Base Color_RietRoof.png::CompressedTexture2D::266525433855198147::1737049363::1737058477::1::::<><>::
+MRAO_RietRoof.exr::CompressedTexture2D::3965527900773037774::1737049363::1737058477::1::::<><>::
+NORMAL_RietRoof.png::CompressedTexture2D::6911100084597046533::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/::1737049521
-Roof_Diffuse.png::CompressedTexture2D::7722254919222353651::1737049363::1737049521::1::::<><>::
-Roof_MRAo.tga::CompressedTexture2D::2133389458683211290::1737049363::1737049521::1::::<><>::
-Roof_Normal.png::CompressedTexture2D::3377981009305355085::1737049363::1737049521::1::::<><>::
+Roof_Diffuse.png::CompressedTexture2D::7722254919222353651::1737049363::1737058477::1::::<><>::
+Roof_MRAo.tga::CompressedTexture2D::2133389458683211290::1737049363::1737058477::1::::<><>::
+Roof_Normal.png::CompressedTexture2D::3377981009305355085::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor/::1737049503
-StoneFloor_Diffuse.png::CompressedTexture2D::3851145981536622369::1737049363::1737049503::1::::<><>::
-StoneFloor_MRAo.tga::CompressedTexture2D::5235277796130273974::1737049363::1737049503::1::::<><>::
-StoneFloor_Normal.png::CompressedTexture2D::7234160525331627252::1737049363::1737049503::1::::<><>::
+StoneFloor_Diffuse.png::CompressedTexture2D::3851145981536622369::1737049363::1737058477::1::::<><>::
+StoneFloor_MRAo.tga::CompressedTexture2D::5235277796130273974::1737049363::1737058477::1::::<><>::
+StoneFloor_Normal.png::CompressedTexture2D::7234160525331627252::1737049363::1737058477::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_2/::1737049503
-StoneFloor_2_Diffuse.png::CompressedTexture2D::381121566876899143::1737049363::1737049503::1::::<><>::
-StoneFloor_2_MRAo.tga::CompressedTexture2D::8957593645514979042::1737049363::1737049503::1::::<><>::
-StoneFloor_2_Normal.png::CompressedTexture2D::1118485770123625284::1737049363::1737049503::1::::<><>::
+StoneFloor_2_Diffuse.png::CompressedTexture2D::381121566876899143::1737049363::1737058481::1::::<><>::
+StoneFloor_2_MRAo.tga::CompressedTexture2D::8957593645514979042::1737049363::1737058482::1::::<><>::
+StoneFloor_2_Normal.png::CompressedTexture2D::1118485770123625284::1737049363::1737058481::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/StoneFloor_3/::1737049521
-StoneFloor_3_Diffuse.png::CompressedTexture2D::259114980012473390::1737049363::1737049521::1::::<><>::
-StoneFloor_3_MRAo.tga::CompressedTexture2D::6230049578721254542::1737049363::1737049521::1::::<><>::
-StoneFloor_3_Normal.png::CompressedTexture2D::8679806581635251718::1737049363::1737049521::1::::<><>::
+StoneFloor_3_Diffuse.png::CompressedTexture2D::259114980012473390::1737049363::1737058481::1::::<><>::
+StoneFloor_3_MRAo.tga::CompressedTexture2D::6230049578721254542::1737049363::1737058481::1::::<><>::
+StoneFloor_3_Normal.png::CompressedTexture2D::8679806581635251718::1737049363::1737058481::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/TrimProps/::1737049535
-BASE COLOR_TrimProps.png::CompressedTexture2D::2953756044754900440::1737049363::1737049521::1::::<><>::
-MR_TrimProps.exr::CompressedTexture2D::1184540414925292500::1737049363::1737049535::1::::<><>::
-NORMAL_TrimProps.png::CompressedTexture2D::882982341588294119::1737049363::1737049521::1::::<><>::
+BASE COLOR_TrimProps.png::CompressedTexture2D::2953756044754900440::1737049363::1737058481::1::::<><>::
+MR_TrimProps.exr::CompressedTexture2D::1184540414925292500::1737049363::1737058503::1::::<><>::
+NORMAL_TrimProps.png::CompressedTexture2D::882982341588294119::1737049363::1737058481::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/::1737049521
-WoodDeck_Diffuse.png::CompressedTexture2D::5905152660304201900::1737049363::1737049521::1::::<><>::
-WoodDeck_MRAO.tga::CompressedTexture2D::8221153581779912858::1737049363::1737049521::1::::<><>::
-WoodDeck_Normal.png::CompressedTexture2D::7616899955206801633::1737049363::1737049521::1::::<><>::
+WoodDeck_Diffuse.png::CompressedTexture2D::5905152660304201900::1737049363::1737058481::1::::<><>::
+WoodDeck_MRAO.tga::CompressedTexture2D::8221153581779912858::1737049363::1737058481::1::::<><>::
+WoodDeck_Normal.png::CompressedTexture2D::7616899955206801633::1737049363::1737058481::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor/::1737049521
-WoodPlankFloor_Diffuse.png::CompressedTexture2D::1870563435286617245::1737049363::1737049521::1::::<><>::
-WoodPlankFloor_MRAo.tga::CompressedTexture2D::8196667553306612569::1737049363::1737049521::1::::<><>::
-WoodPlankFloor_Normal.png::CompressedTexture2D::98018882081550288::1737049363::1737049521::1::::<><>::
+WoodPlankFloor_Diffuse.png::CompressedTexture2D::1870563435286617245::1737049363::1737058472::1::::<><>::
+WoodPlankFloor_MRAo.tga::CompressedTexture2D::8196667553306612569::1737049363::1737058472::1::::<><>::
+WoodPlankFloor_Normal.png::CompressedTexture2D::98018882081550288::1737049363::1737058472::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_2/::1737049499
-WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::5339596417215529777::1737049363::1737049499::1::::<><>::
-WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::4217393371796024893::1737049363::1737049498::1::::<><>::
-WoodPlankFloor_2_Normal.png::CompressedTexture2D::7252535762445541926::1737049363::1737049498::1::::<><>::
+WoodPlankFloor_2_Diffuse.png::CompressedTexture2D::5339596417215529777::1737049363::1737058473::1::::<><>::
+WoodPlankFloor_2_MRAo.tga::CompressedTexture2D::4217393371796024893::1737049363::1737058473::1::::<><>::
+WoodPlankFloor_2_Normal.png::CompressedTexture2D::7252535762445541926::1737049363::1737058473::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodPlankFloor_3/::1737049521
-WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::6761131566939341558::1737049363::1737049521::1::::<><>::
-WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::2082233262504694370::1737049363::1737049498::1::::<><>::
-WoodPlankFloor_3_Normal.png::CompressedTexture2D::8819966383454536648::1737049363::1737049521::1::::<><>::
+WoodPlankFloor_3_Diffuse.png::CompressedTexture2D::6761131566939341558::1737049363::1737058473::1::::<><>::
+WoodPlankFloor_3_MRAo.tga::CompressedTexture2D::2082233262504694370::1737049363::1737058473::1::::<><>::
+WoodPlankFloor_3_Normal.png::CompressedTexture2D::8819966383454536648::1737049363::1737058473::1::::<><>::
 ::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodTrims/::1737049521
-WoodTrim_Diffuse.png::CompressedTexture2D::4854416262671678413::1737049363::1737049521::1::::<><>::
-WoodTrim_MRAo.tga::CompressedTexture2D::5109313427357805164::1737049363::1737049521::1::::<><>::
-WoodTrim_Normal.png::CompressedTexture2D::6510176272295779761::1737049363::1737049521::1::::<><>::
-::res://Melee Weapons/::1737049793
-Shovel.glb::PackedScene::3076673393577352226::1737049793::1737049795::1::::<><>::
-::res://Models/::1737049793
+WoodTrim_Diffuse.png::CompressedTexture2D::4854416262671678413::1737049363::1737058473::1::::<><>::
+WoodTrim_MRAo.tga::CompressedTexture2D::5109313427357805164::1737049363::1737058473::1::::<><>::
+WoodTrim_Normal.png::CompressedTexture2D::6510176272295779761::1737049363::1737058473::1::::<><>::
+::res://Melee Weapons/::1737049795
+Shovel.glb::PackedScene::3076673393577352226::1737049793::1737058512::1::::<><>::
+::res://Models/::1737051605
 Barn.tscn::PackedScene::1422010014140270242::1737049364::0::1::::<><>::
 BIGAHHH BARN.tscn::PackedScene::984199683650519575::1737049364::0::1::::<><>::
 button.tscn::PackedScene::6038412854970030683::1737049364::0::1::::<><>::res://Scripts/interacable.gd
@@ -626,65 +599,67 @@ character_body_3d.gd::GDScript::-1::1737049364::0::1::::<>CharacterBody3D<>::
 Doubledoor.tscn::PackedScene::4059142023453802758::1737049364::0::1::::<><>::uid://cr35py5yx8oiv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Doors.material<>res://Materials/LoafbrrAssets/HouseAndPropsPack/Scenes/Doors/door_double_tall_6.gd
 Fence2.tscn::PackedScene::3975403881453079365::1737049793::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material
 Fence.tscn::PackedScene::6090387540926656172::1737049364::0::1::::<><>::
-game.tscn::PackedScene::7782051981257741488::1737049556::0::1::::<><>::uid://q6x3pc6ed1tq::::res://Materials/696.jpg<>uid://42j8cypn7jeb::::res://Models/Windmill22.tscn<>uid://oa0viq4egsux::::res://Models/BIGAHHH BARN.tscn<>uid://ba0esmdah7m3d::::res://Models/silo.tscn<>uid://cs1h17xm2kqqm::::res://Models/Fence.tscn<>uid://b853mi7rkdknk::::res://Models/gate.tscn<>uid://52idgbuskbwf::::res://Models/shorter_fence.tscn<>uid://c0kyo6tx0rqia::::res://Models/road.tscn<>uid://bh4y61debteju::::res://Models/roadbreak.tscn<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://bbr035lp5dbcr::::res://Models/HOUSE.tscn<>uid://nxv8ebx1omcq::::res://Models/Shelf.tscn<>uid://bvqsvljjt7gxj::::res://Scenes/item_slot.tscn<>uid://de56lwhpalp6i::::res://Scenes/player.tscn<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn<>uid://jcpcx0l3vp5y::::res://Models/spaceshipbodies.tscn
+game.gd::GDScript::-1::1737051354::0::1::::<>Node3D<>::
+game.tscn::PackedScene::7782051981257741488::1737051605::0::1::::<><>::uid://q6x3pc6ed1tq::::res://Materials/696.jpg<>res://Models/game.gd<>uid://42j8cypn7jeb::::res://Models/Windmill22.tscn<>uid://oa0viq4egsux::::res://Models/BIGAHHH BARN.tscn<>uid://ba0esmdah7m3d::::res://Models/silo.tscn<>uid://cs1h17xm2kqqm::::res://Models/Fence.tscn<>uid://b853mi7rkdknk::::res://Models/gate.tscn<>uid://52idgbuskbwf::::res://Models/shorter_fence.tscn<>uid://c0kyo6tx0rqia::::res://Models/road.tscn<>uid://bh4y61debteju::::res://Models/roadbreak.tscn<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://bbr035lp5dbcr::::res://Models/HOUSE.tscn<>uid://nxv8ebx1omcq::::res://Models/Shelf.tscn<>res://Scenes/item_slot.tscn<>uid://de56lwhpalp6i::::res://Scenes/player.tscn<>uid://db34x4vjni4pa::::res://enemy/Bean.tscn<>uid://jcpcx0l3vp5y::::res://Models/spaceshipbodies.tscn
 gate.tscn::PackedScene::4766305832100720708::1737049364::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
-HOUSE.tscn::PackedScene::2493273469613741809::1737049364::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://b276x6gpqscoc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://nxgkmsw7kkb6::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material<>uid://jhehs2u4w4qi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://dmb7wi2brnmrq::::res://Models/Post.tscn
-icon.svg::CompressedTexture2D::2137141309655435374::1737049364::1737049497::1::::<><>::
+HOUSE.tscn::PackedScene::2493273469613741809::1737049793::0::1::::<><>::uid://bb4nfxcjhenmq::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Wood.material<>uid://cuyj4a7whw2jo::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wood_Deck.material<>uid://b276x6gpqscoc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Stone_3.material<>uid://clxn8f8ovhspv::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_1.material<>uid://nxgkmsw7kkb6::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Floor_Wood_3.material<>uid://dp1epe3n1m23::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Wall_Log.material<>uid://ue84ksdubxws::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/Roof/Roof_Diffuse.png<>uid://dhf2ipcm6ggqf::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Roof_Tiles.material<>uid://by4sxqvymlhrc::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/LogWall/LogWall_Diffuse.png<>uid://c8e1dkq4vy1v1::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Glass.material<>uid://jhehs2u4w4qi::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/BrickWall/BrickWall_Diffuse.png<>uid://bwvyk6hb4wxtd::::res://Models/Fence2.tscn<>uid://dmb7wi2brnmrq::::res://Models/Post.tscn
+icon.svg::CompressedTexture2D::2137141309655435374::1737049364::1737058473::1::::<><>::
 Post.tscn::PackedScene::8005575245689385050::1737049364::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material<>uid://bsew0yh46nyvw::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Textures/WoodDeck/WoodDeck_Diffuse.png
 road.tscn::PackedScene::6549690103472921608::1737049364::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
 roadbreak.tscn::PackedScene::2939123481889854910::1737049364::0::1::::<><>::uid://cubkjqbadkay2::::res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png
 Shelf.tscn::PackedScene::961269856403281844::1737049364::0::1::::<><>::uid://oy0hs84vtoji::::res://Materials/LoafbrrAssets/HouseAndPropsPack/Material/Trim_Props.material
 shorter_fence.tscn::PackedScene::2161894919442494629::1737049364::0::1::::<><>::
 silo.tscn::PackedScene::2438305774731191323::1737049364::0::1::::<><>::
-spaceshipbodies.blend::PackedScene::5052731669165248654::1737049364::1737049512::1::::<><>::
+spaceshipbodies.blend::PackedScene::5052731669165248654::1737049364::1737058507::1::::<><>::
 spaceshipbodies.tscn::PackedScene::636743921924932312::1737049364::0::1::::<><>::uid://dv8kff1a4nkhv::::res://Models/spaceshipbodies.blend
 spac_eship.tscn::PackedScene::6047104186656738600::1737049364::0::1::::<><>::
-Windmill22.tscn::PackedScene::2091820191818491101::1737049364::0::1::::<><>::
-::res://Scenes/::1737049793
+Windmill22.tscn::PackedScene::2091820191818491101::1737049793::0::1::::<><>::
+::res://Scenes/::1737051562
 arm.tscn::PackedScene::2592781040395658155::1737049364::0::1::::<><>::res://Scripts/arm.gd
-Inventory.tscn::PackedScene::-1::1737049793::0::1::::<><>::
-item_slot.tscn::PackedScene::-1::1737049793::0::1::::<><>::
+Inventory.tscn::PackedScene::1312698352631884636::1737049793::0::1::::<><>::res://inventory.gd
+item_slot.tscn::PackedScene::3894547443794202687::1737049793::0::1::::<><>::res://item_slot.gd
 Melee.tscn::PackedScene::4525886345725356429::1737049364::0::1::::<><>::uid://pxakl6amrfig::::res://Melee Weapons/Shovel.glb
-player.tscn::PackedScene::7503851795771256410::1737049555::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://fyfncf7u1jsp::::res://Scenes/WaterGun.tscn<>uid://d20e0h13ksev::::res://Main Menu/Untitled design (5).png<>uid://w1wambbwlgkr::::res://Scenes/Shovel.tscn
-Shovel.tscn::PackedScene::1599164787383409429::1737049793::0::1::::<><>::uid://bj3mmjv6vp5fy::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
-WaterGun.tscn::PackedScene::-1::1737049793::0::1::::<><>::
-weapon.tscn::PackedScene::2946917155921635875::1737049364::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn
+player.tscn::PackedScene::7503851795771256410::1737051562::0::1::::<><>::res://Scripts/character_body_3d.gd<>uid://ydcc2lt38ey4::::res://Scenes/WaterGun.tscn<>uid://dx1n3oipero11::::res://Main Menu/Untitled design (5).png<>uid://w1wambbwlgkr::::res://Scenes/Shovel.tscn
+Shovel.tscn::PackedScene::1599164787383409429::1737051501::0::1::::<><>::uid://bj3mmjv6vp5fy::::res://Melee Weapons/Shovel.glb<>res://Scripts/melee_weapon.gd
+WaterGun.tscn::PackedScene::1690851822173594693::1737051501::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn<>uid://c1kms1jdnyyk0::::res://Watergun/model.obj
+weapon.tscn::PackedScene::2946917155921635875::1737049793::0::1::::<><>::res://Scripts/weapon.gd<>uid://4ilk67hnc6h5::::res://Scenes/WG_bullet.tscn
 WG_bullet.tscn::PackedScene::2052678910388028232::1737049364::0::1::::<><>::res://Scripts/bullet.gd
-::res://Scripts/::1737049793
+::res://Scripts/::1737051562
 arm.gd::GDScript::-1::1737049364::0::1::::<>RayCast3D<>::
 bullet.gd::GDScript::-1::1737049793::0::1::::bullet<>Node3D<>::
-character_body_3d.gd::GDScript::-1::1737049793::0::1::::<>CharacterBody3D<>::
+character_body_3d.gd::GDScript::-1::1737051354::0::1::::<>CharacterBody3D<>::
+enemy.gd::GDScript::-1::1737051562::0::1::::Enemy<>CharacterBody3D<>::
 game.gd::GDScript::-1::1737049793::0::1::::<>Node3D<>::
 interacable.gd::GDScript::-1::1737049364::0::1::::Interactable<>CollisionObject3D<>::
 melee_weapon.gd::GDScript::-1::1737049793::0::1::::melee<>Node3D<>::
 weapon.gd::GDScript::-1::1737049793::0::1::::Weapon<>Node3D<>::
 ::res://Sprites/::1737049793
-::res://Sprites/Watergun/::1737049793
-model.obj::Mesh::6296196545963739466::1737049793::1737049795::1::::<><>::
+::res://Sprites/Watergun/::1737049795
+model.obj::Mesh::6296196545963739466::1737049793::1737058504::1::::<><>::
 ::res://textures/::1737049502
-DoorColor.png::CompressedTexture2D::8859476327149253677::1737049364::1737049498::1::::<><>::
-DoorNormals.png::CompressedTexture2D::6925825818979919111::1737049364::1737049497::1::::<><>::
-DoorRoughness.png::CompressedTexture2D::4591715384536308890::1737049364::1737049498::1::::<><>::
-GroundColor.png::CompressedTexture2D::3744523502259090950::1737049364::1737049498::1::::<><>::
-GroundNormal.png::CompressedTexture2D::7212660300560742707::1737049364::1737049497::1::::<><>::
-GroundRoughness.png::CompressedTexture2D::7660459937457225733::1737049364::1737049497::1::::<><>::
-InternalWallsColor.png::CompressedTexture2D::4605463460158516629::1737049364::1737049501::1::::<><>::
-InternalWallsNormals.png::CompressedTexture2D::5934741608981580993::1737049364::1737049501::1::::<><>::
-InternalWallsRoughness.png::CompressedTexture2D::6398200591074708484::1737049364::1737049501::1::::<><>::
-PostsandRoofColor.png::CompressedTexture2D::7369901385775235298::1737049364::1737049502::1::::<><>::
-PostsandRoofNormal.png::CompressedTexture2D::6645972220451218417::1737049364::1737049502::1::::<><>::
-PostsandRoofRoughness.png::CompressedTexture2D::4346734815520092547::1737049364::1737049501::1::::<><>::
-RailsColor.png::CompressedTexture2D::1936614525172575969::1737049364::1737049501::1::::<><>::
-RailsNormal.png::CompressedTexture2D::4015196345026067739::1737049364::1737049500::1::::<><>::
-RailsRoughness.png::CompressedTexture2D::2911102664022115215::1737049364::1737049500::1::::<><>::
-StairsandFloorColor.png::CompressedTexture2D::6025261998265551283::1737049364::1737049501::1::::<><>::
-StairsandFloorNormal.png::CompressedTexture2D::7049836806929763719::1737049364::1737049500::1::::<><>::
-StairsandFloorRoughness.png::CompressedTexture2D::6467183302246895203::1737049364::1737049500::1::::<><>::
-WallsColor.png::CompressedTexture2D::8652273131205035555::1737049364::1737049500::1::::<><>::
-WallsNormal.png::CompressedTexture2D::7130443200492428824::1737049364::1737049499::1::::<><>::
-WallsRoughness.png::CompressedTexture2D::5217197145411255318::1737049364::1737049499::1::::<><>::
-WindowColor.png::CompressedTexture2D::3301881029704406525::1737049364::1737049500::1::::<><>::
-WindowNormal.png::CompressedTexture2D::1847659187380530843::1737049364::1737049499::1::::<><>::
-WindowRoughness.png::CompressedTexture2D::6503595067056465821::1737049364::1737049499::1::::<><>::
-::res://Watergun/::1737049793
-model.obj::Mesh::6619157207384121085::1737049793::1737049795::1::::<><>::
+DoorColor.png::CompressedTexture2D::8859476327149253677::1737049364::1737058474::1::::<><>::
+DoorNormals.png::CompressedTexture2D::6925825818979919111::1737049364::1737058474::1::::<><>::
+DoorRoughness.png::CompressedTexture2D::4591715384536308890::1737049364::1737058470::1::::<><>::
+GroundColor.png::CompressedTexture2D::3744523502259090950::1737049364::1737058471::1::::<><>::
+GroundNormal.png::CompressedTexture2D::7212660300560742707::1737049364::1737058469::1::::<><>::
+GroundRoughness.png::CompressedTexture2D::7660459937457225733::1737049364::1737058470::1::::<><>::
+InternalWallsColor.png::CompressedTexture2D::4605463460158516629::1737049364::1737058469::1::::<><>::
+InternalWallsNormals.png::CompressedTexture2D::5934741608981580993::1737049364::1737058470::1::::<><>::
+InternalWallsRoughness.png::CompressedTexture2D::6398200591074708484::1737049364::1737058470::1::::<><>::
+PostsandRoofColor.png::CompressedTexture2D::7369901385775235298::1737049364::1737058472::1::::<><>::
+PostsandRoofNormal.png::CompressedTexture2D::6645972220451218417::1737049364::1737058472::1::::<><>::
+PostsandRoofRoughness.png::CompressedTexture2D::4346734815520092547::1737049364::1737058472::1::::<><>::
+RailsColor.png::CompressedTexture2D::1936614525172575969::1737049364::1737058472::1::::<><>::
+RailsNormal.png::CompressedTexture2D::4015196345026067739::1737049364::1737058471::1::::<><>::
+RailsRoughness.png::CompressedTexture2D::2911102664022115215::1737049364::1737058472::1::::<><>::
+StairsandFloorColor.png::CompressedTexture2D::6025261998265551283::1737049364::1737058473::1::::<><>::
+StairsandFloorNormal.png::CompressedTexture2D::7049836806929763719::1737049364::1737058472::1::::<><>::
+StairsandFloorRoughness.png::CompressedTexture2D::6467183302246895203::1737049364::1737058473::1::::<><>::
+WallsColor.png::CompressedTexture2D::8652273131205035555::1737049364::1737058476::1::::<><>::
+WallsNormal.png::CompressedTexture2D::7130443200492428824::1737049364::1737058475::1::::<><>::
+WallsRoughness.png::CompressedTexture2D::5217197145411255318::1737049364::1737058475::1::::<><>::
+WindowColor.png::CompressedTexture2D::3301881029704406525::1737049364::1737058476::1::::<><>::
+WindowNormal.png::CompressedTexture2D::1847659187380530843::1737049364::1737058475::1::::<><>::
+WindowRoughness.png::CompressedTexture2D::6503595067056465821::1737049364::1737058476::1::::<><>::
+::res://Watergun/::1737049795
+model.obj::Mesh::6619157207384121085::1737049793::1737058504::1::::<><>::
