@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://bx18e36vi21ad" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="5_e0it4"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 [ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="18_q0c4j"]
-[ext_resource type="PackedScene" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
+[ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
