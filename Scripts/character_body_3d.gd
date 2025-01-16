@@ -46,6 +46,9 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
+#Fall Damage
+var old_vel = 0.0
+var fall_hurtie = 10.0
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -180,6 +183,13 @@ func _physics_process(delta: float) -> void:
 	camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
 	
+	#Fall Damage
+	var diff = velocity.y - old_vel
+		
+	if diff > fall_hurtie:
+		took_damage(diff*100000)
+
+	old_vel = velocity.y
 	#FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped

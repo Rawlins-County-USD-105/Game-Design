@@ -68,7 +68,6 @@ _data = {
 [node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model") instance=ExtResource("1_2mepy")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 script = ExtResource("2_6edns")
-speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
 
@@ -83,4 +82,3 @@ libraries = {
 
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
 transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
-hit_from_inside = true
