@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="1_rb3ql"]
 [ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_jhtbm"]
-[ext_resource type="ArrayMesh" uid="uid://deep6sgddtioc" path="res://Watergun/model.obj" id="3_8gyao"]
+[ext_resource type="ArrayMesh" uid="uid://c1kms1jdnyyk0" path="res://Watergun/model.obj" id="3_8gyao"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
