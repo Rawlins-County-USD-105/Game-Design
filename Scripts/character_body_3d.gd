@@ -9,6 +9,13 @@ var health = max_health
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
 
+#animations by dorian so prolly shit
+@onready var animation_player = $AnimationPlayer
+func _process(delta):
+	if velocity.length() > 0.1:
+		animation_player.play("jog")
+	else:
+		animation_player.stop()
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
