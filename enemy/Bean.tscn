@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://db34x4vjni4pa"]
 
-[ext_resource type="Script" path="res://enemy/enemy.gd" id="1_wp8om"]
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wp8om"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xx47l"]
 
@@ -23,6 +23,7 @@ mesh = SubResource("CapsuleMesh_xx47l")
 shape = SubResource("CapsuleShape3D_4dkwc")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = 1.0
 path_max_distance = 10.01
 
 [node name="RayCast3D" type="RayCast3D" parent="."]

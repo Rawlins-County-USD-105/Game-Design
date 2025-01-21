@@ -2,10 +2,9 @@ extends CharacterBody3D
 
 class_name Enemy
 
+var player = self
 
-var player= null
-@export var Damage = 100.0
-@export var player_path : NodePath
+@export var Damage = 1.0
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
@@ -17,9 +16,8 @@ var player= null
 var Health = 20.0
 signal hit(Damage)
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	player = get_node(player_path)
-
+#func _ready():
+	#player = get_node(player_path)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
