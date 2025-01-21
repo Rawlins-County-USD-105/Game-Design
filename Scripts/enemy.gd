@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 class_name Enemy
 
-var player= null
+var player = self
 
 @export var Damage = 1.0
 @export var mesh : MeshInstance3D
