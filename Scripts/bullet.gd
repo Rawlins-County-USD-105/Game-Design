@@ -5,7 +5,7 @@ class_name bullet
 #var Watergun = get_tree().get_root().find_node("Watergun", true, false)
 
 
-@export var Damage = 1.0
+@export var Damage = 100.0
 @export var speed: int
 @export var mesh: MeshInstance3D
 @export var ray: RayCast3D

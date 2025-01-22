@@ -102,7 +102,6 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
-	print(health)
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	# Handle jump.
