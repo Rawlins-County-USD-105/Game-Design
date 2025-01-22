@@ -92,6 +92,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
+	
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
 
