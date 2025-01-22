@@ -14,7 +14,7 @@ script = ExtResource("1_wp8om")
 mesh = NodePath("MeshInstance3D")
 hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
-speed = 5
+speed = 4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." groups=["Enemy"]]
 mesh = SubResource("CapsuleMesh_xx47l")

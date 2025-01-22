@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://q6x3pc6ed1tq" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
+
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -15,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
-[ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="18_q0c4j"]
 [ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
@@ -249,7 +249,34 @@ position = Vector2(105, 20)
 [node name="Iteam Slot5" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
 position = Vector2(62, 20)
 
-[node name="bean" parent="NavigationRegion3D" instance=ExtResource("18_q0c4j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2355, 1.52241, -25.9447)
-player_path = NodePath("../player")
-speed = 7
+[node name="SpawnHolder" type="Node3D" parent="."]
+
+[node name="Spawner1" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 68.7113)
+
+[node name="Spawner2" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.288, 0, 68.7113)
+
+[node name="Spawner3" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.288, 0, -9.77027)
+
+[node name="Spawner4" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.3532, 0, 58.941)
+
+[node name="Spawner5" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.0443, 0, -1.87866)
+
+[node name="Spawner6" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.0443, 0, -73.8816)
+
+[node name="Spawner7" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8353, 0, -79.0136)
+
+[node name="Spawner8" type="Node3D" parent="SpawnHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5002, 0, -66.99)
+
+[node name="WaveTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
