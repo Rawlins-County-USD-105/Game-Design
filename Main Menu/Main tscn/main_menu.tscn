@@ -1,13 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctvcl7kcff3xy"]
+[gd_scene load_steps=10 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://dngw8amaxgeih" path="res://Main Menu/Assets/Backdrops/Untitled design (3).png" id="1_tiif6"]
+[ext_resource type="Texture2D" uid="uid://cylt7sckmdclo" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
 
 [sub_resource type="SystemFont" id="SystemFont_gaf13"]
 font_names = PackedStringArray("Impact")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n3gb8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sh27s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4smn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1g7vp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_02uek"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -25,9 +35,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_tiif6")
 
 [node name="Add background picture to texturerect" type="Node" parent="TextureRect"]
+
+[node name="UntitledDesign(16)" type="Sprite2D" parent="TextureRect"]
+position = Vector2(571, 332)
+scale = Vector2(0.30582, 0.331481)
+texture = ExtResource("2_ov7jo")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -84,6 +98,8 @@ layout_mode = 2
 [node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
@@ -91,39 +107,61 @@ theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 100
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 63
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
 text = "HOST"
 flat = true
 
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
-theme_override_constants/outline_size = 100
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 63
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
 text = "JOIN"
 flat = true
 
 [node name="Button3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
-theme_override_constants/outline_size = 100
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 63
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
 text = "SINGLE"
 flat = true
 
 [node name="Settings" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
-theme_override_constants/outline_size = 100
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 63
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
 text = "Settings
 "
 flat = true
