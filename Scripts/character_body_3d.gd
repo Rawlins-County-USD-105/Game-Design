@@ -1,5 +1,5 @@
 extends CharacterBody3D
-var max_health = 100
+var max_health = 400
 var health = max_health
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
