@@ -8,6 +8,7 @@ var health = max_health
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
+@onready var regen_interval: Timer = $"Regen Interval"
 
 
 @export_category("Movement and shiz")
@@ -46,6 +47,10 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
+#fall damage
+var old_vel = 0.0
+var fall_hurtie = 10.0
+
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -75,7 +80,10 @@ func Weapon_Select():
 #func _ready() -> void:
 	#camera_3d.current = is_multiplayer_authority()	
 func took_damage(Damage):
-	health -= Damage
+	if Damage > health:
+		health = 0
+	else:
+		health -= Damage
 	if health <= 0:
 		print("You Died")
 	regen.start()
@@ -92,17 +100,19 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 func _physics_process(delta: float) -> void:
-	
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
-
+	print(health)
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
-
+	#regen
+	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
+		health += 5
+		regen_interval.start()
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 		
@@ -180,6 +190,13 @@ func _physics_process(delta: float) -> void:
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
+	
+	#fall damage
+	if old_vel < 0:
+		var diff = velocity.y - old_vel
+		if diff > fall_hurtie:
+			took_damage(diff)
+	old_vel = velocity.y
 	
 	#FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)

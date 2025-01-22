@@ -14,7 +14,7 @@ script = ExtResource("1_wp8om")
 mesh = NodePath("MeshInstance3D")
 hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
-speed = 6
+speed = 5
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." groups=["Enemy"]]
 mesh = SubResource("CapsuleMesh_xx47l")
@@ -25,7 +25,7 @@ shape = SubResource("CapsuleShape3D_4dkwc")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
+[node name="RayCast3D" type="RayCast3D" parent="." groups=["Enemy"]]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.1, 0.2)
 
 [node name="Timer" type="Timer" parent="."]
