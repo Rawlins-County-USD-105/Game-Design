@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://iylhm1jb85aw"]
+
+[ext_resource type="PackedScene" uid="uid://cs188inffwph" path="res://enemy/chicken_walk.glb" id="1_70bju"]
+
+[node name="Chicken" instance=ExtResource("1_70bju")]
+
+[node name="Armature_006" parent="." index="0"]
+transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, -0.01, 0, 0.01, -4.37114e-10, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Armature_006" index="0"]
+bones/0/position = Vector3(-1.57975e-08, 0.677346, -2.84561)
+bones/0/rotation = Quaternion(0.999846, -0.0174524, -3.13865e-05, 0.00179808)
+bones/1/rotation = Quaternion(0.0341985, 0.974135, -0.196105, 0.106935)
+bones/2/rotation = Quaternion(-0.558524, 0.134416, 0.0116631, 0.818442)
+bones/2/scale = Vector3(0.999989, 1.00001, 1)
+bones/3/rotation = Quaternion(0.561921, -0.0234512, 0.0154376, 0.826714)
+bones/5/rotation = Quaternion(0.0225462, 0.98408, 0.160262, -0.0734511)
+bones/6/rotation = Quaternion(-0.128148, -0.0308184, -0.0141012, 0.991176)
+bones/6/scale = Vector3(1.00002, 0.999982, 1)
+bones/7/rotation = Quaternion(0.00111783, -0.0421167, -0.0178409, 0.998953)
+bones/9/rotation = Quaternion(-0.722259, 0.0114887, -0.0146633, 0.691372)
+bones/10/rotation = Quaternion(-0.0536263, 0.0161161, 0.00439436, 0.998421)
+bones/11/rotation = Quaternion(0.604925, 0.00299832, 0.00234628, 0.796274)
+bones/12/rotation = Quaternion(0.059219, -0.000109171, 0.00258762, 0.998242)
+bones/13/rotation = Quaternion(-0.0885567, -0.0075396, 0.00410737, 0.996034)
+bones/14/rotation = Quaternion(-0.188314, -0.0105791, 0.00557567, 0.982036)
+bones/15/rotation = Quaternion(-0.241097, -0.00994912, 0.00736219, 0.970422)
+bones/16/rotation = Quaternion(-0.122922, -0.00374866, 0.00408397, 0.992401)
+bones/18/rotation = Quaternion(0.311291, -0.00269422, -0.0083002, 0.950275)
