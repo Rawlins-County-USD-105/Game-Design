@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://bj3mmjv6vp5fy" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://dti6gvvqgt6ui" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
@@ -84,3 +84,5 @@ libraries = {
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
 transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
 hit_from_inside = true
+
+[node name="Node3D" type="Node3D" parent="." index="2"]
