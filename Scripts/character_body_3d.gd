@@ -109,9 +109,15 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
 	#regen
+<<<<<<< Updated upstream
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
 		regen_interval.start()
+=======
+	if regen.is_stopped() and health < max_health:
+		health += 5
+		regen.length
+>>>>>>> Stashed changes
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 		
