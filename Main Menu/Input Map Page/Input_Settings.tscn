@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
 [ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_l72jb"]
-[ext_resource type="Texture2D" uid="uid://2f8l6cyxuha" path="res://Untitled design (23).png" id="4_kpqqu"]
+[ext_resource type="Texture2D" uid="uid://2f8l6cyxuha" path="res://Main Menu/Assets/Untitled design (23).png" id="4_kpqqu"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")
@@ -124,6 +124,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 785.0
 offset_top = 48.0
 offset_right = 854.0
