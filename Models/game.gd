@@ -4,7 +4,7 @@ extends Node3D
 @onready var current_level=0
 #the level is the key the amount of monsters is the value
 @onready var monster_dict={
-	1:20,
+	1:2,
 	2:2,
 	3:4,
 	4:8,
@@ -22,8 +22,8 @@ func _ready():
 	add_to_group("level")
 
 func enemy_death():
-	print("enemy death")
 	dead_enemies+=1
+	print(dead_enemies)
 	if dead_enemies==monster_dict[current_level]:
 		print("start wave")
 		$WaveTimer.start()
