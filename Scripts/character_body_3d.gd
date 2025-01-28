@@ -9,7 +9,8 @@ var health = max_health
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
-
+#damage animation
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -83,8 +84,10 @@ func took_damage(Damage):
 	if Damage > health:
 		health = 0
 	else:
+		animation_player.play("Damage")
 		health -= Damage
 	if health <= 0:
+		animation_player.play("DEATH")
 		print("You Died")
 	regen.start()
 	

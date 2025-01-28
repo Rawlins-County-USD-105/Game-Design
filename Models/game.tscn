@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://c2jxayanhlac4" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -234,19 +234,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.013, 3.93665, -37.8957)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
 
 [node name="Iteam Slot" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(19, 20)
+position = Vector2(946, 613)
 
 [node name="Iteam Slot2" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(191, 20)
+position = Vector2(1118, 613)
 
 [node name="Iteam Slot3" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(148, 20)
+position = Vector2(1075, 613)
 
 [node name="Iteam Slot4" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(105, 20)
+position = Vector2(1032, 613)
 
 [node name="Iteam Slot5" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(62, 20)
+position = Vector2(989, 613)
 
 [node name="SpawnHolder" type="Node3D" parent="."]
 
