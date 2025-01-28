@@ -15,6 +15,7 @@ var player = self
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 
+
 var Health = 20.0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
