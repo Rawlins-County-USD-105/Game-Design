@@ -70,3 +70,5 @@ func _on_wave_timer_timeout():
 	current_level+=1
 	update_level(current_level)
 	get_tree().call_group("level", "enemy_death")
+	
+	
