@@ -281,6 +281,7 @@ radius = 0.01462
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
+Damage = 10
 nav_agent = NodePath("NavigationAgent3D")
 speed = 4
 
@@ -288,7 +289,7 @@ speed = 4
 path_max_distance = 10.01
 
 [node name="RayCast3D" type="RayCast3D" parent="." groups=["Enemy"]]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.1, 0.2)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.470241, 0.27583)
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
