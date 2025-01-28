@@ -14,6 +14,7 @@ var player = self
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 
+
 var Health = 20.0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
