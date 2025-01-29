@@ -275,7 +275,7 @@ _data = {
 }
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
-radius = 0.01462
+radius = 0.0272095
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
