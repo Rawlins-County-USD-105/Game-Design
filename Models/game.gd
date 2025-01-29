@@ -12,30 +12,27 @@ extends Node3D
 }
 
 #the monster we will be spawning in. 
-@onready var monster=preload("res://enemy/Bean.tscn")
+@onready var monster=preload("res://enemy/chicken.tscn")
 #A random number genrerator to spawn from alternating spawn points.
 @onready var rand=RandomNumberGenerator.new()
 @onready var dead_enemies=0
 @onready var player: CharacterBody3D = $NavigationRegion3D/player
-@onready var wave_timer: Timer = $WaveTimer
 
-
-func _ready() -> void:
-	var wave_timer: Timer = $WaveTimer
+func _ready():
 	add_to_group("level")
 
 func enemy_death():
 	print("enemy death")
 	dead_enemies+=1
 	print(dead_enemies)
-	
-	if dead_enemies == monster_dict[current_level]:
+	if dead_enemies==monster_dict[current_level]:
 		print("start wave")
-		wave_timer.start()
+		spawn_enemies(current_level)
+
 		dead_enemies=0
 	get_tree().call_group("player", "award_points", 200)
 
-func spawn_enemies():
+func spawn_enemies(current_level):
 	for i in range(monster_dict[current_level]):
 		var m = monster.instantiate()
 		m.player = player
@@ -66,7 +63,7 @@ func update_level(level):
 			print("its level four")
 		5:
 			print("its level five")
-	spawn_enemies()
+	spawn_enemies(current_level)
 
 
 
