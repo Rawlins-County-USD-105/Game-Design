@@ -219,7 +219,7 @@ func _physics_process(delta: float) -> void:
 	if old_vel < 0:
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
-			took_damage(diff)
+			took_damage(round(diff))
 	old_vel = velocity.y
 	
 	#FOV
