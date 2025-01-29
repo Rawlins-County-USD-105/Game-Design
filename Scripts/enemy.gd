@@ -4,7 +4,7 @@ class_name Enemy
 var player = self
 
 #@export var player_path : NodePath
-@export var Damage = 10000
+@export var Damage = 10
 
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
@@ -16,7 +16,7 @@ var player = self
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 
-var Health = 20.0
+var Health = 100
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
 #func _ready():

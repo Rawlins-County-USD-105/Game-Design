@@ -1,5 +1,5 @@
 extends CharacterBody3D
-var max_health = 400
+var max_health = 100
 var health = max_health
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
@@ -11,6 +11,9 @@ var health = max_health
 @onready var regen_interval: Timer = $"Regen Interval"
 #damage animation
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var timer: Timer = $Timer
+#heath Label
+@onready var label: Label = $Label
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -52,6 +55,9 @@ var sliding = false
 var old_vel = 0.0
 var fall_hurtie = 10.0
 
+func _ready() -> void:
+	label.text = "HP   " + str(health)
+
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -83,12 +89,25 @@ func Weapon_Select():
 func took_damage(Damage):
 	if Damage > health:
 		health = 0
-	else:
+		
+	if health > 5:
+		
 		animation_player.play("Damage")
 		health -= Damage
+		label.text = "HP   " + str(health)
+		
 	if health <= 0:
+		health = 0
+		$Timer.start()
+		print("Death Timer Start")
 		animation_player.play("DEATH")
+		label.visible = true
+		standing_collision_shape.disabled = true
+		crouching_collision_shape.disabled = true
 		print("You Died")
+		
+		
+		
 	regen.start()
 	
 func _unhandled_input(event: InputEvent) -> void:
@@ -114,6 +133,9 @@ func _physics_process(delta: float) -> void:
 	#regen
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
+		if health > max_health:
+			health = max_health
+		label.text = "HP   " + str(health)
 		regen_interval.start()
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -211,3 +233,10 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+
+func _on_timer_timeout() -> void:
+	get_tree().reload_current_scene()
+	
+
+	
