@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=11 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -17,6 +17,16 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
 material = SubResource("StandardMaterial3D_14v3e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3q5e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2li6r"]
+bg_color = Color(0.776305, 9.81867e-06, 0.143954, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
@@ -72,6 +82,9 @@ offset_right = -213.0
 offset_bottom = 308.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxTexture_t3q5e")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2li6r")
+value = 35.0
 show_percentage = false
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
