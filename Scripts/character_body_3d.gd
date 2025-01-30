@@ -90,7 +90,7 @@ func took_damage(Damage):
 	if Damage > health:
 		health = 0
 		
-	if health > 5:
+	if health > 0:
 		
 		animation_player.play("Damage")
 		health -= Damage
@@ -233,10 +233,3 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
-
-
-func _on_timer_timeout() -> void:
-	get_tree().reload_current_scene()
-	
-
-	

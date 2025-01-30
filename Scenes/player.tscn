@@ -99,7 +99,7 @@ tracks/5/keys = {
 
 [sub_resource type="Animation" id="Animation_o88o0"]
 resource_name = "Damage"
-length = 0.2
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -294,8 +294,6 @@ libraries = {
 autoplay = "Damage"
 
 [node name="Timer" type="Timer" parent="."]
-process_callback = 0
-wait_time = 1.127
 
 [node name="Label" type="Label" parent="."]
 offset_left = 10.0
