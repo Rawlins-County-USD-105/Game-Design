@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://chrgjcwkxlw6h" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
-[ext_resource type="Texture2D" uid="uid://b1mubc7pi2q38" path="res://RAWLINS COUNTY (3).png" id="4_ks3xj"]
+[ext_resource type="Texture2D" uid="uid://caxd3jjpys3im" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
+[ext_resource type="Texture2D" uid="uid://b4rk31qiduvke" path="res://RAWLINS COUNTY (3).png" id="4_ks3xj"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
