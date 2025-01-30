@@ -1,10 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
-
-[ext_resource type="PackedScene" uid="uid://fyfncf7u1jsp" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://bb3gttkg0ciq6" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-
+[ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
+[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
@@ -20,7 +18,22 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
 material = SubResource("StandardMaterial3D_14v3e")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3q5e"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xckco"]
+bg_color = Color(0.0728426, 0.0728426, 0.0728426, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2li6r"]
 bg_color = Color(0.776305, 9.81867e-06, 0.143954, 1)
@@ -84,7 +97,7 @@ offset_right = -213.0
 offset_bottom = 308.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/background = SubResource("StyleBoxTexture_t3q5e")
+theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_2li6r")
 value = 35.0
 show_percentage = false
