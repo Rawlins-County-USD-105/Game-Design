@@ -25,4 +25,3 @@ func _process(_delta: float) -> void:
 			get_parent().add_child(instance)
 	else:
 		pass
-		

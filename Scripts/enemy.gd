@@ -4,8 +4,7 @@ class_name Enemy
 var player = self
 
 #@export var player_path : NodePath
-@export var Damage = 10000.0
-
+@export var Damage : int
 @export var mesh : MeshInstance3D
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
@@ -14,6 +13,7 @@ var player = self
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 
 
 var Health = 20.0
@@ -46,6 +46,7 @@ func Hit(Damage):
 	if Health <= 0:
 		var Gold = 10
 		GoldGain.Gain_Gold(Gold)
+		#Game.enemy_death()
 		queue_free()
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:

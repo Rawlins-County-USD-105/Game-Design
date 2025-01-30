@@ -109,9 +109,12 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
 	#regen
+
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
 		regen_interval.start()
+
+
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 		
@@ -194,7 +197,7 @@ func _physics_process(delta: float) -> void:
 	if old_vel < 0:
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
-			took_damage(diff)
+			took_damage(round(diff))
 	old_vel = velocity.y
 	
 	#FOV

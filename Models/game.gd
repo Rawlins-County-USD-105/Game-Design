@@ -1,10 +1,10 @@
 extends Node3D
 
 #essetially just a counter
-@onready var current_level=0
+@onready var current_level=1
 #the level is the key the amount of monsters is the value
 @onready var monster_dict={
-	1:20,
+	1:3,
 	2:2,
 	3:4,
 	4:8,
@@ -12,7 +12,7 @@ extends Node3D
 }
 
 #the monster we will be spawning in. 
-@onready var monster=preload("res://enemy/Bean.tscn")
+@onready var monster=preload("res://enemy/chicken.tscn")
 #A random number genrerator to spawn from alternating spawn points.
 @onready var rand=RandomNumberGenerator.new()
 @onready var dead_enemies=0
@@ -24,13 +24,15 @@ func _ready():
 func enemy_death():
 	print("enemy death")
 	dead_enemies+=1
+	print(dead_enemies)
 	if dead_enemies==monster_dict[current_level]:
 		print("start wave")
-		$WaveTimer.start()
+		spawn_enemies(current_level)
+
 		dead_enemies=0
 	get_tree().call_group("player", "award_points", 200)
 
-func spawn_enemies():
+func spawn_enemies(current_level):
 	for i in range(monster_dict[current_level]):
 		var m = monster.instantiate()
 		m.player = player
@@ -61,7 +63,7 @@ func update_level(level):
 			print("its level four")
 		5:
 			print("its level five")
-	spawn_enemies()
+	spawn_enemies(current_level)
 
 
 
@@ -70,3 +72,5 @@ func _on_wave_timer_timeout():
 	current_level+=1
 	update_level(current_level)
 	get_tree().call_group("level", "enemy_death")
+	
+	
