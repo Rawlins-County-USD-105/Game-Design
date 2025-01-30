@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://c7avhievpvmrv" path="res://LET’S GET RICH.png" id="2_re1aa"]
-[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://dyuudrx0wrplb" path="res://enemy/LET’S GET RICH (1).png" id="4_8uwe7"]
+[ext_resource type="Texture2D" uid="uid://dxsypa06ehsv5" path="res://LET’S GET RICH.png" id="2_re1aa"]
+[ext_resource type="Texture2D" uid="uid://cdlywtfvrupoq" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://bf7ow12te6kgv" path="res://enemy/LET’S GET RICH (1).png" id="4_8uwe7"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="FontFile" uid="uid://bcek4t2dfc37d" path="res://Main Menu/Assets/Fonts/Londrina_Sketch/LondrinaSketch-Regular.ttf" id="7_f4y1f"]
 
