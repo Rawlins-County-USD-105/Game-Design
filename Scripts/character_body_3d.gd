@@ -9,6 +9,7 @@ var health = max_health
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
+@onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
 
 
 @export_category("Movement and shiz")
@@ -77,8 +78,11 @@ func Weapon_Select():
 #func _enter_tree() -> void:
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-#func _ready() -> void:
-	#camera_3d.current = is_multiplayer_authority()	
+func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()
+	healthbar.max_value = max_health
+	healthbar.value = health
+	
 func took_damage(Damage):
 	if Damage > health:
 		health = 0
@@ -86,6 +90,7 @@ func took_damage(Damage):
 		health -= Damage
 	if health <= 0:
 		print("You Died")
+	healthbar.value = health
 	regen.start()
 	
 func _unhandled_input(event: InputEvent) -> void:
@@ -112,6 +117,7 @@ func _physics_process(delta: float) -> void:
 
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
+		healthbar.value = health
 		regen_interval.start()
 
 
@@ -197,7 +203,7 @@ func _physics_process(delta: float) -> void:
 	if old_vel < 0:
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
-			took_damage(diff)
+			took_damage(round(diff))
 	old_vel = velocity.y
 	
 	#FOV
