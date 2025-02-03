@@ -17,8 +17,9 @@ config/icon="res://Models/icon.svg"
 
 [autoload]
 
-GoldGain="*res://Scripts/GoldGain.gd"
+SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 Game="*res://Models/game.gd"
+Gain="*res://Scripts/Gain.gd"
 
 [display]
 
@@ -31,6 +32,7 @@ enabled=PackedStringArray("res://addons/simplegrasstextured/plugin.cfg")
 [global_group]
 
 Player=""
+"Small Enemy"=""
 
 [input]
 

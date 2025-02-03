@@ -4,7 +4,7 @@ extends Node3D
 @onready var current_level=1
 #the level is the key the amount of monsters is the value
 @onready var monster_dict={
-	1:3,
+	1:13,
 	2:2,
 	3:4,
 	4:8,

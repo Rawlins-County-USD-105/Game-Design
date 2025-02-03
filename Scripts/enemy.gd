@@ -45,8 +45,9 @@ func Hit(Damage):
 	Health -= Damage
 	if Health <= 0:
 		var Gold = 10
-		GoldGain.Gain_Gold(Gold)
-		Game.enemy_death()
+		Gain.Gain_Gold(Gold)
+		Gain.Gain_Water(Gold)
+		#Game.enemy_death()
 		queue_free()
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:

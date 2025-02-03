@@ -72,6 +72,9 @@ speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
 
+[node name="RootNode" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.661505, -5.78306e-08)
+
 [node name="Shovel" parent="RootNode" index="0"]
 transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
 
@@ -82,5 +85,8 @@ libraries = {
 }
 
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
-transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
+transform = Transform3D(-1.04907e-06, -2, 1.04907e-06, 0, -8.74228e-08, -24, 24, -8.74228e-08, 4.58565e-14, 0, 0, 1.5)
+target_position = Vector3(0, -2, 0)
+collision_mask = 2
 hit_from_inside = true
+collide_with_areas = true
