@@ -10,6 +10,9 @@ var health = max_health
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
 #damage animation
+
+@onready var animation_player_2: AnimationPlayer = $AnimationPlayer2
+
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var timer: Timer = $Timer
 #heath Label
@@ -92,13 +95,13 @@ func took_damage(Damage):
 		
 	if health > 0:
 		
-		animation_player.play("Damage")
+		animation_player_2.play("Damage")
 		health -= Damage
 		label.text = "HP   " + str(health)
 		
 	if health <= 0:
 		health = 0
-		$Timer.start()
+		$Timer2.start()
 		print("Death Timer Start")
 		animation_player.play("DEATH")
 		label.visible = true
@@ -233,3 +236,10 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+
+
+
+func _on_timer_2_timeout() -> void:
+	animation_player.stop()
+	print("STOP DEATH")

@@ -1,10 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=18 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://dxsypa06ehsv5" path="res://LET’S GET RICH.png" id="2_re1aa"]
-[ext_resource type="Texture2D" uid="uid://cdlywtfvrupoq" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://bf7ow12te6kgv" path="res://enemy/LET’S GET RICH (1).png" id="4_8uwe7"]
+[ext_resource type="Texture2D" uid="uid://c7avhievpvmrv" path="res://LET’S GET RICH.png" id="2_re1aa"]
+[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://dyuudrx0wrplb" path="res://enemy/LET’S GET RICH (1).png" id="4_8uwe7"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="FontFile" uid="uid://bcek4t2dfc37d" path="res://Main Menu/Assets/Fonts/Londrina_Sketch/LondrinaSketch-Regular.ttf" id="7_f4y1f"]
 
@@ -97,34 +97,6 @@ tracks/5/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_o88o0"]
-resource_name = "Damage"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("neck/Camera/TextureRect2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("neck/Camera/TextureRect2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_d1oo8"]
 length = 0.001
 tracks/0/type = "value"
@@ -137,7 +109,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true]
+"values": [false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -177,7 +149,7 @@ tracks/3/keys = {
 }
 tracks/4/type = "value"
 tracks/4/imported = false
-tracks/4/enabled = true
+tracks/4/enabled = false
 tracks/4/path = NodePath("crouching_collision_shape:disabled")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
@@ -189,7 +161,7 @@ tracks/4/keys = {
 }
 tracks/5/type = "value"
 tracks/5/imported = false
-tracks/5/enabled = true
+tracks/5/enabled = false
 tracks/5/path = NodePath("standing_collision_shape:disabled")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
@@ -203,8 +175,68 @@ tracks/5/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_skois"]
 _data = {
 "DEATH": SubResource("Animation_qatge"),
-"Damage": SubResource("Animation_o88o0"),
 "RESET": SubResource("Animation_d1oo8")
+}
+
+[sub_resource type="Animation" id="Animation_ordp5"]
+resource_name = "Damage"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../neck/Camera/TextureRect2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../neck/Camera/TextureRect2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5ktx1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("../neck/Camera/TextureRect2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../neck/Camera/TextureRect2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nfmqi"]
+_data = {
+"Damage": SubResource("Animation_ordp5"),
+"RESET": SubResource("Animation_5ktx1")
 }
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]
@@ -232,6 +264,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 current = true
 
 [node name="TextureRect2" type="TextureRect" parent="neck/Camera"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 visibility_layer = 2
 clip_contents = true
@@ -291,7 +324,6 @@ one_shot = true
 libraries = {
 "": SubResource("AnimationLibrary_skois")
 }
-autoplay = "Damage"
 
 [node name="Timer" type="Timer" parent="."]
 
@@ -303,4 +335,14 @@ offset_bottom = 82.0
 theme_override_fonts/font = ExtResource("7_f4y1f")
 theme_override_font_sizes/font_size = 50
 
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_nfmqi")
+}
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
