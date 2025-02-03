@@ -240,28 +240,28 @@ position = Vector2(62, 20)
 [node name="SpawnHolder" type="Node3D" parent="."]
 
 [node name="Spawner1" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 68.7113)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 55.2897)
 
 [node name="Spawner2" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.288, 0, 68.7113)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.29987, 0, 49.7588)
 
 [node name="Spawner3" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.288, 0, -9.77027)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.036, 0, -9.77027)
 
 [node name="Spawner4" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.3532, 0, 58.941)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.7683, 0, 12.1039)
 
 [node name="Spawner5" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.0443, 0, -1.87866)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5667, 0, -1.87866)
 
 [node name="Spawner6" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.0443, 0, -73.8816)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4895, 0, -3.49693)
 
 [node name="Spawner7" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8353, 0, -79.0136)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8353, 0, -15.1548)
 
 [node name="Spawner8" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5002, 0, -66.99)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0246, 0, -16.019)
 
 [node name="WaveTimer" type="Timer" parent="."]
 one_shot = true

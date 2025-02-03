@@ -19,7 +19,7 @@ config/icon="res://Models/icon.svg"
 
 SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 GoldGain="*res://GoldGain.gd"
-Game="res://Models/game.gd"
+Game="*res://Models/game.gd"
 
 [display]
 

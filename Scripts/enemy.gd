@@ -46,7 +46,7 @@ func Hit(Damage):
 	if Health <= 0:
 		var Gold = 10
 		GoldGain.Gain_Gold(Gold)
-		get_tree().call_group("level","enemy_deaths")
+		Game.enemy_death()
 		queue_free()
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:
