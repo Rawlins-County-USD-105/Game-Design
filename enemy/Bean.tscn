@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://bkpb2n8n07nxj"]
+[gd_scene load_steps=10 format=4 uid="uid://hdhrwjt0dm1q"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wp8om"]
 
@@ -282,8 +282,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
 Damage = 10
-nav_agent = NodePath("NavigationAgent3D")
 speed = 4
+nav_agent = NodePath("NavigationAgent3D")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
