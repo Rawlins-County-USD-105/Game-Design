@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://addons/simplegrasstextured/about.gd" id="1_r23hh"]
 [ext_resource type="Material" uid="uid://cl74usvfymgvs" path="res://addons/simplegrasstextured/materials/icon.material" id="2_4glo1"]
-[ext_resource type="Texture2D" uid="uid://cubr1a55brlfp" path="res://addons/simplegrasstextured/sgt_icon_48.svg" id="3_7w1su"]
+[ext_resource type="Texture2D" uid="uid://d1rg3mqlt4bg6" path="res://addons/simplegrasstextured/sgt_icon_48.svg" id="3_7w1su"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hnw4u"]
 
@@ -56,7 +56,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_hnw4u")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_lwftf")
 bbcode_enabled = true
 text = "Simple Grass Textured Plugin
-v. 2.0.5
+v. 2.0.6
 by IcterusGames
 [font_size=7] [/font_size]
 [b]Support me on:[/b]
