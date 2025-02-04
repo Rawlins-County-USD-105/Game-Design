@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp1awtc105l8m"]
+[gd_scene load_steps=9 format=3 uid="uid://cmc6x1q3llex6"]
 
 [ext_resource type="Script" path="res://Scripts/button.gd" id="1_hlbck"]
 
@@ -17,6 +17,24 @@ size = Vector3(0.25, 0.125, 0.25)
 [sub_resource type="BoxShape3D" id="BoxShape3D_vcvxo"]
 size = Vector3(0.25, 0.185, 0.25)
 
+[sub_resource type="Animation" id="Animation_xs51w"]
+resource_name = "press"
+length = 0.5
+
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+
+"times": PackedFloat32Array(0, 0.233333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0), Vector3(0, 0.0463445, 0), Vector3(0, 0.09, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_qdd8g"]
 length = 0.001
 tracks/0/type = "value"
@@ -32,22 +50,6 @@ tracks/0/keys = {
 "values": [Vector3(0, 0.09, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_xs51w"]
-resource_name = "press"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MeshInstance3D2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0.09, 0), Vector3(0, 0.0463445, 0), Vector3(0, 0.09, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
 _data = {
 "RESET": SubResource("Animation_qdd8g"),
@@ -56,7 +58,9 @@ _data = {
 
 [node name="Button" type="StaticBody3D"]
 script = ExtResource("1_hlbck")
-prompt_input = "interact"
+
+prompt = "Get Water Bozo Loser Unloved Bas- Nice Guy"
+
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)

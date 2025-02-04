@@ -4,7 +4,7 @@ extends Node3D
 @onready var current_level=1
 #the level is the key the amount of monsters is the value
 @onready var monster_dict={
-	1:3,
+	1:13,
 	2:2,
 	3:4,
 	4:8,
@@ -17,6 +17,7 @@ extends Node3D
 @onready var rand=RandomNumberGenerator.new()
 @onready var dead_enemies=0
 @onready var player: CharacterBody3D = $NavigationRegion3D/player
+@onready var spawn_holder: Node3D = $SpawnHolder
 
 func _ready():
 	add_to_group("level")
@@ -38,10 +39,10 @@ func spawn_enemies(current_level):
 		m.player = player
 		print("spawning enemy")
 		#we check the amount of children on our spawn holder 
-		var spawn_length = $SpawnHolder.get_child_count()-1
+		var spawn_length = spawn_holder.get_child_count()-1
 		var rand_num = rand.randi_range(0,spawn_length)
 		#We use that number to randomly select a spawner node position to use 
-		var spawn_postion = $SpawnHolder.get_child(rand_num).position
+		var spawn_postion = spawn_holder.get_child(rand_num).position
 		#we add the monster as a child of the level
 		#We set the monsters position to the spawn location
 		m.position = spawn_postion
