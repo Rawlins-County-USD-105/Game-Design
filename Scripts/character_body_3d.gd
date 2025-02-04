@@ -10,6 +10,13 @@ var health = max_health
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
 
+#Enemy Spawn
+@onready var spawner: Node3D = $Spawner
+@onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
+@onready var enemy = preload("res://enemy/Bean.tscn")
+@onready var group_enemy = $"../../Enemys"
+
+
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -205,9 +212,15 @@ func _physics_process(delta: float) -> void:
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 
+	spawner.rotate_y(deg_to_rad(30))
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+func _on_spawn_timer_timeout() -> void:
+	var e_inst = enemy.instantiate()
+	e_inst.position = spawner.get_node("spawn_point").global_position
+	group_enemy.add_child(e_inst)
