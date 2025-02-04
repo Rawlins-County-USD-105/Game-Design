@@ -5,6 +5,7 @@ class_name Weapon
 @onready var watergun: Weapon = $"."
 @onready var gun_sound: AudioStreamPlayer3D = $"gun sound"
 
+@onready var energybar: ProgressBar = $"../TextureRect/Energybar"
 
 @export var weapon_anim: AnimationPlayer
 @export var model: MeshInstance3D

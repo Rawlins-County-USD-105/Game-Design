@@ -73,7 +73,7 @@ weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
 
 [node name="RootNode" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.661505, -5.78306e-08)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.455244, 1.48093, -1.29467e-07)
 
 [node name="Shovel" parent="RootNode" index="0"]
 transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
