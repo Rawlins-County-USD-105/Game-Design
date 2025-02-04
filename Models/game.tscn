@@ -239,7 +239,7 @@ position = Vector2(105, 20)
 position = Vector2(62, 20)
 
 [node name="Button" parent="NavigationRegion3D" instance=ExtResource("15_j1hgn")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.64091, 0.749903, -3.55127)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.64091, 0.729731, -3.55127)
 
 [node name="SpawnHolder" type="Node3D" parent="."]
 

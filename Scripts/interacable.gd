@@ -3,6 +3,7 @@ class_name Interactable
 
 @export var prompt = "Interact"
 @export var prompt_input = "Interact"
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func get_prompt():
 	var key_name = ""
@@ -15,3 +16,4 @@ func get_prompt():
 	
 func interact(body):
 	print(body.name + " interacted with " + name)
+	animation_player.play("press")
