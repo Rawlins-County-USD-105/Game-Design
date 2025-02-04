@@ -3,6 +3,7 @@ extends Node3D
 class_name Weapon
 
 @onready var watergun: Weapon = $"."
+@onready var gun_sound: AudioStreamPlayer3D = $"gun sound"
 
 
 
@@ -19,6 +20,7 @@ func _process(_delta: float) -> void:
 	if watergun.visible == true:
 		if Input.is_action_pressed("Pew") and not weapon_anim.is_playing():
 			weapon_anim.play("Pew")
+			gun_sound.play()
 			instance = gun_bullet.instantiate()
 			instance.position = barrel.global_position
 			instance.transform.basis = barrel.global_transform.basis
