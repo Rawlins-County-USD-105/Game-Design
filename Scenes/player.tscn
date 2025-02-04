@@ -1,9 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=13 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://b0bbqi4anixrw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://cdlywtfvrupoq" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Script" path="res://Scripts/weapon.gd" id="4_f4kcc"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
+[ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="5_mm0ac"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -102,8 +104,13 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_2li6r")
 value = 35.0
 show_percentage = false
 
-[node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
+[node name="Watergun" type="Node3D" parent="neck/Camera" node_paths=PackedStringArray("weapon_anim", "model", "barrel") instance=ExtResource("2_blk7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
+script = ExtResource("4_f4kcc")
+weapon_anim = NodePath("AnimationPlayer")
+model = NodePath("Model")
+barrel = NodePath("RayCast")
+gun_bullet = ExtResource("5_mm0ac")
 
 [node name="Root Scene" parent="neck/Camera" instance=ExtResource("4_g8q2f")]
 transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 1.08685, -0.307195, -0.763739)
