@@ -11,7 +11,8 @@ var health = max_health
 @onready var regen_interval: Timer = $"Regen Interval"
 @onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
-
+@onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
+@onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -83,14 +84,22 @@ func _ready() -> void:
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
+	damagebar.max_value = max_health
+	damagebar.value = health
 	
 func took_damage(Damage):
+	var prev_health = health
+	
 	if Damage > health:
 		health = 0
 	else:
+		damagebar.value = health
+		damage_bar_timer.start()
 		health -= Damage
 	if health <= 0:
+		damagebar.value = 0
 		print("You Died")
+	
 	healthbar.value = health
 	regen.start()
 	
@@ -219,3 +228,7 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+
+func _on_damage_bar_timer_timeout() -> void:
+	damagebar.value = health

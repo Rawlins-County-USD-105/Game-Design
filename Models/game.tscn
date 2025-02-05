@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bh4y61debteju" path="res://Models/roadbreak.tscn" id="10_ttdqt"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
-[ext_resource type="PackedScene" uid="uid://cmc6x1q3llex6" path="res://Scenes/button.tscn" id="15_j1hgn"]
+[ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
