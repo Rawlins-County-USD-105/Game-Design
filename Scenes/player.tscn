@@ -24,10 +24,6 @@ material = SubResource("StandardMaterial3D_14v3e")
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2li6r"]
 bg_color = Color(0.776471, 0.0823529, 0.145098, 1)
 border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xckco"]
 bg_color = Color(0.0728426, 0.0728426, 0.0728426, 1)
@@ -48,10 +44,6 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i112l"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
 bg_color = Color(0.281779, 0.665975, 0.697433, 1)
@@ -135,7 +127,6 @@ value = 45.0
 show_percentage = false
 
 [node name="DamageBarTimer" type="Timer" parent="neck/Camera/TextureRect/Healthbar"]
-wait_time = 0.4
 
 [node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1

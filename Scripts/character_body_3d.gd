@@ -54,6 +54,7 @@ var sliding = false
 var old_vel = 0.0
 var fall_hurtie = 10.0
 
+var prev_health = health
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -88,12 +89,10 @@ func _ready() -> void:
 	damagebar.value = health
 	
 func took_damage(Damage):
-	var prev_health = health
 	
 	if Damage > health:
 		health = 0
 	else:
-		damagebar.value = health
 		damage_bar_timer.start()
 		health -= Damage
 	if health <= 0:
@@ -232,3 +231,4 @@ func _headbob(time) -> Vector3:
 
 func _on_damage_bar_timer_timeout() -> void:
 	damagebar.value = health
+	prev_health = health
