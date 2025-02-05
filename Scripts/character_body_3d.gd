@@ -13,7 +13,7 @@ var health = max_health
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 
 #Enemy Spawn
-@onready var spawner: Node3D = $Spawner
+@onready var spawner: Node3D = $"../../SpawnHolder"
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var enemy = preload("res://enemy/Bean.tscn")
 @onready var group_enemy = $"../../Enemys"
