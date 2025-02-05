@@ -45,7 +45,8 @@ func Hit(Damage):
 	Health -= Damage
 	if Health <= 0:
 		var Gold = 10
-		GoldGain.Gain_Gold(Gold)
+		Gain.Gain_Gold(Gold)
+		Gain.Gain_Water(Gold)
 		#Game.enemy_death()
 		queue_free()
 

@@ -9,6 +9,8 @@ var health = max_health
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
+@onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
+@onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 
 #Enemy Spawn
 @onready var spawner: Node3D = $Spawner
@@ -85,8 +87,11 @@ func Weapon_Select():
 #func _enter_tree() -> void:
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-#func _ready() -> void:
-	#camera_3d.current = is_multiplayer_authority()	
+func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()
+	healthbar.max_value = max_health
+	healthbar.value = health
+	
 func took_damage(Damage):
 	if Damage > health:
 		health = 0
@@ -94,6 +99,7 @@ func took_damage(Damage):
 		health -= Damage
 	if health <= 0:
 		print("You Died")
+	healthbar.value = health
 	regen.start()
 	
 func _unhandled_input(event: InputEvent) -> void:
@@ -120,8 +126,9 @@ func _physics_process(delta: float) -> void:
 
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
+		healthbar.value = health
 		regen_interval.start()
-
+	energybar.value = Gain.Water
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -163,6 +170,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 		if sprint && input_dir != Vector2.ZERO:
 			sliding = true
+			@warning_ignore("standalone_expression")
 			slide_timer - slide_timer_max
 			slide_vector = direction
 
