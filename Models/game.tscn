@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
-[ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/Bean.tscn" id="17_ixsld"]
+[ext_resource type="PackedScene" uid="uid://db34x4vjni4pa" path="res://enemy/chicken.tscn" id="17_ixsld"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 [ext_resource type="PackedScene" uid="uid://jcpcx0l3vp5y" path="res://Models/spaceshipbodies.tscn" id="18_xqpn6"]
 

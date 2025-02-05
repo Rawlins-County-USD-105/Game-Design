@@ -278,7 +278,7 @@ _data = {
 radius = 0.0272095
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent", "animation") groups=["Enemy"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
 top_level = true
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
