@@ -3,7 +3,6 @@ class_name Interactable
 
 @export var prompt = "Interact"
 @export var prompt_input = "Interact"
-signal interacted(body)
 
 func get_prompt():
 	var key_name = ""
@@ -15,5 +14,4 @@ func get_prompt():
 	return prompt + "\n[" + key_name + "]"
 	
 func interact(body):
-	interacted.emit(body)
-	
+	print(body.name + " interacted with " + name)

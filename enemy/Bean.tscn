@@ -275,13 +275,12 @@ _data = {
 }
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
-radius = 0.0272095
+radius = 0.01462
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
-Damage = 10
 nav_agent = NodePath("NavigationAgent3D")
 speed = 4
 

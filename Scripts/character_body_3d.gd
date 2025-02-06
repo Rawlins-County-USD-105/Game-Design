@@ -1,5 +1,5 @@
 extends CharacterBody3D
-var max_health = 400
+var max_health = 100
 var health = max_health
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
@@ -9,10 +9,14 @@ var health = max_health
 @onready var head_clearance: RayCast3D = $head_clearance
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
-@onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
-@onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
-@onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
-@onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
+#damage animation
+
+@onready var animation_player_2: AnimationPlayer = $AnimationPlayer2
+
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var timer: Timer = $Timer
+#heath Label
+@onready var label: Label = $Label
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -54,7 +58,9 @@ var sliding = false
 var old_vel = 0.0
 var fall_hurtie = 10.0
 
-var prev_health = health
+func _ready() -> void:
+	label.text = "HP   " + str(health)
+
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -81,25 +87,30 @@ func Weapon_Select():
 #func _enter_tree() -> void:
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-func _ready() -> void:
-	#camera_3d.current = is_multiplayer_authority()
-	healthbar.max_value = max_health
-	healthbar.value = health
-	damagebar.max_value = max_health
-	damagebar.value = health
-	
+#func _ready() -> void:
+	#camera_3d.current = is_multiplayer_authority()	
 func took_damage(Damage):
-	
 	if Damage > health:
 		health = 0
-	else:
-		damage_bar_timer.start()
+		
+	if health > 0:
+		
+		animation_player_2.play("Damage")
 		health -= Damage
+		label.text = "HP   " + str(health)
+		
 	if health <= 0:
-		damagebar.value = 0
+		health = 0
+		$Timer2.start()
+		print("Death Timer Start")
+		animation_player.play("DEATH")
+		label.visible = true
+		standing_collision_shape.disabled = true
+		crouching_collision_shape.disabled = true
 		print("You Died")
-	
-	healthbar.value = health
+		
+		
+		
 	regen.start()
 	
 func _unhandled_input(event: InputEvent) -> void:
@@ -123,13 +134,12 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
 	#regen
-
 	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
 		health += 5
-		healthbar.value = health
+		if health > max_health:
+			health = max_health
+		label.text = "HP   " + str(health)
 		regen_interval.start()
-	energybar.value = Gain.Water
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 		
@@ -174,7 +184,7 @@ func _physics_process(delta: float) -> void:
 			slide_vector = direction
 
 		
-	if Input.is_action_pressed("crouch") and Input.is_action_pressed("Pew"):
+	if Input.is_action_pressed("crouch"):
 		current_speed = crouching_speed
 		neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 		#slide begin
@@ -228,6 +238,8 @@ func _headbob(time) -> Vector3:
 	return pos
 
 
-func _on_damage_bar_timer_timeout() -> void:
-	damagebar.value = health
-	prev_health = health
+
+
+func _on_timer_2_timeout() -> void:
+	animation_player.stop()
+	print("STOP DEATH")
