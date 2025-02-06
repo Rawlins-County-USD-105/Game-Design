@@ -127,6 +127,8 @@ value = 45.0
 show_percentage = false
 
 [node name="DamageBarTimer" type="Timer" parent="neck/Camera/TextureRect/Healthbar"]
+wait_time = 0.6
+one_shot = true
 
 [node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
