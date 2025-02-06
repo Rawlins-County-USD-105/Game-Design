@@ -6,4 +6,4 @@ var Water = 100
 func _on_interacted(body: Variant) -> void:
 	animation_player.play("press")
 	Gain.Gain_Water(Water)
-	
+	Gain.Gain_Gold(Water)
