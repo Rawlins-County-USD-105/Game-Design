@@ -170,12 +170,11 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 		if sprint && input_dir != Vector2.ZERO:
 			sliding = true
-			@warning_ignore("standalone_expression")
 			slide_timer - slide_timer_max
 			slide_vector = direction
 
 		
-	if Input.is_action_pressed("crouch"):
+	if Input.is_action_pressed("crouch") and Input.is_action_pressed("Pew"):
 		current_speed = crouching_speed
 		neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 		#slide begin
