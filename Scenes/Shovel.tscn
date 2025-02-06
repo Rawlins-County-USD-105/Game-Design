@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://w1wambbwlgkr"]
+[gd_scene load_steps=8 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://uhaqi64gbgde" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://byrg6ikoc7lvm" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
+[ext_resource type="AudioStream" uid="uid://d56i5sqtmsc4" path="res://Melee Weapons/Shovel_Knife_Stab_Sword_Slice_source_1370676/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="3_6omnw"]
+[ext_resource type="AudioStream" uid="uid://ru17a0l07rnm" path="res://Melee Weapons/Shovel_Knife_Stab_Sword_Slice_source_1370676/Shovel_Slice_source_108827/Electron_Planet_Shovel_Slice.wav" id="4_cj4vk"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
 resource_name = "Melee"
@@ -84,3 +86,10 @@ libraries = {
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
 transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
 hit_from_inside = true
+
+[node name="shovel_slicing_enemy" type="AudioStreamPlayer3D" parent="." index="2"]
+stream = ExtResource("3_6omnw")
+volume_db = -21.362
+
+[node name="shovel_swoosh" type="AudioStreamPlayer3D" parent="." index="3"]
+stream = ExtResource("4_cj4vk")
