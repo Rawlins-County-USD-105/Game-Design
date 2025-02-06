@@ -13,9 +13,9 @@ var health = max_health
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 
 #Enemy Spawn
-@onready var spawner: Node3D = $"../../SpawnHolder"
+@onready var spawner: Node3D = $Spawner
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
-@onready var enemy = preload("res://enemy/Bean.tscn")
+@onready var enemy = preload("res://enemy/chicken.tscn")
 @onready var group_enemy = $"../../Enemys"
 var rand_spawn_time = RandomNumberGenerator.new()
 
@@ -220,6 +220,7 @@ func _physics_process(delta: float) -> void:
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 
+	#Spawn
 	spawner.rotate_y(deg_to_rad(30))
 	
 func _headbob(time) -> Vector3:
