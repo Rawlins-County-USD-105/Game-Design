@@ -10,6 +10,7 @@ var health = max_health
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
 @onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
+@onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 
 
 @export_category("Movement and shiz")
@@ -119,7 +120,7 @@ func _physics_process(delta: float) -> void:
 		health += 5
 		healthbar.value = health
 		regen_interval.start()
-
+	energybar.value = Gain.Water
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -165,7 +166,7 @@ func _physics_process(delta: float) -> void:
 			slide_vector = direction
 
 		
-	if Input.is_action_pressed("crouch"):
+	if Input.is_action_pressed("crouch") and Input.is_action_pressed("Pew"):
 		current_speed = crouching_speed
 		neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 		#slide begin

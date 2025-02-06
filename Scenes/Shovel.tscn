@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://w1wambbwlgkr"]
+[gd_scene load_steps=6 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://byrg6ikoc7lvm" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://dti6gvvqgt6ui" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
-[ext_resource type="AudioStream" uid="uid://d56i5sqtmsc4" path="res://Melee Weapons/Shovel_Knife_Stab_Sword_Slice_source_1370676/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="3_6omnw"]
-[ext_resource type="AudioStream" uid="uid://ru17a0l07rnm" path="res://Melee Weapons/Shovel_Knife_Stab_Sword_Slice_source_1370676/Shovel_Slice_source_108827/Electron_Planet_Shovel_Slice.wav" id="4_cj4vk"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
 resource_name = "Melee"
@@ -74,6 +72,9 @@ speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
 
+[node name="RootNode" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.455244, 1.48093, -1.29467e-07)
+
 [node name="Shovel" parent="RootNode" index="0"]
 transform = Transform3D(198.943, 0, 0, 0, -0.000720172, 198.943, 0, -198.943, -0.000720172, 0, 0, 0)
 
@@ -84,12 +85,8 @@ libraries = {
 }
 
 [node name="RayCast3D" type="RayCast3D" parent="." index="1"]
-transform = Transform3D(-8.74228e-08, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, -8.74228e-08, 3.82137e-15, 0, 0, 1.5)
+transform = Transform3D(-1.04907e-06, -2, 1.04907e-06, 0, -8.74228e-08, -24, 24, -8.74228e-08, 4.58565e-14, 0, 0, 1.5)
+target_position = Vector3(0, -2, 0)
+collision_mask = 2
 hit_from_inside = true
-
-[node name="shovel_slicing_enemy" type="AudioStreamPlayer3D" parent="." index="2"]
-stream = ExtResource("3_6omnw")
-volume_db = -21.362
-
-[node name="shovel_swoosh" type="AudioStreamPlayer3D" parent="." index="3"]
-stream = ExtResource("4_cj4vk")
+collide_with_areas = true
