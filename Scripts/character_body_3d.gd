@@ -11,15 +11,8 @@ var health = max_health
 @onready var regen_interval: Timer = $"Regen Interval"
 @onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
-
-#Enemy Spawn
-@onready var spawner: Node3D = $Spawner
-@onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
-@onready var enemy = preload("res://enemy/chicken.tscn")
-@onready var group_enemy = $"../../Enemys"
-var rand_spawn_time = RandomNumberGenerator.new()
-
-
+@onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
+@onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -61,6 +54,7 @@ var sliding = false
 var old_vel = 0.0
 var fall_hurtie = 10.0
 
+var prev_health = health
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -91,14 +85,20 @@ func _ready() -> void:
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
+	damagebar.max_value = max_health
+	damagebar.value = health
 	
 func took_damage(Damage):
+	
 	if Damage > health:
 		health = 0
 	else:
+		damage_bar_timer.start()
 		health -= Damage
 	if health <= 0:
+		damagebar.value = 0
 		print("You Died")
+	
 	healthbar.value = health
 	regen.start()
 	
@@ -220,9 +220,6 @@ func _physics_process(delta: float) -> void:
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 
-	#Spawn
-	spawner.rotate_y(deg_to_rad(30))
-	
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
@@ -230,8 +227,7 @@ func _headbob(time) -> Vector3:
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
 
-func _on_spawn_timer_timeout() -> void:
-	var e_inst = enemy.instantiate()
-	e_inst.player = self
-	e_inst.position = spawn_point.global_position
-	group_enemy.add_child(e_inst)
+
+func _on_damage_bar_timer_timeout() -> void:
+	damagebar.value = health
+	prev_health = health

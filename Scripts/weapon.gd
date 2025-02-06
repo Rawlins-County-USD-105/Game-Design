@@ -29,6 +29,6 @@ func _process(_delta: float) -> void:
 				instance.position = barrel.global_position
 				instance.transform.basis = barrel.global_transform.basis
 				get_parent().add_child(instance)
-
+				gun_sound.play()
 	else:
 		pass
