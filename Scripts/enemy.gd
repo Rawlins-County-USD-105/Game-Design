@@ -10,17 +10,15 @@ var player = self
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
 @export var speed : int
+@export var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-
-
-var Health = 20.0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
-#func _ready():
-	#player = get_node(player_path)
+func _ready():
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -37,8 +35,6 @@ func _process(_delta):
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
 	look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
-	if not animation_player.is_playing():
-		animation_player.play("Chicken_Run")
 	
 	move_and_slide()
 func Hit(Damage):
