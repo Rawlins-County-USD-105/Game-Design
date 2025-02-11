@@ -1,12 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=15 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://c7avhievpvmrv" path="res://LET’S GET RICH.png" id="2_re1aa"]
-[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://dyuudrx0wrplb" path="res://enemy/LET’S GET RICH (1).png" id="4_8uwe7"]
+[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="FontFile" uid="uid://bcek4t2dfc37d" path="res://Main Menu/Assets/Fonts/Londrina_Sketch/LondrinaSketch-Regular.ttf" id="7_f4y1f"]
+[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -21,223 +19,34 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dgk81"]
 material = SubResource("StandardMaterial3D_14v3e")
 
-[sub_resource type="Animation" id="Animation_qatge"]
-resource_name = "DEATH"
-length = 1.9
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("neck/Camera/TextureRect2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("neck/Camera/TextureRect2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("neck/Camera/TextureRect/Let’sGetRich(1):visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 1,
-"values": []
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("neck/Camera/TextureRect/Let’sGetRich(1):modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(1, 1.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("crouching_collision_shape:disabled")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("standing_collision_shape:disabled")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x04fm"]
 
-[sub_resource type="Animation" id="Animation_d1oo8"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("neck/Camera/TextureRect2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("neck/Camera/TextureRect2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("neck/Camera/TextureRect/Let’sGetRich(1):visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("neck/Camera/TextureRect/Let’sGetRich(1):modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = false
-tracks/4/path = NodePath("crouching_collision_shape:disabled")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = false
-tracks/5/path = NodePath("standing_collision_shape:disabled")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2li6r"]
+bg_color = Color(0.776471, 0.0823529, 0.145098, 1)
+border_color = Color(0, 0, 0, 1)
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_skois"]
-_data = {
-"DEATH": SubResource("Animation_qatge"),
-"RESET": SubResource("Animation_d1oo8")
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xckco"]
+bg_color = Color(0.0728426, 0.0728426, 0.0728426, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
 
-[sub_resource type="Animation" id="Animation_ordp5"]
-resource_name = "Damage"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../neck/Camera/TextureRect2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../neck/Camera/TextureRect2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i112l"]
+bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="Animation" id="Animation_5ktx1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = false
-tracks/0/path = NodePath("../neck/Camera/TextureRect2:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = false
-tracks/1/path = NodePath("../neck/Camera/TextureRect2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_nfmqi"]
-_data = {
-"Damage": SubResource("Animation_ordp5"),
-"RESET": SubResource("Animation_5ktx1")
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
+bg_color = Color(0.281779, 0.665975, 0.697433, 1)
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
@@ -252,7 +61,6 @@ disabled = true
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="." groups=["Player"]]
 shape = SubResource("CapsuleShape3D_x68qc")
-disabled = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="standing_collision_shape"]
 mesh = SubResource("CapsuleMesh_dgk81")
@@ -263,49 +71,90 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 [node name="Camera" type="Camera3D" parent="neck"]
 current = true
 
-[node name="TextureRect2" type="TextureRect" parent="neck/Camera"]
-visible = false
-modulate = Color(1, 1, 1, 0)
-visibility_layer = 2
-clip_contents = true
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_re1aa")
-expand_mode = 2
-
 [node name="TextureRect" type="TextureRect" parent="neck/Camera"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -119.0
-offset_top = -101.0
-offset_right = 131.0
-offset_bottom = 149.0
+offset_left = -125.0
+offset_top = -125.0
+offset_right = 125.0
+offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
-position = Vector2(135, 121)
+position = Vector2(125, 129)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_35suu")
 
-[node name="Let’sGetRich(1)" type="Sprite2D" parent="neck/Camera/TextureRect"]
-modulate = Color(1, 1, 1, 0)
-position = Vector2(121, 102)
-scale = Vector2(0.696296, 0.696296)
-texture = ExtResource("4_8uwe7")
+[node name="Healthbar" type="ProgressBar" parent="neck/Camera/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -558.0
+offset_top = 280.0
+offset_right = -213.0
+offset_bottom = 307.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxEmpty_x04fm")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2li6r")
+value = 35.0
+show_percentage = false
+
+[node name="Damagebar" type="ProgressBar" parent="neck/Camera/TextureRect/Healthbar"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.5
+offset_top = -13.5
+offset_right = 172.5
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
+theme_override_styles/fill = SubResource("StyleBoxFlat_i112l")
+value = 45.0
+show_percentage = false
+
+[node name="DamageBarTimer" type="Timer" parent="neck/Camera/TextureRect/Healthbar"]
+wait_time = 0.6
+one_shot = true
+
+[node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -558.0
+offset_top = 245.0
+offset_right = -213.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
+theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
+value = 35.0
+show_percentage = false
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
-transform = Transform3D(0.999989, 0.00467605, -0.00104563, -0.00467265, 0.999983, 0.00322727, 0.00106074, -0.00322234, 0.999994, 0.220927, -0.250234, -0.306297)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
 
 [node name="Root Scene" parent="neck/Camera" instance=ExtResource("4_g8q2f")]
-transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 1.08685, -0.307195, -0.763739)
-visible = false
+transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 0.751554, 0.0359479, -0.502501)
+
+[node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
@@ -320,29 +169,4 @@ one_shot = true
 wait_time = 15.0
 one_shot = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_skois")
-}
-
-[node name="Timer" type="Timer" parent="."]
-
-[node name="Label" type="Label" parent="."]
-offset_left = 10.0
-offset_top = 13.0
-offset_right = 238.0
-offset_bottom = 82.0
-theme_override_fonts/font = ExtResource("7_f4y1f")
-theme_override_font_sizes/font_size = 50
-
-[node name="Timer2" type="Timer" parent="."]
-wait_time = 5.0
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-root_node = NodePath("../AnimationPlayer")
-libraries = {
-"": SubResource("AnimationLibrary_nfmqi")
-}
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]

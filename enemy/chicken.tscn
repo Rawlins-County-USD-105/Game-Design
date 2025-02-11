@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://hdhrwjt0dm1q"]
+[gd_scene load_steps=10 format=4 uid="uid://ccexpy6hlaehv"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wp8om"]
 
@@ -275,10 +275,11 @@ _data = {
 }
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
-radius = 0.0272095
+radius = 0.0256414
 
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy", "Small Enemy"]]
+collision_layer = 3
+floor_max_angle = 1.39626
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
 Damage = 10
@@ -286,6 +287,7 @@ nav_agent = NodePath("NavigationAgent3D")
 speed = 4
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = 0.5
 path_max_distance = 10.01
 
 [node name="RayCast3D" type="RayCast3D" parent="." groups=["Enemy"]]
@@ -295,16 +297,16 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.4
 one_shot = true
 
 [node name="Armature_006" type="Node3D" parent="."]
-transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, -0.01, 0, 0.01, -4.37114e-10, 0, 0.0139048, 0)
+transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, -0.01, 0, 0.01, -4.37114e-10, 0, 0, 0)
 
 [node name="Chicken_006" type="MeshInstance3D" parent="Armature_006"]
-transform = Transform3D(10, 0, 0, 0, 10, -8.52651e-14, 0, 8.52651e-14, 10, 0, -1.50397e-07, -3.44068)
+transform = Transform3D(10, 0, 0, 0, 10, -8.52651e-14, 0, 8.52651e-14, 10, 0, 0, 0)
 mesh = SubResource("ArrayMesh_s1lna")
 skin = SubResource("Skin_trima")
 skeleton = NodePath("../Skeleton3D")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Armature_006"]
-transform = Transform3D(10, 0, 0, 0, 10, -2.84217e-14, 0, 2.84217e-14, 10, 0, -1.50397e-07, -3.44068)
+transform = Transform3D(10, 0, 0, 0, 10, -2.84217e-14, 0, 2.84217e-14, 10, 0, 0, 0)
 bones/0/name = "CATRigPelvis"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, -1, -2.53342e-08, 0.677349, -2.90266)
@@ -394,7 +396,7 @@ bones/12/parent = 11
 bones/12/rest = Transform3D(1, -5.42666e-08, 5.95134e-07, 1.11804e-07, 0.995274, -0.0971105, -5.87051e-07, 0.0971105, 0.995274, -3.17087e-10, -4.32134e-07, 0.54494)
 bones/12/enabled = true
 bones/12/position = Vector3(-3.17087e-10, -4.32134e-07, 0.54494)
-bones/12/rotation = Quaternion(0.0592189, -0.000109171, 0.00258762, 0.998242)
+bones/12/rotation = Quaternion(0.059219, -0.000109171, 0.00258762, 0.998242)
 bones/12/scale = Vector3(1, 1, 1)
 bones/13/name = "CATRigSpine3"
 bones/13/parent = 12
