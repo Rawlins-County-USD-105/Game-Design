@@ -8,7 +8,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	move(delta)
-	animation.play("Chicken_Run")
+	if not animation.is_playing():
+		animation.play("Chicken_Run")
 
 	
 	
