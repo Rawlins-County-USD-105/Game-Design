@@ -291,7 +291,7 @@ speed = 4
 Health = 20
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-path_height_offset = -1.0
+path_height_offset = 0.5
 path_max_distance = 10.01
 
 [node name="RayCast3D" type="RayCast3D" parent="." groups=["Enemy"]]

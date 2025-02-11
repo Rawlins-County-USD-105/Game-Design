@@ -21,7 +21,7 @@ func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func move(_delta):
 	velocity = Vector3.ZERO
 	if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
 		damage_ray.get_collider().took_damage(Damage)
