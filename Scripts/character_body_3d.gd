@@ -24,6 +24,13 @@ var health = max_health
 @onready var Shovel = $"neck/Camera/Root Scene" 
 var current_weapopn = 1
 
+#Spawning
+@onready var spawner = $Spawner
+@onready var spawn_point = $"Spawner/Spawn Point"
+@onready var group_enemy = $"../../Enemies"
+@onready var enemy = preload("res://enemy/chicken.tscn")
+var rand_spawn_time = RandomNumberGenerator.new()
+
 #speed
 var current_speed = 5.0
 var SPEED = 5.0
@@ -219,6 +226,9 @@ func _physics_process(delta: float) -> void:
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
+	
+	#spawning
+	spawner.rotate_y(deg_to_rad(30))
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
@@ -231,3 +241,11 @@ func _headbob(time) -> Vector3:
 func _on_damage_bar_timer_timeout() -> void:
 	damagebar.value = health
 	prev_health = health
+
+
+func _on_spawn_timer_timeout() -> void:
+	rand_spawn_time.randomize()
+	spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
+	var e_inst = enemy.instantiate()
+	e_inst.position = spawner.get_node("spawn_point").global_position
+	group_enemy.add_child(e_inst)

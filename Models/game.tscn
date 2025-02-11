@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=24 format=3 uid="uid://di4xi2t85jxvc"]
 
 [ext_resource type="Texture2D" uid="uid://c5khf4tmxd3mi" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
+[ext_resource type="PackedScene" uid="uid://ccexpy6hlaehv" path="res://enemy/chicken.tscn" id="16_87ri5"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
@@ -241,34 +242,12 @@ position = Vector2(62, 20)
 [node name="Button" parent="NavigationRegion3D" instance=ExtResource("15_j1hgn")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.64091, 0.729731, -3.55127)
 
-[node name="SpawnHolder" type="Node3D" parent="."]
+[node name="Enemies" type="Node3D" parent="."]
 
-[node name="Spawner1" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25.7419)
+[node name="CharacterBody3D" parent="Enemies" instance=ExtResource("16_87ri5")]
 
-[node name="Spawner2" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4979, 0, 31.4531)
+[node name="CharacterBody3D2" parent="Enemies" instance=ExtResource("16_87ri5")]
 
-[node name="Spawner3" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.553, 0, 15.6464)
+[node name="CharacterBody3D3" parent="Enemies" instance=ExtResource("16_87ri5")]
 
-[node name="Spawner4" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.8139, 0, -2.6954)
-
-[node name="Spawner5" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7713, 0, -1.87866)
-
-[node name="Spawner6" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.677, 0, -27.1995)
-
-[node name="Spawner7" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8353, 0, -16.9283)
-
-[node name="Spawner8" type="Node3D" parent="SpawnHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.40712, 0, -18.9325)
-
-[node name="WaveTimer" type="Timer" parent="."]
-one_shot = true
-autostart = true
-
-[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
+[node name="CharacterBody3D4" parent="Enemies" instance=ExtResource("16_87ri5")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://db34x4vjni4pa"]
+[gd_scene load_steps=10 format=4 uid="uid://ccexpy6hlaehv"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wp8om"]
 
@@ -277,7 +277,8 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
 radius = 0.0256414
 
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy", "Small Enemy"]]
+[node name="CharacterBody3D2" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy", "Small Enemy"]]
+top_level = true
 collision_layer = 3
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
