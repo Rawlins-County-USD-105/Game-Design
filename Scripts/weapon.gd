@@ -12,7 +12,7 @@ class_name Weapon
 @export var barrel: RayCast3D
 @export var gun_bullet: PackedScene
 var instance
-var Water_Cost = 10
+var Water_Cost = 5
 func _ready() -> void:
 	pass
 

@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://ctvcl7kcff3xy"]
+[gd_scene load_steps=10 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://dy6askr35ikvj" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
-[ext_resource type="Texture2D" uid="uid://cwdj3vbiyq0vq" path="res://RAWLINS COUNTY (3).png" id="4_ks3xj"]
+[ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
@@ -179,7 +178,6 @@ flat = true
 [node name="RawlinsCounty(3)" type="Sprite2D" parent="."]
 position = Vector2(1023, 41)
 scale = Vector2(0.294753, 0.294753)
-texture = ExtResource("4_ks3xj")
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]

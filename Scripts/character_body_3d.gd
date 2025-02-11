@@ -76,6 +76,7 @@ func Weapon_Select():
 	#else:
 	#	Weapon3.visible = false
 
+@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 
 #func _enter_tree() -> void:
@@ -95,6 +96,8 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
+		animation_player.play("Damage Red")
+		
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
