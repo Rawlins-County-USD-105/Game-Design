@@ -10,7 +10,9 @@ var health = max_health
 @onready var regen: Timer = $Regen
 @onready var regen_interval: Timer = $"Regen Interval"
 @onready var healthbar: ProgressBar = $neck/Camera/TextureRect/Healthbar
-
+@onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
+@onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
+@onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -52,6 +54,7 @@ var sliding = false
 var old_vel = 0.0
 var fall_hurtie = 10.0
 
+var prev_health = health
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -82,14 +85,20 @@ func _ready() -> void:
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
+	damagebar.max_value = max_health
+	damagebar.value = health
 	
 func took_damage(Damage):
+	
 	if Damage > health:
 		health = 0
 	else:
+		damage_bar_timer.start()
 		health -= Damage
 	if health <= 0:
+		damagebar.value = 0
 		print("You Died")
+	
 	healthbar.value = health
 	regen.start()
 	
@@ -103,7 +112,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			if event is InputEventMouseMotion:
 				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
-				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
@@ -119,7 +128,7 @@ func _physics_process(delta: float) -> void:
 		health += 5
 		healthbar.value = health
 		regen_interval.start()
-
+	energybar.value = Gain.Water
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -217,3 +226,8 @@ func _headbob(time) -> Vector3:
 	
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
 	return pos
+
+
+func _on_damage_bar_timer_timeout() -> void:
+	damagebar.value = health
+	prev_health = health
