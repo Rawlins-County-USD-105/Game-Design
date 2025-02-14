@@ -8,6 +8,10 @@ class_name melee
 @export var weapon_anim: AnimationPlayer
 @export var model: MeshInstance3D
 @onready var ray: RayCast3D = $RayCast3D
+@onready var shovel_swoosh: AudioStreamPlayer3D = $shovel_swoosh
+@onready var shovel_slice: AudioStreamPlayer3D = $shovel_swoosh/shovel_slice
+
+
 
 
 
@@ -21,8 +25,8 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_pressed("Pew") and not weapon_anim.is_playing() and root_scene.visible == true:
 		weapon_anim.play("Melee")
-		
+		shovel_swoosh.play()
 		if ray.get_collider():
 			if ray.get_collider().is_in_group("Enemy"):
 				ray.get_collider().Hit(Damage)
-				
+				shovel_slice.play()
