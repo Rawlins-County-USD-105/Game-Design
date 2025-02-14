@@ -18,9 +18,11 @@ extends Node3D
 @onready var dead_enemies=0
 @onready var player: CharacterBody3D = $NavigationRegion3D/player
 @onready var spawn_holder: Node3D = $SpawnHolder
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready():
 	add_to_group("level")
+
 
 func enemy_death():
 	print("enemy death")

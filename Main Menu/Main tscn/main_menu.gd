@@ -1,5 +1,7 @@
 extends Control
 @onready var settings: Button = $MarginContainer/HBoxContainer/VBoxContainer/Settings
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var timer: Timer = $AnimationPlayer/Timer
 
 
 
@@ -12,8 +14,12 @@ extends Control
 ## 2 Singleplayer starts the game for single
 
 func _on_button_3_pressed() -> void:
+	animation_player.play("Single Player Mode")
+	timer.start()
+	
+	
+func _on_timer_timeout() -> void:
 	get_tree().change_scene_to_file("res://Models/game.tscn")
-
 
 
 
