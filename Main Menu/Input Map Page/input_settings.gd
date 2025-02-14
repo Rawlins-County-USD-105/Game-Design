@@ -80,7 +80,7 @@ func _input(event):
 			
 			
 func _update_action_list(button, event):
-	
+	#make this scene do the change scene animations when you click the x on the screen.
 	button.find_child("LabelInput").text = event.as_text().trim_suffix(" (Physical)")
 	
 	
