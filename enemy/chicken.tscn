@@ -286,10 +286,7 @@ script = ExtResource("1_p278j")
 Damage = 10
 mesh = NodePath("Armature_006/Chicken_006")
 hitbox = NodePath("CollisionShape3D")
-mesh = NodePath("Armature_006/Chicken_006")
-hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
-animation = NodePath("AnimationPlayer")
 animation = NodePath("AnimationPlayer")
 speed = 4
 Health = 20
@@ -300,6 +297,7 @@ path_max_distance = 10.01
 
 [node name="RayCast3D" type="RayCast3D" parent="." groups=["Enemy"]]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.470241, 0.27583)
+hit_back_faces = false
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
