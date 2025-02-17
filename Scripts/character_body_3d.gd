@@ -120,7 +120,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			if event is InputEventMouseMotion:
 				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
-				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	#if is_multiplayer_authority():
@@ -182,7 +182,7 @@ func _physics_process(delta: float) -> void:
 			slide_vector = direction
 
 		
-	if Input.is_action_pressed("crouch") and Input.is_action_pressed("Pew"):
+	if Input.is_action_pressed("crouch"):
 		current_speed = crouching_speed
 		neck.position.y = lerp(neck.position.y, 0.5 + crouching_depth, delta * lerp_speed)
 		#slide begin

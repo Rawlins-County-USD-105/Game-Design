@@ -13,5 +13,7 @@ func _process(delta: float) -> void:
 			
 			if Input.is_action_just_pressed(collider.prompt_input):
 				collider.interact(owner)
+		else:
+			prompt.text = ""
 	else:
 		prompt.text = ""
