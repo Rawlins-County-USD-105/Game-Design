@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctvcl7kcff3xy"]
+[gd_scene load_steps=13 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
 [ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_ov7jo"]
@@ -20,23 +20,8 @@ font_names = PackedStringArray("Impact")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_02uek"]
 
-[sub_resource type="Animation" id="Animation_uuddd"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/UntitledDesign(24):position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1276, 331)]
-}
-
-[sub_resource type="Animation" id="Animation_cr88e"]
-resource_name = "Single Player Mode"
+[sub_resource type="Animation" id="Animation_210v3"]
+resource_name = "End enimation"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -48,13 +33,12 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-1276, 331), Vector2(593, 331)]
+"values": [Vector2(593, 331), Vector2(2462, 331)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_puhxn"]
 _data = {
-"RESET": SubResource("Animation_uuddd"),
-"Single Player Mode": SubResource("Animation_cr88e")
+"End enimation": SubResource("Animation_210v3")
 }
 
 [node name="Main_Menu" type="Control"]
@@ -221,9 +205,10 @@ scale = Vector2(0.294753, 0.294753)
 libraries = {
 "": SubResource("AnimationLibrary_puhxn")
 }
+autoplay = "End enimation"
 
 [node name="UntitledDesign(24)" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(-1276, 331)
+position = Vector2(1458, 1107)
 scale = Vector2(0.429148, 0.240296)
 texture = ExtResource("3_n72tn")
 
