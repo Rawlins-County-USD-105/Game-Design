@@ -277,13 +277,16 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
 radius = 0.0256414
 
-[node name="CharacterBody3D2" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy", "Small Enemy"]]
+[node name="CharacterBody3D2" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent", "animation") groups=["Enemy", "Small Enemy"]]
 top_level = true
 collision_layer = 3
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
 Damage = 10
+mesh = NodePath("Armature_006/Chicken_006")
+hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
+animation = NodePath("AnimationPlayer")
 speed = 4
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

@@ -1,6 +1,7 @@
 extends CharacterBody3D
 var max_health = 400
 var health = max_health
+var player = self
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
@@ -244,8 +245,8 @@ func _on_damage_bar_timer_timeout() -> void:
 
 
 func _on_spawn_timer_timeout() -> void:
-	rand_spawn_time.randomize()
-	spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
+	
 	var e_inst = enemy.instantiate()
-	e_inst.position = spawner.get_node("spawn_point").global_position
+	e_inst.player = self
+	e_inst.position = spawner.get_node("Spawn Point").global_position
 	group_enemy.add_child(e_inst)
