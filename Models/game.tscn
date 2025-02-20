@@ -104,6 +104,13 @@ position = Vector2(182.75, 585.238)
 scale = Vector2(0.197526, 0.158091)
 texture = ExtResource("2_bprh8")
 
+[node name="UntitledDesign(28)2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.470588)
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(1152, 308)
+scale = Vector2(0.0727213, 0.221175)
+texture = ExtResource("2_bprh8")
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_7wjwl")
 
