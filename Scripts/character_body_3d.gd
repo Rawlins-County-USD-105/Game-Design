@@ -140,6 +140,10 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	if self.position.y < -50:
+		self.position.x = 0
+		self.position.y = 0
+		self.position.z = 0
 		
 		
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

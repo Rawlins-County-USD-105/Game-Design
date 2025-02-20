@@ -1,6 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://6ggncveenke8"]
-
-[ext_resource type="Script" path="res://Scripts/shop_button.gd" id="1_q74kk"]
+[gd_scene load_steps=8 format=3 uid="uid://6ggncveenke8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdhpv"]
 albedo_color = Color(0.686275, 0.0705882, 0.0823529, 1)
@@ -55,7 +53,6 @@ _data = {
 }
 
 [node name="Shop_button" type="StaticBody3D"]
-script = ExtResource("1_q74kk")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -73,5 +70,3 @@ shape = SubResource("BoxShape3D_vcvxo")
 libraries = {
 "": SubResource("AnimationLibrary_nd0kf")
 }
-
-[connection signal="interacted" from="." to="." method="_on_interacted"]
