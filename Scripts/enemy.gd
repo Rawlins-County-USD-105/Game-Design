@@ -46,6 +46,7 @@ func Hit(Damage):
 		var Gold = 10
 		Gain.Gain_Gold(Gold)
 		Gain.Gain_Water(Gold)
+		Game.enemies_spawned -= 1
 		#Game.enemy_death()
 		queue_free()
 
