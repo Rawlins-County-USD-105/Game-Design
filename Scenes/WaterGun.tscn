@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/weapon.gd" id="1_rb3ql"]
 [ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_jhtbm"]
 [ext_resource type="ArrayMesh" uid="uid://elwqq3qf5lqf" path="res://Watergun/model.obj" id="3_8gyao"]
-[ext_resource type="AudioStream" uid="uid://dkbeghfptsc6g" path="res://Scenes/Laser_source_51001/Laser 2.wav" id="4_hrv30"]
+[ext_resource type="AudioStream" uid="uid://dkbeghfptsc6g" path="res://Sounds/Laser_source_51001/Laser 2.wav" id="4_hrv30"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
