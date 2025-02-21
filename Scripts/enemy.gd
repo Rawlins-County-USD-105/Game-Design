@@ -23,11 +23,14 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func move(_delta):
 	velocity = Vector3.ZERO
-	if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
-		damage_ray.get_collider().took_damage(Damage)
-		timer.start()
-	else:
+	if damage_ray.get_collider() == null:
 		pass
+	else:
+		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
+			damage_ray.get_collider().took_damage(Damage)
+			timer.start()
+		else:
+			pass
 		
 	
 	# Navigation
