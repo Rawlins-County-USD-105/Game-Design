@@ -176,7 +176,6 @@ one_shot = true
 [node name="Spawner" type="Node3D" parent="."]
 
 [node name="Spawn Timer" type="Timer" parent="Spawner"]
-wait_time = 5.0
 autostart = true
 
 [node name="Spawn Point" type="Marker3D" parent="Spawner"]

@@ -265,4 +265,3 @@ func _on_spawn_timer_timeout() -> void:
 	#e_inst.player = self
 	#e_inst.position = spawner.get_node("Spawn Point").global_position
 	#group_enemy.add_child(e_inst)
-
