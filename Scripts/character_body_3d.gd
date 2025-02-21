@@ -250,7 +250,7 @@ func _on_damage_bar_timer_timeout() -> void:
 
 
 func _on_spawn_timer_timeout() -> void:
-	
+	spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
 	var e_inst = enemy.instantiate()
 	e_inst.player = self
 	e_inst.position = spawner.get_node("Spawn Point").global_position
