@@ -19,6 +19,9 @@ var health = max_health
 @export var sprint = 4
 @export var jump_sprint = 15
 
+#Popup menu
+@onready var button: Button = $"../../PopupMenu/Button"
+
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
 @onready var Shovel = $"neck/Camera/Root Scene" 
@@ -43,7 +46,7 @@ const FOV_CHANGE = 1.5
 var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
-#SLiding
+#Sliding
 var slide_timer = 1.0
 var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
@@ -107,12 +110,12 @@ func took_damage(Damage):
 	
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
-		if event is InputEventMouseButton:
+		if event is InputEventMouseButton && not is_in_group("UI"):
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		elif event.is_action_pressed("ui_cancel"):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			if event is InputEventMouseMotion:
+		if Input.mouse_mode  == Input.MOUSE_MODE_CAPTURED:
+			if event is InputEventMouseMotion :
 				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
@@ -234,3 +237,7 @@ func _headbob(time) -> Vector3:
 func _on_damage_bar_timer_timeout() -> void:
 	damagebar.value = health
 	prev_health = health
+	
+	
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")

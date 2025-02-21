@@ -94,21 +94,14 @@ _data = {
 "RESET": SubResource("Animation_oc728")
 }
 
-[node name="Game" type="Node3D"]
+[node name="Game" type="Node3D" groups=["game"]]
 script = ExtResource("1_qvolv")
 
 [node name="UntitledDesign(28)" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.470588)
 self_modulate = Color(0, 0, 0, 1)
-position = Vector2(182.75, 585.238)
-scale = Vector2(0.197526, 0.158091)
-texture = ExtResource("2_bprh8")
-
-[node name="UntitledDesign(28)2" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.470588)
-self_modulate = Color(0, 0, 0, 1)
-position = Vector2(1152, 308)
-scale = Vector2(0.0727213, 0.221175)
+position = Vector2(182.75, 623.988)
+scale = Vector2(0.197526, 0.122211)
 texture = ExtResource("2_bprh8")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -277,19 +270,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.07465, 0.0208297, 0.033992
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
 
 [node name="Iteam Slot" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(37, 537)
+position = Vector2(818, 37)
 
 [node name="Iteam Slot2" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(344, 537)
+position = Vector2(1125, 37)
 
 [node name="Iteam Slot3" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(267, 537)
+position = Vector2(1048, 37)
 
 [node name="Iteam Slot4" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(187, 537)
+position = Vector2(968, 37)
 
 [node name="Iteam Slot5" parent="NavigationRegion3D/player" instance=ExtResource("16_57gks")]
-position = Vector2(113, 537)
+position = Vector2(894, 37)
 
 [node name="Button" parent="NavigationRegion3D" instance=ExtResource("15_j1hgn")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.64091, 0.729731, -3.55127)

@@ -145,6 +145,7 @@ offset_right = 125.0
 offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
 position = Vector2(125, 129)
@@ -167,6 +168,7 @@ grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxEmpty_x04fm")
 theme_override_styles/fill = SubResource("StyleBoxFlat_2li6r")
 value = 35.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Damagebar" type="ProgressBar" parent="neck/Camera/TextureRect/Healthbar"]
 z_index = -1
@@ -186,6 +188,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_i112l")
 value = 45.0
 show_percentage = false
+metadata/_edit_use_anchors_ = true
 
 [node name="DamageBarTimer" type="Timer" parent="neck/Camera/TextureRect/Healthbar"]
 wait_time = 0.6
@@ -217,6 +220,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
+metadata/_edit_use_anchors_ = true
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
@@ -225,6 +229,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297
 transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 0.751554, 0.0359479, -0.502501)
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
+
+[node name="PopupMenu" type="PopupMenu" parent="neck/Camera"]
+auto_translate_mode = 1
+initial_position = 1
+visible = true
+unfocusable = true
+
+[node name="Button" type="Button" parent="neck/Camera/PopupMenu" groups=["UI"]]
+light_mask = 31
+visibility_layer = 31
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Settings"
+flat = true
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
