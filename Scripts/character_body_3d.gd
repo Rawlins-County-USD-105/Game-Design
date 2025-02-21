@@ -250,8 +250,12 @@ func _on_damage_bar_timer_timeout() -> void:
 
 
 func _on_spawn_timer_timeout() -> void:
-	
-	var e_inst = enemy.instantiate()
-	e_inst.player = self
-	e_inst.position = spawner.get_node("Spawn Point").global_position
-	group_enemy.add_child(e_inst)
+	if Game.enemies_spawned < 5 && Game.total_enemies < 30:
+		Game.enemies_spawned += 1
+		Game.total_enemies += 1
+		var e_inst = enemy.instantiate()
+		e_inst.player = self
+		e_inst.position = spawner.get_node("Spawn Point").global_position
+		group_enemy.add_child(e_inst)
+	else:
+		pass
