@@ -4960,7 +4960,6 @@ bones/64/scale = Vector3(1, 1, 1)
 
 [node name="vanguard_Mesh" type="MeshInstance3D" parent="characteranimated/Armature/Skeleton3D"]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
-visibility_range_begin = 0.5
 mesh = SubResource("ArrayMesh_t27ow")
 skin = SubResource("Skin_v75wh")
 
