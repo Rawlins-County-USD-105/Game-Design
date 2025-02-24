@@ -15,6 +15,9 @@ var player = self
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 
+#animations
+@onready var player_moveset: AnimationPlayer = $standing_collision_shape/CharacterBody3D/characteranimated/AnimationPlayer
+
 @export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 4
@@ -123,6 +126,10 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
+	
+	if Input.is_action_pressed("forward"):
+		player_moveset.play("Jog")
+	
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
