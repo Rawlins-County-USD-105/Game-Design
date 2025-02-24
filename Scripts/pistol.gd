@@ -1,6 +1,6 @@
 extends Weapon
 
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var pistol_anim: AnimationPlayer = $pistol_anim
 
 func _process(delta: float) -> void:
-	gun(self, animation_player, "Pew")
+	gun(self, pistol_anim, "fire")
