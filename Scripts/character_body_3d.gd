@@ -24,8 +24,8 @@ var player = self
 @export var jump_sprint = 15
 
 #Weapons
-@onready var Watergun = $neck/Camera/Watergun
-@onready var Shovel = $"neck/Camera/Root Scene" 
+@onready var Watergun = $Watergun
+@onready var Shovel = $"Root Scene"
 var current_weapopn = 1
 
 #Spawning
@@ -126,15 +126,21 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
-	
-	if Input.is_action_pressed("forward") && not player_moveset.is_playing():
+	if not player_moveset.is_playing():
+		player_moveset.play("idle")
+	elif Input.is_action_pressed("forward"):
 		player_moveset.play("jog")
+		#if not Input.is_action_pressed("forward"):
+			#player_moveset.stop()
+	elif Input.is_action_pressed("forward") && Input.is_action_pressed("sprint"):
+		player_moveset.play("sprint")
 	
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
+		player_moveset.play("jump")
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
 	#regen
@@ -175,6 +181,7 @@ func _physics_process(delta: float) -> void:
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
  
 			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
+				player_moveset.play("jump")
 				velocity.y = JUMP_VELOCITY
 		else:
 			if Input.is_action_pressed("crouch") || sliding:
@@ -224,7 +231,7 @@ func _physics_process(delta: float) -> void:
 			slide_timer = 1.0
 
 	t_bob += delta * velocity.length() * float(is_on_floor())
-	camera_3d.transform.origin = _headbob(t_bob)
+	#camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
 	
 	#fall damage
