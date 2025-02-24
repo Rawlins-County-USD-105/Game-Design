@@ -20,6 +20,10 @@ extends Node3D
 @onready var spawn_holder: Node3D = $SpawnHolder
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+#popup menu
+@onready var button: Button = $PopupMenu/Button
+
+
 func _ready():
 	add_to_group("level")
 
@@ -75,5 +79,8 @@ func _on_wave_timer_timeout():
 	current_level+=1
 	update_level(current_level)
 	get_tree().call_group("level", "enemy_death")
+	
+	
+
 	
 	

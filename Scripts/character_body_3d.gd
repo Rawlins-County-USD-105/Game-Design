@@ -19,8 +19,7 @@ var health = max_health
 @export var sprint = 4
 @export var jump_sprint = 15
 
-#Popup menu
-@onready var button: Button = $"../../PopupMenu/Button"
+
 
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
@@ -110,7 +109,7 @@ func took_damage(Damage):
 	
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
-		if event is InputEventMouseButton && not is_in_group("UI"):
+		if Input.is_action_just_pressed("lock mouse"):
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		elif event.is_action_pressed("ui_cancel"):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -239,5 +238,5 @@ func _on_damage_bar_timer_timeout() -> void:
 	prev_health = health
 	
 	
-func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
+
+	

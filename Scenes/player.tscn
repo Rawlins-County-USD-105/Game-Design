@@ -134,6 +134,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 current = true
 
 [node name="TextureRect" type="TextureRect" parent="neck/Camera"]
+light_mask = 0
+z_index = -5
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -229,20 +231,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297
 transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 0.751554, 0.0359479, -0.502501)
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
-
-[node name="PopupMenu" type="PopupMenu" parent="neck/Camera"]
-auto_translate_mode = 1
-initial_position = 1
-visible = true
-unfocusable = true
-
-[node name="Button" type="Button" parent="neck/Camera/PopupMenu" groups=["UI"]]
-light_mask = 31
-visibility_layer = 31
-offset_right = 8.0
-offset_bottom = 8.0
-text = "Settings"
-flat = true
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
