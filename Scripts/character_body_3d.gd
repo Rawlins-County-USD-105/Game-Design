@@ -15,17 +15,15 @@ var player = self
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 
-#animations
-@onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
-
 @export_category("Movement and shiz")
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
 
 #Weapons
-@onready var Watergun = $Watergun
-@onready var Shovel = $"Root Scene"
+@onready var Watergun = $neck/Camera/Watergun
+@onready var pistol: Node3D = $neck/Camera/Pistol
+@onready var Shovel = $"neck/Camera/Root Scene" 
 var current_weapopn = 1
 
 #Spawning
@@ -34,6 +32,12 @@ var current_weapopn = 1
 @onready var group_enemy = $"../../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
 var rand_spawn_time = RandomNumberGenerator.new()
+
+#anim
+@onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
+var sprinting = false
+var walking = false
+var falling = false
 
 #speed
 var current_speed = 5.0
@@ -61,10 +65,6 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
-#anim
-var walking = false
-var sprinting = false
-var falling = false
 #fall damage
 var old_vel = 0.0
 var fall_hurtie = 10.0
@@ -86,10 +86,10 @@ func Weapon_Select():
 		Shovel.visible = true
 	else:
 		Shovel.visible = false
-	#if current_weapopn == 3:
-#		Weapon3.visible = true
-	#else:
-	#	Weapon3.visible = false
+	if current_weapopn == 3:
+		pistol.visible = true
+	else:
+		pistol.visible = false
 
 
 
