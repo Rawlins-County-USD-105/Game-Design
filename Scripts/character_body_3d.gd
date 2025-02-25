@@ -126,15 +126,6 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
-	#if Input.is_action_pressed("forward") && Input.is_action_pressed("sprint") && not player_moveset.is_playing():
-		#player_moveset.play("sprint")
-		#print("juyhtf")
-	#elif Input.is_action_pressed("forward"):
-		#player_moveset.play("jog")
-		#if not Input.is_action_pressed("forward"):
-			#player_moveset.stop()
-	#elif not player_moveset.is_playing():
-		#player_moveset.play("idle")
 	
 		
 	#if is_multiplayer_authority():
@@ -142,7 +133,6 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor() && !sliding:
-		player_moveset.play("jump")
 		velocity.y = JUMP_VELOCITY
 	Weapon_Select()
 	#regen
@@ -178,11 +168,15 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
 		#Sprinting
 				
-			player_moveset.play("sprint")
+			var sprinting = true
+			var walking = false
+			
 			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
  
 			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
+				sprinting = false
+				walking = false
 				player_moveset.play("jump")
 				velocity.y = JUMP_VELOCITY
 		else:
@@ -241,6 +235,10 @@ func _physics_process(delta: float) -> void:
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
 			took_damage(round(diff))
+		if diff > 3 or Input.is_action_just_pressed("jump"):
+			player_moveset.play("jump")
+		else:
+			pass
 	old_vel = velocity.y
 	
 	#FOV
