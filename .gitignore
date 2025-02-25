@@ -25,7 +25,5 @@ mono_crash.*.json
 .godot/editor/script_editor_cache.cfg
 /.godot
 
-# Ignore Scenes tscn
-
 
 # Test

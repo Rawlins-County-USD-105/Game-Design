@@ -1,6 +1,7 @@
 extends CharacterBody3D
 var max_health = 400
 var health = max_health
+var player = self
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
@@ -22,8 +23,16 @@ var health = max_health
 
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
+@onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
 var current_weapopn = 1
+
+#Spawning
+@onready var spawner = $Spawner
+@onready var spawn_point = $"Spawner/Spawn Point"
+@onready var group_enemy = $"../../Enemies"
+@onready var enemy = preload("res://enemy/chicken.tscn")
+var rand_spawn_time = RandomNumberGenerator.new()
 
 #speed
 var current_speed = 5.0
@@ -72,10 +81,10 @@ func Weapon_Select():
 		Shovel.visible = true
 	else:
 		Shovel.visible = false
-	#if current_weapopn == 3:
-#		Weapon3.visible = true
-	#else:
-	#	Weapon3.visible = false
+	if current_weapopn == 3:
+		pistol.visible = true
+	else:
+		pistol.visible = false
 
 
 
@@ -134,6 +143,10 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	if self.position.y < -50:
+		self.position.x = 0
+		self.position.y = 0
+		self.position.z = 0
 		
 		
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -221,6 +234,10 @@ func _physics_process(delta: float) -> void:
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
+	
+	#spawning
+	var random_number = randi_range(1,360)
+	spawner.rotate_y(deg_to_rad(random_number))
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
@@ -233,3 +250,21 @@ func _headbob(time) -> Vector3:
 func _on_damage_bar_timer_timeout() -> void:
 	damagebar.value = health
 	prev_health = health
+
+
+func _on_spawn_timer_timeout() -> void:
+	if Game.enemies_spawned < 5 && Game.total_enemies < 30:
+		Game.enemies_spawned += 1
+		Game.total_enemies += 1
+		var e_inst = enemy.instantiate()
+		e_inst.player = self
+		e_inst.position = spawner.get_node("Spawn Point").global_position
+		group_enemy.add_child(e_inst)
+	else:
+		pass
+
+	#spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
+	#var e_inst = enemy.instantiate()
+	#e_inst.player = self
+	#e_inst.position = spawner.get_node("Spawn Point").global_position
+	#group_enemy.add_child(e_inst)
