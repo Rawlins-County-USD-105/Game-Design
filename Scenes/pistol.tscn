@@ -98,7 +98,7 @@ gun_bullet = ExtResource("2_3u27t")
 water_cost = 5
 
 [node name="pistol" parent="." instance=ExtResource("1_dhwwx")]
-transform = Transform3D(-6.55671e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.55671e-10, 0, 0, 0)
+transform = Transform3D(-5.42998e-08, 0, 0.015, 0, 0.015, 0, -0.015, 0, -5.42998e-08, 0, 0, 0)
 
 [node name="pistol_anim" type="AnimationPlayer" parent="."]
 libraries = {
