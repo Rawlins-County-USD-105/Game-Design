@@ -22,6 +22,7 @@ var player = self
 
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
+@onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
 var current_weapopn = 1
 
@@ -79,10 +80,10 @@ func Weapon_Select():
 		Shovel.visible = true
 	else:
 		Shovel.visible = false
-	#if current_weapopn == 3:
-#		Weapon3.visible = true
-	#else:
-	#	Weapon3.visible = false
+	if current_weapopn == 3:
+		pistol.visible = true
+	else:
+		pistol.visible = false
 
 
 
