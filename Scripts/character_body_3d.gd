@@ -126,15 +126,17 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
-	if not player_moveset.is_playing():
-		player_moveset.play("idle")
-	elif Input.is_action_pressed("forward"):
-		player_moveset.play("jog")
+	#if Input.is_action_pressed("forward") && Input.is_action_pressed("sprint") && not player_moveset.is_playing():
+		#player_moveset.play("sprint")
+		#print("juyhtf")
+	#elif Input.is_action_pressed("forward"):
+		#player_moveset.play("jog")
 		#if not Input.is_action_pressed("forward"):
 			#player_moveset.stop()
-	elif Input.is_action_pressed("forward") && Input.is_action_pressed("sprint"):
-		player_moveset.play("sprint")
+	#elif not player_moveset.is_playing():
+		#player_moveset.play("idle")
 	
+		
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -176,7 +178,7 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
 		#Sprinting
 				
-		
+			player_moveset.play("sprint")
 			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
  
