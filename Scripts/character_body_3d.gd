@@ -61,6 +61,10 @@ var slide_vector = Vector2.ZERO
 var slide_speed = 10.0
 var sliding = false
 
+#anim
+var walking = false
+var sprinting = false
+var falling = false
 #fall damage
 var old_vel = 0.0
 var fall_hurtie = 10.0
@@ -126,8 +130,23 @@ func _unhandled_input(event: InputEvent) -> void:
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
+
+	if sprinting && is_on_floor():
+		if input_dir.y == -1:
+			player_moveset.play("sprint")
+		else:
+			player_moveset.play("backward")
+	elif walking && is_on_floor():
+		if input_dir.y == -1:
+			player_moveset.play("jog")
+		else:
+			player_moveset.play("backward")
+	elif falling && not is_on_floor() or Input.is_action_just_pressed("jump"):
+		player_moveset.play("jump")
+	else:
+		if is_on_floor():
+			player_moveset.play("idle")
 	
-		
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -146,9 +165,11 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if self.position.y < -50:
+		self.velocity.y = 0
 		self.position.x = 0
 		self.position.y = 0
 		self.position.z = 0
+		
 		
 		
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -168,8 +189,8 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
 		#Sprinting
 				
-			var sprinting = true
-			var walking = false
+			sprinting = true
+			walking = false
 			
 			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
@@ -177,18 +198,23 @@ func _physics_process(delta: float) -> void:
 			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
 				sprinting = false
 				walking = false
-				player_moveset.play("jump")
 				velocity.y = JUMP_VELOCITY
 		else:
 			if Input.is_action_pressed("crouch") || sliding:
 				current_speed = SPEED * crouching_speed
 			if not Input.is_action_pressed("crouch"):
+				sprinting = false
+				walking = true
 				velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
 				velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
 
 			else:
 				velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
 				velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
+				sprinting = false
+				walking = false
+	else:
+		walking = false
 	if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 		if sprint && input_dir != Vector2.ZERO:
 			sliding = true
@@ -231,16 +257,18 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	#fall damage
+	
 	if old_vel < 0:
+		falling = false
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
 			took_damage(round(diff))
-		if diff > 3 or Input.is_action_just_pressed("jump"):
-			player_moveset.play("jump")
-		else:
-			pass
 	old_vel = velocity.y
 	
+	if velocity.y < 0:
+		falling = true
+	else:
+		falling = false
 	#FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
