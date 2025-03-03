@@ -127,7 +127,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			if event is InputEventMouseMotion:
-				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
+				player.rotate_y(-event.relative.x * 0.01 * mousesense)
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
