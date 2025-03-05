@@ -36,20 +36,18 @@ radius = 0.02
 height = 0.021
 
 [node name="Pistol_bullet" type="Node3D" node_paths=PackedStringArray("mesh", "ray", "particles")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0)
+top_level = true
 script = ExtResource("1_k0rk5")
 speed = 20
 mesh = NodePath("MeshInstance3D")
-ray = NodePath("MeshInstance3D/RayCast3D")
+ray = NodePath("RayCast3D")
 particles = NodePath("GPUParticles3D2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.055, 0, 0, 0, 0.055, 0, 0, 0, 0.055, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("SphereMesh_to6dl")
 surface_material_override/0 = SubResource("StandardMaterial3D_8wuwy")
-
-[node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
-transform = Transform3D(-1, 8.74228e-08, -3.82137e-15, 4.98633e-08, 0.570369, -0.821388, -7.1808e-08, -0.821388, -0.570369, -0.00904331, 0, 0.407791)
-collide_with_areas = true
 
 [node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.13, -1.8216e-08, 0.00929376, -0.0802235)
@@ -58,3 +56,7 @@ sub_emitter = NodePath(".")
 collision_base_size = 3.0
 process_material = SubResource("ParticleProcessMaterial_ox7r5")
 draw_pass_1 = SubResource("SphereMesh_8rcbi")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -0.5)
+collide_with_areas = true
