@@ -17,7 +17,5 @@ func gun(current_gun, animation_player, animation_name):
 			instance.position = barrel.global_position
 			instance.transform.basis = barrel.global_transform.basis
 			get_parent().add_child(instance)
-		if Input.is_action_just_pressed("inspect") and not animation_player.is_playing():
-			animation_player.play("inspect")
 	else:
 		pass
