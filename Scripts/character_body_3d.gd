@@ -128,11 +128,12 @@ func _unhandled_input(event: InputEvent) -> void:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			if event is InputEventMouseMotion:
 				player.rotate_y(-event.relative.x * 0.01 * mousesense)
+				
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
-
+	
 	if sprinting && is_on_floor():
 		if input_dir.y == -1:
 			player_moveset.play("sprint")
@@ -174,8 +175,8 @@ func _physics_process(delta: float) -> void:
 		
 		
 		
-	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		
+	var direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	if sliding:
 		direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
 		
@@ -298,7 +299,7 @@ func _on_spawn_timer_timeout() -> void:
 		Game.enemies_spawned += 1
 		Game.total_enemies += 1
 		var e_inst = enemy.instantiate()
-		e_inst.player = self
+		e_inst.player = $crouching_collision_shape
 		e_inst.position = spawner.get_node("Spawn Point").global_position
 		group_enemy.add_child(e_inst)
 	else:
