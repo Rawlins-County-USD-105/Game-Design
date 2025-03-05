@@ -14,6 +14,7 @@ var player = self
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
+@onready var audio: AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -113,6 +114,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
+		audio.play()
 	
 	healthbar.value = health
 	regen.start()
@@ -125,7 +127,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			if event is InputEventMouseMotion:
-				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
+				player.rotate_y(-event.relative.x * 0.01 * mousesense)
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:

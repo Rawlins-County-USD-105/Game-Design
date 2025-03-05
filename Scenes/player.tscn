@@ -1,10 +1,11 @@
-[gd_scene load_steps=26 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=27 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://dcmkiio5800o2" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://dbvmntftxho3i" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://i0c18jxefgrq" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="PackedScene" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
@@ -235,6 +236,7 @@ bind/64/pose = Transform3D(-99.1415, -0.000178215, 13.0754, 13.0753, 0.274209, 9
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7ayd"]
 resource_name = "Vanguard_VisorMat"
 cull_mode = 2
+albedo_texture = ExtResource("3_xdket")
 roughness = 0.552786
 normal_enabled = true
 
@@ -7288,6 +7290,7 @@ shape = SubResource("CapsuleShape3D_x68qc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Camera" type="Camera3D" parent="neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0373075, -0.503517)
 current = true
 
 [node name="TextureRect" type="TextureRect" parent="neck/Camera"]
