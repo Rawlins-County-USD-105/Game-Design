@@ -100,6 +100,8 @@ script = ExtResource("1_qvolv")
 [node name="UntitledDesign(28)" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.470588)
 self_modulate = Color(0, 0, 0, 1)
+light_mask = 0
+z_index = -6
 position = Vector2(182.75, 623.988)
 scale = Vector2(0.197526, 0.122211)
 texture = ExtResource("2_bprh8")

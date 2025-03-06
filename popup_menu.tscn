@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://3abpgehkvs74"]
+
+[ext_resource type="Script" path="res://popup_menu.gd" id="1_ksmg0"]
+
+[sub_resource type="Animation" id="Animation_tn4li"]
+resource_name = "Close"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_s3fb5"]
+resource_name = "Open popup"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_spanw"]
+_data = {
+"Close": SubResource("Animation_tn4li"),
+"Open popup": SubResource("Animation_s3fb5")
+}
+
+[node name="Popup menu" type="Node2D"]
+visible = false
+position = Vector2(459, 286)
+script = ExtResource("1_ksmg0")
+
+[node name="Window" type="Window" parent="."]
+initial_position = 1
+size = Vector2i(200, 250)
+
+[node name="MarginContainer" type="MarginContainer" parent="Window"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_right = 35.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="spacer" type="Node2D" parent="Window/MarginContainer"]
+
+[node name="Button" type="Button" parent="Window/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Settings"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_spanw")
+}
+autoplay = "Close"
+
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]
+[connection signal="pressed" from="Window/MarginContainer/Button" to="." method="_on_button_pressed"]

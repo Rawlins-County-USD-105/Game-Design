@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=20 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bgrdhxykn8ima" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="Script" path="res://popup_menu.gd" id="7_rbm22"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -245,4 +246,29 @@ one_shot = true
 wait_time = 15.0
 one_shot = true
 
+[node name="Popup menu" type="Node2D" parent="."]
+position = Vector2(459, 286)
+script = ExtResource("7_rbm22")
+
+[node name="Window" type="Window" parent="Popup menu"]
+initial_position = 1
+size = Vector2i(200, 250)
+
+[node name="MarginContainer" type="MarginContainer" parent="Popup menu/Window"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_right = 35.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="spacer" type="Node2D" parent="Popup menu/Window/MarginContainer"]
+
+[node name="Button" type="Button" parent="Popup menu/Window/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Settings"
+
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
+[connection signal="pressed" from="Popup menu/Window/MarginContainer/Button" to="Popup menu" method="_on_button_pressed"]
