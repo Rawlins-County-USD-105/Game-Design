@@ -114,7 +114,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
-		audio.play()
+
 	
 	healthbar.value = health
 	regen.start()
@@ -134,7 +134,9 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	
-	if sprinting && is_on_floor():
+	if Input.is_action_just_pressed("jump"):
+		player_moveset.play("jump")
+	elif sprinting && is_on_floor():
 		if input_dir.y == -1:
 			player_moveset.play("sprint")
 		else:
@@ -144,7 +146,7 @@ func _physics_process(delta: float) -> void:
 			player_moveset.play("jog")
 		else:
 			player_moveset.play("backward")
-	elif falling && not is_on_floor() or Input.is_action_just_pressed("jump"):
+	elif falling && not is_on_floor():
 		player_moveset.play("jump")
 	else:
 		if is_on_floor():
