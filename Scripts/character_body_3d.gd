@@ -35,6 +35,7 @@ var current_weapopn = 1
 var rand_spawn_time = RandomNumberGenerator.new()
 
 #anim
+@onready var animation_tree: AnimationTree = $characteranimated/AnimationPlayer/AnimationTree
 @onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
 var sprinting = false
 var walking = false
@@ -103,6 +104,7 @@ func _ready() -> void:
 	healthbar.value = health
 	damagebar.max_value = max_health
 	damagebar.value = health
+
 	
 func took_damage(Damage):
 	
