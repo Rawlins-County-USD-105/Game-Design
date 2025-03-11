@@ -59,11 +59,11 @@ const FOV_CHANGE = 1.5
 var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
-#SLiding
+#Sliding
 var slide_timer = 1.0
 var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
-var slide_speed = 10.0
+var slide_speed = 15.0
 var sliding = false
 
 #fall damage
@@ -110,8 +110,8 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
-		if not ouch.playing:
-			ouch.play()
+		#if not ouch.playing:
+			#ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
@@ -181,7 +181,7 @@ func _physics_process(delta: float) -> void:
 	var direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
 	if sliding:
-		direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
+		direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 	if direction:
 		
