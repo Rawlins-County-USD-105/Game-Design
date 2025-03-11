@@ -14,7 +14,10 @@ var player = self
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
+
+
 @onready var ouch: AudioStreamPlayer3D = $ouch
+
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -33,6 +36,12 @@ var current_weapopn = 1
 @onready var group_enemy = $"../../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
 var rand_spawn_time = RandomNumberGenerator.new()
+
+#anim
+@onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
+var sprinting = false
+var walking = false
+var falling = false
 
 #speed
 var current_speed = 5.0
@@ -109,6 +118,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
+
 	
 	healthbar.value = health
 	regen.start()
@@ -121,11 +131,31 @@ func _unhandled_input(event: InputEvent) -> void:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			if event is InputEventMouseMotion:
-				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
+				player.rotate_y(-event.relative.x * 0.01 * mousesense)
+				
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
+	
+	if Input.is_action_just_pressed("jump"):
+		player_moveset.play("jump")
+	elif sprinting && is_on_floor():
+		if input_dir.y == -1:
+			player_moveset.play("sprint")
+		else:
+			player_moveset.play("backward")
+	elif walking && is_on_floor():
+		if input_dir.y == -1:
+			player_moveset.play("jog")
+		else:
+			player_moveset.play("backward")
+	elif falling && not is_on_floor():
+		player_moveset.play("jump")
+	else:
+		if is_on_floor():
+			player_moveset.play("idle")
+	
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -144,13 +174,15 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if self.position.y < -50:
+		self.velocity.y = 0
 		self.position.x = 0
 		self.position.y = 0
 		self.position.z = 0
 		
 		
-	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
+	var direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	if sliding:
 		direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
 		
@@ -166,22 +198,32 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
 		#Sprinting
 				
-		
+			sprinting = true
+			walking = false
+			
 			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
 			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
  
 			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
+				sprinting = false
+				walking = false
 				velocity.y = JUMP_VELOCITY
 		else:
 			if Input.is_action_pressed("crouch") || sliding:
 				current_speed = SPEED * crouching_speed
 			if not Input.is_action_pressed("crouch"):
+				sprinting = false
+				walking = true
 				velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
 				velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
 
 			else:
 				velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
 				velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
+				sprinting = false
+				walking = false
+	else:
+		walking = false
 	if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 		if sprint && input_dir != Vector2.ZERO:
 			sliding = true
@@ -220,16 +262,22 @@ func _physics_process(delta: float) -> void:
 			slide_timer = 1.0
 
 	t_bob += delta * velocity.length() * float(is_on_floor())
-	camera_3d.transform.origin = _headbob(t_bob)
+	#camera_3d.transform.origin = _headbob(t_bob)
 	move_and_slide()
 	
 	#fall damage
+	
 	if old_vel < 0:
+		falling = false
 		var diff = velocity.y - old_vel
 		if diff > fall_hurtie:
 			took_damage(round(diff))
 	old_vel = velocity.y
 	
+	if velocity.y < 0:
+		falling = true
+	else:
+		falling = false
 	#FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
@@ -257,7 +305,7 @@ func _on_spawn_timer_timeout() -> void:
 		Game.enemies_spawned += 1
 		Game.total_enemies += 1
 		var e_inst = enemy.instantiate()
-		e_inst.player = self
+		e_inst.player = $crouching_collision_shape
 		e_inst.position = spawner.get_node("Spawn Point").global_position
 		group_enemy.add_child(e_inst)
 	else:
