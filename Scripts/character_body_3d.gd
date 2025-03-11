@@ -14,10 +14,7 @@ var player = self
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
-
-
 @onready var ouch: AudioStreamPlayer3D = $ouch
-
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
