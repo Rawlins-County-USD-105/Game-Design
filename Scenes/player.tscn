@@ -1,11 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=17 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://b0bbqi4anixrw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
-[ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="PackedScene" uid="uid://t60x7d46r8l2" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="AudioStream" uid="uid://bvu1qvyh0wn2u" path="res://Untitled 3.wav" id="7_wrk1g"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -184,6 +185,9 @@ autostart = true
 
 [node name="Spawn Point" type="Marker3D" parent="Spawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="ouch" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_wrk1g")
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
 [connection signal="timeout" from="Spawner/Spawn Timer" to="." method="_on_spawn_timer_timeout"]

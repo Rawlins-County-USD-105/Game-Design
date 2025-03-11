@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cke6o6g6twbrx"]
+[gd_scene load_steps=8 format=3 uid="uid://t60x7d46r8l2"]
 
-[ext_resource type="PackedScene" uid="uid://c063pob0jmski" path="res://Watergun/pistol.blend" id="1_dhwwx"]
+[ext_resource type="PackedScene" uid="uid://kw1cya5tmkce" path="res://Watergun/pistol.blend" id="1_dhwwx"]
 [ext_resource type="Script" path="res://Scripts/pistol.gd" id="1_kxuik"]
 [ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_3u27t"]
-[ext_resource type="AudioStream" uid="uid://dtei548kp8maa" path="res://Sounds/Laser_source_51001/Laser 2.wav" id="2_ma6bl"]
+[ext_resource type="AudioStream" uid="uid://bkhd3bsiujnm1" path="res://Sounds/kaboom.wav2.wav" id="4_tujbr"]
 
 [sub_resource type="Animation" id="Animation_ge6u7"]
 length = 0.001
@@ -34,7 +34,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("gun sound:playing")
+tracks/2/path = NodePath("kaboom:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -75,11 +75,11 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("gun sound:playing")
+tracks/2/path = NodePath("kaboom:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.006),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -109,5 +109,5 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0161814, 0.0240854, -0.165207)
 target_position = Vector3(0, 0, -1)
 
-[node name="gun sound" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("2_ma6bl")
+[node name="kaboom" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_tujbr")

@@ -14,6 +14,7 @@ var player = self
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
+@onready var ouch: AudioStreamPlayer3D = $ouch
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -96,7 +97,6 @@ func _ready() -> void:
 	healthbar.value = health
 	damagebar.max_value = max_health
 	damagebar.value = health
-	
 func took_damage(Damage):
 	
 	if Damage > health:
@@ -104,6 +104,8 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
+		if not ouch.playing:
+			ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
