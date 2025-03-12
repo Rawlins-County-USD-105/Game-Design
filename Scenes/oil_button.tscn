@@ -56,6 +56,7 @@ _data = {
 
 [node name="Button" type="StaticBody3D"]
 script = ExtResource("1_fy76d")
+prompt = "Start Fracking"
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -65,7 +66,7 @@ mesh = SubResource("CylinderMesh_pwvu2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000729978, -1.49012e-08, -0.000599563)
 mesh = SubResource("BoxMesh_14jkg")
 
-[node name="CollisionShape" type="CollisionShape3D" parent="."]
+[node name="CollisionShapeButton" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
 shape = SubResource("BoxShape3D_vcvxo")
 
