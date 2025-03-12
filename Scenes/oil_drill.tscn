@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://c78ye8umktnip"]
+[gd_scene load_steps=2 format=3 uid="uid://b1064fr7cp8bh"]
+
+[ext_resource type="PackedScene" uid="uid://dq54t5jl62xp4" path="res://Scenes/asadrill.blend" id="1_ctkgt"]
 
 [node name="Oil_Drill" type="Node3D"]
+
+[node name="asadrill" parent="." instance=ExtResource("1_ctkgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.243235, 0, 0.382429)
