@@ -1,33 +1,11 @@
-[gd_scene load_steps=27 format=4 uid="uid://c78ye8umktnip"]
+[gd_scene load_steps=25 format=4 uid="uid://c78ye8umktnip"]
 
 [ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_0lf34"]
-noise_type = 4
-seed = 5
-frequency = 0.0885
-offset = Vector3(0, 0.25, 0)
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yby6r"]
-noise = SubResource("FastNoiseLite_0lf34")
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_0ue5w"]
-noise_type = 3
-frequency = 0.0683
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_angk3"]
-noise = SubResource("FastNoiseLite_0ue5w")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nu5tr"]
-albedo_color = Color(1, 0.770661, 0.560083, 1)
-metallic_specular = 0.0
-roughness_texture = SubResource("NoiseTexture2D_yby6r")
-subsurf_scatter_enabled = true
-subsurf_scatter_strength = 0.46
-subsurf_scatter_texture = SubResource("NoiseTexture2D_angk3")
+[ext_resource type="Material" uid="uid://oe3m7drt86pd" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
+[ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
-material = SubResource("StandardMaterial3D_nu5tr")
+material = ExtResource("1_k5jf3")
 radius = 1.25
 height = 0.5
 
@@ -66,6 +44,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles3D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_meein"]
 resource_name = "drill"
@@ -81,6 +71,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 37.6991, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles3D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5fwcv"]
@@ -167,6 +169,19 @@ size = Vector3(2.29065, 12.0634, 2.14378)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibv0p"]
 bg_color = Color(0.0692666, 0.0442286, 0.0888699, 1)
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_77op5"]
+particle_flag_align_y = true
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+direction = Vector3(0, 1, 0)
+spread = 20.0
+initial_velocity_min = 10.0
+initial_velocity_max = 15.0
+tangential_accel_min = -0.100002
+tangential_accel_max = 0.0999978
+scale_min = 0.02
+scale_max = 0.15
+
 [node name="Oil_Drill" type="Node3D"]
 
 [node name="Rock" type="MeshInstance3D" parent="."]
@@ -243,3 +258,16 @@ theme_override_constants/outline_size = 4
 theme_override_font_sizes/font_size = 32
 text = "35%"
 horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.494129, 0)
+material_override = ExtResource("1_k5jf3")
+emitting = false
+amount = 20
+explosiveness = 0.25
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_77op5")
+draw_pass_1 = ExtResource("3_xufo8")
