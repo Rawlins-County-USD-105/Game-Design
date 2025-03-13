@@ -4,10 +4,12 @@ extends Interactable
 @onready var oil_bar: ProgressBar = $"../OilBar"
 @onready var label: Label = $"../OilBar/Label"
 @onready var timer: Timer = $"../Timer"
+@onready var barrels: Label = $"../Barrels"
 
 var oil = 0
 var max_oil = 1000
 var player = null
+var barrel = 0
 
 func _ready() -> void:
 	oil_bar.hide()
@@ -30,8 +32,13 @@ func get_oil():
 	oil_bar.value = oil
 	
 	if oil_bar.value == oil_bar.max_value:
-		label.text = "100%"
+		label.text = "1 barrel Gathered"
+		barrel += 1
+		barrels.text = str(barrel)
 		player.spawning = false
+		await get_tree().create_timer(3).timeout
+		oil_bar.hide()
+		oil_bar.value = 0
 
 
 func _on_timer_timeout() -> void:
