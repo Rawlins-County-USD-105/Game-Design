@@ -7371,13 +7371,15 @@ value = 35.0
 show_percentage = false
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
+transform = Transform3D(0.99863, 0.0018265, 0.0523041, 0, 0.999391, -0.0348995, -0.052336, 0.0348517, 0.998021, 0.310352, -0.27509, -0.306297)
 
 [node name="Root Scene" parent="neck/Camera" instance=ExtResource("4_g8q2f")]
 transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 0.751554, 0.0359479, -0.502501)
+visible = false
 
 [node name="Pistol" parent="neck/Camera" instance=ExtResource("5_vcecd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.359945)
+transform = Transform3D(0.99863, 0.0018265, 0.0523041, 0, 0.999391, -0.0348995, -0.052336, 0.0348517, 0.998021, 0.320275, -0.292238, -0.359945)
+visible = false
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
