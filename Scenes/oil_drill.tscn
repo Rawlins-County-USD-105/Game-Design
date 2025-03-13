@@ -271,3 +271,5 @@ explosiveness = 0.25
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_77op5")
 draw_pass_1 = ExtResource("3_xufo8")
+
+[connection signal="timeout" from="Timer" to="Button" method="_on_timer_timeout"]

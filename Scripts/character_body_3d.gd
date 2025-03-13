@@ -298,7 +298,7 @@ func _on_damage_bar_timer_timeout() -> void:
 
 func _on_spawn_timer_timeout() -> void:
 	if spawning:
-		if Game.enemies_spawned < 5 && Game.total_enemies < 30:
+		if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
 			Game.enemies_spawned += 1
 			Game.total_enemies += 1
 			var e_inst = enemy.instantiate()
