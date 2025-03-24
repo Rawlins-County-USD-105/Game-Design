@@ -1,13 +1,13 @@
 [gd_scene load_steps=8 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://dti6gvvqgt6ui" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
-[ext_resource type="AudioStream" uid="uid://c7ap08snwm51p" path="res://Sounds/Low_Pipe_Whooshes_source_1775299/MA_CresterStudio_LowPipeWhooshes - Single File 04.wav" id="3_rdxlo"]
-[ext_resource type="AudioStream" uid="uid://pw7pbk100x1m" path="res://Sounds/Shovel_Slice_source_108827 2/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="4_ef6ru"]
+[ext_resource type="AudioStream" uid="uid://dgsbix84ugjii" path="res://Sounds/Low_Pipe_Whooshes_source_1775299/MA_CresterStudio_LowPipeWhooshes - Single File 04.wav" id="3_rdxlo"]
+[ext_resource type="AudioStream" uid="uid://c72a5phsm2ode" path="res://Sounds/Shovel_Slice_source_108827 2/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="4_ef6ru"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
 resource_name = "Melee"
-length = 0.75
+length = 0.5
 step = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -16,7 +16,7 @@ tracks/0/path = NodePath("RootNode/Shovel:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.35, 0.75),
+"times": PackedFloat32Array(0, 0.203, 0.499),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(-1.5708, 0, 0), Vector3(0, -1.5708, 0), Vector3(-1.5708, 0, 0)]
@@ -28,7 +28,7 @@ tracks/1/path = NodePath("RootNode/Shovel:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.35, 0.75),
+"times": PackedFloat32Array(0, 0.204, 0.499),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 0, 2), Vector3(0, 0, 0)]

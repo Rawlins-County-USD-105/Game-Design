@@ -1,10 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://t60x7d46r8l2"]
+[gd_scene load_steps=10 format=3 uid="uid://cke6o6g6twbrx"]
 
 [ext_resource type="Script" path="res://Scripts/pistol.gd" id="1_kxuik"]
-[ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_3u27t"]
-[ext_resource type="PackedScene" path="res://Scenes/pistolmodel.tscn" id="3_n4wh8"]
-[ext_resource type="AudioStream" uid="uid://bkhd3bsiujnm1" path="res://Sounds/kaboom.wav2.wav" id="4_tujbr"]
-[ext_resource type="AudioStream" uid="uid://jddu6fdsexiw" path="res://Scenes/interact.wav" id="5_dg7lp"]
+[ext_resource type="PackedScene" uid="uid://bmcbos02ioia2" path="res://Scenes/pistol_bullet.tscn" id="2_n80ox"]
+[ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="3_n4wh8"]
+[ext_resource type="AudioStream" uid="uid://dpg6wm5f7gh15" path="res://Sounds/kaboom.wav2.wav" id="4_tujbr"]
+[ext_resource type="AudioStream" uid="uid://bnqty4xomlyln" path="res://Scenes/interact.wav" id="5_dg7lp"]
 
 [sub_resource type="Animation" id="Animation_ge6u7"]
 length = 0.001
@@ -172,7 +172,7 @@ _data = {
 [node name="Pistol" type="Node3D" node_paths=PackedStringArray("barrel")]
 script = ExtResource("1_kxuik")
 barrel = NodePath("RayCast")
-gun_bullet = ExtResource("2_3u27t")
+gun_bullet = ExtResource("2_n80ox")
 water_cost = 5
 
 [node name="pistol" parent="." instance=ExtResource("3_n4wh8")]
