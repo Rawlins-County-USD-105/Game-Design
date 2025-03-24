@@ -247,6 +247,7 @@ wait_time = 15.0
 one_shot = true
 
 [node name="Popup menu" type="Node2D" parent="."]
+visible = false
 position = Vector2(459, 286)
 script = ExtResource("7_rbm22")
 
@@ -271,4 +272,5 @@ size_flags_horizontal = 4
 text = "Settings"
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
+[connection signal="close_requested" from="Popup menu/Window" to="." method="_on_window_close_requested"]
 [connection signal="pressed" from="Popup menu/Window/MarginContainer/Button" to="Popup menu" method="_on_button_pressed"]

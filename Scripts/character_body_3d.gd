@@ -240,3 +240,8 @@ func _on_damage_bar_timer_timeout() -> void:
 	
 
 	
+@onready var window: Window = $"Popup menu/Window"
+
+
+func _on_window_close_requested() -> void:
+	window.visible = false
