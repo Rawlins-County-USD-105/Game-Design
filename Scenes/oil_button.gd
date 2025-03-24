@@ -5,6 +5,7 @@ extends Interactable
 @onready var label: Label = $"../OilBar/Label"
 @onready var timer: Timer = $"../Timer"
 @onready var barrels: Label = $"../Barrels"
+@onready var gpu_particles_3d: GPUParticles3D = $"../GPUParticles3D"
 
 var oil = 0
 var max_oil = 1000
@@ -32,13 +33,15 @@ func get_oil():
 	oil_bar.value = oil
 	
 	if oil_bar.value == oil_bar.max_value:
-		label.text = "1 barrel Gathered"
+		label.text = "Gathered Oil Barrel"
 		barrel += 1
 		barrels.text = str(barrel)
 		player.spawning = false
 		await get_tree().create_timer(3).timeout
+		oil = 0
+		oil_bar.value = oil
 		oil_bar.hide()
-		oil_bar.value = 0
+		label.text = ""
 
 
 func _on_timer_timeout() -> void:
@@ -48,3 +51,4 @@ func _on_timer_timeout() -> void:
 		timer.start()
 	else:
 		animation_player_drill.stop()
+		gpu_particles_3d.emitting = false
