@@ -166,7 +166,7 @@ shadow_mesh = SubResource("ArrayMesh_yclku")
 albedo_color = Color(0.423651, 0.423651, 0.423651, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h27np"]
-size = Vector3(2.29065, 12.0634, 2.14378)
+size = Vector3(2.3, 12.063, 2.3)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibv0p"]
 bg_color = Color(0.0692666, 0.0442286, 0.0888699, 1)

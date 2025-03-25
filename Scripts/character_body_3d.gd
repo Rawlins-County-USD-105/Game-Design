@@ -31,7 +31,7 @@ var current_weapopn = 1
 #Spawning
 @onready var spawner = $Spawner
 @onready var spawn_point = $"Spawner/Spawn Point"
-@onready var group_enemy = $"../../Enemies"
+@onready var group_enemy = $"../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
 var spawning = false
 

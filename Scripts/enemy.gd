@@ -32,8 +32,12 @@ func move(_delta):
 			timer.start()
 		else:
 			pass
-		
-	#if player.global_position.
+	var player_distance = player.global_position.distance_to(self.global_position)
+	var drill_distance = drill.global_position.distance_to(self.global_position)
+	if drill_distance < 8:
+		target = drill
+	else:
+		target = player
 	
 	
 	# Navigation
