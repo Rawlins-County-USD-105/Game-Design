@@ -1,6 +1,8 @@
+
 [gd_scene load_steps=26 format=3 uid="uid://di4xi2t85jxvc"]
 
 [ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
+
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -11,12 +13,12 @@
 [ext_resource type="PackedScene" uid="uid://bh4y61debteju" path="res://Models/roadbreak.tscn" id="10_ttdqt"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
-[ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="15_j1hgn"]
+[ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
-[ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://ccexpy6hlaehv" path="res://enemy/chicken.tscn" id="16_87ri5"]
 [ext_resource type="PackedScene" uid="uid://c78ye8umktnip" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
+
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
@@ -45,6 +47,7 @@ emission = Color(0.980365, 0.786258, 0.048156, 1)
 emission_energy_multiplier = 3.0
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_n5v08"]
+
 vertices = PackedVector3Array(-38.3994, 1.09866, -56.4007, -36.9994, 1.09866, -56.6007, -37.1994, 1.09866, -99.6007, -99.5994, 1.09866, -99.6007, -99.5994, 1.09866, -54.8007, -38.3994, 1.09866, -54.8007, -20.1994, 1.09866, -56.6007, -19.9994, 1.09866, -55.0007, -18.3994, 1.09866, -55.0007, -17.3994, 1.09866, -57.2007, -9.79942, 1.09866, -63.4007, -15.1994, 1.09866, -56.4007, -14.7994, 1.09866, -55.6007, -9.79942, 1.09866, -55.6007, -9.39942, 1.09866, -63.6007, -9.39942, 1.09866, -99.6007, 5.60058, 1.09866, -67.0007, 5.60058, 2.29866, -66.0007, 5.80058, 2.29866, -66.0007, 5.80058, 1.09866, -99.6007, 5.80058, 1.09866, -67.2007, 4.20058, 1.09866, -65.4007, 4.80058, 1.09866, -65.6007, 4.80058, 1.09866, -67.0007, 4.20058, 1.09866, -63.4007, 6.00058, 2.29866, -66.0007, 6.00058, 1.09866, -67.0007, 6.80058, 1.09866, -67.0007, 6.80058, 1.09866, -65.6007, 7.60058, 1.09866, -65.4007, 11.6006, 1.09866, -62.2007, 11.2006, 1.09866, -62.0007, 11.2006, 1.09866, -59.6007, 11.6006, 1.09866, -59.4007, 99.6006, 1.09866, -50.4007, 11.6006, 1.09866, -58.2007, 11.2006, 1.09866, -58.0007, 11.2006, 1.09866, -55.6007, 11.6006, 1.09866, -55.4007, 11.6006, 1.09866, -50.4007, 7.60058, 1.09866, -63.4007, 11.6006, 1.09866, -63.4007, 99.6006, 1.09866, -99.6007, 7.80058, 3.09866, -58.8007, 8.00058, 3.09866, -58.8007, 8.20058, 3.09866, -59.6007, 7.60058, 3.09866, -59.6007, 10.2006, 3.09866, -59.4007, 10.0006, 3.09866, -62.2007, 6.20058, 3.09866, -62.0007, 6.00058, 3.09866, -64.8007, 5.60058, 3.09866, -64.8007, 5.80058, 3.09866, -62.2007, 6.00058, 3.09866, -63.4007, 5.80058, 3.09866, -63.4007, 5.00058, 3.49866, -64.6007, 5.00058, 3.09866, -63.6007, 6.80058, 3.09866, -63.6007, 6.80058, 3.49866, -64.6007, 3.60058, 3.09866, -62.2007, 3.40058, 3.09866, -59.4007, 5.40058, 1.09866, -64.4007, 5.40058, 1.09866, -63.4007, 6.40058, 1.09866, -63.4007, 6.40058, 1.09866, -64.4007, -7.19942, 11.0987, -52.8007, -2.99942, 11.0987, -52.8007, -2.99942, 11.0987, -54.4007, -7.39942, 11.0987, -54.6007, -5.09942, 12.2987, -52.8007, -5.19942, 12.2987, -54.5007, -9.19942, 11.0987, -63.0007, -9.19942, 11.0987, -54.6007, -8.29942, 13.4987, -58.8007, -9.19942, 13.4987, -58.8007, -1.19942, 11.0987, -54.6007, -1.19942, 11.0987, -63.0007, -1.19942, 13.4987, -58.8007, -5.21519, 12.2987, -55.6185, -3.98719, 11.4987, -55.6097, -6.38728, 12.6987, -58.0176, -6.41932, 13.0987, -59.2128, 3.00058, 11.0987, -54.6007, 3.00058, 11.0987, -63.0007, 3.00058, 13.4987, -58.8007, 4.80058, 11.0987, -52.8007, 9.00058, 11.0987, -52.8007, 9.00058, 11.0987, -54.4007, 4.60058, 11.0987, -54.6007, 6.90058, 12.2987, -52.8007, 6.80058, 12.2987, -54.5007, 3.80058, 13.4987, -58.8007, 10.8006, 11.0987, -54.6007, 10.8006, 11.0987, -63.0007, 10.8006, 13.4987, -58.8007, 6.78481, 12.2987, -55.6185, 8.01282, 11.4987, -55.6097, 5.61272, 12.6987, -58.0176, 5.58068, 13.0987, -59.2128, 2.20058, 1.09866, -59.2007, 2.80058, 1.09866, -59.4007, 2.80058, 1.09866, -60.6007, 2.00058, 1.09866, -60.8007, 2.80058, 1.09866, -55.2007, 2.80058, 1.09866, -58.2007, 2.20058, 1.09866, -58.4007, -8.39942, 1.09866, -59.4007, -8.79942, 1.09866, -55.6007, -8.39942, 1.09866, -55.2007, -8.79942, 1.09866, -62.0007, -8.79942, 1.09866, -59.6007, 2.00058, 1.09866, -62.4007, -8.39942, 1.09866, -62.4007, 3.60058, 1.09866, -59.2007, 3.60058, 1.09866, -60.8007, 3.60058, 1.09866, -58.4007, 8.40058, 1.09866, -55.6007, 8.20058, 1.09866, -55.2007, 10.2006, 1.09866, -62.4007, 3.60058, 1.09866, -62.4007, 10.2006, 1.09866, -55.2007, -5.79942, 3.09866, -56.4007, -6.39942, 3.09866, -56.2007, -6.79942, 3.09866, -55.4007, -6.59942, 3.09866, -53.4007, 0.000579834, 3.09866, -53.6007, 0.200584, 3.09866, -52.8007, 1.60058, 3.09866, -52.8007, 1.80058, 3.09866, -53.6007, 2.20058, 3.09866, -58.4007, 2.00058, 3.09866, -62.2007, -8.59942, 3.09866, -62.2007, -5.79942, 3.09866, -59.0007, -8.59942, 3.09866, -59.4007, 3.20058, 3.09866, -53.4007, 3.60058, 3.09866, -58.2007, -6.79942, 3.09866, -56.4007, -8.39942, 3.09866, -55.4007, 2.00058, 7.09866, -59.4007, 2.80058, 7.09866, -59.6007, 2.80058, 7.09866, -60.0007, 2.00058, 7.09866, -60.2007, 0.200584, 7.09866, -55.4007, 0.000579834, 7.09866, -54.0007, 1.60058, 7.09866, -54.2007, 1.60058, 7.09866, -55.4007, -4.99942, 7.09866, -60.8007, -2.99942, 7.09866, -55.6007, -4.99942, 7.09866, -54.8007, -6.59942, 7.09866, -54.6007, -6.59942, 7.09866, -53.4007, -3.79942, 7.09866, -53.4007, -8.39942, 7.09866, -62.2007, -5.99942, 7.09866, -61.2007, 2.20058, 7.09866, -62.2007, -3.79942, 7.09866, -55.2007, -2.59942, 7.09866, -54.0007, -2.59942, 7.09866, -53.4007, 4.20058, 7.09866, -53.4007, 4.20058, 7.09866, -54.0007, 2.20058, 7.09866, -55.6007, -6.79942, 7.09866, -61.0007, -8.39942, 7.09866, -61.0673, -8.39942, 3.09866, -56.534, 9.60058, 7.09866, -61.4007, 10.0006, 7.09866, -61.6007, 10.0006, 7.09866, -62.2007, 3.40058, 7.09866, -62.2007, 3.60058, 7.09866, -60.2007, 3.60058, 7.09866, -59.4007, 3.40058, 7.09866, -55.6007, 5.40058, 7.09866, -55.2007, 5.40058, 7.09866, -53.4007, 8.20058, 7.09866, -53.4007, 8.20058, 7.09866, -55.4007, 9.60058, 7.09866, -59.6007, 10.0006, 7.09866, -55.4007, 10.2006, 7.09866, -59.4007, 8.20058, 3.09866, -58.0007, 7.60058, 3.09866, -58.0007, 8.20058, 3.09866, -55.4007, 8.20058, 3.09866, -53.4007, 10.0006, 3.09866, -55.4007, 10.2006, 3.09866, -58.2007, -20.7994, 1.09866, -39.4007, -20.7994, 1.09866, -39.6007, -21.1994, 1.09866, -39.8007, -37.1994, 1.09866, -39.4007, -21.1994, 1.09866, -55.6007, -37.1994, 1.09866, -55.6007, -16.9994, 1.09866, -55.4007, -16.3994, 1.09866, -55.2007, -16.5994, 1.09866, -55.6007, -19.9994, 1.09866, -19.2007, -20.5994, 1.09866, -19.0007, -20.5994, 1.09866, -18.8007, -19.9994, 1.09866, -18.6007, 3.00058, 1.49866, -48.6007, -1.19942, 1.49866, -48.6007, -19.9994, 1.09866, -35.8007, 1.80058, 1.49866, -5.20067, -19.9994, 1.09866, -39.8007, -19.9994, 1.09866, -39.2007, -1.99942, 1.09866, -48.6007, -1.99942, 1.09866, -50.2007, -9.59942, 1.09866, -50.0007, -19.9994, 1.09866, -38.4007, 1.80058, 3.09866, -52.0007, 0.000579834, 3.09866, -52.0007, -15.7994, 1.09866, -53.6007, -17.9994, 1.09866, -54.2007, -0.799416, 3.09866, -50.4007, -1.19942, 3.09866, -50.2007, 10.2006, 3.09866, -54.2007, 9.40058, 3.09866, -54.2007, 9.40058, 3.09866, -52.0007, 10.2006, 3.09866, -51.4007, -7.59942, 3.09866, -52.0007, -7.79942, 3.09866, -54.2007, -8.59942, 3.09866, -54.2007, -8.59942, 3.09866, -51.4007, -21.5994, 1.09866, -38.2007, -21.5994, 1.09866, -36.0007, -19.9994, 1.09866, -17.8007, -21.5994, 1.09866, -17.6007, -20.9994, 1.09866, -11.4007, -19.9994, 1.09866, -11.2007, 0.800583, 1.49866, -5.00067, 2.80058, 3.09866, -51.4007, 2.00058, 1.49866, -4.80067, 2.60058, 3.09866, -50.4007, -0.99942, 3.09866, -51.4007, -19.9994, 1.09866, -5.60067, -99.5994, 1.09866, -40.0007, -38.3994, 1.09866, -40.0007, -7.39942, 1.09866, -51.4007, -7.39942, 1.09866, -52.0007, -7.79942, 1.09866, -52.2007, -8.59942, 1.09866, -51.4007, -7.79942, 1.09866, -53.4007, -7.39942, 1.09866, -53.6007, -7.39942, 1.09866, -54.2007, -8.59942, 1.09866, -54.2007, -2.99942, 1.09866, -51.4007, -2.99942, 1.09866, -52.0007, -3.79942, 1.09866, -52.2007, -6.39942, 1.09866, -52.2007, -3.79942, 1.09866, -53.4007, -2.99942, 1.09866, -53.6007, -2.99942, 1.09866, -54.2007, -6.39942, 1.09866, -53.4007, -2.39942, 1.09866, -52.2007, 5.00058, 1.09866, -51.4007, 5.00058, 1.09866, -52.0007, 4.20058, 1.09866, -52.2007, -2.39942, 1.09866, -53.4007, 4.20058, 1.09866, -53.4007, 5.00058, 1.09866, -53.6007, 5.00058, 1.09866, -54.2007, 5.60058, 1.09866, -52.2007, 9.20058, 1.09866, -51.4007, 9.20058, 1.09866, -52.0007, 8.20058, 1.09866, -52.2007, 5.60058, 1.09866, -53.4007, 8.40058, 1.09866, -53.6007, 8.40058, 1.09866, -54.0007, 9.60058, 1.09866, -52.2007, 10.2006, 1.09866, -51.4007, 9.60058, 1.09866, -53.4007, 10.2006, 1.09866, -54.2007, 4.20058, 1.89866, -3.20067, 4.80058, 1.89866, -3.40067, 4.80058, 1.89866, -4.00067, 1.80058, 1.49866, -3.80067, 3.86725, 1.09866, -4.26733, 3.60058, 1.09866, -48.6007, 11.4006, 1.09866, -50.0007, 5.60058, 1.09866, -4.00067, 5.60058, 1.09866, -3.40067, 99.6006, 1.09866, -3.40067, 3.60058, 1.09866, -50.2007, -38.1994, 1.09866, -36.0007, -36.7994, 1.09866, -36.0007, -36.9994, 1.09866, -38.4007, -38.3994, 1.09866, -38.4007, -38.3994, 1.09866, -35.6007, -99.5994, 1.09866, -35.6007, -99.5994, 1.09866, -18.0007, -38.3994, 1.09866, -18.0007, -20.9994, 1.09866, -19.2007, -37.1994, 1.09866, -18.8007, -21.1994, 1.09866, -30.0007, -20.7994, 1.49866, -31.2007, -21.1994, 1.09866, -31.2007, -21.1994, 1.09866, -23.6007, -37.1994, 1.09866, -34.8007, -21.1994, 1.09866, -34.8007, -36.7994, 1.09866, -11.4007, -35.7994, 1.09866, -11.4007, -35.7994, 1.09866, -17.6007, -38.1994, 1.09866, -17.6007, -99.5994, 1.09866, -10.2007, -36.9994, 1.09866, -10.4007, -35.9994, 10.6987, -7.80067, -32.7994, 10.6987, -7.80067, -32.5994, 10.2987, -8.20067, -35.9994, 7.49866, -11.2007, -25.3994, 10.2987, -8.20067, -25.1994, 7.49866, -11.2007, -23.9994, 10.2987, -8.00067, -20.7994, 7.49866, -11.2007, -23.9994, 10.6987, 0.39933, -20.7994, 10.6987, 0.39933, -23.9994, 13.0987, -3.80067, -23.9994, 11.4987, -0.650673, -20.7994, 11.4987, -0.760666, -20.7994, 12.6987, -4.24067, -20.7994, 10.6987, -7.72066, -99.5994, 1.09866, 2.79933, -36.9994, 1.09866, 2.99933, -35.3994, 1.09866, -10.0007, -35.3994, 1.09866, 2.59933, -34.7994, 1.09866, 2.59933, -34.7994, 1.09866, -10.0007, -21.3994, 1.49866, -5.40067, -21.3994, 1.49866, -6.40067, -21.7994, 1.49866, -6.60067, -21.7994, 1.49866, -0.60067, -21.3994, 1.49866, -0.800667, -21.3994, 1.49866, -1.80067, -20.5994, 1.49866, -2.00067, -20.5994, 1.49866, -5.20067, -33.7994, 1.49866, 2.39933, -21.7994, 1.49866, 2.39933, -33.7994, 1.49866, -9.80067, -21.7994, 1.49866, -9.80067, -35.9994, 10.6987, 0.39933, -32.7994, 10.6987, 0.39933, -35.9994, 12.6987, -4.28638, -35.9994, 12.6987, -3.11495, -32.7994, 12.6987, -3.11495, -32.7994, 12.6987, -4.28638, -32.5994, 13.8987, -7.80067, -32.5994, 13.8987, 0.39933, -24.1994, 13.8987, 0.39933, -24.1994, 13.8987, -7.80067, -32.5994, 16.6987, -4.28638, -32.5994, 16.6987, -3.11495, -24.1994, 16.6987, -3.11495, -24.1994, 16.6987, -4.28638, -25.5833, 16.6987, -3.99125, -31.3994, 11.4987, -6.80067, -31.3994, 11.4987, -0.60067, -25.3994, 11.4987, -0.60067, -25.3994, 11.4987, -6.80067, -31.3994, 13.0987, -3.70067, -25.3994, 13.0987, -3.70067, -19.9994, 1.09866, -1.60067, 1.00058, 1.49866, -3.40067, 0.600578, 1.49866, -3.60067, -21.1994, 7.89866, -4.40067, -21.1994, 7.89866, -3.00067, -20.7994, 7.89866, -3.00067, -20.7994, 7.89866, -4.40067, -19.5994, 1.09866, 10.7993, -20.3994, 1.09866, 11.5993, -20.5994, 1.09866, 12.7993, 5.20058, 1.09866, -2.60067, 4.20058, 1.09866, -2.60067, -20.9994, 1.09866, 7.59933, -20.1994, 1.09866, 9.79933, -19.5994, 1.09866, 9.99933, -19.9994, 1.09866, 3.79933, -23.9994, 1.09866, 3.79933, -23.9994, 1.09866, 6.59933, -22.3994, 1.09866, 6.59933, -22.9994, 1.09866, 14.5993, -23.9994, 1.09866, 99.5993, 99.6006, 1.09866, 99.5993, -23.9994, 1.09866, 14.5993, -24.1994, 10.2987, 0.799332, -20.7994, 7.49866, 3.79933, -32.5994, 10.2987, 0.799332, -35.9994, 7.49866, 3.79933, -25.5994, 1.09866, 6.59933, -26.9994, 1.09866, 7.59933, -36.7994, 1.09866, 3.99933, -24.9994, 1.09866, 14.5993, -27.3994, 1.09866, 12.7993, -99.5994, 1.09866, 99.5993, -27.9994, 1.09866, 9.79933, -22.7994, 1.09866, 12.7993, -21.7994, 1.09866, 11.9993, -21.3994, 1.09866, 10.9993, -24.7994, 1.09866, 7.79933, -26.1994, 1.09866, 8.79933, -26.5994, 1.09866, 9.99933, -21.7994, 1.09866, 8.79933, -23.1994, 1.09866, 7.79933, -26.1994, 1.09866, 11.9993, -24.7994, 1.09866, 12.9993, -25.3994, 18.6987, 11.3993, -24.5994, 18.6987, 11.9993, -23.3994, 18.6987, 11.9993, -22.5994, 18.6987, 9.39933, -23.3994, 18.6987, 8.79933, -24.5994, 18.6987, 8.79933, -22.3994, 18.6987, 10.7993, -25.5994, 18.6987, 9.99933)
 polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(3, 0, 4), PackedInt32Array(0, 5, 4), PackedInt32Array(7, 6, 8), PackedInt32Array(8, 6, 9), PackedInt32Array(9, 6, 10), PackedInt32Array(10, 6, 1), PackedInt32Array(13, 12, 11), PackedInt32Array(11, 9, 13), PackedInt32Array(13, 9, 10), PackedInt32Array(10, 1, 14), PackedInt32Array(14, 1, 15), PackedInt32Array(15, 1, 2), PackedInt32Array(17, 16, 18), PackedInt32Array(18, 16, 20), PackedInt32Array(20, 16, 19), PackedInt32Array(23, 22, 21), PackedInt32Array(21, 24, 14), PackedInt32Array(21, 14, 23), PackedInt32Array(23, 14, 15), PackedInt32Array(23, 15, 19), PackedInt32Array(19, 16, 23), PackedInt32Array(25, 18, 26), PackedInt32Array(26, 18, 20), PackedInt32Array(26, 20, 19), PackedInt32Array(29, 28, 27), PackedInt32Array(31, 30, 32), PackedInt32Array(32, 30, 33), PackedInt32Array(33, 30, 34), PackedInt32Array(36, 35, 37), PackedInt32Array(37, 35, 38), PackedInt32Array(38, 35, 34), PackedInt32Array(34, 35, 33), PackedInt32Array(34, 39, 38), PackedInt32Array(41, 40, 29), PackedInt32Array(29, 27, 41), PackedInt32Array(41, 27, 19), PackedInt32Array(41, 19, 42), PackedInt32Array(41, 42, 34), PackedInt32Array(34, 30, 41), PackedInt32Array(27, 26, 19), PackedInt32Array(43, 46, 44), PackedInt32Array(44, 46, 45), PackedInt32Array(47, 45, 48), PackedInt32Array(48, 45, 49), PackedInt32Array(25, 50, 18), PackedInt32Array(18, 50, 51), PackedInt32Array(51, 17, 18), PackedInt32Array(54, 53, 52), PackedInt32Array(52, 53, 49), PackedInt32Array(54, 56, 53), PackedInt32Array(53, 56, 55), PackedInt32Array(53, 55, 51), PackedInt32Array(53, 51, 50), PackedInt32Array(57, 53, 58), PackedInt32Array(58, 53, 50), PackedInt32Array(49, 45, 46), PackedInt32Array(52, 49, 59), PackedInt32Array(59, 49, 60), PackedInt32Array(60, 49, 46), PackedInt32Array(64, 63, 61), PackedInt32Array(61, 63, 62), PackedInt32Array(66, 69, 67), PackedInt32Array(67, 69, 70), PackedInt32Array(70, 69, 65), PackedInt32Array(70, 65, 68), PackedInt32Array(71, 73, 74), PackedInt32Array(74, 73, 72), PackedInt32Array(72, 73, 68), PackedInt32Array(76, 81, 71), PackedInt32Array(71, 81, 73), PackedInt32Array(73, 80, 68), PackedInt32Array(68, 78, 70), PackedInt32Array(70, 79, 67), PackedInt32Array(67, 79, 75), PackedInt32Array(75, 79, 77), PackedInt32Array(77, 81, 76), PackedInt32Array(81, 80, 73), PackedInt32Array(80, 78, 68), PackedInt32Array(78, 79, 70), PackedInt32Array(79, 80, 77), PackedInt32Array(77, 80, 81), PackedInt32Array(80, 79, 78), PackedInt32Array(76, 83, 77), PackedInt32Array(77, 83, 84), PackedInt32Array(77, 84, 82), PackedInt32Array(77, 82, 75), PackedInt32Array(86, 89, 87), PackedInt32Array(87, 89, 90), PackedInt32Array(90, 89, 85), PackedInt32Array(90, 85, 88), PackedInt32Array(83, 91, 84), PackedInt32Array(84, 91, 82), PackedInt32Array(82, 91, 88), PackedInt32Array(93, 98, 83), PackedInt32Array(83, 98, 91), PackedInt32Array(91, 97, 88), PackedInt32Array(88, 95, 90), PackedInt32Array(90, 96, 87), PackedInt32Array(87, 96, 92), PackedInt32Array(92, 96, 94), PackedInt32Array(94, 98, 93), PackedInt32Array(98, 97, 91), PackedInt32Array(97, 95, 88), PackedInt32Array(95, 96, 90), PackedInt32Array(96, 97, 94), PackedInt32Array(94, 97, 98), PackedInt32Array(97, 96, 95), PackedInt32Array(100, 99, 101), PackedInt32Array(101, 99, 102), PackedInt32Array(104, 103, 105), PackedInt32Array(105, 103, 108), PackedInt32Array(105, 108, 107), PackedInt32Array(105, 107, 106), PackedInt32Array(99, 105, 102), PackedInt32Array(102, 105, 106), PackedInt32Array(110, 109, 106), PackedInt32Array(106, 109, 112), PackedInt32Array(106, 112, 102), PackedInt32Array(102, 112, 111), PackedInt32Array(100, 101, 113), PackedInt32Array(113, 101, 114), PackedInt32Array(116, 115, 113), PackedInt32Array(104, 115, 103), PackedInt32Array(103, 115, 117), PackedInt32Array(117, 115, 116), PackedInt32Array(114, 119, 118), PackedInt32Array(113, 114, 116), PackedInt32Array(116, 114, 120), PackedInt32Array(120, 114, 118), PackedInt32Array(122, 121, 123), PackedInt32Array(123, 121, 124), PackedInt32Array(124, 121, 125), PackedInt32Array(126, 125, 127), PackedInt32Array(127, 125, 128), PackedInt32Array(128, 125, 129), PackedInt32Array(129, 125, 130), PackedInt32Array(130, 125, 132), PackedInt32Array(130, 132, 131), PackedInt32Array(125, 121, 132), PackedInt32Array(132, 133, 131), PackedInt32Array(129, 135, 128), PackedInt32Array(128, 135, 134), PackedInt32Array(122, 123, 136), PackedInt32Array(136, 123, 137), PackedInt32Array(139, 138, 140), PackedInt32Array(140, 138, 141), PackedInt32Array(145, 144, 142), PackedInt32Array(142, 144, 143), PackedInt32Array(142, 147, 145), PackedInt32Array(145, 147, 138), PackedInt32Array(138, 147, 141), PackedInt32Array(141, 147, 146), PackedInt32Array(149, 148, 150), PackedInt32Array(150, 148, 151), PackedInt32Array(153, 152, 146), PackedInt32Array(146, 152, 141), PackedInt32Array(141, 152, 154), PackedInt32Array(155, 151, 148), PackedInt32Array(155, 148, 147), PackedInt32Array(147, 148, 146), PackedInt32Array(157, 156, 143), PackedInt32Array(159, 158, 144), PackedInt32Array(144, 158, 143), PackedInt32Array(143, 158, 157), PackedInt32Array(160, 145, 138), PackedInt32Array(137, 163, 136), PackedInt32Array(136, 163, 161), PackedInt32Array(161, 163, 162), PackedInt32Array(161, 162, 152), PackedInt32Array(153, 161, 152), PackedInt32Array(165, 164, 166), PackedInt32Array(166, 164, 168), PackedInt32Array(166, 168, 167), PackedInt32Array(140, 168, 139), PackedInt32Array(139, 168, 169), PackedInt32Array(169, 171, 170), PackedInt32Array(172, 171, 173), PackedInt32Array(173, 171, 174), PackedInt32Array(169, 168, 171), PackedInt32Array(171, 168, 174), PackedInt32Array(174, 168, 175), PackedInt32Array(175, 168, 164), PackedInt32Array(177, 176, 175), PackedInt32Array(175, 176, 174), PackedInt32Array(44, 178, 43), PackedInt32Array(43, 178, 179), PackedInt32Array(179, 178, 180), PackedInt32Array(180, 181, 179), PackedInt32Array(179, 181, 135), PackedInt32Array(135, 181, 134), PackedInt32Array(180, 178, 182), PackedInt32Array(182, 178, 183), PackedInt32Array(185, 184, 186), PackedInt32Array(186, 184, 187), PackedInt32Array(188, 186, 189), PackedInt32Array(189, 186, 187), PackedInt32Array(192, 191, 190), PackedInt32Array(194, 193, 195), PackedInt32Array(195, 193, 196), PackedInt32Array(198, 197, 199), PackedInt32Array(199, 197, 193), PackedInt32Array(193, 197, 200), PackedInt32Array(184, 185, 202), PackedInt32Array(202, 185, 201), PackedInt32Array(204, 203, 205), PackedInt32Array(205, 203, 206), PackedInt32Array(206, 203, 199), PackedInt32Array(127, 207, 126), PackedInt32Array(126, 207, 208), PackedInt32Array(210, 209, 205), PackedInt32Array(198, 212, 211), PackedInt32Array(7, 8, 210), PackedInt32Array(214, 213, 215), PackedInt32Array(215, 213, 216), PackedInt32Array(210, 205, 7), PackedInt32Array(7, 205, 201), PackedInt32Array(218, 217, 219), PackedInt32Array(219, 217, 220), PackedInt32Array(200, 196, 193), PackedInt32Array(221, 206, 222), PackedInt32Array(222, 206, 199), PackedInt32Array(202, 201, 205), PackedInt32Array(12, 13, 209), PackedInt32Array(209, 13, 205), PackedInt32Array(225, 224, 226), PackedInt32Array(226, 224, 223), PackedInt32Array(227, 226, 200), PackedInt32Array(200, 226, 223), PackedInt32Array(216, 228, 215), PackedInt32Array(215, 228, 207), PackedInt32Array(197, 229, 200), PackedInt32Array(207, 228, 230), PackedInt32Array(207, 230, 208), PackedInt32Array(208, 230, 211), PackedInt32Array(211, 230, 197), PackedInt32Array(211, 197, 198), PackedInt32Array(206, 202, 205), PackedInt32Array(208, 231, 217), PackedInt32Array(217, 231, 220), PackedInt32Array(199, 203, 198), PackedInt32Array(211, 231, 208), PackedInt32Array(200, 223, 196), PackedInt32Array(227, 232, 226), PackedInt32Array(4, 5, 233), PackedInt32Array(233, 5, 234), PackedInt32Array(236, 235, 237), PackedInt32Array(237, 235, 238), PackedInt32Array(240, 239, 241), PackedInt32Array(241, 239, 242), PackedInt32Array(237, 238, 239), PackedInt32Array(239, 238, 242), PackedInt32Array(244, 243, 245), PackedInt32Array(245, 243, 246), PackedInt32Array(246, 243, 236), PackedInt32Array(236, 243, 235), PackedInt32Array(248, 247, 249), PackedInt32Array(249, 247, 250), PackedInt32Array(249, 250, 240), PackedInt32Array(249, 240, 241), PackedInt32Array(247, 245, 250), PackedInt32Array(250, 245, 246), PackedInt32Array(244, 251, 243), PackedInt32Array(243, 251, 254), PackedInt32Array(243, 254, 253), PackedInt32Array(243, 253, 252), PackedInt32Array(248, 249, 255), PackedInt32Array(255, 249, 256), PackedInt32Array(256, 249, 257), PackedInt32Array(257, 249, 258), PackedInt32Array(256, 254, 255), PackedInt32Array(255, 254, 251), PackedInt32Array(253, 259, 252), PackedInt32Array(252, 259, 262), PackedInt32Array(252, 262, 261), PackedInt32Array(252, 261, 260), PackedInt32Array(263, 257, 258), PackedInt32Array(259, 263, 262), PackedInt32Array(264, 262, 265), PackedInt32Array(265, 262, 263), PackedInt32Array(265, 263, 258), PackedInt32Array(261, 266, 260), PackedInt32Array(260, 266, 267), PackedInt32Array(268, 269, 266), PackedInt32Array(266, 269, 267), PackedInt32Array(264, 265, 268), PackedInt32Array(268, 265, 269), PackedInt32Array(271, 270, 272), PackedInt32Array(272, 270, 274), PackedInt32Array(274, 270, 273), PackedInt32Array(274, 273, 229), PackedInt32Array(229, 197, 275), PackedInt32Array(276, 39, 277), PackedInt32Array(277, 39, 278), PackedInt32Array(278, 39, 34), PackedInt32Array(278, 34, 279), PackedInt32Array(272, 274, 277), PackedInt32Array(277, 274, 229), PackedInt32Array(277, 229, 275), PackedInt32Array(277, 275, 276), PackedInt32Array(275, 280, 276), PackedInt32Array(284, 283, 281), PackedInt32Array(281, 283, 282), PackedInt32Array(233, 234, 284), PackedInt32Array(281, 285, 284), PackedInt32Array(284, 285, 286), PackedInt32Array(284, 286, 233), PackedInt32Array(222, 282, 221), PackedInt32Array(221, 282, 283), PackedInt32Array(286, 285, 287), PackedInt32Array(287, 285, 288), PackedInt32Array(194, 195, 289), PackedInt32Array(289, 195, 290), PackedInt32Array(293, 292, 291), PackedInt32Array(291, 294, 295), PackedInt32Array(295, 294, 290), PackedInt32Array(295, 296, 293), PackedInt32Array(295, 293, 291), PackedInt32Array(290, 294, 289), PackedInt32Array(298, 297, 299), PackedInt32Array(299, 297, 300), PackedInt32Array(300, 297, 288), PackedInt32Array(288, 297, 302), PackedInt32Array(288, 302, 287), PackedInt32Array(287, 302, 301), PackedInt32Array(299, 224, 298), PackedInt32Array(298, 224, 225), PackedInt32Array(304, 303, 305), PackedInt32Array(305, 303, 306), PackedInt32Array(307, 305, 308), PackedInt32Array(308, 305, 306), PackedInt32Array(307, 308, 309), PackedInt32Array(309, 308, 310), PackedInt32Array(311, 314, 312), PackedInt32Array(312, 314, 315), PackedInt32Array(315, 314, 313), PackedInt32Array(315, 313, 316), PackedInt32Array(316, 313, 317), PackedInt32Array(317, 313, 309), PackedInt32Array(317, 309, 310), PackedInt32Array(301, 302, 318), PackedInt32Array(318, 302, 319), PackedInt32Array(323, 322, 320), PackedInt32Array(320, 322, 321), PackedInt32Array(326, 325, 324), PackedInt32Array(329, 328, 327), PackedInt32Array(330, 329, 331), PackedInt32Array(331, 329, 324), PackedInt32Array(327, 333, 332), PackedInt32Array(329, 327, 324), PackedInt32Array(324, 327, 326), PackedInt32Array(326, 327, 332), PackedInt32Array(326, 332, 334), PackedInt32Array(334, 335, 326), PackedInt32Array(303, 304, 338), PackedInt32Array(338, 304, 341), PackedInt32Array(338, 341, 340), PackedInt32Array(338, 340, 339), PackedInt32Array(339, 340, 337), PackedInt32Array(339, 337, 336), PackedInt32Array(349, 350, 345), PackedInt32Array(345, 350, 342), PackedInt32Array(342, 350, 346), PackedInt32Array(346, 350, 347), PackedInt32Array(347, 350, 343), PackedInt32Array(343, 350, 344), PackedInt32Array(344, 350, 348), PackedInt32Array(348, 350, 349), PackedInt32Array(354, 356, 351), PackedInt32Array(351, 356, 355), PackedInt32Array(355, 356, 353), PackedInt32Array(355, 353, 352), PackedInt32Array(331, 232, 330), PackedInt32Array(330, 232, 357), PackedInt32Array(357, 232, 359), PackedInt32Array(357, 359, 358), PackedInt32Array(232, 227, 359), PackedInt32Array(363, 362, 360), PackedInt32Array(360, 362, 361), PackedInt32Array(365, 364, 366), PackedInt32Array(366, 364, 367), PackedInt32Array(270, 368, 273), PackedInt32Array(273, 368, 358), PackedInt32Array(370, 369, 371), PackedInt32Array(371, 369, 372), PackedInt32Array(375, 374, 373), PackedInt32Array(364, 371, 367), PackedInt32Array(369, 375, 372), PackedInt32Array(372, 375, 373), PackedInt32Array(366, 367, 376), PackedInt32Array(376, 367, 377), PackedInt32Array(377, 367, 279), PackedInt32Array(377, 279, 378), PackedInt32Array(367, 278, 279), PackedInt32Array(372, 357, 371), PackedInt32Array(371, 357, 368), PackedInt32Array(371, 368, 367), PackedInt32Array(357, 358, 368), PackedInt32Array(377, 379, 376), PackedInt32Array(311, 312, 380), PackedInt32Array(380, 312, 381), PackedInt32Array(337, 382, 336), PackedInt32Array(336, 382, 383), PackedInt32Array(382, 380, 383), PackedInt32Array(383, 380, 381), PackedInt32Array(373, 374, 384), PackedInt32Array(384, 385, 373), PackedInt32Array(373, 385, 386), PackedInt32Array(388, 387, 318), PackedInt32Array(318, 387, 377), PackedInt32Array(318, 377, 389), PackedInt32Array(386, 385, 390), PackedInt32Array(390, 388, 386), PackedInt32Array(386, 388, 318), PackedInt32Array(318, 319, 386), PackedInt32Array(387, 379, 377), PackedInt32Array(393, 392, 391), PackedInt32Array(396, 395, 394), PackedInt32Array(394, 398, 397), PackedInt32Array(391, 400, 399), PackedInt32Array(393, 391, 397), PackedInt32Array(397, 391, 394), PackedInt32Array(394, 391, 396), PackedInt32Array(396, 391, 399), PackedInt32Array(403, 402, 401), PackedInt32Array(406, 405, 404), PackedInt32Array(408, 406, 401), PackedInt32Array(401, 406, 403), PackedInt32Array(403, 406, 407), PackedInt32Array(407, 406, 404)]
 cell_size = 0.2
@@ -52,12 +55,133 @@ cell_height = 0.4
 agent_radius = 0.33
 agent_max_climb = 0.5
 
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_6l1du"]
 size = Vector3(200.563, 1.30634, 199.873)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngduv"]
 albedo_texture = ExtResource("1_2qhk6")
 uv1_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mle2g"]
+size = Vector3(4.18261, 2.20303, 0.231323)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vxo5h"]
+size = Vector3(0.230103, 2.54163, 11.3518)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ew17x"]
+size = Vector3(5.00764, 2.22403, 0.252563)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2uynp"]
+size = Vector3(0.249146, 2.40381, 5.45142)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ud6ik"]
+size = Vector3(2.91357, 2.41194, 0.202393)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lo4sy"]
+size = Vector3(3.41943, 2.31519, 0.137207)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6hnla"]
+size = Vector3(0.0830688, 2.09229, 8.30054)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5iu75"]
+size = Vector3(0.23877, 4.09064, 7.84335)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sdwc6"]
+size = Vector3(4.98853, 1.71008, 0.159912)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mwsap"]
+size = Vector3(3.31763, 1, 4.35388)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvbpi"]
+size = Vector3(6.44757, 1.97742, 0.408936)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u438d"]
+size = Vector3(4.9422, 2.50537, 3.60742)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7xb08"]
+size = Vector3(4.16632, 2.65723, 10.2446)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ki3n"]
+size = Vector3(1.61176, 4.94629, 1.4527)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6l5rg"]
+size = Vector3(4.80344, 1, 7.66504)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0orhv"]
+size = Vector3(2.14343, 2.76746, 6.05554)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g31ad"]
+size = Vector3(2.36951, 1, 2.85657)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1jipc"]
+size = Vector3(8.80103, 2.75488, 3.40771)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bs7is"]
+size = Vector3(4.19849, 2.86517, 3.33691)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ydc5"]
+size = Vector3(1.83899, 2.36768, 12.8823)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtrbv"]
+size = Vector3(8.15765, 3.77631, 1.80618)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w4dvf"]
+size = Vector3(34.6885, 4.73647, 1.93835)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4nkht"]
+size = Vector3(2.3634, 3.14404, 7.39185)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r5b6g"]
+size = Vector3(35.1013, 6.87964, 2.9823)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_20ta8"]
+size = Vector3(7.79749, 3.93054, 2.37988)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j00su"]
+size = Vector3(2.03931, 3.78955, 5.86823)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ud5bw"]
+size = Vector3(1, 4.83105, 23.1506)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mrb7y"]
+size = Vector3(2.92603, 1, 5.40332)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m6rkd"]
+size = Vector3(4.25403, 3.20007, 3.14258)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ns25j"]
+size = Vector3(3.74243, 1, 2.31161)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h0k68"]
+size = Vector3(0.970215, 6.50635, 9.0173)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ssftq"]
+size = Vector3(3.17291, 5.73926, 5.12244)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vwuwv"]
+size = Vector3(3.34094, 2.37219, 2.28003)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8x0ur"]
+size = Vector3(3.21265, 4.80481, 3.21948)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0kt66"]
+size = Vector3(2.61438, 3.99524, 0.868164)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6xtyo"]
+size = Vector3(5.76935, 1, 2.3186)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ryanq"]
+size = Vector3(3.79312, 1, 4.75281)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5q72w"]
+size = Vector3(1, 3.30713, 5.26715)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kvw2t"]
+size = Vector3(1, 7.56628, 19.9795)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yufv8"]
+size = Vector3(3.19098, 4.74597, 2.80225)
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_qvolv")
@@ -76,6 +200,7 @@ transform = Transform3D(-0.615661, -0.417582, 0.668271, 0, 0.848048, 0.529919, -
 shadow_enabled = true
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(0.804987, 0, 0, 0, 0.804987, 0, 0, 0, 0.804987, 13.36, 0.00588989, -10.7043)
 navigation_mesh = SubResource("NavigationMesh_n5v08")
 
 [node name="Ground" type="StaticBody3D" parent="NavigationRegion3D"]
@@ -150,43 +275,7 @@ transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 9.58297,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0994, -4.0096, 1.96378)
 
 [node name="Animal Farms" type="Node3D" parent="NavigationRegion3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000580788, -0.00134349, -0.000667572)
-
-[node name="Pig pen" parent="NavigationRegion3D/Animal Farms" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.585, 0.5, -47.438)
-
-[node name="Fence2" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7622, 0, -0.0213413)
-
-[node name="Fence3" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.62345, -4.76837e-07, -2.87306)
-
-[node name="Fence4" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.63292, 4.76837e-07, -8.59945)
-
-[node name="Fence5" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.63953, 0, -14.3515)
-
-[node name="Fence6" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.76818, 0, -17.2074)
-
-[node name="Fence7" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0293312, 0, -17.2368)
-
-[node name="Fence8" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.72273, 0, -17.2486)
-
-[node name="Fence9" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.59344, 4.76837e-07, -14.3489)
-
-[node name="Fence10" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.6063, -2.38419e-07, -8.60503)
-
-[node name="Fence11" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("5_si08p")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.60345, 0, -2.93574)
-
-[node name="Shorter fence" parent="NavigationRegion3D/Animal Farms/Pig pen" instance=ExtResource("7_84rob")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.16275, 0.0208297, 0.0339947)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000579834, -0.00134349, 2.37744)
 
 [node name="Horse pen" parent="NavigationRegion3D/Animal Farms" instance=ExtResource("5_si08p")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -20.538, 0.477502, -26.7702)
@@ -259,5 +348,2283 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="CharacterBody3D4" parent="Enemies" instance=ExtResource("16_87ri5")]
 
-[node name="Shop_button" parent="." instance=ExtResource("16_0jonq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
+[node name="Corn Maze" type="Node3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -4.12339, -0.0189075, 23.8816)
+
+[node name="Corn" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1779, 0.51093, -44.7989)
+
+[node name="Corn3" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -29.7418)
+
+[node name="Corn_Plants_0" parent="Corn Maze/Corn3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -2.98023e-08, 0, 2.98023e-08, 1, -0.00579643, 0.324578, -0.463552)
+
+[node name="Corn4" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510931, -29.0407)
+
+[node name="Corn5" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -28.4845)
+
+[node name="Corn6" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -44.0523)
+
+[node name="Corn7" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510932, -43.3512)
+
+[node name="Corn8" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506228, -42.7139)
+
+[node name="Corn9" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -41.2976)
+
+[node name="Corn11" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -40.7413)
+
+[node name="Corn12" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.51093, -40.0261)
+
+[node name="Corn13" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -39.325)
+
+[node name="Corn14" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.50623, -38.8251)
+
+[node name="Corn15" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -38.1099)
+
+[node name="Corn16" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -37.4088)
+
+[node name="Corn17" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1098, 0.503042, -36.7414)
+
+[node name="Corn18" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1579, 0.507743, -36.0262)
+
+[node name="Corn19" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1895, 0.507744, -35.3251)
+
+[node name="Corn20" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1098, 0.50304, -34.6878)
+
+[node name="Corn21" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1579, 0.507742, -33.9725)
+
+[node name="Corn22" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1895, 0.507741, -33.2714)
+
+[node name="Corn23" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.5238, 0.503045, -32.9238)
+
+[node name="Corn24" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1579, 0.507742, -32)
+
+[node name="Corn_Plants_0" parent="Corn Maze/Corn24" index="0"]
+transform = Transform3D(-0.994881, 3.01171e-09, 0.101056, 0, 1, -2.98023e-08, -0.101056, -2.96498e-08, -0.994881, 0.231737, 0.420958, -0.601192)
+
+[node name="Corn26" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506229, -27.721)
+
+[node name="Corn27" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -27.0058)
+
+[node name="Corn28" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -26.3047)
+
+[node name="Corn29" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -25.7485)
+
+[node name="Corn30" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -25.0332)
+
+[node name="Corn31" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn34" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2864, 0.51093, -30.4122)
+
+[node name="Corn35" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510931, -29.3242)
+
+[node name="Corn36" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -28.768)
+
+[node name="Corn37" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -44.0523)
+
+[node name="Corn38" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510932, -43.3512)
+
+[node name="Corn39" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn42" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -40.7413)
+
+[node name="Corn43" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.51093, -40.0261)
+
+[node name="Corn44" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -39.325)
+
+[node name="Corn45" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.50623, -38.8251)
+
+[node name="Corn46" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -38.1099)
+
+[node name="Corn47" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -37.4088)
+
+[node name="Corn48" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506231, -36.8526)
+
+[node name="Corn49" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -36.4209)
+
+[node name="Corn50" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -35.7198)
+
+[node name="Corn51" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -35.0825)
+
+[node name="Corn52" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -34.3672)
+
+[node name="Corn53" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2521, 0.507741, -33.5549)
+
+[node name="Corn54" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.1724, 0.503045, -32.9987)
+
+[node name="Corn55" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.994881, -0.0579635, 0.0827805, 0, 0.819152, 0.573576, -0.101056, 0.57064, -0.814959, 22.2205, 0.507742, -32.7858)
+
+[node name="Corn57" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -28.0045)
+
+[node name="Corn60" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -26.032)
+
+[node name="Corn61" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -25.0332)
+
+[node name="Corn62" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn65" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3075, 0.51093, -30.4122)
+
+[node name="Corn66" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510931, -29.3242)
+
+[node name="Corn67" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -28.768)
+
+[node name="Corn80" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -36.4209)
+
+[node name="Corn81" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -35.7198)
+
+[node name="Corn82" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -35.0825)
+
+[node name="Corn83" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -34.3672)
+
+[node name="Corn84" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -33.6661)
+
+[node name="Corn85" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -33.1099)
+
+[node name="Corn86" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.994881, -0.0579635, 0.0827805, 0, 0.819152, 0.573576, -0.101056, 0.57064, -0.814959, 23.3133, 0.510931, -32.6925)
+
+[node name="Corn88" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -28.0045)
+
+[node name="Corn89" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -27.2893)
+
+[node name="Corn91" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -26.032)
+
+[node name="Corn92" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -25.0332)
+
+[node name="Corn93" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn96" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1374, 0.51093, -30.4122)
+
+[node name="Corn97" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510931, -29.3242)
+
+[node name="Corn98" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -28.768)
+
+[node name="Corn99" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -44.0523)
+
+[node name="Corn101" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506228, -42.7139)
+
+[node name="Corn102" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -41.9987)
+
+[node name="Corn103" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -41.2976)
+
+[node name="Corn104" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -40.7413)
+
+[node name="Corn105" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.51093, -40.0261)
+
+[node name="Corn106" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -39.325)
+
+[node name="Corn107" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.50623, -38.8251)
+
+[node name="Corn108" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -38.1099)
+
+[node name="Corn111" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.4209)
+
+[node name="Corn112" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -35.7198)
+
+[node name="Corn113" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506229, -35.0825)
+
+[node name="Corn114" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -34.3672)
+
+[node name="Corn115" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -33.6661)
+
+[node name="Corn116" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -33.1099)
+
+[node name="Corn117" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.994881, -0.0579635, 0.0827805, 0, 0.819152, 0.573576, -0.101056, 0.57064, -0.814959, 24.1432, 0.510931, -32.6925)
+
+[node name="Corn119" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506229, -28.0045)
+
+[node name="Corn120" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -27.2893)
+
+[node name="Corn122" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -26.032)
+
+[node name="Corn123" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -25.0332)
+
+[node name="Corn124" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn Maze" type="Node3D" parent="Corn Maze"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81775, -0.0189085, 0.00138855)
+
+[node name="Corn" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1762, 0.51093, -44.7898)
+
+[node name="Corn6" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -44.0523)
+
+[node name="Corn8" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506228, -42.7139)
+
+[node name="Corn9" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -41.2976)
+
+[node name="Corn11" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -40.7413)
+
+[node name="Corn12" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.51093, -40.0261)
+
+[node name="Corn13" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -39.325)
+
+[node name="Corn14" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.501488, -38.8251)
+
+[node name="Corn15" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -38.1099)
+
+[node name="Corn18" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -36.4209)
+
+[node name="Corn19" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -35.7198)
+
+[node name="Corn20" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506229, -35.0825)
+
+[node name="Corn21" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -34.3672)
+
+[node name="Corn22" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -33.6661)
+
+[node name="Corn23" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -33.1099)
+
+[node name="Corn24" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.994881, -0.0579635, 0.0827805, 0, 0.819152, 0.573576, -0.101056, 0.57064, -0.814959, 21.2296, 0.510931, -32.6925)
+
+[node name="Corn29" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -26.032)
+
+[node name="Corn30" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -25.0332)
+
+[node name="Corn31" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn34" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -30.0253)
+
+[node name="Corn35" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510931, -29.3242)
+
+[node name="Corn36" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -28.768)
+
+[node name="Corn37" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -44.0523)
+
+[node name="Corn39" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn42" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -40.7413)
+
+[node name="Corn43" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.51093, -40.0261)
+
+[node name="Corn57" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -28.0045)
+
+[node name="Corn60" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -26.032)
+
+[node name="Corn61" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -25.0332)
+
+[node name="Corn62" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn64" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506233, -30.7405)
+
+[node name="Corn65" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -30.0253)
+
+[node name="Corn66" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510931, -29.0407)
+
+[node name="Corn67" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -28.768)
+
+[node name="Corn68" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -44.0523)
+
+[node name="Corn69" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510932, -43.3512)
+
+[node name="Corn71" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -41.9987)
+
+[node name="Corn72" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -41.2976)
+
+[node name="Corn73" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -40.7413)
+
+[node name="Corn74" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.51093, -40.0261)
+
+[node name="Corn75" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -39.6121)
+
+[node name="Corn78" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -37.4088)
+
+[node name="Corn79" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506231, -36.8526)
+
+[node name="Corn80" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -36.1374)
+
+[node name="Corn81" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -35.7198)
+
+[node name="Corn82" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -35.0825)
+
+[node name="Corn83" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -34.3672)
+
+[node name="Corn84" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -33.6661)
+
+[node name="Corn85" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -33.1099)
+
+[node name="Corn86" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -32.3947)
+
+[node name="Corn87" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -31.6936)
+
+[node name="Corn88" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -28.0045)
+
+[node name="Corn91" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -25.7485)
+
+[node name="Corn92" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -25.0332)
+
+[node name="Corn93" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn95" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506233, -30.457)
+
+[node name="Corn96" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -29.7418)
+
+[node name="Corn97" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510931, -29.0407)
+
+[node name="Corn98" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -28.4845)
+
+[node name="Corn99" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -44.0523)
+
+[node name="Corn109" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -37.4088)
+
+[node name="Corn110" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506231, -36.8526)
+
+[node name="Corn111" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.1374)
+
+[node name="Corn112" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 20.2737, 0.510933, -43.3784)
+
+[node name="Corn113" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 45.4309, 0.506229, -25.9957)
+
+[node name="Corn114" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -34.0837)
+
+[node name="Corn115" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -33.3826)
+
+[node name="Corn116" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -32.8264)
+
+[node name="Corn117" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -32.1112)
+
+[node name="Corn118" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -31.4101)
+
+[node name="Corn122" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 33.7985, 0.506234, -32.1531)
+
+[node name="Corn123" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -25.0332)
+
+[node name="Corn124" parent="Corn Maze/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn Maze2" type="Node3D" parent="Corn Maze/Corn Maze"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.08076, -0.0189075, 0.00138855)
+
+[node name="Corn Maze" type="Node3D" parent="Corn Maze/Corn Maze/Corn Maze2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81775, -0.0189085, 0.00138855)
+
+[node name="Corn" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1762, 0.51093, -44.7898)
+
+[node name="Corn2" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506233, -30.457)
+
+[node name="Corn3" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -29.7418)
+
+[node name="Corn6" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -44.0523)
+
+[node name="Corn9" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -41.2976)
+
+[node name="Corn11" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -40.7413)
+
+[node name="Corn12" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.51093, -40.0261)
+
+[node name="Corn13" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -39.325)
+
+[node name="Corn14" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.50623, -38.8251)
+
+[node name="Corn15" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -38.1099)
+
+[node name="Corn16" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -37.4088)
+
+[node name="Corn17" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506231, -36.8526)
+
+[node name="Corn18" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -36.1374)
+
+[node name="Corn19" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -35.4363)
+
+[node name="Corn20" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506229, -34.799)
+
+[node name="Corn21" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -34.0837)
+
+[node name="Corn22" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -33.3826)
+
+[node name="Corn25" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.759271, 0.373268, -0.533083, 0, 0.819152, 0.573576, 0.650774, 0.4355, -0.621959, 21.2612, 0.510933, -31.4101)
+
+[node name="Corn26" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506229, -27.721)
+
+[node name="Corn27" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -27.0058)
+
+[node name="Corn28" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -26.3047)
+
+[node name="Corn29" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -25.7485)
+
+[node name="Corn30" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -25.0332)
+
+[node name="Corn31" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn37" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -44.0523)
+
+[node name="Corn38" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510932, -43.3512)
+
+[node name="Corn39" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn42" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -40.7413)
+
+[node name="Corn43" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.51093, -40.0261)
+
+[node name="Corn44" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -39.325)
+
+[node name="Corn45" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.50623, -38.8251)
+
+[node name="Corn46" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -38.1099)
+
+[node name="Corn47" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -37.4088)
+
+[node name="Corn48" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506231, -36.8526)
+
+[node name="Corn49" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -36.1374)
+
+[node name="Corn50" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -35.4363)
+
+[node name="Corn51" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -34.799)
+
+[node name="Corn52" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -34.0837)
+
+[node name="Corn53" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -33.3826)
+
+[node name="Corn59" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -26.3047)
+
+[node name="Corn60" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -25.7485)
+
+[node name="Corn61" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -25.0332)
+
+[node name="Corn62" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn64" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506233, -30.457)
+
+[node name="Corn65" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -29.7418)
+
+[node name="Corn66" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510931, -29.0407)
+
+[node name="Corn67" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -28.4845)
+
+[node name="Corn68" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -44.0523)
+
+[node name="Corn69" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510932, -43.3512)
+
+[node name="Corn70" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506228, -42.7139)
+
+[node name="Corn71" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -41.9987)
+
+[node name="Corn72" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -41.2976)
+
+[node name="Corn75" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -39.325)
+
+[node name="Corn76" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.50623, -38.8251)
+
+[node name="Corn77" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -38.1099)
+
+[node name="Corn78" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -37.4088)
+
+[node name="Corn79" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506231, -36.8526)
+
+[node name="Corn80" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -36.1374)
+
+[node name="Corn81" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -35.4363)
+
+[node name="Corn82" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -34.799)
+
+[node name="Corn83" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -34.0837)
+
+[node name="Corn84" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -33.3826)
+
+[node name="Corn85" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -32.8264)
+
+[node name="Corn87" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -31.4101)
+
+[node name="Corn90" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -26.3047)
+
+[node name="Corn91" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -25.7485)
+
+[node name="Corn92" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -25.0332)
+
+[node name="Corn93" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn95" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506233, -30.457)
+
+[node name="Corn96" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -29.7418)
+
+[node name="Corn97" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510931, -29.0407)
+
+[node name="Corn98" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -28.4845)
+
+[node name="Corn99" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -44.0523)
+
+[node name="Corn100" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510932, -43.3512)
+
+[node name="Corn101" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506228, -42.7139)
+
+[node name="Corn102" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -41.9987)
+
+[node name="Corn103" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -41.2976)
+
+[node name="Corn106" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -39.325)
+
+[node name="Corn107" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.50623, -38.8251)
+
+[node name="Corn108" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -38.1099)
+
+[node name="Corn109" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -37.4088)
+
+[node name="Corn110" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506231, -36.8526)
+
+[node name="Corn111" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.1374)
+
+[node name="Corn112" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -35.4363)
+
+[node name="Corn113" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.6225, 0.506229, -31.8975)
+
+[node name="Corn114" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -34.0837)
+
+[node name="Corn115" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.6946, 0.51093, -32.064)
+
+[node name="Corn116" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -32.8264)
+
+[node name="Corn118" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -31.4101)
+
+[node name="Corn121" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -26.3047)
+
+[node name="Corn122" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -25.7485)
+
+[node name="Corn123" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -25.0332)
+
+[node name="Corn124" parent="Corn Maze/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn Maze3" type="Node3D" parent="Corn Maze/Corn Maze"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4499, 1.04681e-06, 4.65661e-10)
+
+[node name="Corn Maze" type="Node3D" parent="Corn Maze/Corn Maze/Corn Maze3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81775, -0.0189085, 0.00138855)
+
+[node name="Corn" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1762, 0.51093, -44.7898)
+
+[node name="Corn2" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506233, -30.457)
+
+[node name="Corn3" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -29.7418)
+
+[node name="Corn4" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510931, -29.0407)
+
+[node name="Corn8" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506228, -42.7139)
+
+[node name="Corn9" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -41.2976)
+
+[node name="Corn13" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -39.325)
+
+[node name="Corn14" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.50623, -38.8251)
+
+[node name="Corn15" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -38.1099)
+
+[node name="Corn21" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -34.0837)
+
+[node name="Corn22" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -33.3826)
+
+[node name="Corn23" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -32.8264)
+
+[node name="Corn25" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -31.4101)
+
+[node name="Corn27" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -27.0058)
+
+[node name="Corn28" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -26.3047)
+
+[node name="Corn31" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn33" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506233, -30.457)
+
+[node name="Corn34" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -29.7418)
+
+[node name="Corn35" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510931, -29.0407)
+
+[node name="Corn39" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn42" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -40.7413)
+
+[node name="Corn44" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -39.325)
+
+[node name="Corn45" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.50623, -38.8251)
+
+[node name="Corn46" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -38.1099)
+
+[node name="Corn47" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -37.4088)
+
+[node name="Corn48" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506231, -36.8526)
+
+[node name="Corn49" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -36.1374)
+
+[node name="Corn52" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -34.0837)
+
+[node name="Corn53" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -33.3826)
+
+[node name="Corn54" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -32.8264)
+
+[node name="Corn56" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -31.4101)
+
+[node name="Corn58" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -27.0058)
+
+[node name="Corn59" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -26.3047)
+
+[node name="Corn62" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn64" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506233, -30.457)
+
+[node name="Corn65" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -29.7418)
+
+[node name="Corn66" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510931, -29.0407)
+
+[node name="Corn70" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506228, -42.7139)
+
+[node name="Corn71" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -41.9987)
+
+[node name="Corn72" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -41.2976)
+
+[node name="Corn73" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -40.7413)
+
+[node name="Corn75" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -39.325)
+
+[node name="Corn76" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.50623, -38.8251)
+
+[node name="Corn77" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -38.1099)
+
+[node name="Corn78" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -37.4088)
+
+[node name="Corn79" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506231, -36.8526)
+
+[node name="Corn80" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -36.1374)
+
+[node name="Corn83" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -34.0837)
+
+[node name="Corn84" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -33.3826)
+
+[node name="Corn85" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -32.8264)
+
+[node name="Corn87" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -31.4101)
+
+[node name="Corn89" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -27.0058)
+
+[node name="Corn90" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -26.3047)
+
+[node name="Corn93" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn101" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.7833, 0.506228, -42.7139)
+
+[node name="Corn102" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -41.9987)
+
+[node name="Corn103" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.7312, 0.51093, -41.2976)
+
+[node name="Corn105" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.7061, 0.51093, -40.0261)
+
+[node name="Corn109" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -37.4088)
+
+[node name="Corn110" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506231, -36.8526)
+
+[node name="Corn111" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.1374)
+
+[node name="Corn115" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.2515, 0.484394, -32.9115)
+
+[node name="Corn120" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -27.0058)
+
+[node name="Corn121" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -26.3047)
+
+[node name="Corn124" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn Maze2" type="Node3D" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.08076, -0.0189075, 0.00138855)
+
+[node name="Corn Maze" type="Node3D" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81775, -0.0189085, 0.00138855)
+
+[node name="Corn" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1762, 0.51093, -44.7898)
+
+[node name="Corn2" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506233, -30.457)
+
+[node name="Corn3" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510932, -29.7418)
+
+[node name="Corn8" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506228, -42.7139)
+
+[node name="Corn9" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -41.2976)
+
+[node name="Corn11" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -40.7413)
+
+[node name="Corn22" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -33.3826)
+
+[node name="Corn23" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506234, -32.8264)
+
+[node name="Corn24" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -32.1112)
+
+[node name="Corn25" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -31.4101)
+
+[node name="Corn31" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn33" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506233, -30.457)
+
+[node name="Corn34" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -29.7418)
+
+[node name="Corn35" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510931, -29.0407)
+
+[node name="Corn36" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -28.4845)
+
+[node name="Corn39" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn42" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -40.7413)
+
+[node name="Corn43" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.51093, -40.0261)
+
+[node name="Corn44" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -39.325)
+
+[node name="Corn45" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.50623, -38.8251)
+
+[node name="Corn46" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -38.1099)
+
+[node name="Corn47" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -37.4088)
+
+[node name="Corn48" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506231, -36.8526)
+
+[node name="Corn49" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -36.1374)
+
+[node name="Corn50" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(0.999842, 0.0145678, 0.0102005, -0.017784, 0.819022, 0.573485, 0, -0.573576, 0.819152, 22.3238, 0.510933, -35.4363)
+
+[node name="Corn51" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -34.799)
+
+[node name="Corn52" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -34.0837)
+
+[node name="Corn53" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -33.3826)
+
+[node name="Corn54" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -32.8264)
+
+[node name="Corn55" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -32.1112)
+
+[node name="Corn56" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -31.4101)
+
+[node name="Corn57" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -27.721)
+
+[node name="Corn58" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -27.0058)
+
+[node name="Corn59" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -26.3047)
+
+[node name="Corn60" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -25.7485)
+
+[node name="Corn61" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -25.0332)
+
+[node name="Corn62" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn68" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.7421, 0.510931, -44.7097)
+
+[node name="Corn92" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -25.0332)
+
+[node name="Corn93" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn95" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506233, -30.457)
+
+[node name="Corn96" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -29.7418)
+
+[node name="Corn97" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510931, -29.0407)
+
+[node name="Corn99" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -44.0523)
+
+[node name="Corn101" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506228, -42.7139)
+
+[node name="Corn102" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -41.9987)
+
+[node name="Corn103" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -41.2976)
+
+[node name="Corn104" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -40.7413)
+
+[node name="Corn105" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.51093, -40.0261)
+
+[node name="Corn106" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -39.325)
+
+[node name="Corn107" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.50623, -38.8251)
+
+[node name="Corn108" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -38.1099)
+
+[node name="Corn109" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -37.4088)
+
+[node name="Corn110" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506231, -36.8526)
+
+[node name="Corn111" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.1374)
+
+[node name="Corn112" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -35.4363)
+
+[node name="Corn113" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506229, -34.799)
+
+[node name="Corn114" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -34.0837)
+
+[node name="Corn115" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -33.3826)
+
+[node name="Corn116" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -32.8264)
+
+[node name="Corn117" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -32.1112)
+
+[node name="Corn118" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -31.4101)
+
+[node name="Corn123" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -25.0332)
+
+[node name="Corn124" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2/Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn8" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.1815, 0.506228, -42.7139)
+
+[node name="Corn9" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.668, 0.510931, -41.9987)
+
+[node name="Corn10" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.0603, 0.51093, -41.2976)
+
+[node name="Corn12" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 20.1841, 0.51093, -40.0261)
+
+[node name="Corn14" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 5.90228, 0.527352, -42.7609)
+
+[node name="Corn16" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.4346, 0.51093, -37.4088)
+
+[node name="Corn17" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.6299, 0.506231, -36.8526)
+
+[node name="Corn18" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.4881, 0.510932, -36.1374)
+
+[node name="Corn21" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -34.0837)
+
+[node name="Corn22" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -33.3826)
+
+[node name="Corn27" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2296, 0.510931, -27.0058)
+
+[node name="Corn28" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.51093, -26.3047)
+
+[node name="Corn31" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 21.2612, 0.510933, -24.3321)
+
+[node name="Corn32" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2388, 0.51093, -44.7898)
+
+[node name="Corn33" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506233, -30.457)
+
+[node name="Corn34" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -29.7418)
+
+[node name="Corn35" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510931, -29.0407)
+
+[node name="Corn36" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506234, -28.4845)
+
+[node name="Corn37" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -44.0523)
+
+[node name="Corn39" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506228, -42.7139)
+
+[node name="Corn40" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -41.9987)
+
+[node name="Corn41" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -41.2976)
+
+[node name="Corn44" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -39.325)
+
+[node name="Corn47" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -37.4088)
+
+[node name="Corn48" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506231, -36.8526)
+
+[node name="Corn49" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510932, -36.1374)
+
+[node name="Corn56" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -31.4101)
+
+[node name="Corn57" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2441, 0.506229, -27.721)
+
+[node name="Corn58" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.2922, 0.510931, -27.0058)
+
+[node name="Corn59" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.51093, -26.3047)
+
+[node name="Corn62" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 22.3238, 0.510933, -24.3321)
+
+[node name="Corn63" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2599, 0.51093, -44.7898)
+
+[node name="Corn64" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506233, -30.457)
+
+[node name="Corn65" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510932, -29.7418)
+
+[node name="Corn66" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510931, -29.0407)
+
+[node name="Corn67" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506234, -28.4845)
+
+[node name="Corn75" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -39.325)
+
+[node name="Corn87" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -31.4101)
+
+[node name="Corn88" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.2652, 0.506229, -27.721)
+
+[node name="Corn89" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3133, 0.510931, -27.0058)
+
+[node name="Corn90" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.51093, -26.3047)
+
+[node name="Corn93" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 23.3449, 0.510933, -24.3321)
+
+[node name="Corn94" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0898, 0.51093, -44.7898)
+
+[node name="Corn95" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506233, -30.457)
+
+[node name="Corn96" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -29.7418)
+
+[node name="Corn97" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510931, -29.0407)
+
+[node name="Corn98" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -28.4845)
+
+[node name="Corn101" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506228, -42.7139)
+
+[node name="Corn102" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -41.9987)
+
+[node name="Corn103" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -41.2976)
+
+[node name="Corn104" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -40.9405)
+
+[node name="Corn106" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -39.325)
+
+[node name="Corn107" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.50623, -38.8251)
+
+[node name="Corn108" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -38.1099)
+
+[node name="Corn109" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -37.4088)
+
+[node name="Corn110" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506231, -36.8526)
+
+[node name="Corn111" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510932, -36.1374)
+
+[node name="Corn112" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -35.4363)
+
+[node name="Corn113" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506229, -34.799)
+
+[node name="Corn114" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -34.0837)
+
+[node name="Corn115" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -33.3826)
+
+[node name="Corn116" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506234, -32.8264)
+
+[node name="Corn117" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -32.1112)
+
+[node name="Corn118" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -31.4101)
+
+[node name="Corn119" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.0951, 0.506229, -27.721)
+
+[node name="Corn120" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1432, 0.510931, -27.0058)
+
+[node name="Corn121" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.51093, -26.3047)
+
+[node name="Corn124" parent="Corn Maze/Corn Maze/Corn Maze3/Corn Maze/Corn Maze2" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 24.1748, 0.510933, -24.3321)
+
+[node name="Corn185" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4438, 0.492022, -44.7884)
+
+[node name="Corn186" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487325, -30.4556)
+
+[node name="Corn187" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492025, -29.7404)
+
+[node name="Corn188" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492023, -29.0393)
+
+[node name="Corn189" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487327, -28.4831)
+
+[node name="Corn190" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492023, -44.0509)
+
+[node name="Corn191" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492025, -43.3498)
+
+[node name="Corn192" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487321, -42.7125)
+
+[node name="Corn193" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492023, -41.9973)
+
+[node name="Corn194" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492022, -41.2962)
+
+[node name="Corn195" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492025, -39.3236)
+
+[node name="Corn196" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487322, -38.8237)
+
+[node name="Corn197" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492023, -38.1085)
+
+[node name="Corn198" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492022, -37.4074)
+
+[node name="Corn199" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487324, -36.8512)
+
+[node name="Corn200" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492025, -36.136)
+
+[node name="Corn201" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492025, -35.4349)
+
+[node name="Corn202" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487321, -34.7976)
+
+[node name="Corn203" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492023, -34.0823)
+
+[node name="Corn204" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492022, -33.3812)
+
+[node name="Corn205" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487327, -32.825)
+
+[node name="Corn206" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492025, -31.4087)
+
+[node name="Corn207" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492022, -26.3033)
+
+[node name="Corn208" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4491, 0.487327, -25.7471)
+
+[node name="Corn209" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.4972, 0.492023, -25.0318)
+
+[node name="Corn210" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 35.5288, 0.492025, -24.3307)
+
+[node name="Corn211" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 36.5064, 0.492022, -44.7884)
+
+[node name="Corn212" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 36.5914, 0.492022, -26.3033)
+
+[node name="Corn213" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 36.5117, 0.487327, -25.7471)
+
+[node name="Corn214" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 36.5598, 0.492023, -25.0318)
+
+[node name="Corn215" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 36.5914, 0.492025, -24.3307)
+
+[node name="Corn216" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5275, 0.492022, -44.7884)
+
+[node name="Corn217" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487325, -30.4556)
+
+[node name="Corn218" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492025, -29.7404)
+
+[node name="Corn219" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492023, -29.0393)
+
+[node name="Corn220" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487321, -42.7125)
+
+[node name="Corn221" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492023, -41.9973)
+
+[node name="Corn222" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492022, -41.2962)
+
+[node name="Corn223" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492025, -39.3236)
+
+[node name="Corn224" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487322, -38.8237)
+
+[node name="Corn225" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492023, -38.1085)
+
+[node name="Corn226" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492022, -37.4074)
+
+[node name="Corn227" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487324, -36.8512)
+
+[node name="Corn228" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492025, -36.136)
+
+[node name="Corn229" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492025, -35.4349)
+
+[node name="Corn230" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487321, -34.7976)
+
+[node name="Corn231" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492023, -34.0823)
+
+[node name="Corn232" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492022, -33.3812)
+
+[node name="Corn233" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487327, -32.825)
+
+[node name="Corn234" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492025, -31.4087)
+
+[node name="Corn235" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492022, -26.3033)
+
+[node name="Corn236" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5328, 0.487327, -25.7471)
+
+[node name="Corn237" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.5809, 0.492023, -25.0318)
+
+[node name="Corn238" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 37.6125, 0.492025, -24.3307)
+
+[node name="Corn239" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3574, 0.492022, -44.7884)
+
+[node name="Corn240" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487325, -30.4556)
+
+[node name="Corn241" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4108, 0.492025, -29.7404)
+
+[node name="Corn242" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492023, -29.0393)
+
+[node name="Corn243" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487321, -42.7125)
+
+[node name="Corn244" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4108, 0.492023, -41.9973)
+
+[node name="Corn245" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492022, -41.2962)
+
+[node name="Corn246" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492025, -39.3236)
+
+[node name="Corn247" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487322, -38.8237)
+
+[node name="Corn248" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4108, 0.492023, -38.1085)
+
+[node name="Corn249" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492022, -37.4074)
+
+[node name="Corn250" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487324, -36.8512)
+
+[node name="Corn251" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4108, 0.492025, -36.136)
+
+[node name="Corn252" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492025, -35.4349)
+
+[node name="Corn253" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487321, -34.7976)
+
+[node name="Corn254" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4108, 0.492023, -34.0823)
+
+[node name="Corn255" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492022, -33.3812)
+
+[node name="Corn256" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.3627, 0.487327, -32.825)
+
+[node name="Corn257" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492025, -31.4087)
+
+[node name="Corn258" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 38.4424, 0.492025, -24.3307)
+
+[node name="Corn2" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.0747, 0.473114, -44.787)
+
+[node name="Corn25" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.08, 0.468417, -30.4542)
+
+[node name="Corn33" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1281, 0.473116, -29.739)
+
+[node name="Corn56" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 25.4305, 0.473115, -43.4096)
+
+[node name="Corn58" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(0.999906, -0.00785822, 0.0112227, 0, 0.819152, 0.573576, -0.0137004, -0.573522, 0.819075, 22.1346, 0.468418, -27.1172)
+
+[node name="Corn59" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1281, 0.473115, -44.0495)
+
+[node name="Corn64" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 49.0004, 0.47588, -43.548)
+
+[node name="Corn68" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 43.2547, 0.468415, -43.452)
+
+[node name="Corn69" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 26.1854, 0.473116, -39.3116)
+
+[node name="Corn70" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1597, 0.473117, -35.4335)
+
+[node name="Corn71" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.08, 0.468413, -34.7962)
+
+[node name="Corn72" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1281, 0.473115, -34.0809)
+
+[node name="Corn73" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1597, 0.473114, -33.3798)
+
+[node name="Corn74" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.08, 0.468418, -32.8236)
+
+[node name="Corn75" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1281, 0.473115, -32.1084)
+
+[node name="Corn76" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 48.2768, 0.473117, -25.9522)
+
+[node name="Corn77" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.08, 0.468418, -25.7457)
+
+[node name="Corn78" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1281, 0.473115, -25.0304)
+
+[node name="Corn79" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 28.1597, 0.473117, -24.6128)
+
+[node name="Corn87" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1373, 0.473114, -44.787)
+
+[node name="Corn90" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468417, -30.4542)
+
+[node name="Corn95" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473116, -29.739)
+
+[node name="Corn100" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473115, -29.0379)
+
+[node name="Corn109" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468418, -28.4817)
+
+[node name="Corn110" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -44.0495)
+
+[node name="Corn118" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -41.9959)
+
+[node name="Corn121" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473114, -41.2948)
+
+[node name="Corn125" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468418, -40.7385)
+
+[node name="Corn126" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473114, -40.0233)
+
+[node name="Corn127" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473117, -39.3222)
+
+[node name="Corn128" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473114, -37.406)
+
+[node name="Corn129" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468415, -36.8498)
+
+[node name="Corn130" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473116, -36.1346)
+
+[node name="Corn131" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473117, -35.4335)
+
+[node name="Corn132" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468413, -34.7962)
+
+[node name="Corn133" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -34.0809)
+
+[node name="Corn134" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473114, -33.3798)
+
+[node name="Corn135" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468418, -32.8236)
+
+[node name="Corn136" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -32.1084)
+
+[node name="Corn137" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473117, -31.4073)
+
+[node name="Corn138" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468413, -27.7182)
+
+[node name="Corn139" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -27.003)
+
+[node name="Corn140" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473114, -26.3019)
+
+[node name="Corn141" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1426, 0.468418, -25.7457)
+
+[node name="Corn142" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.1907, 0.473115, -25.0304)
+
+[node name="Corn143" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 29.2223, 0.473117, -24.3293)
+
+[node name="Corn144" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1584, 0.473114, -44.787)
+
+[node name="Corn145" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468417, -30.4542)
+
+[node name="Corn146" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473116, -29.739)
+
+[node name="Corn147" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -44.0495)
+
+[node name="Corn148" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -41.9959)
+
+[node name="Corn149" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473114, -41.2948)
+
+[node name="Corn150" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468418, -40.7385)
+
+[node name="Corn151" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473114, -40.0233)
+
+[node name="Corn152" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473117, -39.3222)
+
+[node name="Corn153" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473114, -37.406)
+
+[node name="Corn154" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468415, -36.8498)
+
+[node name="Corn155" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473116, -36.1346)
+
+[node name="Corn156" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473117, -35.4335)
+
+[node name="Corn157" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468413, -34.7962)
+
+[node name="Corn158" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -34.0809)
+
+[node name="Corn159" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473114, -33.3798)
+
+[node name="Corn160" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468418, -32.8236)
+
+[node name="Corn161" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -32.1084)
+
+[node name="Corn162" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.759271, 0.373268, -0.533083, 0, 0.819152, 0.573576, 0.650774, 0.4355, -0.621959, 30.2434, 0.473117, -31.4073)
+
+[node name="Corn163" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468413, -27.7182)
+
+[node name="Corn164" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -27.003)
+
+[node name="Corn165" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473114, -26.3019)
+
+[node name="Corn166" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.1637, 0.468418, -25.7457)
+
+[node name="Corn167" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2118, 0.473115, -25.0304)
+
+[node name="Corn168" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.2434, 0.473117, -24.3293)
+
+[node name="Corn169" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.9883, 0.473114, -44.787)
+
+[node name="Corn170" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.9936, 0.468417, -30.4542)
+
+[node name="Corn171" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473116, -29.739)
+
+[node name="Corn172" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473115, -44.0495)
+
+[node name="Corn173" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473115, -41.9959)
+
+[node name="Corn174" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0733, 0.473114, -41.2948)
+
+[node name="Corn175" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.9936, 0.468418, -40.7385)
+
+[node name="Corn176" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473114, -40.0233)
+
+[node name="Corn177" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0733, 0.473117, -39.3222)
+
+[node name="Corn178" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(-0.759271, 0.373268, -0.533083, 0, 0.819152, 0.573576, 0.650774, 0.4355, -0.621959, 31.0733, 0.473117, -31.4073)
+
+[node name="Corn179" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.9936, 0.468413, -27.7182)
+
+[node name="Corn180" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473115, -27.003)
+
+[node name="Corn181" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0733, 0.473114, -26.3019)
+
+[node name="Corn182" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 30.9936, 0.468418, -25.7457)
+
+[node name="Corn183" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0417, 0.473115, -25.0304)
+
+[node name="Corn184" parent="Corn Maze" instance=ExtResource("17_sinnd")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 31.0733, 0.473117, -24.3293)
+
+[node name="Corn Maze Collisions" type="Node3D" parent="Corn Maze"]
+transform = Transform3D(0.833333, 0, 0, 0, 0.833333, 0, 0, 0, 0.833333, 3.43616, 0.0157562, -7.70377)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.0569, 1.51263, -26.8552)
+shape = SubResource("BoxShape3D_mle2g")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2091, 1.56342, -30.1123)
+shape = SubResource("BoxShape3D_vxo5h")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5727, 1.5198, -29.3872)
+shape = SubResource("BoxShape3D_ew17x")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.0488, 1.59425, -31.9768)
+shape = SubResource("BoxShape3D_2uynp")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.3994, 1.59457, -34.7626)
+shape = SubResource("BoxShape3D_ud6ik")
+
+[node name="StaticBody3D6" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4819, 1.58714, -34.6534)
+shape = SubResource("BoxShape3D_lo4sy")
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9152, 1.53609, -39.5342)
+shape = SubResource("BoxShape3D_6hnla")
+
+[node name="StaticBody3D8" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4478, 2.47789, -40.4303)
+shape = SubResource("BoxShape3D_5iu75")
+
+[node name="StaticBody3D9" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D9"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25.073, 1.58309, -24.3213)
+shape = SubResource("BoxShape3D_sdwc6")
+
+[node name="StaticBody3D10" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D10"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.9863, 1.58309, -25.4776)
+shape = SubResource("BoxShape3D_mwsap")
+
+[node name="StaticBody3D11" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.121, 1.38368, -22.0145)
+shape = SubResource("BoxShape3D_gvbpi")
+
+[node name="StaticBody3D12" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9674, 1.61223, -39.3372)
+shape = SubResource("BoxShape3D_u438d")
+
+[node name="StaticBody3D13" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3443, 0.828613, -30.8634)
+shape = SubResource("BoxShape3D_7xb08")
+
+[node name="StaticBody3D14" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3966, 2.01665, -36.676)
+shape = SubResource("BoxShape3D_7ki3n")
+
+[node name="StaticBody3D15" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.3447, 1.69017, -34.2389)
+shape = SubResource("BoxShape3D_6l5rg")
+
+[node name="StaticBody3D16" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.5524, 0.883728, -27.4512)
+shape = SubResource("BoxShape3D_0orhv")
+
+[node name="StaticBody3D17" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.3312, 1.01419, -27.3589)
+shape = SubResource("BoxShape3D_g31ad")
+
+[node name="StaticBody3D18" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.1534, 1.48578, -20.8912)
+shape = SubResource("BoxShape3D_1jipc")
+
+[node name="StaticBody3D19" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.67, 0.932587, -22.811)
+shape = SubResource("BoxShape3D_bs7is")
+
+[node name="StaticBody3D20" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.4737, 1.54361, -31.5826)
+shape = SubResource("BoxShape3D_1ydc5")
+
+[node name="StaticBody3D21" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.8173, 1.38815, -22.64)
+shape = SubResource("BoxShape3D_dtrbv")
+
+[node name="StaticBody3D22" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.329, 2.67609, -19.3142)
+shape = SubResource("BoxShape3D_w4dvf")
+
+[node name="StaticBody3D23" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4023, 1.9113, -41.2037)
+shape = SubResource("BoxShape3D_4nkht")
+
+[node name="StaticBody3D24" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.5531, 3.77737, -44.7478)
+shape = SubResource("BoxShape3D_r5b6g")
+
+[node name="StaticBody3D25" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.5075, 2.37926, -41.1214)
+shape = SubResource("BoxShape3D_20ta8")
+
+[node name="StaticBody3D26" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.0043, 2.4202, -36.9791)
+shape = SubResource("BoxShape3D_j00su")
+
+[node name="StaticBody3D27" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.5357, 2.81907, -30.669)
+shape = SubResource("BoxShape3D_ud5bw")
+
+[node name="StaticBody3D28" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057888, 0, 0.00491714)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1196, 0.886938, -26.1677)
+shape = SubResource("BoxShape3D_mrb7y")
+
+[node name="StaticBody3D29" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.8317, 1.97216, -27.1042)
+shape = SubResource("BoxShape3D_m6rkd")
+
+[node name="StaticBody3D30" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.9492, 1.22898, -37.1002)
+shape = SubResource("BoxShape3D_ns25j")
+
+[node name="StaticBody3D31" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.1823, 3.79086, -33.6344)
+shape = SubResource("BoxShape3D_h0k68")
+
+[node name="StaticBody3D32" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1824, 2.36963, -26.0664)
+shape = SubResource("BoxShape3D_ssftq")
+
+[node name="StaticBody3D33" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.5214, 1.57126, -34.7716)
+shape = SubResource("BoxShape3D_vwuwv")
+
+[node name="StaticBody3D34" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.378, 2.75161, -40.8099)
+shape = SubResource("BoxShape3D_8x0ur")
+
+[node name="StaticBody3D35" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.8236, 2.37795, -37.777)
+shape = SubResource("BoxShape3D_0kt66")
+
+[node name="StaticBody3D36" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.1923, 0.880594, -30.7857)
+shape = SubResource("BoxShape3D_6xtyo")
+
+[node name="StaticBody3D37" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.9415, 0.816845, -42.1172)
+shape = SubResource("BoxShape3D_ryanq")
+
+[node name="StaticBody3D38" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.4424, 2.07798, -28.53)
+shape = SubResource("BoxShape3D_5q72w")
+
+[node name="StaticBody3D39" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.8318, 4.21962, -35.126)
+shape = SubResource("BoxShape3D_kvw2t")
+
+[node name="StaticBody3D40" type="StaticBody3D" parent="Corn Maze/Corn Maze Collisions"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn Maze/Corn Maze Collisions/StaticBody3D40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.8201, 2.65871, -20.7595)
+shape = SubResource("BoxShape3D_yufv8")
+
+[node name="Pig Pen" type="Node3D" parent="Corn Maze"]
+transform = Transform3D(0.670822, 0, 0, 0, 0.670822, 0, 0, 0, 0.65882, 14.5699, -0.259693, -24.7784)
+
+[node name="Fence" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(0.0406876, 0, -2.56678, 0, 1, 0, 1.99564, 0, 0.0523321, 8.60129, 0.949085, -17.2104)
+
+[node name="Fence2" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(0.0407132, 0, -2.56838, 0, 1.00063, 0, 1.99689, 0, 0.0523649, 8.62831, 0.949083, -3.30905)
+
+[node name="Fence3" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 16.0258, 0.949084, 2.4577)
+
+[node name="Fence4" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 30.7408, 0.949085, 2.17691)
+
+[node name="Fence5" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 45.4785, 0.949085, 1.88909)
+
+[node name="Fence7" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(0.0406876, 0, -2.56678, 0, 1, 0, 1.99564, 0, 0.0523322, 52.6749, 0.949085, -15.8203)
+
+[node name="Fence8" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(0.0406876, 0, -2.56678, 0, 1, 0, 1.99564, 0, 0.0523322, 52.4305, 0.949085, -27.125)
+
+[node name="Fence9" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 44.7961, 0.949085, -32.6605)
+
+[node name="Fence10" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 30.0524, 0.949084, -32.3856)
+
+[node name="Fence11" parent="Corn Maze/Pig Pen" instance=ExtResource("5_si08p")]
+transform = Transform3D(-2.56678, 0, -0.0406875, 0, 1, 0, 0.0523321, 0, -1.99564, 15.5007, 0.949085, -32.0833)
+
+[node name="Shorter fence" parent="Corn Maze/Pig Pen" instance=ExtResource("7_84rob")]
+transform = Transform3D(0.0406876, 0, -2.56677, 0, 1, 0, 1.99564, 0, 0.0523321, 8.30398, 0.969914, -27.3027)
+
+[node name="Shorter fence2" parent="Corn Maze/Pig Pen" instance=ExtResource("7_84rob")]
+transform = Transform3D(-4.37114e-08, 0, 3.189, 0, 1.242, 0, -1, 0, -1.39396e-07, 52.7919, 0.74874, -7.89215)
+
+[node name="Shorter fence3" parent="Corn Maze/Pig Pen" instance=ExtResource("7_84rob")]
+transform = Transform3D(-4.37114e-08, 0, 3.189, 0, 1.242, 0, -1, 0, -1.39396e-07, 52.8379, 0.74874, -0.446846)
+
+[editable path="Corn Maze/Corn3"]
+[editable path="Corn Maze/Corn24"]
