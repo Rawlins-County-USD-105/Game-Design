@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/pistol.gd" id="1_kxuik"]
 [ext_resource type="PackedScene" uid="uid://bmcbos02ioia2" path="res://Scenes/pistol_bullet.tscn" id="2_n80ox"]
 [ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="3_n4wh8"]
-[ext_resource type="AudioStream" uid="uid://dpg6wm5f7gh15" path="res://Sounds/kaboom.wav2.wav" id="4_tujbr"]
-[ext_resource type="AudioStream" uid="uid://bnqty4xomlyln" path="res://Scenes/interact.wav" id="5_dg7lp"]
+[ext_resource type="AudioStream" uid="uid://dyi56662vahmt" path="res://Sounds/kaboom.wav2.wav" id="4_tujbr"]
+[ext_resource type="AudioStream" uid="uid://dif0tou7m2rbu" path="res://Scenes/interact.wav" id="5_dg7lp"]
 
 [sub_resource type="Animation" id="Animation_ge6u7"]
 length = 0.001

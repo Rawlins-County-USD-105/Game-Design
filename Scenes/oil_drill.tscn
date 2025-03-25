@@ -1,6 +1,7 @@
-[gd_scene load_steps=26 format=4 uid="uid://c78ye8umktnip"]
+[gd_scene load_steps=27 format=4 uid="uid://c78ye8umktnip"]
 
 [ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
+[ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
 [ext_resource type="Material" uid="uid://oe3m7drt86pd" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
 [ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
 [ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
@@ -184,6 +185,7 @@ scale_min = 0.02
 scale_max = 0.15
 
 [node name="Oil_Drill" type="Node3D"]
+script = ExtResource("1_d4r2l")
 
 [node name="Rock" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.999868, 0.0162658, 0, -0.0162658, 0.999868, 0, 0.0927436, 0)
@@ -219,9 +221,9 @@ mesh = SubResource("ArrayMesh_loe23")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_l2yeu")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="Container"]
+[node name="RigidBody" type="RigidBody3D" parent="Container"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Container/RigidBody3D"]
+[node name="Hitbox" type="CollisionShape3D" parent="Container/RigidBody"]
 transform = Transform3D(1, 0, 0, 0, 0.999908, -0.0133597, 0, 0.0133598, 0.999907, -0.0431519, 2.84004, 0.0455345)
 shape = SubResource("BoxShape3D_h27np")
 
