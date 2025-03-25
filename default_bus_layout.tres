@@ -2,6 +2,9 @@
 
 [sub_resource type="AudioEffectDelay" id="AudioEffectDelay_5gly8"]
 resource_name = "Delay"
+dry = 0.34
+tap1_delay_ms = 500.0
+tap1_level_db = -60.0
 feedback_active = true
 feedback_delay_ms = 1.0
 feedback_level_db = 0.0
