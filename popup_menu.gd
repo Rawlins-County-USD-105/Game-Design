@@ -1,6 +1,6 @@
 extends Node2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-@onready var window: Window = $Window
+@onready var window: = $"."
 
 
 var windowv = false

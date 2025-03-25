@@ -245,3 +245,8 @@ func _on_damage_bar_timer_timeout() -> void:
 
 func _on_window_close_requested() -> void:
 	window.visible = false
+
+@onready var button_3: Button = $"Popup menu/Button3"
+
+func _on_button_3_pressed() -> void:
+	get_tree().quit()

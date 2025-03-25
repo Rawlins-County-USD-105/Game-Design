@@ -1,12 +1,15 @@
-[gd_scene load_steps=20 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=29 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Materials/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bgrdhxykn8ima" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="Script" path="res://popup_menu.gd" id="7_rbm22"]
+[ext_resource type="Texture2D" uid="uid://bqdgpdgghwh82" path="res://Main Menu/Assets/Untitled design (32).png" id="8_rt7wg"]
+[ext_resource type="Script" path="res://Scenes/button_3.gd" id="9_c7rxb"]
+[ext_resource type="Texture2D" uid="uid://42oy8lsj66p" path="res://Main Menu/Assets/Untitled design (30).png" id="9_nlg4j"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
@@ -111,6 +114,19 @@ _data = {
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
 bg_color = Color(0.281779, 0.665975, 0.697433, 1)
 
+[sub_resource type="SystemFont" id="SystemFont_o2ak2"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdmj5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqo57"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tl155"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6w5xu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ujv5"]
+
 [node name="player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
 slide_on_ceiling = false
@@ -143,15 +159,15 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -125.0
-offset_top = -125.0
+offset_top = -131.0
 offset_right = 125.0
-offset_bottom = 125.0
+offset_bottom = 119.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
-position = Vector2(125, 129)
+position = Vector2(125, 92)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_35suu")
 
@@ -247,30 +263,104 @@ wait_time = 15.0
 one_shot = true
 
 [node name="Popup menu" type="Node2D" parent="."]
-visible = false
-position = Vector2(459, 286)
+position = Vector2(471, 319)
 script = ExtResource("7_rbm22")
 
-[node name="Window" type="Window" parent="Popup menu"]
-initial_position = 1
-size = Vector2i(200, 250)
+[node name="UntitledDesign(32)" type="Sprite2D" parent="Popup menu"]
+position = Vector2(105, 5)
+scale = Vector2(0.501, 0.501)
+texture = ExtResource("8_rt7wg")
 
-[node name="MarginContainer" type="MarginContainer" parent="Popup menu/Window"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -35.0
-offset_right = 35.0
-offset_bottom = 31.0
-grow_horizontal = 2
+[node name="Button" type="Button" parent="Popup menu"]
+custom_minimum_size = Vector2(120, 32)
+offset_left = -7.0
+offset_top = -67.0
+offset_right = 206.0
+offset_bottom = 13.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_o2ak2")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fdmj5")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xqo57")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tl155")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6w5xu")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
+text = "STORE"
+flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="spacer" type="Node2D" parent="Popup menu/Window/MarginContainer"]
+[node name="Button2" type="Button" parent="Popup menu"]
+custom_minimum_size = Vector2(120, 32)
+offset_left = -17.0
+offset_top = -132.0
+offset_right = 226.0
+offset_bottom = -52.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_o2ak2")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fdmj5")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xqo57")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tl155")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6w5xu")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
+text = "SETTINGS"
+flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="Popup menu/Window/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Settings"
+[node name="Button3" type="Button" parent="Popup menu"]
+custom_minimum_size = Vector2(120, 32)
+offset_left = -17.0
+offset_top = 12.0
+offset_right = 226.0
+offset_bottom = 92.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_o2ak2")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fdmj5")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xqo57")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tl155")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6w5xu")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
+text = "QUIT"
+flat = true
+script = ExtResource("9_c7rxb")
+metadata/_edit_use_anchors_ = true
+
+[node name="UntitledDesign(23)" type="Sprite2D" parent="Popup menu"]
+position = Vector2(222, -129)
+rotation = 0.282289
+scale = Vector2(0.0673276, 0.0696601)
+texture = ExtResource("9_nlg4j")
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
-[connection signal="close_requested" from="Popup menu/Window" to="." method="_on_window_close_requested"]
-[connection signal="pressed" from="Popup menu/Window/MarginContainer/Button" to="Popup menu" method="_on_button_pressed"]
+[connection signal="pressed" from="Popup menu/Button3" to="." method="_on_button_3_pressed"]

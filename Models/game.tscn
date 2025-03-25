@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c2jxayanhlac4" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
-[ext_resource type="Texture2D" uid="uid://bb6ohd026017l" path="res://Untitled design (28).png" id="2_bprh8"]
+[ext_resource type="Texture2D" uid="uid://bb6ohd026017l" path="res://Main Menu/Assets/Untitled design (28).png" id="2_bprh8"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="5_e0it4"]
