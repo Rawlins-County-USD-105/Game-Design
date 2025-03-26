@@ -1,7 +1,7 @@
 extends Node2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var window: = $"."
-
+@onready var buttonclose: Button = $Sprite2D/buttonclose
 
 var windowv = false
 
@@ -22,5 +22,11 @@ func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
 	
 	
+func _on_buttonclose_pressed() ->void:
+	window.visible = false
+
 	
-	
+
+
+func _on_button_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
