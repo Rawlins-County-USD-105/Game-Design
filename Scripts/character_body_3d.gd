@@ -111,8 +111,8 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
-		#if not ouch.playing:
-			#ouch.play()
+		if not ouch.playing:
+			ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
