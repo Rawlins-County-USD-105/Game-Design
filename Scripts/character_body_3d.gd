@@ -32,7 +32,7 @@ var current_weapopn = 1
 @onready var spawn_point = $"Spawner/Spawn Point"
 @onready var group_enemy = $"../../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
-var rand_spawn_time = RandomNumberGenerator.new()
+var spawning = false
 
 #anim
 @onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
@@ -110,8 +110,8 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
-		#if not ouch.playing:
-			#ouch.play()
+		if not ouch.playing:
+			ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
@@ -298,18 +298,13 @@ func _on_damage_bar_timer_timeout() -> void:
 
 
 func _on_spawn_timer_timeout() -> void:
-	if Game.enemies_spawned < 5 && Game.total_enemies < 30:
-		Game.enemies_spawned += 1
-		Game.total_enemies += 1
-		var e_inst = enemy.instantiate()
-		e_inst.player = $crouching_collision_shape
-		e_inst.position = spawner.get_node("Spawn Point").global_position
-		group_enemy.add_child(e_inst)
-	else:
-		pass
-
-	#spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
-	#var e_inst = enemy.instantiate()
-	#e_inst.player = self
-	#e_inst.position = spawner.get_node("Spawn Point").global_position
-	#group_enemy.add_child(e_inst)
+	if spawning:
+		if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+			Game.enemies_spawned += 1
+			Game.total_enemies += 1
+			var e_inst = enemy.instantiate()
+			e_inst.player = $crouching_collision_shape
+			e_inst.position = spawner.get_node("Spawn Point").global_position
+			group_enemy.add_child(e_inst)
+		else:
+			pass
