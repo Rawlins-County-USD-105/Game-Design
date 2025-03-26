@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=3 uid="uid://n6c3alnfjdys"]
+
+[ext_resource type="PackedScene" uid="uid://crttj51kxufbp" path="res://Sounds/skill_button.tscn" id="1_86peu"]
+
+[node name="SkillTree" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 9.0
+offset_right = 2.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkillButton" parent="." instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 490.0
+offset_right = 616.0
+offset_bottom = 530.0
+
+[node name="SkillButton" parent="SkillButton" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="SkillButton/SkillButton" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton4" parent="SkillButton/SkillButton" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton2" parent="SkillButton" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = -74.5
+offset_top = -35.5
+offset_right = -34.5
+offset_bottom = 4.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="SkillButton/SkillButton2" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton5" parent="SkillButton/SkillButton2" instance=ExtResource("1_86peu")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
