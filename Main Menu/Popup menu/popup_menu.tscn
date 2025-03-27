@@ -18,6 +18,7 @@ subpixel_positioning = 0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ujv5"]
 
 [node name="Popup menu" type="Node2D"]
+visible = false
 position = Vector2(471, 319)
 script = ExtResource("1_stgea")
 
