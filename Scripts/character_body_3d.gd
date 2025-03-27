@@ -112,7 +112,7 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
-		animation_player.play("Damage Red")
+		#animation_player.play("Damage Red")
 		if not ouch.playing:
 			ouch.play()
 	if health <= 0:
