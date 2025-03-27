@@ -5,16 +5,22 @@ extends Node3D
 @onready var spawn_zones = {$SpawnZones/spawn1:1, $SpawnZones/spawn2:2}
 @onready var group_enemy = $Enemies
 @onready var spawn_zones_node: Node3D = $SpawnZones
+@onready var spawn_timer: Timer = $Spawner/SpawnTimer
 
 var total_enemies = 0
 var enemies_spawned = 0
 func _process(delta: float) -> void:
-	spawning()
-			
+	if spawn_timer:
+		if Game.enemies_spawned < 5 && spawn_timer.is_stopped():
+			spawning()
+
+
+
 func spawning():
 	for x in spawn_zones:
 		var rand = randi_range(1,2)
-		if x:
+		if x && rand == spawn_zones.get(x):
+			spawn_timer.start()
 			
 			if spawning:
 				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
