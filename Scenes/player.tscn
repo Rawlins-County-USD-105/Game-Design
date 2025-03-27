@@ -1,15 +1,12 @@
-
-[gd_scene load_steps=33 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=28 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://b08cd184gv3at" path="res://Materials/Untitled design (5).png" id="3_48gmi"]
-[ext_resource type="Texture2D" uid="uid://hhhoy446qfar" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="Texture2D" uid="uid://ssdiqimiw712" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
-[ext_resource type="PackedScene" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="AudioStream" uid="uid://ddqbya4doui5h" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
@@ -7310,15 +7307,10 @@ offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 
-
 [node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
 position = Vector2(125, 129)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_35suu")
-
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
 
 [node name="Healthbar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
@@ -7378,22 +7370,6 @@ theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
 value = 35.0
 show_percentage = false
-
-[node name="Crosshair" type="TextureRect" parent="neck/Camera/TextureRect"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -37.0
-offset_top = -37.0
-offset_right = 213.0
-offset_bottom = 213.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_48gmi")
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
