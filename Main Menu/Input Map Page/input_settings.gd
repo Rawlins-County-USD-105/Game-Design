@@ -3,7 +3,6 @@ extends Control
 
 @onready var input_button_scene = preload("res://Main Menu/Input Map Page/Scenes/input_button.tscn")
 @onready var action_list = $"PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"
-@onready var animation_player_2: AnimationPlayer = $AnimationPlayer2
 
 var is_remapping = false
 var action_to_remap = null
@@ -80,7 +79,6 @@ func _input(event):
 			
 			
 func _update_action_list(button, event):
-	#make this scene do the change scene animations when you click the x on the screen.
 	button.find_child("LabelInput").text = event.as_text().trim_suffix(" (Physical)")
 	
 	
@@ -88,7 +86,4 @@ func _update_action_list(button, event):
 
 
 func _on_button_pressed() -> void:
-
-	
 	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
-	
