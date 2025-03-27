@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bu2avfnk4ax77" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
-[ext_resource type="PackedScene" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="PackedScene" uid="uid://t60x7d46r8l2" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7401,6 +7401,8 @@ autostart = true
 
 [node name="Spawn Point" type="Marker3D" parent="Spawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="RayCast3D" type="RayCast3D" parent="Spawner"]
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
 [connection signal="timeout" from="Spawner/Spawn Timer" to="." method="_on_spawn_timer_timeout"]
