@@ -1,18 +1,15 @@
+[gd_scene load_steps=32 format=4 uid="uid://de56lwhpalp6i"]
 
-[gd_scene load_steps=30 format=4 uid="uid://de56lwhpalp6i"]
-[ext_resource type="Texture2D" uid="uid://c7b2idgqq0vib" path="res://Materials/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
-[ext_resource type="PackedScene" uid="uid://3abpgehkvs74" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://b0bbqi4anixrw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://do8r0xgo17jdf" path="res://textures/vanguard_specular.png" id="3_xdket"]
+[ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://ct7th2q7i2a1t" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
-[ext_resource type="PackedScene" uid="uid://t60x7d46r8l2" path="res://Scenes/pistol.tscn" id="5_vcecd"]
-[ext_resource type="Script" path="res://Scripts/pistol.gd" id="7_oa4mx"]
-[ext_resource type="AudioStream" uid="uid://cpphpmsi3k7kg" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
-[ext_resource type="PackedScene" path="res://Scenes/pistol_bullet.tscn" id="8_5x15e"]
+[ext_resource type="PackedScene" uid="uid://bgrdhxykn8ima" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="PackedScene" uid="uid://3abpgehkvs74" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
+[ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
 cull_mode = 2
@@ -4459,7 +4456,6 @@ _data = {
 "tpose": SubResource("Animation_sxsoq")
 }
 
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0l4ar"]
 radius = 0.499585
 height = 1.24402
@@ -7379,7 +7375,6 @@ metadata/_edit_use_anchors_ = true
 [node name="UntitledDesign(5)" type="Sprite2D" parent="neck/Camera/TextureRect"]
 position = Vector2(125, 92)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_35suu")
 
 [node name="Healthbar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
@@ -7457,12 +7452,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297
 [node name="Root Scene" parent="neck/Camera" instance=ExtResource("4_g8q2f")]
 transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, -0.5, 7.54979e-08, -2.18557e-08, 0.751554, 0.0359479, -0.502501)
 
-[node name="Pistol" type="Node3D" parent="neck/Camera" node_paths=PackedStringArray("barrel") instance=ExtResource("5_vcecd")]
+[node name="Pistol" parent="neck/Camera" instance=ExtResource("5_vcecd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.359945)
-script = ExtResource("7_oa4mx")
-barrel = NodePath("RayCast")
-gun_bullet = ExtResource("8_5x15e")
-water_cost = 5
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
@@ -7480,6 +7471,7 @@ wait_time = 15.0
 one_shot = true
 
 [node name="Popup menu" parent="." instance=ExtResource("7_1omva")]
+
 [node name="Spawner" type="Node3D" parent="."]
 
 [node name="Spawn Timer" type="Timer" parent="Spawner"]
