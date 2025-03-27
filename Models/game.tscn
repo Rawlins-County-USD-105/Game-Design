@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=27 format=3 uid="uid://di4xi2t85jxvc"]
 
 [ext_resource type="Texture2D" uid="uid://0lwl5qnddx16" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
@@ -59,13 +59,9 @@ size = Vector3(200.563, 1.30634, 199.873)
 albedo_texture = ExtResource("1_2qhk6")
 uv1_triplanar = true
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_kth2t"]
-height = 1.4079
-radius = 7.37339
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_t7qsl"]
-height = 0.85094
-radius = 7.23714
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wo0hw"]
+height = 1.09796
+radius = 7.36427
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_qvolv")
@@ -272,14 +268,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 
 [node name="SpawnZones" type="Node3D" parent="."]
 
-[node name="spawn1" type="Area3D" parent="SpawnZones" groups=["SpawnZone"]]
+[node name="spawn1" type="Area3D" parent="SpawnZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -27.0989)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.4981, 1.21075, -26.7971)
-shape = SubResource("CylinderShape3D_kth2t")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
+shape = SubResource("CylinderShape3D_wo0hw")
 
-[node name="spawn2" type="Area3D" parent="SpawnZones" groups=["SpawnZone"]]
+[node name="spawn2" type="Area3D" parent="SpawnZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -47.8014)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9749, 1.22149, -47.3661)
-shape = SubResource("CylinderShape3D_t7qsl")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
+shape = SubResource("CylinderShape3D_wo0hw")
+
+[node name="Spawner" type="Node3D" parent="."]
+
+[node name="Spawn Timer" type="Timer" parent="Spawner"]
+autostart = true
+
+[node name="Spawn Point" type="Marker3D" parent="Spawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="RayCast3D" type="RayCast3D" parent="Spawner"]
