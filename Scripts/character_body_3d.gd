@@ -111,10 +111,6 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
-<<<<<<< HEAD
-		#animation_player.play("Damage Red")
-=======
->>>>>>> parent of 22fce94 (Merge branch 'main' into AsaBranch)
 		if not ouch.playing:
 			ouch.play()
 	if health <= 0:
