@@ -7,14 +7,8 @@ class_name Weapon
 @export var gun_bullet: PackedScene
 var instance
 @export var water_cost : int
-@onready var hit_scan_ray: RayCast3D = $"../HitScanRay"
-var target = null
 
 func gun(current_gun, animation_player, animation_name):
-	if hit_scan_ray.is_colliding():
-		target = hit_scan_ray.get_collision_point()
-	else:
-		target = null
 	if current_gun.visible == true:
 		if Input.is_action_pressed("Pew") and not animation_player.is_playing() and Gain.Water >= water_cost:
 			Gain.Use_Water(water_cost)
@@ -22,8 +16,6 @@ func gun(current_gun, animation_player, animation_name):
 			instance = gun_bullet.instantiate()
 			instance.position = barrel.global_position
 			instance.transform.basis = barrel.global_transform.basis
-			if target:
-				instance.target = target
 			get_parent().add_child(instance)
 		if Input.is_action_just_pressed("inspect") and not animation_player.is_playing():
 			animation_player.play("inspect")

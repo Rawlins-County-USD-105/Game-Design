@@ -17,9 +17,6 @@ func _ready() -> void:
 	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
-func _process(delta: float) -> void:
-	if player:
-		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 
 func _on_interacted(body: Variant) -> void:
 	oil_bar.show()

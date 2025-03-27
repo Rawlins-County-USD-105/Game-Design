@@ -7382,9 +7382,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.35994
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
-[node name="HitScanRay" type="RayCast3D" parent="neck/Camera"]
-target_position = Vector3(0, 0, -100)
-
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
 target_position = Vector3(0, 0.75, 0)

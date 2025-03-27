@@ -336,10 +336,10 @@ wait_time = 0.6
 one_shot = true
 
 [node name="Health" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.94736, 0)
 
 [node name="Sprite3D" type="Sprite3D" parent="Health"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6)
 texture = SubResource("ViewportTexture_kgv82")
 
 [connection signal="timeout" from="Timer" to="Button" method="_on_timer_timeout"]
