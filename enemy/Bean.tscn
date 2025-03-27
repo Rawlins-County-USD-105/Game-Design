@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://hdhrwjt0dm1q"]
+[gd_scene load_steps=10 format=4 uid="uid://bt0jqwkk5un8h"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_wp8om"]
 
@@ -275,13 +275,18 @@ _data = {
 }
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
-radius = 0.01462
+radius = 0.0272095
 
-[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("nav_agent") groups=["Enemy"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.160382, 0)
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent", "animation") groups=["Enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
+top_level = true
 floor_snap_length = 0.07
 script = ExtResource("1_wp8om")
+Damage = 10
+mesh = NodePath("Armature_006/Chicken_006")
+hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
+animation = NodePath("AnimationPlayer")
 speed = 4
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
@@ -393,7 +398,7 @@ bones/12/parent = 11
 bones/12/rest = Transform3D(1, -5.42666e-08, 5.95134e-07, 1.11804e-07, 0.995274, -0.0971105, -5.87051e-07, 0.0971105, 0.995274, -3.17087e-10, -4.32134e-07, 0.54494)
 bones/12/enabled = true
 bones/12/position = Vector3(-3.17087e-10, -4.32134e-07, 0.54494)
-bones/12/rotation = Quaternion(0.0592189, -0.000109171, 0.00258762, 0.998242)
+bones/12/rotation = Quaternion(0.059219, -0.000109171, 0.00258762, 0.998242)
 bones/12/scale = Vector3(1, 1, 1)
 bones/13/name = "CATRigSpine3"
 bones/13/parent = 12

@@ -10,35 +10,34 @@ var player = self
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
 @export var speed : int
+@export var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-
-
-var Health = 20.0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
-#func _ready():
-	#player = get_node(player_path)
+func _ready():
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func move(_delta):
 	velocity = Vector3.ZERO
-	if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
-		damage_ray.get_collider().took_damage(Damage)
-		timer.start()
-	else:
+	if damage_ray.get_collider() == null:
 		pass
+	else:
+		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
+			damage_ray.get_collider().took_damage(Damage)
+			timer.start()
+		else:
+			pass
 		
 	
 	# Navigation
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
-	look_at(Vector3(player.global_position.x, global_position.y, player.global_position.z), Vector3.UP)
-	if not animation_player.is_playing():
-		animation_player.play("Chicken_Run")
+	rotation.y = lerp_angle(rotation.y, atan2(-velocity.x, -velocity.z), _delta * 10)
 	
 	move_and_slide()
 func Hit(Damage):
@@ -47,12 +46,9 @@ func Hit(Damage):
 		var Gold = 10
 		Gain.Gain_Gold(Gold)
 		Gain.Gain_Water(Gold)
+		Game.enemies_spawned -= 1
 		#Game.enemy_death()
 		queue_free()
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:
 	emit_signal("hit")
-
-
-func _on_bullet_visibility_changed() -> void:
-	pass # Replace with function body.

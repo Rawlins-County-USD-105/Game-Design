@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0pwri88srm3i"]
+
+[ext_resource type="PackedScene" uid="uid://dt3x3u08iy2f8" path="res://Models/rock.blend" id="1_gpxuq"]
+[ext_resource type="Material" uid="uid://oe3m7drt86pd" path="res://Scenes/oil_drill.tres" id="2_ivfjn"]
+
+[node name="rock" instance=ExtResource("1_gpxuq")]
+
+[node name="Cube" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00136018, 0.0051918, -0.00248957)
+surface_material_override/0 = ExtResource("2_ivfjn")
