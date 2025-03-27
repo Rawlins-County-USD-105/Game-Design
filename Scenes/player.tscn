@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bgrdhxykn8ima" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
-[ext_resource type="PackedScene" uid="uid://3abpgehkvs74" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
+[ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]

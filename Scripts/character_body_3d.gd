@@ -21,8 +21,6 @@ var player = self
 @export var sprint = 4
 @export var jump_sprint = 15
 
-
-
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
 @onready var pistol: Node3D = $neck/Camera/Pistol
@@ -73,6 +71,7 @@ var old_vel = 0.0
 var fall_hurtie = 10.0
 
 var prev_health = health
+@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -94,7 +93,6 @@ func Weapon_Select():
 	else:
 		pistol.visible = false
 
-@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 
 #func _enter_tree() -> void:
@@ -114,7 +112,6 @@ func took_damage(Damage):
 		damage_bar_timer.start()
 		health -= Damage
 		animation_player.play("Damage Red")
-		
 		if not ouch.playing:
 			ouch.play()
 	if health <= 0:
@@ -127,13 +124,14 @@ func took_damage(Damage):
 	
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
-		if Input.is_action_just_pressed("lock mouse"):
+		if event is InputEventMouseButton:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		elif event.is_action_pressed("ui_cancel"):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		if Input.mouse_mode  == Input.MOUSE_MODE_CAPTURED:
-			if event is InputEventMouseMotion :
-				neck.rotate_y(-event.relative.x * 0.01 * mousesense)
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			if event is InputEventMouseMotion:
+				player.rotate_y(-event.relative.x * 0.01 * mousesense)
+				
 				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
 				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
@@ -299,19 +297,6 @@ func _headbob(time) -> Vector3:
 func _on_damage_bar_timer_timeout() -> void:
 	damagebar.value = health
 	prev_health = health
-	
-	
-
-	
-@onready var window: Window = $"Popup menu/Window"
-
-
-
-
-@onready var button_3: Button = $"Popup menu/Button3"
-
-func _on_button_3_pressed() -> void:
-	get_tree().quit()
 
 
 func _on_spawn_timer_timeout() -> void:
