@@ -2,6 +2,7 @@ extends CharacterBody3D
 var max_health = 400
 var health = max_health
 var player = self
+var drill_hitbox = self
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
@@ -30,7 +31,7 @@ var current_weapopn = 1
 #Spawning
 @onready var spawner = $Spawner
 @onready var spawn_point = $"Spawner/Spawn Point"
-@onready var group_enemy = $"../../Enemies"
+@onready var group_enemy = $"../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
 var spawning = false
 
@@ -306,6 +307,7 @@ func _on_spawn_timer_timeout() -> void:
 			Game.total_enemies += 1
 			var e_inst = enemy.instantiate()
 			e_inst.player = $crouching_collision_shape
+			e_inst.drill = drill_hitbox
 			e_inst.position = spawner.get_node("Spawn Point").global_position
 			group_enemy.add_child(e_inst)
 		else:
