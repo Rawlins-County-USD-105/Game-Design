@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=32 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
+[ext_resource type="Texture2D" uid="uid://hhhoy446qfar" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
 [ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
 [ext_resource type="Texture2D" uid="uid://ssdiqimiw712" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
@@ -7370,6 +7371,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
 value = 35.0
 show_percentage = false
+
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
