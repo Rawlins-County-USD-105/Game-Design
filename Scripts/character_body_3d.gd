@@ -72,6 +72,7 @@ var old_vel = 0.0
 var fall_hurtie = 10.0
 
 var prev_health = health
+@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -111,6 +112,7 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
+		#animation_player.play("Damage Red")
 		if not ouch.playing:
 			ouch.play()
 	if health <= 0:
