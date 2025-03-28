@@ -24,10 +24,10 @@ grow_vertical = 2
 
 [node name="SkillButton" parent="." instance=ExtResource("1_86peu")]
 layout_mode = 0
-offset_left = 238.0
-offset_top = 569.0
-offset_right = 278.0
-offset_bottom = 609.0
+offset_left = 298.0
+offset_top = 486.0
+offset_right = 338.0
+offset_bottom = 526.0
 scale = Vector2(1, 1)
 
 [node name="SkillButton" parent="SkillButton" instance=ExtResource("1_86peu")]
@@ -86,10 +86,10 @@ disabled = true
 
 [node name="SkillButton2" parent="." instance=ExtResource("1_86peu")]
 layout_mode = 0
-offset_left = 864.0
-offset_top = 570.0
-offset_right = 904.0
-offset_bottom = 610.0
+offset_left = 861.0
+offset_top = 486.0
+offset_right = 901.0
+offset_bottom = 526.0
 scale = Vector2(1, 1)
 
 [node name="SkillButton" parent="SkillButton2" instance=ExtResource("1_86peu")]
@@ -148,10 +148,10 @@ disabled = true
 
 [node name="SkillButton3" parent="." instance=ExtResource("1_86peu")]
 layout_mode = 0
-offset_left = 880.0
-offset_top = 154.0
-offset_right = 920.0
-offset_bottom = 194.0
+offset_left = 874.0
+offset_top = 153.0
+offset_right = 914.0
+offset_bottom = 193.0
 scale = Vector2(1, 1)
 
 [node name="SkillButton" parent="SkillButton3" instance=ExtResource("1_86peu")]

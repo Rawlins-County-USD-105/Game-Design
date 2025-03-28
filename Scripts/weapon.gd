@@ -25,7 +25,7 @@ func gun(current_gun, animation_player, animation_name):
 			if target:
 				instance.target = target
 			get_parent().add_child(instance)
-		if Input.is_action_just_pressed("inspect") and not animation_player.is_playing():
-			animation_player.play("inspect")
+		#if Input.is_action_just_pressed("inspect") and not animation_player.is_playing():
+		#	animation_player.play("inspect")
 	else:
 		pass
