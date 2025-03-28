@@ -3,7 +3,7 @@ extends Node3D
 class_name bullet
 
 #var Watergun = get_tree().get_root().find_node("Watergun", true, false)
-
+var target = null
 
 @export var Damage = 100.0
 @export var speed: int
@@ -14,17 +14,29 @@ class_name bullet
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
-	#print(Watergun)
-	position += transform.basis * Vector3(0, 0, -speed) * delta
-	#if Watergun.visible == true:
-	if ray.get_collider():
-		mesh.visible = false
-		particles.emitting = true
-		ray.enabled = false
-		if ray.get_collider().is_in_group("Enemy"):
-			ray.get_collider().Hit(Damage)
-		await get_tree().create_timer(0).timeout
-		queue_free()
+	if target != null:
+		var direction = (target - global_transform.origin).normalized()
+		
+		position += direction * speed * delta
+		
+		if ray.get_collider():
+			mesh.visible = false
+			particles.emitting = true
+			ray.enabled = false
+			if ray.get_collider().is_in_group("Enemy"):
+				ray.get_collider().Hit(Damage)
+			await get_tree().create_timer(0).timeout
+			queue_free()
 	else:
-		pass
+		position += transform.basis * Vector3(0, 0, -speed) * delta
+		
+		if ray.get_collider():
+			mesh.visible = false
+			particles.emitting = true
+			ray.enabled = false
+			if ray.get_collider().is_in_group("Enemy"):
+				ray.get_collider().Hit(Damage)
+			await get_tree().create_timer(0).timeout
+			queue_free()
+		else:
+			pass

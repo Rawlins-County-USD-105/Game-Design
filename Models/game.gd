@@ -32,3 +32,11 @@ func spawning():
 					group_enemy.add_child(e_inst)
 				else:
 					pass
+@onready var player: CharacterBody3D = $player
+@onready var oil_drill: Node3D = $NavigationRegion3D/Oil_Drill
+
+func _ready() -> void:
+	if player:
+		
+		player.drill_hitbox = oil_drill.hitbox
+	
