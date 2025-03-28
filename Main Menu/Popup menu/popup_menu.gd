@@ -11,10 +11,11 @@ func _process(delta: float) -> void:
 	
 	if window.visible == false and Input.is_action_just_pressed("Open popup"):
 		window.visible = true
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		
 	elif window.visible == true and Input.is_action_just_pressed("Open popup"):
 		window.visible = false
-	
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 		print(window.visible)
 
