@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://ccexpy6hlaehv" path="res://enemy/chicken.tscn" id="16_87ri5"]
-[ext_resource type="PackedScene" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
+[ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
