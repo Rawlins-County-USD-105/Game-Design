@@ -10,8 +10,8 @@ var target = player
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
-@export var speed : int
-@export var Health : int
+
+var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -23,7 +23,8 @@ func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func move(_delta):
+func move(_delta, speed, HP):
+	Health = HP
 	velocity = Vector3.ZERO
 	if damage_ray.get_collider() == null:
 		pass
