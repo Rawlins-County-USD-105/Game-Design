@@ -35,11 +35,27 @@ var current_weapopn = 1
 var rand_spawn_time = RandomNumberGenerator.new()
 
 #anim
-@onready var animation_tree: AnimationTree = $characteranimated/AnimationPlayer/AnimationTree
-@onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
-var sprinting = false
-var walking = false
-var falling = false
+@export var speed : float = 5.0
+@export var run_speed : float = 10.0
+
+var velocity = Vector3.ZERO
+var direction = Vector3.ZERO
+
+# Access the AnimationTree and set up parameters
+var anim_tree : AnimationTree
+var anim_state : AnimationNodeStateMachinePlayback
+
+func _ready():
+	healthbar.max_value = max_health
+	healthbar.value = health
+	damagebar.max_value = max_health
+	damagebar.value = health
+	anim_tree = $AnimationTree
+	anim_state = anim_tree.active_animation_player
+
+	anim_tree.set("parameters/speed", 0.0) # Default speed value
+	anim_tree.set("parameters/direction", Vector3.ZERO) # Default direction value
+
 
 #speed
 var current_speed = 5.0
@@ -98,12 +114,9 @@ func Weapon_Select():
 #func _enter_tree() -> void:
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
-func _ready() -> void:
+
 	#camera_3d.current = is_multiplayer_authority()
-	healthbar.max_value = max_health
-	healthbar.value = health
-	damagebar.max_value = max_health
-	damagebar.value = health
+	
 
 	
 func took_damage(Damage):
@@ -136,23 +149,7 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	
-	if Input.is_action_just_pressed("jump"):
-		player_moveset.play("jump")
-	elif sprinting && is_on_floor():
-		if input_dir.y == -1:
-			player_moveset.play("sprint")
-		else:
-			player_moveset.play("backward")
-	elif walking && is_on_floor():
-		if input_dir.y == -1:
-			player_moveset.play("jog")
-		else:
-			player_moveset.play("backward")
-	elif falling && not is_on_floor():
-		player_moveset.play("jump")
-	else:
-		if is_on_floor():
-			player_moveset.play("idle")
+	
 	
 	#if is_multiplayer_authority():
 	if not is_on_floor():
@@ -193,35 +190,7 @@ func _physics_process(delta: float) -> void:
 
 				
 				
-		if Input.is_action_pressed("sprint") and is_on_floor() and not Input.is_action_pressed("crouch"):
-		#Sprinting
-				
-			sprinting = true
-			walking = false
-			
-			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
-			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
- 
-			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
-				sprinting = false
-				walking = false
-				velocity.y = JUMP_VELOCITY
-		else:
-			if Input.is_action_pressed("crouch") || sliding:
-				current_speed = SPEED * crouching_speed
-			if not Input.is_action_pressed("crouch"):
-				sprinting = false
-				walking = true
-				velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
-				velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
-
-			else:
-				velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
-				velocity.z = lerp(velocity.z, direction.z * current_speed ,delta * 3)
-				sprinting = false
-				walking = false
-	else:
-		walking = false
+		
 	if Input.is_action_just_pressed("crouch") && Input.is_action_pressed("sprint") && is_on_floor():
 		if sprint && input_dir != Vector2.ZERO:
 			sliding = true
@@ -265,17 +234,7 @@ func _physics_process(delta: float) -> void:
 	
 	#fall damage
 	
-	if old_vel < 0:
-		falling = false
-		var diff = velocity.y - old_vel
-		if diff > fall_hurtie:
-			took_damage(round(diff))
-	old_vel = velocity.y
 	
-	if velocity.y < 0:
-		falling = true
-	else:
-		falling = false
 	#FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, sprint * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
