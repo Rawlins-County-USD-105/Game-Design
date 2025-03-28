@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://didfro6rbdx1d"]
+[gd_scene load_steps=10 format=3 uid="uid://didfro6rbdx1d"]
 
 [ext_resource type="Script" path="res://Main Menu/Popup menu/popup_menu.gd" id="1_stgea"]
+[ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="2_7xr30"]
 [ext_resource type="Texture2D" uid="uid://d00jnovldyktq" path="res://Main Menu/Popup menu/Untitled design (32) copy.png" id="2_svcp7"]
 
 [sub_resource type="SystemFont" id="SystemFont_o2ak2"]
@@ -82,6 +83,18 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
 text = "QUIT"
 flat = true
 metadata/_edit_use_anchors_ = true
+
+[node name="InputSettings" parent="." instance=ExtResource("2_7xr30")]
+z_index = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -470.0
+offset_top = -323.0
+offset_right = 689.0
+offset_bottom = 331.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -2,6 +2,7 @@ extends Control
 @onready var settings: Button = $MarginContainer/HBoxContainer/VBoxContainer/Settings
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var timer: Timer = $AnimationPlayer/Timer
+@onready var input_settings: Control = $InputSettings
 
 
 
@@ -25,5 +26,12 @@ func _on_timer_timeout() -> void:
 
 
 func _on_button_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://Main Menu/Input Map Page/Input_Settings.tscn")
+	input_settings.visible = true
+
+
+func _process(float):
+	
+	if input_settings.visible == true and Input.is_action_just_pressed("Settings Close"):
+		input_settings.visible = false
+
 	
