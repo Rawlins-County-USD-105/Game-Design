@@ -100,6 +100,8 @@ func Weapon_Select():
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
+	
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
