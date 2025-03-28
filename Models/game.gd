@@ -6,14 +6,20 @@ extends Node3D
 @onready var group_enemy = $Enemies
 @onready var spawn_zones_node: Node3D = $SpawnZones
 @onready var spawn_timer: Timer = $Spawner/SpawnTimer
+@onready var oil_drill: Node3D = $NavigationRegion3D/Oil_Drill
+@onready var player: CharacterBody3D = $player
 
+var can_spawn = false
 var total_enemies = 0
 var enemies_spawned = 0
 func _process(delta: float) -> void:
-	if spawn_timer:
-		if Game.enemies_spawned < 5 && spawn_timer.is_stopped():
-			spawning()
-
+	if player:
+		if player.spawning:
+			if spawn_timer:
+				if Game.enemies_spawned < 5 && spawn_timer.is_stopped():
+					spawning()
+		else:
+			pass
 
 
 func spawning():
@@ -27,13 +33,13 @@ func spawning():
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
 					var e_inst = enemy.instantiate()
-					e_inst.player = $NavigationRegion3D/player
+					e_inst.player = $player
+					e_inst.drill = oil_drill.hitbox
 					e_inst.position = x.global_position
 					group_enemy.add_child(e_inst)
 				else:
 					pass
-@onready var player: CharacterBody3D = $player
-@onready var oil_drill: Node3D = $NavigationRegion3D/Oil_Drill
+
 
 func _ready() -> void:
 	if player:

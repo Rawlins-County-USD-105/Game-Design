@@ -113,8 +113,8 @@ func took_damage(Damage):
 		damage_bar_timer.start()
 		health -= Damage
 		animation_player.play("Damage Red")
-		if not ouch.playing:
-			ouch.play()
+		#if not ouch.playing:
+			#ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
@@ -300,15 +300,15 @@ func _on_damage_bar_timer_timeout() -> void:
 	prev_health = health
 
 
-func _on_spawn_timer_timeout() -> void:
-	if spawning:
-		if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
-			Game.enemies_spawned += 1
-			Game.total_enemies += 1
-			var e_inst = enemy.instantiate()
-			e_inst.player = $crouching_collision_shape
-			e_inst.drill = drill_hitbox
-			e_inst.position = spawner.get_node("Spawn Point").global_position
-			group_enemy.add_child(e_inst)
-		else:
-			pass
+#func _on_spawn_timer_timeout() -> void:
+	#if spawning:
+		#if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+			#Game.enemies_spawned += 1
+			#Game.total_enemies += 1
+			#var e_inst = enemy.instantiate()
+			#e_inst.player = $crouching_collision_shape
+			#e_inst.drill = drill_hitbox
+			#e_inst.position = spawner.get_node("Spawn Point").global_position
+			#group_enemy.add_child(e_inst)
+		#else:
+			#pass
