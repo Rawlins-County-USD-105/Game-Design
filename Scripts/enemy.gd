@@ -15,7 +15,8 @@ var target = player
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-
+var player_distance = 0
+var drill_distance = 0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,8 +33,10 @@ func move(_delta):
 			timer.start()
 		else:
 			pass
+
 	var player_distance = player.global_position.distance_to(self.global_position)
 	var drill_distance = drill.global_position.distance_to(self.global_position)
+	
 	if drill_distance < 8:
 		target = drill
 	else:
