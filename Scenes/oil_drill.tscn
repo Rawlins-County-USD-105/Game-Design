@@ -7,7 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://rs101c8ghlpl" path="res://Sounds/yesssssss.wav" id="5_ruymf"]
 [ext_resource type="AudioStream" uid="uid://bfw8vvr3e54ue" path="res://Sounds/gayyer3.wav" id="6_mq33h"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
-
+[ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
+[ext_resource type="ArrayMesh" uid="uid://dyiqu4s1x5cg0" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="Texture2D" uid="uid://d1yejh1o3b461" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
 material = ExtResource("1_k5jf3")
