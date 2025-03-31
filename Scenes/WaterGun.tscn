@@ -82,7 +82,6 @@ mesh = ExtResource("3_8gyao")
 libraries = {
 "": SubResource("AnimationLibrary_lv0ap")
 }
-autoplay = "Pew"
 
 [node name="RayCast" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.300143)
