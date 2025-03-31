@@ -6,6 +6,7 @@ extends Interactable
 @onready var barrels: Label = $"../Barrels"
 @onready var gpu_particles_3d: GPUParticles3D = $"../GPUParticles3D"
 @onready var health_bar_sprite: Node3D = $"../Health"
+@onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
 
 var oil = 0
 var max_oil = 100
@@ -23,6 +24,7 @@ func _process(delta: float) -> void:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 
 func _on_interacted(body: Variant) -> void:
+	begin_drill.play()
 	oil_bar.show()
 	health_bar_sprite.show()
 	player = body
