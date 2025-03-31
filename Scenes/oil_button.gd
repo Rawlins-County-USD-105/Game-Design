@@ -8,7 +8,7 @@ extends Interactable
 @onready var health_bar_sprite: Node3D = $"../Health"
 
 var oil = 0
-var max_oil = 1000
+var max_oil = 100
 var player = null
 var barrel = 0
 
@@ -17,6 +17,7 @@ func _ready() -> void:
 	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
+
 func _process(delta: float) -> void:
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
@@ -36,6 +37,7 @@ func get_oil():
 	oil_bar.value = oil
 	
 	if oil_bar.value == oil_bar.max_value:
+		begin_drill.stop()
 		barrel += 1
 		barrels.text = str(barrel)
 		player.spawning = false
