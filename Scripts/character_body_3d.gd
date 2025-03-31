@@ -100,6 +100,8 @@ func Weapon_Select():
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
+	
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
@@ -300,15 +302,15 @@ func _on_damage_bar_timer_timeout() -> void:
 	prev_health = health
 
 
-func _on_spawn_timer_timeout() -> void:
-	if spawning:
-		if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
-			Game.enemies_spawned += 1
-			Game.total_enemies += 1
-			var e_inst = enemy.instantiate()
-			e_inst.player = $crouching_collision_shape
-			e_inst.drill = drill_hitbox
-			e_inst.position = spawner.get_node("Spawn Point").global_position
-			group_enemy.add_child(e_inst)
-		else:
-			pass
+#func _on_spawn_timer_timeout() -> void:
+	#if spawning:
+		#if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+			#Game.enemies_spawned += 1
+			#Game.total_enemies += 1
+			#var e_inst = enemy.instantiate()
+			#e_inst.player = $crouching_collision_shape
+			#e_inst.drill = drill_hitbox
+			#e_inst.position = spawner.get_node("Spawn Point").global_position
+			#group_enemy.add_child(e_inst)
+		#else:
+			#pass

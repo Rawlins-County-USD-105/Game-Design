@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://caohxbi8m4bkt"]
+
+[ext_resource type="Script" path="res://Scenes/no_spawn.gd" id="1_moscc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x1k5e"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5u2t7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ggc7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pq0ki"]
+next_pass = SubResource("StandardMaterial3D_1ggc7")
+
+[node name="No_Spawn" type="Area3D"]
+script = ExtResource("1_moscc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_x1k5e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("BoxMesh_5u2t7")
+surface_material_override/0 = SubResource("StandardMaterial3D_pq0ki")

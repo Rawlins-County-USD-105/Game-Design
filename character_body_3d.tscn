@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dylqcpo5614i0"]
+[gd_scene load_steps=13 format=4 uid="uid://dssoiyju6rb30"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
