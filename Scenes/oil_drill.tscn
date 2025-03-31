@@ -1,11 +1,6 @@
-[gd_scene load_steps=28 format=4 uid="uid://tg33iobykwrr"]
+[gd_scene load_steps=32 format=4 uid="uid://c78ye8umktnip"]
 
-[ext_resource type="PackedScene" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
-[ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
-[ext_resource type="ArrayMesh" uid="uid://bksmoj6bydl7" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://b2tadbr2ses7y" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-[ext_resource type="AudioStream" uid="uid://rs101c8ghlpl" path="res://Sounds/yesssssss.wav" id="5_ruymf"]
-[ext_resource type="AudioStream" uid="uid://bfw8vvr3e54ue" path="res://Sounds/gayyer3.wav" id="6_mq33h"]
+[ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
 [ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
 [ext_resource type="ArrayMesh" uid="uid://dyiqu4s1x5cg0" path="res://Models/rock.obj" id="3_xufo8"]
@@ -303,11 +298,6 @@ offset_bottom = 509.0
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("4_k7bje")
 
-[node name="begin_drill" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("5_ruymf")
-
-[node name="end_drill" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("6_mq33h")
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
 size = Vector2i(350, 32)
