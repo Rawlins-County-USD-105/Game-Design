@@ -264,6 +264,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -47.8014)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
 shape = SubResource("CylinderShape3D_wo0hw")
 
+[node name="spawn3" type="Area3D" parent="SpawnZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, 30.2989)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
+shape = SubResource("CylinderShape3D_wo0hw")
+
+[node name="spawn4" type="Area3D" parent="SpawnZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.491, 1.54803, -47.8014)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
+shape = SubResource("CylinderShape3D_wo0hw")
+
 [node name="Spawner" type="Node3D" parent="."]
 
 [node name="Spawn Point" type="Marker3D" parent="Spawner"]
