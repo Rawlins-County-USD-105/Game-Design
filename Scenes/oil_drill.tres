@@ -17,9 +17,9 @@ frequency = 0.0683
 noise = SubResource("FastNoiseLite_0ue5w")
 
 [resource]
-albedo_color = Color(1, 0.770661, 0.560083, 1)
-metallic_specular = 0.0
+metallic_specular = 1.0
 roughness_texture = SubResource("NoiseTexture2D_yby6r")
 subsurf_scatter_enabled = true
 subsurf_scatter_strength = 0.46
 subsurf_scatter_texture = SubResource("NoiseTexture2D_angk3")
+grow_amount = 16.0

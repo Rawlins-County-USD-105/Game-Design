@@ -14,6 +14,10 @@ var player = self
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var explosion: GPUParticles3D = $Explosion
+@onready var character_body_3d_2: CharacterBody3D = $"."
+@onready var armature_006: Node3D = $Armature_006
+
 
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
@@ -26,7 +30,7 @@ func move(_delta):
 	if damage_ray.get_collider() == null:
 		pass
 	else:
-		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
+		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player") and Health > 0:
 			damage_ray.get_collider().took_damage(Damage)
 			timer.start()
 		else:
@@ -48,6 +52,11 @@ func Hit(Damage):
 		Gain.Gain_Water(Gold)
 		Game.enemies_spawned -= 1
 		#Game.enemy_death()
+		hitbox.disabled = true
+		armature_006.visible = false
+		explosion.emitting = true
+		
+		await get_tree().create_timer(.5).timeout
 		queue_free()
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:

@@ -1,9 +1,9 @@
 [gd_scene load_steps=26 format=4 uid="uid://c78ye8umktnip"]
 
 [ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
-[ext_resource type="Material" uid="uid://oe3m7drt86pd" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
-[ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
+[ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
+[ext_resource type="ArrayMesh" uid="uid://uphswfg1blml" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="Texture2D" uid="uid://c4gny3yovockd" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
 material = ExtResource("1_k5jf3")
