@@ -10,11 +10,12 @@ var target = player
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
-@export var speed : int
-@export var Health : int
+
+var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+var passes = 0
 var player_distance = 0
 var drill_distance = 0
 signal hit(Damage)
@@ -23,7 +24,10 @@ func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func move(_delta):
+func move(_delta, speed, HP):
+	passes += 1
+	if passes < 2:
+		Health = HP
 	velocity = Vector3.ZERO
 	if damage_ray.get_collider() == null:
 		pass
@@ -48,7 +52,6 @@ func move(_delta):
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
 	rotation.y = lerp_angle(rotation.y, atan2(-velocity.x, -velocity.z), _delta * 10)
-	
 	move_and_slide()
 func Hit(Damage):
 	Health -= Damage

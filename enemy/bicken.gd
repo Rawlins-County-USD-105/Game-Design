@@ -1,7 +1,7 @@
 extends Enemy
 
-var speed = 5
-var HP = 10
+var speed = 2
+var HP = 100
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -10,6 +10,3 @@ func _process(delta: float) -> void:
 	move(delta, speed, HP)
 	if not animation.is_playing():
 		animation.play("Chicken_Run")
-
-	
-	

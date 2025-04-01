@@ -287,7 +287,6 @@ mesh = NodePath("Armature_006/Chicken_006")
 hitbox = NodePath("CollisionShape3D")
 nav_agent = NodePath("NavigationAgent3D")
 animation = NodePath("AnimationPlayer")
-speed = 4
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 10.01
