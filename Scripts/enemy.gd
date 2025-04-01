@@ -2,7 +2,8 @@ extends CharacterBody3D
 
 class_name Enemy
 var player = self
-
+var drill = self
+var target = player
 #@export var player_path : NodePath
 @export var Damage : int
 @export var mesh : MeshInstance3D
@@ -19,6 +20,8 @@ var player = self
 @onready var armature_006: Node3D = $Armature_006
 
 
+var player_distance = 0
+var drill_distance = 0
 signal hit(Damage)
  #Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,10 +38,18 @@ func move(_delta):
 			timer.start()
 		else:
 			pass
-		
+
+	var player_distance = player.global_position.distance_to(self.global_position)
+	var drill_distance = drill.global_position.distance_to(self.global_position)
+	
+	if drill_distance < 8:
+		target = drill
+	else:
+		target = player
+	
 	
 	# Navigation
-	nav_agent.set_target_position(player.global_transform.origin)
+	nav_agent.set_target_position(target.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
 	rotation.y = lerp_angle(rotation.y, atan2(-velocity.x, -velocity.z), _delta * 10)
