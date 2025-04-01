@@ -246,7 +246,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 [node name="CharacterBody3D4" parent="Enemies" instance=ExtResource("16_87ri5")]
 
 [node name="Shop_button" parent="." instance=ExtResource("16_0jonq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
+transform = Transform3D(8.33, 0, 0, 0, 8.33, 0, 0, 0, 8.33, 4.81343, 0.510929, -6.24079)
 
 [node name="SpawnZones" type="Node3D" parent="."]
 

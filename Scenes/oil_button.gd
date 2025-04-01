@@ -17,6 +17,7 @@ func _ready() -> void:
 	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
+@warning_ignore("unused_parameter")
 func _process(delta: float) -> void:
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
@@ -31,6 +32,7 @@ func _on_interacted(body: Variant) -> void:
 	timer.start()
 
 func get_oil():
+	@warning_ignore("unused_variable")
 	var label_text = str(oil_bar.value / oil_bar.max_value * 100)
 	
 	oil_bar.value = oil

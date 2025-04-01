@@ -34,7 +34,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_xs51w"]
-resource_name = "press"
+resource_name = "push"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -52,7 +52,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
 _data = {
 "RESET": SubResource("Animation_qdd8g"),
-"press": SubResource("Animation_xs51w")
+"push": SubResource("Animation_xs51w")
 }
 
 [node name="Shop_button" type="StaticBody3D"]
@@ -74,5 +74,6 @@ shape = SubResource("BoxShape3D_vcvxo")
 libraries = {
 "": SubResource("AnimationLibrary_nd0kf")
 }
+autoplay = "push"
 
 [node name="SkillTree" parent="." instance=ExtResource("2_1yxdb")]
