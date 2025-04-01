@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctvcl7kcff3xy"]
+[gd_scene load_steps=15 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
 [ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Main BG.png" id="2_ov7jo"]
 [ext_resource type="Texture2D" uid="uid://cprdlqjocretd" path="res://Models/Untitled design (24).png" id="3_n72tn"]
 [ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="4_dy13v"]
+[ext_resource type="AudioStream" uid="uid://cdpaov1f7uvpk" path="res://enemy/no the finals into music.wav" id="5_bhle3"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
@@ -226,6 +227,11 @@ offset_left = -4.0
 offset_top = 52.0
 offset_right = -4.0
 offset_bottom = 61.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_bhle3")
+pitch_scale = 0.5
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
