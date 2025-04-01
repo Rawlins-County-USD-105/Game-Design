@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://ctnajx3xbjb5y"]
+[gd_scene load_steps=16 format=3 uid="uid://ctnajx3xbjb5y"]
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
 [ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_l72jb"]
-[ext_resource type="Texture2D" uid="uid://2f8l6cyxuha" path="res://Main Menu/Assets/Untitled design (23).png" id="4_kpqqu"]
+[ext_resource type="Texture2D" uid="uid://42oy8lsj66p" path="res://Main Menu/Assets/Untitled design (30).png" id="4_42iea"]
+[ext_resource type="Texture2D" uid="uid://cprdlqjocretd" path="res://Models/Untitled design (24).png" id="5_qgyxk"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")
@@ -19,6 +20,43 @@ font_names = PackedStringArray("Impact")
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_chh8y"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aexbf"]
+
+[sub_resource type="Animation" id="Animation_souls"]
+resource_name = "Open Game animation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/UntitledDesign(24):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(593, 331), Vector2(2433, 331)]
+}
+
+[sub_resource type="Animation" id="Animation_oc728"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/UntitledDesign(24):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(593, 331)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hnkkw"]
+_data = {
+"Open Game animation": SubResource("Animation_souls"),
+"RESET": SubResource("Animation_oc728")
+}
 
 [node name="InputSettings" type="Control"]
 clip_contents = true
@@ -137,9 +175,20 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_aexbf")
 flat = true
 
 [node name="UntitledDesign(23)" type="Sprite2D" parent="."]
-position = Vector2(819, 80)
+position = Vector2(813, 116)
 rotation = 0.282289
-scale = Vector2(0.542, 0.601)
-texture = ExtResource("4_kpqqu")
+scale = Vector2(0.111071, 0.114919)
+texture = ExtResource("4_42iea")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hnkkw")
+}
+autoplay = "Open Game animation"
+
+[node name="UntitledDesign(24)" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(593, 331)
+scale = Vector2(0.429148, 0.23763)
+texture = ExtResource("5_qgyxk")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
