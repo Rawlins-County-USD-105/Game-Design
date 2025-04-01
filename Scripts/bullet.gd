@@ -15,28 +15,24 @@ var target = null
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if target != null:
-		var direction = (target - global_transform.origin).normalized()
+		get_direction()
 		
-		position += direction * speed * delta
+	position += transform.basis * Vector3(0, 0, -speed) * delta
 		
-		if ray.get_collider():
-			mesh.visible = false
-			particles.emitting = true
-			ray.enabled = false
-			if ray.get_collider().is_in_group("Enemy"):
-				ray.get_collider().Hit(Damage)
-			await get_tree().create_timer(0).timeout
-			queue_free()
+	if ray.get_collider():
+		mesh.visible = false
+		particles.emitting = true
+		ray.enabled = false
+		if ray.get_collider().is_in_group("Enemy"):
+			ray.get_collider().Hit(Damage)
+		await get_tree().create_timer(0).timeout
+		queue_free()
 	else:
-		position += transform.basis * Vector3(0, 0, -speed) * delta
-		
-		if ray.get_collider():
-			mesh.visible = false
-			particles.emitting = true
-			ray.enabled = false
-			if ray.get_collider().is_in_group("Enemy"):
-				ray.get_collider().Hit(Damage)
-			await get_tree().create_timer(0).timeout
-			queue_free()
-		else:
-			pass
+		pass
+
+func get_direction():
+	var direction = (target - global_transform.origin).normalized()
+	
+	look_at(target)
+	
+	target = null
