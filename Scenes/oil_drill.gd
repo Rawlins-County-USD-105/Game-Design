@@ -32,3 +32,8 @@ func took_damage(Damage):
 
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_damage_bar_timer_timeout() -> void:
+	
+	damagebar.value = drill_health
