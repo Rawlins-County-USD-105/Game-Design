@@ -2,16 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
-<<<<<<< Updated upstream
-[ext_resource type="Material" uid="uid://oe3m7drt86pd" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
-[ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-=======
 [ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
 [ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
 [ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
 [ext_resource type="AudioStream" uid="uid://peoq5v0iq3ha" path="res://Sounds/big.drill_02.wav" id="6_cnc8r"]
->>>>>>> Stashed changes
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
 material = ExtResource("1_k5jf3")
