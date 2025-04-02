@@ -55,9 +55,9 @@ agent_max_climb = 0.6
 [sub_resource type="NavigationMesh" id="NavigationMesh_w7lsf"]
 vertices = PackedVector3Array(-4.99942, 1.69866, 9.99933, -14.9994, 0.898657, 4.99933, -19.9994, 0.898657, 19.9993, 5.00058, 1.09866, 14.9993, -19.9994, 1.89866, -20.0007, -14.9994, 0.898657, -45.0007, -24.9994, 1.89866, -60.0007, -94.9994, 0.898657, -95.0007, -44.9994, 0.898657, -15.0007, -48.3328, 0.898657, -71.6673, 5.00058, 3.09866, -70.0007, 0.000579834, 0.898657, -95.0007, -9.99942, 0.898657, -65.0007, 95.0006, 0.898657, 19.9993, -94.9994, 0.898657, 94.9993, 95.0006, 0.898657, 94.9993, -29.9994, 0.898657, 19.9993, -44.9994, 0.898657, 4.99933, 5.00058, 1.49866, -0.000671387, 20.0006, 0.898657, -50.0007, 2.50058, 2.29866, -47.5007, 95.0006, 0.898657, -95.0007, 20.0006, 0.898657, -65.0007)
 polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 8), PackedInt32Array(6, 8, 9), PackedInt32Array(9, 8, 7), PackedInt32Array(10, 12, 11), PackedInt32Array(11, 12, 6), PackedInt32Array(11, 6, 9), PackedInt32Array(11, 9, 7), PackedInt32Array(3, 13, 2), PackedInt32Array(2, 13, 15), PackedInt32Array(2, 15, 14), PackedInt32Array(14, 17, 16), PackedInt32Array(14, 16, 2), PackedInt32Array(8, 17, 7), PackedInt32Array(7, 17, 14), PackedInt32Array(0, 1, 18), PackedInt32Array(18, 1, 4), PackedInt32Array(18, 4, 5), PackedInt32Array(18, 5, 20), PackedInt32Array(18, 20, 19), PackedInt32Array(19, 22, 21), PackedInt32Array(10, 11, 22), PackedInt32Array(22, 11, 21), PackedInt32Array(18, 19, 3), PackedInt32Array(3, 19, 13), PackedInt32Array(13, 19, 21)]
-cell_size = 5.0
-cell_height = 0.2
-agent_radius = 5.0
+cell_size = 0.2
+agent_height = 10.0
+agent_radius = 3.0
 agent_max_climb = 3.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6l1du"]
