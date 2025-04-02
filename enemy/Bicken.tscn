@@ -458,6 +458,7 @@ bones/19/scale = Vector3(1, 1, 1)
 libraries = {
 "": SubResource("AnimationLibrary_ds8ra")
 }
+speed_scale = 0.4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, -4.37114e-07, -10, 0, 10, -4.37114e-07, 0, 0.275615, -7.06865e-07)
