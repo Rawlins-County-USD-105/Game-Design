@@ -32,9 +32,10 @@ func move(_delta, speed, HP):
 	if damage_ray.get_collider() == null:
 		pass
 	else:
-		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player"):
-			damage_ray.get_collider().took_damage(Damage)
-			timer.start()
+		if damage_ray.is_colliding() and timer.is_stopped():
+			if damage_ray.get_collider().is_in_group("Player") or damage_ray.get_collider().is_in_group("damageable"):
+				damage_ray.get_collider().took_damage(Damage)
+				timer.start()
 		else:
 			pass
 
