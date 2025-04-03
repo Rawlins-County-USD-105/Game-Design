@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://2gtbpkh0cjmd"]
+[gd_scene load_steps=10 format=3 uid="uid://bbla1nlgmx8bm"]
 
-[ext_resource type="Script" path="res://Scenes/shop_button.gd" id="1_5m68g"]
+[ext_resource type="Script" path="res://skill_button.gd" id="1_xwpp7"]
+[ext_resource type="PackedScene" uid="uid://fypx45vbpq5l" path="res://skill_tree.tscn" id="2_2ghcy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdhpv"]
 albedo_color = Color(0.686275, 0.0705882, 0.0823529, 1)
@@ -33,7 +34,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_xs51w"]
-resource_name = "push"
+resource_name = "press"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -51,11 +52,11 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
 _data = {
 "RESET": SubResource("Animation_qdd8g"),
-"push": SubResource("Animation_xs51w")
+"press": SubResource("Animation_xs51w")
 }
 
-[node name="Shop_button" type="StaticBody3D"]
-script = ExtResource("1_5m68g")
+[node name="Skill_button" type="StaticBody3D"]
+script = ExtResource("1_xwpp7")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -73,3 +74,8 @@ shape = SubResource("BoxShape3D_vcvxo")
 libraries = {
 "": SubResource("AnimationLibrary_nd0kf")
 }
+
+[node name="SkillTree" parent="." instance=ExtResource("2_2ghcy")]
+visible = false
+
+[connection signal="interacted" from="." to="." method="_on_interacted"]
