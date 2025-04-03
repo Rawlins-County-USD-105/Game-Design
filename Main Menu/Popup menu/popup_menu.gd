@@ -1,18 +1,20 @@
 extends Node2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+
 @onready var window: = $"."
 @onready var buttonclose: Button = $Sprite2D/buttonclose
 @onready var input_settings: Control = $InputSettings
 
+
 var windowv = false
-var Level = 1
+var Level = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	print(Level)
 
-		
+
 	if window.visible == false and Level == 1 and Input.is_action_just_pressed("Open popup"):
 		window.visible = true
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

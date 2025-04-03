@@ -127,6 +127,7 @@ offset_right = 179.0
 offset_bottom = 116.0
 theme_override_colors/font_color = Color(0, 0, 0, 0)
 text = "Press ESC to close"
+metadata/_edit_use_anchors_ = true
 
 [node name="InputSettings" parent="." instance=ExtResource("2_7xr30")]
 z_index = 1
