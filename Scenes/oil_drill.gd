@@ -16,6 +16,7 @@ func _ready() -> void:
 	damagebar.value = drill_health
 	
 func took_damage(Damage):
+	print("Drill Hit")
 	
 	if Damage > drill_health:
 		drill_health = 0
