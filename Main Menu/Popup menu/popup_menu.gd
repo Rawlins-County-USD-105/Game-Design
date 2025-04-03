@@ -1,5 +1,6 @@
 extends Node2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 @onready var window: = $"."
 @onready var buttonclose: Button = $Sprite2D/buttonclose
 @onready var input_settings: Control = $InputSettings
@@ -12,17 +13,18 @@ func _process(delta: float) -> void:
 	print(Level)
 
 		
-	if window.visible == false and Input.is_action_just_pressed("Settings Close"):
+	if window.visible == false and Level == 1 and Input.is_action_just_pressed("Open popup"):
 		window.visible = true
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		Level = 2
+		animation_player.play("ESCAPECLOSE")
 		
-	elif window.visible == true and Level == 2 and Input.is_action_just_pressed("Settings Close"):
+	elif window.visible == true and Level == 2 and Input.is_action_just_pressed("Open popup"):
 		window.visible = false
 		Level = 1
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
-	if input_settings.visible == true and Level == 3 and Input.is_action_just_pressed("Settings Close"):
+	if input_settings.visible == true and Level == 3 and Input.is_action_just_pressed("Open popup"):
 		input_settings.visible = false
 		Level = 2
 

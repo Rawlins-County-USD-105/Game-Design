@@ -52,7 +52,7 @@ anchors_preset = -1
 anchor_left = 0.250868
 anchor_top = 0.299383
 anchor_right = 0.746528
-anchor_bottom = 0.871914
+anchor_bottom = 0.833334
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_h6lpy")
@@ -133,3 +133,10 @@ z_index = -1
 position = Vector2(575.5, 299)
 scale = Vector2(1.277, 0.976)
 texture = ExtResource("5_rpxf0")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 501.0
+offset_top = 551.0
+offset_right = 639.0
+offset_bottom = 574.0
+text = "Press ESC to close"

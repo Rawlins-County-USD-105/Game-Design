@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://didfro6rbdx1d"]
+[gd_scene load_steps=13 format=3 uid="uid://didfro6rbdx1d"]
 
 [ext_resource type="Script" path="res://Main Menu/Popup menu/popup_menu.gd" id="1_stgea"]
 [ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="2_7xr30"]
@@ -17,6 +17,42 @@ subpixel_positioning = 0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6w5xu"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ujv5"]
+
+[sub_resource type="Animation" id="Animation_yxxpe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_68owd"]
+resource_name = "ESCAPECLOSE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sak0y"]
+_data = {
+"ESCAPECLOSE": SubResource("Animation_68owd"),
+"RESET": SubResource("Animation_yxxpe")
+}
 
 [node name="Popup menu" type="Node2D"]
 visible = false
@@ -84,6 +120,14 @@ text = "QUIT"
 flat = true
 metadata/_edit_use_anchors_ = true
 
+[node name="Label" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 93.0
+offset_right = 179.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+text = "Press ESC to close"
+
 [node name="InputSettings" parent="." instance=ExtResource("2_7xr30")]
 z_index = 1
 anchors_preset = 0
@@ -95,6 +139,12 @@ offset_right = 689.0
 offset_bottom = 331.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Label")
+libraries = {
+"": SubResource("AnimationLibrary_sak0y")
+}
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
