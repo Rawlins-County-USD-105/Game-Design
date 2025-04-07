@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://skill_tree.gd" id="1_bvij6"]
 
 [node name="SkillTree" type="Control"]
+visible = false
 z_index = 3
 layout_mode = 3
 anchors_preset = 15
