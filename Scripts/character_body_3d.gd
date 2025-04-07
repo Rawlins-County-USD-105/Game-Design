@@ -288,8 +288,7 @@ func _physics_process(delta: float) -> void:
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 	
 	#spawning
-	var random_number = randi_range(1,360)
-	spawner.rotate_y(deg_to_rad(random_number))
+	
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
