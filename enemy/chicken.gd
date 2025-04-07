@@ -27,7 +27,7 @@ func chicken_sound_func():
 	if chicken_sound_1.playing or chicken_sound_2.playing or chicken_sound_3.playing:
 		pass
 	else:
-		var random_number = rng.randf_range(2.0, 4.0)
+		var random_number = rng.randf_range(2.0, 10.0)
 		
 		await get_tree().create_timer(random_number).timeout
 		chicken_sound_choice.play()
