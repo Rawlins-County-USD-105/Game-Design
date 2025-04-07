@@ -16,6 +16,7 @@ var drill_hitbox = self
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 @onready var ouch: AudioStreamPlayer3D = $ouch
+@onready var dead: AudioStreamPlayer3D = $dead
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -120,6 +121,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
+		dead.play()
 
 	
 	healthbar.value = health

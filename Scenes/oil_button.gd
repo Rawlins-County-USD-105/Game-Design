@@ -10,7 +10,7 @@ extends Interactable
 @onready var health_bar_sprite: Node3D = $"../Health"
 
 var oil = 0
-var max_oil = 100
+var max_oil = 1000
 var player = null
 var barrel = 0
 var sound_playing = false
