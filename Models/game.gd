@@ -11,12 +11,24 @@ extends Node3D
 @onready var oil_drill: Node3D = $NavigationRegion3D/NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
+@onready var world_environment: WorldEnvironment = $WorldEnvironment
 
 var spawn_enemy = null
 var can_spawn = false
 var total_enemies = 0
 var enemies_spawned = 0
+var fog = false
+var fog_density = 0
+
+func _ready() -> void:
+	
+	if player:
+		
+		player.drill_hitbox = oil_drill.hitbox
+
 func _process(delta: float) -> void:
+	
+	print(fog)
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -24,6 +36,14 @@ func _process(delta: float) -> void:
 					spawning()
 		else:
 			pass
+	
+	if fog:
+		fog_density += 0.1
+		
+		world_environment.environment.fog_density = fog_density
+		
+		if world_environment.environment.fog_density == 0.15:
+			fog = false
 
 
 func spawning():
@@ -37,6 +57,7 @@ func spawning():
 				var rand_ene = randi_range(1,10)
 				if rand_ene == 10:
 					spawn_enemy = enemies.find_key(2)
+					fog = true
 				else:
 					spawn_enemy = enemies.find_key(1)
 				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
@@ -52,10 +73,3 @@ func spawning():
 					
 				else:
 					pass
-
-
-func _ready() -> void:
-	if player:
-		
-		player.drill_hitbox = oil_drill.hitbox
-	

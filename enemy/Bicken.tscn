@@ -1,6 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://cy3fcblng4sgf"]
+[gd_scene load_steps=13 format=4 uid="uid://cy3fcblng4sgf"]
 
 [ext_resource type="Script" path="res://enemy/bicken.gd" id="1_7mspb"]
+[ext_resource type="AudioStream" uid="uid://bgiooednbqple" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
+[ext_resource type="AudioStream" uid="uid://bjffjw7wfqemk" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_an5tu"]
+[ext_resource type="AudioStream" uid="uid://pysdpoj0onn6" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_xynr6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
@@ -463,3 +466,20 @@ speed_scale = 0.4
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, -4.37114e-07, -10, 0, 10, -4.37114e-07, 0, 0.275615, -7.06865e-07)
 shape = SubResource("SphereShape3D_6h5k1")
+
+[node name="ChickenSound1" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_78am0")
+pitch_scale = 0.4
+bus = &"Bicken Sounds"
+
+[node name="ChickenSound2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_an5tu")
+volume_db = 36.41
+pitch_scale = 0.25
+bus = &"Bicken Sounds"
+
+[node name="ChickenSound3" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_xynr6")
+pitch_scale = 0.25
+max_polyphony = 5
+bus = &"Bicken Sounds"
