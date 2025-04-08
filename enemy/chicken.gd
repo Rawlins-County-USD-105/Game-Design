@@ -25,8 +25,8 @@ func _process(delta: float) -> void:
 func chicken_sound_func():
 	var random_list = rng.randi_range(0, 2)
 	var chicken_sound_choice = chicken_sound[random_list]
-	
 	var random_number = rng.randf_range(3.0, 10.0)
+
 		
 	await get_tree().create_timer(random_number).timeout
 	chicken_sound_choice.play()
