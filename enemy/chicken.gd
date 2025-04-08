@@ -14,7 +14,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
-	chicken_sound_func()
+	if not chicken_sound_1.playing or not chicken_sound_2.playing or not chicken_sound_3.playing:
+		print("guh")
+		chicken_sound_func()
 	
 	move(delta, speed, HP)
 	if not animation.is_playing():
@@ -24,11 +26,8 @@ func chicken_sound_func():
 	var random_list = rng.randi_range(0, 2)
 	var chicken_sound_choice = chicken_sound[random_list]
 	
-	if chicken_sound_1.playing or chicken_sound_2.playing or chicken_sound_3.playing:
-		pass
-	else:
-		var random_number = rng.randf_range(2.0, 4.0)
+	var random_number = rng.randf_range(3.0, 10.0)
 		
-		await get_tree().create_timer(random_number).timeout
-		chicken_sound_choice.play()
+	await get_tree().create_timer(random_number).timeout
+	chicken_sound_choice.play()
 	

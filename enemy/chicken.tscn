@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=4 uid="uid://ccexpy6hlaehv"]
 
 [ext_resource type="Script" path="res://enemy/chicken.gd" id="1_p278j"]
-[ext_resource type="AudioStream" uid="uid://cusrok0uuw763" path="res://Sounds/Chicken_source_833802/Chicken - 1.mp3" id="2_d1raa"]
-[ext_resource type="AudioStream" uid="uid://vsch1cyi872x" path="res://Sounds/Chicken_source_833802/Chicken - 2.mp3" id="3_0eare"]
-[ext_resource type="AudioStream" uid="uid://bb3vqh0bvtm7l" path="res://Sounds/Chicken_source_833802/Chicken - 3.mp3" id="4_3grke"]
+[ext_resource type="AudioStream" uid="uid://bgiooednbqple" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_qhnfi"]
+[ext_resource type="AudioStream" uid="uid://bjffjw7wfqemk" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_t8g63"]
+[ext_resource type="AudioStream" uid="uid://pysdpoj0onn6" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_3n3tf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
@@ -465,10 +465,10 @@ transform = Transform3D(10, 0, 0, 0, -4.37114e-07, -10, 0, 10, -4.37114e-07, 0, 
 shape = SubResource("SphereShape3D_6h5k1")
 
 [node name="ChickenSound1" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("2_d1raa")
+stream = ExtResource("2_qhnfi")
 
 [node name="ChickenSound2" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("3_0eare")
+stream = ExtResource("3_t8g63")
 
 [node name="ChickenSound3" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("4_3grke")
+stream = ExtResource("4_3n3tf")
