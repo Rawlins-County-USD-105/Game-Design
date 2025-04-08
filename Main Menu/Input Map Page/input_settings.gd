@@ -17,6 +17,12 @@ var input_actions = {
 	"back": "Move Backward",
 	"sprint": "Sprint",
 	"jump": "Jump",
+	"Interact":"Interact",
+	"crouch":"Crouch",
+	"Pew":"Shoot",
+	"Watergun":"Watergun",
+	"Shovel":"Shovel",
+	"Weapon3":"Pistol",
 }
 
 func _ready():

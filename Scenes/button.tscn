@@ -77,6 +77,5 @@ libraries = {
 }
 
 [node name="SkillTree" parent="." instance=ExtResource("2_atwey")]
-visible = false
 
 [connection signal="interacted" from="." to="." method="_on_interacted"]
