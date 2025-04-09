@@ -1,13 +1,13 @@
 extends CharacterBody3D
 
 @export var locomotion : String
+@export var jump_ani : String
 @export var animationTree : AnimationTree
 @export var transitionSpeed : float = 0.1
 @export var SPEED: float = 5.0
 @export var JUMP_VELOCITY: float = 4.5
 @export var mousesense: float = 1
 @onready var camera_3d: Camera3D = $funnyshid/Armature/Skeleton3D/Camera
-
 @onready var player: CharacterBody3D = $"."
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -32,12 +32,19 @@ var currentInput : Vector2
 var currentVelocity : Vector2
 
 func _process(delta):
-	animationTree.set(locomotion, currentInput)
+	var newDelta = currentInput - currentVelocity;
+	if (newDelta.length() > transitionSpeed * delta):
+		newDelta = newDelta.normalized() * transitionSpeed * delta
+		
+	currentVelocity += newDelta;
+	
+	animationTree.set(locomotion, currentVelocity)
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		animationTree.set(jump_ani, .9)
 		velocity.y = JUMP_VELOCITY
-
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	currentInput = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
