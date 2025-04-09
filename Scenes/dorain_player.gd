@@ -9,7 +9,9 @@ extends CharacterBody3D
 @export var mousesense: float = 1
 @onready var camera_3d: Camera3D = $funnyshid/Armature/Skeleton3D/Camera
 @onready var player: CharacterBody3D = $"."
-
+var falling = false
+var old_vel = 0.0
+var jumping = false
 func _unhandled_input(event: InputEvent) -> void:
 	#if is_multiplayer_authority():
 		if event is InputEventMouseButton:
@@ -39,12 +41,27 @@ func _process(delta):
 	currentVelocity += newDelta;
 	
 	animationTree.set(locomotion, currentVelocity)
-
+	if old_vel < 0:
+		falling = false
+		var diff = velocity.y - old_vel
+		
+	old_vel = velocity.y
+	
+	if velocity.y < 0:
+		falling = true
+	else:
+		falling = false
+	
+	
+	if jumping== false && falling == false && animationTree.get("parameters/jump 2/blend_amount") == 0.9:
+		animationTree.set(jump_ani, 0)
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		jumping = true
 		animationTree.set(jump_ani, .9)
 		velocity.y = JUMP_VELOCITY
-	
+	if falling == true:
+		jumping = false
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	currentInput = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
