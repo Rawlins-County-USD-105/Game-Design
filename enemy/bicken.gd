@@ -5,7 +5,7 @@ var HP = 100
 var rng = RandomNumberGenerator.new()
 var chicken_sound
 var sound_cooldown: float = 5.0
-var sound_timer: float = 0.0
+var sound_timer: float = 5.0
 
 @onready var chicken_sound_1: AudioStreamPlayer3D = $ChickenSound1
 @onready var chicken_sound_2: AudioStreamPlayer3D = $ChickenSound2

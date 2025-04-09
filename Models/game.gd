@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 			pass
 	
 	if fog:
-		fog_density += 0.01 * delta
+		fog_density += 0.02 * delta
 		
 		world_environment.environment.volumetric_fog_density = fog_density
 		

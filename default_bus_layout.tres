@@ -21,10 +21,9 @@ wet = 1.0
 
 [sub_resource type="AudioEffectDelay" id="AudioEffectDelay_8poe0"]
 resource_name = "Delay"
-tap1_delay_ms = 1000.0
-feedback_active = true
+feedback_level_db = -30.0
 
-[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_fq2fi"]
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_y6r27"]
 resource_name = "Amplify"
 volume_db = 24.0
 
@@ -44,11 +43,5 @@ bus/1/volume_db = 0.0
 bus/1/send = &"Master"
 bus/1/effect/0/effect = SubResource("AudioEffectDelay_8poe0")
 bus/1/effect/0/enabled = true
-bus/1/effect/1/effect = SubResource("AudioEffectAmplify_fq2fi")
+bus/1/effect/1/effect = SubResource("AudioEffectAmplify_y6r27")
 bus/1/effect/1/enabled = true
-bus/2/name = &"New Bus"
-bus/2/solo = false
-bus/2/mute = false
-bus/2/bypass_fx = false
-bus/2/volume_db = 0.0
-bus/2/send = &"Master"
