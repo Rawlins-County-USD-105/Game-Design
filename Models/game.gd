@@ -38,7 +38,7 @@ func _process(delta: float) -> void:
 			pass
 	
 	if fog:
-		fog_density += 0.001 * delta
+		fog_density += 0.025 * delta
 		
 		world_environment.environment.volumetric_fog_density = fog_density
 		
@@ -58,6 +58,7 @@ func spawning():
 				if rand_ene == 10:
 					spawn_enemy = enemies.find_key(2)
 					fog = true
+					$Horror.play()
 				else:
 					spawn_enemy = enemies.find_key(1)
 				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
