@@ -28,7 +28,6 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	
-	print(fog)
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -38,7 +37,7 @@ func _process(delta: float) -> void:
 			pass
 	
 	if fog:
-		fog_density += 0.001 * delta
+		fog_density += 0.01 * delta
 		
 		world_environment.environment.volumetric_fog_density = fog_density
 		
