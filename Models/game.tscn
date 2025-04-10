@@ -15,9 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
-[ext_resource type="PackedScene" uid="uid://ccexpy6hlaehv" path="res://enemy/chicken.tscn" id="16_87ri5"]
 [ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
+[ext_resource type="AudioStream" uid="uid://bb8o5qihxx7gy" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -32,11 +32,10 @@ sky_material = SubResource("ProceduralSkyMaterial_p33qv")
 background_mode = 2
 sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
-glow_enabled = true
 fog_light_color = Color(0.988338, 0.730336, 0.12838, 1)
-volumetric_fog_density = 0.07
-volumetric_fog_albedo = Color(0.324067, 0.160781, 0.166408, 1)
-volumetric_fog_emission = Color(0.837187, 0.34278, 0.385048, 1)
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+volumetric_fog_albedo = Color(0.277528, 0.277528, 0.277528, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgapo"]
 albedo_color = Color(0.660412, 0.50545, 0.201641, 1)
@@ -249,14 +248,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.971, 0.615482, 7.773)
 [node name="Enemies" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
-[node name="CharacterBody3D" parent="Enemies" instance=ExtResource("16_87ri5")]
-
-[node name="CharacterBody3D2" parent="Enemies" instance=ExtResource("16_87ri5")]
-
-[node name="CharacterBody3D3" parent="Enemies" instance=ExtResource("16_87ri5")]
-
-[node name="CharacterBody3D4" parent="Enemies" instance=ExtResource("16_87ri5")]
-
 [node name="Shop_button" parent="." instance=ExtResource("16_0jonq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 
@@ -318,3 +309,8 @@ position = Vector2(105, 20)
 
 [node name="Iteam Slot5" parent="player" instance=ExtResource("16_57gks")]
 position = Vector2(62, 20)
+
+[node name="Horror" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("18_h8hr5")
+volume_db = 80.0
+max_db = 6.0

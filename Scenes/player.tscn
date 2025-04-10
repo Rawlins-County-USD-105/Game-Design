@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=34 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="AudioStream" uid="uid://ddqbya4doui5h" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="AudioStream" uid="uid://s5t6aq8ss223" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7477,5 +7478,10 @@ one_shot = true
 
 [node name="ouch" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_wrk1g")
+
+[node name="dead" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("11_s2t51")
+volume_db = 80.0
+max_db = 6.0
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
