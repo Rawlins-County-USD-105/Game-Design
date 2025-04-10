@@ -1,13 +1,13 @@
 extends Node3D
-@onready var hitbox: CollisionShape3D = $Container/RigidBody/Hitbox
 
 var drill_health = 8000
 var max_drill_health = 8000
+
+@onready var hitbox: CollisionShape3D = $Container/RigidBody/Hitbox
 @onready var healthbar: ProgressBar = $SubViewport/Healthbar
 @onready var damagebar: ProgressBar = $SubViewport/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $SubViewport/Healthbar/DamageBarTimer
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	
 	healthbar.max_value = max_drill_health
@@ -26,13 +26,8 @@ func took_damage(Damage):
 	if drill_health <= 0:
 		damagebar.value = 0
 		print("Drill Broke")
-
 	
 	healthbar.value = drill_health
-
-func _process(delta: float) -> void:
-	pass
-
 
 func _on_damage_bar_timer_timeout() -> void:
 	
