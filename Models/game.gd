@@ -18,7 +18,6 @@ var can_spawn = false
 var total_enemies = 0
 var enemies_spawned = 0
 var fog = false
-var fog_density = 0
 
 func _ready() -> void:
 	
@@ -37,12 +36,21 @@ func _process(delta: float) -> void:
 			pass
 	
 	if fog:
-		fog_density += 0.02 * delta
+		Gain.fog_density += 0.02 * delta
 		
-		world_environment.environment.volumetric_fog_density = fog_density
+		world_environment.environment.volumetric_fog_density = Gain.fog_density
 		
 		if world_environment.environment.volumetric_fog_density > 0.3:
 			fog = false
+	
+	if Gain.bickens == 0:
+		if world_environment:
+			if world_environment.environment.volumetric_fog_density > 0:
+				
+				Gain.fog_density -= 0.1 * delta
+				
+				world_environment.environment.volumetric_fog_density = Gain.fog_density
+		
 
 
 func spawning():
@@ -56,6 +64,8 @@ func spawning():
 				var rand_ene = randi_range(1,10)
 				if rand_ene == 10:
 					spawn_enemy = enemies.find_key(2)
+					Gain.bickens += 1
+					
 					fog = true
 					$Horror.play()
 				else:
@@ -73,3 +83,8 @@ func spawning():
 					
 				else:
 					pass
+
+func minus_bicken():
+
+	Gain.bickens -= 1
+	

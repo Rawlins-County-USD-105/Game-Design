@@ -600,3 +600,5 @@ stream = ExtResource("7_ishmw")
 
 [node name="Step4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_uwr08")
+
+[connection signal="death" from="." to="." method="_on_death"]

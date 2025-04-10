@@ -19,6 +19,7 @@ var passes = 0
 var player_distance = 0
 var drill_distance = 0
 signal hit(Damage)
+signal death
  #Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -64,6 +65,7 @@ func Hit(Damage):
 		Game.enemies_spawned -= 1
 		#Game.enemy_death()
 		queue_free()
+		emit_signal("death")
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:
 	emit_signal("hit")

@@ -33,3 +33,7 @@ func chicken_sound_func():
 	var chicken_sound_choice = chicken_sound[random_list]
 	
 	chicken_sound_choice.play()
+
+func _on_death() -> void:
+	Game.minus_bicken()
+	
