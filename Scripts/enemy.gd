@@ -47,6 +47,7 @@ func move(_delta, speed, HP):
 	else:
 		target = player
 	
+	var distance_to_player = global_position.distance_to(player.global_position)
 	
 	# Navigation
 	nav_agent.set_target_position(target.global_transform.origin)
