@@ -65,6 +65,7 @@ scale = Vector2(0.5545, 0.352)
 texture = ExtResource("2_svcp7")
 
 [node name="Button2" type="Button" parent="."]
+z_index = 6
 custom_minimum_size = Vector2(120, 32)
 offset_left = -14.0
 offset_top = -62.0
@@ -93,6 +94,7 @@ flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="."]
+z_index = 6
 custom_minimum_size = Vector2(120, 32)
 offset_left = -15.0
 offset_top = 23.0

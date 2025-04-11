@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=34 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="PackedScene" uid="uid://cfqvc01m4dlj0" path="res://skill_tree.tscn" id="10_3mf4v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7474,6 +7475,9 @@ wait_time = 15.0
 one_shot = true
 
 [node name="Popup menu" parent="." instance=ExtResource("7_1omva")]
+z_index = 5
+
+[node name="SkillTree" parent="." instance=ExtResource("10_3mf4v")]
 
 [node name="Spawner" type="Node3D" parent="."]
 

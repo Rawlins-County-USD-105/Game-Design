@@ -21,6 +21,8 @@ var drill_hitbox = self
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
+#skill tree
+@onready var skill_tree: Control = $SkillTree
 
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
