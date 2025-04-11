@@ -36,6 +36,7 @@ Player=""
 "Small Enemy"=""
 SpawnZone=""
 UI=""
+damageable="for objects that can be damaged"
 
 [input]
 
