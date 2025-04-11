@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b75co2w0eeosr"]
+[gd_scene load_steps=7 format=3 uid="uid://dwf1r2lvmc8rc"]
 
 [ext_resource type="PackedScene" uid="uid://x76i2jynhsis" path="res://Sounds/railme.blend" id="1_emyud"]
 [ext_resource type="Script" path="res://Sounds/railme.gd" id="2_ban8a"]
@@ -65,14 +65,14 @@ _data = {
 "RESET": SubResource("Animation_62646")
 }
 
-[node name="Node3D" type="Node3D"]
-
-[node name="railme" parent="." node_paths=PackedStringArray("barrel") instance=ExtResource("1_emyud")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("barrel")]
 script = ExtResource("2_ban8a")
-barrel = NodePath("../RayCast3D")
+barrel = NodePath("RayCast3D")
 gun_bullet = ExtResource("3_tc8cl")
-water_cost = 10
+water_cost = 20
+
+[node name="railme" parent="." instance=ExtResource("1_emyud")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

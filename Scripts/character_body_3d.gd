@@ -27,7 +27,7 @@ var drill_hitbox = self
 @onready var Watergun = $neck/Camera/Watergun
 @onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
-@onready var RailGun: Node3D = $neck/Camera/Node3D
+@onready var RailGun: Node3D = $neck/Camera/RailGun
 
 var current_weapopn = 1
 

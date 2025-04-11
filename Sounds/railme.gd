@@ -1,4 +1,4 @@
-extends "res://Scripts/weapon.gd"
+extends Weapon
 
 @onready var animation_player: AnimationPlayer = $"../AnimationPlayer"
 
