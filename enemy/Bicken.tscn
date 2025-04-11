@@ -591,14 +591,18 @@ bus = &"Bicken Sounds"
 
 [node name="Step1" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("5_fj55k")
+volume_db = 12.0
 
 [node name="Step2" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_1bunx")
+volume_db = 12.0
 
 [node name="Step3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_ishmw")
+volume_db = 12.0
 
 [node name="Step4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_uwr08")
+volume_db = 12.0
 
 [connection signal="death" from="." to="." method="_on_death"]
