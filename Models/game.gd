@@ -8,11 +8,15 @@ extends Node3D
 @onready var spawn_timer: Timer = $Spawner/SpawnTimer
 @onready var oil_drill: Node3D = $NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
+@onready var barrels
+
+
 
 var can_spawn = false
 var total_enemies = 0
 var enemies_spawned = 0
 func _process(delta: float) -> void:
+	
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -39,7 +43,11 @@ func spawning():
 					group_enemy.add_child(e_inst)
 				else:
 					pass
-
+func pain(barrel):
+	barrels = barrel
+	
+	return barrel
+	
 
 func _ready() -> void:
 	if player:
