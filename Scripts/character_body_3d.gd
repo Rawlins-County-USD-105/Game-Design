@@ -16,6 +16,7 @@ var drill_hitbox = self
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 @onready var ouch: AudioStreamPlayer3D = $ouch
+@onready var dead: AudioStreamPlayer3D = $dead
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -120,6 +121,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
+		dead.play()
 
 	
 	healthbar.value = health
@@ -286,8 +288,7 @@ func _physics_process(delta: float) -> void:
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 	
 	#spawning
-	var random_number = randi_range(1,360)
-	spawner.rotate_y(deg_to_rad(random_number))
+	
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO

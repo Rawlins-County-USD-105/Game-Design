@@ -2,6 +2,8 @@ extends Node
 var Gold = 0
 var max_water = 100
 var Water = max_water
+var bickens = 0
+var fog_density = 0.0
 
 func Gain_Gold(Gold_Gain):
 	Gold += Gold_Gain
@@ -13,7 +15,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
 
 func Gain_Water(Water_Gain):
 	Water += Water_Gain

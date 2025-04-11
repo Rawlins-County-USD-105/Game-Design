@@ -10,8 +10,8 @@ var target = player
 @export var hitbox : CollisionShape3D
 @export var nav_agent : NavigationAgent3D
 @export var animation : AnimationPlayer
-@export var speed : int
-@export var Health : int
+
+var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -20,22 +20,28 @@ var target = player
 @onready var armature_006: Node3D = $Armature_006
 
 
+var passes = 0
 var player_distance = 0
 var drill_distance = 0
 signal hit(Damage)
+signal death
  #Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func move(_delta):
+func move(_delta, speed, HP):
+	passes += 1
+	if passes < 2:
+		Health = HP
 	velocity = Vector3.ZERO
 	if damage_ray.get_collider() == null:
 		pass
 	else:
-		if damage_ray.is_colliding() and timer.is_stopped() and damage_ray.get_collider().is_in_group("Player") and Health > 0:
-			damage_ray.get_collider().took_damage(Damage)
-			timer.start()
+		if damage_ray.is_colliding() and timer.is_stopped():
+			if damage_ray.get_collider().is_in_group("Player") or damage_ray.get_collider().is_in_group("damageable"):
+				damage_ray.get_collider().took_damage(Damage)
+				timer.start()
 		else:
 			pass
 
@@ -47,13 +53,13 @@ func move(_delta):
 	else:
 		target = player
 	
+	var distance_to_player = global_position.distance_to(player.global_position)
 	
 	# Navigation
 	nav_agent.set_target_position(target.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
 	velocity = (next_nav_point - global_transform.origin).normalized() * speed
 	rotation.y = lerp_angle(rotation.y, atan2(-velocity.x, -velocity.z), _delta * 10)
-	
 	move_and_slide()
 func Hit(Damage):
 	Health -= Damage
@@ -69,6 +75,8 @@ func Hit(Damage):
 		
 		await get_tree().create_timer(.5).timeout
 		queue_free()
+		emit_signal("death")
 
 func _on_character_body_3d_hit(Damage: Variant) -> void:
 	emit_signal("hit")
+	
