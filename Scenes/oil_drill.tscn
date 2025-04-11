@@ -1,11 +1,11 @@
-[gd_scene load_steps=33 format=4 uid="uid://tg33iobykwrr"]
+[gd_scene load_steps=33 format=4 uid="uid://c78ye8umktnip"]
 
-[ext_resource type="PackedScene" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
+[ext_resource type="PackedScene" uid="uid://na4vhyt0odp7" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
 [ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
-[ext_resource type="ArrayMesh" uid="uid://bksmoj6bydl7" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://b2tadbr2ses7y" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-[ext_resource type="AudioStream" uid="uid://dh4utw0o1qioh" path="res://Sounds/big.drill_02.wav" id="6_cnc8r"]
+[ext_resource type="ArrayMesh" uid="uid://uphswfg1blml" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="Texture2D" uid="uid://c4gny3yovockd" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
+[ext_resource type="AudioStream" uid="uid://byerpxofddvd" path="res://Sounds/big.drill_02.wav" id="6_cnc8r"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
 material = ExtResource("1_k5jf3")
@@ -184,6 +184,7 @@ tangential_accel_min = -0.100002
 tangential_accel_max = 0.0999978
 scale_min = 0.02
 scale_max = 0.15
+color = Color(1, 0.760784, 0.498039, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r43yb"]
 
