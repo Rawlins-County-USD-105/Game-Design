@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=34 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="AudioStream" uid="uid://b1wsl6fmqn7rn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="PackedScene" uid="uid://b75co2w0eeosr" path="res://RailGun.tscn" id="9_2phq4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7459,6 +7460,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.35994
 
 [node name="HitScanRay" type="RayCast3D" parent="neck/Camera"]
 target_position = Vector3(0, 0, -100)
+
+[node name="Node3D" parent="neck/Camera" instance=ExtResource("9_2phq4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -4.76497, -3.10759)
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)

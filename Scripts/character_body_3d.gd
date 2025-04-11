@@ -26,6 +26,8 @@ var drill_hitbox = self
 @onready var Watergun = $neck/Camera/Watergun
 @onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
+@onready var RailGun: Node3D = $neck/Camera/Node3D
+
 var current_weapopn = 1
 
 #Spawning
@@ -81,6 +83,8 @@ func Weapon_Select():
 		current_weapopn = 2
 	elif Input.is_action_just_pressed("Weapon3"):
 		current_weapopn = 3
+	elif Input.is_action_just_pressed("Weapon4"):
+		current_weapopn = 4
 	if current_weapopn == 1:
 		Watergun.visible = true
 	else:
@@ -93,7 +97,10 @@ func Weapon_Select():
 		pistol.visible = true
 	else:
 		pistol.visible = false
-
+	if current_weapopn == 4:
+		RailGun.visible = true
+	else:
+		RailGun.visible = false
 
 
 #func _enter_tree() -> void:
