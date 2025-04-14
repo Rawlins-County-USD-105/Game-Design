@@ -1,12 +1,16 @@
-[gd_scene load_steps=27 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=34 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://dcmkiio5800o2" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://bcd6os7dgrgla" path="res://textures/vanguard_specular.png" id="3_xdket"]
+[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://hhhoy446qfar" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://ssdiqimiw712" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="PackedScene" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
-[ext_resource type="PackedScene" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
+[ext_resource type="PackedScene" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
+[ext_resource type="AudioStream" uid="uid://ddqbya4doui5h" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="AudioStream" uid="uid://s5t6aq8ss223" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -4491,6 +4495,67 @@ expand_margin_bottom = 2.0
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i112l"]
 bg_color = Color(1, 1, 1, 1)
 
+[sub_resource type="Animation" id="Animation_jbjsr"]
+resource_name = "Damage Red"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_tiyy3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1ke0o"]
+_data = {
+"Damage Red": SubResource("Animation_jbjsr"),
+"RESET": SubResource("Animation_tiyy3")
+}
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
 bg_color = Color(0.281779, 0.665975, 0.697433, 1)
 
@@ -7352,6 +7417,18 @@ show_percentage = false
 wait_time = 0.6
 one_shot = true
 
+[node name="Let’sGetRich" type="Sprite2D" parent="neck/Camera/TextureRect/Healthbar"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = -7
+position = Vector2(557, -274)
+texture = ExtResource("3_wsqyl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich"]
+libraries = {
+"": SubResource("AnimationLibrary_1ke0o")
+}
+
 [node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
 anchors_preset = 8
@@ -7381,6 +7458,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.35994
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
+[node name="HitScanRay" type="RayCast3D" parent="neck/Camera"]
+target_position = Vector3(0, 0, -100)
+
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
 target_position = Vector3(0, 0.75, 0)
@@ -7394,13 +7474,14 @@ one_shot = true
 wait_time = 15.0
 one_shot = true
 
-[node name="Spawner" type="Node3D" parent="."]
+[node name="Popup menu" parent="." instance=ExtResource("7_1omva")]
 
-[node name="Spawn Timer" type="Timer" parent="Spawner"]
-autostart = true
+[node name="ouch" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("7_wrk1g")
 
-[node name="Spawn Point" type="Marker3D" parent="Spawner"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+[node name="dead" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("11_s2t51")
+volume_db = 80.0
+max_db = 6.0
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
-[connection signal="timeout" from="Spawner/Spawn Timer" to="." method="_on_spawn_timer_timeout"]

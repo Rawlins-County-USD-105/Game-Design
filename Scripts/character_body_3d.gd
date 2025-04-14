@@ -2,6 +2,7 @@ extends CharacterBody3D
 var max_health = 400
 var health = max_health
 var player = self
+var drill_hitbox = self
 @onready var neck: Node3D = $neck
 @onready var body: CharacterBody3D = $"."
 @onready var camera_3d: Camera3D = $neck/Camera
@@ -14,7 +15,8 @@ var player = self
 @onready var energybar: ProgressBar = $neck/Camera/TextureRect/Energybar
 @onready var damagebar: ProgressBar = $neck/Camera/TextureRect/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
-@onready var audio: AudioStreamPlayer3D = $AudioStreamPlayer3D
+@onready var ouch: AudioStreamPlayer3D = $ouch
+@onready var dead: AudioStreamPlayer3D = $dead
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -30,9 +32,9 @@ var current_weapopn = 1
 #Spawning
 @onready var spawner = $Spawner
 @onready var spawn_point = $"Spawner/Spawn Point"
-@onready var group_enemy = $"../../Enemies"
+@onready var group_enemy = $"../Enemies"
 @onready var enemy = preload("res://enemy/chicken.tscn")
-var rand_spawn_time = RandomNumberGenerator.new()
+var spawning = false
 
 #anim
 @onready var player_moveset: AnimationPlayer = $characteranimated/AnimationPlayer
@@ -59,11 +61,11 @@ const FOV_CHANGE = 1.5
 var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
-#SLiding
+#Sliding
 var slide_timer = 1.0
 var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
-var slide_speed = 10.0
+var slide_speed = 15.0
 var sliding = false
 
 #fall damage
@@ -71,6 +73,7 @@ var old_vel = 0.0
 var fall_hurtie = 10.0
 
 var prev_health = health
+@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun"):
@@ -98,12 +101,13 @@ func Weapon_Select():
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
+	
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = max_health
 	healthbar.value = health
 	damagebar.max_value = max_health
 	damagebar.value = health
-	
 func took_damage(Damage):
 	
 	if Damage > health:
@@ -111,10 +115,14 @@ func took_damage(Damage):
 	else:
 		damage_bar_timer.start()
 		health -= Damage
+		animation_player.play("Damage Red")
+		if not ouch.playing:
+			ouch.play()
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
-		audio.play()
+		dead.play()
+
 	
 	healthbar.value = health
 	regen.start()
@@ -134,7 +142,9 @@ func _unhandled_input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	
-	if sprinting && is_on_floor():
+	if Input.is_action_just_pressed("jump"):
+		player_moveset.play("jump")
+	elif sprinting && is_on_floor():
 		if input_dir.y == -1:
 			player_moveset.play("sprint")
 		else:
@@ -144,7 +154,7 @@ func _physics_process(delta: float) -> void:
 			player_moveset.play("jog")
 		else:
 			player_moveset.play("backward")
-	elif falling && not is_on_floor() or Input.is_action_just_pressed("jump"):
+	elif falling && not is_on_floor():
 		player_moveset.play("jump")
 	else:
 		if is_on_floor():
@@ -178,7 +188,7 @@ func _physics_process(delta: float) -> void:
 	var direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
 	if sliding:
-		direction = (transform.basis * Vector3(slide_vector.x,0,slide_vector.z)).normalized()
+		direction = (player.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		
 	if direction:
 		
@@ -278,8 +288,7 @@ func _physics_process(delta: float) -> void:
 	camera_3d.fov = lerp(camera_3d.fov, target_fov, delta * 8.0)
 	
 	#spawning
-	var random_number = randi_range(1,360)
-	spawner.rotate_y(deg_to_rad(random_number))
+	
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
@@ -294,19 +303,15 @@ func _on_damage_bar_timer_timeout() -> void:
 	prev_health = health
 
 
-func _on_spawn_timer_timeout() -> void:
-	if Game.enemies_spawned < 5 && Game.total_enemies < 30:
-		Game.enemies_spawned += 1
-		Game.total_enemies += 1
-		var e_inst = enemy.instantiate()
-		e_inst.player = $crouching_collision_shape
-		e_inst.position = spawner.get_node("Spawn Point").global_position
-		group_enemy.add_child(e_inst)
-	else:
-		pass
-
-	#spawner.get_node("Spawn Timer").wait_time = rand_spawn_time.randi_range(5, 10)
-	#var e_inst = enemy.instantiate()
-	#e_inst.player = self
-	#e_inst.position = spawner.get_node("Spawn Point").global_position
-	#group_enemy.add_child(e_inst)
+#func _on_spawn_timer_timeout() -> void:
+	#if spawning:
+		#if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+			#Game.enemies_spawned += 1
+			#Game.total_enemies += 1
+			#var e_inst = enemy.instantiate()
+			#e_inst.player = $crouching_collision_shape
+			#e_inst.drill = drill_hitbox
+			#e_inst.position = spawner.get_node("Spawn Point").global_position
+			#group_enemy.add_child(e_inst)
+		#else:
+			#pass
