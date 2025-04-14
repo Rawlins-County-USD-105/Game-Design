@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=4 uid="uid://ccexpy6hlaehv"]
 
 [ext_resource type="Script" path="res://enemy/chicken.gd" id="1_p278j"]
-[ext_resource type="AudioStream" uid="uid://b6r2bwxjb4oxp" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_qhnfi"]
-[ext_resource type="AudioStream" uid="uid://d1hmhjmkdfgi0" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_t8g63"]
-[ext_resource type="AudioStream" uid="uid://dqbylwji85ug0" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_3n3tf"]
+[ext_resource type="AudioStream" uid="uid://bgiooednbqple" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_qhnfi"]
+[ext_resource type="AudioStream" uid="uid://bjffjw7wfqemk" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_t8g63"]
+[ext_resource type="AudioStream" uid="uid://pysdpoj0onn6" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_3n3tf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
