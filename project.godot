@@ -38,6 +38,48 @@ SpawnZone=""
 UI=""
 damageable="for objects that can be damaged"
 
+[importer_defaults]
+
+3d_texture={
+"compress/channel_pack": 0,
+"compress/hdr_compression": 1,
+"compress/high_quality": false,
+"compress/lossy_quality": 0.7,
+"compress/mode": 2,
+"mipmaps/generate": true,
+"mipmaps/limit": -1,
+"slices/horizontal": 8,
+"slices/vertical": 8
+}
+scene={
+"_subresources": {},
+"animation/fps": 30,
+"animation/import": true,
+"animation/import_rest_as_RESET": false,
+"animation/remove_immutable_tracks": true,
+"animation/trimming": false,
+"import_script/path": "",
+"meshes/create_shadow_meshes": true,
+"meshes/ensure_tangents": true,
+"meshes/force_disable_compression": false,
+"meshes/generate_lods": true,
+"meshes/light_baking": 1,
+"meshes/lightmap_texel_size": 0.2,
+"nodes/apply_root_scale": true,
+"nodes/import_as_skeleton_bones": false,
+"nodes/root_name": "",
+"nodes/root_scale": 1.0,
+"nodes/root_type": "",
+"skins/use_named_skins": true
+}
+wavefront_obj={
+"force_disable_mesh_compression": false,
+"generate_tangents": true,
+"offset_mesh": Vector3(0, 0, 0),
+"optimize_mesh": true,
+"scale_mesh": Vector3(1, 1, 1)
+}
+
 [input]
 
 left={

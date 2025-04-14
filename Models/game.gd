@@ -8,8 +8,11 @@ extends Node3D
 @onready var group_enemy = $Enemies
 @onready var spawn_zones_node: Node3D = $SpawnZones
 @onready var spawn_timer: Timer = $Spawner/SpawnTimer
-@onready var oil_drill: Node3D = $NavigationRegion3D/NavigationRegion3D/Oil_Drill
+@onready var oil_drill: Node3D = $NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
+@onready var barrels
+
+
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
 
@@ -83,6 +86,11 @@ func spawning():
 					
 				else:
 					pass
+func pain(barrel):
+	barrels = barrel
+	
+	return barrel
+	
 
 func minus_bicken():
 
