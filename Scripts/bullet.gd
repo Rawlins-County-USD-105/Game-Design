@@ -2,7 +2,7 @@ extends Node3D
 
 class_name bullet
 
-@export var Damage = 500.0
+@export var Damage: int
 @export var speed: int = 10
 @export var mesh: MeshInstance3D
 @export var ray: RayCast3D

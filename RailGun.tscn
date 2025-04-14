@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bbbxr6comyjoc"]
+[gd_scene load_steps=8 format=3 uid="uid://dwf1r2lvmc8rc"]
 
-[ext_resource type="PackedScene" uid="uid://ci4c2mprdlhk" path="res://Sounds/railme.blend" id="1_emyud"]
+[ext_resource type="PackedScene" uid="uid://x76i2jynhsis" path="res://Sounds/railme.blend" id="1_emyud"]
 [ext_resource type="Script" path="res://Sounds/railme.gd" id="2_ban8a"]
-[ext_resource type="PackedScene" uid="uid://bmcbos02ioia2" path="res://Scenes/pistol_bullet.tscn" id="3_tc8cl"]
-[ext_resource type="AudioStream" uid="uid://cwceqv3kgnk73" path="res://Sounds/Shot_source_91152/Shot 1.wav" id="4_jl5tx"]
+[ext_resource type="PackedScene" uid="uid://df4mvieep3ynj" path="res://RailGunBullet.tscn" id="2_ym3yk"]
+[ext_resource type="AudioStream" uid="uid://4fynpvinnkxd" path="res://Sounds/Shot_source_91152/Shot 1.wav" id="4_jl5tx"]
 
 [sub_resource type="Animation" id="Animation_fvg5x"]
 resource_name = "Pew"
@@ -93,7 +93,7 @@ _data = {
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("barrel")]
 script = ExtResource("2_ban8a")
 barrel = NodePath("RayCast3D")
-gun_bullet = ExtResource("3_tc8cl")
+gun_bullet = ExtResource("2_ym3yk")
 water_cost = 20
 
 [node name="railme" parent="." instance=ExtResource("1_emyud")]
@@ -105,7 +105,7 @@ libraries = {
 }
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2.08588, 1.08455, 0)
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2.48689, 1.08455, 0)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_jl5tx")
