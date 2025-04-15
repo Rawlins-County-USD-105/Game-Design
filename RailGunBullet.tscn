@@ -33,7 +33,7 @@ height = 0.05
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("mesh", "ray", "particles")]
 top_level = true
 script = ExtResource("1_b8i4v")
-Damage = 250
+Damage = 50
 mesh = NodePath("MeshInstance3D")
 ray = NodePath("RayCast3D")
 particles = NodePath("GPUParticles3D")

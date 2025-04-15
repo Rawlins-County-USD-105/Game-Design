@@ -28,6 +28,7 @@ var drill_hitbox = self
 @onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
 @onready var RailGun: Node3D = $neck/Camera/RailGun
+@onready var RailGun2: Node3D = $neck/Camera/RailGun2
 
 var current_weapopn = 1
 
@@ -100,8 +101,10 @@ func Weapon_Select():
 		pistol.visible = false
 	if current_weapopn == 4:
 		RailGun.visible = true
+		RailGun2.visible = true
 	else:
 		RailGun.visible = false
+		RailGun2.visible = false
 
 
 #func _enter_tree() -> void:

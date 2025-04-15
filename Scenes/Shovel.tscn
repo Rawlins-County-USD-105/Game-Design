@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://w1wambbwlgkr"]
 
-[ext_resource type="PackedScene" uid="uid://dti6gvvqgt6ui" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
+[ext_resource type="PackedScene" uid="uid://pxakl6amrfig" path="res://Melee Weapons/Shovel.glb" id="1_2mepy"]
 [ext_resource type="Script" path="res://Scripts/melee_weapon.gd" id="2_6edns"]
-[ext_resource type="AudioStream" uid="uid://c7ap08snwm51p" path="res://Sounds/Low_Pipe_Whooshes_source_1775299/MA_CresterStudio_LowPipeWhooshes - Single File 04.wav" id="3_rdxlo"]
-[ext_resource type="AudioStream" uid="uid://pw7pbk100x1m" path="res://Sounds/Shovel_Slice_source_108827 2/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="4_ef6ru"]
+[ext_resource type="AudioStream" uid="uid://dgsbix84ugjii" path="res://Sounds/Low_Pipe_Whooshes_source_1775299/MA_CresterStudio_LowPipeWhooshes - Single File 04.wav" id="3_rdxlo"]
+[ext_resource type="AudioStream" uid="uid://c72a5phsm2ode" path="res://Sounds/Shovel_Slice_source_108827 2/MA_SBProductions_ShovelKnifeStabSwordSlice_DecapitationShovel.wav" id="4_ef6ru"]
 
 [sub_resource type="Animation" id="Animation_fwb4s"]
 resource_name = "Melee"
@@ -70,6 +70,7 @@ _data = {
 [node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model") instance=ExtResource("1_2mepy")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 script = ExtResource("2_6edns")
+Damage = 10.0
 speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
