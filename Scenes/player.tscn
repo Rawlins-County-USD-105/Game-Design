@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://b0bbqi4anixrw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://dqg6v05qvirtj" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
-[ext_resource type="Texture2D" uid="uid://do8r0xgo17jdf" path="res://textures/vanguard_specular.png" id="3_xdket"]
+[ext_resource type="Texture2D" uid="uid://by4t2qmmchpjy" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://hhhoy446qfar" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://ssdiqimiw712" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
-[ext_resource type="AudioStream" uid="uid://cpphpmsi3k7kg" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
-[ext_resource type="AudioStream" uid="uid://bjwpc85ycf0bt" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
+[ext_resource type="AudioStream" uid="uid://ddqbya4doui5h" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="AudioStream" uid="uid://s5t6aq8ss223" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7446,6 +7446,83 @@ theme_override_styles/background = SubResource("StyleBoxFlat_xckco")
 theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
 value = 35.0
 show_percentage = false
+
+[node name="Equiped Gun" type="Control" parent="neck/Camera/TextureRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="neck/Camera/TextureRect/Equiped Gun"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = 99.0
+offset_right = 470.0
+offset_bottom = 199.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="neck/Camera/TextureRect/Equiped Gun/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -12.0
+offset_right = -31.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+color = Color(0.0745098, 0.0745098, 0.0745098, 0.627451)
+
+[node name="Equiped Gun2" type="Control" parent="neck/Camera/TextureRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="neck/Camera/TextureRect/Equiped Gun2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = -1.0
+offset_right = 439.0
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="neck/Camera/TextureRect/Equiped Gun2/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = -4.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+color = Color(0.0745098, 0.0745098, 0.0745098, 0.627451)
 
 [node name="Watergun" parent="neck/Camera" instance=ExtResource("2_blk7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.310352, -0.27509, -0.306297)
