@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://c5khf4tmxd3mi" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://dcpb73vddfji8" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -13,10 +13,14 @@
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
 [ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
-[ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
+[ext_resource type="PackedScene" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
+
 [ext_resource type="PackedScene" uid="uid://ccexpy6hlaehv" path="res://enemy/chicken.tscn" id="16_87ri5"]
 [ext_resource type="PackedScene" uid="uid://c78ye8umktnip" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
+
+[ext_resource type="AudioStream" uid="uid://b7kwoy40s3y1e" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_e4ipt"]
+
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
@@ -292,3 +296,8 @@ position = Vector2(105, 20)
 
 [node name="Iteam Slot5" parent="player" instance=ExtResource("16_57gks")]
 position = Vector2(62, 20)
+
+[node name="Horror" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("18_e4ipt")
+volume_db = 5.0
+max_db = 4.5
