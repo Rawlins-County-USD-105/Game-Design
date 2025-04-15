@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=6 format=3 uid="uid://js6lgbahkivx"]
+[gd_resource type="AudioBusLayout" load_steps=7 format=3 uid="uid://js6lgbahkivx"]
 
 [sub_resource type="AudioEffectDelay" id="AudioEffectDelay_5gly8"]
 resource_name = "Delay"
@@ -27,7 +27,11 @@ feedback_level_db = -30.0
 
 [sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_y6r27"]
 resource_name = "Amplify"
-volume_db = 12.0
+volume_db = 5.0
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_4lfos"]
+resource_name = "Amplify"
+volume_db = 5.0
 
 [resource]
 bus/0/volume_db = 6.02
@@ -47,3 +51,11 @@ bus/1/effect/0/effect = SubResource("AudioEffectDelay_8poe0")
 bus/1/effect/0/enabled = true
 bus/1/effect/1/effect = SubResource("AudioEffectAmplify_y6r27")
 bus/1/effect/1/enabled = true
+bus/2/name = &"Footsteps "
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectAmplify_4lfos")
+bus/2/effect/0/enabled = true
