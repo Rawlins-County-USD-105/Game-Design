@@ -585,7 +585,7 @@ bus = &"Bicken Sounds"
 
 [node name="ChickenSound3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_xynr6")
-pitch_scale = 0.24
+pitch_scale = 0.25
 max_polyphony = 5
 bus = &"Bicken Sounds"
 
