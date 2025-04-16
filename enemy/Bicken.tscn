@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://b3reg0fnf5i6i"]
+[gd_scene load_steps=20 format=4 uid="uid://b3reg0fnf5i6i"]
 
 [ext_resource type="Script" path="res://enemy/bicken.gd" id="1_7mspb"]
 [ext_resource type="AudioStream" uid="uid://dl18qy6mvxbe4" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://bsnhv2hskukq5" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_2.wav" id="6_1bunx"]
 [ext_resource type="AudioStream" uid="uid://bc8pp0g4g2euh" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_3.wav" id="7_ishmw"]
 [ext_resource type="AudioStream" uid="uid://c3t853nhlkxme" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_4.wav" id="8_uwr08"]
+[ext_resource type="ArrayMesh" uid="uid://cbc2jnxcsufnj" path="res://enemy/erikfeather.obj" id="9_wbmbj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
@@ -384,6 +385,16 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_6h5k1"]
 radius = 0.0256414
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_os6ng"]
+particle_flag_align_y = true
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+direction = Vector3(0, 1, 0)
+spread = 10.0
+initial_velocity_max = 10.0
+scale_min = 0.02
+scale_max = 0.15
+
 [node name="CharacterBody3D2" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent", "animation") groups=["Enemy", "Small Enemy"]]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 top_level = true
@@ -600,5 +611,17 @@ stream = ExtResource("7_ishmw")
 
 [node name="Step4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_uwr08")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.1, 0, 0, 0, 0.3, 0, 0, 0)
+emitting = false
+amount = 200
+sub_emitter = NodePath(".")
+lifetime = 1.5
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_os6ng")
+draw_pass_1 = ExtResource("9_wbmbj")
 
 [connection signal="death" from="." to="." method="_on_death"]
