@@ -7463,10 +7463,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.35994
 target_position = Vector3(0, 0, -100)
 
 [node name="RailGun" parent="neck/Camera" instance=ExtResource("9_2phq4")]
-transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0.221998, -0.436798, -0.343503)
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0.286967, -0.436798, -0.343503)
 
 [node name="RailGun2" parent="neck/Camera" instance=ExtResource("9_2phq4")]
-transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -0.446481, -0.436798, -0.343503)
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -0.381512, -0.436798, -0.343503)
+
+[node name="RailGun3" parent="neck/Camera" instance=ExtResource("9_2phq4")]
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -0.147365, -0.436798, -0.343503)
+
+[node name="RailGun4" parent="neck/Camera" instance=ExtResource("9_2phq4")]
+transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0.0768799, -0.436798, -0.343503)
 
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
