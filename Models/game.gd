@@ -15,7 +15,6 @@ extends Node3D
 
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
-@onready var barrels = 0
 var spawn_enemy = null
 var can_spawn = false
 var total_enemies = 0
@@ -75,7 +74,7 @@ func spawning():
 				else:
 					spawn_enemy = enemies.find_key(1)
 				
-				print(pow(Game.barrels, 1.25) + 4)
+				
 				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
