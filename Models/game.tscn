@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://cipv87dmsdvik" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://c5khf4tmxd3mi" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -11,11 +11,14 @@
 [ext_resource type="PackedScene" uid="uid://bh4y61debteju" path="res://Models/roadbreak.tscn" id="10_ttdqt"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
-[ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="15_j1hgn"]
+[ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
-[ext_resource type="PackedScene" uid="uid://2gtbpkh0cjmd" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
+
+[ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
-[ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
+[ext_resource type="PackedScene" uid="uid://c78ye8umktnip" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
+[ext_resource type="AudioStream" uid="uid://c0gt21xg5jge2" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_e4ipt"]
+
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
 [ext_resource type="AudioStream" uid="uid://b4idi73o8vf6x" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
 

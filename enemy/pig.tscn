@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://blaqes5bkbjv8"]
+
+[ext_resource type="Texture2D" uid="uid://cmend4h4i8xcy" path="res://enemy/Tex_Pig.png" id="1_feay2"]
+[ext_resource type="ArrayMesh" uid="uid://dq7dhmlwuu75h" path="res://enemy/Mesh_Pig.obj" id="2_f7h3a"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wvoa3"]
+albedo_texture = ExtResource("1_feay2")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshPig" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_wvoa3")
+mesh = ExtResource("2_f7h3a")

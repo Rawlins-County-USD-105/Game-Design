@@ -10,6 +10,9 @@ extends Node3D
 @onready var spawn_timer: Timer = $Spawner/SpawnTimer
 @onready var oil_drill: Node3D = $NavigationRegion3D/NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
+@onready var barrels = 0
+
+
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
 
@@ -30,7 +33,7 @@ func _process(delta: float) -> void:
 	if player:
 		if player.spawning:
 			if spawn_timer:
-				if Game.enemies_spawned < 5 && spawn_timer.is_stopped():
+				if Game.enemies_spawned <roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
 					spawning()
 		else:
 			pass
@@ -67,10 +70,12 @@ func spawning():
 					Gain.bickens += 1
 					
 					fog = true
-					$Horror.play()
+					#$Horror.play()
 				else:
 					spawn_enemy = enemies.find_key(1)
-				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+				
+				print(pow(Game.barrels, 1.25) + 4)
+				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
 					spawner.position = x.global_position
@@ -83,6 +88,10 @@ func spawning():
 					
 				else:
 					pass
+func pain(barrel):
+	barrels = barrel 
+	return barrel
+	
 
 func minus_bicken():
 
