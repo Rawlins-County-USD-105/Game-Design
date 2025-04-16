@@ -59,7 +59,7 @@ func spawning():
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
-		if not Game.barrels % 5 == 0:
+		if not Game.barrels % 5 == 0 or Game.barrels == 0:
 			
 			if spawning:
 				var rand_ene = randi_range(1,10)
