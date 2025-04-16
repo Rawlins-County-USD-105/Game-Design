@@ -590,13 +590,13 @@ bus = &"Bicken Sounds"
 
 [node name="ChickenSound2" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("3_an5tu")
-volume_db = 36.41
+volume_db = 21.89
 pitch_scale = 0.25
 bus = &"Bicken Sounds"
 
 [node name="ChickenSound3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_xynr6")
-pitch_scale = 0.24
+pitch_scale = 0.25
 max_polyphony = 5
 bus = &"Bicken Sounds"
 
