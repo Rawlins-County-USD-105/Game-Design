@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://b0bbqi4anixrw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://dqg6v05qvirtj" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
-[ext_resource type="Texture2D" uid="uid://do8r0xgo17jdf" path="res://textures/vanguard_specular.png" id="3_xdket"]
+[ext_resource type="Texture2D" uid="uid://bydbu7rctaogf" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://cxm3qrn4sius8" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://dl6gl6m2bbcuu" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="PackedScene" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
-[ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
-[ext_resource type="AudioStream" uid="uid://cpphpmsi3k7kg" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
-[ext_resource type="AudioStream" uid="uid://bjwpc85ycf0bt" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
+[ext_resource type="PackedScene" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
+[ext_resource type="AudioStream" uid="uid://cdapupy83l1my" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="AudioStream" uid="uid://wikjoohx17ph" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"

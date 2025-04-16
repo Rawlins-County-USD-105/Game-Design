@@ -1,13 +1,13 @@
-[gd_scene load_steps=18 format=4 uid="uid://cy3fcblng4sgf"]
+[gd_scene load_steps=18 format=4 uid="uid://b3reg0fnf5i6i"]
 
 [ext_resource type="Script" path="res://enemy/bicken.gd" id="1_7mspb"]
-[ext_resource type="AudioStream" uid="uid://bgiooednbqple" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
-[ext_resource type="AudioStream" uid="uid://bjffjw7wfqemk" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_an5tu"]
-[ext_resource type="AudioStream" uid="uid://pysdpoj0onn6" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_xynr6"]
-[ext_resource type="AudioStream" uid="uid://ynhx2nen65ob" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_1.wav" id="5_fj55k"]
-[ext_resource type="AudioStream" uid="uid://b8i8hx4qbfsdb" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_2.wav" id="6_1bunx"]
-[ext_resource type="AudioStream" uid="uid://s43kc5jbbdl6" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_3.wav" id="7_ishmw"]
-[ext_resource type="AudioStream" uid="uid://bklt2v4nj8it3" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_4.wav" id="8_uwr08"]
+[ext_resource type="AudioStream" uid="uid://dl18qy6mvxbe4" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
+[ext_resource type="AudioStream" uid="uid://cd1xbtgmcer0d" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_an5tu"]
+[ext_resource type="AudioStream" uid="uid://8w6nlvp4nkom" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_xynr6"]
+[ext_resource type="AudioStream" uid="uid://b3fbkhmc20xv6" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_1.wav" id="5_fj55k"]
+[ext_resource type="AudioStream" uid="uid://bsnhv2hskukq5" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_2.wav" id="6_1bunx"]
+[ext_resource type="AudioStream" uid="uid://bc8pp0g4g2euh" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_3.wav" id="7_ishmw"]
+[ext_resource type="AudioStream" uid="uid://c3t853nhlkxme" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_4.wav" id="8_uwr08"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
@@ -591,18 +591,14 @@ bus = &"Bicken Sounds"
 
 [node name="Step1" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("5_fj55k")
-bus = &"Footsteps "
 
 [node name="Step2" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_1bunx")
-bus = &"Footsteps "
 
 [node name="Step3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_ishmw")
-bus = &"Footsteps "
 
 [node name="Step4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_uwr08")
-bus = &"Footsteps "
 
 [connection signal="death" from="." to="." method="_on_death"]
