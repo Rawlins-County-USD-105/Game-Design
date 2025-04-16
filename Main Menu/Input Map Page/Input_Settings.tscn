@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://8bijvr5ck7w7" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_l72jb"]
-[ext_resource type="Texture2D" uid="uid://42oy8lsj66p" path="res://Main Menu/Assets/Untitled design (30).png" id="4_42iea"]
-[ext_resource type="Texture2D" uid="uid://cprdlqjocretd" path="res://Models/Untitled design (24).png" id="5_qgyxk"]
+[ext_resource type="Texture2D" uid="uid://crejmegu0q081" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_l72jb"]
+[ext_resource type="Texture2D" uid="uid://dp53u0ajth3d6" path="res://Main Menu/Assets/Untitled design (30).png" id="4_42iea"]
+[ext_resource type="Texture2D" uid="uid://n85aexgbl5r4" path="res://Models/Untitled design (24).png" id="5_qgyxk"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")

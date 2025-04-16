@@ -18,9 +18,11 @@ func _ready() -> void:
 	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
+	
 
 func _process(delta: float) -> void:
 	Game.oil(barrel)
+	Game.pain(barrel)
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 

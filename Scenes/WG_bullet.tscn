@@ -38,6 +38,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 rotation_order = 0
 top_level = true
 script = ExtResource("1_y7566")
+Damage = 4
 speed = 20
 mesh = NodePath("MeshInstance3D")
 ray = NodePath("MeshInstance3D/RayCast3D")
