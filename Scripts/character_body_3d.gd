@@ -87,7 +87,7 @@ func Weapon_Select():
 		current_weapopn = 2
 	elif Input.is_action_just_pressed("Weapon3"):
 		current_weapopn = 3
-	elif Input.is_action_just_pressed("Weapon4"):
+	elif Input.is_action_just_pressed("RailGun"):
 		current_weapopn = 4
 	if current_weapopn == 1:
 		Watergun.visible = true
@@ -103,14 +103,9 @@ func Weapon_Select():
 		pistol.visible = false
 	if current_weapopn == 4:
 		RailGun.visible = true
-		RailGun2.visible = true
-		RailGun3.visible = true
-		RailGun4.visible = true
 	else:
 		RailGun.visible = false
-		RailGun2.visible = false
-		RailGun3.visible = false
-		RailGun4.visible = false
+
 
 
 #func _enter_tree() -> void:
