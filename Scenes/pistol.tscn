@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cke6o6g6twbrx"]
+[gd_scene load_steps=11 format=3 uid="uid://cke6o6g6twbrx"]
 
 [ext_resource type="Script" path="res://Scripts/pistol.gd" id="1_kxuik"]
 [ext_resource type="PackedScene" uid="uid://bmcbos02ioia2" path="res://Scenes/pistol_bullet.tscn" id="2_n80ox"]
 [ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="3_n4wh8"]
+[ext_resource type="Texture2D" uid="uid://brvarw8tqyhv6" path="res://Sprites/pistol.png" id="3_sevdv"]
 [ext_resource type="AudioStream" uid="uid://3vcnsep2oo2j" path="res://Sounds/Water Pistol, Squirt - zip/MA_Water Pistol, Squirt-001.wav" id="4_r6ghp"]
 [ext_resource type="AudioStream" uid="uid://dif0tou7m2rbu" path="res://Scenes/interact.wav" id="5_dg7lp"]
 
@@ -174,6 +175,7 @@ script = ExtResource("1_kxuik")
 barrel = NodePath("RayCast")
 gun_bullet = ExtResource("2_n80ox")
 water_cost = 5
+png = ExtResource("3_sevdv")
 
 [node name="pistol" parent="." instance=ExtResource("3_n4wh8")]
 transform = Transform3D(-5.42998e-08, 0, 0.015, 0, 0.015, 0, -0.015, 0, -5.42998e-08, 0, 0, 0)

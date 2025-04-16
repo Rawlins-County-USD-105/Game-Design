@@ -8,6 +8,7 @@ class_name Weapon
 var instance
 @export var water_cost : int
 @onready var hit_scan_ray: RayCast3D = $"../HitScanRay"
+@export var png : Texture2D
 var target = null
 
 func gun(current_gun, animation_player, animation_name):

@@ -10,7 +10,7 @@ class_name melee
 @onready var ray: RayCast3D = $RayCast3D
 @onready var shovel_swoosh: AudioStreamPlayer3D = $shovel_swoosh
 @onready var shovel_slice: AudioStreamPlayer3D = $shovel_swoosh/shovel_slice
-
+@export var png : Texture2D
 
 
 
