@@ -15,9 +15,9 @@ var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-@onready var explosion: GPUParticles3D = $Explosion
 @onready var character_body_3d_2: CharacterBody3D = $"."
 @onready var armature_006: Node3D = $Armature_006
+@onready var explosion: GPUParticles3D = $GPUParticles3D
 
 
 var passes = 0

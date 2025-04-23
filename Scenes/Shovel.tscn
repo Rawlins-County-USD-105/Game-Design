@@ -70,6 +70,7 @@ _data = {
 [node name="Root Scene" node_paths=PackedStringArray("weapon_anim", "model") instance=ExtResource("1_2mepy")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 script = ExtResource("2_6edns")
+Damage = 10.0
 speed = 10
 weapon_anim = NodePath("RootNode/Shovel/AnimationPlayer")
 model = NodePath("RootNode/Shovel")
