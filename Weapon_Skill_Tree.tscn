@@ -1,0 +1,303 @@
+[gd_scene load_steps=2 format=3 uid="uid://mkf5c51iukj7"]
+
+[ext_resource type="PackedScene" path="res://Sounds/skill_Icon.tscn" id="1_3b8l8"]
+
+[node name="SkillTree" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 3.002
+anchor_bottom = 3.014
+offset_left = 1.0
+offset_top = -0.333333
+offset_right = -2305.3
+offset_bottom = -1305.41
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkillButton" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 486.0
+offset_right = 282.0
+offset_bottom = 526.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="SkillButton/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton4" parent="SkillButton/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton2" parent="SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="SkillButton/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton5" parent="SkillButton/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton2" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 486.0
+offset_right = 901.0
+offset_bottom = 526.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="SkillButton2/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton4" parent="SkillButton2/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton2" parent="SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="SkillButton2/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton5" parent="SkillButton2/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 153.0
+offset_right = 901.0
+offset_bottom = 193.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="SkillButton3" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="SkillButton3/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton4" parent="SkillButton3/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton2" parent="SkillButton3" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="SkillButton3/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton5" parent="SkillButton3/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton4" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 153.0
+offset_right = 282.0
+offset_bottom = 193.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="SkillButton4" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="SkillButton4/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton4" parent="SkillButton4/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton2" parent="SkillButton4" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="SkillButton4/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton5" parent="SkillButton4/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 227.0
+offset_right = 370.0
+offset_bottom = 250.0
+text = "Water Gun"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 549.0
+offset_right = 393.0
+offset_bottom = 572.0
+text = "Shovel"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 556.0
+offset_right = 1003.0
+offset_bottom = 579.0
+text = "Pistol"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 223.0
+offset_right = 1002.0
+offset_bottom = 246.0
+text = "Rail Gun"
