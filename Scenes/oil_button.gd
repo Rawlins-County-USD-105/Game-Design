@@ -9,7 +9,7 @@ extends Interactable
 @onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
 
 var oil = 0
-var max_oil = 1000
+var max_oil = 10
 var player = null
 var barrel = 0
 
@@ -22,6 +22,8 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	Game.pain(barrel)
+	SkillButton.get_oil(barrel)
+	#print(barrel)
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 

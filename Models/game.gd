@@ -29,7 +29,7 @@ func _ready() -> void:
 		player.drill_hitbox = oil_drill.hitbox
 
 func _process(delta: float) -> void:
-	
+
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -70,7 +70,7 @@ func spawning():
 					Gain.bickens += 1
 					
 					fog = true
-					$Horror.play()
+					#$Horror.play()
 				else:
 					spawn_enemy = enemies.find_key(1)
 				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:

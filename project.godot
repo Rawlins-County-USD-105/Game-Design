@@ -21,6 +21,7 @@ SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 Game="*res://Models/game.gd"
 Gain="*res://Scripts/Gain.gd"
 GoldGain="*res://Scripts/GoldGain.gd"
+SkillButton="*res://Sounds/skill_button.gd"
 
 [display]
 
