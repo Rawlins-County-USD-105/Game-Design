@@ -24,7 +24,7 @@ _data = {
 }
 
 [node name="InputSettings" type="Control"]
-visible = false
+z_index = 5
 clip_contents = true
 layout_mode = 3
 anchors_preset = 15
@@ -49,10 +49,10 @@ vertical_alignment = 1
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.250868
+anchor_left = 0.138889
 anchor_top = 0.299383
-anchor_right = 0.746528
-anchor_bottom = 0.833334
+anchor_right = 0.855903
+anchor_bottom = 0.833333
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_h6lpy")
@@ -130,8 +130,8 @@ autoplay = "Open Game animation"
 
 [node name="UntitledDesign(32)Copy" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(575.5, 299)
-scale = Vector2(1.277, 0.976)
+position = Vector2(572.5, 299)
+scale = Vector2(1.909, 0.976)
 texture = ExtResource("5_rpxf0")
 
 [node name="Label2" type="Label" parent="."]

@@ -49,6 +49,7 @@ func _on_buttonclose_pressed() ->void:
 
 func _on_button_2_pressed() -> void:
 	input_settings.visible = true
+	
 	Level = 2
 	print("Input.settings.visible")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

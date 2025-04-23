@@ -24,9 +24,9 @@ func _on_timer_timeout() -> void:
 	
 
 
-
 func _on_button_4_pressed() -> void:
 	input_settings.visible = true
+	print("Settings Visible")
 
 
 func _process(float):

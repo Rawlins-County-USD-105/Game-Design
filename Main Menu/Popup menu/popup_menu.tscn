@@ -56,6 +56,7 @@ _data = {
 
 [node name="Popup menu" type="Node2D"]
 visible = false
+z_as_relative = false
 position = Vector2(471, 319)
 script = ExtResource("1_stgea")
 
@@ -65,7 +66,6 @@ scale = Vector2(0.5545, 0.352)
 texture = ExtResource("2_svcp7")
 
 [node name="Button2" type="Button" parent="."]
-z_index = 6
 custom_minimum_size = Vector2(120, 32)
 offset_left = -14.0
 offset_top = -62.0
@@ -94,7 +94,6 @@ flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="."]
-z_index = 6
 custom_minimum_size = Vector2(120, 32)
 offset_left = -15.0
 offset_top = 23.0
@@ -132,7 +131,7 @@ text = "Press ESC to close"
 metadata/_edit_use_anchors_ = true
 
 [node name="InputSettings" parent="." instance=ExtResource("2_7xr30")]
-z_index = 1
+visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0

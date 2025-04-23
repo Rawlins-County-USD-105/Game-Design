@@ -97,3 +97,8 @@ func _update_action_list(button, event):
 func _on_button_pressed() -> void:
 	input_settings.visible = false
 	
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("Open popup"):
+		visible = false
+		print("Settings Not Visible")
+	
