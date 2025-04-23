@@ -14,9 +14,10 @@
 [ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
 [ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
+[ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
 [ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
-[ext_resource type="AudioStream" uid="uid://bb8o5qihxx7gy" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_e4ipt"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
+[ext_resource type="AudioStream" uid="uid://bvxf5wu4lqtbx" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -295,6 +296,6 @@ autostart = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
 
 [node name="Horror" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("18_e4ipt")
-volume_db = 5.0
-max_db = 4.5
+stream = ExtResource("18_h8hr5")
+volume_db = 80.0
+max_db = 6.0

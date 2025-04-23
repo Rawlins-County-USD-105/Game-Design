@@ -1,5 +1,6 @@
 extends Interactable
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var skill_tree: Control = $SkillTree
 
 var Water = 100
 #this will play will the button is interacted with

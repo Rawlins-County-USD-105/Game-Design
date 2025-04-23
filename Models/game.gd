@@ -10,9 +10,11 @@ extends Node3D
 @onready var spawn_timer: Timer = $Spawner/SpawnTimer
 @onready var oil_drill: Node3D = $NavigationRegion3D/NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
+@onready var barrels = 0
+
+
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
-
 var spawn_enemy = null
 var can_spawn = false
 var total_enemies = 0
@@ -30,7 +32,7 @@ func _process(delta: float) -> void:
 	if player:
 		if player.spawning:
 			if spawn_timer:
-				if Game.enemies_spawned < 5 && spawn_timer.is_stopped():
+				if Game.enemies_spawned <roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
 					spawning()
 		else:
 			pass
@@ -59,6 +61,7 @@ func spawning():
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
+		if not Game.barrels % 5 == 0 or Game.barrels == 0:
 			
 			if spawning:
 				var rand_ene = randi_range(1,10)
@@ -67,10 +70,12 @@ func spawning():
 					Gain.bickens += 1
 					
 					fog = true
-					$Horror.play()
+					#$Horror.play()
 				else:
 					spawn_enemy = enemies.find_key(1)
-				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+				
+				
+				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
 					spawner.position = x.global_position
@@ -83,8 +88,31 @@ func spawning():
 					
 				else:
 					pass
+		else:
+			spawn_enemy = enemies.find_key(2)
+			if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
+				Game.enemies_spawned += 1
+				Game.total_enemies += 1
+				spawner.position = x.global_position
+				spawner.rotate_y(deg_to_rad(random_number))
+				var e_inst = spawn_enemy.instantiate()
+				e_inst.player = $player
+				e_inst.drill = oil_drill.hitbox
+				e_inst.position = spawn_point.global_position
+				group_enemy.add_child(e_inst)
+				Gain.bickens += 1
+				fog = true
+				$Horror.play()
+				
+func pain(barrel):
+	barrels = barrel 
+	return barrel
+	
 
 func minus_bicken():
 
 	Gain.bickens -= 1
+	
+func oil(barrel):
+	barrels = barrel
 	

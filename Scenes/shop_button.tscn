@@ -1,4 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://6ggncveenke8"]
+[gd_scene load_steps=9 format=3 uid="uid://6ggncveenke8"]
+
+[ext_resource type="Script" path="res://Scenes/shop_button.gd" id="1_5m68g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdhpv"]
 albedo_color = Color(0.686275, 0.0705882, 0.0823529, 1)
@@ -31,7 +33,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_xs51w"]
-resource_name = "press"
+resource_name = "push"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -49,10 +51,11 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
 _data = {
 "RESET": SubResource("Animation_qdd8g"),
-"press": SubResource("Animation_xs51w")
+"push": SubResource("Animation_xs51w")
 }
 
 [node name="Shop_button" type="StaticBody3D"]
+script = ExtResource("1_5m68g")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
