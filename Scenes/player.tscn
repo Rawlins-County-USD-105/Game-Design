@@ -4473,10 +4473,6 @@ height = 1.88505
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2li6r"]
 bg_color = Color(0.776471, 0.0823529, 0.145098, 1)
 border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xckco"]
 bg_color = Color(0.0728426, 0.0728426, 0.0728426, 1)
@@ -4486,10 +4482,6 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0, 0, 0, 1)
 border_blend = true
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
 expand_margin_left = 2.0
 expand_margin_top = 2.0
 expand_margin_right = 2.0
