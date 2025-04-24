@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn4oomfihrjth"]
+
+[ext_resource type="Script" path="res://texture_rect.gd" id="1_cp4mc"]
+
+[node name="TextureRect" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cp4mc")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 40.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
