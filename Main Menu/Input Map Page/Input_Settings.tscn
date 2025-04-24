@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://d00jnovldyktq" path="res://Main Menu/Assets/Backdrops/Black Outline Background.png" id="5_rpxf0"]
+[ext_resource type="Texture2D" uid="uid://bxpf53j7pg6ww" path="res://Main Menu/Assets/Background.png" id="3_krmhd"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")
@@ -37,9 +37,9 @@ script = ExtResource("1_a5yhr")
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
 offset_left = 331.0
-offset_top = 47.0
-offset_right = 812.0
-offset_bottom = 176.0
+offset_top = 61.0
+offset_right = 814.0
+offset_bottom = 188.0
 theme_override_fonts/font = SubResource("SystemFont_g81qn")
 theme_override_font_sizes/font_size = 100
 text = "SETTINGS"
@@ -130,9 +130,9 @@ autoplay = "Open Game animation"
 
 [node name="UntitledDesign(32)Copy" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(572.5, 299)
-scale = Vector2(1.909, 0.976)
-texture = ExtResource("5_rpxf0")
+position = Vector2(569.5, 319)
+scale = Vector2(0.983854, 1.15741)
+texture = ExtResource("3_krmhd")
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0

@@ -25,13 +25,9 @@ func _on_timer_timeout() -> void:
 
 
 func _on_button_4_pressed() -> void:
-	input_settings.visible = true
-	print("Settings Visible")
+	get_tree().quit()
+	print("Main Menu")
 
 
-func _process(float):
-	
-	if input_settings.visible == true and Input.is_action_just_pressed("Settings Close"):
-		input_settings.visible = false
 
 	
