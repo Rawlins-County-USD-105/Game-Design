@@ -17,6 +17,7 @@ var drill_hitbox = self
 @onready var damage_bar_timer: Timer = $neck/Camera/TextureRect/Healthbar/DamageBarTimer
 @onready var ouch: AudioStreamPlayer3D = $ouch
 @onready var dead: AudioStreamPlayer3D = $dead
+@onready var eggs_counter: Label = $neck/Camera/TextureRect/Eggs_counter
 
 @export_category("Movement and shiz")
 @export var mousesense = 1
@@ -29,10 +30,9 @@ var drill_hitbox = self
 @onready var Watergun = $neck/Camera/Watergun
 @onready var pistol: Node3D = $neck/Camera/Pistol
 @onready var Shovel = $"neck/Camera/Root Scene" 
+@onready var texture_rect_equipped: TextureRect = $"neck/Camera/TextureRect/Equiped Gun/TextureRect"
+@onready var texture_rect_unequipped: TextureRect = $"neck/Camera/TextureRect/Equiped Gun2/TextureRect"
 @onready var RailGun: Node3D = $neck/Camera/RailGun
-@onready var RailGun2: Node3D = $neck/Camera/RailGun2
-@onready var RailGun3: Node3D = $neck/Camera/RailGun3
-@onready var RailGun4: Node3D = $neck/Camera/RailGun4
 
 var current_weapopn = 1
 
@@ -97,10 +97,12 @@ func Weapon_Select():
 		Watergun.visible = false
 	if current_weapopn == 2:
 		Shovel.visible = true
+		texture_rect_equipped.texture = Shovel.png
 	else:
 		Shovel.visible = false
 	if current_weapopn == 3:
 		pistol.visible = true
+		texture_rect_equipped.texture = pistol.png
 	else:
 		pistol.visible = false
 	if current_weapopn == 4:
@@ -331,3 +333,5 @@ func _on_damage_bar_timer_timeout() -> void:
 			#group_enemy.add_child(e_inst)
 		#else:
 			#pass
+func _process(delta: float) -> void:
+	eggs_counter.text = str(Gain.Gold)

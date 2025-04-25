@@ -186,6 +186,7 @@ Weapon4={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 camera/depth_of_field/depth_of_field_bokeh_quality=3
 environment/ssao/quality=3
 environment/ssil/quality=3
