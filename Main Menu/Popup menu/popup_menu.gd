@@ -7,6 +7,7 @@ extends Node2D
 
 @onready var buttonclose: Button = $Sprite2D/buttonclose
 @onready var input_settings: Control = $InputSettings
+@onready var skill_tree: Control = $SkillTree
 
 
 var windowv = false
@@ -15,9 +16,12 @@ var Level = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 
+	if skill_tree.visible == true:
+		window.visible = false
+		Level = 0
 
 
-	if window.visible == false and Level == 0 and Input.is_action_just_pressed("Open popup"):
+	if window.visible == false and Level == 0 and Input.is_action_just_pressed("Open popup") and not skill_tree.visible == true:
 		window.visible = true
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		Level = 1

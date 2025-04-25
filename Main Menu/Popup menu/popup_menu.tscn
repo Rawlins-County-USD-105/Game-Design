@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://didfro6rbdx1d"]
+[gd_scene load_steps=14 format=3 uid="uid://didfro6rbdx1d"]
 
 [ext_resource type="Script" path="res://Main Menu/Popup menu/popup_menu.gd" id="1_stgea"]
 [ext_resource type="Texture2D" uid="uid://bxpf53j7pg6ww" path="res://Main Menu/Assets/Background.png" id="2_2cj1n"]
 [ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="2_7xr30"]
+[ext_resource type="PackedScene" uid="uid://cfqvc01m4dlj0" path="res://skill_tree.tscn" id="2_vf4xr"]
 
 [sub_resource type="Animation" id="Animation_68owd"]
 resource_name = "ESCAPECLOSE"
@@ -59,6 +60,8 @@ visible = false
 z_as_relative = false
 position = Vector2(471, 319)
 script = ExtResource("1_stgea")
+
+[node name="SkillTree" parent="." instance=ExtResource("2_vf4xr")]
 
 [node name="UntitledDesign(32)Copy" type="Sprite2D" parent="."]
 position = Vector2(110, 19.04)

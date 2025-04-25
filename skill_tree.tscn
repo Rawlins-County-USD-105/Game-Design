@@ -1,10 +1,7 @@
-
 [gd_scene load_steps=3 format=3 uid="uid://cfqvc01m4dlj0"]
 
-[ext_resource type="PackedScene" path="res://Sounds/skill_button.tscn" id="1_86peu"]
+[ext_resource type="PackedScene" uid="uid://crttj51kxufbp" path="res://Sounds/skill_Icon.tscn" id="1_86peu"]
 [ext_resource type="Script" path="res://skill_tree.gd" id="1_bvij6"]
-[ext_resource type="PackedScene" path="res://Sounds/skill_Icon.tscn" id="1_86peu"]
-
 
 [node name="SkillTree" type="Control"]
 visible = false
