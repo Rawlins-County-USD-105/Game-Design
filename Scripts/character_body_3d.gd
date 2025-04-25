@@ -22,6 +22,8 @@ var drill_hitbox = self
 @export var mousesense = 1
 @export var sprint = 4
 @export var jump_sprint = 15
+#skill tree
+@onready var skill_tree: Control = $SkillTree
 
 #Weapons
 @onready var Watergun = $neck/Camera/Watergun
@@ -137,17 +139,20 @@ func took_damage(Damage):
 	regen.start()
 	
 func _unhandled_input(event: InputEvent) -> void:
+	
+	#not really needed code for camera#
+	
 	#if is_multiplayer_authority():
-		if event is InputEventMouseButton:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		elif event.is_action_pressed("ui_cancel"):
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			if event is InputEventMouseMotion:
-				player.rotate_y(-event.relative.x * 0.01 * mousesense)
+		#if event is InputEventMouseButton:
+			#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		#elif event.is_action_pressed("ui_cancel"):
+			#Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		if event is InputEventMouseMotion:
+			player.rotate_y(-event.relative.x * 0.01 * mousesense)
 				
-				camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
-				camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
+			camera_3d.rotate_x(-event.relative.y * 0.01 * mousesense)
+			camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	

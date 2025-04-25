@@ -1,56 +1,21 @@
-[gd_scene load_steps=16 format=3 uid="uid://ctnajx3xbjb5y"]
+[gd_scene load_steps=9 format=3 uid="uid://ctnajx3xbjb5y"]
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://crejmegu0q081" path="res://Main Menu/Assets/Backdrops/Untitled design (16).png" id="2_l72jb"]
-[ext_resource type="Texture2D" uid="uid://dp53u0ajth3d6" path="res://Main Menu/Assets/Untitled design (30).png" id="4_42iea"]
-[ext_resource type="Texture2D" uid="uid://n85aexgbl5r4" path="res://Models/Untitled design (24).png" id="5_qgyxk"]
+[ext_resource type="Texture2D" uid="uid://bxpf53j7pg6ww" path="res://Main Menu/Assets/Background.png" id="3_krmhd"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h6lpy"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kp7h"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1f1qr"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_liqxt"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_chh8y"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aexbf"]
 
 [sub_resource type="Animation" id="Animation_souls"]
 resource_name = "Open Game animation"
 length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/UntitledDesign(24):position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(593, 331), Vector2(2433, 331)]
-}
 
 [sub_resource type="Animation" id="Animation_oc728"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/UntitledDesign(24):position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(593, 331)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hnkkw"]
 _data = {
@@ -59,6 +24,7 @@ _data = {
 }
 
 [node name="InputSettings" type="Control"]
+z_index = 5
 clip_contents = true
 layout_mode = 3
 anchors_preset = 15
@@ -68,17 +34,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_a5yhr")
 
-[node name="UntitledDesign(16)" type="Sprite2D" parent="."]
-position = Vector2(571, 332)
-scale = Vector2(0.30582, 0.331481)
-texture = ExtResource("2_l72jb")
-
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
 offset_left = 331.0
-offset_top = 68.0
-offset_right = 812.0
-offset_bottom = 191.0
+offset_top = 61.0
+offset_right = 814.0
+offset_bottom = 188.0
 theme_override_fonts/font = SubResource("SystemFont_g81qn")
 theme_override_font_sizes/font_size = 100
 text = "SETTINGS"
@@ -88,10 +49,10 @@ vertical_alignment = 1
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.280382
-anchor_top = 0.271605
-anchor_right = 0.711806
-anchor_bottom = 0.919753
+anchor_left = 0.138889
+anchor_top = 0.299383
+anchor_right = 0.855903
+anchor_bottom = 0.833333
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_h6lpy")
@@ -161,34 +122,22 @@ layout_mode = 2
 [node name="Input_button3" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List" instance=ExtResource("1_yb50g")]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 785.0
-offset_top = 48.0
-offset_right = 854.0
-offset_bottom = 111.0
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4kp7h")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_1f1qr")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_liqxt")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_chh8y")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_aexbf")
-flat = true
-
-[node name="UntitledDesign(23)" type="Sprite2D" parent="."]
-position = Vector2(813, 116)
-rotation = 0.282289
-scale = Vector2(0.111071, 0.114919)
-texture = ExtResource("4_42iea")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_hnkkw")
 }
 autoplay = "Open Game animation"
 
-[node name="UntitledDesign(24)" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(593, 331)
-scale = Vector2(0.429148, 0.23763)
-texture = ExtResource("5_qgyxk")
+[node name="UntitledDesign(32)Copy" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(569.5, 319)
+scale = Vector2(0.983854, 1.15741)
+texture = ExtResource("3_krmhd")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 551.0
+offset_right = 639.0
+offset_bottom = 574.0
+text = "Press ESC to close"

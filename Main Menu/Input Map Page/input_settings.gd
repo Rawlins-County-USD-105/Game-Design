@@ -4,6 +4,7 @@ extends Control
 @onready var input_button_scene = preload("res://Main Menu/Input Map Page/Scenes/input_button.tscn")
 @onready var action_list = $"PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/Action List"
 @onready var animation_player_2: AnimationPlayer = $AnimationPlayer2
+@onready var input_settings: Control = $"."
 
 var is_remapping = false
 var action_to_remap = null
@@ -16,6 +17,12 @@ var input_actions = {
 	"back": "Move Backward",
 	"sprint": "Sprint",
 	"jump": "Jump",
+	"Interact":"Interact",
+	"crouch":"Crouch",
+	"Pew":"Shoot",
+	"Watergun":"Watergun",
+	"Shovel":"Shovel",
+	"Weapon3":"Pistol",
 }
 
 func _ready():
@@ -88,7 +95,10 @@ func _update_action_list(button, event):
 
 
 func _on_button_pressed() -> void:
-
+	input_settings.visible = false
 	
-	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("Open popup"):
+		visible = false
+		print("Settings Not Visible")
 	

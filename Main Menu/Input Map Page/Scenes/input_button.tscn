@@ -13,8 +13,10 @@ subpixel_positioning = 0
 [node name="Input_button" type="Button"]
 clip_contents = true
 custom_minimum_size = Vector2(0, 50)
-anchors_preset = 10
+anchors_preset = -1
 anchor_right = 1.0
+anchor_bottom = 0.077
+offset_bottom = -49.896
 grow_horizontal = 2
 focus_mode = 0
 theme_override_styles/hover = SubResource("StyleBoxFlat_mql11")

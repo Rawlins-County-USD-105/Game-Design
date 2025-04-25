@@ -1,7 +1,45 @@
-[gd_scene load_steps=9 format=3 uid="uid://didfro6rbdx1d"]
+[gd_scene load_steps=14 format=3 uid="uid://didfro6rbdx1d"]
 
 [ext_resource type="Script" path="res://Main Menu/Popup menu/popup_menu.gd" id="1_stgea"]
-[ext_resource type="Texture2D" uid="uid://dm0qwyd5obahc" path="res://Main Menu/Popup menu/Untitled design (32) copy.png" id="2_svcp7"]
+[ext_resource type="Texture2D" uid="uid://bxpf53j7pg6ww" path="res://Main Menu/Assets/Background.png" id="2_2cj1n"]
+[ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="2_7xr30"]
+[ext_resource type="PackedScene" uid="uid://cfqvc01m4dlj0" path="res://skill_tree.tscn" id="2_vf4xr"]
+
+[sub_resource type="Animation" id="Animation_68owd"]
+resource_name = "ESCAPECLOSE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yxxpe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sak0y"]
+_data = {
+"ESCAPECLOSE": SubResource("Animation_68owd"),
+"RESET": SubResource("Animation_yxxpe")
+}
 
 [sub_resource type="SystemFont" id="SystemFont_o2ak2"]
 font_names = PackedStringArray("Impact")
@@ -19,24 +57,54 @@ subpixel_positioning = 0
 
 [node name="Popup menu" type="Node2D"]
 visible = false
+z_as_relative = false
 position = Vector2(471, 319)
 script = ExtResource("1_stgea")
 
+[node name="SkillTree" parent="." instance=ExtResource("2_vf4xr")]
+
 [node name="UntitledDesign(32)Copy" type="Sprite2D" parent="."]
-position = Vector2(106, 18)
-scale = Vector2(0.5545, 0.352)
-texture = ExtResource("2_svcp7")
+position = Vector2(110, 19.04)
+scale = Vector2(0.361292, 0.39637)
+texture = ExtResource("2_2cj1n")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 84.0
+offset_right = 179.0
+offset_bottom = 107.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+text = "Press ESC to close"
+metadata/_edit_use_anchors_ = true
+
+[node name="InputSettings" parent="." instance=ExtResource("2_7xr30")]
+visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -470.0
+offset_top = -323.0
+offset_right = 689.0
+offset_bottom = 331.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Label")
+libraries = {
+"": SubResource("AnimationLibrary_sak0y")
+}
 
 [node name="Button2" type="Button" parent="."]
 custom_minimum_size = Vector2(120, 32)
-offset_left = -14.0
-offset_top = -62.0
-offset_right = 229.0
-offset_bottom = 18.0
+offset_left = -11.0
+offset_top = -55.0
+offset_right = 232.0
+offset_bottom = 25.0
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
@@ -53,18 +121,19 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_6w5xu")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
 text = "SETTINGS"
 flat = true
+text_direction = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="."]
 custom_minimum_size = Vector2(120, 32)
 offset_left = -15.0
-offset_top = 23.0
-offset_right = 228.0
-offset_bottom = 103.0
+offset_top = 15.0
+offset_right = 240.0
+offset_bottom = 95.0
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.493545, 0.493546, 0.493546, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
@@ -79,8 +148,9 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xqo57"
 theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tl155")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6w5xu")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_1ujv5")
-text = "QUIT"
+text = "MAIN MENU"
 flat = true
+text_direction = 2
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

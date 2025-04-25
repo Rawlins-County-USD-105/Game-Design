@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbla1nlgmx8bm"]
+[gd_scene load_steps=10 format=3 uid="uid://ce3qofmctbr5k"]
 
 [ext_resource type="Script" path="res://skill_button.gd" id="1_xwpp7"]
-[ext_resource type="PackedScene" uid="uid://fypx45vbpq5l" path="res://skill_tree.tscn" id="2_2ghcy"]
+[ext_resource type="PackedScene" uid="uid://cfqvc01m4dlj0" path="res://skill_tree.tscn" id="2_2ghcy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdhpv"]
 albedo_color = Color(0.686275, 0.0705882, 0.0823529, 1)
@@ -76,6 +76,5 @@ libraries = {
 }
 
 [node name="SkillTree" parent="." instance=ExtResource("2_2ghcy")]
-visible = false
 
 [connection signal="interacted" from="." to="." method="_on_interacted"]
