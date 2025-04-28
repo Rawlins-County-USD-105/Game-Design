@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=37 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="10_3mf4v"]
 [ext_resource type="AudioStream" uid="uid://ls186yi5cdrm" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
+[ext_resource type="PackedScene" uid="uid://mkf5c51iukj7" path="res://Weapon_Skill_Tree.tscn" id="12_sqt36"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -7483,7 +7484,9 @@ one_shot = true
 z_index = 5
 
 [node name="SkillTree" parent="." instance=ExtResource("10_3mf4v")]
-visible = true
+visible = false
+
+[node name="SkillTree2" parent="." instance=ExtResource("12_sqt36")]
 
 [node name="ouch" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_wrk1g")

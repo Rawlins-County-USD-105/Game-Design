@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://mkf5c51iukj7"]
+[gd_scene load_steps=5 format=3 uid="uid://mkf5c51iukj7"]
 
 [ext_resource type="PackedScene" uid="uid://bjvqwbovpiprm" path="res://Sounds/skill_Icon.tscn" id="1_3b8l8"]
+[ext_resource type="Script" path="res://weapon_skill_tree.gd" id="1_8e3wi"]
 [ext_resource type="PackedScene" uid="uid://c8c8fag646ads" path="res://Fire Rate.tscn" id="2_gur35"]
 [ext_resource type="PackedScene" uid="uid://cn4oomfihrjth" path="res://Damage Mutiplier.tscn" id="2_u0xmw"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8e3wi")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
