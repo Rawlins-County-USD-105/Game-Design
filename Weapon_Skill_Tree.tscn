@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://mkf5c51iukj7"]
+[gd_scene load_steps=6 format=3 uid="uid://mkf5c51iukj7"]
 
 [ext_resource type="PackedScene" uid="uid://bjvqwbovpiprm" path="res://Sounds/skill_Icon.tscn" id="1_3b8l8"]
 [ext_resource type="Script" path="res://weapon_skill_tree.gd" id="1_8e3wi"]
 [ext_resource type="PackedScene" uid="uid://c8c8fag646ads" path="res://Fire Rate.tscn" id="2_gur35"]
 [ext_resource type="PackedScene" uid="uid://cn4oomfihrjth" path="res://Damage Mutiplier.tscn" id="2_u0xmw"]
+[ext_resource type="PackedScene" uid="uid://ct2rxagkkukny" path="res://Ammo Cost.tscn" id="4_kl4a3"]
 
 [node name="SkillTree" type="Control"]
 layout_mode = 3
@@ -52,6 +53,9 @@ offset_bottom = -15.0
 scale = Vector2(1, 1)
 disabled = true
 
+[node name="TextureRect" parent="SkillButton/SkillButton/SkillButton3" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
 [node name="SkillButton4" parent="SkillButton/SkillButton" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
 offset_left = -23.5
@@ -60,6 +64,12 @@ offset_right = 16.5
 offset_bottom = -17.0
 scale = Vector2(1, 1)
 disabled = true
+
+[node name="TextureRect" parent="SkillButton/SkillButton/SkillButton4" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="TextureRect" parent="SkillButton/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
 
 [node name="SkillButton2" parent="SkillButton" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
@@ -90,6 +100,12 @@ offset_right = 63.0
 offset_bottom = -27.5
 scale = Vector2(1, 1)
 disabled = true
+
+[node name="TextureRect" parent="SkillButton/SkillButton2/SkillButton5" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="TextureRect" parent="SkillButton/SkillButton2" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
 
 [node name="TextureRect" parent="SkillButton" instance=ExtResource("2_u0xmw")]
 layout_mode = 0
@@ -132,6 +148,9 @@ offset_bottom = -17.0
 scale = Vector2(1, 1)
 disabled = true
 
+[node name="TextureRect" parent="SkillButton2/SkillButton/SkillButton4" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
 [node name="TextureRect" parent="SkillButton2/SkillButton" instance=ExtResource("2_u0xmw")]
 layout_mode = 0
 
@@ -165,6 +184,12 @@ offset_bottom = -27.5
 scale = Vector2(1, 1)
 disabled = true
 
+[node name="TextureRect" parent="SkillButton2/SkillButton2/SkillButton5" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="TextureRect" parent="SkillButton2/SkillButton2" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
 [node name="TextureRect" parent="SkillButton2" instance=ExtResource("2_gur35")]
 layout_mode = 0
 
@@ -193,6 +218,9 @@ offset_right = 106.5
 offset_bottom = -15.0
 scale = Vector2(1, 1)
 disabled = true
+
+[node name="TextureRect" parent="SkillButton3/SkillButton/SkillButton3" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
 
 [node name="SkillButton4" parent="SkillButton3/SkillButton" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
@@ -227,6 +255,9 @@ offset_bottom = -25.0
 scale = Vector2(1, 1)
 disabled = true
 
+[node name="TextureRect" parent="SkillButton3/SkillButton2/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
 [node name="SkillButton5" parent="SkillButton3/SkillButton2" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
 offset_left = 23.0
@@ -240,6 +271,9 @@ disabled = true
 layout_mode = 0
 
 [node name="TextureRect" parent="SkillButton3/SkillButton2" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="TextureRect" parent="SkillButton3" instance=ExtResource("4_kl4a3")]
 layout_mode = 0
 
 [node name="SkillButton4" parent="." instance=ExtResource("1_3b8l8")]
@@ -267,6 +301,9 @@ offset_right = 106.5
 offset_bottom = -15.0
 scale = Vector2(1, 1)
 disabled = true
+
+[node name="TextureRect" parent="SkillButton4/SkillButton/SkillButton3" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
 
 [node name="SkillButton4" parent="SkillButton4/SkillButton" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
@@ -301,6 +338,9 @@ offset_bottom = -25.0
 scale = Vector2(1, 1)
 disabled = true
 
+[node name="TextureRect" parent="SkillButton4/SkillButton2/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
 [node name="SkillButton5" parent="SkillButton4/SkillButton2" instance=ExtResource("1_3b8l8")]
 layout_mode = 0
 offset_left = 23.0
@@ -314,6 +354,9 @@ disabled = true
 layout_mode = 0
 
 [node name="TextureRect" parent="SkillButton4/SkillButton2" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="TextureRect" parent="SkillButton4" instance=ExtResource("4_kl4a3")]
 layout_mode = 0
 
 [node name="Label" type="Label" parent="."]

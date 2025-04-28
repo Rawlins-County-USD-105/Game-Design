@@ -35,6 +35,8 @@ vertical_alignment = 1
 
 [node name="Line2D" type="Line2D" parent="."]
 top_level = true
+light_mask = 2
+visibility_layer = 2
 width = 3.0
 default_color = Color(0.310617, 0.310617, 0.310617, 1)
 
