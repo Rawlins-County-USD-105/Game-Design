@@ -253,7 +253,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 [node name="SpawnZones" type="Node3D" parent="."]
 
 [node name="spawn1" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -27.0989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.6578, -27.0989)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)

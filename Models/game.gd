@@ -95,6 +95,7 @@ func spawning():
 				Game.total_enemies += 1
 				spawner.position = x.global_position
 				spawner.rotate_y(deg_to_rad(random_number))
+				spawn_point.global_position.z = spawner.global_position.z
 				var e_inst = spawn_enemy.instantiate()
 				e_inst.player = $player
 				e_inst.drill = oil_drill.hitbox
