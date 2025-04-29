@@ -2,6 +2,9 @@ extends Node3D
 
 class_name Weapon
 
+@onready var popup_menu: Node2D = $"Popup menu"
+@onready var skill_tree_2: Node3D = $"."
+@onready var skill_tree: Node3D = $"."
 
 
 @export var model: MeshInstance3D
@@ -14,8 +17,9 @@ var instance
 var target = null
 
 func gun(current_gun, animation_player, animation_name):
-	if hit_scan_ray.is_colliding():
-		target = hit_scan_ray.get_collision_point()
+	if skill_tree.visible == false and skill_tree_2.visible == false:
+		if hit_scan_ray.is_colliding():
+			target = hit_scan_ray.get_collision_point()
 	else:
 		target = null
 	if current_gun.visible == true:
