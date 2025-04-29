@@ -7,6 +7,7 @@ var max_drill_health = 8000
 @onready var healthbar: ProgressBar = $SubViewport/Healthbar
 @onready var damagebar: ProgressBar = $SubViewport/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $SubViewport/Healthbar/DamageBarTimer
+@onready var begin_drill: AudioStreamPlayer3D = $begin_drill
 
 func _ready() -> void:
 	
@@ -25,6 +26,7 @@ func took_damage(Damage):
 		
 	if drill_health <= 0:
 		damagebar.value = 0
+		begin_drill.stop()
 		print("Drill Broke")
 	
 	healthbar.value = drill_health

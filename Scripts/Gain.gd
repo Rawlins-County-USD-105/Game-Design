@@ -7,7 +7,7 @@ var fog_density = 0.0
 
 func Gain_Gold(Gold_Gain):
 	Gold += Gold_Gain
-	print(Gold)
+	
 func _ready() -> void:
 	pass # Replace with function body.
 

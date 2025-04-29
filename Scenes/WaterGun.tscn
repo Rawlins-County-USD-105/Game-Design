@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/water_gun.gd" id="1_jmedj"]
 [ext_resource type="PackedScene" uid="uid://4ilk67hnc6h5" path="res://Scenes/WG_bullet.tscn" id="2_jhtbm"]
-[ext_resource type="ArrayMesh" uid="uid://dim1s37jd0eu0" path="res://Watergun/model.obj" id="3_8gyao"]
-[ext_resource type="AudioStream" uid="uid://du1g5vjspcm1n" path="res://Sounds/Laser_source_51001/Laser 2.wav" id="4_hrv30"]
+[ext_resource type="ArrayMesh" uid="uid://c7pxpmkquwhoa" path="res://Watergun/model.obj" id="3_8gyao"]
+[ext_resource type="AudioStream" uid="uid://dtei548kp8maa" path="res://Sounds/Laser_source_51001/Laser 2.wav" id="4_hrv30"]
 
 [sub_resource type="Animation" id="Animation_2fvbn"]
 resource_name = "Pew"
@@ -82,6 +82,7 @@ mesh = ExtResource("3_8gyao")
 libraries = {
 "": SubResource("AnimationLibrary_lv0ap")
 }
+autoplay = "Pew"
 
 [node name="RayCast" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.300143)
