@@ -21,8 +21,13 @@ func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+@onready var skill_tree_2: Control = $"../../../SkillTree2"
+@onready var popup_menu: Node2D = $"../../../Popup menu"
+@onready var skill_tree: Control = $"../../../SkillTree"
+
 
 func _process(delta: float) -> void:
+	if skill_tree.visible == false and skill_tree_2.visible == false:
 		if Input.is_action_pressed("Pew") and not weapon_anim.is_playing() and root_scene.visible == true:
 			weapon_anim.play("Melee")
 			shovel_swoosh.play()

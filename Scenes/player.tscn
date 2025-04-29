@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=39 format=4 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://b1wsl6fmqn7rn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="AudioStream" uid="uid://ls186yi5cdrm" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
+[ext_resource type="PackedScene" uid="uid://mkf5c51iukj7" path="res://Weapon_Skill_Tree.tscn" id="16_uerie"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -4560,6 +4561,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
 slide_on_ceiling = false
 floor_max_angle = 1.0472
 script = ExtResource("1_1qajl")
+
+[node name="SkillTree2" parent="." instance=ExtResource("16_uerie")]
 
 [node name="SkillTree" parent="." instance=ExtResource("2_rgj8k")]
 
