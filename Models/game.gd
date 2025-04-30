@@ -11,7 +11,7 @@ extends Node3D
 @onready var oil_drill: Node3D = $NavigationRegion3D/NavigationRegion3D/Oil_Drill
 @onready var player: CharacterBody3D = $player
 @onready var barrels = 0
-
+@onready var round = 0
 
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
@@ -63,7 +63,7 @@ func spawning():
 			spawn_timer.start()
 		if not Game.barrels % 5 == 0 or Game.barrels == 0:
 			
-			if spawning:
+			if spawning and round >= 10 and Gain.bickens <= 2:
 				var rand_ene = randi_range(1,10)
 				if rand_ene == 10:
 					spawn_enemy = enemies.find_key(2)
@@ -73,7 +73,8 @@ func spawning():
 					#$Horror.play()
 				else:
 					spawn_enemy = enemies.find_key(1)
-				
+			else:
+				spawn_enemy = enemies.find_key(1)
 				
 				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
 					Game.enemies_spawned += 1
@@ -114,6 +115,7 @@ func minus_bicken():
 
 	Gain.bickens -= 1
 	
-func oil(barrel):
+func oil(barrel, rounds):
+	round = rounds
 	barrels = barrel
 	
