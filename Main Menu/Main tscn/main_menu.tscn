@@ -1,24 +1,43 @@
 [gd_scene load_steps=13 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://dbspoto0qngl8" path="res://Main Menu/Popup menu/titleimage.png" id="2_1t0s0"]
+[ext_resource type="Texture2D" uid="uid://cin5tqifgwlim" path="res://Main Menu/Assets/Backdrops/New Background 2.0.png" id="2_oxerl"]
 [ext_resource type="Texture2D" uid="uid://cprdlqjocretd" path="res://Models/Untitled design (24).png" id="3_n72tn"]
+[ext_resource type="Texture2D" uid="uid://bew48mr5pyvco" path="res://Main Menu/Assets/Backdrops/blue popup bg.png" id="3_p1dvk"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wxxqn"]
+bg_color = Color(0, 0, 0, 0.627451)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
 [sub_resource type="SystemFont" id="SystemFont_gaf13"]
 font_names = PackedStringArray("Impact")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n3gb8"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al5gr"]
+bg_color = Color(0, 0, 0, 0.454902)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sh27s"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wokop"]
+bg_color = Color(0, 0, 0, 0.627451)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4smn"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1g7vp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_02uek"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ctvq4"]
+bg_color = Color(0, 0, 0, 0.627451)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
 
 [sub_resource type="Animation" id="Animation_210v3"]
 resource_name = "End enimation"
@@ -51,31 +70,38 @@ grow_vertical = 2
 script = ExtResource("1_k4h4r")
 
 [node name="UntitledDesign(16)" type="Sprite2D" parent="."]
-position = Vector2(675.97, 331)
-scale = Vector2(0.705608, 0.764815)
-texture = ExtResource("2_1t0s0")
+position = Vector2(655.175, 320)
+scale = Vector2(0.219058, 0.236444)
+texture = ExtResource("2_oxerl")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
+offset_left = 3.0
 offset_right = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Add background picture to texturerect" type="Node" parent="TextureRect"]
 
+[node name="GreenPopupBg" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.92549)
+position = Vector2(138.344, 329.75)
+scale = Vector2(0.906088, 0.93287)
+texture = ExtResource("3_p1dvk")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 80.0
-offset_top = 37.0
-offset_right = -45.0
-offset_bottom = -36.0
+offset_left = 9.0
+offset_top = -4.0
+offset_right = -270.0
+offset_bottom = -227.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 12
@@ -87,16 +113,6 @@ theme_override_constants/margin_bottom = 12
 layout_mode = 2
 theme_override_constants/separation = 60
 
-[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = SubResource("SystemFont_ty832")
-theme_override_font_sizes/font_size = 100
-text = "GAME NAME"
-vertical_alignment = 1
-
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 alignment = 1
@@ -104,60 +120,40 @@ alignment = 1
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 34
+theme_override_constants/separation = 26
 alignment = 1
 
-[node name="Separator9" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-
-[node name="Separator7" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Separator8" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Separator5" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Separator6" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_ty832")
+theme_override_font_sizes/font_size = 112
+theme_override_styles/normal = SubResource("StyleBoxFlat_wxxqn")
+text = "  Uncooped Chaos  "
+vertical_alignment = 1
 
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
+size_flags_horizontal = 0
+size_flags_vertical = 8
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 65
-theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
-text = "PLAY"
-flat = true
+theme_override_font_sizes/font_size = 84
+theme_override_styles/hover = SubResource("StyleBoxFlat_al5gr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wokop")
+text = "     PLAY     "
 alignment = 0
 
 [node name="Button4" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.494118, 0.494118, 0.494118, 1)
+size_flags_horizontal = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0.44895, 1.30555e-06, 9.62615e-08, 1)
 theme_override_fonts/font = SubResource("SystemFont_gaf13")
-theme_override_font_sizes/font_size = 65
-theme_override_styles/focus = SubResource("StyleBoxEmpty_n3gb8")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sh27s")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m4smn")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g7vp")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_02uek")
-text = "QUIT"
-flat = true
+theme_override_font_sizes/font_size = 84
+theme_override_styles/hover = SubResource("StyleBoxFlat_al5gr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ctvq4")
+text = "     QUIT     "
 alignment = 0
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -187,6 +183,7 @@ wait_time = 0.6
 pitch_scale = 0.5
 autoplay = true
 
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
 [connection signal="timeout" from="AnimationPlayer/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_timer2_timeout"]
