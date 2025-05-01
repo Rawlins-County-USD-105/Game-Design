@@ -60,6 +60,22 @@ tracks/2/keys = {
 "values": [Vector3(0, 0.09, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_biywm"]
+resource_name = "pistol_press"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pistol_Button/MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-2.23517e-08, 0.191667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_xs51w"]
 resource_name = "press"
 length = 0.5
@@ -92,22 +108,6 @@ tracks/0/keys = {
 "values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_biywm"]
-resource_name = "pistol_press"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Pistol_Button/MeshInstance3D2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-2.23517e-08, 0.191667, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
 _data = {
 "RESET": SubResource("Animation_qdd8g"),
@@ -128,6 +128,7 @@ script = ExtResource("1_q22pe")
 [node name="Water_Gun_Button" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.25)
 script = ExtResource("1_k06oq")
+prompt = "Water Gun 200 Gold Eggs"
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Water_Gun_Button"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -146,6 +147,7 @@ shape = SubResource("BoxShape3D_fifm7")
 [node name="Pistol_Button" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.55, 0.25)
 script = ExtResource("1_k06oq")
+prompt = "Pistol 100 Gold Eggs"
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Pistol_Button"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -164,6 +166,7 @@ shape = SubResource("BoxShape3D_fifm7")
 [node name="Rail_Gun_Button" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, 0.25)
 script = ExtResource("1_k06oq")
+prompt = "Rail Gun 400 Gold Eggs"
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Rail_Gun_Button"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
@@ -204,5 +207,6 @@ skeleton = NodePath("../..")
 shape = SubResource("ConcavePolygonShape3D_4c2uh")
 
 [connection signal="interacted" from="Water_Gun_Button" to="." method="_on_water_gun_button_interacted"]
+[connection signal="interacted" from="Water_Gun_Button" to="Water_Gun_Button" method="_on_interacted"]
 [connection signal="interacted" from="Pistol_Button" to="." method="_on_pistol_button_interacted"]
 [connection signal="interacted" from="Rail_Gun_Button" to="." method="_on_rail_gun_button_interacted"]
