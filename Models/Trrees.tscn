@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://duhdv2u3fpnlk"]
+
+[ext_resource type="PackedScene" uid="uid://dg4gn5a0fk1eq" path="res://Lowpoly_tree_set.fbx" id="1_aj1b8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Lowpoly_tree_set" parent="." instance=ExtResource("1_aj1b8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.306254, 0, 1.57845)
