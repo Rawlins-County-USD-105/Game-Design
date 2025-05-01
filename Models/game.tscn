@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://o6s6n1rew4x2" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://dc3t257wc062k" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -254,7 +254,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 [node name="SpawnZones" type="Node3D" parent="."]
 
 [node name="spawn1" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -27.0989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.6578, -27.0989)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
