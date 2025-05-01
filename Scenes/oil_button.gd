@@ -23,6 +23,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	Game.oil(barrel)
 	Game.pain(barrel)
+	print(SkillButton.barrels)
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 

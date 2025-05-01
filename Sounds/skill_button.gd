@@ -16,7 +16,6 @@ func _process(delta: float) -> void:
 	#print(SkillButton.barrels)
 	barrels = Game.barrels
 
-	Game.barrels
 var level : int = 0:
 	set(value):
 		level = value
@@ -26,9 +25,8 @@ func _on_pressed() -> void:
 	
 	if barrels > 0:
 		level = min( level+1 , 3)
-		barrels -= 1
+		barrels - 1
 		panel.show_behind_parent = true
-	
 	line_2d.default_color = Color(1, 0.972549, 0.862745, 1)
 	var skills = get_children()
 	for skill in skills:
@@ -36,8 +34,4 @@ func _on_pressed() -> void:
 			skill.disabled = false
 
 func get_oil(barrel):
-	print(barrel)
-	
-	
 	return barrels
-	
