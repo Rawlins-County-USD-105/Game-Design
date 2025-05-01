@@ -15,6 +15,11 @@ var Health : int
 @onready var damage_ray: RayCast3D = $RayCast3D
 @onready var timer: Timer = $Timer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var character_body_3d_2: CharacterBody3D = $"."
+@onready var armature_006: Node3D = $Armature_006
+@onready var explosion: GPUParticles3D = $GPUParticles3D
+
+
 var passes = 0
 var player_distance = 0
 var drill_distance = 0
@@ -64,6 +69,11 @@ func Hit(Damage):
 		Gain.Gain_Water(Gold)
 		Game.enemies_spawned -= 1
 		#Game.enemy_death()
+		hitbox.disabled = true
+		armature_006.visible = false
+		explosion.emitting = true
+		
+		await get_tree().create_timer(.5).timeout
 		queue_free()
 		emit_signal("death")
 

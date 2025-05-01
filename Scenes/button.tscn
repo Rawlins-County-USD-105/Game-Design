@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp1awtc105l8m"]
+[gd_scene load_steps=10 format=3 uid="uid://bp1awtc105l8m"]
 
 [ext_resource type="Script" path="res://Scripts/button.gd" id="1_hlbck"]
+[ext_resource type="PackedScene" path="res://skill_tree.tscn" id="2_atwey"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdhpv"]
 albedo_color = Color(0.686275, 0.0705882, 0.0823529, 1)
@@ -74,5 +75,8 @@ shape = SubResource("BoxShape3D_vcvxo")
 libraries = {
 "": SubResource("AnimationLibrary_nd0kf")
 }
+
+[node name="SkillTree" parent="." instance=ExtResource("2_atwey")]
+visible = false
 
 [connection signal="interacted" from="." to="." method="_on_interacted"]

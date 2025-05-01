@@ -2,7 +2,7 @@ extends Node3D
 
 class_name bullet
 
-@export var Damage = 500.0
+@export var Damage: int
 @export var speed: int = 10
 @export var mesh: MeshInstance3D
 @export var ray: RayCast3D
@@ -29,8 +29,6 @@ func _process(delta):
 		_hit_with_ray()
 
 func _hit_target():
-	if ray.get_collider() and ray.get_collider().is_in_group("Enemy"):
-		ray.get_collider().Hit(Damage)
 
 	mesh.visible = false
 	particles.emitting = true

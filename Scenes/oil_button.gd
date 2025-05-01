@@ -7,9 +7,9 @@ extends Interactable
 @onready var gpu_particles_3d: GPUParticles3D = $"../GPUParticles3D"
 @onready var health_bar_sprite: Node3D = $"../Health"
 @onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
-
+var round = 0
 var oil = 0
-var max_oil = 1000
+var max_oil = 100
 var player = null
 var barrel = 0
 
@@ -18,8 +18,11 @@ func _ready() -> void:
 	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
+	
 
 func _process(delta: float) -> void:
+	Game.oil(barrel, round)
+	Game.pain(barrel)
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 
@@ -41,6 +44,7 @@ func get_oil():
 	if oil_bar.value == oil_bar.max_value:
 		begin_drill.stop()
 		barrel += 1
+		round += 1
 		barrels.text = str(barrel)
 		player.spawning = false
 		await get_tree().create_timer(3).timeout

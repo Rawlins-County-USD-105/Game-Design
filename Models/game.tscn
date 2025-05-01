@@ -1,6 +1,6 @@
-[gd_scene load_steps=29 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=27 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://bx18e36vi21ad" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://dc3t257wc062k" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -11,14 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://bh4y61debteju" path="res://Models/roadbreak.tscn" id="10_ttdqt"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="13_bekv1"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="14_bdcdg"]
-[ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="15_j1hgn"]
+[ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="15_j1hgn"]
 [ext_resource type="PackedScene" uid="uid://nxv8ebx1omcq" path="res://Models/Shelf.tscn" id="15_r37gt"]
-[ext_resource type="PackedScene" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
-[ext_resource type="PackedScene" uid="uid://bvqsvljjt7gxj" path="res://Scenes/item_slot.tscn" id="16_57gks"]
-[ext_resource type="PackedScene" uid="uid://cn2va418qfq0k" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
-[ext_resource type="AudioStream" uid="uid://d6phwv27gvxp" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_e4ipt"]
+[ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
+[ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
-[ext_resource type="PackedScene" uid="uid://4dfgl5ufooye" path="res://Models/Flickering light.tscn" id="19_ho43f"]
+[ext_resource type="AudioStream" uid="uid://bvxf5wu4lqtbx" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -26,12 +24,12 @@ sky_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
 ground_bottom_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
 ground_horizon_color = Color(0.599444, 0.619764, 0.729659, 1)
 
-[sub_resource type="Sky" id="Sky_cj7g0"]
+[sub_resource type="Sky" id="Sky_vlvqu"]
 sky_material = SubResource("ProceduralSkyMaterial_p33qv")
 
 [sub_resource type="Environment" id="Environment_7wjwl"]
 background_mode = 2
-sky = SubResource("Sky_cj7g0")
+sky = SubResource("Sky_vlvqu")
 tonemap_mode = 2
 fog_light_color = Color(0.988338, 0.730336, 0.12838, 1)
 volumetric_fog_enabled = true
@@ -71,7 +69,7 @@ uv1_triplanar = true
 height = 1.09796
 radius = 7.36427
 
-[node name="Game2" type="Node3D"]
+[node name="Game" type="Node3D"]
 script = ExtResource("1_qvolv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -255,7 +253,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 [node name="SpawnZones" type="Node3D" parent="."]
 
 [node name="spawn1" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -27.0989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.6578, -27.0989)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
@@ -296,25 +294,7 @@ autostart = true
 [node name="player" parent="." instance=ExtResource("18_eupc6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
 
-[node name="Iteam Slot" parent="player" instance=ExtResource("16_57gks")]
-position = Vector2(19, 20)
-
-[node name="Iteam Slot2" parent="player" instance=ExtResource("16_57gks")]
-position = Vector2(191, 20)
-
-[node name="Iteam Slot3" parent="player" instance=ExtResource("16_57gks")]
-position = Vector2(148, 20)
-
-[node name="Iteam Slot4" parent="player" instance=ExtResource("16_57gks")]
-position = Vector2(105, 20)
-
-[node name="Iteam Slot5" parent="player" instance=ExtResource("16_57gks")]
-position = Vector2(62, 20)
-
-[node name="SpotLight3D" parent="." instance=ExtResource("19_ho43f")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1.43593, 4.83248, -6.6628)
-
 [node name="Horror" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("18_e4ipt")
-volume_db = 5.0
-max_db = 4.5
+stream = ExtResource("18_h8hr5")
+volume_db = 80.0
+max_db = 6.0
