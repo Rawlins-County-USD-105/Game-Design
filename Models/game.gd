@@ -15,6 +15,8 @@ extends Node3D
 
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
+@onready var spot_light_3d: SpotLight3D = $player/SpotLight3D
+
 var spawn_enemy = null
 var can_spawn = false
 var total_enemies = 0
@@ -44,11 +46,12 @@ func _process(delta: float) -> void:
 		#
 		#if world_environment.environment.volumetric_fog_density > 0.3:
 			#fog = false
+			#spot_light_3d.show()
 	
 	if Gain.bickens == 0:
 		if world_environment:
 			if world_environment.environment.volumetric_fog_density > 0:
-				
+				spot_light_3d.hide()
 				Gain.fog_density -= 0.1 * delta
 				
 				world_environment.environment.volumetric_fog_density = Gain.fog_density
@@ -85,6 +88,7 @@ func spawning():
 					e_inst.player = $player
 					e_inst.drill = oil_drill.hitbox
 					e_inst.position = spawn_point.global_position
+					spawn_point.global_position.y = spawner.global_position.y
 					group_enemy.add_child(e_inst)
 					
 				else:
@@ -96,11 +100,11 @@ func spawning():
 				Game.total_enemies += 1
 				spawner.position = x.global_position
 				spawner.rotate_y(deg_to_rad(random_number))
-				spawn_point.global_position.z = spawner.global_position.z
 				var e_inst = spawn_enemy.instantiate()
 				e_inst.player = $player
 				e_inst.drill = oil_drill.hitbox
 				e_inst.position = spawn_point.global_position
+				spawn_point.global_position.y = spawner.global_position.y
 				group_enemy.add_child(e_inst)
 				Gain.bickens += 1
 				fog = true

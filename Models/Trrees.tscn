@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duhdv2u3fpnlk"]
 
-[ext_resource type="PackedScene" uid="uid://dg4gn5a0fk1eq" path="res://Lowpoly_tree_set.fbx" id="1_aj1b8"]
+[ext_resource type="PackedScene" uid="uid://ds1b20pu2msgm" path="res://Lowpoly_tree_set.fbx" id="1_aj1b8"]
 
 [node name="Node3D" type="Node3D"]
 

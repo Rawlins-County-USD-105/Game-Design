@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Models/game.gd" id="1_3wbxw"]
 [ext_resource type="PackedScene" uid="uid://cd1p5d3xhj7pe" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_454w2"]
-[ext_resource type="PackedScene" uid="uid://4dfgl5ufooye" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
+[ext_resource type="PackedScene" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="5_1ef03"]
 [ext_resource type="PackedScene" uid="uid://7voy3j556oo1" path="res://Scenes/button.tscn" id="5_3koh7"]
 [ext_resource type="PackedScene" uid="uid://cn2va418qfq0k" path="res://Scenes/oil_drill.tscn" id="5_7k5e4"]
@@ -12,11 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="8_ysac1"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="9_e3i8n"]
 [ext_resource type="AudioStream" uid="uid://d6phwv27gvxp" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
-[ext_resource type="PackedScene" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
-[ext_resource type="PackedScene" path="res://Models/Walltree.tscn" id="14_0dqg4"]
-[ext_resource type="PackedScene" path="res://Models/TREEE.tscn" id="15_2lhe1"]
-[ext_resource type="PackedScene" path="res://Models/TREE.tscn" id="16_8af2c"]
-[ext_resource type="PackedScene" path="res://Models/small tree.tscn" id="17_lhy1e"]
+[ext_resource type="PackedScene" uid="uid://dc85b8q7qudb1" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
+[ext_resource type="PackedScene" uid="uid://dfi5knw5ep2ux" path="res://Models/Walltree.tscn" id="14_0dqg4"]
+[ext_resource type="PackedScene" uid="uid://bo8eusa5lejtl" path="res://Models/TREEE.tscn" id="15_2lhe1"]
+[ext_resource type="PackedScene" uid="uid://di370ku7cuy1" path="res://Models/TREE.tscn" id="16_8af2c"]
+[ext_resource type="PackedScene" uid="uid://bov327nwtocg6" path="res://Models/small tree.tscn" id="17_lhy1e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sekrs"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -339,6 +339,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0.794648, 1.78865, -3.3
 
 [node name="SpotLight3D" parent="player" instance=ExtResource("4_4pm5c")]
 transform = Transform3D(0.714286, 0, 0, 0, -3.12224e-08, 0.714286, 0, -0.714286, -3.12224e-08, 0, 2.01048, 0)
+visible = false
 light_color = Color(0.966167, 0.788586, 0.744071, 1)
 light_energy = 2.131
 light_volumetric_fog_energy = 2.0
@@ -346,27 +347,28 @@ spot_range = 22.254
 min_flicker_delay = 1.0
 
 [node name="SpawnZones" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.199085, 0)
 
 [node name="spawn1" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.3843, 5.80581, -21.8149)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3503, 3.52749, 33.3557)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
 shape = SubResource("CylinderShape3D_oquwu")
 
 [node name="spawn2" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6524, 8.22821, -4.40727)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3571, 2.73009, 27.2873)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn2"]
 shape = SubResource("CylinderShape3D_oquwu")
 
 [node name="spawn3" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.54, 2.8588, 24.5146)
+transform = Transform3D(0.999965, -0.00830767, 0, 0.00830767, 0.999965, 0, 0, 0, 1, -27.1439, 5.83373, 2.32338)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn3"]
 shape = SubResource("CylinderShape3D_oquwu")
 
 [node name="spawn4" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3985, 3.54954, 31.9175)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5704, 2.23354, -23.6328)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn4"]
 shape = SubResource("CylinderShape3D_oquwu")
