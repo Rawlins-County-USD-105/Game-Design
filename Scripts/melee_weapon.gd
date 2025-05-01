@@ -27,7 +27,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	if skill_tree.visible == false and skill_tree_2.visible == false:
+	if skill_tree.visible == false and skill_tree_2.visible == false and popup_menu.visible == false:
 		if Input.is_action_pressed("Pew") and not weapon_anim.is_playing() and root_scene.visible == true:
 			weapon_anim.play("Melee")
 			shovel_swoosh.play()

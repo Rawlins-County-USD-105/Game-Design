@@ -38,6 +38,5 @@ top_level = true
 light_mask = 2
 visibility_layer = 2
 width = 3.0
-default_color = Color(0.310617, 0.310617, 0.310617, 1)
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

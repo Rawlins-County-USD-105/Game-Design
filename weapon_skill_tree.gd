@@ -9,9 +9,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
-		
-
 	if skill_tree.visible == false and Input.is_action_just_pressed("Skill Tree"):
 		skill_tree.visible = true
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

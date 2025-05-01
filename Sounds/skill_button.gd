@@ -29,7 +29,7 @@ func _on_pressed() -> void:
 		barrels -= 1
 		panel.show_behind_parent = true
 	
-	line_2d.default_color = Color(0.318, 0.141, 0.847)
+	line_2d.default_color = Color(1, 0.972549, 0.862745, 1)
 	var skills = get_children()
 	for skill in skills:
 		if skill is SkillNode and level == 3:
