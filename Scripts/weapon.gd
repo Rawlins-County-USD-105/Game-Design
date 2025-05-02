@@ -2,6 +2,8 @@ extends Node3D
 
 class_name Weapon
 
+
+
 @export var model: MeshInstance3D
 @export var barrel: RayCast3D
 @export var gun_bullet: PackedScene

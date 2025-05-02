@@ -30,7 +30,7 @@ func _ready() -> void:
 		player.drill_hitbox = oil_drill.hitbox
 
 func _process(delta: float) -> void:
-	
+
 	if player:
 		if player.spawning:
 			if spawn_timer:
