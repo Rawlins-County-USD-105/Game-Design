@@ -104,15 +104,9 @@ func spawning():
 				fog = true
 				$Horror.play()
 				
-func pain(barrel):
-	barrels = barrel 
-	return barrel
 	
 
 func minus_bicken():
 
 	Gain.bickens -= 1
-	
-func oil(barrel):
-	barrels = barrel
 	
