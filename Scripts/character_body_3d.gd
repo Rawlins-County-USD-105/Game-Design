@@ -34,7 +34,7 @@ var drill_hitbox = self
 @onready var texture_rect_unequipped: TextureRect = $"neck/Camera/TextureRect/Equiped Gun2/TextureRect"
 @onready var RailGun: Node3D = $neck/Camera/RailGun
 
-var current_weapopn = 1
+var current_weapopn = 2
 
 #Spawning
 @onready var spawner = $Spawner
@@ -83,13 +83,13 @@ var prev_health = health
 @onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
 
 func Weapon_Select():
-	if Input.is_action_just_pressed("Watergun"):
+	if Input.is_action_just_pressed("Watergun") and Gain.water_gun:
 		current_weapopn = 1
 	elif Input.is_action_just_pressed("Shovel"):
 		current_weapopn = 2
-	elif Input.is_action_just_pressed("Weapon3"):
+	elif Input.is_action_just_pressed("Weapon3") and Gain.pistol_gun:
 		current_weapopn = 3
-	elif Input.is_action_just_pressed("RailGun"):
+	elif Input.is_action_just_pressed("RailGun") and Gain.rail_gun:
 		current_weapopn = 4
 	if current_weapopn == 1:
 		Watergun.visible = true

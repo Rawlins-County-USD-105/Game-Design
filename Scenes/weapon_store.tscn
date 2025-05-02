@@ -1,0 +1,212 @@
+[gd_scene load_steps=17 format=3 uid="uid://dat6yp4603kqd"]
+
+[ext_resource type="Script" path="res://Scenes/water_gun_button.gd" id="1_k06oq"]
+[ext_resource type="Script" path="res://Scenes/weapon_store.gd" id="1_q22pe"]
+[ext_resource type="ArrayMesh" uid="uid://cvx6o4o0ds5wg" path="res://Sprites/Watergun/model.obj" id="3_eig0u"]
+[ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="4_b4kya"]
+[ext_resource type="PackedScene" uid="uid://ci4c2mprdlhk" path="res://Sounds/railme.blend" id="5_drjud"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7eql"]
+albedo_color = Color(0.00728916, 0, 0.460533, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gdep2"]
+material = SubResource("StandardMaterial3D_i7eql")
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.06
+
+[sub_resource type="BoxMesh" id="BoxMesh_ka106"]
+size = Vector3(0.25, 0.125, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fifm7"]
+size = Vector3(0.25, 0.185, 0.25)
+
+[sub_resource type="Animation" id="Animation_qdd8g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rail_Gun_Button/MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Water_Gun_Button/MeshInstance3D2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pistol_Button/MeshInstance3D2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_biywm"]
+resource_name = "pistol_press"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pistol_Button/MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-2.23517e-08, 0.191667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xs51w"]
+resource_name = "press"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rail_Gun_Button/MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_k4r6p"]
+resource_name = "water_press"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Water_Gun_Button/MeshInstance3D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.49012e-08, 0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.09, 0), Vector3(0, 0.046, 0), Vector3(0, 0.09, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nd0kf"]
+_data = {
+"RESET": SubResource("Animation_qdd8g"),
+"pistol_press": SubResource("Animation_biywm"),
+"press": SubResource("Animation_xs51w"),
+"water_press": SubResource("Animation_k4r6p")
+}
+
+[sub_resource type="BoxMesh" id="BoxMesh_vckn1"]
+size = Vector3(3, 1, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4c2uh"]
+data = PackedVector3Array(-1.5, 0.5, 0.5, 1.5, 0.5, 0.5, -1.5, -0.5, 0.5, 1.5, 0.5, 0.5, 1.5, -0.5, 0.5, -1.5, -0.5, 0.5, 1.5, 0.5, -0.5, -1.5, 0.5, -0.5, 1.5, -0.5, -0.5, -1.5, 0.5, -0.5, -1.5, -0.5, -0.5, 1.5, -0.5, -0.5, 1.5, 0.5, 0.5, 1.5, 0.5, -0.5, 1.5, -0.5, 0.5, 1.5, 0.5, -0.5, 1.5, -0.5, -0.5, 1.5, -0.5, 0.5, -1.5, 0.5, -0.5, -1.5, 0.5, 0.5, -1.5, -0.5, -0.5, -1.5, 0.5, 0.5, -1.5, -0.5, 0.5, -1.5, -0.5, -0.5, 1.5, 0.5, 0.5, -1.5, 0.5, 0.5, 1.5, 0.5, -0.5, -1.5, 0.5, 0.5, -1.5, 0.5, -0.5, 1.5, 0.5, -0.5, -1.5, -0.5, 0.5, 1.5, -0.5, 0.5, -1.5, -0.5, -0.5, 1.5, -0.5, 0.5, 1.5, -0.5, -0.5, -1.5, -0.5, -0.5)
+
+[node name="WeaponStore" type="Node3D"]
+script = ExtResource("1_q22pe")
+
+[node name="Water_Gun_Button" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.25)
+script = ExtResource("1_k06oq")
+prompt = "Water Gun 200 Gold Eggs"
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Water_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
+mesh = SubResource("CylinderMesh_gdep2")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Water_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000729978, -1.49012e-08, -0.000599563)
+mesh = SubResource("BoxMesh_ka106")
+skeleton = NodePath("../..")
+
+[node name="CollisionShapeButton" type="CollisionShape3D" parent="Water_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+shape = SubResource("BoxShape3D_fifm7")
+
+[node name="Pistol_Button" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.55, 0.25)
+script = ExtResource("1_k06oq")
+prompt = "Pistol 100 Gold Eggs"
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Pistol_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
+mesh = SubResource("CylinderMesh_gdep2")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Pistol_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000729978, -1.49012e-08, -0.000599563)
+mesh = SubResource("BoxMesh_ka106")
+skeleton = NodePath("../..")
+
+[node name="CollisionShapeButton" type="CollisionShape3D" parent="Pistol_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+shape = SubResource("BoxShape3D_fifm7")
+
+[node name="Rail_Gun_Button" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, 0.25)
+script = ExtResource("1_k06oq")
+prompt = "Rail Gun 400 Gold Eggs"
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Rail_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
+mesh = SubResource("CylinderMesh_gdep2")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Rail_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000729978, -1.49012e-08, -0.000599563)
+mesh = SubResource("BoxMesh_ka106")
+skeleton = NodePath("../..")
+
+[node name="CollisionShapeButton" type="CollisionShape3D" parent="Rail_Gun_Button"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+shape = SubResource("BoxShape3D_fifm7")
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.75, -0.25)
+mesh = ExtResource("3_eig0u")
+
+[node name="pistol" parent="." instance=ExtResource("4_b4kya")]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -1, 0.75, -0.25)
+
+[node name="railme" parent="." instance=ExtResource("5_drjud")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 1, 0.540764, -0.25)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nd0kf")
+}
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_vckn1")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4c2uh")
+
+[connection signal="interacted" from="Water_Gun_Button" to="." method="_on_water_gun_button_interacted"]
+[connection signal="interacted" from="Water_Gun_Button" to="Water_Gun_Button" method="_on_interacted"]
+[connection signal="interacted" from="Pistol_Button" to="." method="_on_pistol_button_interacted"]
+[connection signal="interacted" from="Rail_Gun_Button" to="." method="_on_rail_gun_button_interacted"]

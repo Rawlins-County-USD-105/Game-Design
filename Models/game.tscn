@@ -1,6 +1,6 @@
-[gd_scene load_steps=27 format=3 uid="uid://di4xi2t85jxvc"]
+[gd_scene load_steps=28 format=3 uid="uid://di4xi2t85jxvc"]
 
-[ext_resource type="Texture2D" uid="uid://c2jxayanhlac4" path="res://Materials/696.jpg" id="1_2qhk6"]
+[ext_resource type="Texture2D" uid="uid://dc3t257wc062k" path="res://Materials/696.jpg" id="1_2qhk6"]
 [ext_resource type="Script" path="res://Models/game.gd" id="1_qvolv"]
 [ext_resource type="PackedScene" uid="uid://42j8cypn7jeb" path="res://Models/Windmill22.tscn" id="2_kyljt"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="4_18yuq"]
@@ -16,7 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://6ggncveenke8" path="res://Scenes/shop_button.tscn" id="16_0jonq"]
 [ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="16_mhu1i"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="18_eupc6"]
-[ext_resource type="AudioStream" uid="uid://c44fcus02mvwk" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
+[ext_resource type="AudioStream" uid="uid://bvxf5wu4lqtbx" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="18_h8hr5"]
+[ext_resource type="PackedScene" path="res://Scenes/weapon_store.tscn" id="18_wj7yy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p33qv"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -253,7 +254,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81343, 0.510929, -6.24079)
 [node name="SpawnZones" type="Node3D" parent="."]
 
 [node name="spawn1" type="Area3D" parent="SpawnZones"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.54803, -27.0989)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9459, 1.6578, -27.0989)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SpawnZones/spawn1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.467958, -0.491452, 0)
@@ -298,3 +299,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.794648, 1.78865, -3.36364)
 stream = ExtResource("18_h8hr5")
 volume_db = 80.0
 max_db = 6.0
+
+[node name="WeaponStore" parent="." instance=ExtResource("18_wj7yy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.67131, 0.510929, 0.386709)
