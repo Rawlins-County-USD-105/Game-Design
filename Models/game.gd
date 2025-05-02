@@ -34,7 +34,7 @@ func _process(delta: float) -> void:
 	if player:
 		if player.spawning:
 			if spawn_timer:
-				if Game.enemies_spawned <roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
+				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
 					spawning()
 		else:
 			pass
@@ -64,51 +64,45 @@ func spawning():
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
-		if not Game.barrels % 5 == 0 or Game.barrels == 0:
-			
-			if spawning and round >= 10 and Gain.bickens <= 2:
-				var rand_ene = randi_range(1,10)
-				if rand_ene == 10:
-					spawn_enemy = enemies.find_key(2)
-					Gain.bickens += 1
-					
-					fog = true
-					#$Horror.play()
+			if not Game.barrels % 5 == 0 or Game.barrels == 0:
+				
+				if spawning and round >= 10 and Gain.bickens <= 2:
+					var rand_ene = randi_range(1,10)
+					if rand_ene == 10:
+						spawn_enemy = enemies.find_key(2)
+						Gain.bickens += 1
+						
+						fog = true
+						#$Horror.play()
+					else:
+						spawn_enemy = enemies.find_key(1)
 				else:
 					spawn_enemy = enemies.find_key(1)
+					
+					if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
+						Game.enemies_spawned += 1
+						Game.total_enemies += 1
+						var e_inst = spawn_enemy.instantiate()
+						e_inst.player = $player
+						e_inst.drill = oil_drill.hitbox
+						e_inst.position = x.global_position
+						group_enemy.add_child(e_inst)
+						
+					else:
+						pass
 			else:
-				spawn_enemy = enemies.find_key(1)
-				
-				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
+				spawn_enemy = enemies.find_key(2)
+				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
-					spawner.position = x.global_position
-					spawner.rotate_y(deg_to_rad(random_number))
 					var e_inst = spawn_enemy.instantiate()
 					e_inst.player = $player
 					e_inst.drill = oil_drill.hitbox
-					e_inst.position = spawn_point.global_position
-					spawn_point.global_position.y = spawner.global_position.y
+					e_inst.position = x.global_position
 					group_enemy.add_child(e_inst)
-					
-				else:
-					pass
-		else:
-			spawn_enemy = enemies.find_key(2)
-			if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
-				Game.enemies_spawned += 1
-				Game.total_enemies += 1
-				spawner.position = x.global_position
-				spawner.rotate_y(deg_to_rad(random_number))
-				var e_inst = spawn_enemy.instantiate()
-				e_inst.player = $player
-				e_inst.drill = oil_drill.hitbox
-				e_inst.position = spawn_point.global_position
-				spawn_point.global_position.y = spawner.global_position.y
-				group_enemy.add_child(e_inst)
-				Gain.bickens += 1
-				fog = true
-				$Horror.play()
+					Gain.bickens += 1
+					fog = true
+					$Horror.play()
 				
 func pain(barrel):
 	barrels = barrel 

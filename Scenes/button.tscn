@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://7voy3j556oo1"]
+[gd_scene load_steps=5 format=3 uid="uid://bp1awtc105l8m"]
 
 [ext_resource type="Script" path="res://Scripts/button.gd" id="1_hlbck"]
-[ext_resource type="PackedScene" path="res://skill_tree.tscn" id="2_atwey"]
+[ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="2_atwey"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_x6rli"]
 
