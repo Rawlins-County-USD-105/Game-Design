@@ -1,7 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://byw34yuomqhkf"]
+[gd_scene load_steps=32 format=3 uid="uid://bl7mvxfy5tv70"]
 
 [ext_resource type="Script" path="res://Models/game.gd" id="1_3wbxw"]
-[ext_resource type="PackedScene" uid="uid://b3oogutr4h0vt" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
+[ext_resource type="PackedScene" uid="uid://cwocl8bvvpa4g" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_454w2"]
 [ext_resource type="PackedScene" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="5_1ef03"]
@@ -11,12 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="7_vkutm"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="8_ysac1"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="9_e3i8n"]
-[ext_resource type="AudioStream" uid="uid://be52pv5phd5ks" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
+[ext_resource type="AudioStream" uid="uid://bvxf5wu4lqtbx" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
 [ext_resource type="PackedScene" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
 [ext_resource type="PackedScene" path="res://Models/Walltree.tscn" id="14_0dqg4"]
 [ext_resource type="PackedScene" path="res://Models/TREEE.tscn" id="15_2lhe1"]
 [ext_resource type="PackedScene" path="res://Models/TREE.tscn" id="16_8af2c"]
 [ext_resource type="PackedScene" path="res://Models/small tree.tscn" id="17_lhy1e"]
+[ext_resource type="PackedScene" uid="uid://dat6yp4603kqd" path="res://Scenes/weapon_store.tscn" id="18_4u80y"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sekrs"]
 sky_top_color = Color(0.316991, 0.398273, 0.837853, 1)
@@ -389,5 +390,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -5)
 [node name="SpawnTimer" type="Timer" parent="Spawner"]
 one_shot = true
 autostart = true
+
+[node name="WeaponStore" parent="." instance=ExtResource("18_4u80y")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.44822, 0.0740156, 11.6941)
 
 [editable path="NavigationRegion3D/NavigationRegion3D/Map"]

@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/weapon_store.gd" id="1_q22pe"]
 [ext_resource type="ArrayMesh" uid="uid://cvx6o4o0ds5wg" path="res://Sprites/Watergun/model.obj" id="3_eig0u"]
 [ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="4_b4kya"]
-[ext_resource type="PackedScene" uid="uid://ci4c2mprdlhk" path="res://Sounds/railme.blend" id="5_drjud"]
+[ext_resource type="PackedScene" uid="uid://cw21hw0n6cltk" path="res://Sounds/railme.blend" id="5_drjud"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7eql"]
 albedo_color = Color(0.00728916, 0, 0.460533, 1)
