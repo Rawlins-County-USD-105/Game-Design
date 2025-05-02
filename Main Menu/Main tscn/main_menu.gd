@@ -18,7 +18,7 @@ extends Control
 	
 	
 func _on_timer_timeout() -> void:
-	get_tree().change_scene_to_file("res://Models/game.tscn")
+	get_tree().change_scene_to_file("res://Map.tscn")
 	
 	
 
@@ -29,8 +29,8 @@ func _on_button_4_pressed() -> void:
 
 
 
-	
+
 
 
 func _on_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://Models/game.tscn")
+	get_tree().change_scene_to_file("res://Map.tscn")

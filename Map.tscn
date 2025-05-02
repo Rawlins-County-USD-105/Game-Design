@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bl7mvxfy5tv70"]
+[gd_scene load_steps=32 format=3 uid="uid://dkvimp437hw3i"]
 
 [ext_resource type="Script" path="res://Models/game.gd" id="1_3wbxw"]
 [ext_resource type="PackedScene" uid="uid://cwocl8bvvpa4g" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
