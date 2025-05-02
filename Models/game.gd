@@ -15,6 +15,8 @@ extends Node3D
 
 @onready var spawn_point: Marker3D = $"Spawner/Spawn Point"
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
+@onready var spot_light_3d: SpotLight3D = $player/SpotLight3D
+
 var spawn_enemy = null
 var can_spawn = false
 var total_enemies = 0
@@ -32,23 +34,24 @@ func _process(delta: float) -> void:
 	if player:
 		if player.spawning:
 			if spawn_timer:
-				if Game.enemies_spawned <roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
+				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4)  && spawn_timer.is_stopped():
 					spawning()
 		else:
 			pass
 	
-	if fog:
-		Gain.fog_density += 0.02 * delta
-		
-		world_environment.environment.volumetric_fog_density = Gain.fog_density
-		
-		if world_environment.environment.volumetric_fog_density > 0.3:
-			fog = false
+	#if fog:
+		#Gain.fog_density += 0.02 * delta
+		#
+		#world_environment.environment.volumetric_fog_density = Gain.fog_density
+		#
+		#if world_environment.environment.volumetric_fog_density > 0.3:
+			#fog = false
+			#spot_light_3d.show()
 	
 	if Gain.bickens == 0:
 		if world_environment:
 			if world_environment.environment.volumetric_fog_density > 0:
-				
+				spot_light_3d.hide()
 				Gain.fog_density -= 0.1 * delta
 				
 				world_environment.environment.volumetric_fog_density = Gain.fog_density
@@ -61,56 +64,51 @@ func spawning():
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
-		if not Game.barrels % 5 == 0 or Game.barrels == 0:
-			
-			if spawning and round >= 10 and Gain.bickens <= 2:
-				var rand_ene = randi_range(1,10)
-				if rand_ene == 10:
-					spawn_enemy = enemies.find_key(2)
-					Gain.bickens += 1
-					
-					fog = true
-					$Horror.play()
+			if not Game.barrels % 5 == 0 or Game.barrels == 0:
+				
+				if spawning and round >= 10 and Gain.bickens <= 2:
+					var rand_ene = randi_range(1,10)
+					if rand_ene == 10:
+						spawn_enemy = enemies.find_key(2)
+						Gain.bickens += 1
+						
+						fog = true
+						#$Horror.play()
+					else:
+						spawn_enemy = enemies.find_key(1)
 				else:
 					spawn_enemy = enemies.find_key(1)
+					
+					if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
+						Game.enemies_spawned += 1
+						Game.total_enemies += 1
+						var e_inst = spawn_enemy.instantiate()
+						e_inst.player = $player
+						e_inst.drill = oil_drill.hitbox
+						e_inst.position = x.global_position
+						group_enemy.add_child(e_inst)
+						
+					else:
+						pass
 			else:
-				spawn_enemy = enemies.find_key(1)
-				
-				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
+				spawn_enemy = enemies.find_key(2)
+				if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
 					Game.enemies_spawned += 1
 					Game.total_enemies += 1
-					spawner.position = x.global_position
-					spawner.rotate_y(deg_to_rad(random_number))
-					spawn_point.global_position.z = spawner.global_position.z
 					var e_inst = spawn_enemy.instantiate()
 					e_inst.player = $player
 					e_inst.drill = oil_drill.hitbox
-					e_inst.position = spawn_point.global_position
+					e_inst.position = x.global_position
 					group_enemy.add_child(e_inst)
-					
-				else:
-					pass
-		else:
-			spawn_enemy = enemies.find_key(2)
-			if Game.enemies_spawned < 5 && Game.total_enemies < 30000:
-				Game.enemies_spawned += 1
-				Game.total_enemies += 1
-				spawner.position = x.global_position
-				spawner.rotate_y(deg_to_rad(random_number))
-				spawn_point.global_position.z = spawner.global_position.z
-				var e_inst = spawn_enemy.instantiate()
-				e_inst.player = $player
-				e_inst.drill = oil_drill.hitbox
-				e_inst.position = spawn_point.global_position
-				group_enemy.add_child(e_inst)
-				Gain.bickens += 1
-				fog = true
-				$Horror.play()
+					Gain.bickens += 1
+					fog = true
+					$Horror.play()
 				
 func pain(barrel):
 	barrels = barrel 
 	return barrel
 	
+
 func minus_bicken():
 
 	Gain.bickens -= 1

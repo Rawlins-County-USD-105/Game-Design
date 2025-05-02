@@ -1,9 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://bh4y61debteju"]
-
-[ext_resource type="Texture2D" uid="uid://cubkjqbadkay2" path="res://Materials/free-environment-props-3d-low-poly-models/Texture/Texture.png" id="1_djn23"]
+[gd_scene load_steps=6 format=4 uid="uid://bh4y61debteju"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45ayd"]
-albedo_texture = ExtResource("1_djn23")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojydi"]
 resource_name = "lambert37.049"
