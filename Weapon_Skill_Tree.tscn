@@ -1,0 +1,392 @@
+[gd_scene load_steps=6 format=3 uid="uid://mkf5c51iukj7"]
+
+[ext_resource type="PackedScene" uid="uid://bjvqwbovpiprm" path="res://Sounds/skill_Icon.tscn" id="1_3b8l8"]
+[ext_resource type="Script" path="res://weapon_skill_tree.gd" id="1_8e3wi"]
+[ext_resource type="PackedScene" uid="uid://c8c8fag646ads" path="res://Fire Rate.tscn" id="2_gur35"]
+[ext_resource type="PackedScene" uid="uid://cn4oomfihrjth" path="res://Damage Mutiplier.tscn" id="2_u0xmw"]
+[ext_resource type="PackedScene" uid="uid://ct2rxagkkukny" path="res://Ammo Cost.tscn" id="4_kl4a3"]
+
+[node name="WeaponSkillTree" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8e3wi")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 3.002
+anchor_bottom = 3.014
+offset_left = 1.0
+offset_top = -0.333333
+offset_right = -2305.3
+offset_bottom = -1305.41
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Shovel" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 486.0
+offset_right = 282.0
+offset_bottom = 526.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="Shovel" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="Shovel/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="FireRate" parent="Shovel/SkillButton/SkillButton3" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="SkillButton4" parent="Shovel/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="FireRate" parent="Shovel/SkillButton/SkillButton4" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="Ammo" parent="Shovel/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="SkillButton2" parent="Shovel" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="Shovel/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Damage" parent="Shovel/SkillButton2/SkillButton" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="SkillButton5" parent="Shovel/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="Shovel/SkillButton2/SkillButton5" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="Ammo" parent="Shovel/SkillButton2" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="Damage" parent="Shovel" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="Pistol" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 486.0
+offset_right = 901.0
+offset_bottom = 526.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="Pistol" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="Pistol/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="FireRate" parent="Pistol/SkillButton/SkillButton3" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="SkillButton4" parent="Pistol/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="Pistol/SkillButton/SkillButton4" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="Damage" parent="Pistol/SkillButton" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="SkillButton2" parent="Pistol" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="Pistol/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Damage" parent="Pistol/SkillButton2/SkillButton" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="SkillButton5" parent="Pistol/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="Pistol/SkillButton2/SkillButton5" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="Ammo" parent="Pistol/SkillButton2" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="FireRate" parent="Pistol" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="RailGun" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 153.0
+offset_right = 901.0
+offset_bottom = 193.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="RailGun" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="RailGun/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="RailGun/SkillButton/SkillButton3" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="SkillButton4" parent="RailGun/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Damage" parent="RailGun/SkillButton/SkillButton4" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="FireRate" parent="RailGun/SkillButton" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="SkillButton2" parent="RailGun" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="RailGun/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="RailGun/SkillButton2/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="SkillButton5" parent="RailGun/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="FireRate" parent="RailGun/SkillButton2/SkillButton5" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="Damage" parent="RailGun/SkillButton2" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="Ammo" parent="RailGun" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="WaterGun" parent="." instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 153.0
+offset_right = 282.0
+offset_bottom = 193.0
+scale = Vector2(1, 1)
+
+[node name="SkillButton" parent="WaterGun" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -47.0
+offset_right = 114.0
+offset_bottom = -7.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton3" parent="WaterGun/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 66.5
+offset_top = -55.0
+offset_right = 106.5
+offset_bottom = -15.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="WaterGun/SkillButton/SkillButton3" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="SkillButton4" parent="WaterGun/SkillButton" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -23.5
+offset_top = -57.0
+offset_right = 16.5
+offset_bottom = -17.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="FireRate" parent="WaterGun/SkillButton/SkillButton4" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="Damage" parent="WaterGun/SkillButton" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="SkillButton2" parent="WaterGun" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -74.0
+offset_top = -35.0
+offset_right = -34.0
+offset_bottom = 5.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="SkillButton" parent="WaterGun/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -65.0
+offset_right = -22.0
+offset_bottom = -25.0
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Ammo" parent="WaterGun/SkillButton2/SkillButton" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="SkillButton5" parent="WaterGun/SkillButton2" instance=ExtResource("1_3b8l8")]
+layout_mode = 0
+offset_left = 23.0
+offset_top = -67.5
+offset_right = 63.0
+offset_bottom = -27.5
+scale = Vector2(1, 1)
+disabled = true
+
+[node name="Damage" parent="WaterGun/SkillButton2/SkillButton5" instance=ExtResource("2_u0xmw")]
+layout_mode = 0
+
+[node name="FireRate" parent="WaterGun/SkillButton2" instance=ExtResource("2_gur35")]
+layout_mode = 0
+
+[node name="Ammo" parent="WaterGun" instance=ExtResource("4_kl4a3")]
+layout_mode = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 227.0
+offset_right = 370.0
+offset_bottom = 250.0
+text = "Water Gun"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 549.0
+offset_right = 393.0
+offset_bottom = 572.0
+text = "Shovel"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 556.0
+offset_right = 1003.0
+offset_bottom = 579.0
+text = "Pistol"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 223.0
+offset_right = 1002.0
+offset_bottom = 246.0
+text = "Rail Gun"

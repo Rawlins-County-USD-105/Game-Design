@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main Menu/Input Map Page/input_settings.gd" id="1_a5yhr"]
 [ext_resource type="PackedScene" uid="uid://db1mhn4l16cfe" path="res://Main Menu/Input Map Page/Scenes/input_button.tscn" id="1_yb50g"]
-[ext_resource type="Texture2D" uid="uid://b52t7m5eqpd1v" path="res://Main Menu/Assets/Backdrops/green popup bg.png" id="3_c7rkw"]
+[ext_resource type="Texture2D" uid="uid://bxpf53j7pg6ww" path="res://Main Menu/Assets/Background.png" id="3_krmhd"]
 
 [sub_resource type="SystemFont" id="SystemFont_g81qn"]
 font_names = PackedStringArray("Impact")
@@ -132,7 +132,7 @@ autoplay = "Open Game animation"
 z_index = -1
 position = Vector2(569.5, 319)
 scale = Vector2(0.983854, 1.15741)
-texture = ExtResource("3_c7rkw")
+texture = ExtResource("3_krmhd")
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0

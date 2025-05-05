@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://crttj51kxufbp"]
+[gd_scene load_steps=3 format=3 uid="uid://bjvqwbovpiprm"]
 
 [ext_resource type="Texture2D" uid="uid://hhfrheg1cygg" path="res://Models/icon.svg" id="1_vb0h5"]
 [ext_resource type="Script" path="res://Sounds/skill_button.gd" id="2_6fg5i"]
@@ -35,7 +35,8 @@ vertical_alignment = 1
 
 [node name="Line2D" type="Line2D" parent="."]
 top_level = true
+light_mask = 2
+visibility_layer = 2
 width = 3.0
-default_color = Color(0.310617, 0.310617, 0.310617, 1)
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -4,9 +4,6 @@ var max_water = 100
 var Water = max_water
 var bickens = 0
 var fog_density = 0.0
-var water_gun = false
-var pistol_gun = false
-var rail_gun = false
 
 func Gain_Gold(Gold_Gain):
 	Gold += Gold_Gain

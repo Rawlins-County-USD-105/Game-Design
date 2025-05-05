@@ -7,11 +7,13 @@ extends Interactable
 @onready var gpu_particles_3d: GPUParticles3D = $"../GPUParticles3D"
 @onready var health_bar_sprite: Node3D = $"../Health"
 @onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
-var round = 0
+@onready var weapon_skill_tree: Control = $WeaponSkillTree
+
+
+
 var oil = 0
-var max_oil = 500
+var max_oil = 100
 var player = null
-var barrel = 0
 
 func _ready() -> void:
 	oil_bar.hide()
@@ -21,8 +23,13 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	Game.oil(barrel, round)
-	Game.pain(barrel)
+	if Game.barrels == 0:
+		barrels.text = ""
+	elif Game.barrels > 0:
+		barrels.text = str(Game.barrels)
+	else:
+		pass
+	
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 
@@ -43,9 +50,8 @@ func get_oil():
 	
 	if oil_bar.value == oil_bar.max_value:
 		begin_drill.stop()
-		barrel += 1
-		round += 1
-		barrels.text = str(barrel)
+		Game.barrels += 1
+		barrels.text = str(Game.barrels)
 		player.spawning = false
 		await get_tree().create_timer(3).timeout
 		oil = 0
@@ -61,3 +67,6 @@ func _on_timer_timeout() -> void:
 	else:
 		animation_player_drill.stop()
 		gpu_particles_3d.emitting = false
+
+
+	

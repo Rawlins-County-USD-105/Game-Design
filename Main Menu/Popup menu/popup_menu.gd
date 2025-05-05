@@ -4,12 +4,11 @@ extends Node2D
 
 
 @onready var window: Node2D = $"."
-
 @onready var buttonclose: Button = $Sprite2D/buttonclose
 @onready var input_settings: Control = $InputSettings
 @onready var skill_tree: Control = $SkillTree
 
-
+var is_visible = false
 var windowv = false
 var Level = 0
 
@@ -27,17 +26,19 @@ func _process(delta: float) -> void:
 		Level = 1
 		animation_player.play("ESCAPECLOSE")
 		print("Popup.visible")
+		is_visible = true
+		
 		
 	elif window.visible == true and Level == 1 and Input.is_action_just_pressed("Open popup"):
 		window.visible = false
 		Level = 0
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		print("Popup.disapear")
-	
+		is_visible = false
 	if input_settings.visible == true and Level == 2 and Input.is_action_just_pressed("Open popup"):
 		input_settings.visible = false
 		Level = 1
-
+		is_visible = false
 		print("Input.settings.disapear")
 
 func _on_button_pressed() -> void:
@@ -56,6 +57,7 @@ func _on_button_2_pressed() -> void:
 	
 	Level = 2
 	print("Input.settings.visible")
+	is_visible = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 

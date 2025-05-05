@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn4oomfihrjth"]
+
+[ext_resource type="Script" path="res://texture_rect.gd" id="1_cp4mc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uxfw6"]
+font_size = 8
+
+[node name="TextureRect" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cp4mc")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "Damage 
+Multiplier"
+label_settings = SubResource("LabelSettings_uxfw6")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
