@@ -7446,49 +7446,6 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_724cx")
 value = 35.0
 show_percentage = false
 
-[node name="Equiped Gun" type="Control" parent="neck/Camera/TextureRect"]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="TextureRect" type="TextureRect" parent="neck/Camera/TextureRect/Equiped Gun"]
-z_index = 5
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 189.0
-offset_top = 87.0
-offset_right = 439.0
-offset_bottom = 187.0
-grow_horizontal = 2
-grow_vertical = 2
-stretch_mode = 5
-flip_h = true
-
-[node name="ColorRect" type="ColorRect" parent="neck/Camera/TextureRect/Equiped Gun/TextureRect"]
-z_index = -2
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -3.0
-offset_top = -2.0
-offset_right = 1.0
-offset_bottom = 2.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-color = Color(0.0745098, 0.0745098, 0.0745098, 0.627451)
-
 [node name="Eggs_counter" type="Label" parent="neck/Camera/TextureRect"]
 layout_mode = 1
 anchors_preset = 14

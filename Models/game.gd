@@ -44,6 +44,7 @@ func _process(delta: float) -> void:
 		
 		if world_environment.environment.volumetric_fog_density > 0.3:
 			fog = false
+			spot_light_3d.show()
 	
 	if Gain.bickens == 0:
 		if world_environment:
