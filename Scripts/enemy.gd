@@ -31,7 +31,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func move(_delta, speed, HP):
-	print(self.global_position)
+
 	passes += 1
 	if passes < 2:
 		Health = HP
