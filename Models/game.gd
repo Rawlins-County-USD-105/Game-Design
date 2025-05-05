@@ -39,14 +39,14 @@ func _process(delta: float) -> void:
 		else:
 			pass
 	
-	#if fog:
-		#Gain.fog_density += 0.02 * delta
-		#
-		#world_environment.environment.volumetric_fog_density = Gain.fog_density
-		#
-		#if world_environment.environment.volumetric_fog_density > 0.3:
-			#fog = false
-			#spot_light_3d.show()
+	if fog:
+		Gain.fog_density += 0.02 * delta
+		
+		world_environment.environment.volumetric_fog_density = Gain.fog_density
+		
+		if world_environment.environment.volumetric_fog_density > 0.3:
+			fog = false
+			spot_light_3d.show()
 	
 	if Gain.bickens == 0:
 		if world_environment:

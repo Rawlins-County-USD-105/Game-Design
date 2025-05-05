@@ -1,9 +1,9 @@
-[gd_scene load_steps=32 format=3 uid="uid://dkvimp437hw3i"]
+[gd_scene load_steps=32 format=3 uid="uid://bl7mvxfy5tv70"]
 
 [ext_resource type="Script" path="res://Models/game.gd" id="1_3wbxw"]
-[ext_resource type="PackedScene" uid="uid://cwocl8bvvpa4g" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
+[ext_resource type="PackedScene" uid="uid://b5e4rtwn68uer" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_454w2"]
-[ext_resource type="PackedScene" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
+[ext_resource type="PackedScene" uid="uid://4dfgl5ufooye" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="5_1ef03"]
 [ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="5_3koh7"]
 [ext_resource type="PackedScene" uid="uid://tg33iobykwrr" path="res://Scenes/oil_drill.tscn" id="5_7k5e4"]
@@ -11,12 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="7_vkutm"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="8_ysac1"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="9_e3i8n"]
-[ext_resource type="AudioStream" uid="uid://bvxf5wu4lqtbx" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
-[ext_resource type="PackedScene" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
-[ext_resource type="PackedScene" path="res://Models/Walltree.tscn" id="14_0dqg4"]
-[ext_resource type="PackedScene" path="res://Models/TREEE.tscn" id="15_2lhe1"]
-[ext_resource type="PackedScene" path="res://Models/TREE.tscn" id="16_8af2c"]
-[ext_resource type="PackedScene" path="res://Models/small tree.tscn" id="17_lhy1e"]
+[ext_resource type="AudioStream" uid="uid://bb8o5qihxx7gy" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
+[ext_resource type="PackedScene" uid="uid://dc85b8q7qudb1" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
+[ext_resource type="PackedScene" uid="uid://dfi5knw5ep2ux" path="res://Models/Walltree.tscn" id="14_0dqg4"]
+[ext_resource type="PackedScene" uid="uid://bo8eusa5lejtl" path="res://Models/TREEE.tscn" id="15_2lhe1"]
+[ext_resource type="PackedScene" uid="uid://di370ku7cuy1" path="res://Models/TREE.tscn" id="16_8af2c"]
+[ext_resource type="PackedScene" uid="uid://bov327nwtocg6" path="res://Models/small tree.tscn" id="17_lhy1e"]
 [ext_resource type="PackedScene" uid="uid://dat6yp4603kqd" path="res://Scenes/weapon_store.tscn" id="18_4u80y"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sekrs"]
@@ -392,6 +392,6 @@ one_shot = true
 autostart = true
 
 [node name="WeaponStore" parent="." instance=ExtResource("18_4u80y")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.44822, 0.0740156, 11.6941)
+transform = Transform3D(-0.965331, 0, -0.261027, 0, 1, 0, 0.261027, 0, -0.965331, 7.80727, 0.169833, 29.8814)
 
 [editable path="NavigationRegion3D/NavigationRegion3D/Map"]
