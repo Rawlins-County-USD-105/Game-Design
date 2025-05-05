@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=4 uid="uid://ccexpy6hlaehv"]
 
 [ext_resource type="Script" path="res://enemy/chicken.gd" id="1_p278j"]
-[ext_resource type="AudioStream" uid="uid://kykjg013iqky" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_qhnfi"]
-[ext_resource type="AudioStream" uid="uid://bqlyeaijymunm" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_t8g63"]
-[ext_resource type="AudioStream" uid="uid://b1n40oy8nsdbm" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_3n3tf"]
-[ext_resource type="ArrayMesh" uid="uid://c2h470yym7yod" path="res://enemy/erikfeather.obj" id="5_1wifc"]
+[ext_resource type="AudioStream" uid="uid://c1sghltvoccpb" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_qhnfi"]
+[ext_resource type="AudioStream" uid="uid://by8p5gcu1xt2l" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_t8g63"]
+[ext_resource type="AudioStream" uid="uid://dhqjefo0bh1js" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_3n3tf"]
+[ext_resource type="ArrayMesh" uid="uid://cmp145hdtawd8" path="res://enemy/erikfeather.obj" id="5_1wifc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"
