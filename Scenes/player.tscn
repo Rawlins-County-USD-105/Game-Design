@@ -8,14 +8,14 @@
 [ext_resource type="Texture2D" uid="uid://c1t2otov7feid" path="res://textures/vanguard_specular.png" id="3_xdket"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
 [ext_resource type="Texture2D" uid="uid://d1h7c552ic15q" path="res://Sprites/egg2.png" id="5_7dt1v"]
-[ext_resource type="PackedScene" uid="uid://bnwnvvpusfyvq" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
+[ext_resource type="PackedScene" uid="uid://dsrqntvoblehj" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
 [ext_resource type="Texture2D" uid="uid://duwf2ponw8pd" path="res://Sprites/shovel.png" id="7_ftmfv"]
 [ext_resource type="AudioStream" uid="uid://b1wsl6fmqn7rn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="AudioStream" uid="uid://ls186yi5cdrm" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
-[ext_resource type="PackedScene" uid="uid://mkf5c51iukj7" path="res://Weapon_Skill_Tree.tscn" id="16_uerie"]
+[ext_resource type="PackedScene" uid="uid://bx2nossr8xd34" path="res://Weapon_Skill_Tree.tscn" id="16_uerie"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
@@ -4562,8 +4562,6 @@ slide_on_ceiling = false
 floor_max_angle = 1.0472
 script = ExtResource("1_1qajl")
 
-[node name="SkillTree" parent="." instance=ExtResource("2_rgj8k")]
-
 [node name="characteranimated" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
@@ -7518,5 +7516,7 @@ volume_db = 80.0
 max_db = 6.0
 
 [node name="WeaponSkillTree" parent="." instance=ExtResource("16_uerie")]
+
+[node name="SkillTree" parent="." instance=ExtResource("2_rgj8k")]
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]

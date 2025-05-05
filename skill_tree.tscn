@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://bjvqwbovpiprm" path="res://Sounds/skill_Icon.tscn" id="1_86peu"]
 [ext_resource type="Script" path="res://skill_tree.gd" id="1_bvij6"]
-[ext_resource type="PackedScene" uid="uid://df4y6cc77a5xe" path="res://HealthLabel.tscn" id="3_6gu52"]
-[ext_resource type="PackedScene" uid="uid://ddpn62dywqcmg" path="res://CollectorUpgrades.tscn" id="4_dve0k"]
-[ext_resource type="PackedScene" uid="uid://dgkt5kwsqv5xf" path="res://SpeedLabel.tscn" id="5_2htp3"]
+[ext_resource type="PackedScene" uid="uid://c0f8jdock02n3" path="res://HealthLabel.tscn" id="3_6gu52"]
+[ext_resource type="PackedScene" uid="uid://bslj274k0p4n2" path="res://CollectorUpgrades.tscn" id="4_dve0k"]
+[ext_resource type="PackedScene" uid="uid://711j6rypdv65" path="res://SpeedLabel.tscn" id="5_2htp3"]
 
 [node name="SkillTree" type="Control"]
 z_index = 3

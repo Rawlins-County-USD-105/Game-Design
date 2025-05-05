@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://mkf5c51iukj7"]
+[gd_scene load_steps=6 format=3 uid="uid://bx2nossr8xd34"]
 
 [ext_resource type="PackedScene" uid="uid://bjvqwbovpiprm" path="res://Sounds/skill_Icon.tscn" id="1_3b8l8"]
 [ext_resource type="Script" path="res://weapon_skill_tree.gd" id="1_8e3wi"]
-[ext_resource type="PackedScene" uid="uid://c8c8fag646ads" path="res://Fire Rate.tscn" id="2_gur35"]
-[ext_resource type="PackedScene" uid="uid://cn4oomfihrjth" path="res://Damage Mutiplier.tscn" id="2_u0xmw"]
-[ext_resource type="PackedScene" uid="uid://ct2rxagkkukny" path="res://Ammo Cost.tscn" id="4_kl4a3"]
+[ext_resource type="PackedScene" uid="uid://jpthqnkpys2u" path="res://Fire Rate.tscn" id="2_gur35"]
+[ext_resource type="PackedScene" uid="uid://b7y7gmvpc2m3p" path="res://Damage Mutiplier.tscn" id="2_u0xmw"]
+[ext_resource type="PackedScene" uid="uid://bitbp4x41iv3" path="res://Ammo Cost.tscn" id="4_kl4a3"]
 
 [node name="WeaponSkillTree" type="Control"]
 layout_mode = 3
