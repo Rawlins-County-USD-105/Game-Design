@@ -392,8 +392,6 @@ angle_max = 1.07288e-05
 direction = Vector3(0, 1, 0)
 spread = 10.0
 initial_velocity_max = 10.0
-scale_min = 0.02
-scale_max = 0.15
 
 [node name="CharacterBody3D2" type="CharacterBody3D" node_paths=PackedStringArray("mesh", "hitbox", "nav_agent", "animation") groups=["Enemy", "Small Enemy"]]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)

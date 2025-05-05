@@ -11,9 +11,8 @@ extends Interactable
 
 
 
-var round = 0
 var oil = 0
-var max_oil = 500
+var max_oil = 100
 var player = null
 
 func _ready() -> void:
@@ -31,8 +30,6 @@ func _process(delta: float) -> void:
 	else:
 		pass
 	
-	Game.oil(barrel, round)
-	Game.pain(barrel)
 	if player:
 		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
 
@@ -53,9 +50,8 @@ func get_oil():
 	
 	if oil_bar.value == oil_bar.max_value:
 		begin_drill.stop()
-		barrel += 1
-		round += 1
-		barrels.text = str(barrel)
+		Game.barrels += 1
+		barrels.text = str(Game.barrels)
 		player.spawning = false
 		await get_tree().create_timer(3).timeout
 		oil = 0

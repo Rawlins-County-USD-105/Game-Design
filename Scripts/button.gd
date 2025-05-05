@@ -5,6 +5,6 @@ extends Interactable
 var Water = 100
 #this will play will the button is interacted with
 func _on_interacted(body: Variant) -> void:
-	if Gain.Gold >= 100:
-		Gain.Gain_Water(Water)
-		Gain.Gain_Gold(Water * -1)
+	animation_player.play("press")
+	Gain.Gain_Water(Water)
+	Gain.Gain_Gold(Water)
