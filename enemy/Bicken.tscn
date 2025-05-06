@@ -1,14 +1,14 @@
 [gd_scene load_steps=20 format=4 uid="uid://cy3fcblng4sgf"]
 
 [ext_resource type="Script" path="res://enemy/bicken.gd" id="1_7mspb"]
-[ext_resource type="AudioStream" uid="uid://b6r2bwxjb4oxp" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
-[ext_resource type="AudioStream" uid="uid://d1hmhjmkdfgi0" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_an5tu"]
-[ext_resource type="AudioStream" uid="uid://dqbylwji85ug0" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_xynr6"]
-[ext_resource type="AudioStream" uid="uid://db4rsy6q8vndv" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_1.wav" id="5_fj55k"]
-[ext_resource type="AudioStream" uid="uid://dv6jhouifwd5j" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_2.wav" id="6_1bunx"]
-[ext_resource type="AudioStream" uid="uid://bulvlv2c5qpub" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_3.wav" id="7_ishmw"]
-[ext_resource type="AudioStream" uid="uid://noxsi42iil1w" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_4.wav" id="8_uwr08"]
-[ext_resource type="ArrayMesh" uid="uid://c8y48w0c1vp8p" path="res://enemy/erikfeather.obj" id="9_wbmbj"]
+[ext_resource type="AudioStream" uid="uid://djuqo0i4pc325" path="res://Sounds/Chicken_source_833802/Chicken - 1_01.wav" id="2_78am0"]
+[ext_resource type="AudioStream" uid="uid://dletmmp2ortg8" path="res://Sounds/Chicken_source_833802/Chicken - 2_01.wav" id="3_an5tu"]
+[ext_resource type="AudioStream" uid="uid://c1gjbnp1p3d4e" path="res://Sounds/Chicken_source_833802/Chicken - 3_01.wav" id="4_xynr6"]
+[ext_resource type="AudioStream" uid="uid://biemorghes4ei" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_1.wav" id="5_fj55k"]
+[ext_resource type="AudioStream" uid="uid://c4ofahyx220tj" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_2.wav" id="6_1bunx"]
+[ext_resource type="AudioStream" uid="uid://xt2gdoiuccvq" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_3.wav" id="7_ishmw"]
+[ext_resource type="AudioStream" uid="uid://cjmwhmawwury" path="res://Sounds/steps/MA_SFXpecial_BigMonsterSteps_4.wav" id="8_uwr08"]
+[ext_resource type="ArrayMesh" uid="uid://drhgy2h16co6i" path="res://enemy/erikfeather.obj" id="9_wbmbj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1kh6r"]
 resource_name = "Feathers"

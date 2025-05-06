@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://cnyfvcfc75xed" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
 [ext_resource type="Material" uid="uid://s5tyjn5gllg1" path="res://Scenes/oil_drill.tres" id="1_k5jf3"]
-[ext_resource type="ArrayMesh" uid="uid://dyiqu4s1x5cg0" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
 [ext_resource type="Script" path="res://Scenes/drill_rigid_body.gd" id="4_bauwx"]
-[ext_resource type="Texture2D" uid="uid://d1yejh1o3b461" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-[ext_resource type="AudioStream" uid="uid://dx4v5dnswn7br" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
+[ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
+[ext_resource type="AudioStream" uid="uid://peoq5v0iq3ha" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nxqy3"]
 material = ExtResource("1_k5jf3")
