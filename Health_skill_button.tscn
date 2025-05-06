@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjvqwbovpiprm"]
+[gd_scene load_steps=4 format=3 uid="uid://dcr21ciq8gpus"]
 
-[ext_resource type="Script" path="res://Sounds/skill_button.gd" id="2_6fg5i"]
-[ext_resource type="Texture2D" uid="uid://pusbk0oykd17" path="res://Item Icons/oil-pump-jack-pixel-art-260nw-2111301455.webp" id="2_eav7y"]
+[ext_resource type="Texture2D" uid="uid://hhfrheg1cygg" path="res://Models/icon.svg" id="1_0c315"]
+[ext_resource type="Script" path="res://Sounds/skill_button.gd" id="2_t6lw6"]
+[ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="3_nsf0g"]
 
 [node name="SkillButton" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 2)
 toggle_mode = true
+texture_normal = ExtResource("1_0c315")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_6fg5i")
+script = ExtResource("2_t6lw6")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -20,9 +22,8 @@ mouse_filter = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_top = 1.0
 offset_right = 40.0
-offset_bottom = 38.0
+offset_bottom = 40.0
 
 [node name="Line2D" type="Line2D" parent="."]
 top_level = true
@@ -32,10 +33,10 @@ width = 3.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(20, 20)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_eav7y")
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("3_nsf0g")
 region_enabled = true
-region_rect = Rect2(55, 58, 148, 154)
+region_rect = Rect2(6, 6, 45, 45)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
