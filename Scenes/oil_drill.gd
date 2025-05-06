@@ -2,8 +2,7 @@ extends Node3D
 
 var drill_health = 8000
 var max_drill_health = 8000
-
-@onready var hitbox: CollisionShape3D = $Container/RigidBody/Hitbox
+@onready var hitbox: CollisionShape3D = $Container/StaticBody3D/Hitbox
 @onready var healthbar: ProgressBar = $SubViewport/Healthbar
 @onready var damagebar: ProgressBar = $SubViewport/Healthbar/Damagebar
 @onready var damage_bar_timer: Timer = $SubViewport/Healthbar/DamageBarTimer
