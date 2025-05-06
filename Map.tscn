@@ -378,7 +378,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.08953, 2.41745, -33.3296)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21.2701, 1.60873, -33.3806)
 
 [node name="Oil_Drill" parent="NavigationRegion3D/NavigationRegion3D" instance=ExtResource("5_7k5e4")]
-transform = Transform3D(0.749573, -0.000243241, -0.0253052, 0.000229501, 0.75, -0.000411082, 0.0253053, 0.000403104, 0.749573, 8.67065, -0.0226679, 9.72502)
+transform = Transform3D(0.749573, -0.000243241, -0.0253052, 0.000229501, 0.75, -0.000411082, 0.0253053, 0.000403104, 0.749573, 8.67065, 0.255395, 9.72502)
 
 [node name="Button" parent="NavigationRegion3D/NavigationRegion3D" instance=ExtResource("5_3koh7")]
 transform = Transform3D(0.666667, 0, 0, 0, 0.666667, 0, 0, 0, 0.666667, -8.7164, -0.0205892, 14.5851)
