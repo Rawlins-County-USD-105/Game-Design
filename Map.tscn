@@ -112,11 +112,60 @@ navigation_layers = 2
 [node name="Map" parent="NavigationRegion3D/NavigationRegion3D" instance=ExtResource("1_b5s4u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.1136, 0, 0.151108)
 
-[node name="Cube_346" parent="NavigationRegion3D/NavigationRegion3D/Map" index="62"]
+[node name="Maze Corn_001" parent="NavigationRegion3D/NavigationRegion3D/Map" index="3"]
+transform = Transform3D(7.82346e-09, 0, 0.0439323, 0, 0.0564039, 0, -0.043752, 0, 7.85572e-09, 71.5446, 0.842753, -8.57434)
+
+[node name="Soil Maze Corn_002" parent="NavigationRegion3D/NavigationRegion3D/Map" index="4"]
+transform = Transform3D(1.1863e-06, 0, 3.00847, 0, 0.794394, 0, -6.63426, 0, 5.37956e-07, 69.0056, 0.0551854, -13.9424)
+
+[node name="Soil Maze Corn_003" parent="NavigationRegion3D/NavigationRegion3D/Map" index="6"]
+transform = Transform3D(1.18646e-06, 0, 3.00847, 0, 0.797715, 0, -6.63517, 0, 5.37956e-07, 69.0056, 0.0466262, -1.24652)
+
+[node name="Maze Corn_003" parent="NavigationRegion3D/NavigationRegion3D/Map" index="7"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0531016, 0, -0.0439323, 0, 7.85572e-09, 71.5446, 0.748526, 5.1499)
+
+[node name="Soil Maze Corn_006" parent="NavigationRegion3D/NavigationRegion3D/Map" index="9"]
+transform = Transform3D(1.18646e-06, 0, 3.00847, 0, 0.793769, 0, -6.63517, 0, 5.37956e-07, 63.1353, 0.0567961, -14.484)
+
+[node name="Soil Maze Corn_007" parent="NavigationRegion3D/NavigationRegion3D/Map" index="10"]
+transform = Transform3D(1.18646e-06, 0, 3.00847, 0, 0.793769, 0, -6.63517, 0, 5.37956e-07, 63.1353, 0.237892, -1.31327)
+
+[node name="Maze Corn_004" parent="NavigationRegion3D/NavigationRegion3D/Map" index="11"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.6742, 0.648484, 5.1499)
+
+[node name="Maze Corn_005" parent="NavigationRegion3D/NavigationRegion3D/Map" index="12"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.6742, 0.648484, -8.02085)
+
+[node name="Maze Corn_006" parent="NavigationRegion3D/NavigationRegion3D/Map" index="13"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.6742, 0.648484, -8.56211)
+visible = false
+
+[node name="Maze Corn_007" parent="NavigationRegion3D/NavigationRegion3D/Map" index="14"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.6742, 0.648484, 4.60863)
+
+[node name="Maze Corn_008" parent="NavigationRegion3D/NavigationRegion3D/Map" index="15"]
+transform = Transform3D(7.83593e-09, 0, 0.0439323, 0, 0.0559369, 0, -0.0438217, 0, 7.85572e-09, 71.1081, 0.626648, -8.02972)
+
+[node name="Maze Corn_009" parent="NavigationRegion3D/NavigationRegion3D/Map" index="16"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.2077, 0.651339, -8.02085)
+
+[node name="Maze Corn_010" parent="NavigationRegion3D/NavigationRegion3D/Map" index="17"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0550789, 0, -0.0439323, 0, 7.85572e-09, 65.2077, 0.832435, 4.62875)
+
+[node name="Maze Corn_011" parent="NavigationRegion3D/NavigationRegion3D/Map" index="18"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0537862, 0, -0.0439323, 0, 7.85572e-09, 71.1081, 0.671304, 4.64018)
+
+[node name="Cube_346" parent="NavigationRegion3D/NavigationRegion3D/Map" index="61"]
 transform = Transform3D(-0.0627973, 0, -0.733975, 0, 0.541493, 0, 0.321162, 0, -0.143515, 42.5019, 6.31591, -30.9655)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="NavigationRegion3D/NavigationRegion3D/Map/Plane" index="1"]
 navigation_mesh = SubResource("NavigationMesh_7vnm1")
+
+[node name="Maze Corn" parent="NavigationRegion3D/NavigationRegion3D/Map" index="81"]
+transform = Transform3D(7.85572e-09, 0, 0.0439323, 0, 0.0535008, 0, -0.0439323, 0, 7.85572e-09, 71.5446, 0.699427, 4.60863)
+
+[node name="Soil Maze Corn" parent="NavigationRegion3D/NavigationRegion3D/Map" index="82"]
+transform = Transform3D(1.18646e-06, 0, 3.00847, 0, 0.798258, 0, -6.63517, 0, 5.37956e-07, 69.0056, 0.218051, -1.3834)
 
 [node name="Windmill2" parent="NavigationRegion3D/NavigationRegion3D/Map" instance=ExtResource("6_lsmyl")]
 transform = Transform3D(0.481848, 0, 0.507762, 0, 0.7, 0, -0.507762, 0, 0.481848, 40.1019, 3.76462, -3.6561)
