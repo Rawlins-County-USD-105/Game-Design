@@ -26,19 +26,19 @@ func _process(delta: float) -> void:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		Level = 1
 		animation_player.play("ESCAPECLOSE")
-		print("Popup.visible")
+		
 		
 	elif window.visible == true and Level == 1 and Input.is_action_just_pressed("Open popup"):
 		window.visible = false
 		Level = 0
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		print("Popup.disapear")
+		
 	
 	if input_settings.visible == true and Level == 2 and Input.is_action_just_pressed("Open popup"):
 		input_settings.visible = false
 		Level = 1
 
-		print("Input.settings.disapear")
+		
 
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
@@ -55,7 +55,7 @@ func _on_button_2_pressed() -> void:
 	input_settings.visible = true
 	
 	Level = 2
-	print("Input.settings.visible")
+	
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
