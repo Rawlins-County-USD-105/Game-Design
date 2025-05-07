@@ -59,39 +59,39 @@ func _process(delta: float) -> void:
 
 
 func spawning():
-	print(Game.round % 5)
+	print(round % 5)
 	var random_number = randi_range(1,360)
 	var rand = randi_range(1,4)
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
-			if spawning and Game.round >= 10:
-				if Gain.bickens <= 2:
-					var rand_ene = randi_range(1,10)
-					if rand_ene == 10:
-						spawn_enemy = enemies.find_key(2)
-						Gain.bickens += 1
-						fog = true
-						$Horror.play()
+			if spawning and round >= 10:
+				
+					
+					if Gain.bickens <= 2:
+						var rand_ene = randi_range(1,10)
+						if rand_ene == 10:
+							spawn_enemy = enemies.find_key(2)
+							Gain.bickens += 1
+							
+							fog = true
+							#$Horror.play()
+						else:
+							spawn_enemy = enemies.find_key(1)
 					else:
 						spawn_enemy = enemies.find_key(1)
-				else:
-					spawn_enemy = enemies.find_key(1)
 						
-					if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
-						Game.enemies_spawned += 1
-						Game.total_enemies += 1
-						var e_inst = spawn_enemy.instantiate()
-						e_inst.player = $player
-						e_inst.drill = oil_drill.hitbox
-						e_inst.position = x.global_position
-						group_enemy.add_child(e_inst)
+						if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
+							Game.enemies_spawned += 1
+							Game.total_enemies += 1
+							var e_inst = spawn_enemy.instantiate()
+							e_inst.player = $player
+							e_inst.drill = oil_drill.hitbox
+							e_inst.position = x.global_position
+							group_enemy.add_child(e_inst)
 							
-					else:
-						pass
-			elif spawning and Game.round % 5 == 1:
-				pass
-				#print("gbhfdsgnhfgnhjfao")
+						else:
+							pass
 			else:
 				spawn_enemy = enemies.find_key(1)
 				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
@@ -115,6 +115,6 @@ func minus_bicken():
 	Gain.bickens -= 1
 	
 func oil(barrel, rounds):
-	Game.round = rounds
+	round = rounds
 	barrels = barrel
 	
