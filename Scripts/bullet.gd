@@ -20,7 +20,9 @@ func _process(delta):
 		position += move_step
 
 		# Trigger when close enough to the point
-		if global_transform.origin.distance_to(target) < speed * delta:
+		if global_transform.origin.distance_to(target) < 0.1:
+			if ray.enabled and ray.get_collider():
+				_hit_with_ray()
 			_hit_target()
 	else:
 		position += transform.basis * Vector3(0, 0, -speed) * delta

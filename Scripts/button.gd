@@ -7,4 +7,4 @@ var Water = 100
 func _on_interacted(body: Variant) -> void:
 	if Gain.Gold >= 50:
 		Gain.Gain_Water(Water)
-		Gain.Gain_Gold(Water * -1)
+		Gain.Gain_Gold(Water * -0.5)
