@@ -45,5 +45,6 @@ process_material = SubResource("ParticleProcessMaterial_fvovh")
 draw_pass_1 = SubResource("SphereMesh_6t8on")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1.91069e-15, -4.37114e-08, -1, -1, -4.37114e-08, 0, -4.37114e-08, 1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0.0906039)
+target_position = Vector3(0, 0, -1)
 collision_mask = 3
