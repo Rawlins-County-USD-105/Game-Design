@@ -68,7 +68,7 @@ func spawning():
 			if spawning and Game.round >= 10:
 				if Gain.bickens <= 2:
 					var rand_ene = randi_range(1,10)
-					if not rand_ene == 10:
+					if rand_ene == 10:
 						spawn_enemy = enemies.find_key(2)
 						Gain.bickens += 1
 						fog = true
