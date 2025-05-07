@@ -1,18 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://c88g21b341dy6"]
+[gd_scene load_steps=4 format=3 uid="uid://4rxyejk5hegk"]
 
-[ext_resource type="Texture2D" uid="uid://hhfrheg1cygg" path="res://Models/icon.svg" id="1_757tb"]
-[ext_resource type="Script" path="res://Sounds/skill_button.gd" id="2_uuf6j"]
-[ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="3_du0hp"]
+[ext_resource type="Script" path="res://Sounds/skill_button.gd" id="1_hjn07"]
+[ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="2_r3cdg"]
+[ext_resource type="PackedScene" uid="uid://jpthqnkpys2u" path="res://Fire Rate.tscn" id="3_tynge"]
 
 [node name="SkillButton" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 2)
 toggle_mode = true
-texture_normal = ExtResource("1_757tb")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_uuf6j")
+script = ExtResource("1_hjn07")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -22,15 +21,16 @@ mouse_filter = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
+offset_top = 1.0
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 38.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(20, 20)
-scale = Vector2(0.85, 0.85)
-texture = ExtResource("3_du0hp")
+scale = Vector2(0.822222, 0.822222)
+texture = ExtResource("2_r3cdg")
 region_enabled = true
-region_rect = Rect2(629, 176, 45, 45)
+region_rect = Rect2(289, 232, 45, 45)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
@@ -44,6 +44,9 @@ theme_override_font_sizes/font_size = 12
 text = "0/3"
 horizontal_alignment = 2
 vertical_alignment = 1
+
+[node name="TextureRect" parent="." instance=ExtResource("3_tynge")]
+layout_mode = 0
 
 [node name="Line2D" type="Line2D" parent="."]
 top_level = true

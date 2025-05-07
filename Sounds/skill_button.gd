@@ -2,8 +2,9 @@ extends TextureButton
 class_name SkillNode
 
 @onready var panel: Panel = $Panel
-@onready var label: Label = $MarginContainer/Label
+@onready var label: Label = $Label
 @onready var line_2d: Line2D = $Line2D
+
 
 
 func _ready():
@@ -21,7 +22,7 @@ func _on_pressed() -> void:
 		level = min( level+1 , 3)
 		Game.barrels  -= 1
 		panel.show_behind_parent = true
-	line_2d.default_color = Color(1, 0.972549, 0.862745, 1)
+	line_2d.default_color = Color(0.972549, 0.972549, 1, 1)
 	var skills = get_children()
 	for skill in skills:
 		if skill is SkillNode and level == 3:

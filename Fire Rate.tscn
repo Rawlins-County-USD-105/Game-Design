@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://jpthqnkpys2u"]
+[gd_scene load_steps=3 format=3 uid="uid://jpthqnkpys2u"]
 
 [ext_resource type="Script" path="res://texture_rect.gd" id="1_bkgpe"]
-[ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="2_vmlpn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ng5v4"]
 font_size = 8
@@ -27,12 +26,6 @@ Increase"
 label_settings = SubResource("LabelSettings_ng5v4")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(15, 18)
-texture = ExtResource("2_vmlpn")
-region_enabled = true
-region_rect = Rect2(288, 232, 46, 46)
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
