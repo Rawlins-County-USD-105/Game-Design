@@ -66,6 +66,8 @@ const FOV_CHANGE = 1.5
 var JUMP_VELOCITY = 5
 var crouching_depth = -0.5
 
+var death = 1
+
 #Sliding
 var slide_timer = 1.0
 var slide_timer_max = 1.0
@@ -133,6 +135,8 @@ func took_damage(Damage):
 		damagebar.value = 0
 		print("You Died")
 		dead.play()
+		animation_player.play("Death")
+		death = 2
 
 	
 	healthbar.value = health
@@ -155,6 +159,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
+	
+	if death == 2 and animation_player.is_playing() == false:
+		get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
 	
 	if Input.is_action_just_pressed("jump"):
 		player_moveset.play("jump")

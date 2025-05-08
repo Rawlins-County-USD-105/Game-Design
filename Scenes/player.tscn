@@ -1,19 +1,20 @@
-[gd_scene load_steps=32 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=34 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://cdlywtfvrupoq" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://bn6nospf6ecfp" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://dtnqposlkaxdw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="Texture2D" uid="uid://dytu25bb2s87k" path="res://Sprites/egg2.png" id="5_7dt1v"]
+[ext_resource type="Texture2D" uid="uid://hqssu16wc2gu" path="res://Main Menu/Assets/Skill Tree backdrop 1.0 copy 2.png" id="4_momq0"]
+[ext_resource type="Texture2D" uid="uid://bvcs7msmgvffq" path="res://Sprites/egg2.png" id="5_7dt1v"]
 [ext_resource type="PackedScene" uid="uid://dsrqntvoblehj" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
-[ext_resource type="Texture2D" uid="uid://brpm10be2tkcq" path="res://Sprites/shovel.png" id="7_ftmfv"]
-[ext_resource type="AudioStream" uid="uid://dxfks2q6i4na1" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="Texture2D" uid="uid://bbe10r1ly5s3q" path="res://Sprites/shovel.png" id="7_ftmfv"]
+[ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="10_3mf4v"]
-[ext_resource type="AudioStream" uid="uid://e5es4oi7twbb" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
+[ext_resource type="AudioStream" uid="uid://b7wfwlo78wikl" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
 
 [sub_resource type="Animation" id="Animation_h3uuh"]
 resource_name = "backward"
@@ -4300,10 +4301,87 @@ tracks/1/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SkillTreeBackdrop1_0Copy2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SkillTreeBackdrop1_0Copy2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SkillTreeBackdrop1_0Copy2/Label:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_6sdjj"]
+resource_name = "Death"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SkillTreeBackdrop1_0Copy2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SkillTreeBackdrop1_0Copy2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SkillTreeBackdrop1_0Copy2/Label:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1ke0o"]
 _data = {
 "Damage Red": SubResource("Animation_jbjsr"),
+"Death": SubResource("Animation_6sdjj"),
 "RESET": SubResource("Animation_tiyy3")
 }
 
@@ -4409,6 +4487,20 @@ texture = ExtResource("3_wsqyl")
 libraries = {
 "": SubResource("AnimationLibrary_1ke0o")
 }
+
+[node name="SkillTreeBackdrop1_0Copy2" type="Sprite2D" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(41, -1)
+texture = ExtResource("4_momq0")
+
+[node name="Label" type="Label" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich/SkillTreeBackdrop1_0Copy2"]
+offset_left = -394.0
+offset_top = -105.0
+offset_right = 313.0
+offset_bottom = 100.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 150
+text = "YOU DIED"
 
 [node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
