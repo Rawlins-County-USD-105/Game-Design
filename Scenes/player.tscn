@@ -4589,9 +4589,4 @@ z_index = 5
 [node name="ouch" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_wrk1g")
 
-[node name="dead" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("11_s2t51")
-volume_db = 80.0
-max_db = 6.0
-
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]

@@ -134,7 +134,7 @@ func took_damage(Damage):
 	if health <= 0:
 		damagebar.value = 0
 		print("You Died")
-		dead.play()
+	
 		animation_player.play("Death")
 		death = 2
 
