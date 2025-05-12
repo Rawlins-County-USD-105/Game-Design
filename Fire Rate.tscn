@@ -6,7 +6,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_ng5v4"]
 font_size = 8
 
-[node name="TextureRect" type="TextureRect"]
+[node name="TextureRect2" type="TextureRect"]
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_bkgpe")
