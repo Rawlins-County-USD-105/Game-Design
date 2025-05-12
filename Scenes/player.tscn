@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bbe10r1ly5s3q" path="res://Sprites/shovel.png" id="7_ftmfv"]
 [ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
-[ext_resource type="PackedScene" uid="uid://cfqvc01m4dlj0" path="res://skill_tree.tscn" id="10_3mf4v"]
+[ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="10_3mf4v"]
 
 [sub_resource type="Animation" id="Animation_h3uuh"]
 resource_name = "backward"
@@ -4329,6 +4329,7 @@ shape = SubResource("CapsuleShape3D_0l4ar")
 disabled = true
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="." groups=["Player"]]
+transform = Transform3D(1.26763, 0, 0, 0, 1.31923, 0, 0, 0, 1.50029, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_x68qc")
 
 [node name="neck" type="Node3D" parent="."]

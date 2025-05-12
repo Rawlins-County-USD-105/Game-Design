@@ -1,6 +1,6 @@
 extends Enemy
 
-var speed = 5
+var speed = 4.5
 var HP = 10
 var rng = RandomNumberGenerator.new()
 var chicken_sound
