@@ -4561,6 +4561,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
 slide_on_ceiling = false
 floor_max_angle = 1.0472
 script = ExtResource("1_1qajl")
+mousesense = null
+sprint = null
+jump_sprint = null
 
 [node name="characteranimated" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
