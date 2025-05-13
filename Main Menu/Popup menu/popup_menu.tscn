@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Main Menu/Popup menu/popup_menu.gd" id="1_stgea"]
 [ext_resource type="PackedScene" uid="uid://ctnajx3xbjb5y" path="res://Main Menu/Input Map Page/Input_Settings.tscn" id="2_7xr30"]
 [ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="2_vf4xr"]
-[ext_resource type="Texture2D" uid="uid://b52t7m5eqpd1v" path="res://Main Menu/Assets/Backdrops/green popup bg.png" id="3_rfy68"]
+[ext_resource type="Texture2D" uid="uid://4wel5ql8n7sf" path="res://Main Menu/Assets/Backdrops/green popup bg.png" id="3_rfy68"]
 
 [sub_resource type="Animation" id="Animation_68owd"]
 resource_name = "ESCAPECLOSE"

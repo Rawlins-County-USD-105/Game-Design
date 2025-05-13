@@ -22,7 +22,7 @@ var can_spawn = false
 var total_enemies = 0
 var enemies_spawned = 0
 var fog = false
-
+var run
 func _ready() -> void:
 	
 	if player:
@@ -30,7 +30,6 @@ func _ready() -> void:
 		player.drill_hitbox = oil_drill.hitbox
 
 func _process(delta: float) -> void:
-
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -59,21 +58,22 @@ func _process(delta: float) -> void:
 
 
 func spawning():
-	print(round % 5)
 	var random_number = randi_range(1,360)
 	var rand = randi_range(1,4)
 	for x in spawn_zones:
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
-			if spawning and round >= 10:
-				
-					
+			if spawning and Game.round >= 10:
+				if Game.round % 5 == 0:
+					spawn_enemy = enemies.find_key(2)
+					Gain.bickens += 1
+					fog = true
+					$Horror.play()
 					if Gain.bickens <= 2:
 						var rand_ene = randi_range(1,10)
 						if rand_ene == 10:
 							spawn_enemy = enemies.find_key(2)
 							Gain.bickens += 1
-							
 							fog = true
 							$Horror.play()
 						else:
