@@ -2,7 +2,6 @@ extends CharacterBody3D
 
 class_name Enemy
 var player = self
-var drill = self
 var target = player
 #@export var player_path : NodePath
 @export var Damage : int
@@ -46,15 +45,9 @@ func move(_delta, speed, HP):
 		else:
 			pass
 
-	var player_distance = player.global_position.distance_to(self.global_position)
-	var drill_distance = drill.global_position.distance_to(self.global_position)
-	
-	if drill_distance < 8:
-		target = drill
-	else:
-		target = player
-	
-	var distance_to_player = global_position.distance_to(player.global_position)
+	player_distance = player.global_position.distance_to(self.global_position)
+
+	target = player
 	
 	# Navigation
 	nav_agent.set_target_position(target.global_transform.origin)

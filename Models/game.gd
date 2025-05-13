@@ -86,10 +86,8 @@ func spawning():
 							Game.total_enemies += 1
 							var e_inst = spawn_enemy.instantiate()
 							e_inst.player = $player
-							e_inst.drill = oil_drill.hitbox
 							e_inst.position = x.global_position
 							group_enemy.add_child(e_inst)
-							
 						else:
 							pass
 			else:
@@ -99,7 +97,6 @@ func spawning():
 					Game.total_enemies += 1
 					var e_inst = spawn_enemy.instantiate()
 					e_inst.player = $player
-					e_inst.drill = oil_drill.hitbox
 					e_inst.position = x.global_position
 					group_enemy.add_child(e_inst)
 					
