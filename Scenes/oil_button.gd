@@ -5,7 +5,6 @@ extends Interactable
 @onready var timer: Timer = $"../Timer"
 @onready var barrels: Label = $"../Barrels"
 @onready var gpu_particles_3d: GPUParticles3D = $"../GPUParticles3D"
-@onready var health_bar_sprite: Node3D = $"../Health"
 @onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
 var round = 0
 var oil = 0
@@ -15,7 +14,6 @@ var barrel = 0
 
 func _ready() -> void:
 	oil_bar.hide()
-	health_bar_sprite.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
 	
@@ -23,13 +21,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	barrels.text = str(Game.barrels)
 	Game.oil(round)
-	if player:
-		health_bar_sprite.look_at(player.global_transform.origin, Vector3.UP)
-
 func _on_interacted(body: Variant) -> void:
 	begin_drill.play()
 	oil_bar.show()
-	health_bar_sprite.show()
 	player = body
 	player.spawning = true
 	animation_player.play("press")
