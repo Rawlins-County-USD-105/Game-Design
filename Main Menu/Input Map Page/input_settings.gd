@@ -100,5 +100,4 @@ func _on_button_pressed() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Open popup"):
 		visible = false
-		print("Settings Not Visible")
 	

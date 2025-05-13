@@ -59,7 +59,6 @@ func _process(delta: float) -> void:
 
 
 func spawning():
-	print(round % 5)
 	var random_number = randi_range(1,360)
 	var rand = randi_range(1,4)
 	for x in spawn_zones:
@@ -105,16 +104,10 @@ func spawning():
 					
 					
 				
-func pain(barrel):
-	barrels = barrel 
-	return barrel
-	
 
 func minus_bicken():
 
 	Gain.bickens -= 1
 	
-func oil(barrel, rounds):
+func oil(rounds):
 	round = rounds
-	barrels = barrel
-	
