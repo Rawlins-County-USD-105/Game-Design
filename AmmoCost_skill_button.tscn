@@ -1,10 +1,18 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://c4jbutnik20dv"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Sounds/skill_button.gd" id="1_6mvpe"]
 [ext_resource type="Texture2D" uid="uid://tm3d4qcmhx0s" path="res://Item Icons/Untitled design (32).png" id="2_hd4hx"]
 [ext_resource type="PackedScene" uid="uid://bitbp4x41iv3" path="res://Ammo Cost.tscn" id="3_fmg3w"]
 
+<<<<<<< Updated upstream
 [node name="SkillButton" type="TextureButton"]
+=======
+[node name="SkillButton2" type="TextureButton"]
+>>>>>>> Stashed changes
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 2)
