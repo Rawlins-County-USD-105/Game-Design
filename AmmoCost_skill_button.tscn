@@ -1,6 +1,10 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://c4jbutnik20dv"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
+>>>>>>> Stashed changes
 =======
 [gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
 >>>>>>> Stashed changes
@@ -14,7 +18,11 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="SkillButton" type="TextureButton"]
+=======
+[node name="SkillButton2" type="TextureButton"]
+>>>>>>> Stashed changes
 =======
 [node name="SkillButton2" type="TextureButton"]
 >>>>>>> Stashed changes
