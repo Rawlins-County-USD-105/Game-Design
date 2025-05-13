@@ -1,18 +1,10 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://svw2mf1n5o71"]
-=======
-[gd_scene load_steps=4 format=3 uid="uid://by4jexv58odqx"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Sounds/skill_button.gd" id="1_hjn07"]
 [ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="2_r3cdg"]
 [ext_resource type="PackedScene" uid="uid://jpthqnkpys2u" path="res://Fire Rate.tscn" id="3_tynge"]
 
-<<<<<<< Updated upstream
 [node name="SkillButton" type="TextureButton"]
-=======
-[node name="SkillButton2" type="TextureButton"]
->>>>>>> Stashed changes
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(2, 2)

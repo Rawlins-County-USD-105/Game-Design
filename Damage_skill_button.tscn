@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=4 format=3 uid="uid://cw45yqpe2cuej"]
-=======
-[gd_scene load_steps=4 format=3 uid="uid://ynawigg14um1"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Sounds/skill_button.gd" id="1_llas4"]
 [ext_resource type="Texture2D" uid="uid://bsq2k60l0ajrl" path="res://Item Icons/image.png" id="2_5w2m1"]
