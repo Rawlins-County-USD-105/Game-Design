@@ -15,7 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://b1wsl6fmqn7rn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="AudioStream" uid="uid://ls186yi5cdrm" path="res://Sounds/fetttwap2.wav" id="11_s2t51"]
-[ext_resource type="PackedScene" uid="uid://bx2nossr8xd34" path="res://Weapon_Skill_Tree.tscn" id="16_uerie"]
+[ext_resource type="PackedScene" path="res://Weapon_Skill_Tree.tscn" id="16_uerie"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tuxly"]
 resource_name = "VanguardBodyMat"
