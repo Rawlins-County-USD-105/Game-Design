@@ -75,7 +75,7 @@ func spawning():
 							Gain.bickens += 1
 							
 							fog = true
-							#$Horror.play()
+							$Horror.play()
 						else:
 							spawn_enemy = enemies.find_key(1)
 					else:
