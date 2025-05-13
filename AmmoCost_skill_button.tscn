@@ -1,0 +1,81 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+[gd_scene load_steps=4 format=3 uid="uid://c4jbutnik20dv"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
+>>>>>>> Stashed changes
+=======
+[gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
+>>>>>>> Stashed changes
+=======
+[gd_scene load_steps=4 format=3 uid="uid://bqt8gekn5ay8d"]
+>>>>>>> Stashed changes
+
+[ext_resource type="Script" path="res://Sounds/skill_button.gd" id="1_6mvpe"]
+[ext_resource type="Texture2D" uid="uid://tm3d4qcmhx0s" path="res://Item Icons/Untitled design (32).png" id="2_hd4hx"]
+[ext_resource type="PackedScene" uid="uid://bitbp4x41iv3" path="res://Ammo Cost.tscn" id="3_fmg3w"]
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+[node name="SkillButton" type="TextureButton"]
+=======
+[node name="SkillButton2" type="TextureButton"]
+>>>>>>> Stashed changes
+=======
+[node name="SkillButton2" type="TextureButton"]
+>>>>>>> Stashed changes
+=======
+[node name="SkillButton2" type="TextureButton"]
+>>>>>>> Stashed changes
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2, 2)
+toggle_mode = true
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_6mvpe")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 38.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(20, 20)
+scale = Vector2(0.0861678, 0.0844749)
+texture = ExtResource("2_hd4hx")
+region_enabled = true
+region_rect = Rect2(55, 58, 441, 438)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = -0.5
+offset_top = 36.0
+offset_right = 39.5
+offset_bottom = 53.0
+size_flags_vertical = 8
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "0/3"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TextureRect" parent="." instance=ExtResource("3_fmg3w")]
+layout_mode = 0
+
+[node name="Line2D" type="Line2D" parent="."]
+top_level = true
+light_mask = 2
+visibility_layer = 2
+width = 3.0
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

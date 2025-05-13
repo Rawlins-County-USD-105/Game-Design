@@ -121,6 +121,14 @@ func _ready() -> void:
 	healthbar.value = health
 	damagebar.max_value = max_health
 	damagebar.value = health
+	CharacterBody3D.stats_updated.connect(_refresh_stats)
+	
+	
+func _refresh_stats():
+	health = health * CharacterBody3D.get_upgraded_health
+	
+	
+
 func took_damage(Damage):
 	
 	if Damage > health:
