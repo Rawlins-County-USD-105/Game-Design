@@ -7,6 +7,8 @@ var fog_density = 0.0
 var water_gun = false
 var pistol_gun = false
 var rail_gun = false
+var max_player_health = 400
+var player_speed = 5.0
 
 func Gain_Gold(Gold_Gain):
 	Gold += Gold_Gain
