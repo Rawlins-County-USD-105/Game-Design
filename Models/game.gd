@@ -24,8 +24,6 @@ var enemies_spawned = 0
 var fog = false
 var run
 func _ready() -> void:
-	Gain.Gain_Gold(1000000)
-	Game.barrels = 20
 	if player:
 		
 		player.drill_hitbox = oil_drill.hitbox
@@ -71,36 +69,36 @@ func spawning():
 					Gain.bickens += 1
 					fog = true
 					$Horror.play()
-					if Gain.bickens <= 2:
-						var rand_ene = randi_range(1,10)
-						if rand_ene == 10:
-							spawn_enemy = enemies.find_key(2)
-							Gain.bickens += 1
-							fog = true
-							$Horror.play()
-						else:
-							spawn_enemy = enemies.find_key(1)
-					else:
-						spawn_enemy = enemies.find_key(1)
+
+				
+				var rand_ene = randi_range(1,10)
+				if rand_ene == 10:
+					spawn_enemy = enemies.find_key(2)
+					Gain.bickens += 1
+					fog = true
+					$Horror.play()
+
+				else:
+					spawn_enemy = enemies.find_key(1)
 						
-						if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
-							Game.enemies_spawned += 1
-							Game.total_enemies += 1
-							var e_inst = spawn_enemy.instantiate()
-							e_inst.player = $player
-							e_inst.position = x.global_position
-							group_enemy.add_child(e_inst)
-						else:
-							pass
+					if Game.enemies_spawned < roundi(pow(Game.round, 1.25) + 4):
+						Game.enemies_spawned += 1
+						Game.total_enemies += 1
+						var e_inst = spawn_enemy.instantiate()
+						e_inst.player = $player
+						e_inst.position = x.global_position
+						group_enemy.add_child(e_inst)
+					else:
+						pass
 			else:
 				spawn_enemy = enemies.find_key(1)
-				if Game.enemies_spawned < roundi(pow(Game.barrels, 1.25) + 4):
-					Game.enemies_spawned += 1
-					Game.total_enemies += 1
-					var e_inst = spawn_enemy.instantiate()
-					e_inst.player = $player
-					e_inst.position = x.global_position
-					group_enemy.add_child(e_inst)
+			if Game.enemies_spawned < roundi(pow(Game.round, 1.25) + 4):
+				Game.enemies_spawned += 1
+				Game.total_enemies += 1
+				var e_inst = spawn_enemy.instantiate()
+				e_inst.player = $player
+				e_inst.position = x.global_position
+				group_enemy.add_child(e_inst)
 					
 					
 				

@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://ctvcl7kcff3xy"]
 
 [ext_resource type="Script" path="res://Main Menu/Main tscn/main_menu.gd" id="1_k4h4r"]
-[ext_resource type="Texture2D" uid="uid://cin5tqifgwlim" path="res://Main Menu/Assets/Backdrops/New Background 2.0.png" id="2_oxerl"]
-[ext_resource type="Texture2D" uid="uid://cprdlqjocretd" path="res://Models/Untitled design (24).png" id="3_n72tn"]
-[ext_resource type="Texture2D" uid="uid://bew48mr5pyvco" path="res://Main Menu/Assets/Backdrops/blue popup bg.png" id="3_p1dvk"]
+[ext_resource type="Texture2D" uid="uid://ces7cu305jp33" path="res://Main Menu/Assets/Backdrops/New Background 2.0.png" id="2_oxerl"]
+[ext_resource type="Texture2D" uid="uid://n85aexgbl5r4" path="res://Models/Untitled design (24).png" id="3_n72tn"]
+[ext_resource type="Texture2D" uid="uid://cvp1qv7jlalgt" path="res://Main Menu/Assets/Backdrops/blue popup bg.png" id="3_p1dvk"]
 
 [sub_resource type="SystemFont" id="SystemFont_ty832"]
 font_names = PackedStringArray("Impact")
