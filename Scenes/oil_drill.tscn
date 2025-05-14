@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cnyfvcfc75xed" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
-[ext_resource type="ArrayMesh" uid="uid://dbiudfwgqf7t6" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://41mi3tadtvie" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-[ext_resource type="AudioStream" uid="uid://vtxcqo2aa7op" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
+[ext_resource type="ArrayMesh" uid="uid://cdbvn3hrmbfrh" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="Texture2D" uid="uid://tsy2ga14nnp5" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
+[ext_resource type="AudioStream" uid="uid://peoq5v0iq3ha" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_57pi4"]
 
