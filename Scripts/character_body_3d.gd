@@ -78,7 +78,8 @@ var old_vel = 0.0
 var fall_hurtie = 10.0
 
 var prev_health = health
-@onready var animation_player: AnimationPlayer = $"neck/Camera/TextureRect/Healthbar/Let’sGetRich/AnimationPlayer"
+@onready var animation_player: AnimationPlayer = $neck/Camera/AnimationPlayer
+
 
 func Weapon_Select():
 	if Input.is_action_just_pressed("Watergun") and Gain.water_gun:
