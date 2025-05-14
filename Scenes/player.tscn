@@ -1,19 +1,21 @@
-[gd_scene load_steps=33 format=3 uid="uid://de56lwhpalp6i"]
+[gd_scene load_steps=35 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://cdlywtfvrupoq" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
-[ext_resource type="Texture2D" uid="uid://bn6nospf6ecfp" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
-[ext_resource type="Texture2D" uid="uid://eqtnvufiox8v" path="res://Main Menu/Assets/Skill Tree backdrop 1.0 copy 2.png" id="4_bppih"]
+[ext_resource type="Texture2D" uid="uid://dtnqposlkaxdw" path="res://Main Menu/Untitled design (5).png" id="3_35suu"]
+[ext_resource type="Texture2D" uid="uid://fewyeo1ajtr" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://hqssu16wc2gu" path="res://Main Menu/Assets/Skill Tree backdrop 1.0 copy 2.png" id="4_bppih"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="Texture2D" uid="uid://dytu25bb2s87k" path="res://Sprites/egg2.png" id="5_7dt1v"]
+[ext_resource type="PackedScene" uid="uid://bim4h176j36sy" path="res://Chicken Death.tscn" id="5_5ouyw"]
+[ext_resource type="Texture2D" uid="uid://bvcs7msmgvffq" path="res://Sprites/egg2.png" id="5_7dt1v"]
 [ext_resource type="PackedScene" uid="uid://dsrqntvoblehj" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
-[ext_resource type="Texture2D" uid="uid://brpm10be2tkcq" path="res://Sprites/shovel.png" id="7_ftmfv"]
-[ext_resource type="AudioStream" uid="uid://dxfks2q6i4na1" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="Texture2D" uid="uid://bbe10r1ly5s3q" path="res://Sprites/shovel.png" id="7_ftmfv"]
+[ext_resource type="AudioStream" uid="uid://ckh72771mpdtn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="10_3mf4v"]
+[ext_resource type="Texture2D" uid="uid://d1n1uch4bsxem" path="res://Main Menu/Assets/chicken copy.png" id="16_dpk5j"]
 
 [sub_resource type="Animation" id="Animation_h3uuh"]
 resource_name = "backward"
@@ -4246,6 +4248,9 @@ expand_margin_bottom = 2.0
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i112l"]
 bg_color = Color(1, 1, 1, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
+bg_color = Color(0.281779, 0.665975, 0.697433, 1)
+
 [sub_resource type="Animation" id="Animation_jbjsr"]
 resource_name = "Damage Red"
 length = 0.5
@@ -4276,27 +4281,135 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_eh50m"]
 resource_name = "Death"
-length = 1.5
+length = 3.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SkillTreeBackdrop1_0Copy2:modulate")
+tracks/0/path = NodePath("../SkillTreeBackdrop1_0Copy2:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Label:visible")
+tracks/1/path = NodePath("../Label:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.5, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Sprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(561, 315)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Sprite2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1.01)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Sprite2D:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Sprite2D:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.180392), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../../ChickenCopy:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(577, -180), Vector2(577, 543)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../../ChickenCopy2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(577, -325), Vector2(577, 398)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../../ChickenCopy3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(577, -465), Vector2(577, 258)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../../../ChickenCopy4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(577, -610), Vector2(577, 113)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../../../GET BETTER:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
@@ -4331,7 +4444,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SkillTreeBackdrop1_0Copy2:modulate")
+tracks/2/path = NodePath("../SkillTreeBackdrop1_0Copy2:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -4343,10 +4456,130 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Label:visible")
+tracks/3/path = NodePath("../Label:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("../Sprite2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = false
+tracks/5/path = NodePath("../Sprite2D:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = false
+tracks/6/path = NodePath("../Sprite2D:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../Sprite2D:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../../ChickenCopy:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577, -180)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../../../ChickenCopy2:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577, -325)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../../../ChickenCopy3:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577, -465)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("../../../ChickenCopy4:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577, -610)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("../../../GET BETTER:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("../Sprite2D:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -4359,9 +4592,6 @@ _data = {
 "Death": SubResource("Animation_eh50m"),
 "RESET": SubResource("Animation_tiyy3")
 }
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_724cx"]
-bg_color = Color(0.281779, 0.665975, 0.697433, 1)
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0462, 0)
@@ -4452,33 +4682,6 @@ show_percentage = false
 wait_time = 0.6
 one_shot = true
 
-[node name="Let’sGetRich" type="Sprite2D" parent="neck/Camera/TextureRect/Healthbar"]
-visible = false
-modulate = Color(1, 1, 1, 0)
-z_index = -7
-position = Vector2(557, -274)
-texture = ExtResource("3_wsqyl")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich"]
-libraries = {
-"": SubResource("AnimationLibrary_1ke0o")
-}
-
-[node name="SkillTreeBackdrop1_0Copy2" type="Sprite2D" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich"]
-modulate = Color(1, 1, 1, 0)
-position = Vector2(-16, -8)
-texture = ExtResource("4_bppih")
-
-[node name="Label" type="Label" parent="neck/Camera/TextureRect/Healthbar/Let’sGetRich"]
-visible = false
-offset_left = -355.0
-offset_top = -125.0
-offset_right = 391.0
-offset_bottom = 95.0
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 150
-text = "YOU DIED"
-
 [node name="Energybar" type="ProgressBar" parent="neck/Camera/TextureRect"]
 layout_mode = 1
 anchors_preset = 8
@@ -4545,6 +4748,39 @@ target_position = Vector3(0, 0, -100)
 [node name="RailGun" parent="neck/Camera" instance=ExtResource("9_2phq4")]
 transform = Transform3D(-8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 0.286967, -0.436798, -0.343503)
 
+[node name="Let’sGetRich" type="Sprite2D" parent="neck/Camera"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = -7
+position = Vector2(575, 330)
+texture = ExtResource("3_wsqyl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="neck/Camera"]
+root_node = NodePath("../Let’sGetRich")
+libraries = {
+"": SubResource("AnimationLibrary_1ke0o")
+}
+
+[node name="SkillTreeBackdrop1_0Copy2" type="Sprite2D" parent="neck/Camera"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(561, 334)
+texture = ExtResource("4_bppih")
+
+[node name="Label" type="Label" parent="neck/Camera"]
+visible = false
+offset_left = 220.0
+offset_top = 205.0
+offset_right = 966.0
+offset_bottom = 425.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 150
+text = "YOU DIED"
+
+[node name="Sprite2D" parent="neck/Camera" instance=ExtResource("5_5ouyw")]
+visible = false
+position = Vector2(561, 315)
+scale = Vector2(1, 1.01)
+
 [node name="head_clearance" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233632, 0)
 target_position = Vector3(0, 0.75, 0)
@@ -4565,5 +4801,35 @@ z_index = 5
 
 [node name="ouch" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_wrk1g")
+
+[node name="ChickenCopy" type="Sprite2D" parent="."]
+position = Vector2(577, -180)
+scale = Vector2(2.308, 1.904)
+texture = ExtResource("16_dpk5j")
+
+[node name="ChickenCopy2" type="Sprite2D" parent="."]
+position = Vector2(577, -325)
+scale = Vector2(2.308, 1.904)
+texture = ExtResource("16_dpk5j")
+
+[node name="ChickenCopy3" type="Sprite2D" parent="."]
+position = Vector2(577, -465)
+scale = Vector2(2.308, 1.904)
+texture = ExtResource("16_dpk5j")
+
+[node name="ChickenCopy4" type="Sprite2D" parent="."]
+position = Vector2(577, -610)
+scale = Vector2(2.308, 1.904)
+texture = ExtResource("16_dpk5j")
+
+[node name="GET BETTER" type="Label" parent="."]
+visible = false
+offset_left = 146.0
+offset_top = 234.0
+offset_right = 995.0
+offset_bottom = 454.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 150
+text = "GET BETTER"
 
 [connection signal="timeout" from="neck/Camera/TextureRect/Healthbar/DamageBarTimer" to="." method="_on_damage_bar_timer_timeout"]
