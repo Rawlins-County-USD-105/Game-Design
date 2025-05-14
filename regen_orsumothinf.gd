@@ -19,4 +19,4 @@ func _on_pressed() -> void:
 		Game.barrels -= 1
 		panel.show_behind_parent = true
 		line_2d.default_color = Color(0.318, 0.141, 0.847)
-		Gain.max_player_health =  Gain.max_player_health * 1.12
+		Gain.regen_multiplier =  Gain.regen_multiplier * 1.12

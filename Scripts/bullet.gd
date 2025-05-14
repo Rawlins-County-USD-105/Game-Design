@@ -14,7 +14,7 @@ var has_target := false
 func _ready():
 	has_target = target != Vector3.ZERO
 
-func _process(delta):
+func shoot_bullet(delta):
 	if has_target:
 		var move_step = (target - global_transform.origin).normalized() * speed * delta
 		position += move_step

@@ -74,4 +74,16 @@ top_level = true
 width = 3.0
 default_color = Color(0.310617, 0.310617, 0.310617, 1)
 
+[node name="Label" type="Label" parent="."]
+offset_left = -0.5
+offset_top = 36.0
+offset_right = 39.5
+offset_bottom = 53.0
+size_flags_vertical = 8
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
 [connection signal="pressed" from="." to="." method="_on_pressed"]

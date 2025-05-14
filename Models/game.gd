@@ -24,12 +24,14 @@ var enemies_spawned = 0
 var fog = false
 var run
 func _ready() -> void:
-	
+	Gain.Gain_Gold(1000000)
+	Game.barrels = 20
 	if player:
 		
 		player.drill_hitbox = oil_drill.hitbox
 
 func _process(delta: float) -> void:
+
 	if player:
 		if player.spawning:
 			if spawn_timer:
@@ -45,7 +47,7 @@ func _process(delta: float) -> void:
 		
 		if world_environment.environment.volumetric_fog_density > 0.3:
 			fog = false
-			#spot_light_3d.show()
+			spot_light_3d.show()
 	
 	if Gain.bickens == 0:
 		if world_environment:

@@ -19,4 +19,7 @@ func _on_pressed() -> void:
 		Game.barrels -= 1
 		panel.show_behind_parent = true
 		line_2d.default_color = Color(0.318, 0.141, 0.847)
-		Gain.max_player_health =  Gain.max_player_health * 1.12
+		Gain.pistol_damage =  Gain.pistol_damage * 1.12
+		Gain.water_gun_damage =  Gain.water_gun_damage * 1.12
+		Gain.rail_gun_damage =  Gain.rail_gun_damage * 1.12
+		Gain.shovel_damage =  Gain.shovel_damage * 1.12

@@ -113,7 +113,6 @@ func Weapon_Select():
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
-	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#camera_3d.current = is_multiplayer_authority()
 	healthbar.max_value = Gain.max_player_health
@@ -175,7 +174,7 @@ func _physics_process(delta: float) -> void:
 	#regen
 
 	if regen.is_stopped() and regen_interval.is_stopped() and health <  Gain.max_player_health:
-		health += 5
+		health += 5 * Gain.regen_multiplier
 		healthbar.value = health
 		regen_interval.start()
 	energybar.value = Gain.Water
