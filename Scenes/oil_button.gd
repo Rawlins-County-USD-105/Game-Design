@@ -8,7 +8,7 @@ extends Interactable
 @onready var begin_drill: AudioStreamPlayer3D = $"../begin_drill"
 var round = 0
 var oil = 0
-var max_oil = 500
+var max_oil = 50
 var player = null
 var barrel = 0
 

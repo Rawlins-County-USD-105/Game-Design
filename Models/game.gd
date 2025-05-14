@@ -64,13 +64,6 @@ func spawning():
 		if x && rand == spawn_zones.get(x):
 			spawn_timer.start()
 			if spawning and Game.round >= 10:
-				if Game.round % 5 == 0:
-					spawn_enemy = enemies.find_key(2)
-					Gain.bickens += 1
-					fog = true
-					$Horror.play()
-
-				
 				var rand_ene = randi_range(1,10)
 				if rand_ene == 10:
 					spawn_enemy = enemies.find_key(2)
@@ -90,6 +83,14 @@ func spawning():
 						group_enemy.add_child(e_inst)
 					else:
 						pass
+			elif spawning and Game.round >= 25:
+				var rand_ene = randi_range(1,5)
+				if rand_ene == 5:
+					spawn_enemy = enemies.find_key(2)
+					Gain.bickens += 1
+					fog = true
+					$Horror.play()
+				
 			else:
 				spawn_enemy = enemies.find_key(1)
 			if Game.enemies_spawned < roundi(pow(Game.round, 1.25) + 4):
