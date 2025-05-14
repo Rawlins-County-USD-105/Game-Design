@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cnyfvcfc75xed" path="res://Scenes/oil_button.tscn" id="1_aeef2"]
 [ext_resource type="Script" path="res://Scenes/oil_drill.gd" id="1_d4r2l"]
-[ext_resource type="ArrayMesh" uid="uid://brgcm5hxfsrb8" path="res://Models/rock.obj" id="3_xufo8"]
-[ext_resource type="Texture2D" uid="uid://d0eurc6y0srnn" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
-[ext_resource type="AudioStream" uid="uid://dak0fgnavne42" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
+[ext_resource type="ArrayMesh" uid="uid://dbiudfwgqf7t6" path="res://Models/rock.obj" id="3_xufo8"]
+[ext_resource type="Texture2D" uid="uid://41mi3tadtvie" path="res://textures/petroleum_1782304.png" id="4_k7bje"]
+[ext_resource type="AudioStream" uid="uid://vtxcqo2aa7op" path="res://Sounds/big.drill_02.wav" id="7_na85t"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_57pi4"]
 
@@ -209,7 +209,7 @@ scale_min = 0.02
 scale_max = 0.15
 color = Color(1, 0.760784, 0.498039, 1)
 
-[node name="Oil_Drill" type="Node3D" groups=["damageable"]]
+[node name="Oil_Drill" type="Node3D"]
 script = ExtResource("1_d4r2l")
 
 [node name="Rock" type="MeshInstance3D" parent="."]
@@ -242,16 +242,16 @@ mesh = SubResource("ArrayMesh_gb07v")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ktjjm")
 
-[node name="Container" type="MeshInstance3D" parent="." groups=["damageable"]]
+[node name="Container" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 2.21172, 1.86265e-09, 0, 0, 1, 0, 4.87614, -7.45058e-09)
 mesh = SubResource("ArrayMesh_loe23")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_l2yeu")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Container" groups=["damageable"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="Container"]
 transform = Transform3D(1, 0, 0, 0, 0.999908, -0.0133597, 0, 0.0133598, 0.999907, -0.0431519, 2.84004, 0.0455345)
 
-[node name="Hitbox" type="CollisionShape3D" parent="Container/StaticBody3D" groups=["damageable"]]
+[node name="Hitbox" type="CollisionShape3D" parent="Container/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, -9.31349e-08, 0, 9.31349e-08, 1, 0, 0.500797, 0)
 shape = SubResource("BoxShape3D_h27np")
 

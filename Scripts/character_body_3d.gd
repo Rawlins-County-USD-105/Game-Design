@@ -1,6 +1,5 @@
 extends CharacterBody3D
-var max_health = 400
-var health = max_health
+var health = Gain.max_player_health
 var player = self
 var drill_hitbox = self
 @onready var neck: Node3D = $neck
@@ -49,7 +48,6 @@ var falling = false
 
 #speed
 var current_speed = 5.0
-var SPEED = 5.0
 var crouching_speed = .5
 var WALK_SPEED = 10
 var lerp_speed = 30
@@ -115,13 +113,15 @@ func Weapon_Select():
 	#$".".set_multiplayer_authority($"..".name.to_int())
 	
 func _ready() -> void:
-	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	#camera_3d.current = is_multiplayer_authority()
-	healthbar.max_value = max_health
+	healthbar.max_value = Gain.max_player_health
 	healthbar.value = health
-	damagebar.max_value = max_health
+	damagebar.max_value =  Gain.max_player_health
 	damagebar.value = health
+
+	
+
 func took_damage(Damage):
 	
 	if Damage > health:
@@ -164,24 +164,6 @@ func _physics_process(delta: float) -> void:
 	if death == 2 and animation_player.is_playing() == false:
 		get_tree().change_scene_to_file("res://Main Menu/Main tscn/main_menu.tscn")
 	
-	if Input.is_action_just_pressed("jump"):
-		player_moveset.play("jump")
-	elif sprinting && is_on_floor():
-		if input_dir.y == -1:
-			player_moveset.play("sprint")
-		else:
-			player_moveset.play("backward")
-	elif walking && is_on_floor():
-		if input_dir.y == -1:
-			player_moveset.play("jog")
-		else:
-			player_moveset.play("backward")
-	elif falling && not is_on_floor():
-		player_moveset.play("jump")
-	else:
-		if is_on_floor():
-			player_moveset.play("idle")
-	
 	#if is_multiplayer_authority():
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -191,8 +173,8 @@ func _physics_process(delta: float) -> void:
 	Weapon_Select()
 	#regen
 
-	if regen.is_stopped() and regen_interval.is_stopped() and health < max_health:
-		health += 5
+	if regen.is_stopped() and regen_interval.is_stopped() and health <  Gain.max_player_health:
+		health += 5 * Gain.regen_multiplier
 		healthbar.value = health
 		regen_interval.start()
 	energybar.value = Gain.Water
@@ -227,8 +209,8 @@ func _physics_process(delta: float) -> void:
 			sprinting = true
 			walking = false
 			
-			velocity.x = lerp(velocity.x, direction.x * SPEED * sprint,delta * 3)
-			velocity.z = lerp(velocity.z, direction.z * SPEED * sprint,delta * 3)
+			velocity.x = lerp(velocity.x, direction.x * Gain.player_speed * sprint,delta * 3)
+			velocity.z = lerp(velocity.z, direction.z * Gain.player_speed * sprint,delta * 3)
  
 			if Input.is_action_just_pressed("jump") and is_on_floor() and !sliding:
 				sprinting = false
@@ -236,12 +218,12 @@ func _physics_process(delta: float) -> void:
 				velocity.y = JUMP_VELOCITY
 		else:
 			if Input.is_action_pressed("crouch") || sliding:
-				current_speed = SPEED * crouching_speed
+				current_speed = Gain.player_speed * crouching_speed
 			if not Input.is_action_pressed("crouch"):
 				sprinting = false
 				walking = true
-				velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 3)
-				velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 3)
+				velocity.x = lerp(velocity.x, direction.x * Gain.player_speed ,delta * 3)
+				velocity.z = lerp(velocity.z, direction.z * Gain.player_speed ,delta * 3)
 
 			else:
 				velocity.x = lerp(velocity.x, direction.x * current_speed ,delta * 3)
@@ -278,8 +260,8 @@ func _physics_process(delta: float) -> void:
 	
 		neck.position.y = lerp(neck.position.y, 0.5, delta * lerp_speed)
 
-	velocity.x = lerp(velocity.x, direction.x * SPEED ,delta * 10)
-	velocity.z = lerp(velocity.z, direction.z * SPEED ,delta * 10)
+	velocity.x = lerp(velocity.x, direction.x * Gain.player_speed ,delta * 10)
+	velocity.z = lerp(velocity.z, direction.z * Gain.player_speed ,delta * 10)
 
 	if sliding:
 		slide_timer -= delta
@@ -338,4 +320,6 @@ func _on_damage_bar_timer_timeout() -> void:
 		#else:
 			#pass
 func _process(delta: float) -> void:
+	healthbar.max_value = Gain.max_player_health
+	damagebar.max_value =  Gain.max_player_health
 	eggs_counter.text = str(Gain.Gold)

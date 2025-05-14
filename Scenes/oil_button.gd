@@ -19,9 +19,8 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	Game.oil(barrel, round)
-	Game.pain(barrel)
-
+	barrels.text = str(Game.barrels)
+	Game.oil(round)
 func _on_interacted(body: Variant) -> void:
 	begin_drill.play()
 	oil_bar.show()
@@ -38,9 +37,8 @@ func get_oil():
 	
 	if oil_bar.value == oil_bar.max_value:
 		begin_drill.stop()
-		barrel += 1
+		Game.barrels += 1
 		round += 1
-		barrels.text = str(barrel)
 		player.spawning = false
 		await get_tree().create_timer(3).timeout
 		oil = 0

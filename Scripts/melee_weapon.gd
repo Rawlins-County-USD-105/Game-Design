@@ -23,6 +23,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(_delta: float) -> void:
+	Damage = Gain.shovel_damage
 	if Input.is_action_pressed("Pew") and not weapon_anim.is_playing() and root_scene.visible == true:
 		weapon_anim.play("Melee")
 		shovel_swoosh.play()

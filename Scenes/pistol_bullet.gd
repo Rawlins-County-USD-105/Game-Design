@@ -1,6 +1,5 @@
 extends bullet
 
-
-
-func shoot_bullet(delta):
-	_process(delta)
+func _process(delta: float) -> void:
+	Damage = Gain.pistol_damage
+	shoot_bullet(delta)
