@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://crttj51kxufbp" path="res://Sounds/Drill Speed.tscn" id="1_86peu"]
 [ext_resource type="Script" path="res://skill_tree.gd" id="1_bvij6"]
-[ext_resource type="PackedScene" uid="uid://bfdggwh7shcvp" path="res://health_skill_button.tscn" id="3_qst3u"]
+[ext_resource type="PackedScene" uid="uid://bfdggwh7shcvp" path="res://Health_skill_button.tscn" id="3_qst3u"]
 [ext_resource type="Script" path="res://health_skill_button.gd" id="4_vkbcb"]
 [ext_resource type="PackedScene" uid="uid://wfxfyjllsbxo" path="res://damage_skill.tscn" id="5_gwcsg"]
 [ext_resource type="PackedScene" uid="uid://cku6vri47pmnm" path="res://regen_orsumothinf.tscn" id="6_mp8a2"]
