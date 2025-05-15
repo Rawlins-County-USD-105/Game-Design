@@ -24,7 +24,11 @@ var enemies_spawned = 0
 var fog = false
 var run
 func _ready() -> void:
+	
+	
 	if player:
+		
+		
 		
 		player.drill_hitbox = oil_drill.hitbox
 
