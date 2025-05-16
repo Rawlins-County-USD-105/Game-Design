@@ -31,12 +31,12 @@ func _on_pistol_button_interacted(body: Variant) -> void:
 		pistol_button.prompt_input = ""
 	
 func _on_rail_gun_button_interacted(body: Variant) -> void:
-	if Gain.Gold >= 400  and not Gain.rail_gun:
+	if Gain.Gold >= 2000  and not Gain.rail_gun:
 		if not animation_player.is_playing():
 			animation_player.play("press")
 		Gain.rail_gun = true
 		body.current_weapopn = 4
-		Gain.Gain_Gold(-400)
+		Gain.Gain_Gold(-2000)
 		rail_gun.hide()
 		rail_gun_button.prompt = ""
 		rail_gun_button.prompt_input = ""

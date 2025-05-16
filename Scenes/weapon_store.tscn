@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/weapon_store.gd" id="1_q22pe"]
 [ext_resource type="ArrayMesh" uid="uid://cvx6o4o0ds5wg" path="res://Sprites/Watergun/model.obj" id="3_eig0u"]
 [ext_resource type="PackedScene" uid="uid://dcyicu26rjbpj" path="res://Scenes/pistolmodel.tscn" id="4_b4kya"]
-[ext_resource type="PackedScene" uid="uid://ci4c2mprdlhk" path="res://Sounds/railme.blend" id="5_drjud"]
+[ext_resource type="PackedScene" uid="uid://dd8c3kbvjmput" path="res://Sounds/railme.blend" id="5_drjud"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7eql"]
 albedo_color = Color(0.00728916, 0, 0.460533, 1)
@@ -166,7 +166,7 @@ shape = SubResource("BoxShape3D_fifm7")
 [node name="Rail_Gun_Button" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, 0.25)
 script = ExtResource("1_k06oq")
-prompt = "Rail Gun 400 Gold Eggs"
+prompt = "Rail Gun 2000 Gold Eggs"
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Rail_Gun_Button"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)

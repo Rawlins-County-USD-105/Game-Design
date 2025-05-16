@@ -96,16 +96,7 @@ func spawning():
 
 				else:
 					spawn_enemy = enemies.find_key(1)
-						
-					if Game.enemies_spawned < roundi(pow(Game.round, 1.25) + 4):
-						Game.enemies_spawned += 1
-						Game.total_enemies += 1
-						var e_inst = spawn_enemy.instantiate()
-						e_inst.player = $player
-						e_inst.position = x.global_position
-						group_enemy.add_child(e_inst)
-					else:
-						pass
+					
 			elif spawning and Game.round >= 25:
 				var rand_ene = randi_range(1,5)
 				if rand_ene == 5:
@@ -116,6 +107,7 @@ func spawning():
 				
 			else:
 				spawn_enemy = enemies.find_key(1)
+				
 			if Game.enemies_spawned < roundi(pow(Game.round, 1.25) + 4):
 				Game.enemies_spawned += 1
 				Game.total_enemies += 1
