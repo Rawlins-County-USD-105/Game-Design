@@ -12,12 +12,13 @@ var round = 0
 var oil = 0
 var max_oil = 500
 var player = null
-var barrel = 0
 
 func _ready() -> void:
 	oil_bar.hide()
 	oil_bar.max_value = max_oil
 	oil_bar.value = 0
+	oil = 0
+	round = 0
 	
 
 func _process(delta: float) -> void:

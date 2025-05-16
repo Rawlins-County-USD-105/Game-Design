@@ -24,12 +24,31 @@ var enemies_spawned = 0
 var fog = false
 var run
 func _ready() -> void:
-	
+	spawn_enemy = null
+	Game.can_spawn = false
+	Game.total_enemies = 0
+	Game.enemies_spawned = 0
+	fog = false
+	Game.round = 0
+	Game.barrels = 0
+	Gain.Gold = 0
+	Gain.max_water = 100
+	Gain.Water = Gain.max_water
+	Gain.bickens = 0
+	Gain.fog_density = 0.0
+	Gain.water_gun = false
+	Gain.pistol_gun = false
+	Gain.rail_gun = false
+	Gain.max_player_health = 400
+	Gain.player_speed = 5.0
+	Gain.regen_multiplier = 1
+	Gain.shovel_damage = 20
+	Gain.water_gun_damage = 10
+	Gain.rail_gun_damage = 50
+	Gain.pistol_damage = 5
 	
 	if player:
-		
-		
-		
+		player.spawning = false
 		player.drill_hitbox = oil_drill.hitbox
 
 func _process(delta: float) -> void:
