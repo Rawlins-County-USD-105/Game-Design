@@ -1,10 +1,10 @@
-[gd_scene load_steps=34 format=3 uid="uid://bl7mvxfy5tv70"]
+[gd_scene load_steps=35 format=3 uid="uid://bl7mvxfy5tv70"]
 
 [ext_resource type="Script" path="res://Models/game.gd" id="1_3wbxw"]
-[ext_resource type="PackedScene" uid="uid://b3sb8q7j2flfu" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
-[ext_resource type="Texture2D" uid="uid://b6u7g5kbeb7r1" path="res://spunchblob.jpeg" id="2_00qnp"]
+[ext_resource type="PackedScene" uid="uid://b7awpr4ksemyo" path="res://Models/Draft4 Low Poly Farm Map (1).blend" id="1_b5s4u"]
+[ext_resource type="Texture2D" uid="uid://cnvhp6580s1hh" path="res://spunchblob.jpeg" id="2_00qnp"]
 [ext_resource type="PackedScene" uid="uid://de56lwhpalp6i" path="res://Scenes/player.tscn" id="2_454w2"]
-[ext_resource type="PackedScene" uid="uid://ciy3nsridfqbh" path="res://spongi.fbx" id="3_eiwjh"]
+[ext_resource type="PackedScene" uid="uid://rghgtwat6vtt" path="res://spongi.fbx" id="3_eiwjh"]
 [ext_resource type="PackedScene" uid="uid://4dfgl5ufooye" path="res://Models/Flickering light.tscn" id="4_4pm5c"]
 [ext_resource type="PackedScene" uid="uid://oa0viq4egsux" path="res://Models/BIGAHHH BARN.tscn" id="5_1ef03"]
 [ext_resource type="PackedScene" uid="uid://bp1awtc105l8m" path="res://Scenes/button.tscn" id="5_3koh7"]
@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ba0esmdah7m3d" path="res://Models/silo.tscn" id="7_vkutm"]
 [ext_resource type="PackedScene" uid="uid://bbr035lp5dbcr" path="res://Models/HOUSE.tscn" id="8_ysac1"]
 [ext_resource type="PackedScene" uid="uid://bwvyk6hb4wxtd" path="res://Models/Fence2.tscn" id="9_e3i8n"]
-[ext_resource type="AudioStream" uid="uid://c44fcus02mvwk" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
+[ext_resource type="AudioStream" uid="uid://chtwsq5hcsmam" path="res://Sounds/hoorrr/MA_Dauzkobza_HorrorSoundsPack_8_MetalSlide.wav" id="11_7c7ix"]
 [ext_resource type="PackedScene" uid="uid://dc85b8q7qudb1" path="res://Models/CHAINFENCE.tscn" id="13_o0eyy"]
 [ext_resource type="PackedScene" uid="uid://dfi5knw5ep2ux" path="res://Models/Walltree.tscn" id="14_0dqg4"]
 [ext_resource type="PackedScene" uid="uid://bo8eusa5lejtl" path="res://Models/TREEE.tscn" id="15_2lhe1"]
@@ -88,6 +88,9 @@ size = Vector3(4.59689, 2.66541, 4.51013)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_oquwu"]
 height = 1.09796
 radius = 7.36427
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_72r2o"]
+viewport_path = NodePath("SubViewport")
 
 [node name="Game" type="Node3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
@@ -434,5 +437,41 @@ autostart = true
 
 [node name="WeaponStore" parent="." instance=ExtResource("18_4u80y")]
 transform = Transform3D(-0.965331, 0, -0.261027, 0, 1, 0, 0.261027, 0, -0.965331, 7.80727, 0.169833, 29.8814)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(900, 1830)
+
+[node name="Label" type="Label" parent="SubViewport"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -393.5
+offset_top = -908.5
+offset_right = 393.5
+offset_bottom = 908.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 100
+text = "Forward - W
+Left - A
+Right - D
+Backward - S
+Sprint _ Shift
+Crouch - Control
+Fire - Left Click
+Interact - E
+Upgrades - F
+WaterGun - 1
+Shovel - 2
+Pistol - 3
+RailGun - 4"
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-0.241584, 0, -0.0643212, 0, 0.25, 0, 0.0643212, 0, -0.241584, 5.04124, 2.63077, 30.9374)
+texture = SubResource("ViewportTexture_72r2o")
 
 [editable path="NavigationRegion3D/NavigationRegion3D/Map"]
