@@ -10,7 +10,7 @@ extends Interactable
 
 var round = 0
 var oil = 0
-var max_oil = 50
+var max_oil = 500
 var player = null
 
 func _ready() -> void:
