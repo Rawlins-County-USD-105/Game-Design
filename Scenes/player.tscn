@@ -1,21 +1,21 @@
 [gd_scene load_steps=35 format=3 uid="uid://de56lwhpalp6i"]
 
 [ext_resource type="Script" path="res://Scripts/character_body_3d.gd" id="1_1qajl"]
-[ext_resource type="Texture2D" uid="uid://cw2mco4y1muq6" path="res://Materials/Untitled design (5).png" id="2_6uvow"]
+[ext_resource type="Texture2D" uid="uid://c0f7l3gltfed1" path="res://Materials/Untitled design (5).png" id="2_6uvow"]
 [ext_resource type="PackedScene" uid="uid://ydcc2lt38ey4" path="res://Scenes/WaterGun.tscn" id="2_blk7k"]
-[ext_resource type="Texture2D" uid="uid://c16ps1ekkq1g" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
-[ext_resource type="Texture2D" uid="uid://mjxy0fj4yuif" path="res://Main Menu/Assets/Skill Tree backdrop 1.0 copy 2.png" id="4_bppih"]
+[ext_resource type="Texture2D" uid="uid://c18xrbgbs4iar" path="res://Models/LET’S GET RICH.png" id="3_wsqyl"]
+[ext_resource type="Texture2D" uid="uid://x080gka04xdo" path="res://Main Menu/Assets/Skill Tree backdrop 1.0 copy 2.png" id="4_bppih"]
 [ext_resource type="PackedScene" uid="uid://w1wambbwlgkr" path="res://Scenes/Shovel.tscn" id="4_g8q2f"]
-[ext_resource type="PackedScene" uid="uid://bim4h176j36sy" path="res://Chicken Death.tscn" id="5_5ouyw"]
-[ext_resource type="Texture2D" uid="uid://cdo6vmt7vq75q" path="res://Sprites/egg2.png" id="5_7dt1v"]
+[ext_resource type="PackedScene" path="res://Chicken Death.tscn" id="5_5ouyw"]
+[ext_resource type="Texture2D" uid="uid://d1h7c552ic15q" path="res://Sprites/egg2.png" id="5_7dt1v"]
 [ext_resource type="PackedScene" uid="uid://dsrqntvoblehj" path="res://Scenes/interact_ray.tscn" id="5_aa38p"]
 [ext_resource type="PackedScene" uid="uid://cke6o6g6twbrx" path="res://Scenes/pistol.tscn" id="5_vcecd"]
 [ext_resource type="PackedScene" uid="uid://didfro6rbdx1d" path="res://Main Menu/Popup menu/popup_menu.tscn" id="7_1omva"]
-[ext_resource type="Texture2D" uid="uid://g3s7dtva8a2r" path="res://Sprites/shovel.png" id="7_ftmfv"]
-[ext_resource type="AudioStream" uid="uid://bfkxurj5tpmsg" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
+[ext_resource type="Texture2D" uid="uid://duwf2ponw8pd" path="res://Sprites/shovel.png" id="7_ftmfv"]
+[ext_resource type="AudioStream" uid="uid://b1wsl6fmqn7rn" path="res://Sounds/Untitled 3.wav" id="7_wrk1g"]
 [ext_resource type="PackedScene" uid="uid://dwf1r2lvmc8rc" path="res://RailGun.tscn" id="9_2phq4"]
 [ext_resource type="PackedScene" uid="uid://dwwmfhat8jj4f" path="res://skill_tree.tscn" id="10_3mf4v"]
-[ext_resource type="Texture2D" uid="uid://ddmsps80yii88" path="res://Main Menu/Assets/chicken copy.png" id="16_dpk5j"]
+[ext_resource type="Texture2D" uid="uid://doswxhp0pnk5x" path="res://Main Menu/Assets/chicken copy.png" id="16_dpk5j"]
 
 [sub_resource type="Animation" id="Animation_h3uuh"]
 resource_name = "backward"
@@ -4730,7 +4730,7 @@ transform = Transform3D(2.18557e-08, -3.30012e-15, -0.5, -7.54979e-08, -0.5, 0, 
 png = ExtResource("7_ftmfv")
 
 [node name="Pistol" parent="neck/Camera" instance=ExtResource("5_vcecd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.320275, -0.292238, -0.359945)
+transform = Transform3D(0.999848, 0, 0.0174524, 0, 1, 0, -0.0174524, 0, 0.999848, 0.320275, -0.292238, -0.359945)
 
 [node name="InteractRay" parent="neck/Camera" instance=ExtResource("5_aa38p")]
 
